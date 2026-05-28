@@ -1,5 +1,6 @@
 # Session Logs Index
 
+- 2026-05-28 [medbrief] Config audit: compared .claude.backup to new install, restored MS365 read-only rule and Medbrief context to CLAUDE.md (2026-05-28-claude-install-config-audit.md)
 - 2026-05-28 [medbrief] Import Huble handover pack — 24 session logs + 2 project memory slugs renamed rowanreid → Rowan-Reid (2026-05-28-lexvision-migration-bundle-import.md)
 - 2026-05-28 [ObsidianVault] Vault setup — connected remote and pushed (2026-05-28-vault-setup-lexvision.md)
 - 2026-05-13 [data-pipelines] Root-caused null `batch_request_id` in Trust filter JSONL (97.5% split-page image/jpeg, 2.5% cross-cohort, <0.01% image/tiff) via diagnostic script + DB classification, verified schema-zero split provenance against medbrief SplitPage service, agreed two-part fix design with Rowan, wrote detailed implementation plan and handoff (2026-05-13-md304-null-brid-root-cause-and-fix-plan.md)
