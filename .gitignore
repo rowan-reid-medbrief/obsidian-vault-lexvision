@@ -1,0 +1,20 @@
+# Starter .gitignore for a new Obsidian vault (written by install.sh during a scaffold).
+# The vault's git remote is the backup for everything NOT listed here.
+
+# Obsidian machine-local UI state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# Large binary attachments (keep the notes in git, not the big binaries)
+Attachments/*.pdf
+Attachments/*.docx
+Attachments/*.pptx
+Attachments/*.mp4
+Attachments/*.mov
+
+# macOS
+.DS_Store
+
+# Do NOT ignore .session-logs/ or .agent-memory/ : the vault remote is their only backup.
