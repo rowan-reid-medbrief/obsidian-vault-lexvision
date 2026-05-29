@@ -126,13 +126,13 @@ Main Phase 1 classification script at project root. Committed on `main`.
 - DB query split into 3 separate queries to avoid MySQL sort buffer overflow on large GROUP BY
 - **Batching**: 20 rows per Gemini call (was 1). ~20x faster. Falls back to `unknown` per row on batch error.
 
-### Full run status (as of 2026-05-29)
-- Checkpoint: `data/classification_checkpoint.xlsx` — **2,300/2,728 AI rows classified**, 428 remaining
-- 3 batch errors (rows 1680–1699, 2200–2219, 2320–2339) → ~60 rows marked `unknown` due to connection resets
-- 325 total `unknown` in checkpoint (includes error rows + genuinely ambiguous)
-- Run stalled overnight (Gemini connection resets + machine sleep); DB tunnel dropped on resume
-- **Next**: restart DB tunnel, review unknowns/output quality, then resume run (`MAX_AI_ROWS=None`, `DRY_RUN=False`)
-- Category distribution so far: medical expert 882, law firm 749, unknown 325, non-medical expert 139, case management 84, expert agency 83, pagination agency 31, internal 6, competitor 1
+### Full run status (completed 2026-05-29 09:44)
+- **COMPLETE** — output: `data/experts_classified_20260528_171319.xlsx`
+- 2,810 rows written; 14,968 skipped (already classified)
+- 4 batch errors (rows 1680–1699, 2200–2219, 2280–2299, 2320–2359 — connection resets); 0 rows lost
+- Category distribution (newly classified rows):
+  medical expert 1,034 | law firm 896 | unknown 427 | non-medical expert 158 | expert agency 153 | case management 95 | pagination agency 39 | internal 6 | competitor 2
+- **Next**: review 427 unknowns — manual triage or second AI pass with tighter prompting
 
 ### DB findings (session 2026-05-28)
 - `helper_sql.get_medbrief_db_sql_connection` hardcodes port 3308 for local env — CANNOT USE for pre-staging (3310). Use raw pymysql.
