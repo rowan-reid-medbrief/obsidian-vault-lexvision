@@ -118,6 +118,35 @@ All scripts in `/Users/Rowan.Reid/claude_code/projects/expert-sheet-data-process
 - Git repo initialised; 2 commits on `main` (initial scripts + .gitignore; .vscode/ added to .gitignore)
 - Ignored: `venv/`, `.env`, `*.xlsx`, `.vscode/`
 
+### classify_users.py (updated session 2026-05-29)
+Main Phase 1 classification script at project root. Committed on `main`.
+- Steps: DB enrichment → rule-based classification → Gemini AI (batched) → write back to spreadsheet
+- Adaptability flags: `RULE_BASED_ONLY`, `DRY_RUN`, `MAX_AI_ROWS`, `CHECKPOINT_INTERVAL`, `BATCH_SIZE`
+- Current flags (as committed): `DRY_RUN=False`, `MAX_AI_ROWS=None`, `RULE_BASED_ONLY=False`, `BATCH_SIZE=20`
+- DB query split into 3 separate queries to avoid MySQL sort buffer overflow on large GROUP BY
+- **Batching**: 20 rows per Gemini call (was 1). ~20x faster. Falls back to `unknown` per row on batch error.
+
+### Full run status (as of 2026-05-29)
+- Checkpoint: `data/classification_checkpoint.xlsx` — **2,300/2,728 AI rows classified**, 428 remaining
+- 3 batch errors (rows 1680–1699, 2200–2219, 2320–2339) → ~60 rows marked `unknown` due to connection resets
+- 325 total `unknown` in checkpoint (includes error rows + genuinely ambiguous)
+- Run stalled overnight (Gemini connection resets + machine sleep); DB tunnel dropped on resume
+- **Next**: restart DB tunnel, review unknowns/output quality, then resume run (`MAX_AI_ROWS=None`, `DRY_RUN=False`)
+- Category distribution so far: medical expert 882, law firm 749, unknown 325, non-medical expert 139, case management 84, expert agency 83, pagination agency 31, internal 6, competitor 1
+
+### DB findings (session 2026-05-28)
+- `helper_sql.get_medbrief_db_sql_connection` hardcodes port 3308 for local env — CANNOT USE for pre-staging (3310). Use raw pymysql.
+- `userinternal` table: 4 regex patterns (`@medbrief.com`, `.net`, `.co.uk`, `.dev`) for internal staff detection
+- `userexpertagency` table: 47 email substrings for agency detection
+- `fos_user.roles` is PHP-serialised — use `extract_php_serialized_values` from common_utils, not string `in` checks
+- Azure Key Vault access works via DefaultAzureCredential (AzureCliCredential) — confirmed working
+
+### Gemini API key status (as of 2026-05-29)
+- New working key confirmed in Key Vault `expertmarketplace-kv` / `GEMINI-API-KEY` (verified 2026-05-29)
+- Old blocked key (`AIzaSyBtpF8...`) has been replaced — no action needed
+- Model: `gemini-2.5-flash` (`gemini-2.0-flash` returned 404 NOT_FOUND — no longer available to new users)
+- Script fetches key from Key Vault at runtime via `helper_azurekeyvault.get_secret_from_key_vault`
+
 ### Spreadsheet context (from Chantel & Laura)
 - Source: all `fos_user` rows with **expert** or **scanner** role types (~29,000 total rows)
 - **Scanners are included** because some experts were mistakenly assigned the scanner role rather than expert

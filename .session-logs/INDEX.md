@@ -1,5 +1,6 @@
 # Session Logs Index
 
+- 2026-05-29 [medbrief] Expert sheet Phase 1 — batching, key verified, full AI run partial (2,300/2,728 rows) (2026-05-29-expert-sheet-ai-run.md)
 - 2026-05-28 [medbrief] Expert sheet dev env setup — venv, common_utils v0.2.1193, pip.conf, git init (2026-05-28-expert-sheet-env-setup.md)
 - 2026-05-28 [medbrief] Config audit: compared .claude.backup to new install, restored MS365 read-only rule and Medbrief context to CLAUDE.md (2026-05-28-claude-install-config-audit.md)
 - 2026-05-28 [medbrief] Import Huble handover pack — 24 session logs + 2 project memory slugs renamed rowanreid → Rowan-Reid (2026-05-28-lexvision-migration-bundle-import.md)
