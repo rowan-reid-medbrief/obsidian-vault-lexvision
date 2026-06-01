@@ -1,5 +1,6 @@
 # Session Logs Index
 
+- 2026-06-01 [medbrief] Expert sheet Phase 1.5 — built generate_profiles.py (web-grounded profile gen), 30-row stratified test batch, appends Laura's hand-off schema as de-dup signal, cost ~$0.026/profile (~$26/1k); corroborated Expert Match pipeline; handoff to Phase 2 dedup (2026-06-01-expert-profile-generation.md)
 - 2026-06-01 [medbrief] Expert sheet — upgraded to gemini-3.1-pro-preview, full clean run (1,021 med experts / 1,098 law firms / 348 unknowns), email draft to Chantel prepared (2026-06-01-expert-sheet-gemini-pro-upgrade.md)
 - 2026-06-01 [medbrief] Expert sheet Phase 1 — output format revamped with P–U audit columns, column L preserved, re-run clean (2026-06-01-expert-sheet-output-format.md)
 - 2026-05-29 [medbrief] Expert sheet Phase 1 — full AI run completed, 2,810 rows classified, 427 unknowns for review (2026-05-29-expert-sheet-run-complete.md)
