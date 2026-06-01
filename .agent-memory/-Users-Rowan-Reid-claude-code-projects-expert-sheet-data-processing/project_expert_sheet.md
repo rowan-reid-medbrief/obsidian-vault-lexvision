@@ -136,11 +136,18 @@ Main Phase 1 classification script at project root. Committed on `main`.
 - Checkpoint backfill: old checkpoints missing source/db_roles/db_user_type are enriched from the DB step at load time
 
 ### Full run status (completed 2026-06-01)
-- **COMPLETE** — output: `data/experts_classified_20260601_120322.xlsx`
-- 2,810 rows written to new P–U columns; 14,968 skipped (column L already filled); 0 not found
-- Classification distribution (unchanged from previous run — checkpoint reused, no Gemini calls):
-  medical expert 1,034 | law firm 896 | unknown 427 | non-medical expert 158 | expert agency 153 | case management 95 | pagination agency 39 | internal 6 | competitor 2
-- **Next**: review 427 unknowns — manual triage or second AI pass with tighter prompting
+- First pass output: `data/experts_classified_20260601_120322.xlsx` (gemini-2.5-flash)
+- Second pass output: `data/experts_classified_20260601_121332.xlsx` (gemini-3.1-pro-preview retry on unknowns)
+- Second pass resolved 175 of 427 unknowns; 252 remain
+- Second pass distribution: medical expert 1,115 | law firm 964 | unknown 252 | non-medical expert 169 | expert agency 159 | case management 98 | pagination agency 39 | internal 12 | competitor 2
+
+**Final clean run (2026-06-01, complete):**
+- Output: `data/experts_classified_20260601_152155.xlsx`
+- All 2,728 AI rows genuinely processed by `gemini-3.1-pro-preview`; source attribution correct throughout
+- 20 rows failed mid-run due to Gemini API connection reset; retried separately and resolved (18 classified, 2 remain unknown)
+- Final distribution: law firm 1,098 | medical expert 1,021 | unknown 348 | non-medical expert 101 | expert agency 136 | case management 69 | pagination agency 31 | internal 5 | competitor 1
+- 348 unknowns are all genuinely ambiguous (no batch errors in count)
+- Current script state: `GEMINI_MODEL = "gemini-3.1-pro-preview"`, `RETRY_UNKNOWNS = False`, `DRY_RUN = False`
 
 ### Laura's AI enrichment spreadsheet (identified 2026-06-01)
 - File: `expert_data_collection_v2_07-25.xlsx`, sheet `experts_AI_prefilled (251010)`
