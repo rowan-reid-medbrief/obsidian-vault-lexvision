@@ -1,5 +1,6 @@
 # Session Logs Index
 
+- 2026-06-01 [medbrief] Expert sheet Phase 1 — output format revamped with P–U audit columns, column L preserved, re-run clean (2026-06-01-expert-sheet-output-format.md)
 - 2026-05-29 [medbrief] Expert sheet Phase 1 — full AI run completed, 2,810 rows classified, 427 unknowns for review (2026-05-29-expert-sheet-run-complete.md)
 - 2026-05-29 [medbrief] Expert sheet Phase 1 — batching, key verified, full AI run partial (2,300/2,728 rows) (2026-05-29-expert-sheet-ai-run.md)
 - 2026-05-28 [medbrief] Expert sheet dev env setup — venv, common_utils v0.2.1193, pip.conf, git init (2026-05-28-expert-sheet-env-setup.md)
