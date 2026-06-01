@@ -118,21 +118,40 @@ All scripts in `/Users/Rowan.Reid/claude_code/projects/expert-sheet-data-process
 - Git repo initialised; 2 commits on `main` (initial scripts + .gitignore; .vscode/ added to .gitignore)
 - Ignored: `venv/`, `.env`, `*.xlsx`, `.vscode/`
 
-### classify_users.py (updated session 2026-05-29)
+### classify_users.py (updated session 2026-06-01)
 Main Phase 1 classification script at project root. Committed on `main`.
-- Steps: DB enrichment → rule-based classification → Gemini AI (batched) → write back to spreadsheet
+- Steps: DB enrichment → rule-based classification → Gemini AI (batched) → write new columns to spreadsheet
 - Adaptability flags: `RULE_BASED_ONLY`, `DRY_RUN`, `MAX_AI_ROWS`, `CHECKPOINT_INTERVAL`, `BATCH_SIZE`
 - Current flags (as committed): `DRY_RUN=False`, `MAX_AI_ROWS=None`, `RULE_BASED_ONLY=False`, `BATCH_SIZE=20`
 - DB query split into 3 separate queries to avoid MySQL sort buffer overflow on large GROUP BY
-- **Batching**: 20 rows per Gemini call (was 1). ~20x faster. Falls back to `unknown` per row on batch error.
+- **Batching**: 20 rows per Gemini call. ~20x faster. Falls back to `unknown` per row on batch error.
+- **Output format (updated 2026-06-01)**: Column L (Chantelle's existing user type) is NEVER modified. All script output goes to new columns P–U:
+  - P: `classification source` (e.g. `rule: agency_email`, `AI: gemini-2.5-flash`)
+  - Q: `our user type` (our classification)
+  - R: `confidence` (high/medium/low; blank for rule-based)
+  - S: `reasoning` (one sentence from Gemini, or plain-English rule description)
+  - T: `db roles` (role keywords from fos_user.roles)
+  - U: `db user type` (fos_user.userType field)
+- `apply_rules` returns `dict` with user_type/source/confidence/reasoning (was just a string)
+- Checkpoint backfill: old checkpoints missing source/db_roles/db_user_type are enriched from the DB step at load time
 
-### Full run status (completed 2026-05-29 09:44)
-- **COMPLETE** — output: `data/experts_classified_20260528_171319.xlsx`
-- 2,810 rows written; 14,968 skipped (already classified)
-- 4 batch errors (rows 1680–1699, 2200–2219, 2280–2299, 2320–2359 — connection resets); 0 rows lost
-- Category distribution (newly classified rows):
+### Full run status (completed 2026-06-01)
+- **COMPLETE** — output: `data/experts_classified_20260601_120322.xlsx`
+- 2,810 rows written to new P–U columns; 14,968 skipped (column L already filled); 0 not found
+- Classification distribution (unchanged from previous run — checkpoint reused, no Gemini calls):
   medical expert 1,034 | law firm 896 | unknown 427 | non-medical expert 158 | expert agency 153 | case management 95 | pagination agency 39 | internal 6 | competitor 2
 - **Next**: review 427 unknowns — manual triage or second AI pass with tighter prompting
+
+### Laura's AI enrichment spreadsheet (identified 2026-06-01)
+- File: `expert_data_collection_v2_07-25.xlsx`, sheet `experts_AI_prefilled (251010)`
+- This is the raw input to `production_main.py` — Laura used `gemini_file.py` + Perplexity to research expert profiles from public sources (LinkedIn, NHS, etc.) and extract specialty, qualifications, experience, career history, job title, location, years of experience
+- Columns include: Model (A), status (C: done/not_found/remove/skip_re), email (F), Direct Email (G), Title (H), expert type (I), Specialty (J), Sub-Specialties (K), Job Title (P), City (Q), Country (R), Years of Experience (S), Experience (T), Career History (U), Academic Posts (V), Qualifications (W)
+- This is profile enrichment for already-confirmed experts — NOT the same task as Rowan's Phase 1 classification
+
+### DB findings — role structure confirmed (2026-06-01)
+- Roles are per-case: format is `ROLE_PROJECT_<case_id>_EXPERT` — so a user with 31 invitations has been on 31 cases
+- 153,659 total expert/scanner role rows across 25,077 distinct users
+- Also: `ROLE_EXPERTAGENCY_<id>_ADMINISTRATOR` for agency admin roles; `EXPERTVIEWER` is a separate role type
 
 ### DB findings (session 2026-05-28)
 - `helper_sql.get_medbrief_db_sql_connection` hardcodes port 3308 for local env — CANNOT USE for pre-staging (3310). Use raw pymysql.
