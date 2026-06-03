@@ -1,5 +1,6 @@
 # Session Logs Index
 
+- 2026-06-02 [medbrief] Expert sheet Phase 2 — built + validated detect_duplicates.py (dedup): normalise→block(+Soundex)→tier→Gemini medium-tier adjudication→union-find→cols V–Z; ~98% recall vs Col O / 100% Col N; high-tier precision tuned (token_sort over WRatio, role-mailbox stoplist); 160-pair flash sample validated (7/8); full adjudication held; committed ad04b09 (2026-06-02-phase2-duplicate-detection.md)
 - 2026-06-01 [medbrief] Expert sheet Phase 1.5 — built generate_profiles.py (web-grounded profile gen), 30-row stratified test batch, appends Laura's hand-off schema as de-dup signal, cost ~$0.026/profile (~$26/1k); corroborated Expert Match pipeline; handoff to Phase 2 dedup (2026-06-01-expert-profile-generation.md)
 - 2026-06-01 [medbrief] Expert sheet — upgraded to gemini-3.1-pro-preview, full clean run (1,021 med experts / 1,098 law firms / 348 unknowns), email draft to Chantel prepared (2026-06-01-expert-sheet-gemini-pro-upgrade.md)
 - 2026-06-01 [medbrief] Expert sheet Phase 1 — output format revamped with P–U audit columns, column L preserved, re-run clean (2026-06-01-expert-sheet-output-format.md)

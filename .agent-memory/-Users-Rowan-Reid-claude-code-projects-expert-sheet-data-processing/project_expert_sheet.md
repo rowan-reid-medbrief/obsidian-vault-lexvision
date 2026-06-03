@@ -29,6 +29,7 @@ Process an Excel file of expert profiles using AI (Gemini) to:
    - Some duplicates flagged by Column C (count > 1) — but only exact name matches
    - Need to also catch: name with title prefix, initial only, name in email address, and other variations
    - Note: existing dupes in `fos_user` are **soft deleted** users
+   - **Phase 2 status (2026-06-02):** `detect_duplicates.py` built & validated (~98% recall vs Col O); full AI adjudication held — see [[project-phase2-dedup]] and `PHASE2_STATUS.md`
 
 ### Data file
 - Original: `experts master list (for ai processing)_260526.xlsx` — shared in Teams channel
