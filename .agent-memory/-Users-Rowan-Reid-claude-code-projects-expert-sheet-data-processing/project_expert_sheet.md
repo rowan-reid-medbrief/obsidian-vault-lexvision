@@ -9,6 +9,16 @@ metadata:
 
 ## Project: Expert Sheet Data Processing
 
+> **Folder structure (restructured 2026-06-04, commits 6a58c07 + f6d3ddb).** The flat root was
+> reorganised: `scripts/` (classify_users, generate_profiles, detect_duplicates, generate_email_docx),
+> `data/raw/` (master list), `data/interim/` (checkpoints, logs, dedup sample), `data/outputs/`
+> (classified / deduped / with_profiles workbooks), `docs/` (DECISIONS.md, PHASE2_STATUS.md),
+> `deliverables/` (Chantel docx), plus root `README.md` + `requirements.txt`. `reference_scripts/`,
+> `.env`, `venv/` stay put. Every script anchors paths to repo root (`Path(__file__).parent.parent`),
+> so run as `venv/bin/python3 scripts/<name>.py` from any dir. Decision: [[project-phase2-dedup]]
+> D16 in `docs/DECISIONS.md`. Paths below are pre-restructure; map root scripts → `scripts/`, the
+> classified/output xlsx → `data/outputs/`, the master → `data/raw/`.
+
 Meeting held 27 May 2026, 12:30–12:52 (Teams channel: "Kick-off re Expert Sheet Data Processing").
 
 ### Goal
@@ -33,7 +43,7 @@ Process an Excel file of expert profiles using AI (Gemini) to:
 
 ### Data file
 - Original: `experts master list (for ai processing)_260526.xlsx` — shared in Teams channel
-- Local copy: `/Users/Rowan.Reid/claude_code/projects/expert-sheet-data-processing/experts_master_list_260526.xlsx`
+- Local copy: `data/raw/experts_master_list_260526.xlsx` (moved here in the 2026-06-04 restructure; was project root)
 - Sheet name: `MASTER_260512`
 - **17,778 data rows** (rows 3–17780; row 1 = headers, row 2 = sub-headers "invited"/"accepted" for cols J/K)
 - Note: meeting mentioned ~29,000 — actual file is 17,778; Chantel may have pre-filtered
@@ -120,7 +130,7 @@ All scripts in `/Users/Rowan.Reid/claude_code/projects/expert-sheet-data-process
 - Ignored: `venv/`, `.env`, `*.xlsx`, `.vscode/`
 
 ### classify_users.py (updated session 2026-06-01)
-Main Phase 1 classification script at project root. Committed on `main`.
+Main Phase 1 classification script — now at `scripts/classify_users.py` (was project root). Committed on `main`.
 - Steps: DB enrichment → rule-based classification → Gemini AI (batched) → write new columns to spreadsheet
 - Adaptability flags: `RULE_BASED_ONLY`, `DRY_RUN`, `MAX_AI_ROWS`, `CHECKPOINT_INTERVAL`, `BATCH_SIZE`
 - Current flags (as committed): `DRY_RUN=False`, `MAX_AI_ROWS=None`, `RULE_BASED_ONLY=False`, `BATCH_SIZE=20`
@@ -143,7 +153,7 @@ Main Phase 1 classification script at project root. Committed on `main`.
 - Second pass distribution: medical expert 1,115 | law firm 964 | unknown 252 | non-medical expert 169 | expert agency 159 | case management 98 | pagination agency 39 | internal 12 | competitor 2
 
 **Final clean run (2026-06-01, complete):**
-- Output: `data/experts_classified_20260601_152155.xlsx`
+- Output (authoritative Phase 1 file, input to Phase 1.5 & 2): `data/outputs/experts_classified_20260601_152155.xlsx`
 - All 2,728 AI rows genuinely processed by `gemini-3.1-pro-preview`; source attribution correct throughout
 - 20 rows failed mid-run due to Gemini API connection reset; retried separately and resolved (18 classified, 2 remain unknown)
 - Final distribution: law firm 1,098 | medical expert 1,021 | unknown 348 | non-medical expert 101 | expert agency 136 | case management 69 | pagination agency 31 | internal 5 | competitor 1
