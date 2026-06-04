@@ -37,3 +37,4 @@
 - 2026-04-22 [medbrief] Built initial Trust-centre dataset pipeline in data_pipelines (MD-304) mirroring salli-dataset-creation; extended /wrap-up skill to detect and commit sub-repos one level below working dir (2026-04-22-trust-pipeline-and-subrepo-wrapup.md)
 - 2026-04-22 [medbrief] Installed Atlassian Remote MCP in workspace .mcp.json (SSE, read-only OAuth) for MedBrief Confluence; scoped to MEDBRIEF/MDC/MD; handoff, exploration deferred (2026-04-22-confluence-mcp-setup.md)
 - 2026-04-22 [medbrief] Set up three-repo MedBrief workspace (edit target data_pipelines on Azure DevOps; context: salli-dataset-creation, medbrief); resolved Azure RSA-only SSH quirk (2026-04-22-medbrief-workspace-setup.md)
+- 2026-06-04 [medbrief] Consolidated 3 legacy expert-sheet outputs into canonical experts_working.xlsx via new combine_outputs.py; repointed all phase defaults; merged to main (2026-06-04-expert-sheet-combine-working-file.md)
