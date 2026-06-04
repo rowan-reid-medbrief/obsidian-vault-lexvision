@@ -9,7 +9,14 @@ metadata:
 
 ## Expert profile generation (Phase 1.5)
 
-`generate_profiles.py` (project root) runs Laura's web-grounded profile research over the
+> **Two later changes supersede details below.** (1) **Column partition** (2026-06-04, commit
+> 06cb9b5): Phase 1.5 now appends from **column AA** (27), not V — so the three scripts don't
+> overlap (Phase 1 P–U, Phase 2 V–Z, Phase 1.5 AA onward). (2) **Restructure** (2026-06-04, commits
+> 6a58c07 + f6d3ddb): script is now `scripts/generate_profiles.py`; input/output xlsx live in
+> `data/outputs/`; checkpoint in `data/interim/`. Also added `OUTPUT_MODE`/`WORKING_FILE` env flags
+> (newfile default vs overwrite). See [[project-phase2-dedup]] and `docs/DECISIONS.md` D12–D16.
+
+`scripts/generate_profiles.py` runs Laura's web-grounded profile research over the
 medical experts our Phase 1 classifier surfaced. Built and test-run 2026-06-01.
 
 ### What it does
@@ -21,7 +28,7 @@ medical experts our Phase 1 classifier surfaced. Built and test-run 2026-06-01.
   `expertmarketplace-kv` / `GEMINI-API-KEY`, same as classify_users.py.
 - Strict `EmailStr` kept (installed `pydantic[email]`); a returned email that fails
   validation → fallback row `profile_score=1`, `Status=not_found`.
-- Input: corrected classified file `data/experts_classified_20260601_152155.xlsx`. Pool =
+- Input: corrected classified file `data/outputs/experts_classified_20260601_152155.xlsx`. Pool =
   `our user type == 'medical expert'` AND not in MM AND email+names = **1,000 rows**
   (High 439 / Med 341 / Low 220). Seeded (SEED=42) stratified test batch of 30 (15/10/5).
 
@@ -29,7 +36,7 @@ medical experts our Phase 1 classifier surfaced. Built and test-run 2026-06-01.
 - **Appends** columns to a copy of the Phase 1 sheet (openpyxl append-and-preserve, like
   `classify_users.py:866-911`) → new timestamped `data/experts_with_profiles_{ts}.xlsx`.
   Source never mutated; row colour-coding preserved.
-- Appended cols from col V = **Laura's exact Title-Case hand-off schema** (`First Name`,
+- Appended cols from col AA (was V; see partition note above) = **Laura's exact Title-Case hand-off schema** (`First Name`,
   `Job Title`, `Specialty`, `Speciality1..7`, `Career History`, etc.) + audit cols
   (`profile_score`, `reason_for_score`, `source_pages`, `model_used`, `raw_json`). These
   serve BOTH the Expert Match hand-off AND the de-dup signal (same row as `id` +
@@ -40,7 +47,7 @@ medical experts our Phase 1 classifier surfaced. Built and test-run 2026-06-01.
   else blank/pending). Rows are shape-complete but wait at `filter_experts` until a clinician
   marks `done`.
 
-### Test-batch results (30 rows, output `data/experts_with_profiles_20260601_161909.xlsx`)
+### Test-batch results (30 rows, output `data/outputs/experts_with_profiles_20260601_161909.xlsx`)
 - profile_score: 19/30 ≥8, 6/30 =1, 5 mid.
 - **7 rows where Gemini's `type` disagreed with our 'medical expert' label** (6 other, 1
   agency) — useful Phase 1 cross-check, mostly org-inbox rows.
