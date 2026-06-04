@@ -19,6 +19,18 @@ metadata:
 > D16 in `docs/DECISIONS.md`. Paths below are pre-restructure; map root scripts → `scripts/`, the
 > classified/output xlsx → `data/outputs/`, the master → `data/raw/`.
 
+> **Canonical working file (consolidated 2026-06-04, commit `effe70a`).** The three legacy
+> outputs (`experts_classified_…152155`, `experts_with_profiles_…161909`, `experts_deduped_…084115`)
+> were produced by pre-partition scripts, so Phase 1.5's profile block and Phase 2's dedup block
+> both landed at col 22 and collided. New one-off `scripts/combine_outputs.py` reconciles them into
+> `data/outputs/experts_working.xlsx` matching the current 3-block layout (classify P–U, dedup V–Z,
+> profiles AA–BF): it takes the deduped file as base, copies the profile block 22–53 → 27–58 (+5
+> shift), guards on row-count + id alignment. All three phase scripts now **default
+> `WORKING_FILE`/`INPUT_FILE` to `experts_working.xlsx`**, so re-running any phase in
+> `OUTPUT_MODE=overwrite` only touches its own block. Next step: Rowan verifies the working file,
+> then deletes the three legacy Output 1/2/3 workbooks. (`*.xlsx` is gitignored — the working file
+> is on disk only, not in git.)
+
 Meeting held 27 May 2026, 12:30–12:52 (Teams channel: "Kick-off re Expert Sheet Data Processing").
 
 ### Goal
