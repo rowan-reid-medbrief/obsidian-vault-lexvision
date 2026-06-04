@@ -33,13 +33,22 @@ human review, never auto-merge; reconciles with (doesn't contradict) existing Co
 - 160-pair adjudication sample confirmed flash quality: 7/8 on known-positive Column O pairs,
   well-reasoned yes/no.
 
-### Outstanding (as of 2026-06-02)
-- **Full medium-tier adjudication (1,864 pairs) NOT run — held by Rowan.** Ready to fire:
-  `DEDUP_DRY_RUN=false venv/bin/python3 detect_duplicates.py` (~35–50 min background, trivial cost;
-  resumable via `data/dedup_adjudication_checkpoint.jsonl`).
+### Outstanding (as of 2026-06-04)
+- **Immediate next step:** Run USE_DB=true deterministic pass (SSH tunnel confirmed open 2026-06-04):
+  `DEDUP_DRY_RUN=false DEDUP_ADJUDICATE=false DEDUP_USE_DB=true venv/bin/python3 detect_duplicates.py`
+  Adds alt-emails from `linkedemailaddress` + soft-delete-aware primary selection (`deleted_at`).
+- **After DB run:** Send `chantel_update_phase2.docx` + classified xlsx (`…152155.xlsx`) to Chantel.
+  `chantel_update_phase2.docx` (project root) explains Phase 2, cols V–Z, match types, results vs
+  Column O, and next steps (DB run + profile generation caveat).
+- **Full AI adjudication (1,864 medium pairs) intentionally held** — Gemini re-examines the same
+  name/email/domain evidence the deterministic stage already used and adds limited value. Gated on
+  profile data being available: once Phase 1.5 runs at scale (specialty + location + employer),
+  profile data can pre-filter medium pairs deterministically (same specialty+city → high; conflicting
+  → low) before Gemini handles the remainder with genuinely new signal.
+- **Laura scope question still open:** confirm whether running full profile generation (~12,385 rows)
+  is Rowan's scope or Laura's before proceeding. See [[project-profile-generation]].
 - Threshold/label sign-off with Chantel (labels) / Laura (model + match quality) — all `TODO(review)`.
 - Optional: surface flash-rejected borderline pairs with an "AI: likely different" flag.
-- Optional `USE_DB` path (alt-emails + `deleted_at`; needs SSH tunnel port 3310) untested live.
 
 See [[project-expert-sheet-data-processing]], [[project-profile-generation]],
 [[reference-expert-match-pipeline]], [[feedback-commenting-style-expert-sheet]].
