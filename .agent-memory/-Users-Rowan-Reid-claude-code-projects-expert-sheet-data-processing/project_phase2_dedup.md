@@ -35,17 +35,31 @@ human review, never auto-merge; reconciles with (doesn't contradict) existing Co
   generic role-mailbox noise (medium tier 68k→1.9k), cross-domain first-name mailboxes; added
   phonetic blocking for surname spelling variants.
 - Deterministic-only output written: `data/outputs/experts_deduped_20260602_084115.xlsx` (2,226
-  groups / 5,480 rows).
+  groups / 5,480 rows). **Consolidated into `data/outputs/experts_working.xlsx` (2026-06-04); that
+  standalone file plus the other two legacy outputs were deleted 2026-06-05 — `experts_working.xlsx`
+  is now the sole canonical workbook (verified: P1 cols Q–U 2,810 rows, P2 cols V–Z 5,480 rows,
+  P1.5 cols AA–BF ~30-row test batch only).**
 - 160-pair adjudication sample confirmed flash quality: 7/8 on known-positive Column O pairs,
   well-reasoned yes/no.
 
-### Outstanding (as of 2026-06-04)
+### Outstanding (as of 2026-06-05)
+- **Chantel docx substantially finalised (2026-06-05):** `deliverables/chantel_update_phase2.docx`
+  rewritten in Rowan's voice — added a single side-by-side user-type model-comparison table
+  (1 June `gemini-2.5-flash` vs 4 June `gemini-3.1-pro-preview`: the newer model is more cautious,
+  348 unknowns vs 252, +134 law firm, fewer experts; both runs cover the same 2,810 rows). Replaced
+  the "How my results compare to Column O" section with a plain "Summary" (row-numbered real examples,
+  e.g. rows 2531/2538 Dr Rufus Cartwright). Replaced "Next steps" with a "Profiles" section (targeted
+  test batch, Laura's format, run-a-limited-set proposal). Removed the pasted dup-score/keep scratch
+  + CLI artefacts from below the sign-off. **Remaining polish before send (Rowan to decide):** broken
+  sentence in the dup-detection intro ("…but since it focusses on… I wrote the script also catch…");
+  dangling "more on this below" in the Medium-tier bullet (its target section was removed); pre-existing
+  bold inconsistencies; `[SharePoint link]` placeholder. Backup of the pre-rewrite docx at
+  `/tmp/chantel_update_phase2_backup_104514.docx`.
 - **Immediate next step:** Run USE_DB=true deterministic pass (SSH tunnel confirmed open 2026-06-04):
   `DEDUP_DRY_RUN=false DEDUP_ADJUDICATE=false DEDUP_USE_DB=true venv/bin/python3 scripts/detect_duplicates.py`
   Adds alt-emails from `linkedemailaddress` + soft-delete-aware primary selection (`deleted_at`).
-- **After DB run:** Send `deliverables/chantel_update_phase2.docx` + classified xlsx
-  (`data/outputs/…152155.xlsx`) to Chantel. The docx explains Phase 2, cols V–Z, match types,
-  results vs Column O, and next steps (DB run + profile generation caveat).
+- **Deliverable to Chantel** is now the single `data/outputs/experts_working.xlsx` (no separate
+  classified xlsx — it was deleted) plus the finalised docx.
 - **Full AI adjudication (1,864 medium pairs) intentionally held** — Gemini re-examines the same
   name/email/domain evidence the deterministic stage already used and adds limited value. Gated on
   profile data being available: once Phase 1.5 runs at scale (specialty + location + employer),
