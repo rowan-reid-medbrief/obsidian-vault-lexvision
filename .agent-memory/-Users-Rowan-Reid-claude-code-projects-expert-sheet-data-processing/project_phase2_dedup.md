@@ -69,6 +69,7 @@ human review, never auto-merge; reconciles with (doesn't contradict) existing Co
   is Rowan's scope or Laura's before proceeding. See [[project-profile-generation]].
 - Threshold/label sign-off with Chantel (labels) / Laura (model + match quality) — all `TODO(review)`.
 - Optional: surface flash-rejected borderline pairs with an "AI: likely different" flag.
+- **Pytest recall gate implemented (2026-06-05, commit `a4d6721`):** `pytest.ini` + `tests/test_recall.py` (Column O + N any-tier recall ≥95% asserted, skips if workbook absent) + `tests/test_scoring.py` (D10/D11 scoring cases). 18/18 passing. D5/D6 lift from L0 to L1. Side-note: `_names_compatible` docstring claims nick/nicholas are compatible but "nicholas".startswith("nick") = False (h≠k at pos 4); docstring is aspirational, pipeline meets targets without it.
 
 See [[project-expert-sheet-data-processing]], [[project-profile-generation]],
 [[reference-expert-match-pipeline]], [[feedback-commenting-style-expert-sheet]].
