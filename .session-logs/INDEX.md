@@ -1,5 +1,6 @@
 # Session Logs Index
 
+- 2026-06-05 [claude-code-demo1] Pulled latest central ~/.claude config via git pull --rebase; resolved a profile/INDEX.md rebase conflict (kept both lines: incoming workflow-payloads + local python-docx rule), completed the rebase and pushed to origin/main. ~/.claude c156ce3 (personal/2026-06-05-pull-central-claude-config.md)
 - 2026-06-05 [medbrief] Expert sheet — finalised the Chantel Phase 2 email (docx): single side-by-side user-type model-comparison table (2.5-flash vs 3.1-pro: 348 vs 252 unknowns), plain-language Summary with row-numbered examples, new Profiles section, removed pasted scratch; deleted the 3 legacy outputs (working file now sole canonical); learned python-docx hides tables from doc.paragraphs (new profile rule). Project 90d5703, ~/.claude 644cc0e (2026-06-05-chantel-phase2-email-finalise.md)
 - 2026-06-04 [medbrief] Expert sheet — added OUTPUT_MODE/WORKING_FILE flags + partitioned output columns (P1 P–U / P2 V–Z / P1.5 V→AA), deleted 4 superseded intermediates, full project restructure (scripts/ + data/{raw,interim,outputs} + docs/ + deliverables/) with repo-root path anchoring, README + requirements; verified via /tmp dry runs (Col O 98%); commits 06cb9b5 + 6a58c07 + f6d3ddb (2026-06-04-expert-sheet-restructure.md)
 - 2026-06-04 [medbrief] Phase 2 dedup strategy + Chantel email — planned USE_DB=true run, gated AI adjudication on profiles, created chantel_update_phase2.docx; project commit af96ed3 (2026-06-04-phase2-strategy-chantel-email.md)
@@ -39,3 +40,4 @@
 - 2026-04-22 [medbrief] Installed Atlassian Remote MCP in workspace .mcp.json (SSE, read-only OAuth) for MedBrief Confluence; scoped to MEDBRIEF/MDC/MD; handoff, exploration deferred (2026-04-22-confluence-mcp-setup.md)
 - 2026-04-22 [medbrief] Set up three-repo MedBrief workspace (edit target data_pipelines on Azure DevOps; context: salli-dataset-creation, medbrief); resolved Azure RSA-only SSH quirk (2026-04-22-medbrief-workspace-setup.md)
 - 2026-06-04 [medbrief] Consolidated 3 legacy expert-sheet outputs into canonical experts_working.xlsx via new combine_outputs.py; repointed all phase defaults; merged to main (2026-06-04-expert-sheet-combine-working-file.md)
+- 2026-05-28 [medbrief] **2026-05-28-expert-sheet-classification-script.md** (backfilled) (medbrief/2026-05-28-expert-sheet-classification-script.md)
