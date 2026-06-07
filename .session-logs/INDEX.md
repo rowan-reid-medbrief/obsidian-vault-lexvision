@@ -1,5 +1,6 @@
 # Session Logs Index
 
+- 2026-06-07 [claude-code-demo1] Claude Code feature audit + /harden-plan, then Phase A: python3 status line, memory: on config-auditor/obsidian-curator (agent-memory/ gitignored), /context pointers; findings fallbackModel=CLI-flag and A5 dropped; 7 high-priority items logged to IDEAS.md. ~/.claude 89f8ef3 (personal/2026-06-07-claude-code-feature-audit-phase-a.md)
 - 2026-06-05 [expert-sheet-data-processing] SDD-assessed pipeline (Spec-First L1 gated at L0 by absent tests); implemented pytest recall gate — 18/18 pass, D5/D6 L0→L1, project now Spec-Anchored. expert-sheet a4d6721 (medbrief/2026-06-05-expert-sheet-sdd-pytest-gate.md)
 - 2026-06-05 [claude-code-demo1] Built SDD maturity assessment framework (SDD-SPEC.md rubric, sdd-assessor agent, /sdd-assess skill); validated 22/22 skills-ref clean; tested on config (L2), expert-sheet (L1 two High gaps), lexvision-poc (L1 all Advisory). ~/.claude 1a8e80d (personal/2026-06-05-sdd-framework-build.md)
 - 2026-06-05 [claude-code-demo1] Fetched MedBrief course lessons 1 & 9 (Vibe Coding to Spec-Driven Development) and built two meeting-graph knowledge graphs (66/122 and 78/150 nodes/edges); fixed 3 meeting-graph bugs (venv at helpers/.venv vs scripts/.venv, stale SKILL.md H path, extract_audio.sh missing mkdir). ~/.claude d197c6f (medbrief/2026-06-05-meeting-graph-vibe-coding-course-videos.md)
