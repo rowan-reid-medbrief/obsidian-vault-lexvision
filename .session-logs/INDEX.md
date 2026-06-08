@@ -1,4 +1,5 @@
 # Session Logs Index
+- 2026-06-08 [claude-code-demo1] Meeting-graph runs for Data Engineering Discussion (115 nodes/205 edges) + Kumulus Vendor Proposal (152 nodes/334 edges) with Phase B recall recovery; fixed Teams VTT parsing; 2 skill learnings queued. ~/.claude HEAD (medbrief/2026-06-08-meeting-graph-de-kumulus.md)
 
 - 2026-06-07 [claude-code-demo1] Claude Code feature audit + /harden-plan, then Phase A: python3 status line, memory: on config-auditor/obsidian-curator (agent-memory/ gitignored), /context pointers; findings fallbackModel=CLI-flag and A5 dropped; 7 high-priority items logged to IDEAS.md. ~/.claude 89f8ef3 (personal/2026-06-07-claude-code-feature-audit-phase-a.md)
 - 2026-06-05 [expert-sheet-data-processing] SDD-assessed pipeline (Spec-First L1 gated at L0 by absent tests); implemented pytest recall gate — 18/18 pass, D5/D6 L0→L1, project now Spec-Anchored. expert-sheet a4d6721 (medbrief/2026-06-05-expert-sheet-sdd-pytest-gate.md)
