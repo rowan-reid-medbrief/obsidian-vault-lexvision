@@ -2,6 +2,12 @@
 
 ## Now (Medbrief)
 
+### Meeting Graph outputs: DE Discussion + Kumulus Proposal
+- **Last touched:** 2026-06-08
+- **Status:** Both meetings processed with Phase B recall recovery (gleaning_passes=2, NLI gate). DE Discussion (2026-06-01, ~37 min): 115 nodes, 51 substantive, 15 gap-fill nodes. Kumulus Vendor Proposal (2026-05-28, ~62 min): 152 nodes, 53 substantive, 7 gap-fill nodes (4 rejected by NLI). Teams VTT parsing fixed (UUID cue IDs + voice spans). Outputs at `~/meeting-graph-output/`.
+- **Next action:** Run `/promote-graph` or `/meeting-to-vault` to bridge both meeting outputs into the Obsidian vault.
+- [[2026-06-08-meeting-graph-de-kumulus]]
+
 ### Expert Sheet — Phase 2 dedup, pending USE_DB run + Chantel delivery
 - **Last touched:** 2026-06-05
 - **Status:** Phase 2 `scripts/detect_duplicates.py` built, validated, committed. Full AI adjudication (1,864 medium pairs) **intentionally gated on profile data** — Gemini has no new signal without specialty/location data. **Since (2026-06-04):** shared `OUTPUT_MODE`/`WORKING_FILE` env flags + non-overlapping column blocks (P1 P–U, P2 V–Z, P1.5 AA onward; commit `06cb9b5`); project restructured to `scripts/` + `data/{raw,interim,outputs}` + `docs/` + `deliverables/` with repo-root path anchoring + `README.md`/`requirements.txt` (commits `6a58c07`, `f6d3ddb`); 3 legacy outputs consolidated into canonical `data/outputs/experts_working.xlsx` via `scripts/combine_outputs.py` (commit `effe70a`). Works **on `main` only**. **Since (2026-06-05):** verified `experts_working.xlsx` faithfully consolidates all 3 phases (P1 cols Q–U 2,810 rows, P2 V–Z 5,480 rows, P1.5 AA–BF ~30-row test batch) and **deleted the 3 legacy output workbooks** — working file is now the sole canonical output. **Substantially finalised `deliverables/chantel_update_phase2.docx`** (commit `90d5703`): single side-by-side user-type model-comparison table (1 June `gemini-2.5-flash` vs 4 June `gemini-3.1-pro-preview` — newer model more cautious, 348 unknowns vs 252, +134 law firm); plain "Summary" with row-numbered real examples; new "Profiles" section; removed the pasted dup-score/keep scratch from below the sign-off. (Heads-up: discovered python-docx `doc.paragraphs` hides tables — the "Column W"/"Results" headings were never empty; new profile rule saved.)
