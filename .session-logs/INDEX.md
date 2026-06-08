@@ -1,4 +1,5 @@
 # Session Logs Index
+- 2026-06-08 [claude-code-demo1] Groomed the central ~/.claude IDEAS backlog (26 ungroomed to 0) via a 3-lens panel + 6-lens /harden-plan; 22 priority tags (scriptable lane) + manual hygiene (dedup, [parked]/[done] re-tags, reopened KF umbrella at [low]); Overnight orchestrator to [med]; 3 ideas logged, 1 whats-next learning queued. ~/.claude HEAD (personal/2026-06-08-groom-central-ideas-backlog.md)
 - 2026-06-08 [claude-code-demo1] Meeting-graph runs for Data Engineering Discussion (115 nodes/205 edges) + Kumulus Vendor Proposal (152 nodes/334 edges) with Phase B recall recovery; fixed Teams VTT parsing; 2 skill learnings queued. ~/.claude HEAD (medbrief/2026-06-08-meeting-graph-de-kumulus.md)
 
 - 2026-06-07 [claude-code-demo1] Claude Code feature audit + /harden-plan, then Phase A: python3 status line, memory: on config-auditor/obsidian-curator (agent-memory/ gitignored), /context pointers; findings fallbackModel=CLI-flag and A5 dropped; 7 high-priority items logged to IDEAS.md. ~/.claude 89f8ef3 (personal/2026-06-07-claude-code-feature-audit-phase-a.md)
