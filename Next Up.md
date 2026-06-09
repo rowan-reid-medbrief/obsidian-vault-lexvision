@@ -2,6 +2,13 @@
 
 ## Now (Medbrief)
 
+### MedBrief onboarding - ADO repos, vault coupling, brand skill
+- **Last touched:** 2026-06-09
+- **Status:** Found ADO (`MedBrief AI`) hosts 12 git repos (the AI team's primary code host); corrected notes/00,07,08 + saved a memory. Coupled the project to the vault (hub note `Projects/medbrief/MedBrief Onboarding.md`, added to the Coupled list). Built the `medbrief-brand` skill (branded docx/pptx, teal #009999 / green #72CC52 tokens, logos incl. white variants) + `notes/13` brand research; QA'd via newly-installed LibreOffice.
+- **Next action:** Resolve the brand palette (corporate teal/green vs product indigo #5E53D1); request access to GDES-174 "Templates" + the Drive/Figma brand masters to harden the skill's type scale and logo clear-space. Onboarding pack still at v1 intermediate notes.
+- [[2026-06-09-medbrief-onboarding-ado-coupling-brand-skill]]
+
+
 ### Meeting Graph outputs: DE Discussion + Kumulus Proposal
 - **Last touched:** 2026-06-09
 - **Status:** Both meetings (28 May Kumulus proposal, 1 June DE retro) filed into the lexvision-poc project with a six-part Kumulus dossier (`docs/kumulus/`) and ADR-007 (Proposed). Naming, date, and Expert Match codebase corrections applied; the /meeting-graph question-premise-as-fact bug logged to the central backlog. The raw graphs remain unpromoted at `~/meeting-graph-output/`.
