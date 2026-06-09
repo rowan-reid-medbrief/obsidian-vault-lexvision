@@ -227,16 +227,35 @@ Phase 2 — Duplicate detection (see tasks section above)
 
 ### Database access
 
-**SSH tunnel command** (opens all three ports simultaneously):
+> **Full runbook in the repo: `docs/DB_TUNNEL.md`** (human-referenceable; created 2026-06-09).
+> Keep that and this section in sync.
+
+**Jumpbox (confirmed 2026-06-09):** subscription **MedBrief Secure Review**
+(`7b66abb8-9aed-44ce-bc82-c5d07d6b9a93`), resource group `JUMHOSTS`, VM `Jumphost` (note the
+capital J; it's running with public IP 172.167.229.218).
+
+**SSH tunnel command.** Set the subscription as default first to avoid the `Not Found` error
+(see Troubleshooting), then open the tunnel.
 ```
-az ssh vm -g jumhosts -n jumphost -- -L 3309:msr-staging-db-mysql.mysql.database.azure.com:3306 -L 3308:10.3.4.4:3306 -L 3310:msr-pre-staging-db-mysql--uk-south.mysql.database.azure.com:3306
+az account set --subscription 7b66abb8-9aed-44ce-bc82-c5d07d6b9a93
+# pre-staging only (port 3310 — Phase 1 enrichment + Phase 2 USE_DB):
+az ssh vm -g JUMHOSTS -n Jumphost -- -L 3310:msr-pre-staging-db-mysql--uk-south.mysql.database.azure.com:3306
+```
+All three ports at once (historical working form, subscription pinned):
+```
+az ssh vm -g JUMHOSTS -n Jumphost --subscription 7b66abb8-9aed-44ce-bc82-c5d07d6b9a93 -- -L 3309:msr-staging-db-mysql.mysql.database.azure.com:3306 -L 3308:10.3.4.4:3306 -L 3310:msr-pre-staging-db-mysql--uk-south.mysql.database.azure.com:3306
 ```
 
 | Local port | Target | Environment |
 |-----------|--------|-------------|
-| 3309 | msr-staging-db-mysql.mysql.database.azure.com | Staging |
+| 3309 | msr-staging-db-mysql.mysql.database.azure.com | Staging (rowan.reid not provisioned) |
 | 3308 | 10.3.4.4 | **Production** |
 | 3310 | msr-pre-staging-db-mysql--uk-south.mysql.database.azure.com | **Pre-staging** (use this) |
+
+**Troubleshooting — `Operation returned an invalid status 'Not Found'`:** not a missing
+resource. `az ssh vm` makes several ARM calls and doesn't always thread `--subscription`
+through them, so one hits the *default* subscription (Azure DevTest) where `Jumphost` doesn't
+exist. Fix: `az account set --subscription 7b66abb8-...` first; if it persists, `az login`.
 
 **Pre-staging credentials** (Rowan's personal user, confirmed by Deon):
 - Host: 127.0.0.1, Port: 3310, User: rowan.reid, DB: medbrief-live
