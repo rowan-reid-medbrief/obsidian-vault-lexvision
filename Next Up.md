@@ -3,10 +3,10 @@
 ## Now (Medbrief)
 
 ### Meeting Graph outputs: DE Discussion + Kumulus Proposal
-- **Last touched:** 2026-06-08
-- **Status:** Both meetings processed with Phase B recall recovery (gleaning_passes=2, NLI gate). DE Discussion (2026-06-01, ~37 min): 115 nodes, 51 substantive, 15 gap-fill nodes. Kumulus Vendor Proposal (2026-05-28, ~62 min): 152 nodes, 53 substantive, 7 gap-fill nodes (4 rejected by NLI). Teams VTT parsing fixed (UUID cue IDs + voice spans). Outputs at `~/meeting-graph-output/`.
-- **Next action:** Run `/promote-graph` or `/meeting-to-vault` to bridge both meeting outputs into the Obsidian vault.
-- [[2026-06-08-meeting-graph-de-kumulus]]
+- **Last touched:** 2026-06-09
+- **Status:** Both meetings (28 May Kumulus proposal, 1 June DE retro) filed into the lexvision-poc project with a six-part Kumulus dossier (`docs/kumulus/`) and ADR-007 (Proposed). Naming, date, and Expert Match codebase corrections applied; the /meeting-graph question-premise-as-fact bug logged to the central backlog. The raw graphs remain unpromoted at `~/meeting-graph-output/`.
+- **Next action:** Engagement work in lexvision-poc: decide the Kumulus-vs-Medbrief build split, reconcile the three stack divergences (ADR-002/005/006), agree acceptance benchmarks (ADR-004), ratify or revise ADR-007, and review Kumulus's revised zero-cost proposal.
+- [[2026-06-09-kumulus-dossier-lexvision-poc]]
 
 ### Expert Sheet — Phase 2 dedup, pending USE_DB run + Chantel delivery
 - **Last touched:** 2026-06-05
