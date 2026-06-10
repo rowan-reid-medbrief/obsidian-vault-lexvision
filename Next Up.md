@@ -11,9 +11,9 @@
 
 ### Kumulus / MedBrief engagement (lexvision-poc)
 - **Last touched:** 2026-06-10
-- **Status:** Overnight run reviewed, corrected, merged to `main`. Since: the `c3b` DB-schema capture is reconciled across `c5`/`d1`/`09` and the stale overnight snapshots are date-stamped with forward-pointers; new `research/c7-annotation-tooling.md` answers Laura's PII-ground-truth ask (Label Studio primary, INCEpTION runner-up, Presidio as the "simple AI" first pass, South et al. pre-annotation caveat). Raw meeting graphs remain unpromoted at `~/meeting-graph-output/`.
-- **Next action:** Draft + send the branded `stream1-laura-asks.docx` (with a short c7 summary) to Laura and Deon; chase the 5 residual confirmations (Deon #2/#3/#7, NICE #4, Agilio #6); decide whether to brand the stream2 companion; still open: build split, ADR-002/005/006 reconciliation, ADR-004 benchmarks, ratify ADR-007 (optionally ADR-008 confirming the specialist PII layer is net-new).
-- [[2026-06-10-kumulus-deid-tooling-db-reconciliation]]
+- **Status:** Revised (gen 3) proposal received and assessed: Kumulus keeps the comparison layer, MedBrief owns the prep zone; position is ADR-008 (accept in principle, eight gating conditions). Dossier re-baselined; 206-agent corpus audit run, 69 verified findings applied (incl. the CausalBench citation chain in the canonical benchmarking docs). Stream 3 response brief + branded docx produced; stream1 docx is stale against its corrected markdown.
+- **next:** Tone pass on stream3 (Rowan flagged the register), regenerate both branded docx, send to Laura and Deon, choose the 11 vs 15 June slot (Brendan's non-UK compliance answer favours the later).
+- [[2026-06-10-kumulus-revised-proposal-assessment-and-corpus-audit]]
 
 ### Expert Sheet — Phase 2 dedup, pending USE_DB run + Chantel delivery
 - **Last touched:** 2026-06-09
