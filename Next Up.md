@@ -9,11 +9,11 @@
 - [[2026-06-09-medbrief-onboarding-ado-coupling-brand-skill]]
 
 
-### Meeting Graph outputs: DE Discussion + Kumulus Proposal
-- **Last touched:** 2026-06-09
-- **Status:** Both meetings (28 May Kumulus proposal, 1 June DE retro) filed into the lexvision-poc project with a six-part Kumulus dossier (`docs/kumulus/`) and ADR-007 (Proposed). Naming, date, and Expert Match codebase corrections applied; the /meeting-graph question-premise-as-fact bug logged to the central backlog. The raw graphs remain unpromoted at `~/meeting-graph-output/`.
-- **Next action:** Engagement work in lexvision-poc: decide the Kumulus-vs-Medbrief build split, reconcile the three stack divergences (ADR-002/005/006), agree acceptance benchmarks (ADR-004), ratify or revise ADR-007, and review Kumulus's revised zero-cost proposal.
-- [[2026-06-09-kumulus-dossier-lexvision-poc]]
+### Kumulus / MedBrief engagement (lexvision-poc)
+- **Last touched:** 2026-06-10
+- **Status:** Overnight research run executed, reviewed, corrected and fast-forward merged into `main`; pre-staging DB schema captured (`c3b`, deep-verify #5 closed); all 7 `d2` claims worked (`d2b`); MedBrief-branded stream1 deliverable produced. The raw meeting graphs remain unpromoted at `~/meeting-graph-output/`.
+- **Next action:** Send the branded `stream1-laura-asks.docx` to Laura and Deon; chase the 5 residual confirmations (Deon on #2/#3/#7, NICE on #4, Agilio on #6); reconcile the c5 entity model against the captured schema; decide whether to brand the stream2 companion; still open from before: build split, ADR-002/005/006 reconciliation, ADR-004 benchmarks, ratify ADR-007.
+- [[2026-06-10-kumulus-overnight-run-review-merge-brand]]
 
 ### Expert Sheet — Phase 2 dedup, pending USE_DB run + Chantel delivery
 - **Last touched:** 2026-06-09
