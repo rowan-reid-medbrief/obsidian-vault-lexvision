@@ -11,9 +11,9 @@
 
 ### Kumulus / MedBrief engagement (lexvision-poc)
 - **Last touched:** 2026-06-10
-- **Status:** Overnight research run executed, reviewed, corrected and fast-forward merged into `main`; pre-staging DB schema captured (`c3b`, deep-verify #5 closed); all 7 `d2` claims worked (`d2b`); MedBrief-branded stream1 deliverable produced. The raw meeting graphs remain unpromoted at `~/meeting-graph-output/`.
-- **Next action:** Send the branded `stream1-laura-asks.docx` to Laura and Deon; chase the 5 residual confirmations (Deon on #2/#3/#7, NICE on #4, Agilio on #6); reconcile the c5 entity model against the captured schema; decide whether to brand the stream2 companion; still open from before: build split, ADR-002/005/006 reconciliation, ADR-004 benchmarks, ratify ADR-007.
-- [[2026-06-10-kumulus-overnight-run-review-merge-brand]]
+- **Status:** Overnight run reviewed, corrected, merged to `main`. Since: the `c3b` DB-schema capture is reconciled across `c5`/`d1`/`09` and the stale overnight snapshots are date-stamped with forward-pointers; new `research/c7-annotation-tooling.md` answers Laura's PII-ground-truth ask (Label Studio primary, INCEpTION runner-up, Presidio as the "simple AI" first pass, South et al. pre-annotation caveat). Raw meeting graphs remain unpromoted at `~/meeting-graph-output/`.
+- **Next action:** Draft + send the branded `stream1-laura-asks.docx` (with a short c7 summary) to Laura and Deon; chase the 5 residual confirmations (Deon #2/#3/#7, NICE #4, Agilio #6); decide whether to brand the stream2 companion; still open: build split, ADR-002/005/006 reconciliation, ADR-004 benchmarks, ratify ADR-007 (optionally ADR-008 confirming the specialist PII layer is net-new).
+- [[2026-06-10-kumulus-deid-tooling-db-reconciliation]]
 
 ### Expert Sheet — Phase 2 dedup, pending USE_DB run + Chantel delivery
 - **Last touched:** 2026-06-09
