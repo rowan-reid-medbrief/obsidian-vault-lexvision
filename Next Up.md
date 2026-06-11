@@ -11,9 +11,9 @@
 
 ### Kumulus / MedBrief engagement (lexvision-poc)
 - **Last touched:** 2026-06-11
-- **Status:** Stream 3 tone-passed (five flagged phrases plus an AI-speak sweep) and verified via a four-lens workflow, which caught a covering-email misquote and a hedge weakening the £22k funding condition; both branded docx rebuilt from now-tracked specs; ADR-007/ADR-008 still Proposed.
-- **next:** Rowan: confirm the six judgment-call rewordings, approve the covering email, pick the sending account, send both docx to Laura and Deon, confirm the 15 June 15:00 Dublin slot with João.
-- [[2026-06-11-kumulus-stream3-tone-pass-and-docx-rebuild]]
+- **Status:** Introspective review of the Landing Pad complete (51-agent adversarial sweep); 18 issues fixed at source and committed (51cc4aa). Biggest: the patent component numerals were a fabricated 300-series (verified against the patent; corrected to 100/150/152/154/156/120A-D everywhere, with an append-only erratum in decisions.md) and LexTime was mis-cited as an SRL benchmark. Landing Pad.docx rebuilt and verified clean; ADR-007/ADR-008 still Proposed.
+- **next:** Send the corrected Landing Pad to Laura and Deon; confirm the 15 June 15:00 Dublin slot with João; resolve the ~/.claude cross-machine divergence; chase the named residuals (Deon, NICE in writing, Agilio).
+- [[2026-06-11-kumulus-introspective-review-and-corrective-sweep]]
 
 ### Expert Sheet — Phase 2 dedup, pending USE_DB run + Chantel delivery
 - **Last touched:** 2026-06-09
