@@ -10,10 +10,10 @@
 
 
 ### Kumulus / MedBrief engagement (lexvision-poc)
-- **Last touched:** 2026-06-10
-- **Status:** Revised (gen 3) proposal received and assessed: Kumulus keeps the comparison layer, MedBrief owns the prep zone; position is ADR-008 (accept in principle, eight gating conditions). Dossier re-baselined; 206-agent corpus audit run, 69 verified findings applied (incl. the CausalBench citation chain in the canonical benchmarking docs). Stream 3 response brief + branded docx produced; stream1 docx is stale against its corrected markdown.
-- **next:** Tone pass on stream3 (Rowan flagged the register), regenerate both branded docx, send to Laura and Deon, choose the 11 vs 15 June slot (Brendan's non-UK compliance answer favours the later).
-- [[2026-06-10-kumulus-revised-proposal-assessment-and-corpus-audit]]
+- **Last touched:** 2026-06-11
+- **Status:** Stream 3 tone-passed (five flagged phrases plus an AI-speak sweep) and verified via a four-lens workflow, which caught a covering-email misquote and a hedge weakening the £22k funding condition; both branded docx rebuilt from now-tracked specs; ADR-007/ADR-008 still Proposed.
+- **next:** Rowan: confirm the six judgment-call rewordings, approve the covering email, pick the sending account, send both docx to Laura and Deon, confirm the 15 June 15:00 Dublin slot with João.
+- [[2026-06-11-kumulus-stream3-tone-pass-and-docx-rebuild]]
 
 ### Expert Sheet — Phase 2 dedup, pending USE_DB run + Chantel delivery
 - **Last touched:** 2026-06-09
