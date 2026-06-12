@@ -2,6 +2,12 @@
 
 ## Now (Medbrief)
 
+### MedBrief onboarding - product walkthrough meeting-graphs
+- **Last touched:** 2026-06-12
+- **Status:** Fetched Chantel's two walkthroughs from SharePoint and built two meeting-graphs (219 nodes/529 edges; 306/749) in `~/meeting-graph-output/`, covering the full feature surface and the matter-creation flow. Transcribed with MLX large-v3-turbo on the GPU.
+- **next:** Fold the two walkthrough graphs into the project `notes/` via `/graph-to-notes` and add `docs/SOURCES.md` up-links (idea logged in `docs/IDEAS.md`).
+- [[2026-06-12-medbrief-walkthrough-graphs-and-mlx-wiring]]
+
 ### MedBrief onboarding - ADO repos, vault coupling, brand skill
 - **Last touched:** 2026-06-09
 - **Status:** Found ADO (`MedBrief AI`) hosts 12 git repos (the AI team's primary code host); corrected notes/00,07,08 + saved a memory. Coupled the project to the vault (hub note `Projects/medbrief/MedBrief Onboarding.md`, added to the Coupled list). Built the `medbrief-brand` skill (branded docx/pptx, teal #009999 / green #72CC52 tokens, logos incl. white variants) + `notes/13` brand research; QA'd via newly-installed LibreOffice.
