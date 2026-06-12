@@ -1,20 +1,23 @@
 ---
 name: reference_meeting_graph_outputs
-description: Locations and stats for the two meeting-graph runs completed 2026-06-08 (DE Discussion + Kumulus Vendor Proposal)
+description: Locations and stats for meeting-graph runs (7 total under ~/meeting-graph-output/). Details the two Phase-B runs (DE Discussion + Kumulus); DE re-built 2026-06-12.
 metadata: 
   node_type: memory
   type: reference
   originSessionId: 95fbdc5d-e42a-43bb-9c2b-56f4db01df7a
 ---
 
-Both runs used Phase B recall recovery (gapfill, grounded_admit, chunk_budget, anchors, validate_repair, gleaning_passes=2).
+Both DE + Kumulus used Phase B recall recovery (gapfill, grounded_admit, chunk_budget, anchors, validate_repair, gleaning_passes=2).
+
+**Full inventory (7 runs on this machine):** DE + Kumulus (Phase B on, detailed below); mb-product-walkthrough-2026-06-03 + medbrief-walkthrough-part2-2026-06-08 (presenter-dominated solo demos, Phase B off by design, already rebuilt 2026-06-12 with current code); beyond-vibe-coding-2026-06-05 + vibe-coding-vs-sdd-2026-06-05 (pre-Phase-B, reference content, not re-run); kumulus-regroup-2026-06-12 (UNFINISHED: transcribe only, no graph built). None ingested into vault/projects yet (no `.meeting-graphs` promote store, no `graph_ref` pointers). One manual lift: Kumulus summary.md referenced by hand in `lexvision-poc/docs/kumulus/research/c1-kumulus-spec.md`.
 
 **Data Engineering Discussion (2026-06-01, ~37 min)**
 - Output: `~/meeting-graph-output/data-engineering-discussion-2026-06-07/`
 - 115 nodes, 51 substantive, 205 edges
 - 15 gap-fill nodes across 2 gleaning passes (containment only, NLI not triggered)
-- Participants: Rowan Reid, Laura Gongas, Deon Kuhn, Brendan, Mediha, Vanessa, Chantel Pilla (Teams VTT — named speakers)
+- Participants (3 only): Rowan Reid, Deon Kuhn, Laura Gongas. The other named Person nodes (Brendan, Mediha, Vanessa, Chantel Pilla, John (Cumulus), Fatima, Dave) are people MENTIONED in discussion, not attendees. `is_participant` is unset on all nodes; the transcript labels only the 3. (Earlier note listing 7 participants was wrong.)
 - Topics: Expert Match storage endpoint, Cumulus ground truth, NICE API, data architecture proposal, priority order
+- Re-run 2026-06-12 with current code (f9403c4 build fix, same Phase B flags) confirmed the graph is byte-equivalent to the original: 115 nodes / 205 edges / 51 substantive, identical edge set, `stale_lone_speaker=False`. The build fix had no net effect on this meeting (the 5 extra edges it surfaced at build were stripped by the shared repair stage). The duplicate 06-12 output dir was removed as confirmed-equivalent; the 06-07 dir is the canonical graph.
 
 **Kumulus & Medbrief Vendor Proposal (2026-05-28, ~62 min)**
 - Output: `~/meeting-graph-output/kumulus-medbrief-2026-06-07/`
