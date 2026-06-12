@@ -7,7 +7,9 @@ metadata:
   originSessionId: bd086078-475a-4d98-8622-e55b4604f9a3
 ---
 
-Rebuilding `docs/kumulus/deliverables/Landing Pad.docx` from `landing-pad.spec.json` via `landing-pad-build.py` needs python-docx, which is NOT installed in the project `.venv` or in base `python3` on this machine. The only working interpreter found is the medbrief-brand skill's venv: `~/.claude/skills/medbrief-brand/scripts/.venv/bin/python3` (python-docx 1.2.0, python3.14).
+UPDATE 2026-06-12: the doc is now hand-edited and was renamed to `docs/kumulus/deliverables/Rowan Kumulus Research.docx`; the spec/`landing-pad-build.py` generator is stale and should NOT be used to rebuild (it would wipe the manual edits, see [[landing-pad-manual-edits]]). The venv below is still the python-docx interpreter to use for editing the docx directly.
+
+Editing or inspecting the Kumulus docx (`Rowan Kumulus Research.docx`, formerly `Landing Pad.docx`) via python-docx needs python-docx, which is NOT installed in the project `.venv` or in base `python3` on this machine. The only working interpreter found is the medbrief-brand skill's venv: `~/.claude/skills/medbrief-brand/scripts/.venv/bin/python3` (python-docx 1.2.0, python3.14).
 
 Rebuild command:
 
