@@ -10,10 +10,10 @@
 
 
 ### Kumulus / MedBrief engagement (lexvision-poc)
-- **Last touched:** 2026-06-11
-- **Status:** Introspective review of the Landing Pad complete (51-agent adversarial sweep); 18 issues fixed at source and committed (51cc4aa). Biggest: the patent component numerals were a fabricated 300-series (verified against the patent; corrected to 100/150/152/154/156/120A-D everywhere, with an append-only erratum in decisions.md) and LexTime was mis-cited as an SRL benchmark. Landing Pad.docx rebuilt and verified clean; ADR-007/ADR-008 still Proposed.
-- **next:** Send the corrected Landing Pad to Laura and Deon; confirm the 15 June 15:00 Dublin slot with João; resolve the ~/.claude cross-machine divergence; chase the named residuals (Deon, NICE in writing, Agilio).
-- [[2026-06-11-kumulus-introspective-review-and-corrective-sweep]]
+- **Last touched:** 2026-06-12
+- **Status:** Working doc renamed `Landing Pad.docx` → `Rowan Kumulus Research.docx` and hand-edited in Rowan's voice: patent and ADR/decision reference numbers removed, M3–M12 benchmark cells narrated (links kept), GLiNER/Presidio cells clarified, M2 typo fixed. ~15 voice patterns captured to `~/.claude/profile/writing-voice.md`. The `landing-pad.spec.json` generator is now stale; do NOT rebuild (would wipe manual edits).
+- **next:** Send the corrected `Rowan Kumulus Research.docx` to Laura and Deon; confirm the 15 June 15:00 Dublin slot with João; retire/reconcile the stale Landing Pad generator (IDEAS.md); resolve the ~/.claude cross-machine divergence; chase the named residuals (Deon, NICE in writing, Agilio).
+- [[2026-06-12-kumulus-tone-profile-and-landing-pad-edits]]
 
 ### Expert Sheet — Phase 2 dedup, pending USE_DB run + Chantel delivery
 - **Last touched:** 2026-06-09
