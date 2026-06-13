@@ -1,0 +1,164 @@
+{
+  "chapters": [
+    {
+      "id": "chapter:01",
+      "index": 1,
+      "title": "Matter dashboard, the four views and the renewal cycle",
+      "summary": "Chantel opens MedBrief logged in as a super-admin and walks the matter dashboard's four views (last viewed, added as fee earner, accepted invitations, renewals). She explains the two-year licence then annual renewal cycle and the 30/7/1-day reminder emails.",
+      "start_ts": 1.84,
+      "end_ts": 131.66,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:02",
+      "index": 2,
+      "title": "Creating a matter: client option and wizard versus classic modal",
+      "summary": "She covers the three matter-creation entry points a super-admin sees (add client, classic, new wizard) and what clients see instead. The classic modal-and-flyout is contrasted with the newer matter-creation wizard, which is now the standard route.",
+      "start_ts": 131.66,
+      "end_ts": 189.1,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:03",
+      "index": 3,
+      "title": "Wizard overview document: default, service-dependent and summary pages",
+      "summary": "Chantel shares a summary document that maps the wizard flow: the default pages everyone sees, the service-specific pages that appear based on first-page selections (chronology, records request), supporting documents for consent forms and death certificates, and the final summary page.",
+      "start_ts": 189.1,
+      "end_ts": 303.48,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:04",
+      "index": 4,
+      "title": "Live wizard services page and selecting clinical negligence services",
+      "summary": "Working live in the Bulldog/Ditcher dev client, she explains client-level service defaults and the services page she dislikes. She picks clinical negligence over personal injury and steps through the service questions: records request, review before sorting, early case assessment, sorted records, chronology and schedule of radiology.",
+      "start_ts": 303.48,
+      "end_ts": 745.96,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:05",
+      "index": 5,
+      "title": "Matter detail page: manager, billing codes, contacts and case data",
+      "summary": "She completes the matter detail pages: reference number, matter manager drawn from client admin users, optional billing code (compulsory and predefined for defendant firms like Hampsons), team and additional contacts who receive digest and automated emails. Then case type, allegations, claim value, dates of negligence and knowledge, and the limitation date.",
+      "start_ts": 745.96,
+      "end_ts": 996.34,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:06",
+      "index": 6,
+      "title": "Patient details and the mother-and-child obstetrics case",
+      "summary": "Chantel fills in patient details (name, date of birth, deceased status) and shows how an obstetrics case type pre-populates two patients, mother and child. She covers adding additional patients and children, selecting the claimant, and naming defendants.",
+      "start_ts": 996.34,
+      "end_ts": 1135.46,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:07",
+      "index": 7,
+      "title": "Records request service page and trust selection",
+      "summary": "Because records request was selected, the wizard shows the records request page. She selects the trust or medical institution from a predefined list (with pre-populated fields), marks it as new records for both patients, and explains the against-trust checkbox and how the matter name is generated from claimant and defendant.",
+      "start_ts": 1135.46,
+      "end_ts": 1243.6,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:08",
+      "index": 8,
+      "title": "Sort and paginate settings and the chronology service page",
+      "summary": "She walks the sort-and-paginate page (per-centre versus continuous pagination, prefixes, padding, page-number position and background) with its live preview. Then the chronology service page: chronology for which patient, key date range, and whether liability is admitted, prompting a discussion of the missing don't-know option.",
+      "start_ts": 1243.6,
+      "end_ts": 1404.34,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:09",
+      "index": 9,
+      "title": "Records destruction, supporting documents and creating the matter",
+      "summary": "Chantel sets what happens to records once done (destroy-all by default), uploads the form-of-authority consent forms required per patient for a records request, notes the death certificate requirement for deceased patients, reviews the summary page and creates the matter.",
+      "start_ts": 1404.34,
+      "end_ts": 1526.84,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:10",
+      "index": 10,
+      "title": "Matter dashboard after creation: notes and records request widgets",
+      "summary": "Landing on the new matter's dashboard, she shows the displayed patient details, the MedBrief-admin-only notes section with important-flag highlighting and sorting, and the two records request service widgets created for the two patients.",
+      "start_ts": 1526.84,
+      "end_ts": 1665.72,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:11",
+      "index": 11,
+      "title": "Confluence detour: matter flow diagram and the glossary",
+      "summary": "She opens the MSR Products Confluence space, pointing to the matter flow diagram and the frequently-used-terms glossary. She defines the hierarchy of service group, service request and service option, and explains terms like fee earner.",
+      "start_ts": 1665.72,
+      "end_ts": 1806.3,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:12",
+      "index": 12,
+      "title": "Batches, clinical reports and additional requests on the dashboard",
+      "summary": "Back on the dashboard she explains batches: linking or creating a batch request, that batches are only created when sorting or radiology is involved, and the hosting-only fallback. She covers the clinical reports group (early case assessment, chronology and schedule of radiology combined) and additional requests used for ad-hoc work and disclosures.",
+      "start_ts": 1806.3,
+      "end_ts": 2068.53,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:13",
+      "index": 13,
+      "title": "Creating a sorting session and AI pre-processing via DocSorter",
+      "summary": "Chantel creates a sorting session, choosing between a client or MedBrief sort, selecting clinicians for each DocSorter stage (sorting, dating, admissions, file note and QA), and uploading a completed batch. She explains the requires-pre-processing flag that triggers AI unitisation and classification (the Sally system) before sending to the sorter.",
+      "start_ts": 2068.53,
+      "end_ts": 2471.97,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:14",
+      "index": 14,
+      "title": "Records page folder structure and the sorted-records flow",
+      "summary": "She opens the records page with its folder tree and viewer, describing the four parent folders (records, case documentation, private folders, unsorted records), how private and case-documentation folders are auto-created per viewer or invited expert, and how sorted records are pushed from DocSorter into a ZZZ sorting-session folder for cleanup.",
+      "start_ts": 2471.97,
+      "end_ts": 2746.17,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:15",
+      "index": 15,
+      "title": "Grace Clayton example matter and the sorted index structure",
+      "summary": "Using the Grace Clayton dev matter as a reference, Chantel shows the sorted index hierarchy: trust or institution, then admissions or events, then the records, repeated per patient so duplicates appear. She covers date ranges, page numbers and the bookmarks that mark updates added after a sorting session.",
+      "start_ts": 2746.17,
+      "end_ts": 2995.81,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:16",
+      "index": 16,
+      "title": "Expert folders, suppressed invitations and session wrap-up",
+      "summary": "She explains case-documentation expert folders: the bell icon for disabled users whose folders are kept, and the suppressed-invitation workflow where a fee earner prepares an expert's folder before sending the invitation email from the users tab. The session closes with agreement to schedule a longer follow-up.",
+      "start_ts": 2995.81,
+      "end_ts": 3444.71,
+      "topic_ids": [],
+      "frame_ids": []
+    }
+  ]
+}

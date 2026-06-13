@@ -1,0 +1,54 @@
+{
+  "chapters": [
+    {
+      "id": "chapter:01",
+      "index": 1,
+      "title": "Expert Match Storage Endpoint Integration",
+      "summary": "Laura opens with a request for the dev team to call the AI ingestion endpoint whenever an expert or case is created, updated, or deleted — removing the need for manual sync. The team discusses the update queue table, cache invalidation, and whether this task should sit with Deon or Rowan.",
+      "start_ts": 0.0,
+      "end_ts": 480.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:02",
+      "index": 2,
+      "title": "Cumulus Scope and Pseudonymization Ground Truth",
+      "summary": "Laura introduces the Cumulus partnership scope: entity extraction and pseudonymization. The team agrees they need to create their own ground truth (via clinician annotation of deceased-patient cases) to evaluate Cumulus's output, and discusses tooling for annotation and pre-population with AI to reduce clinician burden.",
+      "start_ts": 480.0,
+      "end_ts": 1050.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:03",
+      "index": 3,
+      "title": "Cumulus Flow Diagram and NICE API Compliance",
+      "summary": "Laura shares her screen showing Cumulus's proposed pipeline: guideline structuring (NICE) and case entity extraction running in parallel before feeding a reasoning layer. The team debates NICE API key sharing, compliance (UK-based requirement), and whether to let Cumulus use the key via Azure Key Vault or to ingest NICE guidelines internally and hand Cumulus the JSON output.",
+      "start_ts": 1050.0,
+      "end_ts": 1620.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:04",
+      "index": 4,
+      "title": "Data Architecture Review and Rowan's Onboarding",
+      "summary": "Laura asks Rowan to review Cumulus's data architecture proposal (Databricks, Azure Data Factory, Data Lake) and assess whether it is fit for purpose, citing concerns about vendors upselling costly or non-scalable services. Deon suggests using the enterprise skills development platform. Rowan is candid about his limited data engineering tool experience but commits to applying his judgement.",
+      "start_ts": 1620.0,
+      "end_ts": 2000.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:05",
+      "index": 5,
+      "title": "Priorities, Human-in-the-Loop, and Closing Decisions",
+      "summary": "The team wraps up remaining items: Sally integration stays with Deon; human-in-the-loop (thumbs up/down for Ask Alex chat) is Dave's ticket but Rowan may help with data collation later; Deon takes back the storage endpoint task after assessing it requires too much context for Rowan to ramp on right now. Final priority order: Cumulus ground truth, data architecture review, then ongoing sprint work.",
+      "start_ts": 2000.0,
+      "end_ts": 2265.28,
+      "topic_ids": [],
+      "frame_ids": []
+    }
+  ]
+}

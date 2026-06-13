@@ -1,0 +1,122 @@
+{"chapters": [
+  {
+    "id": "chapter:01",
+    "index": 1,
+    "title": "Introductions and Screen Share",
+    "summary": "SPEAKER_02 (Medbrief) opens the meeting, introduces John from Kumulus, and invites him to present. John shares his screen after a brief technical fumble.",
+    "start_ts": 5.451,
+    "end_ts": 59.011,
+    "topic_ids": [],
+    "frame_ids": []
+  },
+  {
+    "id": "chapter:02",
+    "index": 2,
+    "title": "Proposal Overview and Context Recap",
+    "summary": "John recaps the proposal scope: gathering NICE guideline data, comparing it with medical-legal case documents, data anonymisation, and data tokenisation. He outlines what the presentation will cover.",
+    "start_ts": 59.011,
+    "end_ts": 229.0,
+    "topic_ids": [],
+    "frame_ids": []
+  },
+  {
+    "id": "chapter:03",
+    "index": 3,
+    "title": "In-Scope and Out-of-Scope Definition",
+    "summary": "John walks through the fixed-fee scope boundaries: one medical domain, one or two real cases, entity extraction, anonymisation, and an initial case-vs-guideline comparison. Out-of-scope items include handwritten note OCR from scratch, full historical NICE processing, and production application development.",
+    "start_ts": 229.0,
+    "end_ts": 357.571,
+    "topic_ids": [],
+    "frame_ids": []
+  },
+  {
+    "id": "chapter:04",
+    "index": 4,
+    "title": "Q&A: Guidelines, Handwritten Notes, and NICE API Access",
+    "summary": "Laura (Medbrief) asks about multiple NICE guideline references per case; Steve clarifies that cases typically reference one to three guidelines, rarely more. The group also discusses handwritten notes (present in every case) and confirms Medbrief's existing OCR can be reused. Laura asks about deterministic pseudonymisation and NICE API key access.",
+    "start_ts": 357.571,
+    "end_ts": 908.611,
+    "topic_ids": [],
+    "frame_ids": []
+  },
+  {
+    "id": "chapter:05",
+    "index": 5,
+    "title": "NICE API Historical Guidelines and Step 1: Data Ingestion",
+    "summary": "John explains that the NICE API stores historical guideline versions queryable by year and ID, reducing the need for Kumulus to maintain its own archive. Steve flags a two-year-old concern about archive availability that may now be resolved. John describes Step 1 (NICE API) and Step 2 (case PDF ingestion), including chunking and metadata strategy.",
+    "start_ts": 908.611,
+    "end_ts": 1141.249,
+    "topic_ids": [],
+    "frame_ids": []
+  },
+  {
+    "id": "chapter:06",
+    "index": 6,
+    "title": "Entity Extraction, Identity Resolution, and Pseudonymisation",
+    "summary": "John covers Steps 3 and 4: detecting and classifying entities (patient, doctor, hospital) across documents using similarity matching, and replacing PII with deterministic tokens before sending data to LLMs. Brandon raises the need to agree an entity classification schema with Medbrief's data science team before coding begins.",
+    "start_ts": 1141.249,
+    "end_ts": 1979.0,
+    "topic_ids": [],
+    "frame_ids": []
+  },
+  {
+    "id": "chapter:07",
+    "index": 7,
+    "title": "Full Architecture Walkthrough: Data Factory, Databricks, and AI Layer",
+    "summary": "John presents the end-to-end Azure architecture: BLOB storage, Data Factory for orchestration, Databricks for raw/silver/gold layer processing, Azure AI Foundry for LLM inference, and Azure Monitor for observability. He explains why Databricks is preferred over Microsoft Fabric for this unstructured, parallel-processing workload.",
+    "start_ts": 1979.0,
+    "end_ts": 2090.0,
+    "topic_ids": [],
+    "frame_ids": []
+  },
+  {
+    "id": "chapter:08",
+    "index": 8,
+    "title": "Case-vs-Guideline Comparison Logic and Evaluation Strategy",
+    "summary": "John walks through the deviation-check logic: selecting a case, retrieving the matching NICE guideline version, cross-referencing clinical events, and producing an evidence pack with page-level traceability. Laura notes that clinician-reviewed ground truth already exists for the sample cases; Momoko (Medbrief) raises the challenge of evaluating pseudonymisation on handwritten content that OCR may have missed.",
+    "start_ts": 2090.0,
+    "end_ts": 2496.0,
+    "topic_ids": [],
+    "frame_ids": []
+  },
+  {
+    "id": "chapter:09",
+    "index": 9,
+    "title": "Project Activities, Success Criteria, and Delivery Approach",
+    "summary": "John summarises the six delivery steps (scope alignment, kickoff, data processing, entity extraction, comparison, handover), outlines the WBS and Gantt approach, and reviews success criteria covering NICE API access, entity extraction, anonymisation, comparison quality, and explainability. Laura requests quantitative evaluation metrics rather than manual review.",
+    "start_ts": 2496.0,
+    "end_ts": 2691.0,
+    "topic_ids": [],
+    "frame_ids": []
+  },
+  {
+    "id": "chapter:10",
+    "index": 10,
+    "title": "Microsoft Funding, Timeline, and Milestone Structure",
+    "summary": "John presents the 10-to-12-week timeline (two weeks for testing), framing the engagement as an MVP rather than a standard POV. He stresses the 12-week Microsoft funding deadline and confirms that Medbrief can take full ownership of deliverables at the end of milestone one without committing to a phase two.",
+    "start_ts": 2691.0,
+    "end_ts": 3068.0,
+    "topic_ids": [],
+    "frame_ids": []
+  },
+  {
+    "id": "chapter:11",
+    "index": 11,
+    "title": "Azure Cost Estimates and Assumptions/Limits",
+    "summary": "John walks through the Azure cost calculator (capped estimate ~$700/month with 30% buffer, Databricks as the dominant cost) and reads through assumptions and fixed-fee limits: one medical domain, up to two cases, no model fine-tuning, no compliance certification, no production app integration. Laura confirms their MLOps engineer will review the infrastructure choices.",
+    "start_ts": 3068.0,
+    "end_ts": 3422.0,
+    "topic_ids": [],
+    "frame_ids": []
+  },
+  {
+    "id": "chapter:12",
+    "index": 12,
+    "title": "Pricing Discussion, Scope Revision, and Close",
+    "summary": "John reveals the full service cost of ~35,000 pounds reduced to 13,000 pounds net after Microsoft incentives across two funding streams (Data POV and AI POV). Brandon indicates Medbrief had expected full sponsorship and may prefer to resource internally; John offers to produce a revised zero-cost-to-client proposal by removing the comparison layer and leaning on Medbrief's team. The meeting closes with thanks and a five-business-day timeline for the revised proposal.",
+    "start_ts": 3422.0,
+    "end_ts": 3716.211,
+    "topic_ids": [],
+    "frame_ids": []
+  }
+]}

@@ -9,7 +9,7 @@ metadata:
 
 Both DE + Kumulus used Phase B recall recovery (gapfill, grounded_admit, chunk_budget, anchors, validate_repair, gleaning_passes=2).
 
-**Full inventory (7 runs on this machine):** DE + Kumulus (Phase B on, detailed below); mb-product-walkthrough-2026-06-03 + medbrief-walkthrough-part2-2026-06-08 (presenter-dominated solo demos, Phase B off by design, already rebuilt 2026-06-12 with current code); beyond-vibe-coding-2026-06-05 + vibe-coding-vs-sdd-2026-06-05 (pre-Phase-B, reference content, not re-run); kumulus-regroup-2026-06-12 (UNFINISHED: transcribe only, no graph built). None ingested into vault/projects yet (no `.meeting-graphs` promote store, no `graph_ref` pointers). One manual lift: Kumulus summary.md referenced by hand in `lexvision-poc/docs/kumulus/research/c1-kumulus-spec.md`.
+**Full inventory (7 runs on this machine):** DE + Kumulus (Phase B on, detailed below); mb-product-walkthrough-2026-06-03 + medbrief-walkthrough-part2-2026-06-08 (presenter-dominated solo demos, Phase B off by design, already rebuilt 2026-06-12 with current code); beyond-vibe-coding-2026-06-05 + vibe-coding-vs-sdd-2026-06-05 (pre-Phase-B, reference content, not re-run); kumulus-regroup-2026-06-12 (FULLY BUILT: 170 nodes, 287KB graphml; the earlier "UNFINISHED" note was wrong). As of 2026-06-13 all 5 of {kumulus-medbrief, data-engineering-discussion, kumulus-regroup, mb-product-walkthrough, medbrief-walkthrough-part2} are promoted into the vault `.meeting-graphs/` store (the R6/H+GATE-2 calibration). Vault NOTES from that run were reverted at Rowan's request; no `graph_ref` pointers in visible notes. See [[reference_r6h_gate2_calibration]]. One manual lift: Kumulus summary.md referenced by hand in `lexvision-poc/docs/kumulus/research/c1-kumulus-spec.md`.
 
 **Data Engineering Discussion (2026-06-01, ~37 min)**
 - Output: `~/meeting-graph-output/data-engineering-discussion-2026-06-07/`
@@ -26,4 +26,4 @@ Both DE + Kumulus used Phase B recall recovery (gapfill, grounded_admit, chunk_b
 - Speaker mapping: SPEAKER_03=Joao Margura (Kumulus), SPEAKER_06=Laura Gongas, SPEAKER_00=Brendan Hughes, SPEAKER_01=Steve Ashford, SPEAKER_02=Vanessa Patrocinio
 - Key commercial: £35k full cost, £22k Microsoft discount, £13k net; scope revised (comparison layer removed); revised proposal in 5 business days
 
-**Next step:** Run `/promote-graph` or `/meeting-to-vault` to bridge outputs into the Obsidian vault.
+**Next step:** Place the seeded meetings' real content into their projects (Kumulus/DE -> lexvision-poc, walkthroughs -> medbrief-onboarding); the vault `.meeting-graphs/` store and `~/meeting-graph-output/` are the sources, and `calibration-misplaced-cleanup.md` lists the mis-placed bullets worth re-placing.

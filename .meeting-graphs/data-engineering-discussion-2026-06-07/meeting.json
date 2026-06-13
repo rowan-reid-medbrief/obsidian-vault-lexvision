@@ -1,0 +1,5368 @@
+{
+  "meta": {
+    "schema_version": 1,
+    "node_count": 115,
+    "edge_count": 205,
+    "substantive_nodes": 51,
+    "inferred_edges": 38,
+    "diarization_quality": "ok",
+    "diarization_status": "ok",
+    "source": "video",
+    "confidence_floor": 0.35,
+    "graph_suppressed": false,
+    "graph_suppressed_reason": null,
+    "validation": {
+      "problems": [
+        {
+          "kind": "hard_gated_violation",
+          "id": "e-0302",
+          "action": "dropped",
+          "detail": "BUILDS_ON confidence=0.88 provenance=0; needs >= 0.6 and >= 2"
+        },
+        {
+          "kind": "hard_gated_violation",
+          "id": "e-0313",
+          "action": "dropped",
+          "detail": "BUILDS_ON confidence=0.8 provenance=0; needs >= 0.6 and >= 2"
+        },
+        {
+          "kind": "hard_gated_violation",
+          "id": "e-0316",
+          "action": "dropped",
+          "detail": "BUILDS_ON confidence=0.82 provenance=0; needs >= 0.6 and >= 2"
+        },
+        {
+          "kind": "hard_gated_violation",
+          "id": "e-0323",
+          "action": "dropped",
+          "detail": "BUILDS_ON confidence=0.72 provenance=0; needs >= 0.6 and >= 2"
+        },
+        {
+          "kind": "hard_gated_violation",
+          "id": "e-0324",
+          "action": "dropped",
+          "detail": "CONTRADICTS confidence=0.65 provenance=0; needs >= 0.6 and >= 2"
+        }
+      ],
+      "annexed_nodes": 0,
+      "annexed_edges": 0,
+      "repaired_count": 5,
+      "repair_attempts_used": 2
+    }
+  },
+  "nodes": [
+    {
+      "id": "person:rowan-reid",
+      "type": "Person",
+      "label": "Rowan Reid",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "Rowan Reid: Would this be, so expert match is a completely, it's a separate product, separate code base from MedBrief, right?",
+          "ts": 120,
+          "source": "chapter_1"
+        },
+        {
+          "quote": "Rowan Reid: I can, I can make it for that work, yeah, so I'll join that.",
+          "ts": 820,
+          "source": "chapter_2"
+        },
+        {
+          "quote": "I'm absolutely keen to look into it. I just wanted to put it out there that I'm also not a data engineering expert",
+          "ts": 1700,
+          "source": "Rowan Reid"
+        },
+        {
+          "quote": "Cool. All right. Sounds good to me.",
+          "ts": 2220,
+          "source": "Rowan Reid"
+        }
+      ],
+      "chapter_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "role": "AI/data engineer, new to team"
+    },
+    {
+      "id": "person:laura-gongas",
+      "type": "Person",
+      "label": "Laura Gongas",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "Laura Gongas: So, the first point I had was having the integration of the storage endpoint of expert match.",
+          "ts": 10,
+          "source": "chapter_1"
+        },
+        {
+          "quote": "Laura Gongas: So going on to the next one, we have everything related to cumulus.",
+          "ts": 480,
+          "source": "chapter_2"
+        },
+        {
+          "quote": "we don't have anyone in the team that has a data engineering formation",
+          "ts": 1622,
+          "source": "Laura Gongas"
+        },
+        {
+          "quote": "the starting to collect the ground truth, that's actually the most important one",
+          "ts": 1990,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "role": "AI team lead"
+    },
+    {
+      "id": "person:deon-kuhn",
+      "type": "Person",
+      "label": "Deon Kuhn",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "Deon Kuhn: It's something we can give to Rowan that I don't have any issue with that",
+          "ts": 35,
+          "source": "chapter_1"
+        },
+        {
+          "quote": "Deon Kuhn: Look, I think for the duration of the work, so for the six to 8 weeks",
+          "ts": 1280,
+          "source": "chapter_3"
+        },
+        {
+          "quote": "there was a whole section for data engineering",
+          "ts": 1660,
+          "source": "Deon Kuhn"
+        },
+        {
+          "quote": "I'll take that one for the team for this for now",
+          "ts": 2200,
+          "source": "Deon Kuhn"
+        }
+      ],
+      "chapter_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "role": "Lead developer"
+    },
+    {
+      "id": "person:brendan",
+      "type": "Person",
+      "label": "Brendan",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Perhaps that's something that we can do with Brendan, because he did mention that he wanted to be like, for terms of like privacy, for it to be cases with deceased patients",
+          "ts": 620,
+          "source": "chapter_2"
+        },
+        {
+          "quote": "we'll catch up with Brendan tomorrow",
+          "ts": 2222,
+          "source": "Rowan Reid"
+        },
+        {
+          "quote": "I'll send that over to Brendan",
+          "ts": 2255,
+          "source": "Deon Kuhn"
+        }
+      ],
+      "chapter_ids": [
+        "2",
+        "3",
+        "5"
+      ],
+      "role": "Clinical team contact; holds patent document on system"
+    },
+    {
+      "id": "person:mediha",
+      "type": "Person",
+      "label": "Mediha",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Mediha presented at the Sprint Nine review the work that she had been doing on the kind of the graph database side of things",
+          "ts": 990,
+          "source": "chapter_2"
+        },
+        {
+          "quote": "Mediha went on leave, so Mediha won't be taking over anything right now",
+          "ts": 1040,
+          "source": "chapter_2"
+        }
+      ],
+      "chapter_ids": [
+        "2",
+        "3"
+      ],
+      "role": "Team member; graph database / knowledge graph work; currently on leave"
+    },
+    {
+      "id": "person:vanessa",
+      "type": "Person",
+      "label": "Vanessa",
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "Or did Vanessa give us access already?",
+          "ts": 485,
+          "source": "chapter_2"
+        }
+      ],
+      "chapter_ids": [
+        "2"
+      ],
+      "role": "Unclear; mentioned in context of Cumulus meeting access"
+    },
+    {
+      "id": "person:chantel-pilla",
+      "type": "Person",
+      "label": "Chantel Pilla",
+      "confidence": 0.9,
+      "aliases": [
+        "Chantel"
+      ],
+      "provenance": [
+        {
+          "quote": "when an expert profile is complete and there's a query for that that Chantel uses to check, that's when they should be synced",
+          "ts": 260,
+          "source": "chapter_1"
+        },
+        {
+          "quote": "I might ask Chantel just to bump that up to a high because I don't think she assessed the dependency there",
+          "ts": 2160,
+          "source": "Deon Kuhn"
+        },
+        {
+          "quote": "I'll take this Script for Chantel Pilla.",
+          "ts": 2225,
+          "source": "Rowan Reid"
+        }
+      ],
+      "chapter_ids": [
+        "1",
+        "5"
+      ],
+      "role": "Uses query to check expert profile completeness; has open tickets for thumbs-down feature"
+    },
+    {
+      "id": "person:john-cumulus",
+      "type": "Person",
+      "label": "John (Cumulus)",
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "he actually said as much because he said he, John says he comes up with suggestions and then the data scientists suggest other stuff",
+          "ts": 960,
+          "source": "chapter_2"
+        }
+      ],
+      "chapter_ids": [
+        "2"
+      ],
+      "role": "Representative at Cumulus"
+    },
+    {
+      "id": "person:fatima",
+      "type": "Person",
+      "label": "Fatima",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "we have Fatima that would be able to look into it, but I'm not sure how much into the data side",
+          "ts": 1640,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "4"
+      ],
+      "role": "Team member with MLOps/infrastructure focus"
+    },
+    {
+      "id": "person:dave",
+      "type": "Person",
+      "label": "Dave",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "the tickets for that are with Dave for the thumbs down, because that does not currently, it's not connected",
+          "ts": 2078,
+          "source": "Deon Kuhn"
+        }
+      ],
+      "chapter_ids": [
+        "5"
+      ],
+      "role": "Holds thumbs-down feature tickets"
+    },
+    {
+      "id": "org:cumulus",
+      "type": "Organisation",
+      "label": "Cumulus",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "we have everything related to cumulus",
+          "ts": 480,
+          "source": "chapter_2"
+        },
+        {
+          "quote": "So we told them like come back with a smaller scope.",
+          "ts": 1060,
+          "source": "chapter_3"
+        },
+        {
+          "quote": "all I've got from Cumulus is I think the documentation that you shared with me, Laura",
+          "ts": 1870,
+          "source": "Rowan Reid"
+        },
+        {
+          "quote": "Okay, that's for Cumulus.",
+          "ts": 1995,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "notes": "Third-party data pipeline vendor engaged for entity extraction and pseudonymization; proposed scope exceeded budget; asked to reduce"
+    },
+    {
+      "id": "org:medbrief",
+      "type": "Organisation",
+      "label": "Medbrief",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "expert match is a completely, it's a separate product, separate code base from MedBrief, right?",
+          "ts": 120,
+          "source": "chapter_1"
+        }
+      ],
+      "chapter_ids": [
+        "1"
+      ],
+      "notes": "Main product; separate codebase from Expert Match"
+    },
+    {
+      "id": "org:nice",
+      "type": "Organisation",
+      "label": "NICE (National Institute for Health and Care Excellence)",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "the NICE API, that gives us access to the rules, is that right? The guidelines.",
+          "ts": 1200,
+          "source": "chapter_3"
+        }
+      ],
+      "chapter_ids": [
+        "3"
+      ],
+      "notes": "UK body providing clinical guidelines via API; API access requires ISO compliance and UK-based registration"
+    },
+    {
+      "id": "artifact:expert-match",
+      "type": "Artifact",
+      "label": "Expert Match",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "the first point I had was having the integration of the storage endpoint of expert match",
+          "ts": 10,
+          "source": "chapter_1"
+        }
+      ],
+      "chapter_ids": [
+        "1"
+      ],
+      "notes": "Separate product/codebase; has its own dev database and AI database; handles expert profiles and case associations"
+    },
+    {
+      "id": "artifact:expert-match-ingestion-endpoint",
+      "type": "Artifact",
+      "label": "Expert Match AI Ingestion Endpoint",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "the dev team calls our ingestion point, which is already in there, to make sure that we have everything up to date, including not only our SQL database, but also our embeddings",
+          "ts": 95,
+          "source": "chapter_1"
+        },
+        {
+          "quote": "I just sent you through the chat a link to the documentation of our ingestion endpoint as well",
+          "ts": 440,
+          "source": "chapter_1"
+        }
+      ],
+      "chapter_ids": [
+        "1"
+      ],
+      "notes": "Already built; dev team not yet calling it; covers expert profile, case, and case-expert relationship updates"
+    },
+    {
+      "id": "artifact:expert-update-queue",
+      "type": "Artifact",
+      "label": "Expert Update Queue Table",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I wonder if they had created a queue. an expert update or a match update queue. Actually, there is an update queue table, which Does look like Rowan, it would cater for that.",
+          "ts": 300,
+          "source": "chapter_1"
+        },
+        {
+          "quote": "that table on production is currently empty, meaning that it's not logging updates that need to happen",
+          "ts": 320,
+          "source": "chapter_1"
+        }
+      ],
+      "chapter_ids": [
+        "1"
+      ],
+      "notes": "Exists in production DB but currently empty; not yet logging update events; created by backend team in preparation"
+    },
+    {
+      "id": "artifact:expert-cache",
+      "type": "Artifact",
+      "label": "Expert Data Cache",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "there's also an element to this that we cache the expert data in a table of ours. The cache is quite hairy in terms of, like, it's almost overcaching a little bit.",
+          "ts": 355,
+          "source": "chapter_1"
+        }
+      ],
+      "chapter_ids": [
+        "1"
+      ],
+      "notes": "Expert data cached in dev-side table; needs invalidation when AI ingestion endpoint is called post-update"
+    },
+    {
+      "id": "artifact:cumulus-pipeline-diagram",
+      "type": "Artifact",
+      "label": "Cumulus Pipeline Diagram (kumulus_flow.png)",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "Are you seeing my screen? ... So we thought they could concentrate in the green box",
+          "ts": 1065,
+          "source": "chapter_3"
+        }
+      ],
+      "chapter_ids": [
+        "3"
+      ],
+      "notes": "Screen-shared diagram showing parallel tracks: NICE guideline structuring (top) and clinical case entity extraction/pseudonymization (bottom); green box = proposed Cumulus scope"
+    },
+    {
+      "id": "artifact:nice-api",
+      "type": "Artifact",
+      "label": "NICE API",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "the NICE API, that gives us access to the rules, is that right? The guidelines.",
+          "ts": 1200,
+          "source": "chapter_3"
+        },
+        {
+          "quote": "to have access to the NICE API, you need to have like certain ISO compliance stuff and be UK based",
+          "ts": 1240,
+          "source": "chapter_3"
+        }
+      ],
+      "chapter_ids": [
+        "3"
+      ],
+      "notes": "Provides clinical guidelines programmatically; access requires ISO compliance and UK presence; Medbrief applying for key; concern about sharing key with Cumulus (non-UK)"
+    },
+    {
+      "id": "artifact:brendan-patent-document",
+      "type": "Artifact",
+      "label": "Brendan's Patent Document",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "compare it back to the patent, that Brendan's patent document, and he had that description of like the whole system, then we had broken it down into different modules",
+          "ts": 790,
+          "source": "chapter_2"
+        }
+      ],
+      "chapter_ids": [
+        "2"
+      ],
+      "notes": "System-level description broken into modules including entity identification and pseudonymization"
+    },
+    {
+      "id": "artifact:graph-database",
+      "type": "Artifact",
+      "label": "Knowledge Graph / Graph Database",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Mediha presented at the Sprint Nine review the work that she had been doing on the kind of the graph database side of things in terms of represent, like once we extract all the entities and the relationships",
+          "ts": 990,
+          "source": "chapter_2"
+        },
+        {
+          "quote": "we are going to be moving into graphs and making the comparison between the guideline and the actual facts of the case",
+          "ts": 1115,
+          "source": "chapter_3"
+        }
+      ],
+      "chapter_ids": [
+        "2",
+        "3"
+      ],
+      "notes": "Graph representation of entities and relationships; Mediha's work; downstream of Cumulus structured output; enables guideline-vs-case reasoning"
+    },
+    {
+      "id": "artifact:cumulus-presentation",
+      "type": "Artifact",
+      "label": "Cumulus architecture presentation (previous meeting)",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "the presentation that they had from the previous meeting, I think that's the one that has the most amount of details. But we don't have access to it yet because he was going to adjust it.",
+          "ts": 1950,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "4"
+      ],
+      "notes": "Most detailed Cumulus document; not yet accessible; being adjusted by Cumulus"
+    },
+    {
+      "id": "artifact:cumulus-documentation",
+      "type": "Artifact",
+      "label": "Cumulus documentation (shared pre-hackathon)",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "all I've got from Cumulus is I think the documentation that you shared with me, Laura, like prior to the meeting we had with them during the hackathon",
+          "ts": 1870,
+          "source": "Rowan Reid"
+        }
+      ],
+      "chapter_ids": [
+        "4"
+      ],
+      "notes": "Documentation shared by Laura to Rowan before the hackathon meeting"
+    },
+    {
+      "id": "artifact:hackathon-meeting-recording",
+      "type": "Artifact",
+      "label": "Hackathon meeting recording (video)",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I know there's the video from yesterday that we're going to request access to",
+          "ts": 1860,
+          "source": "Rowan Reid"
+        }
+      ],
+      "chapter_ids": [
+        "4"
+      ],
+      "notes": "Video recording of hackathon meeting; access not yet granted"
+    },
+    {
+      "id": "topic:expert-match-storage-endpoint-integration",
+      "type": "Topic",
+      "label": "Expert Match Storage Endpoint Integration",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "having the integration of the storage endpoint of expert match ... having that sent over directly through the endpoint rather than doing it manually",
+          "ts": 10,
+          "source": "chapter_1"
+        }
+      ],
+      "chapter_ids": [
+        "1"
+      ],
+      "notes": "Key pain point: Laura doing manual syncs; endpoint exists but dev team not calling it; task to be prioritised against other data engineering work"
+    },
+    {
+      "id": "topic:expert-profile-sync",
+      "type": "Topic",
+      "label": "Expert Profile Sync (Create/Update/Delete)",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "when an expert gets created or an expert gets updated on his profile, if the profile is complete, we need to send to AI that that's happened via their API endpoint",
+          "ts": 270,
+          "source": "chapter_1"
+        }
+      ],
+      "chapter_ids": [
+        "1"
+      ],
+      "notes": "Trigger condition: profile completeness check (Chantel's query); send full expert profile to AI endpoint; also covers case-expert association changes"
+    },
+    {
+      "id": "topic:pseudonymization",
+      "type": "Topic",
+      "label": "Clinical Case Pseudonymization",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "we want to evaluate how they're doing with this pseudonymization because they didn't go into too much detail as to how they're going to solve it",
+          "ts": 560,
+          "source": "chapter_2"
+        }
+      ],
+      "chapter_ids": [
+        "2",
+        "3"
+      ],
+      "notes": "Cumulus tasked with this; concern they will use LLM without rigorous evaluation; requires ground truth annotations to validate"
+    },
+    {
+      "id": "topic:ground-truth-collection",
+      "type": "Topic",
+      "label": "Ground Truth Collection for Pseudonymization Evaluation",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "we want to evaluate how they're doing with this pseudonymization ... we need to have annotations or like countries so they can compare what they predicted versus what it should actually be",
+          "ts": 565,
+          "source": "chapter_2"
+        },
+        {
+          "quote": "the starting to collect the ground truth, that's actually the most important one because it will take time for clinicians to do it, so the sooner that we have the stuff for them, the better.",
+          "ts": 1990,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "2",
+        "4"
+      ],
+      "notes": "Steps: select cases (deceased patients, simple, low guidelines/handwriting), define entities with Brendan, get clinical team to annotate, optionally pre-populate with AI; need annotation tool meeting data privacy requirements; identified as highest-priority item"
+    },
+    {
+      "id": "topic:entity-extraction",
+      "type": "Topic",
+      "label": "Clinical Entity Extraction",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "at the bottom is what we have from the case itself, the facts of the case ... extracting the entities and making the pseudonymization",
+          "ts": 1080,
+          "source": "chapter_3"
+        },
+        {
+          "quote": "the most important part ... just go with the entity extraction, because that's the most important part",
+          "ts": 1600,
+          "source": "chapter_3"
+        }
+      ],
+      "chapter_ids": [
+        "2",
+        "3"
+      ],
+      "notes": "Core deliverable from Cumulus green box; entities from clinical case records; same entity types expected in guidelines"
+    },
+    {
+      "id": "topic:nice-guideline-structuring",
+      "type": "Topic",
+      "label": "NICE Guideline Structuring",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "guideline structuring at the top, which is whatever comes from NICE",
+          "ts": 1380,
+          "source": "chapter_3"
+        },
+        {
+          "quote": "They downplay it there by saying guideline structuring. So I don't think they had planned to do entity detection maybe on the guidelines",
+          "ts": 1520,
+          "source": "chapter_3"
+        }
+      ],
+      "chapter_ids": [
+        "3"
+      ],
+      "notes": "Top track in Cumulus pipeline diagram; NICE data ingestion and structuring; unclear if Cumulus plans full entity extraction from guidelines; Mediha had done Cypher query / graph work on guidelines"
+    },
+    {
+      "id": "topic:nice-api-compliance",
+      "type": "Topic",
+      "label": "NICE API Access and Compliance",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "to have access to the NICE API, you need to have like certain ISO compliance stuff and be UK based",
+          "ts": 1240,
+          "source": "chapter_3"
+        }
+      ],
+      "chapter_ids": [
+        "3"
+      ],
+      "notes": "Medbrief applying for key; concern about sharing with Cumulus (non-UK); Deon suggests rotating key after engagement; Laura wants to discuss with Brendan; Laura filling in access form"
+    },
+    {
+      "id": "topic:cumulus-scope-reduction",
+      "type": "Topic",
+      "label": "Cumulus Scope Reduction",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "it's over what we were thinking. So we told them like come back with a smaller scope.",
+          "ts": 1060,
+          "source": "chapter_3"
+        },
+        {
+          "quote": "have to wait for them to come back to us with the new proposal, which should be this week",
+          "ts": 1120,
+          "source": "chapter_3"
+        }
+      ],
+      "chapter_ids": [
+        "3"
+      ],
+      "notes": "Original proposal exceeded budget; green box (data ingestion + entity extraction + pseudonymization) proposed as reduced scope; awaiting revised proposal"
+    },
+    {
+      "id": "topic:cumulus-deliverable-ownership",
+      "type": "Topic",
+      "label": "Cumulus Code Deliverable and Handover",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Are they creating this, like the deliverable to us? Is it something that is going to like be transparently deployed onto our infrastructure",
+          "ts": 1560,
+          "source": "chapter_3"
+        },
+        {
+          "quote": "they'll give us the code and we can even use it for other projects and like the nice guidelines",
+          "ts": 1580,
+          "source": "chapter_3"
+        }
+      ],
+      "chapter_ids": [
+        "3"
+      ],
+      "notes": "Cumulus will deliver code (not a black box); transparent deployment on Medbrief infrastructure; reusable for other projects"
+    },
+    {
+      "id": "topic:annotation-tool-selection",
+      "type": "Topic",
+      "label": "Annotation Tool Selection for Ground Truth",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "we need someone from the clinical team to look into the cases and literally highlight and tell us each entity ... we need to define the tool that we're going to use in order for them to be able to do those entity annotations",
+          "ts": 660,
+          "source": "chapter_2"
+        }
+      ],
+      "chapter_ids": [
+        "2"
+      ],
+      "notes": "Must meet data privacy requirements; may pre-populate using AI to reduce clinical team effort; several tools exist"
+    },
+    {
+      "id": "topic:rules-representation",
+      "type": "Topic",
+      "label": "Rules Representation (Cypher Queries vs Graphs)",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "We can either make them as cipher queries or do them as graphs. Now, the cipher queries is like an intermediate step to get to graphs.",
+          "ts": 1490,
+          "source": "chapter_3"
+        }
+      ],
+      "chapter_ids": [
+        "2",
+        "3"
+      ],
+      "notes": "Mediha demonstrated Cypher query approach at Sprint 9; graph is ultimate goal; requires entity extraction from guidelines as prerequisite"
+    },
+    {
+      "id": "topic:cumulus-pipeline-architecture",
+      "type": "Topic",
+      "label": "Cumulus Two-Track Pipeline Architecture",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "those are two completely independent separate pipelines of processing, and then they provide the guideline structuring based on what they will receive from the NICE API, and then then the whole entity extraction and all that stuff based on the case data",
+          "ts": 1395,
+          "source": "chapter_3"
+        }
+      ],
+      "chapter_ids": [
+        "3"
+      ],
+      "notes": "Track 1 (top): NICE guideline ingestion and structuring. Track 2 (bottom): clinical case entity extraction and pseudonymization. Independent; merged at reasoning/graph layer"
+    },
+    {
+      "id": "topic:azure-foundry-model",
+      "type": "Topic",
+      "label": "Azure Foundry Model (Cumulus approach)",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "They said they would use a model from Azure Foundry and that's it. And that can be anything.",
+          "ts": 950,
+          "source": "chapter_2"
+        }
+      ],
+      "chapter_ids": [
+        "2"
+      ],
+      "notes": "Cumulus stated they would use an Azure Foundry model for pseudonymization; vague; Laura sceptical they have decided"
+    },
+    {
+      "id": "topic:sprint-nine-review",
+      "type": "Topic",
+      "label": "Sprint 9 Review",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Mediha presented at the Sprint Nine review the work that she had been doing on the kind of the graph database side of things",
+          "ts": 990,
+          "source": "chapter_2"
+        }
+      ],
+      "chapter_ids": [
+        "2"
+      ],
+      "notes": "Mediha presented graph database work including Cypher queries and original guideline graph"
+    },
+    {
+      "id": "topic:data-architecture-proposal",
+      "type": "Topic",
+      "label": "Cumulus data architecture proposal",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "they made a proposal of the data architecture and I did ask them if we want to use other services, would you be open to do that? And they said yes.",
+          "ts": 1630,
+          "source": "Laura Gongas"
+        },
+        {
+          "quote": "We haven't closed, we haven't accepted their proposal, by the way.",
+          "ts": 1920,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "4"
+      ],
+      "notes": "Not yet accepted; Cumulus open to alternative services if requested"
+    },
+    {
+      "id": "topic:databricks",
+      "type": "Topic",
+      "label": "Databricks",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "if they tell us we're using Databricks and Azure Data Factory and this lake, we just believe them",
+          "ts": 1622,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "4"
+      ],
+      "notes": "Part of Cumulus proposed stack; team lacks expertise to evaluate"
+    },
+    {
+      "id": "topic:azure-data-factory",
+      "type": "Topic",
+      "label": "Azure Data Factory",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "if they tell us we're using Databricks and Azure Data Factory and this lake, we just believe them",
+          "ts": 1622,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "4"
+      ],
+      "notes": "Part of Cumulus proposed stack; team lacks expertise to evaluate"
+    },
+    {
+      "id": "topic:data-lake",
+      "type": "Topic",
+      "label": "Data lake",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "if they tell us we're using Databricks and Azure Data Factory and this lake, we just believe them",
+          "ts": 1622,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "4"
+      ],
+      "notes": "Part of Cumulus proposed stack; team lacks expertise to evaluate"
+    },
+    {
+      "id": "topic:enterprise-skills-development-platform",
+      "type": "Topic",
+      "label": "Enterprise skills development platform",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "the enterprise skills development platform, Laoura, that we have, you're an admin on that. Maybe you can invite Rowan to that, because there was a whole section for data engineering.",
+          "ts": 1655,
+          "source": "Deon Kuhn"
+        }
+      ],
+      "chapter_ids": [
+        "4"
+      ],
+      "notes": "Laura is admin; contains data engineering learning section; Rowan to be invited"
+    },
+    {
+      "id": "topic:mlops-infrastructure",
+      "type": "Topic",
+      "label": "MLOps infrastructure",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "from the MLOps perspective, like infrastructure perspective, we have Fatima that would be able to look into it",
+          "ts": 1640,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "4"
+      ],
+      "notes": "Fatima's domain; relevant to evaluating Cumulus infrastructure proposals"
+    },
+    {
+      "id": "topic:data-strategy",
+      "type": "Topic",
+      "label": "Data strategy",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "the data strategy is something that will take more time",
+          "ts": 1985,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "4"
+      ],
+      "notes": "Longer-term item; not immediate priority"
+    },
+    {
+      "id": "topic:data-pipelines",
+      "type": "Topic",
+      "label": "Data pipelines",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "who's going to work on that handover if we don't even know how the data pipelines work",
+          "ts": 1915,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "4"
+      ],
+      "notes": "Concern about capability gap for Cumulus handover"
+    },
+    {
+      "id": "topic:sally-integration",
+      "type": "Topic",
+      "label": "Sally integration",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "One is also Deon on your side, so I don't know if it's best that you keep that one, which is the Sally integration.",
+          "ts": 2005,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "5"
+      ],
+      "notes": "Assigned to Deon's side"
+    },
+    {
+      "id": "topic:human-in-the-loop",
+      "type": "Topic",
+      "label": "Human-in-the-loop strategy",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "we're trying to have human in the loop in most of our projects to basically close the entire MLOps pipeline",
+          "ts": 2100,
+          "source": "Laura Gongas"
+        },
+        {
+          "quote": "making sure that we can connect the all of the human in the loop strategy for chat with records",
+          "ts": 2045,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "5"
+      ],
+      "notes": "Cross-project goal; close the full MLOps loop; Ask Alex kicking off in June"
+    },
+    {
+      "id": "topic:thumbs-up-down-feedback",
+      "type": "Topic",
+      "label": "Thumbs up / thumbs down UI feedback feature",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "we'll have a thumbs up, thumbs down in the UI",
+          "ts": 2115,
+          "source": "Laura Gongas"
+        },
+        {
+          "quote": "the thumbs up, thumbs down thing works so we can to the entire pipeline or like the entire loop",
+          "ts": 2048,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "5"
+      ],
+      "notes": "Part of human-in-the-loop pipeline; tickets currently with Dave (not yet connected)"
+    },
+    {
+      "id": "topic:ask-alex",
+      "type": "Topic",
+      "label": "Ask Alex (product feature)",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "these were your pre-requests for the human in the loop that is meant to kick off for Ask Alex, right? In June",
+          "ts": 2070,
+          "source": "Deon Kuhn"
+        }
+      ],
+      "chapter_ids": [
+        "5"
+      ],
+      "notes": "Human-in-the-loop pre-requisites due in June"
+    },
+    {
+      "id": "topic:chat-with-records",
+      "type": "Topic",
+      "label": "Chat with records (AI chat feature)",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "the chat, which is what we were building, remember what we were building in the hackathon, and we had this chat to chat with the records",
+          "ts": 2108,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "5"
+      ],
+      "notes": "Built during hackathon; part of human-in-the-loop pipeline"
+    },
+    {
+      "id": "topic:clinician-feedback-platform",
+      "type": "Topic",
+      "label": "Clinician feedback review platform",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "we have built a platform which will take all of the thumbs down things. So when they're done with their job, with their chronology... they'll be able to look into the thumbs down messages and give us a bit more of detail as to why it was incorrect",
+          "ts": 2125,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "5"
+      ],
+      "notes": "Platform built; clinicians review thumbs-down cases and provide detail on failures"
+    },
+    {
+      "id": "topic:expert-match-ingestion-endpoints",
+      "type": "Topic",
+      "label": "Expert Match storage / ingestion endpoints (task assignment)",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "the ingestion endpoints for the experts when the data update, I'm going to say I'm going to do that rather",
+          "ts": 2195,
+          "source": "Deon Kuhn"
+        },
+        {
+          "quote": "concentrate in Cumulus and the storage endpoints of expert match",
+          "ts": 2185,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "5"
+      ],
+      "notes": "Resolved: Deon takes this; Rowan to focus on Cumulus work"
+    },
+    {
+      "id": "decision:0001",
+      "type": "Decision",
+      "label": "Expert Match storage endpoint integration to be prioritised against other Rowan tasks before assigning",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "please rank it in terms of your priorities of is that the most important thing or is there other data retrieval stuff for projects that's more important? ... let's say that is a maybe on this one",
+          "ts": 45,
+          "source": "chapter_1"
+        }
+      ],
+      "chapter_ids": [
+        "1"
+      ],
+      "notes": "Task currently assigned to Deon; may transfer to Rowan depending on priority ranking; concern about prior knowledge needed"
+    },
+    {
+      "id": "decision:0002",
+      "type": "Decision",
+      "label": "Send full expert profile (all fields) to AI ingestion endpoint on sync, not individual changed fields",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "Laoura, you said that we don't need to send what fields it is anymore. We just send the entire profile. Of the expert, all its fields, and your API endpoint will describe what is needed.",
+          "ts": 315,
+          "source": "chapter_1"
+        }
+      ],
+      "chapter_ids": [
+        "1"
+      ]
+    },
+    {
+      "id": "decision:0003",
+      "type": "Decision",
+      "label": "Ground truth annotation cases should be deceased patients with simple content and minimal handwritten text",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Brendan, because he did mention that he wanted to be like, for terms of like privacy, for it to be cases with deceased patients ... simple cases that don't have too much guidelines, that don't have too much handwritten text",
+          "ts": 625,
+          "source": "chapter_2"
+        }
+      ],
+      "chapter_ids": [
+        "2"
+      ]
+    },
+    {
+      "id": "decision:0004",
+      "type": "Decision",
+      "label": "Cumulus scope reduced to green box: data ingestion, entity extraction, and pseudonymization only",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "we told them like come back with a smaller scope. So if I show you, they had presented this flow ... we thought they could concentrate in the green box",
+          "ts": 1060,
+          "source": "chapter_3"
+        }
+      ],
+      "chapter_ids": [
+        "3"
+      ]
+    },
+    {
+      "id": "decision:0005",
+      "type": "Decision",
+      "label": "NICE API key may be shared with Cumulus temporarily with key rotation after engagement ends",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "if you give them access during the time of development and just rotate the key once they're done, I think that should be fine",
+          "ts": 1290,
+          "source": "chapter_3"
+        }
+      ],
+      "chapter_ids": [
+        "3"
+      ],
+      "notes": "Tentative; Deon's position; Laura wants to verify compliance with Brendan first; data is publicly accessible online anyway"
+    },
+    {
+      "id": "decision:0006",
+      "type": "Decision",
+      "label": "Rowan's focus to be on Cumulus data engineering work, not Expert Match ingestion endpoints",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "I'll take that one for the team for this for now",
+          "ts": 2200,
+          "source": "Deon Kuhn"
+        },
+        {
+          "quote": "I think it's nice that then that way everything will be more on the cumulus side",
+          "ts": 2210,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "5"
+      ]
+    },
+    {
+      "id": "decision:0007",
+      "type": "Decision",
+      "label": "Thumbs up/down tickets remain with Deon's side; Rowan may have a data collation role once clearer",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "keep it on my side, but I think Rowan would have a role to play potentially just in like collating the data and making sure that the data is coming through correctly",
+          "ts": 2082,
+          "source": "Deon Kuhn"
+        }
+      ],
+      "chapter_ids": [
+        "5"
+      ]
+    },
+    {
+      "id": "action:0001",
+      "type": "ActionItem",
+      "label": "Rowan to investigate Expert Match update queue table and ingestion endpoint integration",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Rowan, it would cater for that. So that's worth investigating.",
+          "ts": 305,
+          "source": "chapter_1"
+        },
+        {
+          "quote": "Rowan: Okay, so I'll need to do some dev, like basically like almost like submit a PR on MedBrief itself for hooking into, again, I just need to have a look.",
+          "ts": 155,
+          "source": "chapter_1"
+        }
+      ],
+      "chapter_ids": [
+        "1"
+      ],
+      "is_personal_commitment": true
+    },
+    {
+      "id": "action:0002",
+      "type": "ActionItem",
+      "label": "Laura to send Cumulus meeting recording access request email",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Yeah, so maybe we should ask for that. Okay, I'll send them an email.",
+          "ts": 492,
+          "source": "chapter_2"
+        }
+      ],
+      "chapter_ids": [
+        "2"
+      ],
+      "is_personal_commitment": false
+    },
+    {
+      "id": "action:0003",
+      "type": "ActionItem",
+      "label": "Rowan to join tomorrow's meeting with Brendan to define entities and cases for ground truth",
+      "aliases": [
+        "action from group-02:0006 — Rowan to catch up with Brendan the next day"
+      ],
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "I've added you to a meeting tomorrow. you can attend to that. Rowan: I can, I can make it for that work, yeah, so I'll join that.",
+          "ts": 820,
+          "source": "chapter_2"
+        },
+        {
+          "quote": "we'll catch up with Brendan tomorrow",
+          "ts": 2222,
+          "source": "Rowan Reid"
+        }
+      ],
+      "chapter_ids": [
+        "2",
+        "5"
+      ],
+      "is_personal_commitment": true
+    },
+    {
+      "id": "action:0004",
+      "type": "ActionItem",
+      "label": "Laura to fill in NICE API access application form",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I will be working on filling in that form to get access to the API.",
+          "ts": 1340,
+          "source": "chapter_3"
+        }
+      ],
+      "chapter_ids": [
+        "3"
+      ],
+      "is_personal_commitment": false
+    },
+    {
+      "id": "action:0005",
+      "type": "ActionItem",
+      "label": "Team to clarify with Cumulus their intended depth of NICE guideline entity extraction",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I think that's a good point to ask them, but to ask them until what point they're going to be involved in the NICE guidelines and what we're going to get out from them.",
+          "ts": 1540,
+          "source": "chapter_3"
+        }
+      ],
+      "chapter_ids": [
+        "3"
+      ],
+      "is_personal_commitment": false
+    },
+    {
+      "id": "action:0006",
+      "type": "ActionItem",
+      "label": "Investigate NICE API compliance requirements in parallel with application",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I think that in parallel, we can look into compliance. That way, once we get it, we know who.",
+          "ts": 1345,
+          "source": "chapter_3"
+        }
+      ],
+      "chapter_ids": [
+        "3"
+      ],
+      "is_personal_commitment": false
+    },
+    {
+      "id": "action:0007",
+      "type": "ActionItem",
+      "label": "If Cumulus does not handle NICE guideline entity extraction, Rowan to take on that integration",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "if we want to get to there, we need them to be able to extract the entities from the guidelines ... if not, I think Rowan, that would be a good part for you to jump in",
+          "ts": 1545,
+          "source": "chapter_3"
+        }
+      ],
+      "chapter_ids": [
+        "3"
+      ],
+      "is_personal_commitment": false,
+      "notes": "Conditional on Cumulus scope; Rowan not yet committed"
+    },
+    {
+      "id": "action:0008",
+      "type": "ActionItem",
+      "label": "Rowan to review Cumulus data architecture proposal and assess its suitability",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "perhaps you could look into their proposal, do a bit of research and see if it makes sense to do it that way or not",
+          "ts": 1635,
+          "source": "Laura Gongas"
+        },
+        {
+          "quote": "I'm absolutely keen to apply my mind to those.",
+          "ts": 1710,
+          "source": "Rowan Reid"
+        }
+      ],
+      "chapter_ids": [
+        "4"
+      ],
+      "is_personal_commitment": true
+    },
+    {
+      "id": "action:0009",
+      "type": "ActionItem",
+      "label": "Laura to invite Rowan to the enterprise skills development platform",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "you're an admin on that. Maybe you can invite Rowan to that",
+          "ts": 1657,
+          "source": "Deon Kuhn"
+        }
+      ],
+      "chapter_ids": [
+        "4"
+      ],
+      "is_personal_commitment": false
+    },
+    {
+      "id": "action:0010",
+      "type": "ActionItem",
+      "label": "Laura to forward the Cumulus architecture presentation to Rowan once available",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "once we have it, I'll make sure to forward it to you",
+          "ts": 1955,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "4"
+      ],
+      "is_personal_commitment": false
+    },
+    {
+      "id": "action:0011",
+      "type": "ActionItem",
+      "label": "Deon to take on Expert Match ingestion endpoints",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "the ingestion endpoints for the experts when the data update, I'm going to say I'm going to do that rather",
+          "ts": 2195,
+          "source": "Deon Kuhn"
+        }
+      ],
+      "chapter_ids": [
+        "5"
+      ],
+      "is_personal_commitment": false
+    },
+    {
+      "id": "action:0012",
+      "type": "ActionItem",
+      "label": "Rowan to watch the hackathon meeting recording once access is granted",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "we'll wait until we get this recording as well. That will be useful. Then I can watch that.",
+          "ts": 2220,
+          "source": "Rowan Reid"
+        }
+      ],
+      "chapter_ids": [
+        "5"
+      ],
+      "is_personal_commitment": true
+    },
+    {
+      "id": "action:0013",
+      "type": "ActionItem",
+      "label": "Rowan to take script for Chantel Pilla",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I'll take this Script for Chantel Pilla.",
+          "ts": 2225,
+          "source": "Rowan Reid"
+        }
+      ],
+      "chapter_ids": [
+        "5"
+      ],
+      "is_personal_commitment": true
+    },
+    {
+      "id": "action:0014",
+      "type": "ActionItem",
+      "label": "Deon to send instance numbers to Brendan",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I just figured I look at your numbers, Laoura, so what we had for the instance and it looks good, so I'll send that over to Brendan",
+          "ts": 2255,
+          "source": "Deon Kuhn"
+        }
+      ],
+      "chapter_ids": [
+        "5"
+      ],
+      "is_personal_commitment": false
+    },
+    {
+      "id": "action:0015",
+      "type": "ActionItem",
+      "label": "Deon to consider asking Chantel to bump thumbs-down ticket priority to high",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I might ask Chantel just to bump that up to a high because I don't think she assessed the dependency there",
+          "ts": 2160,
+          "source": "Deon Kuhn"
+        }
+      ],
+      "chapter_ids": [
+        "5"
+      ],
+      "is_personal_commitment": false
+    },
+    {
+      "id": "question:0001",
+      "type": "Question",
+      "label": "Should Expert Match endpoint integration be assigned to Rowan or remain with Deon?",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "I don't know if we should forward this task to Rowan, or is it something that you're already working on?",
+          "ts": 12,
+          "source": "chapter_1"
+        }
+      ],
+      "chapter_ids": [
+        "1"
+      ],
+      "notes": "Unresolved at time of asking; resolved later in chapter 5 (Deon takes it)"
+    },
+    {
+      "id": "question:0002",
+      "type": "Question",
+      "label": "What annotation tool should be used for ground truth collection that meets data privacy requirements?",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "we have to make sure that they meet like data privacy and our politics, or if we want to do it ourselves, how to do it, basically defining how we're going to do that",
+          "ts": 670,
+          "source": "chapter_2"
+        }
+      ],
+      "chapter_ids": [
+        "2"
+      ],
+      "notes": "Open question; options include existing tools or building in-house"
+    },
+    {
+      "id": "question:0003",
+      "type": "Question",
+      "label": "How does Mediha's graph database work fit alongside Cumulus's proposed pipeline?",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "What is Mediha taking next steps on her stuff, and then with getting figuring out where Cumulus can fit in?",
+          "ts": 1000,
+          "source": "chapter_2"
+        }
+      ],
+      "chapter_ids": [
+        "2"
+      ],
+      "notes": "Laura answered by showing Cumulus diagram; Mediha currently on leave so no immediate next steps"
+    },
+    {
+      "id": "question:0004",
+      "type": "Question",
+      "label": "Is it compliant to share the NICE API key with Cumulus (non-UK based)?",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "I don't feel that comfortable with giving them the API key. I don't know what you think, Deon, because they're not based in the UK. So I think we might not be compliant.",
+          "ts": 1260,
+          "source": "chapter_3"
+        }
+      ],
+      "chapter_ids": [
+        "3"
+      ],
+      "notes": "Unresolved; to be investigated with Brendan; Deon leans toward it being acceptable with key rotation"
+    },
+    {
+      "id": "question:0005",
+      "type": "Question",
+      "label": "Should Medbrief do NICE guideline extraction before or after the Cumulus engagement, to potentially reuse their pipeline?",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "do we do this before cumulus or after cumulus, our nice guideline extraction, so that we could use their pipeline basically. Once they do the handover.",
+          "ts": 1570,
+          "source": "chapter_3"
+        }
+      ],
+      "chapter_ids": [
+        "3"
+      ],
+      "notes": "Raised by Deon; unresolved; depends on Cumulus scope clarification"
+    },
+    {
+      "id": "question:0006",
+      "type": "Question",
+      "label": "Is there any additional Cumulus material available beyond the pre-hackathon documentation?",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Is there any more, I know there's the video from yesterday that we're going to request access to. Beyond that, all I've got from Cumulus is I think the documentation that you shared with me, Laura... So is there anything more to share that's useful?",
+          "ts": 1862,
+          "source": "Rowan Reid"
+        }
+      ],
+      "chapter_ids": [
+        "4"
+      ],
+      "notes": "Partially answered: presentation exists but not yet accessible"
+    },
+    {
+      "id": "question:0007",
+      "type": "Question",
+      "label": "Should the human-in-the-loop / thumbs up-down work be Deon's or should Rowan also be involved?",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I don't know if that's something that you would take, Deon, or should we have Rowan look into it as well?",
+          "ts": 2055,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "5"
+      ],
+      "notes": "Resolved: stays with Deon; Rowan may have collation role later"
+    },
+    {
+      "id": "claim:0001",
+      "type": "Claim",
+      "label": "Expert Match endpoint task requires significant prior knowledge which may make it unsuitable for Rowan at this stage",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I'm just worried that it's going to take a lot of prior knowledge to execute on this potentially.",
+          "ts": 380,
+          "source": "chapter_1"
+        }
+      ],
+      "chapter_ids": [
+        "1"
+      ],
+      "notes": "Deon's concern; reason task remains tentatively with Deon pending priority review"
+    },
+    {
+      "id": "claim:0002",
+      "type": "Claim",
+      "label": "Cumulus's approach to pseudonymization is vague; they likely do not yet have a firm plan",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I think they don't know what they're going to do, to be honest. ... he said he, John says he comes up with suggestions and then the data scientists suggest other stuff.",
+          "ts": 955,
+          "source": "chapter_2"
+        }
+      ],
+      "chapter_ids": [
+        "2"
+      ],
+      "notes": "Laura and Deon's shared assessment; reason for insisting on ground truth evaluation framework"
+    },
+    {
+      "id": "claim:0003",
+      "type": "Claim",
+      "label": "Without ground truth, third-party vendors produce proof-of-concept work of unknown quality",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "if you don't give them ground truth, they'll just do like a kind of proof of concept thing that you don't even know if it works well or not. So you end up doing everything again.",
+          "ts": 975,
+          "source": "chapter_2"
+        }
+      ],
+      "chapter_ids": [
+        "2"
+      ],
+      "notes": "Laura's experience with third parties; justification for ground truth collection work"
+    },
+    {
+      "id": "claim:0004",
+      "type": "Claim",
+      "label": "NICE guideline data is effectively publicly available (accessible on NICE website), reducing compliance concern",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "it's publicly available data or it's like fairly available data. Or you can look up all the nice guidelines like on their website. This is just an API form of it.",
+          "ts": 1300,
+          "source": "chapter_3"
+        }
+      ],
+      "chapter_ids": [
+        "3"
+      ],
+      "notes": "Deon's view; used to support sharing API key temporarily"
+    },
+    {
+      "id": "claim:0005",
+      "type": "Claim",
+      "label": "Cumulus will deliver code transparently and Medbrief engineers can extend and reuse it",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "they'll give us the code and we can even use it for other projects and like the nice guidelines. ... they were actually quite deliberate in saying that because they were like happy that we had engineers",
+          "ts": 1580,
+          "source": "chapter_3"
+        }
+      ],
+      "chapter_ids": [
+        "3"
+      ]
+    },
+    {
+      "id": "claim:0006",
+      "type": "Claim",
+      "label": "Third parties often recommend the newest or most expensive Azure services regardless of suitability",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "they end up giving us a service that's like the newest one that Azure has in the market because they want to have more use cases with that or the one that's more costly or whatever and you end up having something that it's not scalable or you don't even know how to use it",
+          "ts": 1645,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "4"
+      ]
+    },
+    {
+      "id": "claim:0007",
+      "type": "Claim",
+      "label": "The team lacks data engineering expertise and cannot critically evaluate Cumulus's data architecture claims",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "we don't have anyone in the team that has a data engineering formation. So, if they tell us we're using Databricks and Azure Data Factory and this lake, we just believe them",
+          "ts": 1622,
+          "source": "Laura Gongas"
+        },
+        {
+          "quote": "with the AI side, I feel comfortable. But with the data side, they could just be selling us whatever.",
+          "ts": 1993,
+          "source": "Laura Gongas"
+        }
+      ],
+      "chapter_ids": [
+        "4"
+      ]
+    },
+    {
+      "id": "claim:0008",
+      "type": "Claim",
+      "label": "Rowan is not a data engineering expert and has not used these tools himself",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I'm also not a data engineering expert and so building these tools I have not used myself.",
+          "ts": 1700,
+          "source": "Rowan Reid"
+        }
+      ],
+      "chapter_ids": [
+        "4"
+      ]
+    },
+    {
+      "id": "claim:0009",
+      "type": "Claim",
+      "label": "Rowan having time to investigate the data engineering stack is the most important thing his team is currently lacking",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "just having that time to look into it is what your team is lacking at the moment, Laoura",
+          "ts": 2035,
+          "source": "Deon Kuhn"
+        }
+      ],
+      "chapter_ids": [
+        "5"
+      ]
+    },
+    {
+      "id": "artifact:gf0001",
+      "type": "Artifact",
+      "label": "Azure Key Vault (proposed NICE API key storage)",
+      "text": "Deon proposes storing the NICE API key in Azure Key Vault so Cumulus can use it programmatically without being able to view or extract it, as a potential compliance mitigation.",
+      "confidence": 0.85,
+      "chapter_ids": [
+        "chapter:03"
+      ],
+      "provenance": [
+        {
+          "quote": "If you pop that key in the key vault so that they can't view it, but they can use it, that's possible, right, with Azure as far as I know. So they're going to use it in our infrastructure.",
+          "ts": 354,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "claim:gf0002",
+      "type": "Claim",
+      "label": "NICE may charge non-UK users for API access, adding a financial compliance dimension",
+      "statement": "Laura asserts NICE charges users outside the UK, which would make sharing the key with Cumulus (non-UK based) a compliance and financial issue beyond just access eligibility.",
+      "confidence": 0.8,
+      "chapter_ids": [
+        "chapter:03"
+      ],
+      "provenance": [
+        {
+          "quote": "they do have, I think they charge people that are outside of the UK or something like that. So I think. We might want to look into that with Brendan",
+          "ts": 373,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "claim:gf0003",
+      "type": "Claim",
+      "label": "Entity types in clinical guidelines and clinical case records are expected to be the same",
+      "statement": "Laura states that the entity types Cumulus would extract from clinical case records will likely be identical to those needed from NICE guidelines, making the two pipeline tracks complementary rather than divergent.",
+      "confidence": 0.9,
+      "chapter_ids": [
+        "chapter:03"
+      ],
+      "provenance": [
+        {
+          "quote": "we need them to be able to extract the entities from the guidelines, which are going to be probably the same entities as the ones in the clinical records.",
+          "ts": 449,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "claim:gf0004",
+      "type": "Claim",
+      "label": "Cumulus planned to focus on a narrow case type (e.g. obstetrics) to limit the NICE guidelines scope",
+      "statement": "Deon recalls Cumulus described wanting to focus on a particular clinical speciality (citing obstetrics as an example) in order to reduce the number of NICE guidelines they would need to query or process.",
+      "confidence": 0.8,
+      "chapter_ids": [
+        "chapter:03"
+      ],
+      "provenance": [
+        {
+          "quote": "they also said they wanted to focus on a particular kind of case, like obstetrics or whatever, and I think that was also to reduce the number of nice guidelines that they would potentially need to query or look up.",
+          "ts": 434,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "claim:gf0005",
+      "type": "Claim",
+      "label": "Cumulus will reveal more about their technical approach once the engagement formally starts",
+      "statement": "Deon reports that Cumulus stated they will share and discuss more detail about their planned implementation once the engagement has formally begun, giving Medbrief input at that stage.",
+      "confidence": 0.85,
+      "chapter_ids": [
+        "chapter:03"
+      ],
+      "provenance": [
+        {
+          "quote": "once we start the engagement, they're going to reveal more, discuss more about how they're planning to do stuff, so that we also have input on that.",
+          "ts": 502,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "claim:gf0006",
+      "type": "Claim",
+      "label": "Only two cases are needed for the initial ground truth annotation exercise",
+      "statement": "Laura states that Cumulus indicated only two cases are required for the initial ground truth dataset, implying the annotation effort is manageable in scope.",
+      "confidence": 0.85,
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "provenance": [
+        {
+          "quote": "They said they only needed two, so it shouldn't be that difficult.",
+          "ts": 189,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "claim:gf0007",
+      "type": "Claim",
+      "label": "Clinicians cannot annotate ground truth cases during their billable working hours",
+      "statement": "Laura notes a practical scheduling constraint: clinicians cannot perform ground truth annotation at the same time as their paid clinical work, so annotation must happen after their shifts end.",
+      "confidence": 0.85,
+      "chapter_ids": [
+        "chapter:05"
+      ],
+      "provenance": [
+        {
+          "quote": "we can't do it at the same time because they're in their billable hours, when they're done with that, they'll be able to look into the thumbs down messages and give us a bit more of detail as to why it was incorrect",
+          "ts": 648,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "action:gf0008",
+      "type": "ActionItem",
+      "label": "Deon to investigate anomalous expert profile instances created via direct profile update (scheduled for Friday)",
+      "text": "Deon identifies that some experts have been created through the system via direct profile updates, which should not be possible. He was scheduled to investigate these instances on Friday but had not yet done so at time of meeting.",
+      "confidence": 0.75,
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "provenance": [
+        {
+          "quote": "some experts have been created through the system, which where they've gone in and updated their profiles, which shouldn't be the case, so I'll need to have a look at those. I'm meant to do it on Friday, but I don't have time why those instances have been created, but anyway.",
+          "ts": 82,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "type": "Claim",
+      "label": "Data architecture review is worthwhile regardless of whether Cumulus is ultimately engaged",
+      "statement": "Even if Medbrief does not accept Cumulus's proposal, reviewing their proposed data architecture is still valuable because Medbrief will need to build the same stack with or without Cumulus.",
+      "confidence": 0.85,
+      "chapter_ids": [
+        "chapter:04"
+      ],
+      "provenance": [
+        {
+          "quote": "even if we don't, I think it's still useful to look into this because we are still going to build it with them or without them. So we still need to look into it.",
+          "ts": 1965,
+          "source": "transcript"
+        }
+      ],
+      "id": "claim:gf0009"
+    },
+    {
+      "type": "Artifact",
+      "label": "Expert Match AI ingestion endpoint — three-table structure (expert, case, case-expert)",
+      "text": "Laura specifies that the ingestion endpoint covers three distinct tables: an expert table, a case table, and a case-expert relationship table. This structural detail is load-bearing for understanding which events must trigger a sync call.",
+      "confidence": 0.9,
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "provenance": [
+        {
+          "quote": "you'll see that we have an expert table, a case table, and a case expert table. And that's something that you can see from the endpoint.",
+          "ts": 143,
+          "source": "transcript"
+        }
+      ],
+      "id": "artifact:gf0010"
+    },
+    {
+      "type": "Claim",
+      "label": "Medbrief could ingest NICE guidelines itself and supply the resulting JSON directly to Cumulus, avoiding the API key sharing problem",
+      "statement": "Laura proposes an alternative to giving Cumulus the NICE API key: Medbrief performs the NICE ingestion internally and then hands Cumulus the structured JSON output, so Cumulus never needs direct API access.",
+      "confidence": 0.9,
+      "chapter_ids": [
+        "chapter:03"
+      ],
+      "provenance": [
+        {
+          "quote": "we might want to do that ourselves and just give them the output of the queries, like exactly how we got the result from nice, but just giving them the JSONs.",
+          "ts": 349,
+          "source": "transcript"
+        }
+      ],
+      "id": "claim:gf0011"
+    },
+    {
+      "type": "Claim",
+      "label": "Cumulus quoted the engagement at 10 weeks; Deon's internal estimate is 6 to 8 weeks",
+      "statement": "During the NICE API key discussion Deon references the engagement duration as six to eight weeks, but notes that Cumulus themselves stated ten weeks, indicating a discrepancy in timeline expectations.",
+      "confidence": 0.85,
+      "chapter_ids": [
+        "chapter:03"
+      ],
+      "provenance": [
+        {
+          "quote": "for the duration of the work, so for the six to 8 weeks, I know they say 10 weeks, but for the duration of the work",
+          "ts": 361,
+          "source": "transcript"
+        }
+      ],
+      "id": "claim:gf0012"
+    },
+    {
+      "type": "Claim",
+      "label": "The safest Cumulus scope is entity extraction only; NICE guideline processing should be excluded from the current engagement",
+      "statement": "Deon recommends that the safest path is to remove NICE guideline work from the Cumulus scope entirely and focus only on entity extraction from case data, because Cumulus's intentions for the guidelines are unclear and entity extraction is the most important deliverable.",
+      "confidence": 0.85,
+      "chapter_ids": [
+        "chapter:03"
+      ],
+      "provenance": [
+        {
+          "quote": "the safest path again here, like Laoura described, would be to avoid the NICE guideline in this instance and just go with the entity extraction, because that's the most important part. Because we, I have no idea what they're playing with the the nice guidelines according to this either.",
+          "ts": 504,
+          "source": "transcript"
+        }
+      ],
+      "id": "claim:gf0013"
+    },
+    {
+      "type": "Claim",
+      "label": "Rowan working with other devs on Expert Match would create distraction, justifying keeping him focused on Cumulus work",
+      "statement": "Beyond the prior-knowledge concern (claim:0001), Deon adds a second distinct reason for retaking the Expert Match task: requiring Rowan to coordinate closely with other developers would pull him away from the focused data engineering investigation the team most needs from him right now.",
+      "confidence": 0.88,
+      "chapter_ids": [
+        "chapter:05"
+      ],
+      "provenance": [
+        {
+          "quote": "needing to like work too much with the other devs on stuff like that might just distract the situation. So I'll take that one for the team for this for now.",
+          "ts": 2076,
+          "source": "transcript"
+        }
+      ],
+      "id": "claim:gf0014"
+    },
+    {
+      "type": "Decision",
+      "label": "Explicit priority order: ground truth collection first (clinician time is bottleneck), data strategy last (longer-term)",
+      "statement": "Laura states the priority ordering explicitly at the close of the meeting: starting ground truth collection is the single most important item because it depends on clinician availability and will take the most calendar time; the data strategy work is deprioritised as a longer-horizon task.",
+      "confidence": 0.9,
+      "chapter_ids": [
+        "chapter:05"
+      ],
+      "provenance": [
+        {
+          "quote": "I think there's things that are more priority than others, like obviously the data strategy is something that will take more time, but the starting to collect the ground truth, that's actually the most important one because it will take time for clinicians to do it, so the sooner that we have the stuff for them, the better.",
+          "ts": 1988,
+          "source": "transcript"
+        }
+      ],
+      "id": "decision:gf0015"
+    },
+    {
+      "id": "chapter:01",
+      "type": "Chapter",
+      "label": "Expert Match Storage Endpoint Integration",
+      "confidence": 1.0,
+      "provenance": [],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "index": 1,
+      "summary": "Laura opens with a request for the dev team to call the AI ingestion endpoint whenever an expert or case is created, updated, or deleted — removing the need for manual sync. The team discusses the update queue table, cache invalidation, and whether this task should sit with Deon or Rowan.",
+      "start_ts": 0.0,
+      "end_ts": 480.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:02",
+      "type": "Chapter",
+      "label": "Cumulus Scope and Pseudonymization Ground Truth",
+      "confidence": 1.0,
+      "provenance": [],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "index": 2,
+      "summary": "Laura introduces the Cumulus partnership scope: entity extraction and pseudonymization. The team agrees they need to create their own ground truth (via clinician annotation of deceased-patient cases) to evaluate Cumulus's output, and discusses tooling for annotation and pre-population with AI to reduce clinician burden.",
+      "start_ts": 480.0,
+      "end_ts": 1050.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:03",
+      "type": "Chapter",
+      "label": "Cumulus Flow Diagram and NICE API Compliance",
+      "confidence": 1.0,
+      "provenance": [],
+      "chapter_ids": [
+        "chapter:03"
+      ],
+      "index": 3,
+      "summary": "Laura shares her screen showing Cumulus's proposed pipeline: guideline structuring (NICE) and case entity extraction running in parallel before feeding a reasoning layer. The team debates NICE API key sharing, compliance (UK-based requirement), and whether to let Cumulus use the key via Azure Key Vault or to ingest NICE guidelines internally and hand Cumulus the JSON output.",
+      "start_ts": 1050.0,
+      "end_ts": 1620.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:04",
+      "type": "Chapter",
+      "label": "Data Architecture Review and Rowan's Onboarding",
+      "confidence": 1.0,
+      "provenance": [],
+      "chapter_ids": [
+        "chapter:04"
+      ],
+      "index": 4,
+      "summary": "Laura asks Rowan to review Cumulus's data architecture proposal (Databricks, Azure Data Factory, Data Lake) and assess whether it is fit for purpose, citing concerns about vendors upselling costly or non-scalable services. Deon suggests using the enterprise skills development platform. Rowan is candid about his limited data engineering tool experience but commits to applying his judgement.",
+      "start_ts": 1620.0,
+      "end_ts": 2000.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:05",
+      "type": "Chapter",
+      "label": "Priorities, Human-in-the-Loop, and Closing Decisions",
+      "confidence": 1.0,
+      "provenance": [],
+      "chapter_ids": [
+        "chapter:05"
+      ],
+      "index": 5,
+      "summary": "The team wraps up remaining items: Sally integration stays with Deon; human-in-the-loop (thumbs up/down for Ask Alex chat) is Dave's ticket but Rowan may help with data collation later; Deon takes back the storage endpoint task after assessing it requires too much context for Rowan to ramp on right now. Final priority order: Cumulus ground truth, data architecture review, then ongoing sprint work.",
+      "start_ts": 2000.0,
+      "end_ts": 2265.28,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "visual:0000",
+      "type": "VisualContext",
+      "label": "Meeting participants intro screen",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Deon Kuhn  Laura Gongas  Rowan Reid",
+          "ts": 2.125,
+          "source": "vision"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "frame_path": "frame-00001.png",
+      "frame_ts": 2.125,
+      "visual_type": "talking_head",
+      "ocr_text": "Deon Kuhn  Laura Gongas  Rowan Reid",
+      "description": "Three circular profile avatars on a black background identifying the meeting participants: Deon Kuhn, Laura Gongas, and Rowan Reid. This is a pre-join or waiting-room screen establishing who is in the call.",
+      "phash": "0040005555804400"
+    },
+    {
+      "id": "visual:0005",
+      "type": "VisualContext",
+      "label": "Kumulus data pipeline architecture diagram (full view)",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "kumulus_flow.png  Data Sources: NICE API / Web, Postgres DB, PDFs / OCR Input  Ingestion Layer: Fabric Pipelines  Data Platform (Fabric / OneLake): Raw Data (Bronze), Processed Data (Silver), Curated Data (Gold)  Processing & Intelligence: Entity Detection, Identity Resolution, Pseudonymisation Engine, Guideline Structuring  Reasoning Layer: Case vs Guideline Engine, Explainable Output, Similarity Detection  Consumption: Legal / Clinical Review  Deon Kuhn  Rowan Reid",
+          "ts": 1070.625,
+          "source": "vision"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:03"
+      ],
+      "frame_path": "frame-00005.png",
+      "frame_ts": 1070.625,
+      "visual_type": "diagram",
+      "ocr_text": "kumulus_flow.png  Data Sources: NICE API / Web, Postgres DB, PDFs / OCR Input  Ingestion Layer: Fabric Pipelines  Data Platform (Fabric / OneLake): Raw Data (Bronze), Processed Data (Silver), Curated Data (Gold)  Processing & Intelligence: Entity Detection, Identity Resolution, Pseudonymisation Engine, Guideline Structuring  Reasoning Layer: Case vs Guideline Engine, Explainable Output, Similarity Detection  Consumption: Legal / Clinical Review  Deon Kuhn  Rowan Reid",
+      "description": "Screen share of kumulus_flow.png open in a diagramming tool, showing the end-to-end Kumulus data architecture across five colour-coded zones: Data Sources (Postgres DB, NICE API/Web, PDFs/OCR), Ingestion Layer (Fabric Pipelines), Data Platform (Raw/Bronze, Processed/Silver, Curated/Gold), Processing & Intelligence (Entity Detection, Identity Resolution, Pseudonymisation Engine, Guideline Structuring), and Reasoning/Consumption layers (Similarity Detection, Case vs Guideline Engine, Explainable Output, Legal/Clinical Review). Deon Kuhn and Rowan Reid are visible in side-panel thumbnails.",
+      "phash": "0b03c40084840300"
+    },
+    {
+      "id": "visual:0006",
+      "type": "VisualContext",
+      "label": "Kumulus flow diagram with all three participants visible",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "kumulus_flow.png  Data Sources: NICE API / Web, Postgres DB, PDFs / OCR Input  Ingestion Layer: Fabric Pipelines  Data Platform (Fabric / OneLake): Raw Data (Bronze), Processed Data (Silver), Curated Data (Gold)  Processing & Intelligence: Entity Detection, Identity Resolution, Pseudonymisation Engine, Guideline Structuring  Reasoning Layer: Similarity Detection, Case vs Guideline Engine, Explainable Output  Consumption: Legal / Clinical Review  Deon Kuhn  Laura Gongas  Rowan Reid",
+          "ts": 1073.75,
+          "source": "vision"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:03"
+      ],
+      "frame_path": "frame-00006.png",
+      "frame_ts": 1073.75,
+      "visual_type": "diagram",
+      "ocr_text": "kumulus_flow.png  Data Sources: NICE API / Web, Postgres DB, PDFs / OCR Input  Ingestion Layer: Fabric Pipelines  Data Platform (Fabric / OneLake): Raw Data (Bronze), Processed Data (Silver), Curated Data (Gold)  Processing & Intelligence: Entity Detection, Identity Resolution, Pseudonymisation Engine, Guideline Structuring  Reasoning Layer: Similarity Detection, Case vs Guideline Engine, Explainable Output  Consumption: Legal / Clinical Review  Deon Kuhn  Laura Gongas  Rowan Reid",
+      "description": "Continued screen share of kumulus_flow.png showing the same pipeline architecture diagram. All three participants (Deon Kuhn, Laura Gongas, Rowan Reid) are visible in the right-hand side-panel, indicating active group discussion of the diagram.",
+      "phash": "03c700a484008b00"
+    },
+    {
+      "id": "visual:0007",
+      "type": "VisualContext",
+      "label": "Chapter 4 frame: Kumulus flow diagram discussion",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "kumulus_flow.png  Data Sources: NICE API / Web, Postgres DB, PDFs / OCR Input  Ingestion Layer: Fabric Pipelines  Data Platform (Fabric / OneLake): Raw Data (Bronze), Processed Data (Silver), Curated Data (Gold)  Processing & Intelligence: Entity Detection, Identity Resolution, Pseudonymisation Engine, Guideline Structuring  Reasoning Layer: Similarity Detection, Case vs Guideline Engine, Explainable Output  Consumption: Legal / Clinical Review  Deon Kuhn  Laura Gongas  Rowan Reid",
+          "ts": 1810.0,
+          "source": "vision"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:04"
+      ],
+      "frame_path": "chapframe-04.png",
+      "frame_ts": 1810.0,
+      "visual_type": "diagram",
+      "ocr_text": "kumulus_flow.png  Data Sources: NICE API / Web, Postgres DB, PDFs / OCR Input  Ingestion Layer: Fabric Pipelines  Data Platform (Fabric / OneLake): Raw Data (Bronze), Processed Data (Silver), Curated Data (Gold)  Processing & Intelligence: Entity Detection, Identity Resolution, Pseudonymisation Engine, Guideline Structuring  Reasoning Layer: Similarity Detection, Case vs Guideline Engine, Explainable Output  Consumption: Legal / Clinical Review  Deon Kuhn  Laura Gongas  Rowan Reid",
+      "description": "Chapter-marker frame showing the kumulus_flow.png architecture diagram still on screen with Deon Kuhn highlighted as the active speaker (blue name badge), alongside Laura Gongas and Rowan Reid in the side panel. This marks the start of a new chapter section within the diagram discussion.",
+      "phash": "01c700a484008b00"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-shown-0000",
+      "type": "SHOWN_DURING",
+      "source": "visual:0000",
+      "target": "chapter:01",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "",
+          "ts": 2.125,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "id": "e-shown-0005",
+      "type": "SHOWN_DURING",
+      "source": "visual:0005",
+      "target": "chapter:03",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "",
+          "ts": 1070.625,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "id": "e-shown-0006",
+      "type": "SHOWN_DURING",
+      "source": "visual:0006",
+      "target": "chapter:03",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "",
+          "ts": 1073.75,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "id": "e-shown-0007",
+      "type": "SHOWN_DURING",
+      "source": "visual:0007",
+      "target": "chapter:04",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "",
+          "ts": 1810.0,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "id": "e-0301",
+      "type": "RESOLVES",
+      "source": "decision:0006",
+      "target": "question:0001",
+      "confidence": 0.95,
+      "chapter_span": [
+        "5",
+        "1"
+      ],
+      "notes": "Ch5 decision (Rowan focuses on Cumulus; Deon retakes Expert Match) directly answers Ch1 open question about who owns the endpoint task",
+      "provenance": {
+        "source_quote": {
+          "quote": "the ingestion endpoints for the experts when the data update, I'm going to say I'm going to do that rather",
+          "ts": 2195,
+          "chapter": "5",
+          "speaker": "Deon Kuhn"
+        },
+        "target_quote": {
+          "quote": "I don't know if we should forward this task to Rowan, or is it something that you're already working on?",
+          "ts": 12,
+          "chapter": "1",
+          "speaker": "Laura Gongas"
+        }
+      }
+    },
+    {
+      "id": "e-0303",
+      "type": "SUPPORTS",
+      "source": "claim:0001",
+      "target": "decision:0006",
+      "confidence": 0.85,
+      "chapter_span": [
+        "1",
+        "5"
+      ],
+      "notes": "Ch1 claim that the Expert Match task requires too much prior knowledge directly backs the Ch5 decision to keep Rowan off it and focus him on Cumulus",
+      "provenance": {
+        "source_quote": {
+          "quote": "I'm just worried that it's going to take a lot of prior knowledge to execute on this potentially.",
+          "ts": 380,
+          "chapter": "1",
+          "speaker": "Deon Kuhn"
+        },
+        "target_quote": {
+          "quote": "I'll take that one for the team for this for now",
+          "ts": 2200,
+          "chapter": "5",
+          "speaker": "Deon Kuhn"
+        }
+      }
+    },
+    {
+      "id": "e-0304",
+      "type": "SUPPORTS",
+      "source": "claim:0003",
+      "target": "decision:0005",
+      "confidence": 0.9,
+      "chapter_span": [
+        "2",
+        "4"
+      ],
+      "notes": "Ch2 claim that without ground truth third-party vendors produce PoC work of unknown quality directly backs the Ch4 prioritisation of ground truth collection as the team's most important current item",
+      "provenance": {
+        "source_quote": {
+          "quote": "if you don't give them ground truth, they'll just do like a kind of proof of concept thing that you don't even know if it works well or not. So you end up doing everything again.",
+          "ts": 975,
+          "chapter": "2",
+          "speaker": "Laura Gongas"
+        },
+        "target_quote": {
+          "quote": "the starting to collect the ground truth, that's actually the most important one because it will take time for clinicians to do it, so the sooner that we have the stuff for them, the better.",
+          "ts": 1990,
+          "chapter": "4",
+          "speaker": "Laura Gongas"
+        }
+      }
+    },
+    {
+      "id": "e-0305",
+      "type": "SUPPORTS",
+      "source": "claim:0002",
+      "target": "decision:0005",
+      "confidence": 0.82,
+      "chapter_span": [
+        "2",
+        "4"
+      ],
+      "notes": "Ch2 claim that Cumulus has not settled on a pseudonymization approach reinforces the Ch4 decision to make ground truth collection the top priority (so evaluation can happen independently of Cumulus's choices)",
+      "provenance": {
+        "source_quote": {
+          "quote": "I think they don't know what they're going to do, to be honest. ... he said he, John says he comes up with suggestions and then the data scientists suggest other stuff.",
+          "ts": 955,
+          "chapter": "2",
+          "speaker": "Laura Gongas"
+        },
+        "target_quote": {
+          "quote": "the starting to collect the ground truth, that's actually the most important one because it will take time for clinicians to do it, so the sooner that we have the stuff for them, the better.",
+          "ts": 1990,
+          "chapter": "4",
+          "speaker": "Laura Gongas"
+        }
+      }
+    },
+    {
+      "id": "e-0306",
+      "type": "SUPPORTS",
+      "source": "claim:0005",
+      "target": "action:0008",
+      "confidence": 0.8,
+      "chapter_span": [
+        "3",
+        "4"
+      ],
+      "notes": "Ch3 claim that Cumulus will deliver code transparently motivates the Ch4 action for Rowan to review the architecture proposal (code ownership makes the architecture choice consequential for Medbrief's long-term maintainability)",
+      "provenance": {
+        "source_quote": {
+          "quote": "they'll give us the code and we can even use it for other projects and like the nice guidelines. ... they were actually quite deliberate in saying that because they were like happy that we had engineers",
+          "ts": 1580,
+          "chapter": "3",
+          "speaker": "Laura Gongas"
+        },
+        "target_quote": {
+          "quote": "perhaps you could look into their proposal, do a bit of research and see if it makes sense to do it that way or not",
+          "ts": 1635,
+          "chapter": "4",
+          "speaker": "Laura Gongas"
+        }
+      }
+    },
+    {
+      "id": "e-0307",
+      "type": "DEPENDS_ON",
+      "source": "action:0012",
+      "target": "action:0002",
+      "confidence": 0.8,
+      "chapter_span": [
+        "5",
+        "2"
+      ],
+      "notes": "Ch5 action for Rowan to watch the hackathon recording cannot proceed until Ch2 action for Laura to email the recording access request is completed",
+      "provenance": {
+        "source_quote": {
+          "quote": "we'll wait until we get this recording as well. That will be useful. Then I can watch that.",
+          "ts": 2220,
+          "chapter": "5",
+          "speaker": "Rowan Reid"
+        },
+        "target_quote": {
+          "quote": "Yeah, so maybe we should ask for that. Okay, I'll send them an email.",
+          "ts": 492,
+          "chapter": "2",
+          "speaker": "Laura Gongas"
+        }
+      }
+    },
+    {
+      "id": "e-0308",
+      "type": "DEPENDS_ON",
+      "source": "action:0008",
+      "target": "action:0010",
+      "confidence": 0.78,
+      "chapter_span": [
+        "4",
+        "4"
+      ],
+      "notes": "Ch4 action for Rowan to review the Cumulus architecture proposal is gated on Ch4 action for Laura to forward the presentation once it becomes available — Rowan explicitly notes the material gap",
+      "provenance": {
+        "source_quote": {
+          "quote": "I'm absolutely keen to apply my mind to those.",
+          "ts": 1710,
+          "chapter": "4",
+          "speaker": "Rowan Reid"
+        },
+        "target_quote": {
+          "quote": "once we have it, I'll make sure to forward it to you",
+          "ts": 1955,
+          "chapter": "4",
+          "speaker": "Laura Gongas"
+        }
+      }
+    },
+    {
+      "id": "e-0309",
+      "type": "SUPPORTS",
+      "source": "claim:0007",
+      "target": "action:0008",
+      "confidence": 0.88,
+      "chapter_span": [
+        "4",
+        "4"
+      ],
+      "notes": "Ch4 claim that the team lacks data engineering expertise and cannot critically evaluate Cumulus's stack directly motivates the Ch4 action for Rowan (the most technically adjacent person) to conduct the architecture review",
+      "provenance": {
+        "source_quote": {
+          "quote": "we don't have anyone in the team that has a data engineering formation. So, if they tell us we're using Databricks and Azure Data Factory and this lake, we just believe them",
+          "ts": 1622,
+          "chapter": "4",
+          "speaker": "Laura Gongas"
+        },
+        "target_quote": {
+          "quote": "perhaps you could look into their proposal, do a bit of research and see if it makes sense to do it that way or not",
+          "ts": 1635,
+          "chapter": "4",
+          "speaker": "Laura Gongas"
+        }
+      }
+    },
+    {
+      "id": "e-0310",
+      "type": "SUPPORTS",
+      "source": "claim:0006",
+      "target": "action:0008",
+      "confidence": 0.75,
+      "chapter_span": [
+        "4",
+        "4"
+      ],
+      "notes": "Ch4 claim that third parties recommend expensive/newest Azure services regardless of fit provides direct motivation for the Ch4 action to independently review the Cumulus stack",
+      "provenance": {
+        "source_quote": {
+          "quote": "they end up giving us a service that's like the newest one that Azure has in the market because they want to have more use cases with that or the one that's more costly or whatever and you end up having something that it's not scalable or you don't even know how to use it",
+          "ts": 1645,
+          "chapter": "4",
+          "speaker": "Laura Gongas"
+        },
+        "target_quote": {
+          "quote": "perhaps you could look into their proposal, do a bit of research and see if it makes sense to do it that way or not",
+          "ts": 1635,
+          "chapter": "4",
+          "speaker": "Laura Gongas"
+        }
+      }
+    },
+    {
+      "id": "e-0311",
+      "type": "RESOLVES",
+      "source": "action:0003",
+      "target": "question:0003",
+      "confidence": 0.75,
+      "chapter_span": [
+        "2",
+        "2"
+      ],
+      "notes": "The Brendan meeting (action:0003, invited in Ch2, confirmed again in Ch5) is positioned as the step that will clarify how Mediha's graph database work fits with the Cumulus pipeline, addressing the open Ch2 question",
+      "provenance": {
+        "source_quote": {
+          "quote": "I've added you to a meeting tomorrow. you can attend to that. Rowan: I can, I can make it for that work, yeah, so I'll join that.",
+          "ts": 820,
+          "chapter": "2",
+          "speaker": "Laura Gongas / Rowan Reid"
+        },
+        "target_quote": {
+          "quote": "What is Mediha taking next steps on her stuff, and then with getting figuring out where Cumulus can fit in?",
+          "ts": 1000,
+          "chapter": "2",
+          "speaker": "Rowan Reid"
+        }
+      }
+    },
+    {
+      "id": "e-0312",
+      "type": "SUPPORTS",
+      "source": "artifact:brendan-patent-document",
+      "target": "topic:ground-truth-collection",
+      "confidence": 0.8,
+      "chapter_span": [
+        "2",
+        "2"
+      ],
+      "notes": "Brendan's patent document (Ch2), which describes the full system and breaks it into modules including entity identification and pseudonymization, provides the conceptual foundation and entity-type reference that ground truth annotation work will need to operationalise",
+      "provenance": {
+        "source_quote": {
+          "quote": "compare it back to the patent, that Brendan's patent document, and he had that description of like the whole system, then we had broken it down into different modules",
+          "ts": 790,
+          "chapter": "2",
+          "speaker": "Laura Gongas"
+        },
+        "target_quote": {
+          "quote": "we want to evaluate how they're doing with this pseudonymization ... we need to have annotations or like countries so they can compare what they predicted versus what it should actually be",
+          "ts": 565,
+          "chapter": "2",
+          "speaker": "Laura Gongas"
+        }
+      }
+    },
+    {
+      "id": "e-0314",
+      "type": "RESOLVES",
+      "source": "decision:0005",
+      "target": "question:0004",
+      "confidence": 0.75,
+      "chapter_span": [
+        "3",
+        "3"
+      ],
+      "notes": "Ch3 tentative decision (share NICE API key with Cumulus temporarily, rotate key afterwards) directly addresses the Ch3 open compliance question about whether sharing with a non-UK party is acceptable",
+      "provenance": {
+        "source_quote": {
+          "quote": "if you give them access during the time of development and just rotate the key once they're done, I think that should be fine",
+          "ts": 1290,
+          "chapter": "3",
+          "speaker": "Deon Kuhn"
+        },
+        "target_quote": {
+          "quote": "I don't feel that comfortable with giving them the API key. I don't know what you think, Deon, because they're not based in the UK. So I think we might not be compliant.",
+          "ts": 1260,
+          "chapter": "3",
+          "speaker": "Laura Gongas"
+        }
+      }
+    },
+    {
+      "id": "e-0315",
+      "type": "SUPPORTS",
+      "source": "claim:0004",
+      "target": "decision:0005",
+      "confidence": 0.82,
+      "chapter_span": [
+        "3",
+        "3"
+      ],
+      "notes": "Ch3 claim that NICE guideline data is effectively public (available on the NICE website) directly backs the Ch3 tentative decision to share the API key with Cumulus temporarily (reduced compliance concern)",
+      "provenance": {
+        "source_quote": {
+          "quote": "it's publicly available data or it's like fairly available data. Or you can look up all the nice guidelines like on their website. This is just an API form of it.",
+          "ts": 1300,
+          "chapter": "3",
+          "speaker": "Deon Kuhn"
+        },
+        "target_quote": {
+          "quote": "if you give them access during the time of development and just rotate the key once they're done, I think that should be fine",
+          "ts": 1290,
+          "chapter": "3",
+          "speaker": "Deon Kuhn"
+        }
+      }
+    },
+    {
+      "id": "e-0317",
+      "type": "SUPPORTS",
+      "source": "artifact:graph-database",
+      "target": "topic:rules-representation",
+      "confidence": 0.78,
+      "chapter_span": [
+        "2",
+        "3"
+      ],
+      "notes": "Mediha's graph database work (Ch2, presented at Sprint 9) provides the concrete artefact that grounds the Ch3 rules representation discussion (Cypher queries as intermediate step toward the graph)",
+      "provenance": {
+        "source_quote": {
+          "quote": "Mediha presented at the Sprint Nine review the work that she had been doing on the kind of the graph database side of things in terms of represent, like once we extract all the entities and the relationships",
+          "ts": 990,
+          "chapter": "2",
+          "speaker": "Laura Gongas"
+        },
+        "target_quote": {
+          "quote": "We can either make them as cipher queries or do them as graphs. Now, the cipher queries is like an intermediate step to get to graphs.",
+          "ts": 1490,
+          "chapter": "3",
+          "speaker": "Laura Gongas"
+        }
+      }
+    },
+    {
+      "id": "e-0318",
+      "type": "DEPENDS_ON",
+      "source": "topic:rules-representation",
+      "target": "topic:entity-extraction",
+      "confidence": 0.85,
+      "chapter_span": [
+        "3",
+        "3"
+      ],
+      "notes": "Ch3 rules representation work (building Cypher queries or graphs from guidelines) explicitly depends on entity extraction from guidelines being completed first — it is described as the downstream layer",
+      "provenance": {
+        "source_quote": {
+          "quote": "We can either make them as cipher queries or do them as graphs. Now, the cipher queries is like an intermediate step to get to graphs.",
+          "ts": 1490,
+          "chapter": "3",
+          "speaker": "Laura Gongas"
+        },
+        "target_quote": {
+          "quote": "the most important part ... just go with the entity extraction, because that's the most important part",
+          "ts": 1600,
+          "chapter": "3",
+          "speaker": "Laura Gongas"
+        }
+      }
+    },
+    {
+      "id": "e-0319",
+      "type": "RESOLVES",
+      "source": "action:0005",
+      "target": "question:0005",
+      "confidence": 0.78,
+      "chapter_span": [
+        "3",
+        "3"
+      ],
+      "notes": "Ch3 action (team to clarify with Cumulus their intended depth of NICE guideline entity extraction) is the concrete step taken to resolve the Ch3 strategic question of whether to do NICE extraction before or after the Cumulus engagement",
+      "provenance": {
+        "source_quote": {
+          "quote": "I think that's a good point to ask them, but to ask them until what point they're going to be involved in the NICE guidelines and what we're going to get out from them.",
+          "ts": 1540,
+          "chapter": "3",
+          "speaker": "Laura Gongas"
+        },
+        "target_quote": {
+          "quote": "do we do this before cumulus or after cumulus, our nice guideline extraction, so that we could use their pipeline basically. Once they do the handover.",
+          "ts": 1570,
+          "chapter": "3",
+          "speaker": "Deon Kuhn"
+        }
+      }
+    },
+    {
+      "id": "e-0320",
+      "type": "RESOLVES",
+      "source": "action:0010",
+      "target": "question:0006",
+      "confidence": 0.8,
+      "chapter_span": [
+        "4",
+        "4"
+      ],
+      "notes": "Ch4 action for Laura to forward the Cumulus architecture presentation to Rowan once available directly addresses the Ch4 open question about whether any further Cumulus material exists beyond the pre-hackathon docs",
+      "provenance": {
+        "source_quote": {
+          "quote": "once we have it, I'll make sure to forward it to you",
+          "ts": 1955,
+          "chapter": "4",
+          "speaker": "Laura Gongas"
+        },
+        "target_quote": {
+          "quote": "Is there any more, I know there's the video from yesterday that we're going to request access to. Beyond that, all I've got from Cumulus is I think the documentation that you shared with me, Laura... So is there anything more to share that's useful?",
+          "ts": 1862,
+          "chapter": "4",
+          "speaker": "Rowan Reid"
+        }
+      }
+    },
+    {
+      "id": "e-0321",
+      "type": "RESOLVES",
+      "source": "decision:0007",
+      "target": "question:0007",
+      "confidence": 0.9,
+      "chapter_span": [
+        "5",
+        "5"
+      ],
+      "notes": "Ch5 decision (thumbs up/down tickets stay with Deon; Rowan may have a collation role later) directly answers the Ch5 open question about whether Deon or Rowan owns the human-in-the-loop feedback work",
+      "provenance": {
+        "source_quote": {
+          "quote": "keep it on my side, but I think Rowan would have a role to play potentially just in like collating the data and making sure that the data is coming through correctly",
+          "ts": 2082,
+          "chapter": "5",
+          "speaker": "Deon Kuhn"
+        },
+        "target_quote": {
+          "quote": "I don't know if that's something that you would take, Deon, or should we have Rowan look into it as well?",
+          "ts": 2055,
+          "chapter": "5",
+          "speaker": "Laura Gongas"
+        }
+      }
+    },
+    {
+      "id": "e-0322",
+      "type": "SUPPORTS",
+      "source": "claim:0009",
+      "target": "action:0008",
+      "confidence": 0.78,
+      "chapter_span": [
+        "5",
+        "4"
+      ],
+      "notes": "Ch5 claim that having Rowan investigate the data engineering stack is what the team is currently most lacking directly backs the Ch4 action assigning that review to him",
+      "provenance": {
+        "source_quote": {
+          "quote": "just having that time to look into it is what your team is lacking at the moment, Laoura",
+          "ts": 2035,
+          "chapter": "5",
+          "speaker": "Deon Kuhn"
+        },
+        "target_quote": {
+          "quote": "perhaps you could look into their proposal, do a bit of research and see if it makes sense to do it that way or not",
+          "ts": 1635,
+          "chapter": "4",
+          "speaker": "Laura Gongas"
+        }
+      }
+    },
+    {
+      "id": "e-0325",
+      "type": "SUPPORTS",
+      "source": "topic:human-in-the-loop",
+      "target": "topic:ground-truth-collection",
+      "confidence": 0.7,
+      "chapter_span": [
+        "5",
+        "2"
+      ],
+      "notes": "The Ch5 human-in-the-loop strategy (closing the MLOps loop via thumbs up/down feedback) is structurally parallel to and supports the rationale for Ch2 ground truth collection — both are about acquiring labelled signal from clinical experts to measure and improve AI quality",
+      "provenance": {
+        "source_quote": {
+          "quote": "we're trying to have human in the loop in most of our projects to basically close the entire MLOps pipeline",
+          "ts": 2100,
+          "chapter": "5",
+          "speaker": "Laura Gongas"
+        },
+        "target_quote": {
+          "quote": "we need to have annotations or like countries so they can compare what they predicted versus what it should actually be",
+          "ts": 565,
+          "chapter": "2",
+          "speaker": "Laura Gongas"
+        }
+      }
+    },
+    {
+      "id": "e-0001",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:expert-match-storage-endpoint-integration",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "Laura requests dev team call AI ingestion endpoints on expert/case create/update/delete",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0002",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:deon-kuhn",
+      "target": "topic:expert-profile-sync",
+      "confidence": 0.92,
+      "provenance": [
+        {
+          "quote": "Deon explains update queue table exists but is empty on prod, plus overcaching issue",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0003",
+      "type": "REFERENCES",
+      "source": "person:laura-gongas",
+      "target": "artifact:expert-match-ingestion-endpoint",
+      "confidence": 0.97,
+      "provenance": [
+        {
+          "quote": "Laura shares ingestion endpoint docs via chat",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0004",
+      "type": "REFERENCES",
+      "source": "person:deon-kuhn",
+      "target": "artifact:expert-update-queue",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "update queue table exists but is empty on prod",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0005",
+      "type": "REFERENCES",
+      "source": "person:deon-kuhn",
+      "target": "artifact:expert-cache",
+      "confidence": 0.93,
+      "provenance": [
+        {
+          "quote": "overcaching issue",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0006",
+      "type": "OWNS",
+      "source": "person:deon-kuhn",
+      "target": "action:0001",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "Task initially on Deon's sprint",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0007",
+      "type": "OWNS",
+      "source": "person:rowan-reid",
+      "target": "action:0001",
+      "confidence": 0.72,
+      "provenance": [
+        {
+          "quote": "may reassign to Rowan",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0008",
+      "type": "OCCURS_IN",
+      "source": "action:0001",
+      "target": "chapter:01",
+      "confidence": 0.97,
+      "provenance": [
+        {
+          "quote": "Task initially on Deon's sprint; may reassign to Rowan",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0009",
+      "type": "RELATES_TO",
+      "source": "topic:expert-match-storage-endpoint-integration",
+      "target": "action:0001",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "Laura requests dev team call AI ingestion endpoints on expert/case create/update/delete",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0010",
+      "type": "RELATES_TO",
+      "source": "topic:expert-profile-sync",
+      "target": "action:0001",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "Deon explains update queue table exists but is empty on prod",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0011",
+      "type": "SUBTOPIC_OF",
+      "source": "topic:expert-profile-sync",
+      "target": "topic:expert-match-storage-endpoint-integration",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "update queue table exists but is empty on prod, plus overcaching issue",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0012",
+      "type": "MENTIONED_BY",
+      "source": "artifact:expert-match-ingestion-endpoint",
+      "target": "person:laura-gongas",
+      "confidence": 0.97,
+      "provenance": [
+        {
+          "quote": "Laura shares ingestion endpoint docs via chat",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0013",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:ground-truth-collection",
+      "confidence": 0.93,
+      "provenance": [
+        {
+          "quote": "need to evaluate Cumulus's pseudonymization by building annotated ground truth with clinical team",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0014",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:pseudonymization",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "need to evaluate Cumulus's pseudonymization by building annotated ground truth with clinical team",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0015",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:annotation-tool-selection",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Annotation tool TBD (data privacy compliant)",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0016",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:human-in-the-loop",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "AI pre-population strategy to reduce clinician burden",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0017",
+      "type": "RELATES_TO",
+      "source": "topic:ground-truth-collection",
+      "target": "action:0002",
+      "confidence": 0.92,
+      "provenance": [
+        {
+          "quote": "Brendan meeting tomorrow to define entities and cases",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0018",
+      "type": "RELATES_TO",
+      "source": "topic:pseudonymization",
+      "target": "action:0002",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "need to evaluate Cumulus's pseudonymization by building annotated ground truth with clinical team",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0019",
+      "type": "OCCURS_IN",
+      "source": "action:0002",
+      "target": "chapter:02",
+      "confidence": 0.97,
+      "provenance": [
+        {
+          "quote": "Brendan meeting tomorrow to define entities and cases",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0020",
+      "type": "OWNS",
+      "source": "person:brendan",
+      "target": "action:0002",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Brendan meeting tomorrow to define entities and cases",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0021",
+      "type": "MENTIONED_BY",
+      "source": "person:brendan",
+      "target": "person:laura-gongas",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Brendan meeting tomorrow to define entities and cases",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0022",
+      "type": "MENTIONED_BY",
+      "source": "person:mediha",
+      "target": "person:laura-gongas",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "Mediha on leave",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0023",
+      "type": "RELATES_TO",
+      "source": "topic:annotation-tool-selection",
+      "target": "action:0003",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Annotation tool TBD (data privacy compliant)",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0024",
+      "type": "OCCURS_IN",
+      "source": "action:0003",
+      "target": "chapter:02",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Annotation tool TBD (data privacy compliant)",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0025",
+      "type": "SUBTOPIC_OF",
+      "source": "topic:ground-truth-collection",
+      "target": "topic:pseudonymization",
+      "confidence": 0.8,
+      "provenance": [
+        {
+          "quote": "need to evaluate Cumulus's pseudonymization by building annotated ground truth with clinical team",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0026",
+      "type": "REFERENCES",
+      "source": "person:laura-gongas",
+      "target": "artifact:cumulus-pipeline-diagram",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "Cumulus flow diagram (screen share kumulus_flow.png)",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0027",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:cumulus-pipeline-architecture",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "parallel tracks: NICE guideline structuring + case entity extraction/pseudonymization, feeding reasoning layer",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0028",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:nice-guideline-structuring",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "parallel tracks: NICE guideline structuring + case entity extraction/pseudonymization",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0029",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:entity-extraction",
+      "confidence": 0.93,
+      "provenance": [
+        {
+          "quote": "case entity extraction/pseudonymization, feeding reasoning layer",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0030",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:cumulus-scope-reduction",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Cumulus scope = green box. Cumulus vague on NICE guideline depth — may only do a subset for obstetrics",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0031",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:nice-api-compliance",
+      "confidence": 0.92,
+      "provenance": [
+        {
+          "quote": "NICE API key sharing: Deon open to time-limited access with key rotation; Laura prefers Medbrief ingests NICE and gives Cumulus the JSON output",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0032",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:deon-kuhn",
+      "target": "topic:nice-api-compliance",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "Deon open to time-limited access with key rotation",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0033",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:rules-representation",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Two rules representation options: Cypher queries (intermediate) vs graph (ultimate goal)",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0034",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:cumulus-deliverable-ownership",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "Cumulus will deliver code fully and transparently",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0035",
+      "type": "REFERENCES",
+      "source": "person:laura-gongas",
+      "target": "artifact:nice-api",
+      "confidence": 0.93,
+      "provenance": [
+        {
+          "quote": "NICE API key sharing: Deon open to time-limited access with key rotation; Laura prefers Medbrief ingests NICE and gives Cumulus the JSON output",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0036",
+      "type": "REFERENCES",
+      "source": "person:deon-kuhn",
+      "target": "artifact:nice-api",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "Deon open to time-limited access with key rotation",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0037",
+      "type": "REFERENCES",
+      "source": "person:laura-gongas",
+      "target": "artifact:graph-database",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Two rules representation options: Cypher queries (intermediate) vs graph (ultimate goal)",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0038",
+      "type": "OCCURS_IN",
+      "source": "decision:0001",
+      "target": "chapter:03",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "Output: JSON (not graph DB)",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0039",
+      "type": "DECIDED",
+      "source": "person:laura-gongas",
+      "target": "decision:0001",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "Output: JSON (not graph DB)",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0040",
+      "type": "RELATES_TO",
+      "source": "topic:cumulus-pipeline-architecture",
+      "target": "decision:0001",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "Output: JSON (not graph DB)",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0041",
+      "type": "OCCURS_IN",
+      "source": "decision:0002",
+      "target": "chapter:03",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Laura prefers Medbrief ingests NICE and gives Cumulus the JSON output",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0042",
+      "type": "DECIDED",
+      "source": "person:laura-gongas",
+      "target": "decision:0002",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Laura prefers Medbrief ingests NICE and gives Cumulus the JSON output",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0043",
+      "type": "RELATES_TO",
+      "source": "topic:nice-api-compliance",
+      "target": "decision:0002",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Laura prefers Medbrief ingests NICE and gives Cumulus the JSON output",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0044",
+      "type": "RELATES_TO",
+      "source": "topic:cumulus-scope-reduction",
+      "target": "decision:0003",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Cumulus vague on NICE guideline depth — may only do a subset for obstetrics",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0045",
+      "type": "OCCURS_IN",
+      "source": "decision:0003",
+      "target": "chapter:03",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Cumulus vague on NICE guideline depth — may only do a subset for obstetrics",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0046",
+      "type": "RELATES_TO",
+      "source": "topic:cumulus-deliverable-ownership",
+      "target": "decision:0004",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Cumulus will deliver code fully and transparently",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0047",
+      "type": "OCCURS_IN",
+      "source": "decision:0004",
+      "target": "chapter:03",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "Cumulus will deliver code fully and transparently",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0048",
+      "type": "DECIDED",
+      "source": "person:laura-gongas",
+      "target": "decision:0004",
+      "confidence": 0.82,
+      "provenance": [
+        {
+          "quote": "Cumulus will deliver code fully and transparently",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0049",
+      "type": "RELATES_TO",
+      "source": "topic:rules-representation",
+      "target": "decision:0005",
+      "confidence": 0.82,
+      "provenance": [
+        {
+          "quote": "Two rules representation options: Cypher queries (intermediate) vs graph (ultimate goal)",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0050",
+      "type": "OCCURS_IN",
+      "source": "decision:0005",
+      "target": "chapter:03",
+      "confidence": 0.82,
+      "provenance": [
+        {
+          "quote": "Two rules representation options: Cypher queries (intermediate) vs graph (ultimate goal)",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0051",
+      "type": "OCCURS_IN",
+      "source": "question:0001",
+      "target": "chapter:01",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "may reassign to Rowan",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0052",
+      "type": "ASKED",
+      "source": "person:laura-gongas",
+      "target": "question:0001",
+      "confidence": 0.82,
+      "provenance": [
+        {
+          "quote": "Task initially on Deon's sprint; may reassign to Rowan",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0053",
+      "type": "ADDRESSED_TO",
+      "source": "question:0001",
+      "target": "person:deon-kuhn",
+      "confidence": 0.8,
+      "provenance": [
+        {
+          "quote": "Task initially on Deon's sprint; may reassign to Rowan",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0054",
+      "type": "ADDRESSED_TO",
+      "source": "question:0001",
+      "target": "person:rowan-reid",
+      "confidence": 0.72,
+      "provenance": [
+        {
+          "quote": "may reassign to Rowan",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0055",
+      "type": "OCCURS_IN",
+      "source": "question:0002",
+      "target": "chapter:02",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "Annotation tool TBD (data privacy compliant)",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0056",
+      "type": "ASKED",
+      "source": "person:laura-gongas",
+      "target": "question:0002",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Annotation tool TBD (data privacy compliant)",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0057",
+      "type": "RELATES_TO",
+      "source": "topic:annotation-tool-selection",
+      "target": "question:0002",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Annotation tool TBD (data privacy compliant)",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0058",
+      "type": "OCCURS_IN",
+      "source": "question:0003",
+      "target": "chapter:03",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "Cumulus vague on NICE guideline depth — may only do a subset for obstetrics",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0059",
+      "type": "ASKED",
+      "source": "person:laura-gongas",
+      "target": "question:0003",
+      "confidence": 0.82,
+      "provenance": [
+        {
+          "quote": "Cumulus vague on NICE guideline depth — may only do a subset for obstetrics",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0060",
+      "type": "ADDRESSED_TO",
+      "source": "question:0003",
+      "target": "person:john-cumulus",
+      "confidence": 0.8,
+      "provenance": [
+        {
+          "quote": "Cumulus vague on NICE guideline depth — may only do a subset for obstetrics",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0061",
+      "type": "RELATES_TO",
+      "source": "topic:nice-guideline-structuring",
+      "target": "question:0003",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "Cumulus vague on NICE guideline depth — may only do a subset for obstetrics",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0062",
+      "type": "OCCURS_IN",
+      "source": "question:0004",
+      "target": "chapter:03",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Two rules representation options: Cypher queries (intermediate) vs graph (ultimate goal)",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0063",
+      "type": "ASKED",
+      "source": "person:laura-gongas",
+      "target": "question:0004",
+      "confidence": 0.8,
+      "provenance": [
+        {
+          "quote": "Two rules representation options: Cypher queries (intermediate) vs graph (ultimate goal)",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0064",
+      "type": "RELATES_TO",
+      "source": "topic:rules-representation",
+      "target": "question:0004",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Two rules representation options: Cypher queries (intermediate) vs graph (ultimate goal)",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0065",
+      "type": "OCCURS_IN",
+      "source": "claim:0001",
+      "target": "chapter:01",
+      "confidence": 0.92,
+      "provenance": [
+        {
+          "quote": "update queue table exists but is empty on prod",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0066",
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0001",
+      "confidence": 0.93,
+      "provenance": [
+        {
+          "quote": "update queue table exists but is empty on prod",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0067",
+      "type": "SUPPORTS",
+      "source": "artifact:expert-update-queue",
+      "target": "claim:0001",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "update queue table exists but is empty on prod",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0068",
+      "type": "OCCURS_IN",
+      "source": "claim:0002",
+      "target": "chapter:01",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "overcaching issue",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0069",
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0002",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "overcaching issue",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0070",
+      "type": "RAISED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0002",
+      "confidence": 0.87,
+      "provenance": [
+        {
+          "quote": "overcaching issue",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0071",
+      "type": "SUPPORTS",
+      "source": "artifact:expert-cache",
+      "target": "claim:0002",
+      "confidence": 0.82,
+      "provenance": [
+        {
+          "quote": "overcaching issue",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0072",
+      "type": "OCCURS_IN",
+      "source": "claim:0003",
+      "target": "chapter:02",
+      "confidence": 0.92,
+      "provenance": [
+        {
+          "quote": "Cases: deceased patients, 2 needed, to define with Brendan",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0073",
+      "type": "ASSERTED",
+      "source": "person:laura-gongas",
+      "target": "claim:0003",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Cases: deceased patients, 2 needed, to define with Brendan",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0074",
+      "type": "OCCURS_IN",
+      "source": "claim:0004",
+      "target": "chapter:03",
+      "confidence": 0.92,
+      "provenance": [
+        {
+          "quote": "Medbrief does Medbrief's own reasoning",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0075",
+      "type": "ASSERTED",
+      "source": "person:laura-gongas",
+      "target": "claim:0004",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Medbrief does Medbrief's own reasoning",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0076",
+      "type": "RELATES_TO",
+      "source": "topic:cumulus-scope-reduction",
+      "target": "claim:0004",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Cumulus scope = green box. Medbrief does Medbrief's own reasoning",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0077",
+      "type": "SUPPORTS",
+      "source": "claim:0004",
+      "target": "decision:0003",
+      "confidence": 0.8,
+      "provenance": [
+        {
+          "quote": "Medbrief does Medbrief's own reasoning. Cumulus scope = green box",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0078",
+      "type": "OCCURS_IN",
+      "source": "claim:0005",
+      "target": "chapter:03",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Deon open to time-limited access with key rotation",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0079",
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0005",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "Deon open to time-limited access with key rotation",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0080",
+      "type": "CONTRADICTS",
+      "source": "claim:0005",
+      "target": "decision:0002",
+      "confidence": 0.72,
+      "provenance": [
+        {
+          "quote": "Deon open to time-limited access with key rotation",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        },
+        {
+          "quote": "Laura prefers Medbrief ingests NICE and gives Cumulus the JSON output",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0081",
+      "type": "RELATES_TO",
+      "source": "topic:nice-api-compliance",
+      "target": "claim:0005",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "Deon open to time-limited access with key rotation",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0082",
+      "type": "REFERENCES",
+      "source": "decision:0002",
+      "target": "artifact:nice-api",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Laura prefers Medbrief ingests NICE and gives Cumulus the JSON output",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0083",
+      "type": "REFERENCES",
+      "source": "decision:0001",
+      "target": "artifact:graph-database",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Output: JSON (not graph DB)",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0084",
+      "type": "SUBTOPIC_OF",
+      "source": "topic:nice-guideline-structuring",
+      "target": "topic:cumulus-pipeline-architecture",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "parallel tracks: NICE guideline structuring + case entity extraction/pseudonymization, feeding reasoning layer",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0085",
+      "type": "SUBTOPIC_OF",
+      "source": "topic:entity-extraction",
+      "target": "topic:cumulus-pipeline-architecture",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "parallel tracks: NICE guideline structuring + case entity extraction/pseudonymization, feeding reasoning layer",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0086",
+      "type": "SUBTOPIC_OF",
+      "source": "topic:nice-api-compliance",
+      "target": "topic:cumulus-pipeline-architecture",
+      "confidence": 0.78,
+      "provenance": [
+        {
+          "quote": "NICE API key sharing: Deon open to time-limited access with key rotation",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0087",
+      "type": "SUBTOPIC_OF",
+      "source": "topic:cumulus-scope-reduction",
+      "target": "topic:cumulus-pipeline-architecture",
+      "confidence": 0.82,
+      "provenance": [
+        {
+          "quote": "Cumulus scope = green box",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0088",
+      "type": "REFERENCES",
+      "source": "person:laura-gongas",
+      "target": "artifact:cumulus-presentation",
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "quote": "Cumulus flow diagram (screen share kumulus_flow.png)",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0089",
+      "type": "DEPENDS_ON",
+      "source": "action:0002",
+      "target": "action:0003",
+      "confidence": 0.78,
+      "provenance": [
+        {
+          "quote": "Annotation tool TBD (data privacy compliant). Brendan meeting tomorrow to define entities and cases",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0090",
+      "type": "RESOLVES",
+      "source": "action:0002",
+      "target": "question:0002",
+      "confidence": 0.72,
+      "provenance": [
+        {
+          "quote": "Brendan meeting tomorrow to define entities and cases. Annotation tool TBD",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0091",
+      "type": "RESOLVES",
+      "source": "decision:0002",
+      "target": "question:0005",
+      "confidence": 0.75,
+      "provenance": [
+        {
+          "quote": "Laura prefers Medbrief ingests NICE and gives Cumulus the JSON output",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0092",
+      "type": "OCCURS_IN",
+      "source": "question:0005",
+      "target": "chapter:03",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "NICE API key sharing: Deon open to time-limited access with key rotation; Laura prefers Medbrief ingests NICE and gives Cumulus the JSON output",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0093",
+      "type": "ASKED",
+      "source": "person:laura-gongas",
+      "target": "question:0005",
+      "confidence": 0.82,
+      "provenance": [
+        {
+          "quote": "NICE API key sharing: Deon open to time-limited access with key rotation; Laura prefers Medbrief ingests NICE and gives Cumulus the JSON output",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0094",
+      "type": "ANSWERED",
+      "source": "person:deon-kuhn",
+      "target": "question:0005",
+      "confidence": 0.8,
+      "provenance": [
+        {
+          "quote": "Deon open to time-limited access with key rotation",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0095",
+      "type": "RELATES_TO",
+      "source": "topic:nice-api-compliance",
+      "target": "question:0005",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "NICE API key sharing: Deon open to time-limited access with key rotation",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0096",
+      "type": "BUILDS_ON",
+      "source": "topic:cumulus-pipeline-architecture",
+      "target": "topic:pseudonymization",
+      "confidence": 0.75,
+      "provenance": [
+        {
+          "quote": "parallel tracks: NICE guideline structuring + case entity extraction/pseudonymization, feeding reasoning layer",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        },
+        {
+          "quote": "need to evaluate Cumulus's pseudonymization by building annotated ground truth with clinical team",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0097",
+      "type": "BUILDS_ON",
+      "source": "topic:cumulus-pipeline-architecture",
+      "target": "topic:entity-extraction",
+      "confidence": 0.8,
+      "provenance": [
+        {
+          "quote": "parallel tracks: NICE guideline structuring + case entity extraction/pseudonymization",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        },
+        {
+          "quote": "Brendan meeting tomorrow to define entities and cases",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0098",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:rowan-reid",
+      "target": "topic:expert-match-storage-endpoint-integration",
+      "confidence": 0.75,
+      "provenance": [
+        {
+          "quote": "may reassign to Rowan",
+          "ts": "00:00–08:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0099",
+      "type": "REFERENCES",
+      "source": "claim:0003",
+      "target": "artifact:expert-match",
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "quote": "Cases: deceased patients, 2 needed, to define with Brendan",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0100",
+      "type": "SUPPORTS",
+      "source": "claim:0003",
+      "target": "decision:0006",
+      "confidence": 0.72,
+      "provenance": [
+        {
+          "quote": "Cases: deceased patients, 2 needed, to define with Brendan",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0101",
+      "type": "OCCURS_IN",
+      "source": "decision:0006",
+      "target": "chapter:02",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Cases: deceased patients, 2 needed, to define with Brendan",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0102",
+      "type": "DECIDED",
+      "source": "person:laura-gongas",
+      "target": "decision:0006",
+      "confidence": 0.82,
+      "provenance": [
+        {
+          "quote": "Cases: deceased patients, 2 needed, to define with Brendan",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0103",
+      "type": "RELATES_TO",
+      "source": "topic:ground-truth-collection",
+      "target": "decision:0006",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Cases: deceased patients, 2 needed, to define with Brendan",
+          "ts": "08:00–17:30",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0104",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:data-architecture-proposal",
+      "confidence": 0.78,
+      "provenance": [
+        {
+          "quote": "parallel tracks: NICE guideline structuring + case entity extraction/pseudonymization, feeding reasoning layer",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0105",
+      "type": "SUBTOPIC_OF",
+      "source": "topic:data-architecture-proposal",
+      "target": "topic:cumulus-pipeline-architecture",
+      "confidence": 0.75,
+      "provenance": [
+        {
+          "quote": "parallel tracks: NICE guideline structuring + case entity extraction/pseudonymization, feeding reasoning layer",
+          "ts": "17:30–27:00",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0202",
+      "type": "ADDRESSED_TO",
+      "source": "question:0005",
+      "target": "person:rowan-reid",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Laura asks Rowan to review Cumulus's data architecture proposal",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0203",
+      "type": "OCCURS_IN",
+      "source": "question:0005",
+      "target": "chapter:04",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "Laura asks Rowan to review Cumulus's data architecture proposal",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0205",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:databricks",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "Cumulus's data architecture proposal (Databricks, Azure Data Factory, Data Lake)",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0206",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:azure-data-factory",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "Cumulus's data architecture proposal (Databricks, Azure Data Factory, Data Lake)",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0207",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:data-lake",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "Cumulus's data architecture proposal (Databricks, Azure Data Factory, Data Lake)",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0208",
+      "type": "REFERENCES",
+      "source": "question:0005",
+      "target": "artifact:cumulus-presentation",
+      "confidence": 0.8,
+      "provenance": [
+        {
+          "quote": "review Cumulus's data architecture proposal",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0209",
+      "type": "RAISED",
+      "source": "person:laura-gongas",
+      "target": "claim:0007",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "concerned about vendor upselling",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0210",
+      "type": "OCCURS_IN",
+      "source": "claim:0007",
+      "target": "chapter:04",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "concerned about vendor upselling",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0211",
+      "type": "RELATES_TO",
+      "source": "topic:data-architecture-proposal",
+      "target": "claim:0007",
+      "confidence": 0.82,
+      "provenance": [
+        {
+          "quote": "Cumulus's data architecture proposal — concerned about vendor upselling",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0212",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:deon-kuhn",
+      "target": "topic:enterprise-skills-development-platform",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Deon suggests enterprise skills platform for data engineering learning",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0213",
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0008",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Deon suggests enterprise skills platform for data engineering learning",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0214",
+      "type": "OCCURS_IN",
+      "source": "claim:0008",
+      "target": "chapter:04",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "Deon suggests enterprise skills platform for data engineering learning",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0215",
+      "type": "RELATES_TO",
+      "source": "topic:enterprise-skills-development-platform",
+      "target": "claim:0008",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Deon suggests enterprise skills platform for data engineering learning",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0216",
+      "type": "SUBTOPIC_OF",
+      "source": "topic:enterprise-skills-development-platform",
+      "target": "topic:data-strategy",
+      "confidence": 0.72,
+      "provenance": [
+        {
+          "quote": "enterprise skills platform for data engineering learning",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0217",
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0009",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "Rowan acknowledges limited data engineering tool experience but commits to applying judgement",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0218",
+      "type": "OCCURS_IN",
+      "source": "claim:0009",
+      "target": "chapter:04",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "Rowan acknowledges limited data engineering tool experience but commits to applying judgement",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0219",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:rowan-reid",
+      "target": "topic:data-architecture-proposal",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "commits to applying judgement",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0220",
+      "type": "OWNS",
+      "source": "person:rowan-reid",
+      "target": "action:0007",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Rowan acknowledges limited data engineering tool experience but commits to applying judgement",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0221",
+      "type": "OCCURS_IN",
+      "source": "action:0007",
+      "target": "chapter:04",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "commits to applying judgement",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0222",
+      "type": "RELATES_TO",
+      "source": "topic:cumulus-scope-reduction",
+      "target": "action:0007",
+      "confidence": 0.72,
+      "provenance": [
+        {
+          "quote": "Cumulus proposal not yet accepted",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0223",
+      "type": "DECIDED",
+      "source": "person:rowan-reid",
+      "target": "decision:0005",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Cumulus proposal not yet accepted; ground truth collection is the top priority",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0224",
+      "type": "OCCURS_IN",
+      "source": "decision:0005",
+      "target": "chapter:04",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "ground truth collection is the top priority",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0225",
+      "type": "RELATES_TO",
+      "source": "topic:ground-truth-collection",
+      "target": "decision:0005",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "ground truth collection is the top priority",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0226",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:rowan-reid",
+      "target": "topic:ground-truth-collection",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "ground truth collection is the top priority",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0228",
+      "type": "SUBTOPIC_OF",
+      "source": "topic:databricks",
+      "target": "topic:data-architecture-proposal",
+      "confidence": 0.82,
+      "provenance": [
+        {
+          "quote": "Cumulus's data architecture proposal (Databricks, Azure Data Factory, Data Lake)",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0229",
+      "type": "SUBTOPIC_OF",
+      "source": "topic:azure-data-factory",
+      "target": "topic:data-architecture-proposal",
+      "confidence": 0.82,
+      "provenance": [
+        {
+          "quote": "Cumulus's data architecture proposal (Databricks, Azure Data Factory, Data Lake)",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0230",
+      "type": "SUBTOPIC_OF",
+      "source": "topic:data-lake",
+      "target": "topic:data-architecture-proposal",
+      "confidence": 0.82,
+      "provenance": [
+        {
+          "quote": "Cumulus's data architecture proposal (Databricks, Azure Data Factory, Data Lake)",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0231",
+      "type": "SUBTOPIC_OF",
+      "source": "topic:mlops-infrastructure",
+      "target": "topic:data-architecture-proposal",
+      "confidence": 0.68,
+      "provenance": [
+        {
+          "quote": "Cumulus's data architecture proposal (Databricks, Azure Data Factory, Data Lake)",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0232",
+      "type": "REFERENCES",
+      "source": "decision:0005",
+      "target": "artifact:cumulus-documentation",
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "quote": "Cumulus proposal not yet accepted",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0233",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:deon-kuhn",
+      "target": "topic:sally-integration",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Sally integration stays with Deon",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0234",
+      "type": "DECIDED",
+      "source": "person:deon-kuhn",
+      "target": "decision:0006",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "Sally integration stays with Deon",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0235",
+      "type": "OCCURS_IN",
+      "source": "decision:0006",
+      "target": "chapter:05",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "Sally integration stays with Deon",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0236",
+      "type": "RELATES_TO",
+      "source": "topic:sally-integration",
+      "target": "decision:0006",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Sally integration stays with Deon",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0237",
+      "type": "OWNS",
+      "source": "person:deon-kuhn",
+      "target": "action:0008",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Sally integration stays with Deon",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0238",
+      "type": "OCCURS_IN",
+      "source": "action:0008",
+      "target": "chapter:05",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "Sally integration stays with Deon",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0239",
+      "type": "RELATES_TO",
+      "source": "topic:sally-integration",
+      "target": "action:0008",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "Sally integration stays with Deon",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0240",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:deon-kuhn",
+      "target": "topic:human-in-the-loop",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Human-in-the-loop for Ask Alex (thumbs up/down via Dave's ticket, medium priority)",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0241",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:deon-kuhn",
+      "target": "topic:ask-alex",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "Human-in-the-loop for Ask Alex (thumbs up/down via Dave's ticket, medium priority)",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0242",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:deon-kuhn",
+      "target": "topic:thumbs-up-down-feedback",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "thumbs up/down via Dave's ticket",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0243",
+      "type": "SUBTOPIC_OF",
+      "source": "topic:thumbs-up-down-feedback",
+      "target": "topic:human-in-the-loop",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Human-in-the-loop for Ask Alex (thumbs up/down via Dave's ticket)",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0244",
+      "type": "SUBTOPIC_OF",
+      "source": "topic:thumbs-up-down-feedback",
+      "target": "topic:clinician-feedback-platform",
+      "confidence": 0.78,
+      "provenance": [
+        {
+          "quote": "thumbs up/down via Dave's ticket",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0245",
+      "type": "MENTIONED_BY",
+      "source": "person:dave",
+      "target": "person:deon-kuhn",
+      "confidence": 0.82,
+      "provenance": [
+        {
+          "quote": "thumbs up/down via Dave's ticket",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0246",
+      "type": "DECIDED",
+      "source": "person:deon-kuhn",
+      "target": "decision:0007",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "medium priority; Chantel may bump to high",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0247",
+      "type": "OCCURS_IN",
+      "source": "decision:0007",
+      "target": "chapter:05",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "medium priority; Chantel may bump to high",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0248",
+      "type": "RELATES_TO",
+      "source": "topic:human-in-the-loop",
+      "target": "decision:0007",
+      "confidence": 0.82,
+      "provenance": [
+        {
+          "quote": "Human-in-the-loop for Ask Alex — medium priority",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0249",
+      "type": "MENTIONED_BY",
+      "source": "person:chantel-pilla",
+      "target": "person:deon-kuhn",
+      "confidence": 0.8,
+      "provenance": [
+        {
+          "quote": "Chantel may bump to high",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0250",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:chantel-pilla",
+      "target": "topic:human-in-the-loop",
+      "confidence": 0.75,
+      "provenance": [
+        {
+          "quote": "Chantel may bump to high",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0251",
+      "type": "OWNS",
+      "source": "person:deon-kuhn",
+      "target": "action:0009",
+      "confidence": 0.92,
+      "provenance": [
+        {
+          "quote": "Deon takes back Expert Match ingestion endpoint task — too much prior context required for Rowan",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0252",
+      "type": "OCCURS_IN",
+      "source": "action:0009",
+      "target": "chapter:05",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "Deon takes back Expert Match ingestion endpoint task",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0253",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:deon-kuhn",
+      "target": "topic:expert-match-ingestion-endpoints",
+      "confidence": 0.92,
+      "provenance": [
+        {
+          "quote": "Deon takes back Expert Match ingestion endpoint task",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0254",
+      "type": "REFERENCES",
+      "source": "action:0009",
+      "target": "artifact:expert-match-ingestion-endpoint",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Deon takes back Expert Match ingestion endpoint task",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0255",
+      "type": "RELATES_TO",
+      "source": "topic:expert-match-ingestion-endpoints",
+      "target": "action:0009",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Deon takes back Expert Match ingestion endpoint task",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0256",
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0006",
+      "confidence": 0.88,
+      "provenance": [
+        {
+          "quote": "too much prior context required for Rowan",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0257",
+      "type": "OCCURS_IN",
+      "source": "claim:0006",
+      "target": "chapter:05",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "too much prior context required for Rowan",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0258",
+      "type": "RELATES_TO",
+      "source": "topic:expert-match-ingestion-endpoints",
+      "target": "claim:0006",
+      "confidence": 0.82,
+      "provenance": [
+        {
+          "quote": "too much prior context required for Rowan",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0259",
+      "type": "MENTIONED_BY",
+      "source": "person:rowan-reid",
+      "target": "person:deon-kuhn",
+      "confidence": 0.8,
+      "provenance": [
+        {
+          "quote": "too much prior context required for Rowan",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0260",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:deon-kuhn",
+      "target": "topic:cumulus-deliverable-ownership",
+      "confidence": 0.82,
+      "provenance": [
+        {
+          "quote": "Final priorities: Cumulus work + storage endpoints",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0261",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:rowan-reid",
+      "target": "topic:cumulus-deliverable-ownership",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Final priorities: Cumulus work + storage endpoints",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0262",
+      "type": "OWNS",
+      "source": "person:rowan-reid",
+      "target": "action:0010",
+      "confidence": 0.92,
+      "provenance": [
+        {
+          "quote": "Rowan to watch Cumulus recording",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0263",
+      "type": "OCCURS_IN",
+      "source": "action:0010",
+      "target": "chapter:05",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "Rowan to watch Cumulus recording",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0264",
+      "type": "REFERENCES",
+      "source": "action:0010",
+      "target": "artifact:hackathon-meeting-recording",
+      "confidence": 0.75,
+      "provenance": [
+        {
+          "quote": "Rowan to watch Cumulus recording",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0265",
+      "type": "RELATES_TO",
+      "source": "topic:cumulus-deliverable-ownership",
+      "target": "action:0010",
+      "confidence": 0.82,
+      "provenance": [
+        {
+          "quote": "Rowan to watch Cumulus recording",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0266",
+      "type": "OWNS",
+      "source": "person:rowan-reid",
+      "target": "action:0011",
+      "confidence": 0.92,
+      "provenance": [
+        {
+          "quote": "catch up with Brendan tomorrow",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0267",
+      "type": "OCCURS_IN",
+      "source": "action:0011",
+      "target": "chapter:05",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "catch up with Brendan tomorrow",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0268",
+      "type": "MENTIONED_BY",
+      "source": "person:brendan",
+      "target": "person:rowan-reid",
+      "confidence": 0.82,
+      "provenance": [
+        {
+          "quote": "catch up with Brendan tomorrow",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0269",
+      "type": "OWNS",
+      "source": "person:rowan-reid",
+      "target": "action:0012",
+      "confidence": 0.92,
+      "provenance": [
+        {
+          "quote": "finish Chantel Pilla script",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0270",
+      "type": "OCCURS_IN",
+      "source": "action:0012",
+      "target": "chapter:05",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "finish Chantel Pilla script",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0271",
+      "type": "MENTIONED_BY",
+      "source": "person:chantel-pilla",
+      "target": "person:rowan-reid",
+      "confidence": 0.82,
+      "provenance": [
+        {
+          "quote": "finish Chantel Pilla script",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0273",
+      "type": "RELATES_TO",
+      "source": "topic:expert-match-storage-endpoint-integration",
+      "target": "action:0009",
+      "confidence": 0.78,
+      "provenance": [
+        {
+          "quote": "Final priorities: Cumulus work + storage endpoints",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0274",
+      "type": "SUBTOPIC_OF",
+      "source": "topic:expert-match-ingestion-endpoints",
+      "target": "topic:expert-match-storage-endpoint-integration",
+      "confidence": 0.75,
+      "provenance": [
+        {
+          "quote": "Expert Match ingestion endpoint task — storage endpoints",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0275",
+      "type": "BUILDS_ON",
+      "source": "decision:0005",
+      "target": "decision:0006",
+      "confidence": 0.65,
+      "provenance": [
+        {
+          "quote": "ground truth collection is the top priority",
+          "ts": "ch04",
+          "source": "transcript"
+        },
+        {
+          "quote": "Sally integration stays with Deon",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0276",
+      "type": "DEPENDS_ON",
+      "source": "action:0010",
+      "target": "action:0011",
+      "confidence": 0.68,
+      "provenance": [
+        {
+          "quote": "Rowan to watch Cumulus recording",
+          "ts": "ch05",
+          "source": "transcript"
+        },
+        {
+          "quote": "catch up with Brendan tomorrow",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0277",
+      "type": "SUPPORTS",
+      "source": "claim:0009",
+      "target": "decision:0005",
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "quote": "Rowan acknowledges limited data engineering tool experience but commits to applying judgement",
+          "ts": "ch04",
+          "source": "transcript"
+        },
+        {
+          "quote": "Cumulus proposal not yet accepted; ground truth collection is the top priority",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0278",
+      "type": "REFERENCES",
+      "source": "action:0011",
+      "target": "artifact:brendan-patent-document",
+      "confidence": 0.62,
+      "provenance": [
+        {
+          "quote": "catch up with Brendan tomorrow",
+          "ts": "ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0279",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:rowan-reid",
+      "target": "topic:cumulus-scope-reduction",
+      "confidence": 0.78,
+      "provenance": [
+        {
+          "quote": "Cumulus proposal not yet accepted; Final priorities: Cumulus work",
+          "ts": "ch04-ch05",
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "e-0280",
+      "type": "RELATES_TO",
+      "source": "topic:cumulus-scope-reduction",
+      "target": "decision:0005",
+      "confidence": 0.78,
+      "provenance": [
+        {
+          "quote": "Cumulus proposal not yet accepted",
+          "ts": "ch04",
+          "source": "transcript"
+        }
+      ]
+    }
+  ],
+  "_annex": {
+    "nodes": [],
+    "edges": []
+  }
+}
