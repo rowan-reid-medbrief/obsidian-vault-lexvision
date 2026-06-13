@@ -1,0 +1,204 @@
+{
+  "chapters": [
+    {
+      "id": "chapter:01",
+      "index": 1,
+      "title": "Records page permission model: super-admin, expert and client folder views",
+      "summary": "Recap of the records page, how personal folders are created under both case documentation and private folders, and what super-admins, experts and clients each see. Covers the parked project to rename private folders to workspace and group users by internal, client and expert.",
+      "start_ts": 3.22,
+      "end_ts": 249.32,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:02",
+      "index": 2,
+      "title": "Unsorted records folder, client uploads and folder actions",
+      "summary": "The unsorted records folder where client-uploaded records land, the duplication this causes for the ops team, and folder actions such as rename, delete, download and notify. Includes the suppressed-invitation case where notification is replaced by sending the invitation.",
+      "start_ts": 249.32,
+      "end_ts": 411.80,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:03",
+      "index": 3,
+      "title": "Records viewer (Apryse), CER bookmarks and the annotation/redaction problem",
+      "summary": "The Apryse (formerly PDFTron) records viewer: bookmark and heading navigation of long computerised electronic records, why MedBrief does not classify or date CER sections, and the annotations and redaction feature. Explains how updates lose annotations and Dion's granular-storing project to preserve coordinates across page changes.",
+      "start_ts": 411.80,
+      "end_ts": 943.24,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:04",
+      "index": 4,
+      "title": "MedBrief Insights AI panel and Ask Alex mode",
+      "summary": "Introduction to the in-development MedBrief Insights AI panel and its primary Ask Alex mode for interrogating MedBrief-sorted records, with file and folder filters, example questions, references and a feedback mechanism. Notes the chat interface was built in-house and the AI team is still reviewing model accuracy.",
+      "start_ts": 943.24,
+      "end_ts": 1175.70,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:05",
+      "index": 5,
+      "title": "CER index mode: heading extraction, date and keyword filtering",
+      "summary": "The reworked CER index that extracts Epic bookmarks or, failing that, headings via a visual language model, presented as an interactive index with date-range and keyword filtering over heading content. Covers patient versus event sections, date-extraction rules per event type, and the decision to launch on Epic first as it is roughly 70% of CER records.",
+      "start_ts": 1175.70,
+      "end_ts": 1770.04,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:06",
+      "index": 6,
+      "title": "Records date-range filter on files and documents",
+      "summary": "How the records-page date range works: each document and folder carries a date range from DocSorter, but the filter currently applies at file level rather than to documents within a file. Dion is to extend it to filter documents inside files, and any applied date range auto-carries into Ask Alex.",
+      "start_ts": 1770.04,
+      "end_ts": 1926.36,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:07",
+      "index": 7,
+      "title": "Key events mode and the planned chronology wizard",
+      "summary": "The key events mode that lists a timeline of key events from the records, and why it is hard to do accurately. Covers the plan to build a chronology wizard so clinicians generate chronologies in MedBrief as a hyperlinked digital form rather than in Word, which would later feed key events.",
+      "start_ts": 1926.36,
+      "end_ts": 2075.86,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:08",
+      "index": 8,
+      "title": "Key events positioning versus paid chronologies, and Figma mockups",
+      "summary": "Why key events exists as a lighter overview sitting between nothing and a paid chronology, framed against competition from AI legal-document providers and the cost of a full chronology. Reviews Figma designs by freelancer Anna for the key events view and the updated CER index.",
+      "start_ts": 2075.86,
+      "end_ts": 2328.04,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:09",
+      "index": 9,
+      "title": "Early Case Assessment wizard",
+      "summary": "The ECA wizard that moved early case assessments from Word onto the platform, with structured questions on breach of duty and causation whose answers determine a supportive, not supportive or inconclusive conclusion. Notes that storing ECA data in the database makes it reusable by the AI team, for example for MedBrief Match.",
+      "start_ts": 2328.04,
+      "end_ts": 2532.54,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:10",
+      "index": 10,
+      "title": "Radiology viewer migration from Orthanc to Medream",
+      "summary": "The radiology viewer, demonstrated in production, and the move from Orthanc to Medream. The main driver was broader format support, plus the ability to read PDF radiology reports inside the viewer, alongside study loading and measurement features.",
+      "start_ts": 2532.54,
+      "end_ts": 2675.96,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:11",
+      "index": 11,
+      "title": "MedBrief Match: expert-matching concept and enablement",
+      "summary": "Introduction to MedBrief Match (Medream Merge) for finding experts, currently live for select Lime users only, with enablement conditions such as matter-wizard creation and clinical-negligence cases. Covers AI-generated expert profiles sourced from the internet, the letter-of-approach approach, the cost advantage over expert agencies, and AI-recommended specialities and queries.",
+      "start_ts": 2675.96,
+      "end_ts": 3152.46,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:12",
+      "index": 12,
+      "title": "MedBrief Match results, similar-case matching and expert profiles",
+      "summary": "The expert search results grouped by speciality, including similar-case matching that cross-references the matter against other MedBrief Match matters. Walks through profile cards, hourly rate and turnaround data, filters, and AI-generated recommendation reasons for each expert.",
+      "start_ts": 3152.46,
+      "end_ts": 3482.50,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:13",
+      "index": 13,
+      "title": "Generating and sending the letter of approach",
+      "summary": "Creating a letter of approach: standard template, the choice to show the claimant's full name or initials, AI-generated background and records of tape, attachments requested by Lime, and the criteria for sufficient matter information. The PDF is encrypted and viewed only after the expert logs in rather than sent as an attachment.",
+      "start_ts": 3482.50,
+      "end_ts": 3989.70,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:14",
+      "index": 14,
+      "title": "Expert experience: messages page, user simulation and responding to a letter of approach",
+      "summary": "The new messages navigation item and how a super-admin can simulate an expert user to see what they receive. Walks through the expert responding to a letter of approach with the eight client questions, the accept, decline or request-more-information flow, mandatory terms and conditions, and profile confirmation.",
+      "start_ts": 3989.70,
+      "end_ts": 4449.80,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:15",
+      "index": 15,
+      "title": "Letter of instruction, email-reply gap and billing automation plans",
+      "summary": "What happens after acceptance: the letter of instruction (created outside the platform for now), the manual handling of experts who reply by email, and the plan to invite the expert directly from the match page so the instructed status is captured. Also covers planned record-upload prompts to track report and invoice submission and automated billing service requests.",
+      "start_ts": 4449.80,
+      "end_ts": 4974.88,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:16",
+      "index": 16,
+      "title": "Inviting users and experts, roles and suppressed invitations",
+      "summary": "Inviting users from the users page, how suggestions only appear for people with prior dealings with the client, and the available roles including expert, view-only expert, scanner and matter project manager. Demonstrates suppressing an invitation to pre-create an expert folder and the planned MedBrief Match marker on contacted experts.",
+      "start_ts": 4974.88,
+      "end_ts": 5184.40,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:17",
+      "index": 17,
+      "title": "Disclosures: inter-party record sharing",
+      "summary": "Disclosures, where one firm discloses records and radiology to an opposing firm, created through a client-managed wizard with a fee whose liability can fall on either firm. Covers recipient access by email or activation, the 30-day expiry with reactivation, and updating the disclosed record set.",
+      "start_ts": 5184.40,
+      "end_ts": 5620.06,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:18",
+      "index": 18,
+      "title": "Communications tab and workflow-driving reports",
+      "summary": "The admin-only communications tab that links emails to a matter via reference number or records request, and the reports section that drives the ops team's workflow. Saved reports such as records-request daily chases, batches, clinical reports and new matter requests determine and track outstanding work.",
+      "start_ts": 5620.06,
+      "end_ts": 5836.28,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:19",
+      "index": 19,
+      "title": "Manage section: clients, DocSorter config, service options and invoicing",
+      "summary": "The admin manage section covering clients, firms (API import via Kennedys), matters, users and incomplete matters, plus DocSorter configuration such as clinical sections, sorting instructions and file-note phrases. Also covers expert agencies, records request centres, service options and timelines, billing items including the MedBrief Match markup, and generating invoices that sync to Xero.",
+      "start_ts": 5836.28,
+      "end_ts": 6285.12,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:20",
+      "index": 20,
+      "title": "Admin tools, profile page and product-notes handover",
+      "summary": "The remaining admin area: system messages, the radiology status panel, restoring deleted documents, blacklist and failed-login management, and help articles with the user-role matrix. Closes with the profile page (email changes, Microsoft single sign-on, MFA, login logs and downloads) and a handover of internal product-notes lookup pages.",
+      "start_ts": 6285.12,
+      "end_ts": 6657.26,
+      "topic_ids": [],
+      "frame_ids": []
+    }
+  ]
+}

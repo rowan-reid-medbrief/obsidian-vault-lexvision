@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "graph_id": "mb-product-walkthrough-2026-06-03",
+  "source_recording": "~/Downloads/MB-product-walkthrough-20260603.mp4",
+  "source_checksum": "7af364c7bc7937e722c466d2caa4e21888fa8a61f254241bbf6268fa1238d264",
+  "meeting_date": "2026-06-03",
+  "title": "MB Product Walk-through",
+  "promoted_at": "2026-06-12T22:30:33+02:00",
+  "domain": "medbrief",
+  "primary_project": "~/claude_code/medbrief-onboarding",
+  "secondary_projects": [],
+  "project_key": "medbrief-onboarding",
+  "valid_at": "2026-06-03",
+  "valid_at_source": "explicit",
+  "valid_at_end": null,
+  "invalid_at": null,
+  "invalidated_by": null,
+  "graph_content_hash": "e72d3deeee7d075ae5611a78dbf657ae45bf4f8f29186e3f8bb60e1f25432896",
+  "promoted_artifacts": [
+    "meeting.json",
+    "graph.graphml",
+    "graph.mermaid.md",
+    "summary.md",
+    "timeline.md",
+    "chapters/chapters.json",
+    "graph.meta.json"
+  ],
+  "include_raw": false
+}

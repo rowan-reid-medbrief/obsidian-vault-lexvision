@@ -1,0 +1,134 @@
+{
+  "chapters": [
+    {
+      "id": "chapter:01",
+      "index": 1,
+      "title": "Opening and screen-share setup",
+      "summary": "Deon confirms the latest Cumulus email has been forwarded to Rowan. Rowan offers to run through his research document and starts sharing his screen.",
+      "start_ts": 0.0,
+      "end_ts": 75.6,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:02",
+      "index": 2,
+      "title": "Module breakdown approach and medallion architecture",
+      "summary": "Rowan explains why he decomposed the proposed system into modules with clear inputs, outputs, measurable metrics and benchmarks, and aligned them back to Brendan's patent. He discusses the Databricks bronze/silver/gold medallion pattern and argues a two-layer raw/curated approach is enough for the POC. Laura asks for an intermediate layer so entity extraction and pseudonymisation can be evaluated.",
+      "start_ts": 75.6,
+      "end_ts": 423.7,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:03",
+      "index": 3,
+      "title": "Per-module metrics and benchmarks",
+      "summary": "Rowan critiques Cumulus's vague success criteria (e.g. 'one to two surgery cases processed') and proposes discrete metrics per module: parsing accuracy, fidelity, completeness, hallucination for ingestion/OCR. He names ScoreBench (a tool) and ExtractBench (a methodology with self-prepared ground truth), and proposes Azure Document Intelligence for OCR. Flags that rule structuring is novel with no established benchmark.",
+      "start_ts": 423.7,
+      "end_ts": 555.2,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:04",
+      "index": 4,
+      "title": "Entity model and clinical coding standards",
+      "summary": "Rowan presents an entity model researched with Claude, grounded in ICD-10 (diagnoses), SNOMED CT, dm+d (UK medicines) and OPCS-4 (procedures), with a people/organisations/clinical hierarchy. Laura notes Brendan will want it generalisable to natural and legal entities per the patent. The team agrees the entity set serves two purposes (pseudonymisation and graph representation) and Laura will check the previously-defined pseudonymisation entities and the sample-case chronologies.",
+      "start_ts": 555.2,
+      "end_ts": 851.4,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:05",
+      "index": 5,
+      "title": "Platform infrastructure tooling",
+      "summary": "Rowan reviews the proposed Azure stack. He explains the shift from Microsoft Fabric to Databricks (Databricks is more composable and gives finer control over data staging; Fabric is a newer all-in-one abstraction). Endorses Azure Data Factory connectors, Blob storage monitoring, AI Foundry for models, and confirms Neo4j as the team's graph database preference.",
+      "start_ts": 851.4,
+      "end_ts": 994.6,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:06",
+      "index": 6,
+      "title": "Architecture and cross-cutting: CQRS",
+      "summary": "Rowan explains Cumulus's proposed CQRS (command query responsibility segregation) pattern, which separates the ingestion/processing layer from the queryable layer used by MedBrief. He judges it sensible for production scaling but not essential for a proof of value unless it is cheap to set up.",
+      "start_ts": 994.6,
+      "end_ts": 1104.8,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:07",
+      "index": 7,
+      "title": "Pseudonymisation ground truth and NLP tooling",
+      "summary": "Rowan researches building the pseudonymisation ground truth. Presidio (Microsoft) emerges as the leading first-pass tool combining regex and LLMs. Discussion of spaCy (traditional NER, good for an initial run) and GLiNER for relationships/classification, AllenNLP as an older option, data-protection constraints on open-source models, and the option to self-host small NLP models. Label Studio proposed for clinician annotation feeding back into Presidio reconfiguration. Laura confirms this matches what she had in mind.",
+      "start_ts": 1104.8,
+      "end_ts": 1511.8,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:08",
+      "index": 8,
+      "title": "Reflecting on Cumulus's latest email",
+      "summary": "Rowan notes Cumulus took a step back in their recent email, stripping out the detailed architecture and committing to build the NICE pipeline plus the recommendation engine without evolved tooling detail. Deon reads it as them trying to get the high-level direction right first (Vanessa replied with bullet points). Laura agrees the module-structured document is useful and takes a homework action to review evaluation metrics and entities.",
+      "start_ts": 1511.8,
+      "end_ts": 1644.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:09",
+      "index": 9,
+      "title": "Build tiers and division of labour",
+      "summary": "Rowan introduces 'build tiers' describing how novel or challenging each module is: commodity (off-the-shelf, just configure) versus must-prove/custom. The open question is whether Cumulus should build the hard custom modules (e.g. graph construction) or MedBrief should, given MedBrief has already started on the graph work. Team aligns that Cumulus would do modules two to seven (not one, since they do not do OCR).",
+      "start_ts": 1644.0,
+      "end_ts": 1861.1,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:10",
+      "index": 10,
+      "title": "Refining the email response to Cumulus",
+      "summary": "The team decides to be more explicit in the reply to Cumulus since Vanessa is not technical: state clearly that Cumulus should do entity extraction and MedBrief will supply the entities to extract and classify. Rowan clarifies module two (NLP semantic processing, identifying named things) versus module three (entity extraction, classifying them). Laura notes rights and obligations come mainly from the NICE guidelines (module four), not the case. Agreement to include evaluation metrics in the email.",
+      "start_ts": 1861.1,
+      "end_ts": 2086.8,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:11",
+      "index": 11,
+      "title": "Case selection for the proof of concept",
+      "summary": "Laura presents case 39945 (Brendan's case: two medications should have been co-prescribed, one was omitted, patient died) and a similar candidate case (patient discharged without antibiotics, leading to death). Discussion of whether the two cases being too similar risks overfitting. Laura argues starting narrow in one domain (e.g. gynaecology and obstetrics) is the right way to start a complex pipeline POC, then scale; Cumulus also asked for similar cases and wanted to limit the NICE guidelines ingested. Deon agrees to branch out after the proof of value. Brendan still needs to check the case and the NICE application form.",
+      "start_ts": 2086.8,
+      "end_ts": 2441.3,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:12",
+      "index": 12,
+      "title": "Rowan's next work and action assignments",
+      "summary": "Discussion of what Rowan works on next. Laura needs him to go deeper on Cumulus later but it is on her side for now. Deon assigns Rowan an independent exploratory research task on two existing tickets (granular storing of records, and date filtering), wanting Rowan's independent assessment to compare with his own. Laura mentions defining the company data strategy as a broader future item. Reference to Chantel's product walkthrough where Rowan asked strong questions.",
+      "start_ts": 2441.3,
+      "end_ts": 2663.1,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:13",
+      "index": 13,
+      "title": "Wrap-up",
+      "summary": "Laura asks for five minutes with Deon offline; Deon agrees to call her. He will resend Rowan the ticket. Closing goodbyes.",
+      "start_ts": 2663.1,
+      "end_ts": 2679.3,
+      "topic_ids": [],
+      "frame_ids": []
+    }
+  ]
+}

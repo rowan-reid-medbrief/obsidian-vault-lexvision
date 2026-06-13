@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "graph_id": "kumulus-regroup-2026-06-12",
+  "source_recording": "~/Downloads/Kumulus Regroup [01GPSUBVW3W37DLTJLKBEZE3TPX25RP6UJ].mp4",
+  "source_checksum": "61941de9b5e824d5b026b92e69d562ad86a573d97a2b4bd44751b7fc78ef7dbf",
+  "meeting_date": "2026-06-12",
+  "title": "Kumulus Regroup",
+  "promoted_at": "2026-06-13T10:30:28+02:00",
+  "domain": "lexvision",
+  "primary_project": "~/claude_code/projects/lexvision-poc",
+  "secondary_projects": [],
+  "project_key": "lexvision-poc",
+  "valid_at": "2026-06-12",
+  "valid_at_source": "explicit",
+  "valid_at_end": null,
+  "invalid_at": null,
+  "invalidated_by": null,
+  "graph_content_hash": "19f5c6685dfa7300fdfaaf75df2ce40d2cf869aaed71a575e70f7be84de688a0",
+  "promoted_artifacts": [
+    "meeting.json",
+    "graph.graphml",
+    "graph.mermaid.md",
+    "summary.md",
+    "timeline.md",
+    "chapters/chapters.json",
+    "graph.meta.json"
+  ],
+  "include_raw": false
+}

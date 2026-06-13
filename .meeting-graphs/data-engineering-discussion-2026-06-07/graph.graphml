@@ -1,0 +1,2468 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d29" for="edge" attr.name="notes" attr.type="string" />
+  <key id="d28" for="edge" attr.name="chapter_span" attr.type="string" />
+  <key id="d27" for="edge" attr.name="provenance" attr.type="string" />
+  <key id="d26" for="edge" attr.name="confidence" attr.type="double" />
+  <key id="d25" for="edge" attr.name="target" attr.type="string" />
+  <key id="d24" for="edge" attr.name="source" attr.type="string" />
+  <key id="d23" for="edge" attr.name="type" attr.type="string" />
+  <key id="d22" for="node" attr.name="phash" attr.type="string" />
+  <key id="d21" for="node" attr.name="description" attr.type="string" />
+  <key id="d20" for="node" attr.name="ocr_text" attr.type="string" />
+  <key id="d19" for="node" attr.name="visual_type" attr.type="string" />
+  <key id="d18" for="node" attr.name="frame_ts" attr.type="double" />
+  <key id="d17" for="node" attr.name="frame_path" attr.type="string" />
+  <key id="d16" for="node" attr.name="frame_ids" attr.type="string" />
+  <key id="d15" for="node" attr.name="topic_ids" attr.type="string" />
+  <key id="d14" for="node" attr.name="end_ts" attr.type="double" />
+  <key id="d13" for="node" attr.name="start_ts" attr.type="double" />
+  <key id="d12" for="node" attr.name="summary" attr.type="string" />
+  <key id="d11" for="node" attr.name="index" attr.type="long" />
+  <key id="d10" for="node" attr.name="statement" attr.type="string" />
+  <key id="d9" for="node" attr.name="text" attr.type="string" />
+  <key id="d8" for="node" attr.name="is_personal_commitment" attr.type="boolean" />
+  <key id="d7" for="node" attr.name="notes" attr.type="string" />
+  <key id="d6" for="node" attr.name="aliases" attr.type="string" />
+  <key id="d5" for="node" attr.name="role" attr.type="string" />
+  <key id="d4" for="node" attr.name="chapter_ids" attr.type="string" />
+  <key id="d3" for="node" attr.name="provenance" attr.type="string" />
+  <key id="d2" for="node" attr.name="confidence" attr.type="double" />
+  <key id="d1" for="node" attr.name="label" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="person:rowan-reid">
+      <data key="d0">Person</data>
+      <data key="d1">Rowan Reid</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "Rowan Reid: Would this be, so expert match is a completely, it's a separate product, separate code base from MedBrief, right?", "ts": 120, "source": "chapter_1"}, {"quote": "Rowan Reid: I can, I can make it for that work, yeah, so I'll join that.", "ts": 820, "source": "chapter_2"}, {"quote": "I'm absolutely keen to look into it. I just wanted to put it out there that I'm also not a data engineering expert", "ts": 1700, "source": "Rowan Reid"}, {"quote": "Cool. All right. Sounds good to me.", "ts": 2220, "source": "Rowan Reid"}]</data>
+      <data key="d4">["1", "2", "3", "4", "5"]</data>
+      <data key="d5">AI/data engineer, new to team</data>
+    </node>
+    <node id="person:laura-gongas">
+      <data key="d0">Person</data>
+      <data key="d1">Laura Gongas</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "Laura Gongas: So, the first point I had was having the integration of the storage endpoint of expert match.", "ts": 10, "source": "chapter_1"}, {"quote": "Laura Gongas: So going on to the next one, we have everything related to cumulus.", "ts": 480, "source": "chapter_2"}, {"quote": "we don't have anyone in the team that has a data engineering formation", "ts": 1622, "source": "Laura Gongas"}, {"quote": "the starting to collect the ground truth, that's actually the most important one", "ts": 1990, "source": "Laura Gongas"}]</data>
+      <data key="d4">["1", "2", "3", "4", "5"]</data>
+      <data key="d5">AI team lead</data>
+    </node>
+    <node id="person:deon-kuhn">
+      <data key="d0">Person</data>
+      <data key="d1">Deon Kuhn</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "Deon Kuhn: It's something we can give to Rowan that I don't have any issue with that", "ts": 35, "source": "chapter_1"}, {"quote": "Deon Kuhn: Look, I think for the duration of the work, so for the six to 8 weeks", "ts": 1280, "source": "chapter_3"}, {"quote": "there was a whole section for data engineering", "ts": 1660, "source": "Deon Kuhn"}, {"quote": "I'll take that one for the team for this for now", "ts": 2200, "source": "Deon Kuhn"}]</data>
+      <data key="d4">["1", "2", "3", "4", "5"]</data>
+      <data key="d5">Lead developer</data>
+    </node>
+    <node id="person:brendan">
+      <data key="d0">Person</data>
+      <data key="d1">Brendan</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Perhaps that's something that we can do with Brendan, because he did mention that he wanted to be like, for terms of like privacy, for it to be cases with deceased patients", "ts": 620, "source": "chapter_2"}, {"quote": "we'll catch up with Brendan tomorrow", "ts": 2222, "source": "Rowan Reid"}, {"quote": "I'll send that over to Brendan", "ts": 2255, "source": "Deon Kuhn"}]</data>
+      <data key="d4">["2", "3", "5"]</data>
+      <data key="d5">Clinical team contact; holds patent document on system</data>
+    </node>
+    <node id="person:mediha">
+      <data key="d0">Person</data>
+      <data key="d1">Mediha</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Mediha presented at the Sprint Nine review the work that she had been doing on the kind of the graph database side of things", "ts": 990, "source": "chapter_2"}, {"quote": "Mediha went on leave, so Mediha won't be taking over anything right now", "ts": 1040, "source": "chapter_2"}]</data>
+      <data key="d4">["2", "3"]</data>
+      <data key="d5">Team member; graph database / knowledge graph work; currently on leave</data>
+    </node>
+    <node id="person:vanessa">
+      <data key="d0">Person</data>
+      <data key="d1">Vanessa</data>
+      <data key="d2">0.45</data>
+      <data key="d3">[{"quote": "Or did Vanessa give us access already?", "ts": 485, "source": "chapter_2"}]</data>
+      <data key="d4">["2"]</data>
+      <data key="d5">Unclear; mentioned in context of Cumulus meeting access</data>
+    </node>
+    <node id="person:chantel-pilla">
+      <data key="d0">Person</data>
+      <data key="d1">Chantel Pilla</data>
+      <data key="d2">0.9</data>
+      <data key="d6">["Chantel"]</data>
+      <data key="d3">[{"quote": "when an expert profile is complete and there's a query for that that Chantel uses to check, that's when they should be synced", "ts": 260, "source": "chapter_1"}, {"quote": "I might ask Chantel just to bump that up to a high because I don't think she assessed the dependency there", "ts": 2160, "source": "Deon Kuhn"}, {"quote": "I'll take this Script for Chantel Pilla.", "ts": 2225, "source": "Rowan Reid"}]</data>
+      <data key="d4">["1", "5"]</data>
+      <data key="d5">Uses query to check expert profile completeness; has open tickets for thumbs-down feature</data>
+    </node>
+    <node id="person:john-cumulus">
+      <data key="d0">Person</data>
+      <data key="d1">John (Cumulus)</data>
+      <data key="d2">0.45</data>
+      <data key="d3">[{"quote": "he actually said as much because he said he, John says he comes up with suggestions and then the data scientists suggest other stuff", "ts": 960, "source": "chapter_2"}]</data>
+      <data key="d4">["2"]</data>
+      <data key="d5">Representative at Cumulus</data>
+    </node>
+    <node id="person:fatima">
+      <data key="d0">Person</data>
+      <data key="d1">Fatima</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "we have Fatima that would be able to look into it, but I'm not sure how much into the data side", "ts": 1640, "source": "Laura Gongas"}]</data>
+      <data key="d4">["4"]</data>
+      <data key="d5">Team member with MLOps/infrastructure focus</data>
+    </node>
+    <node id="person:dave">
+      <data key="d0">Person</data>
+      <data key="d1">Dave</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "the tickets for that are with Dave for the thumbs down, because that does not currently, it's not connected", "ts": 2078, "source": "Deon Kuhn"}]</data>
+      <data key="d4">["5"]</data>
+      <data key="d5">Holds thumbs-down feature tickets</data>
+    </node>
+    <node id="org:cumulus">
+      <data key="d0">Organisation</data>
+      <data key="d1">Cumulus</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "we have everything related to cumulus", "ts": 480, "source": "chapter_2"}, {"quote": "So we told them like come back with a smaller scope.", "ts": 1060, "source": "chapter_3"}, {"quote": "all I've got from Cumulus is I think the documentation that you shared with me, Laura", "ts": 1870, "source": "Rowan Reid"}, {"quote": "Okay, that's for Cumulus.", "ts": 1995, "source": "Laura Gongas"}]</data>
+      <data key="d4">["2", "3", "4", "5"]</data>
+      <data key="d7">Third-party data pipeline vendor engaged for entity extraction and pseudonymization; proposed scope exceeded budget; asked to reduce</data>
+    </node>
+    <node id="org:medbrief">
+      <data key="d0">Organisation</data>
+      <data key="d1">Medbrief</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "expert match is a completely, it's a separate product, separate code base from MedBrief, right?", "ts": 120, "source": "chapter_1"}]</data>
+      <data key="d4">["1"]</data>
+      <data key="d7">Main product; separate codebase from Expert Match</data>
+    </node>
+    <node id="org:nice">
+      <data key="d0">Organisation</data>
+      <data key="d1">NICE (National Institute for Health and Care Excellence)</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "the NICE API, that gives us access to the rules, is that right? The guidelines.", "ts": 1200, "source": "chapter_3"}]</data>
+      <data key="d4">["3"]</data>
+      <data key="d7">UK body providing clinical guidelines via API; API access requires ISO compliance and UK-based registration</data>
+    </node>
+    <node id="artifact:expert-match">
+      <data key="d0">Artifact</data>
+      <data key="d1">Expert Match</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "the first point I had was having the integration of the storage endpoint of expert match", "ts": 10, "source": "chapter_1"}]</data>
+      <data key="d4">["1"]</data>
+      <data key="d7">Separate product/codebase; has its own dev database and AI database; handles expert profiles and case associations</data>
+    </node>
+    <node id="artifact:expert-match-ingestion-endpoint">
+      <data key="d0">Artifact</data>
+      <data key="d1">Expert Match AI Ingestion Endpoint</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "the dev team calls our ingestion point, which is already in there, to make sure that we have everything up to date, including not only our SQL database, but also our embeddings", "ts": 95, "source": "chapter_1"}, {"quote": "I just sent you through the chat a link to the documentation of our ingestion endpoint as well", "ts": 440, "source": "chapter_1"}]</data>
+      <data key="d4">["1"]</data>
+      <data key="d7">Already built; dev team not yet calling it; covers expert profile, case, and case-expert relationship updates</data>
+    </node>
+    <node id="artifact:expert-update-queue">
+      <data key="d0">Artifact</data>
+      <data key="d1">Expert Update Queue Table</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "I wonder if they had created a queue. an expert update or a match update queue. Actually, there is an update queue table, which Does look like Rowan, it would cater for that.", "ts": 300, "source": "chapter_1"}, {"quote": "that table on production is currently empty, meaning that it's not logging updates that need to happen", "ts": 320, "source": "chapter_1"}]</data>
+      <data key="d4">["1"]</data>
+      <data key="d7">Exists in production DB but currently empty; not yet logging update events; created by backend team in preparation</data>
+    </node>
+    <node id="artifact:expert-cache">
+      <data key="d0">Artifact</data>
+      <data key="d1">Expert Data Cache</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "there's also an element to this that we cache the expert data in a table of ours. The cache is quite hairy in terms of, like, it's almost overcaching a little bit.", "ts": 355, "source": "chapter_1"}]</data>
+      <data key="d4">["1"]</data>
+      <data key="d7">Expert data cached in dev-side table; needs invalidation when AI ingestion endpoint is called post-update</data>
+    </node>
+    <node id="artifact:cumulus-pipeline-diagram">
+      <data key="d0">Artifact</data>
+      <data key="d1">Cumulus Pipeline Diagram (kumulus_flow.png)</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "Are you seeing my screen? ... So we thought they could concentrate in the green box", "ts": 1065, "source": "chapter_3"}]</data>
+      <data key="d4">["3"]</data>
+      <data key="d7">Screen-shared diagram showing parallel tracks: NICE guideline structuring (top) and clinical case entity extraction/pseudonymization (bottom); green box = proposed Cumulus scope</data>
+    </node>
+    <node id="artifact:nice-api">
+      <data key="d0">Artifact</data>
+      <data key="d1">NICE API</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "the NICE API, that gives us access to the rules, is that right? The guidelines.", "ts": 1200, "source": "chapter_3"}, {"quote": "to have access to the NICE API, you need to have like certain ISO compliance stuff and be UK based", "ts": 1240, "source": "chapter_3"}]</data>
+      <data key="d4">["3"]</data>
+      <data key="d7">Provides clinical guidelines programmatically; access requires ISO compliance and UK presence; Medbrief applying for key; concern about sharing key with Cumulus (non-UK)</data>
+    </node>
+    <node id="artifact:brendan-patent-document">
+      <data key="d0">Artifact</data>
+      <data key="d1">Brendan's Patent Document</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "compare it back to the patent, that Brendan's patent document, and he had that description of like the whole system, then we had broken it down into different modules", "ts": 790, "source": "chapter_2"}]</data>
+      <data key="d4">["2"]</data>
+      <data key="d7">System-level description broken into modules including entity identification and pseudonymization</data>
+    </node>
+    <node id="artifact:graph-database">
+      <data key="d0">Artifact</data>
+      <data key="d1">Knowledge Graph / Graph Database</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Mediha presented at the Sprint Nine review the work that she had been doing on the kind of the graph database side of things in terms of represent, like once we extract all the entities and the relationships", "ts": 990, "source": "chapter_2"}, {"quote": "we are going to be moving into graphs and making the comparison between the guideline and the actual facts of the case", "ts": 1115, "source": "chapter_3"}]</data>
+      <data key="d4">["2", "3"]</data>
+      <data key="d7">Graph representation of entities and relationships; Mediha's work; downstream of Cumulus structured output; enables guideline-vs-case reasoning</data>
+    </node>
+    <node id="artifact:cumulus-presentation">
+      <data key="d0">Artifact</data>
+      <data key="d1">Cumulus architecture presentation (previous meeting)</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "the presentation that they had from the previous meeting, I think that's the one that has the most amount of details. But we don't have access to it yet because he was going to adjust it.", "ts": 1950, "source": "Laura Gongas"}]</data>
+      <data key="d4">["4"]</data>
+      <data key="d7">Most detailed Cumulus document; not yet accessible; being adjusted by Cumulus</data>
+    </node>
+    <node id="artifact:cumulus-documentation">
+      <data key="d0">Artifact</data>
+      <data key="d1">Cumulus documentation (shared pre-hackathon)</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "all I've got from Cumulus is I think the documentation that you shared with me, Laura, like prior to the meeting we had with them during the hackathon", "ts": 1870, "source": "Rowan Reid"}]</data>
+      <data key="d4">["4"]</data>
+      <data key="d7">Documentation shared by Laura to Rowan before the hackathon meeting</data>
+    </node>
+    <node id="artifact:hackathon-meeting-recording">
+      <data key="d0">Artifact</data>
+      <data key="d1">Hackathon meeting recording (video)</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "I know there's the video from yesterday that we're going to request access to", "ts": 1860, "source": "Rowan Reid"}]</data>
+      <data key="d4">["4"]</data>
+      <data key="d7">Video recording of hackathon meeting; access not yet granted</data>
+    </node>
+    <node id="topic:expert-match-storage-endpoint-integration">
+      <data key="d0">Topic</data>
+      <data key="d1">Expert Match Storage Endpoint Integration</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "having the integration of the storage endpoint of expert match ... having that sent over directly through the endpoint rather than doing it manually", "ts": 10, "source": "chapter_1"}]</data>
+      <data key="d4">["1"]</data>
+      <data key="d7">Key pain point: Laura doing manual syncs; endpoint exists but dev team not calling it; task to be prioritised against other data engineering work</data>
+    </node>
+    <node id="topic:expert-profile-sync">
+      <data key="d0">Topic</data>
+      <data key="d1">Expert Profile Sync (Create/Update/Delete)</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "when an expert gets created or an expert gets updated on his profile, if the profile is complete, we need to send to AI that that's happened via their API endpoint", "ts": 270, "source": "chapter_1"}]</data>
+      <data key="d4">["1"]</data>
+      <data key="d7">Trigger condition: profile completeness check (Chantel's query); send full expert profile to AI endpoint; also covers case-expert association changes</data>
+    </node>
+    <node id="topic:pseudonymization">
+      <data key="d0">Topic</data>
+      <data key="d1">Clinical Case Pseudonymization</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "we want to evaluate how they're doing with this pseudonymization because they didn't go into too much detail as to how they're going to solve it", "ts": 560, "source": "chapter_2"}]</data>
+      <data key="d4">["2", "3"]</data>
+      <data key="d7">Cumulus tasked with this; concern they will use LLM without rigorous evaluation; requires ground truth annotations to validate</data>
+    </node>
+    <node id="topic:ground-truth-collection">
+      <data key="d0">Topic</data>
+      <data key="d1">Ground Truth Collection for Pseudonymization Evaluation</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "we want to evaluate how they're doing with this pseudonymization ... we need to have annotations or like countries so they can compare what they predicted versus what it should actually be", "ts": 565, "source": "chapter_2"}, {"quote": "the starting to collect the ground truth, that's actually the most important one because it will take time for clinicians to do it, so the sooner that we have the stuff for them, the better.", "ts": 1990, "source": "Laura Gongas"}]</data>
+      <data key="d4">["2", "4"]</data>
+      <data key="d7">Steps: select cases (deceased patients, simple, low guidelines/handwriting), define entities with Brendan, get clinical team to annotate, optionally pre-populate with AI; need annotation tool meeting data privacy requirements; identified as highest-priority item</data>
+    </node>
+    <node id="topic:entity-extraction">
+      <data key="d0">Topic</data>
+      <data key="d1">Clinical Entity Extraction</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "at the bottom is what we have from the case itself, the facts of the case ... extracting the entities and making the pseudonymization", "ts": 1080, "source": "chapter_3"}, {"quote": "the most important part ... just go with the entity extraction, because that's the most important part", "ts": 1600, "source": "chapter_3"}]</data>
+      <data key="d4">["2", "3"]</data>
+      <data key="d7">Core deliverable from Cumulus green box; entities from clinical case records; same entity types expected in guidelines</data>
+    </node>
+    <node id="topic:nice-guideline-structuring">
+      <data key="d0">Topic</data>
+      <data key="d1">NICE Guideline Structuring</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "guideline structuring at the top, which is whatever comes from NICE", "ts": 1380, "source": "chapter_3"}, {"quote": "They downplay it there by saying guideline structuring. So I don't think they had planned to do entity detection maybe on the guidelines", "ts": 1520, "source": "chapter_3"}]</data>
+      <data key="d4">["3"]</data>
+      <data key="d7">Top track in Cumulus pipeline diagram; NICE data ingestion and structuring; unclear if Cumulus plans full entity extraction from guidelines; Mediha had done Cypher query / graph work on guidelines</data>
+    </node>
+    <node id="topic:nice-api-compliance">
+      <data key="d0">Topic</data>
+      <data key="d1">NICE API Access and Compliance</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "to have access to the NICE API, you need to have like certain ISO compliance stuff and be UK based", "ts": 1240, "source": "chapter_3"}]</data>
+      <data key="d4">["3"]</data>
+      <data key="d7">Medbrief applying for key; concern about sharing with Cumulus (non-UK); Deon suggests rotating key after engagement; Laura wants to discuss with Brendan; Laura filling in access form</data>
+    </node>
+    <node id="topic:cumulus-scope-reduction">
+      <data key="d0">Topic</data>
+      <data key="d1">Cumulus Scope Reduction</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "it's over what we were thinking. So we told them like come back with a smaller scope.", "ts": 1060, "source": "chapter_3"}, {"quote": "have to wait for them to come back to us with the new proposal, which should be this week", "ts": 1120, "source": "chapter_3"}]</data>
+      <data key="d4">["3"]</data>
+      <data key="d7">Original proposal exceeded budget; green box (data ingestion + entity extraction + pseudonymization) proposed as reduced scope; awaiting revised proposal</data>
+    </node>
+    <node id="topic:cumulus-deliverable-ownership">
+      <data key="d0">Topic</data>
+      <data key="d1">Cumulus Code Deliverable and Handover</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Are they creating this, like the deliverable to us? Is it something that is going to like be transparently deployed onto our infrastructure", "ts": 1560, "source": "chapter_3"}, {"quote": "they'll give us the code and we can even use it for other projects and like the nice guidelines", "ts": 1580, "source": "chapter_3"}]</data>
+      <data key="d4">["3"]</data>
+      <data key="d7">Cumulus will deliver code (not a black box); transparent deployment on Medbrief infrastructure; reusable for other projects</data>
+    </node>
+    <node id="topic:annotation-tool-selection">
+      <data key="d0">Topic</data>
+      <data key="d1">Annotation Tool Selection for Ground Truth</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "we need someone from the clinical team to look into the cases and literally highlight and tell us each entity ... we need to define the tool that we're going to use in order for them to be able to do those entity annotations", "ts": 660, "source": "chapter_2"}]</data>
+      <data key="d4">["2"]</data>
+      <data key="d7">Must meet data privacy requirements; may pre-populate using AI to reduce clinical team effort; several tools exist</data>
+    </node>
+    <node id="topic:rules-representation">
+      <data key="d0">Topic</data>
+      <data key="d1">Rules Representation (Cypher Queries vs Graphs)</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "We can either make them as cipher queries or do them as graphs. Now, the cipher queries is like an intermediate step to get to graphs.", "ts": 1490, "source": "chapter_3"}]</data>
+      <data key="d4">["2", "3"]</data>
+      <data key="d7">Mediha demonstrated Cypher query approach at Sprint 9; graph is ultimate goal; requires entity extraction from guidelines as prerequisite</data>
+    </node>
+    <node id="topic:cumulus-pipeline-architecture">
+      <data key="d0">Topic</data>
+      <data key="d1">Cumulus Two-Track Pipeline Architecture</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "those are two completely independent separate pipelines of processing, and then they provide the guideline structuring based on what they will receive from the NICE API, and then then the whole entity extraction and all that stuff based on the case data", "ts": 1395, "source": "chapter_3"}]</data>
+      <data key="d4">["3"]</data>
+      <data key="d7">Track 1 (top): NICE guideline ingestion and structuring. Track 2 (bottom): clinical case entity extraction and pseudonymization. Independent; merged at reasoning/graph layer</data>
+    </node>
+    <node id="topic:azure-foundry-model">
+      <data key="d0">Topic</data>
+      <data key="d1">Azure Foundry Model (Cumulus approach)</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "They said they would use a model from Azure Foundry and that's it. And that can be anything.", "ts": 950, "source": "chapter_2"}]</data>
+      <data key="d4">["2"]</data>
+      <data key="d7">Cumulus stated they would use an Azure Foundry model for pseudonymization; vague; Laura sceptical they have decided</data>
+    </node>
+    <node id="topic:sprint-nine-review">
+      <data key="d0">Topic</data>
+      <data key="d1">Sprint 9 Review</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Mediha presented at the Sprint Nine review the work that she had been doing on the kind of the graph database side of things", "ts": 990, "source": "chapter_2"}]</data>
+      <data key="d4">["2"]</data>
+      <data key="d7">Mediha presented graph database work including Cypher queries and original guideline graph</data>
+    </node>
+    <node id="topic:data-architecture-proposal">
+      <data key="d0">Topic</data>
+      <data key="d1">Cumulus data architecture proposal</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "they made a proposal of the data architecture and I did ask them if we want to use other services, would you be open to do that? And they said yes.", "ts": 1630, "source": "Laura Gongas"}, {"quote": "We haven't closed, we haven't accepted their proposal, by the way.", "ts": 1920, "source": "Laura Gongas"}]</data>
+      <data key="d4">["4"]</data>
+      <data key="d7">Not yet accepted; Cumulus open to alternative services if requested</data>
+    </node>
+    <node id="topic:databricks">
+      <data key="d0">Topic</data>
+      <data key="d1">Databricks</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "if they tell us we're using Databricks and Azure Data Factory and this lake, we just believe them", "ts": 1622, "source": "Laura Gongas"}]</data>
+      <data key="d4">["4"]</data>
+      <data key="d7">Part of Cumulus proposed stack; team lacks expertise to evaluate</data>
+    </node>
+    <node id="topic:azure-data-factory">
+      <data key="d0">Topic</data>
+      <data key="d1">Azure Data Factory</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "if they tell us we're using Databricks and Azure Data Factory and this lake, we just believe them", "ts": 1622, "source": "Laura Gongas"}]</data>
+      <data key="d4">["4"]</data>
+      <data key="d7">Part of Cumulus proposed stack; team lacks expertise to evaluate</data>
+    </node>
+    <node id="topic:data-lake">
+      <data key="d0">Topic</data>
+      <data key="d1">Data lake</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "if they tell us we're using Databricks and Azure Data Factory and this lake, we just believe them", "ts": 1622, "source": "Laura Gongas"}]</data>
+      <data key="d4">["4"]</data>
+      <data key="d7">Part of Cumulus proposed stack; team lacks expertise to evaluate</data>
+    </node>
+    <node id="topic:enterprise-skills-development-platform">
+      <data key="d0">Topic</data>
+      <data key="d1">Enterprise skills development platform</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "the enterprise skills development platform, Laoura, that we have, you're an admin on that. Maybe you can invite Rowan to that, because there was a whole section for data engineering.", "ts": 1655, "source": "Deon Kuhn"}]</data>
+      <data key="d4">["4"]</data>
+      <data key="d7">Laura is admin; contains data engineering learning section; Rowan to be invited</data>
+    </node>
+    <node id="topic:mlops-infrastructure">
+      <data key="d0">Topic</data>
+      <data key="d1">MLOps infrastructure</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "from the MLOps perspective, like infrastructure perspective, we have Fatima that would be able to look into it", "ts": 1640, "source": "Laura Gongas"}]</data>
+      <data key="d4">["4"]</data>
+      <data key="d7">Fatima's domain; relevant to evaluating Cumulus infrastructure proposals</data>
+    </node>
+    <node id="topic:data-strategy">
+      <data key="d0">Topic</data>
+      <data key="d1">Data strategy</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "the data strategy is something that will take more time", "ts": 1985, "source": "Laura Gongas"}]</data>
+      <data key="d4">["4"]</data>
+      <data key="d7">Longer-term item; not immediate priority</data>
+    </node>
+    <node id="topic:data-pipelines">
+      <data key="d0">Topic</data>
+      <data key="d1">Data pipelines</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "who's going to work on that handover if we don't even know how the data pipelines work", "ts": 1915, "source": "Laura Gongas"}]</data>
+      <data key="d4">["4"]</data>
+      <data key="d7">Concern about capability gap for Cumulus handover</data>
+    </node>
+    <node id="topic:sally-integration">
+      <data key="d0">Topic</data>
+      <data key="d1">Sally integration</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "One is also Deon on your side, so I don't know if it's best that you keep that one, which is the Sally integration.", "ts": 2005, "source": "Laura Gongas"}]</data>
+      <data key="d4">["5"]</data>
+      <data key="d7">Assigned to Deon's side</data>
+    </node>
+    <node id="topic:human-in-the-loop">
+      <data key="d0">Topic</data>
+      <data key="d1">Human-in-the-loop strategy</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "we're trying to have human in the loop in most of our projects to basically close the entire MLOps pipeline", "ts": 2100, "source": "Laura Gongas"}, {"quote": "making sure that we can connect the all of the human in the loop strategy for chat with records", "ts": 2045, "source": "Laura Gongas"}]</data>
+      <data key="d4">["5"]</data>
+      <data key="d7">Cross-project goal; close the full MLOps loop; Ask Alex kicking off in June</data>
+    </node>
+    <node id="topic:thumbs-up-down-feedback">
+      <data key="d0">Topic</data>
+      <data key="d1">Thumbs up / thumbs down UI feedback feature</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "we'll have a thumbs up, thumbs down in the UI", "ts": 2115, "source": "Laura Gongas"}, {"quote": "the thumbs up, thumbs down thing works so we can to the entire pipeline or like the entire loop", "ts": 2048, "source": "Laura Gongas"}]</data>
+      <data key="d4">["5"]</data>
+      <data key="d7">Part of human-in-the-loop pipeline; tickets currently with Dave (not yet connected)</data>
+    </node>
+    <node id="topic:ask-alex">
+      <data key="d0">Topic</data>
+      <data key="d1">Ask Alex (product feature)</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "these were your pre-requests for the human in the loop that is meant to kick off for Ask Alex, right? In June", "ts": 2070, "source": "Deon Kuhn"}]</data>
+      <data key="d4">["5"]</data>
+      <data key="d7">Human-in-the-loop pre-requisites due in June</data>
+    </node>
+    <node id="topic:chat-with-records">
+      <data key="d0">Topic</data>
+      <data key="d1">Chat with records (AI chat feature)</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "the chat, which is what we were building, remember what we were building in the hackathon, and we had this chat to chat with the records", "ts": 2108, "source": "Laura Gongas"}]</data>
+      <data key="d4">["5"]</data>
+      <data key="d7">Built during hackathon; part of human-in-the-loop pipeline</data>
+    </node>
+    <node id="topic:clinician-feedback-platform">
+      <data key="d0">Topic</data>
+      <data key="d1">Clinician feedback review platform</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "we have built a platform which will take all of the thumbs down things. So when they're done with their job, with their chronology... they'll be able to look into the thumbs down messages and give us a bit more of detail as to why it was incorrect", "ts": 2125, "source": "Laura Gongas"}]</data>
+      <data key="d4">["5"]</data>
+      <data key="d7">Platform built; clinicians review thumbs-down cases and provide detail on failures</data>
+    </node>
+    <node id="topic:expert-match-ingestion-endpoints">
+      <data key="d0">Topic</data>
+      <data key="d1">Expert Match storage / ingestion endpoints (task assignment)</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "the ingestion endpoints for the experts when the data update, I'm going to say I'm going to do that rather", "ts": 2195, "source": "Deon Kuhn"}, {"quote": "concentrate in Cumulus and the storage endpoints of expert match", "ts": 2185, "source": "Laura Gongas"}]</data>
+      <data key="d4">["5"]</data>
+      <data key="d7">Resolved: Deon takes this; Rowan to focus on Cumulus work</data>
+    </node>
+    <node id="decision:0001">
+      <data key="d0">Decision</data>
+      <data key="d1">Expert Match storage endpoint integration to be prioritised against other Rowan tasks before assigning</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "please rank it in terms of your priorities of is that the most important thing or is there other data retrieval stuff for projects that's more important? ... let's say that is a maybe on this one", "ts": 45, "source": "chapter_1"}]</data>
+      <data key="d4">["1"]</data>
+      <data key="d7">Task currently assigned to Deon; may transfer to Rowan depending on priority ranking; concern about prior knowledge needed</data>
+    </node>
+    <node id="decision:0002">
+      <data key="d0">Decision</data>
+      <data key="d1">Send full expert profile (all fields) to AI ingestion endpoint on sync, not individual changed fields</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "Laoura, you said that we don't need to send what fields it is anymore. We just send the entire profile. Of the expert, all its fields, and your API endpoint will describe what is needed.", "ts": 315, "source": "chapter_1"}]</data>
+      <data key="d4">["1"]</data>
+    </node>
+    <node id="decision:0003">
+      <data key="d0">Decision</data>
+      <data key="d1">Ground truth annotation cases should be deceased patients with simple content and minimal handwritten text</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Brendan, because he did mention that he wanted to be like, for terms of like privacy, for it to be cases with deceased patients ... simple cases that don't have too much guidelines, that don't have too much handwritten text", "ts": 625, "source": "chapter_2"}]</data>
+      <data key="d4">["2"]</data>
+    </node>
+    <node id="decision:0004">
+      <data key="d0">Decision</data>
+      <data key="d1">Cumulus scope reduced to green box: data ingestion, entity extraction, and pseudonymization only</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "we told them like come back with a smaller scope. So if I show you, they had presented this flow ... we thought they could concentrate in the green box", "ts": 1060, "source": "chapter_3"}]</data>
+      <data key="d4">["3"]</data>
+    </node>
+    <node id="decision:0005">
+      <data key="d0">Decision</data>
+      <data key="d1">NICE API key may be shared with Cumulus temporarily with key rotation after engagement ends</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "if you give them access during the time of development and just rotate the key once they're done, I think that should be fine", "ts": 1290, "source": "chapter_3"}]</data>
+      <data key="d4">["3"]</data>
+      <data key="d7">Tentative; Deon's position; Laura wants to verify compliance with Brendan first; data is publicly accessible online anyway</data>
+    </node>
+    <node id="decision:0006">
+      <data key="d0">Decision</data>
+      <data key="d1">Rowan's focus to be on Cumulus data engineering work, not Expert Match ingestion endpoints</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "I'll take that one for the team for this for now", "ts": 2200, "source": "Deon Kuhn"}, {"quote": "I think it's nice that then that way everything will be more on the cumulus side", "ts": 2210, "source": "Laura Gongas"}]</data>
+      <data key="d4">["5"]</data>
+    </node>
+    <node id="decision:0007">
+      <data key="d0">Decision</data>
+      <data key="d1">Thumbs up/down tickets remain with Deon's side; Rowan may have a data collation role once clearer</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "keep it on my side, but I think Rowan would have a role to play potentially just in like collating the data and making sure that the data is coming through correctly", "ts": 2082, "source": "Deon Kuhn"}]</data>
+      <data key="d4">["5"]</data>
+    </node>
+    <node id="action:0001">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Rowan to investigate Expert Match update queue table and ingestion endpoint integration</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Rowan, it would cater for that. So that's worth investigating.", "ts": 305, "source": "chapter_1"}, {"quote": "Rowan: Okay, so I'll need to do some dev, like basically like almost like submit a PR on MedBrief itself for hooking into, again, I just need to have a look.", "ts": 155, "source": "chapter_1"}]</data>
+      <data key="d4">["1"]</data>
+      <data key="d8">True</data>
+    </node>
+    <node id="action:0002">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Laura to send Cumulus meeting recording access request email</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Yeah, so maybe we should ask for that. Okay, I'll send them an email.", "ts": 492, "source": "chapter_2"}]</data>
+      <data key="d4">["2"]</data>
+      <data key="d8">False</data>
+    </node>
+    <node id="action:0003">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Rowan to join tomorrow's meeting with Brendan to define entities and cases for ground truth</data>
+      <data key="d6">["action from group-02:0006 — Rowan to catch up with Brendan the next day"]</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "I've added you to a meeting tomorrow. you can attend to that. Rowan: I can, I can make it for that work, yeah, so I'll join that.", "ts": 820, "source": "chapter_2"}, {"quote": "we'll catch up with Brendan tomorrow", "ts": 2222, "source": "Rowan Reid"}]</data>
+      <data key="d4">["2", "5"]</data>
+      <data key="d8">True</data>
+    </node>
+    <node id="action:0004">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Laura to fill in NICE API access application form</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "I will be working on filling in that form to get access to the API.", "ts": 1340, "source": "chapter_3"}]</data>
+      <data key="d4">["3"]</data>
+      <data key="d8">False</data>
+    </node>
+    <node id="action:0005">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Team to clarify with Cumulus their intended depth of NICE guideline entity extraction</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "I think that's a good point to ask them, but to ask them until what point they're going to be involved in the NICE guidelines and what we're going to get out from them.", "ts": 1540, "source": "chapter_3"}]</data>
+      <data key="d4">["3"]</data>
+      <data key="d8">False</data>
+    </node>
+    <node id="action:0006">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Investigate NICE API compliance requirements in parallel with application</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "I think that in parallel, we can look into compliance. That way, once we get it, we know who.", "ts": 1345, "source": "chapter_3"}]</data>
+      <data key="d4">["3"]</data>
+      <data key="d8">False</data>
+    </node>
+    <node id="action:0007">
+      <data key="d0">ActionItem</data>
+      <data key="d1">If Cumulus does not handle NICE guideline entity extraction, Rowan to take on that integration</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "if we want to get to there, we need them to be able to extract the entities from the guidelines ... if not, I think Rowan, that would be a good part for you to jump in", "ts": 1545, "source": "chapter_3"}]</data>
+      <data key="d4">["3"]</data>
+      <data key="d8">False</data>
+      <data key="d7">Conditional on Cumulus scope; Rowan not yet committed</data>
+    </node>
+    <node id="action:0008">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Rowan to review Cumulus data architecture proposal and assess its suitability</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "perhaps you could look into their proposal, do a bit of research and see if it makes sense to do it that way or not", "ts": 1635, "source": "Laura Gongas"}, {"quote": "I'm absolutely keen to apply my mind to those.", "ts": 1710, "source": "Rowan Reid"}]</data>
+      <data key="d4">["4"]</data>
+      <data key="d8">True</data>
+    </node>
+    <node id="action:0009">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Laura to invite Rowan to the enterprise skills development platform</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "you're an admin on that. Maybe you can invite Rowan to that", "ts": 1657, "source": "Deon Kuhn"}]</data>
+      <data key="d4">["4"]</data>
+      <data key="d8">False</data>
+    </node>
+    <node id="action:0010">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Laura to forward the Cumulus architecture presentation to Rowan once available</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "once we have it, I'll make sure to forward it to you", "ts": 1955, "source": "Laura Gongas"}]</data>
+      <data key="d4">["4"]</data>
+      <data key="d8">False</data>
+    </node>
+    <node id="action:0011">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Deon to take on Expert Match ingestion endpoints</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "the ingestion endpoints for the experts when the data update, I'm going to say I'm going to do that rather", "ts": 2195, "source": "Deon Kuhn"}]</data>
+      <data key="d4">["5"]</data>
+      <data key="d8">False</data>
+    </node>
+    <node id="action:0012">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Rowan to watch the hackathon meeting recording once access is granted</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "we'll wait until we get this recording as well. That will be useful. Then I can watch that.", "ts": 2220, "source": "Rowan Reid"}]</data>
+      <data key="d4">["5"]</data>
+      <data key="d8">True</data>
+    </node>
+    <node id="action:0013">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Rowan to take script for Chantel Pilla</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "I'll take this Script for Chantel Pilla.", "ts": 2225, "source": "Rowan Reid"}]</data>
+      <data key="d4">["5"]</data>
+      <data key="d8">True</data>
+    </node>
+    <node id="action:0014">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Deon to send instance numbers to Brendan</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "I just figured I look at your numbers, Laoura, so what we had for the instance and it looks good, so I'll send that over to Brendan", "ts": 2255, "source": "Deon Kuhn"}]</data>
+      <data key="d4">["5"]</data>
+      <data key="d8">False</data>
+    </node>
+    <node id="action:0015">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Deon to consider asking Chantel to bump thumbs-down ticket priority to high</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "I might ask Chantel just to bump that up to a high because I don't think she assessed the dependency there", "ts": 2160, "source": "Deon Kuhn"}]</data>
+      <data key="d4">["5"]</data>
+      <data key="d8">False</data>
+    </node>
+    <node id="question:0001">
+      <data key="d0">Question</data>
+      <data key="d1">Should Expert Match endpoint integration be assigned to Rowan or remain with Deon?</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "I don't know if we should forward this task to Rowan, or is it something that you're already working on?", "ts": 12, "source": "chapter_1"}]</data>
+      <data key="d4">["1"]</data>
+      <data key="d7">Unresolved at time of asking; resolved later in chapter 5 (Deon takes it)</data>
+    </node>
+    <node id="question:0002">
+      <data key="d0">Question</data>
+      <data key="d1">What annotation tool should be used for ground truth collection that meets data privacy requirements?</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "we have to make sure that they meet like data privacy and our politics, or if we want to do it ourselves, how to do it, basically defining how we're going to do that", "ts": 670, "source": "chapter_2"}]</data>
+      <data key="d4">["2"]</data>
+      <data key="d7">Open question; options include existing tools or building in-house</data>
+    </node>
+    <node id="question:0003">
+      <data key="d0">Question</data>
+      <data key="d1">How does Mediha's graph database work fit alongside Cumulus's proposed pipeline?</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "What is Mediha taking next steps on her stuff, and then with getting figuring out where Cumulus can fit in?", "ts": 1000, "source": "chapter_2"}]</data>
+      <data key="d4">["2"]</data>
+      <data key="d7">Laura answered by showing Cumulus diagram; Mediha currently on leave so no immediate next steps</data>
+    </node>
+    <node id="question:0004">
+      <data key="d0">Question</data>
+      <data key="d1">Is it compliant to share the NICE API key with Cumulus (non-UK based)?</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "I don't feel that comfortable with giving them the API key. I don't know what you think, Deon, because they're not based in the UK. So I think we might not be compliant.", "ts": 1260, "source": "chapter_3"}]</data>
+      <data key="d4">["3"]</data>
+      <data key="d7">Unresolved; to be investigated with Brendan; Deon leans toward it being acceptable with key rotation</data>
+    </node>
+    <node id="question:0005">
+      <data key="d0">Question</data>
+      <data key="d1">Should Medbrief do NICE guideline extraction before or after the Cumulus engagement, to potentially reuse their pipeline?</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "do we do this before cumulus or after cumulus, our nice guideline extraction, so that we could use their pipeline basically. Once they do the handover.", "ts": 1570, "source": "chapter_3"}]</data>
+      <data key="d4">["3"]</data>
+      <data key="d7">Raised by Deon; unresolved; depends on Cumulus scope clarification</data>
+    </node>
+    <node id="question:0006">
+      <data key="d0">Question</data>
+      <data key="d1">Is there any additional Cumulus material available beyond the pre-hackathon documentation?</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Is there any more, I know there's the video from yesterday that we're going to request access to. Beyond that, all I've got from Cumulus is I think the documentation that you shared with me, Laura... So is there anything more to share that's useful?", "ts": 1862, "source": "Rowan Reid"}]</data>
+      <data key="d4">["4"]</data>
+      <data key="d7">Partially answered: presentation exists but not yet accessible</data>
+    </node>
+    <node id="question:0007">
+      <data key="d0">Question</data>
+      <data key="d1">Should the human-in-the-loop / thumbs up-down work be Deon's or should Rowan also be involved?</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "I don't know if that's something that you would take, Deon, or should we have Rowan look into it as well?", "ts": 2055, "source": "Laura Gongas"}]</data>
+      <data key="d4">["5"]</data>
+      <data key="d7">Resolved: stays with Deon; Rowan may have collation role later</data>
+    </node>
+    <node id="claim:0001">
+      <data key="d0">Claim</data>
+      <data key="d1">Expert Match endpoint task requires significant prior knowledge which may make it unsuitable for Rowan at this stage</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "I'm just worried that it's going to take a lot of prior knowledge to execute on this potentially.", "ts": 380, "source": "chapter_1"}]</data>
+      <data key="d4">["1"]</data>
+      <data key="d7">Deon's concern; reason task remains tentatively with Deon pending priority review</data>
+    </node>
+    <node id="claim:0002">
+      <data key="d0">Claim</data>
+      <data key="d1">Cumulus's approach to pseudonymization is vague; they likely do not yet have a firm plan</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "I think they don't know what they're going to do, to be honest. ... he said he, John says he comes up with suggestions and then the data scientists suggest other stuff.", "ts": 955, "source": "chapter_2"}]</data>
+      <data key="d4">["2"]</data>
+      <data key="d7">Laura and Deon's shared assessment; reason for insisting on ground truth evaluation framework</data>
+    </node>
+    <node id="claim:0003">
+      <data key="d0">Claim</data>
+      <data key="d1">Without ground truth, third-party vendors produce proof-of-concept work of unknown quality</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "if you don't give them ground truth, they'll just do like a kind of proof of concept thing that you don't even know if it works well or not. So you end up doing everything again.", "ts": 975, "source": "chapter_2"}]</data>
+      <data key="d4">["2"]</data>
+      <data key="d7">Laura's experience with third parties; justification for ground truth collection work</data>
+    </node>
+    <node id="claim:0004">
+      <data key="d0">Claim</data>
+      <data key="d1">NICE guideline data is effectively publicly available (accessible on NICE website), reducing compliance concern</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "it's publicly available data or it's like fairly available data. Or you can look up all the nice guidelines like on their website. This is just an API form of it.", "ts": 1300, "source": "chapter_3"}]</data>
+      <data key="d4">["3"]</data>
+      <data key="d7">Deon's view; used to support sharing API key temporarily</data>
+    </node>
+    <node id="claim:0005">
+      <data key="d0">Claim</data>
+      <data key="d1">Cumulus will deliver code transparently and Medbrief engineers can extend and reuse it</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "they'll give us the code and we can even use it for other projects and like the nice guidelines. ... they were actually quite deliberate in saying that because they were like happy that we had engineers", "ts": 1580, "source": "chapter_3"}]</data>
+      <data key="d4">["3"]</data>
+    </node>
+    <node id="claim:0006">
+      <data key="d0">Claim</data>
+      <data key="d1">Third parties often recommend the newest or most expensive Azure services regardless of suitability</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "they end up giving us a service that's like the newest one that Azure has in the market because they want to have more use cases with that or the one that's more costly or whatever and you end up having something that it's not scalable or you don't even know how to use it", "ts": 1645, "source": "Laura Gongas"}]</data>
+      <data key="d4">["4"]</data>
+    </node>
+    <node id="claim:0007">
+      <data key="d0">Claim</data>
+      <data key="d1">The team lacks data engineering expertise and cannot critically evaluate Cumulus's data architecture claims</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "we don't have anyone in the team that has a data engineering formation. So, if they tell us we're using Databricks and Azure Data Factory and this lake, we just believe them", "ts": 1622, "source": "Laura Gongas"}, {"quote": "with the AI side, I feel comfortable. But with the data side, they could just be selling us whatever.", "ts": 1993, "source": "Laura Gongas"}]</data>
+      <data key="d4">["4"]</data>
+    </node>
+    <node id="claim:0008">
+      <data key="d0">Claim</data>
+      <data key="d1">Rowan is not a data engineering expert and has not used these tools himself</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "I'm also not a data engineering expert and so building these tools I have not used myself.", "ts": 1700, "source": "Rowan Reid"}]</data>
+      <data key="d4">["4"]</data>
+    </node>
+    <node id="claim:0009">
+      <data key="d0">Claim</data>
+      <data key="d1">Rowan having time to investigate the data engineering stack is the most important thing his team is currently lacking</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "just having that time to look into it is what your team is lacking at the moment, Laoura", "ts": 2035, "source": "Deon Kuhn"}]</data>
+      <data key="d4">["5"]</data>
+    </node>
+    <node id="artifact:gf0001">
+      <data key="d0">Artifact</data>
+      <data key="d1">Azure Key Vault (proposed NICE API key storage)</data>
+      <data key="d9">Deon proposes storing the NICE API key in Azure Key Vault so Cumulus can use it programmatically without being able to view or extract it, as a potential compliance mitigation.</data>
+      <data key="d2">0.85</data>
+      <data key="d4">["chapter:03"]</data>
+      <data key="d3">[{"quote": "If you pop that key in the key vault so that they can't view it, but they can use it, that's possible, right, with Azure as far as I know. So they're going to use it in our infrastructure.", "ts": 354, "source": "transcript"}]</data>
+    </node>
+    <node id="claim:gf0002">
+      <data key="d0">Claim</data>
+      <data key="d1">NICE may charge non-UK users for API access, adding a financial compliance dimension</data>
+      <data key="d10">Laura asserts NICE charges users outside the UK, which would make sharing the key with Cumulus (non-UK based) a compliance and financial issue beyond just access eligibility.</data>
+      <data key="d2">0.8</data>
+      <data key="d4">["chapter:03"]</data>
+      <data key="d3">[{"quote": "they do have, I think they charge people that are outside of the UK or something like that. So I think. We might want to look into that with Brendan", "ts": 373, "source": "transcript"}]</data>
+    </node>
+    <node id="claim:gf0003">
+      <data key="d0">Claim</data>
+      <data key="d1">Entity types in clinical guidelines and clinical case records are expected to be the same</data>
+      <data key="d10">Laura states that the entity types Cumulus would extract from clinical case records will likely be identical to those needed from NICE guidelines, making the two pipeline tracks complementary rather than divergent.</data>
+      <data key="d2">0.9</data>
+      <data key="d4">["chapter:03"]</data>
+      <data key="d3">[{"quote": "we need them to be able to extract the entities from the guidelines, which are going to be probably the same entities as the ones in the clinical records.", "ts": 449, "source": "transcript"}]</data>
+    </node>
+    <node id="claim:gf0004">
+      <data key="d0">Claim</data>
+      <data key="d1">Cumulus planned to focus on a narrow case type (e.g. obstetrics) to limit the NICE guidelines scope</data>
+      <data key="d10">Deon recalls Cumulus described wanting to focus on a particular clinical speciality (citing obstetrics as an example) in order to reduce the number of NICE guidelines they would need to query or process.</data>
+      <data key="d2">0.8</data>
+      <data key="d4">["chapter:03"]</data>
+      <data key="d3">[{"quote": "they also said they wanted to focus on a particular kind of case, like obstetrics or whatever, and I think that was also to reduce the number of nice guidelines that they would potentially need to query or look up.", "ts": 434, "source": "transcript"}]</data>
+    </node>
+    <node id="claim:gf0005">
+      <data key="d0">Claim</data>
+      <data key="d1">Cumulus will reveal more about their technical approach once the engagement formally starts</data>
+      <data key="d10">Deon reports that Cumulus stated they will share and discuss more detail about their planned implementation once the engagement has formally begun, giving Medbrief input at that stage.</data>
+      <data key="d2">0.85</data>
+      <data key="d4">["chapter:03"]</data>
+      <data key="d3">[{"quote": "once we start the engagement, they're going to reveal more, discuss more about how they're planning to do stuff, so that we also have input on that.", "ts": 502, "source": "transcript"}]</data>
+    </node>
+    <node id="claim:gf0006">
+      <data key="d0">Claim</data>
+      <data key="d1">Only two cases are needed for the initial ground truth annotation exercise</data>
+      <data key="d10">Laura states that Cumulus indicated only two cases are required for the initial ground truth dataset, implying the annotation effort is manageable in scope.</data>
+      <data key="d2">0.85</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d3">[{"quote": "They said they only needed two, so it shouldn't be that difficult.", "ts": 189, "source": "transcript"}]</data>
+    </node>
+    <node id="claim:gf0007">
+      <data key="d0">Claim</data>
+      <data key="d1">Clinicians cannot annotate ground truth cases during their billable working hours</data>
+      <data key="d10">Laura notes a practical scheduling constraint: clinicians cannot perform ground truth annotation at the same time as their paid clinical work, so annotation must happen after their shifts end.</data>
+      <data key="d2">0.85</data>
+      <data key="d4">["chapter:05"]</data>
+      <data key="d3">[{"quote": "we can't do it at the same time because they're in their billable hours, when they're done with that, they'll be able to look into the thumbs down messages and give us a bit more of detail as to why it was incorrect", "ts": 648, "source": "transcript"}]</data>
+    </node>
+    <node id="action:gf0008">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Deon to investigate anomalous expert profile instances created via direct profile update (scheduled for Friday)</data>
+      <data key="d9">Deon identifies that some experts have been created through the system via direct profile updates, which should not be possible. He was scheduled to investigate these instances on Friday but had not yet done so at time of meeting.</data>
+      <data key="d2">0.75</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d3">[{"quote": "some experts have been created through the system, which where they've gone in and updated their profiles, which shouldn't be the case, so I'll need to have a look at those. I'm meant to do it on Friday, but I don't have time why those instances have been created, but anyway.", "ts": 82, "source": "transcript"}]</data>
+    </node>
+    <node id="claim:gf0009">
+      <data key="d0">Claim</data>
+      <data key="d1">Data architecture review is worthwhile regardless of whether Cumulus is ultimately engaged</data>
+      <data key="d10">Even if Medbrief does not accept Cumulus's proposal, reviewing their proposed data architecture is still valuable because Medbrief will need to build the same stack with or without Cumulus.</data>
+      <data key="d2">0.85</data>
+      <data key="d4">["chapter:04"]</data>
+      <data key="d3">[{"quote": "even if we don't, I think it's still useful to look into this because we are still going to build it with them or without them. So we still need to look into it.", "ts": 1965, "source": "transcript"}]</data>
+    </node>
+    <node id="artifact:gf0010">
+      <data key="d0">Artifact</data>
+      <data key="d1">Expert Match AI ingestion endpoint — three-table structure (expert, case, case-expert)</data>
+      <data key="d9">Laura specifies that the ingestion endpoint covers three distinct tables: an expert table, a case table, and a case-expert relationship table. This structural detail is load-bearing for understanding which events must trigger a sync call.</data>
+      <data key="d2">0.9</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d3">[{"quote": "you'll see that we have an expert table, a case table, and a case expert table. And that's something that you can see from the endpoint.", "ts": 143, "source": "transcript"}]</data>
+    </node>
+    <node id="claim:gf0011">
+      <data key="d0">Claim</data>
+      <data key="d1">Medbrief could ingest NICE guidelines itself and supply the resulting JSON directly to Cumulus, avoiding the API key sharing problem</data>
+      <data key="d10">Laura proposes an alternative to giving Cumulus the NICE API key: Medbrief performs the NICE ingestion internally and then hands Cumulus the structured JSON output, so Cumulus never needs direct API access.</data>
+      <data key="d2">0.9</data>
+      <data key="d4">["chapter:03"]</data>
+      <data key="d3">[{"quote": "we might want to do that ourselves and just give them the output of the queries, like exactly how we got the result from nice, but just giving them the JSONs.", "ts": 349, "source": "transcript"}]</data>
+    </node>
+    <node id="claim:gf0012">
+      <data key="d0">Claim</data>
+      <data key="d1">Cumulus quoted the engagement at 10 weeks; Deon's internal estimate is 6 to 8 weeks</data>
+      <data key="d10">During the NICE API key discussion Deon references the engagement duration as six to eight weeks, but notes that Cumulus themselves stated ten weeks, indicating a discrepancy in timeline expectations.</data>
+      <data key="d2">0.85</data>
+      <data key="d4">["chapter:03"]</data>
+      <data key="d3">[{"quote": "for the duration of the work, so for the six to 8 weeks, I know they say 10 weeks, but for the duration of the work", "ts": 361, "source": "transcript"}]</data>
+    </node>
+    <node id="claim:gf0013">
+      <data key="d0">Claim</data>
+      <data key="d1">The safest Cumulus scope is entity extraction only; NICE guideline processing should be excluded from the current engagement</data>
+      <data key="d10">Deon recommends that the safest path is to remove NICE guideline work from the Cumulus scope entirely and focus only on entity extraction from case data, because Cumulus's intentions for the guidelines are unclear and entity extraction is the most important deliverable.</data>
+      <data key="d2">0.85</data>
+      <data key="d4">["chapter:03"]</data>
+      <data key="d3">[{"quote": "the safest path again here, like Laoura described, would be to avoid the NICE guideline in this instance and just go with the entity extraction, because that's the most important part. Because we, I have no idea what they're playing with the the nice guidelines according to this either.", "ts": 504, "source": "transcript"}]</data>
+    </node>
+    <node id="claim:gf0014">
+      <data key="d0">Claim</data>
+      <data key="d1">Rowan working with other devs on Expert Match would create distraction, justifying keeping him focused on Cumulus work</data>
+      <data key="d10">Beyond the prior-knowledge concern (claim:0001), Deon adds a second distinct reason for retaking the Expert Match task: requiring Rowan to coordinate closely with other developers would pull him away from the focused data engineering investigation the team most needs from him right now.</data>
+      <data key="d2">0.88</data>
+      <data key="d4">["chapter:05"]</data>
+      <data key="d3">[{"quote": "needing to like work too much with the other devs on stuff like that might just distract the situation. So I'll take that one for the team for this for now.", "ts": 2076, "source": "transcript"}]</data>
+    </node>
+    <node id="decision:gf0015">
+      <data key="d0">Decision</data>
+      <data key="d1">Explicit priority order: ground truth collection first (clinician time is bottleneck), data strategy last (longer-term)</data>
+      <data key="d10">Laura states the priority ordering explicitly at the close of the meeting: starting ground truth collection is the single most important item because it depends on clinician availability and will take the most calendar time; the data strategy work is deprioritised as a longer-horizon task.</data>
+      <data key="d2">0.9</data>
+      <data key="d4">["chapter:05"]</data>
+      <data key="d3">[{"quote": "I think there's things that are more priority than others, like obviously the data strategy is something that will take more time, but the starting to collect the ground truth, that's actually the most important one because it will take time for clinicians to do it, so the sooner that we have the stuff for them, the better.", "ts": 1988, "source": "transcript"}]</data>
+    </node>
+    <node id="chapter:01">
+      <data key="d0">Chapter</data>
+      <data key="d1">Expert Match Storage Endpoint Integration</data>
+      <data key="d2">1.0</data>
+      <data key="d3">[]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d11">1</data>
+      <data key="d12">Laura opens with a request for the dev team to call the AI ingestion endpoint whenever an expert or case is created, updated, or deleted — removing the need for manual sync. The team discusses the update queue table, cache invalidation, and whether this task should sit with Deon or Rowan.</data>
+      <data key="d13">0.0</data>
+      <data key="d14">480.0</data>
+      <data key="d15">[]</data>
+      <data key="d16">[]</data>
+    </node>
+    <node id="chapter:02">
+      <data key="d0">Chapter</data>
+      <data key="d1">Cumulus Scope and Pseudonymization Ground Truth</data>
+      <data key="d2">1.0</data>
+      <data key="d3">[]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d11">2</data>
+      <data key="d12">Laura introduces the Cumulus partnership scope: entity extraction and pseudonymization. The team agrees they need to create their own ground truth (via clinician annotation of deceased-patient cases) to evaluate Cumulus's output, and discusses tooling for annotation and pre-population with AI to reduce clinician burden.</data>
+      <data key="d13">480.0</data>
+      <data key="d14">1050.0</data>
+      <data key="d15">[]</data>
+      <data key="d16">[]</data>
+    </node>
+    <node id="chapter:03">
+      <data key="d0">Chapter</data>
+      <data key="d1">Cumulus Flow Diagram and NICE API Compliance</data>
+      <data key="d2">1.0</data>
+      <data key="d3">[]</data>
+      <data key="d4">["chapter:03"]</data>
+      <data key="d11">3</data>
+      <data key="d12">Laura shares her screen showing Cumulus's proposed pipeline: guideline structuring (NICE) and case entity extraction running in parallel before feeding a reasoning layer. The team debates NICE API key sharing, compliance (UK-based requirement), and whether to let Cumulus use the key via Azure Key Vault or to ingest NICE guidelines internally and hand Cumulus the JSON output.</data>
+      <data key="d13">1050.0</data>
+      <data key="d14">1620.0</data>
+      <data key="d15">[]</data>
+      <data key="d16">[]</data>
+    </node>
+    <node id="chapter:04">
+      <data key="d0">Chapter</data>
+      <data key="d1">Data Architecture Review and Rowan's Onboarding</data>
+      <data key="d2">1.0</data>
+      <data key="d3">[]</data>
+      <data key="d4">["chapter:04"]</data>
+      <data key="d11">4</data>
+      <data key="d12">Laura asks Rowan to review Cumulus's data architecture proposal (Databricks, Azure Data Factory, Data Lake) and assess whether it is fit for purpose, citing concerns about vendors upselling costly or non-scalable services. Deon suggests using the enterprise skills development platform. Rowan is candid about his limited data engineering tool experience but commits to applying his judgement.</data>
+      <data key="d13">1620.0</data>
+      <data key="d14">2000.0</data>
+      <data key="d15">[]</data>
+      <data key="d16">[]</data>
+    </node>
+    <node id="chapter:05">
+      <data key="d0">Chapter</data>
+      <data key="d1">Priorities, Human-in-the-Loop, and Closing Decisions</data>
+      <data key="d2">1.0</data>
+      <data key="d3">[]</data>
+      <data key="d4">["chapter:05"]</data>
+      <data key="d11">5</data>
+      <data key="d12">The team wraps up remaining items: Sally integration stays with Deon; human-in-the-loop (thumbs up/down for Ask Alex chat) is Dave's ticket but Rowan may help with data collation later; Deon takes back the storage endpoint task after assessing it requires too much context for Rowan to ramp on right now. Final priority order: Cumulus ground truth, data architecture review, then ongoing sprint work.</data>
+      <data key="d13">2000.0</data>
+      <data key="d14">2265.28</data>
+      <data key="d15">[]</data>
+      <data key="d16">[]</data>
+    </node>
+    <node id="visual:0000">
+      <data key="d0">VisualContext</data>
+      <data key="d1">Meeting participants intro screen</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Deon Kuhn  Laura Gongas  Rowan Reid", "ts": 2.125, "source": "vision"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d17">frame-00001.png</data>
+      <data key="d18">2.125</data>
+      <data key="d19">talking_head</data>
+      <data key="d20">Deon Kuhn  Laura Gongas  Rowan Reid</data>
+      <data key="d21">Three circular profile avatars on a black background identifying the meeting participants: Deon Kuhn, Laura Gongas, and Rowan Reid. This is a pre-join or waiting-room screen establishing who is in the call.</data>
+      <data key="d22">0040005555804400</data>
+    </node>
+    <node id="visual:0005">
+      <data key="d0">VisualContext</data>
+      <data key="d1">Kumulus data pipeline architecture diagram (full view)</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "kumulus_flow.png  Data Sources: NICE API / Web, Postgres DB, PDFs / OCR Input  Ingestion Layer: Fabric Pipelines  Data Platform (Fabric / OneLake): Raw Data (Bronze), Processed Data (Silver), Curated Data (Gold)  Processing &amp; Intelligence: Entity Detection, Identity Resolution, Pseudonymisation Engine, Guideline Structuring  Reasoning Layer: Case vs Guideline Engine, Explainable Output, Similarity Detection  Consumption: Legal / Clinical Review  Deon Kuhn  Rowan Reid", "ts": 1070.625, "source": "vision"}]</data>
+      <data key="d4">["chapter:03"]</data>
+      <data key="d17">frame-00005.png</data>
+      <data key="d18">1070.625</data>
+      <data key="d19">diagram</data>
+      <data key="d20">kumulus_flow.png  Data Sources: NICE API / Web, Postgres DB, PDFs / OCR Input  Ingestion Layer: Fabric Pipelines  Data Platform (Fabric / OneLake): Raw Data (Bronze), Processed Data (Silver), Curated Data (Gold)  Processing &amp; Intelligence: Entity Detection, Identity Resolution, Pseudonymisation Engine, Guideline Structuring  Reasoning Layer: Case vs Guideline Engine, Explainable Output, Similarity Detection  Consumption: Legal / Clinical Review  Deon Kuhn  Rowan Reid</data>
+      <data key="d21">Screen share of kumulus_flow.png open in a diagramming tool, showing the end-to-end Kumulus data architecture across five colour-coded zones: Data Sources (Postgres DB, NICE API/Web, PDFs/OCR), Ingestion Layer (Fabric Pipelines), Data Platform (Raw/Bronze, Processed/Silver, Curated/Gold), Processing &amp; Intelligence (Entity Detection, Identity Resolution, Pseudonymisation Engine, Guideline Structuring), and Reasoning/Consumption layers (Similarity Detection, Case vs Guideline Engine, Explainable Output, Legal/Clinical Review). Deon Kuhn and Rowan Reid are visible in side-panel thumbnails.</data>
+      <data key="d22">0b03c40084840300</data>
+    </node>
+    <node id="visual:0006">
+      <data key="d0">VisualContext</data>
+      <data key="d1">Kumulus flow diagram with all three participants visible</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "kumulus_flow.png  Data Sources: NICE API / Web, Postgres DB, PDFs / OCR Input  Ingestion Layer: Fabric Pipelines  Data Platform (Fabric / OneLake): Raw Data (Bronze), Processed Data (Silver), Curated Data (Gold)  Processing &amp; Intelligence: Entity Detection, Identity Resolution, Pseudonymisation Engine, Guideline Structuring  Reasoning Layer: Similarity Detection, Case vs Guideline Engine, Explainable Output  Consumption: Legal / Clinical Review  Deon Kuhn  Laura Gongas  Rowan Reid", "ts": 1073.75, "source": "vision"}]</data>
+      <data key="d4">["chapter:03"]</data>
+      <data key="d17">frame-00006.png</data>
+      <data key="d18">1073.75</data>
+      <data key="d19">diagram</data>
+      <data key="d20">kumulus_flow.png  Data Sources: NICE API / Web, Postgres DB, PDFs / OCR Input  Ingestion Layer: Fabric Pipelines  Data Platform (Fabric / OneLake): Raw Data (Bronze), Processed Data (Silver), Curated Data (Gold)  Processing &amp; Intelligence: Entity Detection, Identity Resolution, Pseudonymisation Engine, Guideline Structuring  Reasoning Layer: Similarity Detection, Case vs Guideline Engine, Explainable Output  Consumption: Legal / Clinical Review  Deon Kuhn  Laura Gongas  Rowan Reid</data>
+      <data key="d21">Continued screen share of kumulus_flow.png showing the same pipeline architecture diagram. All three participants (Deon Kuhn, Laura Gongas, Rowan Reid) are visible in the right-hand side-panel, indicating active group discussion of the diagram.</data>
+      <data key="d22">03c700a484008b00</data>
+    </node>
+    <node id="visual:0007">
+      <data key="d0">VisualContext</data>
+      <data key="d1">Chapter 4 frame: Kumulus flow diagram discussion</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "kumulus_flow.png  Data Sources: NICE API / Web, Postgres DB, PDFs / OCR Input  Ingestion Layer: Fabric Pipelines  Data Platform (Fabric / OneLake): Raw Data (Bronze), Processed Data (Silver), Curated Data (Gold)  Processing &amp; Intelligence: Entity Detection, Identity Resolution, Pseudonymisation Engine, Guideline Structuring  Reasoning Layer: Similarity Detection, Case vs Guideline Engine, Explainable Output  Consumption: Legal / Clinical Review  Deon Kuhn  Laura Gongas  Rowan Reid", "ts": 1810.0, "source": "vision"}]</data>
+      <data key="d4">["chapter:04"]</data>
+      <data key="d17">chapframe-04.png</data>
+      <data key="d18">1810.0</data>
+      <data key="d19">diagram</data>
+      <data key="d20">kumulus_flow.png  Data Sources: NICE API / Web, Postgres DB, PDFs / OCR Input  Ingestion Layer: Fabric Pipelines  Data Platform (Fabric / OneLake): Raw Data (Bronze), Processed Data (Silver), Curated Data (Gold)  Processing &amp; Intelligence: Entity Detection, Identity Resolution, Pseudonymisation Engine, Guideline Structuring  Reasoning Layer: Similarity Detection, Case vs Guideline Engine, Explainable Output  Consumption: Legal / Clinical Review  Deon Kuhn  Laura Gongas  Rowan Reid</data>
+      <data key="d21">Chapter-marker frame showing the kumulus_flow.png architecture diagram still on screen with Deon Kuhn highlighted as the active speaker (blue name badge), alongside Laura Gongas and Rowan Reid in the side panel. This marks the start of a new chapter section within the diagram discussion.</data>
+      <data key="d22">01c700a484008b00</data>
+    </node>
+    <edge source="person:rowan-reid" target="action:0001" id="e-0007">
+      <data key="d23">OWNS</data>
+      <data key="d24">person:rowan-reid</data>
+      <data key="d25">action:0001</data>
+      <data key="d26">0.72</data>
+      <data key="d27">[{"quote": "may reassign to Rowan", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="topic:expert-match-storage-endpoint-integration" id="e-0098">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:rowan-reid</data>
+      <data key="d25">topic:expert-match-storage-endpoint-integration</data>
+      <data key="d26">0.75</data>
+      <data key="d27">[{"quote": "may reassign to Rowan", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0009" id="e-0217">
+      <data key="d23">ASSERTED</data>
+      <data key="d24">person:rowan-reid</data>
+      <data key="d25">claim:0009</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "Rowan acknowledges limited data engineering tool experience but commits to applying judgement", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="topic:data-architecture-proposal" id="e-0219">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:rowan-reid</data>
+      <data key="d25">topic:data-architecture-proposal</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "commits to applying judgement", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="action:0007" id="e-0220">
+      <data key="d23">OWNS</data>
+      <data key="d24">person:rowan-reid</data>
+      <data key="d25">action:0007</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "Rowan acknowledges limited data engineering tool experience but commits to applying judgement", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="decision:0005" id="e-0223">
+      <data key="d23">DECIDED</data>
+      <data key="d24">person:rowan-reid</data>
+      <data key="d25">decision:0005</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "Cumulus proposal not yet accepted; ground truth collection is the top priority", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="topic:ground-truth-collection" id="e-0226">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:rowan-reid</data>
+      <data key="d25">topic:ground-truth-collection</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "ground truth collection is the top priority", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="person:deon-kuhn" id="e-0259">
+      <data key="d23">MENTIONED_BY</data>
+      <data key="d24">person:rowan-reid</data>
+      <data key="d25">person:deon-kuhn</data>
+      <data key="d26">0.8</data>
+      <data key="d27">[{"quote": "too much prior context required for Rowan", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="topic:cumulus-deliverable-ownership" id="e-0261">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:rowan-reid</data>
+      <data key="d25">topic:cumulus-deliverable-ownership</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "Final priorities: Cumulus work + storage endpoints", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="action:0010" id="e-0262">
+      <data key="d23">OWNS</data>
+      <data key="d24">person:rowan-reid</data>
+      <data key="d25">action:0010</data>
+      <data key="d26">0.92</data>
+      <data key="d27">[{"quote": "Rowan to watch Cumulus recording", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="action:0011" id="e-0266">
+      <data key="d23">OWNS</data>
+      <data key="d24">person:rowan-reid</data>
+      <data key="d25">action:0011</data>
+      <data key="d26">0.92</data>
+      <data key="d27">[{"quote": "catch up with Brendan tomorrow", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="action:0012" id="e-0269">
+      <data key="d23">OWNS</data>
+      <data key="d24">person:rowan-reid</data>
+      <data key="d25">action:0012</data>
+      <data key="d26">0.92</data>
+      <data key="d27">[{"quote": "finish Chantel Pilla script", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="topic:cumulus-scope-reduction" id="e-0279">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:rowan-reid</data>
+      <data key="d25">topic:cumulus-scope-reduction</data>
+      <data key="d26">0.78</data>
+      <data key="d27">[{"quote": "Cumulus proposal not yet accepted; Final priorities: Cumulus work", "ts": "ch04-ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:expert-match-storage-endpoint-integration" id="e-0001">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">topic:expert-match-storage-endpoint-integration</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "Laura requests dev team call AI ingestion endpoints on expert/case create/update/delete", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="artifact:expert-match-ingestion-endpoint" id="e-0003">
+      <data key="d23">REFERENCES</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">artifact:expert-match-ingestion-endpoint</data>
+      <data key="d26">0.97</data>
+      <data key="d27">[{"quote": "Laura shares ingestion endpoint docs via chat", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:ground-truth-collection" id="e-0013">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">topic:ground-truth-collection</data>
+      <data key="d26">0.93</data>
+      <data key="d27">[{"quote": "need to evaluate Cumulus's pseudonymization by building annotated ground truth with clinical team", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:pseudonymization" id="e-0014">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">topic:pseudonymization</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "need to evaluate Cumulus's pseudonymization by building annotated ground truth with clinical team", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:annotation-tool-selection" id="e-0015">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">topic:annotation-tool-selection</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "Annotation tool TBD (data privacy compliant)", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:human-in-the-loop" id="e-0016">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">topic:human-in-the-loop</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "AI pre-population strategy to reduce clinician burden", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="artifact:cumulus-pipeline-diagram" id="e-0026">
+      <data key="d23">REFERENCES</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">artifact:cumulus-pipeline-diagram</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "Cumulus flow diagram (screen share kumulus_flow.png)", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:cumulus-pipeline-architecture" id="e-0027">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">topic:cumulus-pipeline-architecture</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "parallel tracks: NICE guideline structuring + case entity extraction/pseudonymization, feeding reasoning layer", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:nice-guideline-structuring" id="e-0028">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">topic:nice-guideline-structuring</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "parallel tracks: NICE guideline structuring + case entity extraction/pseudonymization", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:entity-extraction" id="e-0029">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">topic:entity-extraction</data>
+      <data key="d26">0.93</data>
+      <data key="d27">[{"quote": "case entity extraction/pseudonymization, feeding reasoning layer", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:cumulus-scope-reduction" id="e-0030">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">topic:cumulus-scope-reduction</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "Cumulus scope = green box. Cumulus vague on NICE guideline depth — may only do a subset for obstetrics", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:nice-api-compliance" id="e-0031">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">topic:nice-api-compliance</data>
+      <data key="d26">0.92</data>
+      <data key="d27">[{"quote": "NICE API key sharing: Deon open to time-limited access with key rotation; Laura prefers Medbrief ingests NICE and gives Cumulus the JSON output", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:rules-representation" id="e-0033">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">topic:rules-representation</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "Two rules representation options: Cypher queries (intermediate) vs graph (ultimate goal)", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:cumulus-deliverable-ownership" id="e-0034">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">topic:cumulus-deliverable-ownership</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "Cumulus will deliver code fully and transparently", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="artifact:nice-api" id="e-0035">
+      <data key="d23">REFERENCES</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">artifact:nice-api</data>
+      <data key="d26">0.93</data>
+      <data key="d27">[{"quote": "NICE API key sharing: Deon open to time-limited access with key rotation; Laura prefers Medbrief ingests NICE and gives Cumulus the JSON output", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="artifact:graph-database" id="e-0037">
+      <data key="d23">REFERENCES</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">artifact:graph-database</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "Two rules representation options: Cypher queries (intermediate) vs graph (ultimate goal)", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="decision:0001" id="e-0039">
+      <data key="d23">DECIDED</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">decision:0001</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "Output: JSON (not graph DB)", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="decision:0002" id="e-0042">
+      <data key="d23">DECIDED</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">decision:0002</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "Laura prefers Medbrief ingests NICE and gives Cumulus the JSON output", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="decision:0004" id="e-0048">
+      <data key="d23">DECIDED</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">decision:0004</data>
+      <data key="d26">0.82</data>
+      <data key="d27">[{"quote": "Cumulus will deliver code fully and transparently", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="question:0001" id="e-0052">
+      <data key="d23">ASKED</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">question:0001</data>
+      <data key="d26">0.82</data>
+      <data key="d27">[{"quote": "Task initially on Deon's sprint; may reassign to Rowan", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="question:0002" id="e-0056">
+      <data key="d23">ASKED</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">question:0002</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "Annotation tool TBD (data privacy compliant)", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="question:0003" id="e-0059">
+      <data key="d23">ASKED</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">question:0003</data>
+      <data key="d26">0.82</data>
+      <data key="d27">[{"quote": "Cumulus vague on NICE guideline depth — may only do a subset for obstetrics", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="question:0004" id="e-0063">
+      <data key="d23">ASKED</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">question:0004</data>
+      <data key="d26">0.8</data>
+      <data key="d27">[{"quote": "Two rules representation options: Cypher queries (intermediate) vs graph (ultimate goal)", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="claim:0003" id="e-0073">
+      <data key="d23">ASSERTED</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">claim:0003</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "Cases: deceased patients, 2 needed, to define with Brendan", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="claim:0004" id="e-0075">
+      <data key="d23">ASSERTED</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">claim:0004</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "Medbrief does Medbrief's own reasoning", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="artifact:cumulus-presentation" id="e-0088">
+      <data key="d23">REFERENCES</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">artifact:cumulus-presentation</data>
+      <data key="d26">0.7</data>
+      <data key="d27">[{"quote": "Cumulus flow diagram (screen share kumulus_flow.png)", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="question:0005" id="e-0093">
+      <data key="d23">ASKED</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">question:0005</data>
+      <data key="d26">0.82</data>
+      <data key="d27">[{"quote": "NICE API key sharing: Deon open to time-limited access with key rotation; Laura prefers Medbrief ingests NICE and gives Cumulus the JSON output", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="decision:0006" id="e-0102">
+      <data key="d23">DECIDED</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">decision:0006</data>
+      <data key="d26">0.82</data>
+      <data key="d27">[{"quote": "Cases: deceased patients, 2 needed, to define with Brendan", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:data-architecture-proposal" id="e-0104">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">topic:data-architecture-proposal</data>
+      <data key="d26">0.78</data>
+      <data key="d27">[{"quote": "parallel tracks: NICE guideline structuring + case entity extraction/pseudonymization, feeding reasoning layer", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:databricks" id="e-0205">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">topic:databricks</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "Cumulus's data architecture proposal (Databricks, Azure Data Factory, Data Lake)", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:azure-data-factory" id="e-0206">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">topic:azure-data-factory</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "Cumulus's data architecture proposal (Databricks, Azure Data Factory, Data Lake)", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:data-lake" id="e-0207">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">topic:data-lake</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "Cumulus's data architecture proposal (Databricks, Azure Data Factory, Data Lake)", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="claim:0007" id="e-0209">
+      <data key="d23">RAISED</data>
+      <data key="d24">person:laura-gongas</data>
+      <data key="d25">claim:0007</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "concerned about vendor upselling", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="topic:expert-profile-sync" id="e-0002">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">topic:expert-profile-sync</data>
+      <data key="d26">0.92</data>
+      <data key="d27">[{"quote": "Deon explains update queue table exists but is empty on prod, plus overcaching issue", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="artifact:expert-update-queue" id="e-0004">
+      <data key="d23">REFERENCES</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">artifact:expert-update-queue</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "update queue table exists but is empty on prod", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="artifact:expert-cache" id="e-0005">
+      <data key="d23">REFERENCES</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">artifact:expert-cache</data>
+      <data key="d26">0.93</data>
+      <data key="d27">[{"quote": "overcaching issue", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="action:0001" id="e-0006">
+      <data key="d23">OWNS</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">action:0001</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "Task initially on Deon's sprint", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="topic:nice-api-compliance" id="e-0032">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">topic:nice-api-compliance</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "Deon open to time-limited access with key rotation", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="artifact:nice-api" id="e-0036">
+      <data key="d23">REFERENCES</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">artifact:nice-api</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "Deon open to time-limited access with key rotation", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0001" id="e-0066">
+      <data key="d23">ASSERTED</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">claim:0001</data>
+      <data key="d26">0.93</data>
+      <data key="d27">[{"quote": "update queue table exists but is empty on prod", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0002" id="e-0069">
+      <data key="d23">ASSERTED</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">claim:0002</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "overcaching issue", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0002" id="e-0070">
+      <data key="d23">RAISED</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">claim:0002</data>
+      <data key="d26">0.87</data>
+      <data key="d27">[{"quote": "overcaching issue", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0005" id="e-0079">
+      <data key="d23">ASSERTED</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">claim:0005</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "Deon open to time-limited access with key rotation", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="question:0005" id="e-0094">
+      <data key="d23">ANSWERED</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">question:0005</data>
+      <data key="d26">0.8</data>
+      <data key="d27">[{"quote": "Deon open to time-limited access with key rotation", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="topic:enterprise-skills-development-platform" id="e-0212">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">topic:enterprise-skills-development-platform</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "Deon suggests enterprise skills platform for data engineering learning", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0008" id="e-0213">
+      <data key="d23">ASSERTED</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">claim:0008</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "Deon suggests enterprise skills platform for data engineering learning", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="topic:sally-integration" id="e-0233">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">topic:sally-integration</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "Sally integration stays with Deon", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="decision:0006" id="e-0234">
+      <data key="d23">DECIDED</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">decision:0006</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "Sally integration stays with Deon", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="action:0008" id="e-0237">
+      <data key="d23">OWNS</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">action:0008</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "Sally integration stays with Deon", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="topic:human-in-the-loop" id="e-0240">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">topic:human-in-the-loop</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "Human-in-the-loop for Ask Alex (thumbs up/down via Dave's ticket, medium priority)", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="topic:ask-alex" id="e-0241">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">topic:ask-alex</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "Human-in-the-loop for Ask Alex (thumbs up/down via Dave's ticket, medium priority)", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="topic:thumbs-up-down-feedback" id="e-0242">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">topic:thumbs-up-down-feedback</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "thumbs up/down via Dave's ticket", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="decision:0007" id="e-0246">
+      <data key="d23">DECIDED</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">decision:0007</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "medium priority; Chantel may bump to high", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="action:0009" id="e-0251">
+      <data key="d23">OWNS</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">action:0009</data>
+      <data key="d26">0.92</data>
+      <data key="d27">[{"quote": "Deon takes back Expert Match ingestion endpoint task — too much prior context required for Rowan", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="topic:expert-match-ingestion-endpoints" id="e-0253">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">topic:expert-match-ingestion-endpoints</data>
+      <data key="d26">0.92</data>
+      <data key="d27">[{"quote": "Deon takes back Expert Match ingestion endpoint task", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0006" id="e-0256">
+      <data key="d23">ASSERTED</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">claim:0006</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "too much prior context required for Rowan", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="topic:cumulus-deliverable-ownership" id="e-0260">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:deon-kuhn</data>
+      <data key="d25">topic:cumulus-deliverable-ownership</data>
+      <data key="d26">0.82</data>
+      <data key="d27">[{"quote": "Final priorities: Cumulus work + storage endpoints", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:brendan" target="action:0002" id="e-0020">
+      <data key="d23">OWNS</data>
+      <data key="d24">person:brendan</data>
+      <data key="d25">action:0002</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "Brendan meeting tomorrow to define entities and cases", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:brendan" target="person:laura-gongas" id="e-0021">
+      <data key="d23">MENTIONED_BY</data>
+      <data key="d24">person:brendan</data>
+      <data key="d25">person:laura-gongas</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "Brendan meeting tomorrow to define entities and cases", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:brendan" target="person:rowan-reid" id="e-0268">
+      <data key="d23">MENTIONED_BY</data>
+      <data key="d24">person:brendan</data>
+      <data key="d25">person:rowan-reid</data>
+      <data key="d26">0.82</data>
+      <data key="d27">[{"quote": "catch up with Brendan tomorrow", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:mediha" target="person:laura-gongas" id="e-0022">
+      <data key="d23">MENTIONED_BY</data>
+      <data key="d24">person:mediha</data>
+      <data key="d25">person:laura-gongas</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "Mediha on leave", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:chantel-pilla" target="person:deon-kuhn" id="e-0249">
+      <data key="d23">MENTIONED_BY</data>
+      <data key="d24">person:chantel-pilla</data>
+      <data key="d25">person:deon-kuhn</data>
+      <data key="d26">0.8</data>
+      <data key="d27">[{"quote": "Chantel may bump to high", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:chantel-pilla" target="topic:human-in-the-loop" id="e-0250">
+      <data key="d23">SPEAKS_ABOUT</data>
+      <data key="d24">person:chantel-pilla</data>
+      <data key="d25">topic:human-in-the-loop</data>
+      <data key="d26">0.75</data>
+      <data key="d27">[{"quote": "Chantel may bump to high", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:chantel-pilla" target="person:rowan-reid" id="e-0271">
+      <data key="d23">MENTIONED_BY</data>
+      <data key="d24">person:chantel-pilla</data>
+      <data key="d25">person:rowan-reid</data>
+      <data key="d26">0.82</data>
+      <data key="d27">[{"quote": "finish Chantel Pilla script", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:dave" target="person:deon-kuhn" id="e-0245">
+      <data key="d23">MENTIONED_BY</data>
+      <data key="d24">person:dave</data>
+      <data key="d25">person:deon-kuhn</data>
+      <data key="d26">0.82</data>
+      <data key="d27">[{"quote": "thumbs up/down via Dave's ticket", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="artifact:expert-match-ingestion-endpoint" target="person:laura-gongas" id="e-0012">
+      <data key="d23">MENTIONED_BY</data>
+      <data key="d24">artifact:expert-match-ingestion-endpoint</data>
+      <data key="d25">person:laura-gongas</data>
+      <data key="d26">0.97</data>
+      <data key="d27">[{"quote": "Laura shares ingestion endpoint docs via chat", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="artifact:expert-update-queue" target="claim:0001" id="e-0067">
+      <data key="d23">SUPPORTS</data>
+      <data key="d24">artifact:expert-update-queue</data>
+      <data key="d25">claim:0001</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "update queue table exists but is empty on prod", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="artifact:expert-cache" target="claim:0002" id="e-0071">
+      <data key="d23">SUPPORTS</data>
+      <data key="d24">artifact:expert-cache</data>
+      <data key="d25">claim:0002</data>
+      <data key="d26">0.82</data>
+      <data key="d27">[{"quote": "overcaching issue", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="artifact:brendan-patent-document" target="topic:ground-truth-collection" id="e-0312">
+      <data key="d23">SUPPORTS</data>
+      <data key="d24">artifact:brendan-patent-document</data>
+      <data key="d25">topic:ground-truth-collection</data>
+      <data key="d26">0.8</data>
+      <data key="d28">["2", "2"]</data>
+      <data key="d29">Brendan's patent document (Ch2), which describes the full system and breaks it into modules including entity identification and pseudonymization, provides the conceptual foundation and entity-type reference that ground truth annotation work will need to operationalise</data>
+      <data key="d27">{"source_quote": {"quote": "compare it back to the patent, that Brendan's patent document, and he had that description of like the whole system, then we had broken it down into different modules", "ts": 790, "chapter": "2", "speaker": "Laura Gongas"}, "target_quote": {"quote": "we want to evaluate how they're doing with this pseudonymization ... we need to have annotations or like countries so they can compare what they predicted versus what it should actually be", "ts": 565, "chapter": "2", "speaker": "Laura Gongas"}}</data>
+    </edge>
+    <edge source="artifact:graph-database" target="topic:rules-representation" id="e-0317">
+      <data key="d23">SUPPORTS</data>
+      <data key="d24">artifact:graph-database</data>
+      <data key="d25">topic:rules-representation</data>
+      <data key="d26">0.78</data>
+      <data key="d28">["2", "3"]</data>
+      <data key="d29">Mediha's graph database work (Ch2, presented at Sprint 9) provides the concrete artefact that grounds the Ch3 rules representation discussion (Cypher queries as intermediate step toward the graph)</data>
+      <data key="d27">{"source_quote": {"quote": "Mediha presented at the Sprint Nine review the work that she had been doing on the kind of the graph database side of things in terms of represent, like once we extract all the entities and the relationships", "ts": 990, "chapter": "2", "speaker": "Laura Gongas"}, "target_quote": {"quote": "We can either make them as cipher queries or do them as graphs. Now, the cipher queries is like an intermediate step to get to graphs.", "ts": 1490, "chapter": "3", "speaker": "Laura Gongas"}}</data>
+    </edge>
+    <edge source="topic:expert-match-storage-endpoint-integration" target="action:0001" id="e-0009">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:expert-match-storage-endpoint-integration</data>
+      <data key="d25">action:0001</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "Laura requests dev team call AI ingestion endpoints on expert/case create/update/delete", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:expert-match-storage-endpoint-integration" target="action:0009" id="e-0273">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:expert-match-storage-endpoint-integration</data>
+      <data key="d25">action:0009</data>
+      <data key="d26">0.78</data>
+      <data key="d27">[{"quote": "Final priorities: Cumulus work + storage endpoints", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:expert-profile-sync" target="action:0001" id="e-0010">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:expert-profile-sync</data>
+      <data key="d25">action:0001</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "Deon explains update queue table exists but is empty on prod", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:expert-profile-sync" target="topic:expert-match-storage-endpoint-integration" id="e-0011">
+      <data key="d23">SUBTOPIC_OF</data>
+      <data key="d24">topic:expert-profile-sync</data>
+      <data key="d25">topic:expert-match-storage-endpoint-integration</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "update queue table exists but is empty on prod, plus overcaching issue", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:pseudonymization" target="action:0002" id="e-0018">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:pseudonymization</data>
+      <data key="d25">action:0002</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "need to evaluate Cumulus's pseudonymization by building annotated ground truth with clinical team", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:ground-truth-collection" target="action:0002" id="e-0017">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:ground-truth-collection</data>
+      <data key="d25">action:0002</data>
+      <data key="d26">0.92</data>
+      <data key="d27">[{"quote": "Brendan meeting tomorrow to define entities and cases", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:ground-truth-collection" target="topic:pseudonymization" id="e-0025">
+      <data key="d23">SUBTOPIC_OF</data>
+      <data key="d24">topic:ground-truth-collection</data>
+      <data key="d25">topic:pseudonymization</data>
+      <data key="d26">0.8</data>
+      <data key="d27">[{"quote": "need to evaluate Cumulus's pseudonymization by building annotated ground truth with clinical team", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:ground-truth-collection" target="decision:0006" id="e-0103">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:ground-truth-collection</data>
+      <data key="d25">decision:0006</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "Cases: deceased patients, 2 needed, to define with Brendan", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:ground-truth-collection" target="decision:0005" id="e-0225">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:ground-truth-collection</data>
+      <data key="d25">decision:0005</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "ground truth collection is the top priority", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:entity-extraction" target="topic:cumulus-pipeline-architecture" id="e-0085">
+      <data key="d23">SUBTOPIC_OF</data>
+      <data key="d24">topic:entity-extraction</data>
+      <data key="d25">topic:cumulus-pipeline-architecture</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "parallel tracks: NICE guideline structuring + case entity extraction/pseudonymization, feeding reasoning layer", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:nice-guideline-structuring" target="question:0003" id="e-0061">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:nice-guideline-structuring</data>
+      <data key="d25">question:0003</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "Cumulus vague on NICE guideline depth — may only do a subset for obstetrics", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:nice-guideline-structuring" target="topic:cumulus-pipeline-architecture" id="e-0084">
+      <data key="d23">SUBTOPIC_OF</data>
+      <data key="d24">topic:nice-guideline-structuring</data>
+      <data key="d25">topic:cumulus-pipeline-architecture</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "parallel tracks: NICE guideline structuring + case entity extraction/pseudonymization, feeding reasoning layer", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:nice-api-compliance" target="decision:0002" id="e-0043">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:nice-api-compliance</data>
+      <data key="d25">decision:0002</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "Laura prefers Medbrief ingests NICE and gives Cumulus the JSON output", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:nice-api-compliance" target="claim:0005" id="e-0081">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:nice-api-compliance</data>
+      <data key="d25">claim:0005</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "Deon open to time-limited access with key rotation", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:nice-api-compliance" target="topic:cumulus-pipeline-architecture" id="e-0086">
+      <data key="d23">SUBTOPIC_OF</data>
+      <data key="d24">topic:nice-api-compliance</data>
+      <data key="d25">topic:cumulus-pipeline-architecture</data>
+      <data key="d26">0.78</data>
+      <data key="d27">[{"quote": "NICE API key sharing: Deon open to time-limited access with key rotation", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:nice-api-compliance" target="question:0005" id="e-0095">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:nice-api-compliance</data>
+      <data key="d25">question:0005</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "NICE API key sharing: Deon open to time-limited access with key rotation", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:cumulus-scope-reduction" target="decision:0003" id="e-0044">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:cumulus-scope-reduction</data>
+      <data key="d25">decision:0003</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "Cumulus vague on NICE guideline depth — may only do a subset for obstetrics", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:cumulus-scope-reduction" target="claim:0004" id="e-0076">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:cumulus-scope-reduction</data>
+      <data key="d25">claim:0004</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "Cumulus scope = green box. Medbrief does Medbrief's own reasoning", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:cumulus-scope-reduction" target="topic:cumulus-pipeline-architecture" id="e-0087">
+      <data key="d23">SUBTOPIC_OF</data>
+      <data key="d24">topic:cumulus-scope-reduction</data>
+      <data key="d25">topic:cumulus-pipeline-architecture</data>
+      <data key="d26">0.82</data>
+      <data key="d27">[{"quote": "Cumulus scope = green box", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:cumulus-scope-reduction" target="action:0007" id="e-0222">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:cumulus-scope-reduction</data>
+      <data key="d25">action:0007</data>
+      <data key="d26">0.72</data>
+      <data key="d27">[{"quote": "Cumulus proposal not yet accepted", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:cumulus-scope-reduction" target="decision:0005" id="e-0280">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:cumulus-scope-reduction</data>
+      <data key="d25">decision:0005</data>
+      <data key="d26">0.78</data>
+      <data key="d27">[{"quote": "Cumulus proposal not yet accepted", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:cumulus-deliverable-ownership" target="decision:0004" id="e-0046">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:cumulus-deliverable-ownership</data>
+      <data key="d25">decision:0004</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "Cumulus will deliver code fully and transparently", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:cumulus-deliverable-ownership" target="action:0010" id="e-0265">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:cumulus-deliverable-ownership</data>
+      <data key="d25">action:0010</data>
+      <data key="d26">0.82</data>
+      <data key="d27">[{"quote": "Rowan to watch Cumulus recording", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:annotation-tool-selection" target="action:0003" id="e-0023">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:annotation-tool-selection</data>
+      <data key="d25">action:0003</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "Annotation tool TBD (data privacy compliant)", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:annotation-tool-selection" target="question:0002" id="e-0057">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:annotation-tool-selection</data>
+      <data key="d25">question:0002</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "Annotation tool TBD (data privacy compliant)", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:rules-representation" target="topic:entity-extraction" id="e-0318">
+      <data key="d23">DEPENDS_ON</data>
+      <data key="d24">topic:rules-representation</data>
+      <data key="d25">topic:entity-extraction</data>
+      <data key="d26">0.85</data>
+      <data key="d28">["3", "3"]</data>
+      <data key="d29">Ch3 rules representation work (building Cypher queries or graphs from guidelines) explicitly depends on entity extraction from guidelines being completed first — it is described as the downstream layer</data>
+      <data key="d27">{"source_quote": {"quote": "We can either make them as cipher queries or do them as graphs. Now, the cipher queries is like an intermediate step to get to graphs.", "ts": 1490, "chapter": "3", "speaker": "Laura Gongas"}, "target_quote": {"quote": "the most important part ... just go with the entity extraction, because that's the most important part", "ts": 1600, "chapter": "3", "speaker": "Laura Gongas"}}</data>
+    </edge>
+    <edge source="topic:rules-representation" target="decision:0005" id="e-0049">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:rules-representation</data>
+      <data key="d25">decision:0005</data>
+      <data key="d26">0.82</data>
+      <data key="d27">[{"quote": "Two rules representation options: Cypher queries (intermediate) vs graph (ultimate goal)", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:rules-representation" target="question:0004" id="e-0064">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:rules-representation</data>
+      <data key="d25">question:0004</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "Two rules representation options: Cypher queries (intermediate) vs graph (ultimate goal)", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:cumulus-pipeline-architecture" target="decision:0001" id="e-0040">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:cumulus-pipeline-architecture</data>
+      <data key="d25">decision:0001</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "Output: JSON (not graph DB)", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:cumulus-pipeline-architecture" target="topic:pseudonymization" id="e-0096">
+      <data key="d23">BUILDS_ON</data>
+      <data key="d24">topic:cumulus-pipeline-architecture</data>
+      <data key="d25">topic:pseudonymization</data>
+      <data key="d26">0.75</data>
+      <data key="d27">[{"quote": "parallel tracks: NICE guideline structuring + case entity extraction/pseudonymization, feeding reasoning layer", "ts": "17:30–27:00", "source": "transcript"}, {"quote": "need to evaluate Cumulus's pseudonymization by building annotated ground truth with clinical team", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:cumulus-pipeline-architecture" target="topic:entity-extraction" id="e-0097">
+      <data key="d23">BUILDS_ON</data>
+      <data key="d24">topic:cumulus-pipeline-architecture</data>
+      <data key="d25">topic:entity-extraction</data>
+      <data key="d26">0.8</data>
+      <data key="d27">[{"quote": "parallel tracks: NICE guideline structuring + case entity extraction/pseudonymization", "ts": "17:30–27:00", "source": "transcript"}, {"quote": "Brendan meeting tomorrow to define entities and cases", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:data-architecture-proposal" target="topic:cumulus-pipeline-architecture" id="e-0105">
+      <data key="d23">SUBTOPIC_OF</data>
+      <data key="d24">topic:data-architecture-proposal</data>
+      <data key="d25">topic:cumulus-pipeline-architecture</data>
+      <data key="d26">0.75</data>
+      <data key="d27">[{"quote": "parallel tracks: NICE guideline structuring + case entity extraction/pseudonymization, feeding reasoning layer", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:data-architecture-proposal" target="claim:0007" id="e-0211">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:data-architecture-proposal</data>
+      <data key="d25">claim:0007</data>
+      <data key="d26">0.82</data>
+      <data key="d27">[{"quote": "Cumulus's data architecture proposal — concerned about vendor upselling", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:databricks" target="topic:data-architecture-proposal" id="e-0228">
+      <data key="d23">SUBTOPIC_OF</data>
+      <data key="d24">topic:databricks</data>
+      <data key="d25">topic:data-architecture-proposal</data>
+      <data key="d26">0.82</data>
+      <data key="d27">[{"quote": "Cumulus's data architecture proposal (Databricks, Azure Data Factory, Data Lake)", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:azure-data-factory" target="topic:data-architecture-proposal" id="e-0229">
+      <data key="d23">SUBTOPIC_OF</data>
+      <data key="d24">topic:azure-data-factory</data>
+      <data key="d25">topic:data-architecture-proposal</data>
+      <data key="d26">0.82</data>
+      <data key="d27">[{"quote": "Cumulus's data architecture proposal (Databricks, Azure Data Factory, Data Lake)", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:data-lake" target="topic:data-architecture-proposal" id="e-0230">
+      <data key="d23">SUBTOPIC_OF</data>
+      <data key="d24">topic:data-lake</data>
+      <data key="d25">topic:data-architecture-proposal</data>
+      <data key="d26">0.82</data>
+      <data key="d27">[{"quote": "Cumulus's data architecture proposal (Databricks, Azure Data Factory, Data Lake)", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:enterprise-skills-development-platform" target="claim:0008" id="e-0215">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:enterprise-skills-development-platform</data>
+      <data key="d25">claim:0008</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "Deon suggests enterprise skills platform for data engineering learning", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:enterprise-skills-development-platform" target="topic:data-strategy" id="e-0216">
+      <data key="d23">SUBTOPIC_OF</data>
+      <data key="d24">topic:enterprise-skills-development-platform</data>
+      <data key="d25">topic:data-strategy</data>
+      <data key="d26">0.72</data>
+      <data key="d27">[{"quote": "enterprise skills platform for data engineering learning", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:mlops-infrastructure" target="topic:data-architecture-proposal" id="e-0231">
+      <data key="d23">SUBTOPIC_OF</data>
+      <data key="d24">topic:mlops-infrastructure</data>
+      <data key="d25">topic:data-architecture-proposal</data>
+      <data key="d26">0.68</data>
+      <data key="d27">[{"quote": "Cumulus's data architecture proposal (Databricks, Azure Data Factory, Data Lake)", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:sally-integration" target="decision:0006" id="e-0236">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:sally-integration</data>
+      <data key="d25">decision:0006</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "Sally integration stays with Deon", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:sally-integration" target="action:0008" id="e-0239">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:sally-integration</data>
+      <data key="d25">action:0008</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "Sally integration stays with Deon", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:human-in-the-loop" target="topic:ground-truth-collection" id="e-0325">
+      <data key="d23">SUPPORTS</data>
+      <data key="d24">topic:human-in-the-loop</data>
+      <data key="d25">topic:ground-truth-collection</data>
+      <data key="d26">0.7</data>
+      <data key="d28">["5", "2"]</data>
+      <data key="d29">The Ch5 human-in-the-loop strategy (closing the MLOps loop via thumbs up/down feedback) is structurally parallel to and supports the rationale for Ch2 ground truth collection — both are about acquiring labelled signal from clinical experts to measure and improve AI quality</data>
+      <data key="d27">{"source_quote": {"quote": "we're trying to have human in the loop in most of our projects to basically close the entire MLOps pipeline", "ts": 2100, "chapter": "5", "speaker": "Laura Gongas"}, "target_quote": {"quote": "we need to have annotations or like countries so they can compare what they predicted versus what it should actually be", "ts": 565, "chapter": "2", "speaker": "Laura Gongas"}}</data>
+    </edge>
+    <edge source="topic:human-in-the-loop" target="decision:0007" id="e-0248">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:human-in-the-loop</data>
+      <data key="d25">decision:0007</data>
+      <data key="d26">0.82</data>
+      <data key="d27">[{"quote": "Human-in-the-loop for Ask Alex — medium priority", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:thumbs-up-down-feedback" target="topic:human-in-the-loop" id="e-0243">
+      <data key="d23">SUBTOPIC_OF</data>
+      <data key="d24">topic:thumbs-up-down-feedback</data>
+      <data key="d25">topic:human-in-the-loop</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "Human-in-the-loop for Ask Alex (thumbs up/down via Dave's ticket)", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:thumbs-up-down-feedback" target="topic:clinician-feedback-platform" id="e-0244">
+      <data key="d23">SUBTOPIC_OF</data>
+      <data key="d24">topic:thumbs-up-down-feedback</data>
+      <data key="d25">topic:clinician-feedback-platform</data>
+      <data key="d26">0.78</data>
+      <data key="d27">[{"quote": "thumbs up/down via Dave's ticket", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:expert-match-ingestion-endpoints" target="action:0009" id="e-0255">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:expert-match-ingestion-endpoints</data>
+      <data key="d25">action:0009</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "Deon takes back Expert Match ingestion endpoint task", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:expert-match-ingestion-endpoints" target="claim:0006" id="e-0258">
+      <data key="d23">RELATES_TO</data>
+      <data key="d24">topic:expert-match-ingestion-endpoints</data>
+      <data key="d25">claim:0006</data>
+      <data key="d26">0.82</data>
+      <data key="d27">[{"quote": "too much prior context required for Rowan", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:expert-match-ingestion-endpoints" target="topic:expert-match-storage-endpoint-integration" id="e-0274">
+      <data key="d23">SUBTOPIC_OF</data>
+      <data key="d24">topic:expert-match-ingestion-endpoints</data>
+      <data key="d25">topic:expert-match-storage-endpoint-integration</data>
+      <data key="d26">0.75</data>
+      <data key="d27">[{"quote": "Expert Match ingestion endpoint task — storage endpoints", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0001" target="chapter:03" id="e-0038">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">decision:0001</data>
+      <data key="d25">chapter:03</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "Output: JSON (not graph DB)", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0001" target="artifact:graph-database" id="e-0083">
+      <data key="d23">REFERENCES</data>
+      <data key="d24">decision:0001</data>
+      <data key="d25">artifact:graph-database</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "Output: JSON (not graph DB)", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0002" target="chapter:03" id="e-0041">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">decision:0002</data>
+      <data key="d25">chapter:03</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "Laura prefers Medbrief ingests NICE and gives Cumulus the JSON output", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0002" target="artifact:nice-api" id="e-0082">
+      <data key="d23">REFERENCES</data>
+      <data key="d24">decision:0002</data>
+      <data key="d25">artifact:nice-api</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "Laura prefers Medbrief ingests NICE and gives Cumulus the JSON output", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0002" target="question:0005" id="e-0091">
+      <data key="d23">RESOLVES</data>
+      <data key="d24">decision:0002</data>
+      <data key="d25">question:0005</data>
+      <data key="d26">0.75</data>
+      <data key="d27">[{"quote": "Laura prefers Medbrief ingests NICE and gives Cumulus the JSON output", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0003" target="chapter:03" id="e-0045">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">decision:0003</data>
+      <data key="d25">chapter:03</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "Cumulus vague on NICE guideline depth — may only do a subset for obstetrics", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0004" target="chapter:03" id="e-0047">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">decision:0004</data>
+      <data key="d25">chapter:03</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "Cumulus will deliver code fully and transparently", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0005" target="question:0004" id="e-0314">
+      <data key="d23">RESOLVES</data>
+      <data key="d24">decision:0005</data>
+      <data key="d25">question:0004</data>
+      <data key="d26">0.75</data>
+      <data key="d28">["3", "3"]</data>
+      <data key="d29">Ch3 tentative decision (share NICE API key with Cumulus temporarily, rotate key afterwards) directly addresses the Ch3 open compliance question about whether sharing with a non-UK party is acceptable</data>
+      <data key="d27">{"source_quote": {"quote": "if you give them access during the time of development and just rotate the key once they're done, I think that should be fine", "ts": 1290, "chapter": "3", "speaker": "Deon Kuhn"}, "target_quote": {"quote": "I don't feel that comfortable with giving them the API key. I don't know what you think, Deon, because they're not based in the UK. So I think we might not be compliant.", "ts": 1260, "chapter": "3", "speaker": "Laura Gongas"}}</data>
+    </edge>
+    <edge source="decision:0005" target="chapter:03" id="e-0050">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">decision:0005</data>
+      <data key="d25">chapter:03</data>
+      <data key="d26">0.82</data>
+      <data key="d27">[{"quote": "Two rules representation options: Cypher queries (intermediate) vs graph (ultimate goal)", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0005" target="chapter:04" id="e-0224">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">decision:0005</data>
+      <data key="d25">chapter:04</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "ground truth collection is the top priority", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0005" target="artifact:cumulus-documentation" id="e-0232">
+      <data key="d23">REFERENCES</data>
+      <data key="d24">decision:0005</data>
+      <data key="d25">artifact:cumulus-documentation</data>
+      <data key="d26">0.7</data>
+      <data key="d27">[{"quote": "Cumulus proposal not yet accepted", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0005" target="decision:0006" id="e-0275">
+      <data key="d23">BUILDS_ON</data>
+      <data key="d24">decision:0005</data>
+      <data key="d25">decision:0006</data>
+      <data key="d26">0.65</data>
+      <data key="d27">[{"quote": "ground truth collection is the top priority", "ts": "ch04", "source": "transcript"}, {"quote": "Sally integration stays with Deon", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0006" target="question:0001" id="e-0301">
+      <data key="d23">RESOLVES</data>
+      <data key="d24">decision:0006</data>
+      <data key="d25">question:0001</data>
+      <data key="d26">0.95</data>
+      <data key="d28">["5", "1"]</data>
+      <data key="d29">Ch5 decision (Rowan focuses on Cumulus; Deon retakes Expert Match) directly answers Ch1 open question about who owns the endpoint task</data>
+      <data key="d27">{"source_quote": {"quote": "the ingestion endpoints for the experts when the data update, I'm going to say I'm going to do that rather", "ts": 2195, "chapter": "5", "speaker": "Deon Kuhn"}, "target_quote": {"quote": "I don't know if we should forward this task to Rowan, or is it something that you're already working on?", "ts": 12, "chapter": "1", "speaker": "Laura Gongas"}}</data>
+    </edge>
+    <edge source="decision:0006" target="chapter:02" id="e-0101">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">decision:0006</data>
+      <data key="d25">chapter:02</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "Cases: deceased patients, 2 needed, to define with Brendan", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0006" target="chapter:05" id="e-0235">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">decision:0006</data>
+      <data key="d25">chapter:05</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "Sally integration stays with Deon", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0007" target="question:0007" id="e-0321">
+      <data key="d23">RESOLVES</data>
+      <data key="d24">decision:0007</data>
+      <data key="d25">question:0007</data>
+      <data key="d26">0.9</data>
+      <data key="d28">["5", "5"]</data>
+      <data key="d29">Ch5 decision (thumbs up/down tickets stay with Deon; Rowan may have a collation role later) directly answers the Ch5 open question about whether Deon or Rowan owns the human-in-the-loop feedback work</data>
+      <data key="d27">{"source_quote": {"quote": "keep it on my side, but I think Rowan would have a role to play potentially just in like collating the data and making sure that the data is coming through correctly", "ts": 2082, "chapter": "5", "speaker": "Deon Kuhn"}, "target_quote": {"quote": "I don't know if that's something that you would take, Deon, or should we have Rowan look into it as well?", "ts": 2055, "chapter": "5", "speaker": "Laura Gongas"}}</data>
+    </edge>
+    <edge source="decision:0007" target="chapter:05" id="e-0247">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">decision:0007</data>
+      <data key="d25">chapter:05</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "medium priority; Chantel may bump to high", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0001" target="chapter:01" id="e-0008">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">action:0001</data>
+      <data key="d25">chapter:01</data>
+      <data key="d26">0.97</data>
+      <data key="d27">[{"quote": "Task initially on Deon's sprint; may reassign to Rowan", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0002" target="chapter:02" id="e-0019">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">action:0002</data>
+      <data key="d25">chapter:02</data>
+      <data key="d26">0.97</data>
+      <data key="d27">[{"quote": "Brendan meeting tomorrow to define entities and cases", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0002" target="action:0003" id="e-0089">
+      <data key="d23">DEPENDS_ON</data>
+      <data key="d24">action:0002</data>
+      <data key="d25">action:0003</data>
+      <data key="d26">0.78</data>
+      <data key="d27">[{"quote": "Annotation tool TBD (data privacy compliant). Brendan meeting tomorrow to define entities and cases", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0002" target="question:0002" id="e-0090">
+      <data key="d23">RESOLVES</data>
+      <data key="d24">action:0002</data>
+      <data key="d25">question:0002</data>
+      <data key="d26">0.72</data>
+      <data key="d27">[{"quote": "Brendan meeting tomorrow to define entities and cases. Annotation tool TBD", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0003" target="question:0003" id="e-0311">
+      <data key="d23">RESOLVES</data>
+      <data key="d24">action:0003</data>
+      <data key="d25">question:0003</data>
+      <data key="d26">0.75</data>
+      <data key="d28">["2", "2"]</data>
+      <data key="d29">The Brendan meeting (action:0003, invited in Ch2, confirmed again in Ch5) is positioned as the step that will clarify how Mediha's graph database work fits with the Cumulus pipeline, addressing the open Ch2 question</data>
+      <data key="d27">{"source_quote": {"quote": "I've added you to a meeting tomorrow. you can attend to that. Rowan: I can, I can make it for that work, yeah, so I'll join that.", "ts": 820, "chapter": "2", "speaker": "Laura Gongas / Rowan Reid"}, "target_quote": {"quote": "What is Mediha taking next steps on her stuff, and then with getting figuring out where Cumulus can fit in?", "ts": 1000, "chapter": "2", "speaker": "Rowan Reid"}}</data>
+    </edge>
+    <edge source="action:0003" target="chapter:02" id="e-0024">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">action:0003</data>
+      <data key="d25">chapter:02</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "Annotation tool TBD (data privacy compliant)", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0005" target="question:0005" id="e-0319">
+      <data key="d23">RESOLVES</data>
+      <data key="d24">action:0005</data>
+      <data key="d25">question:0005</data>
+      <data key="d26">0.78</data>
+      <data key="d28">["3", "3"]</data>
+      <data key="d29">Ch3 action (team to clarify with Cumulus their intended depth of NICE guideline entity extraction) is the concrete step taken to resolve the Ch3 strategic question of whether to do NICE extraction before or after the Cumulus engagement</data>
+      <data key="d27">{"source_quote": {"quote": "I think that's a good point to ask them, but to ask them until what point they're going to be involved in the NICE guidelines and what we're going to get out from them.", "ts": 1540, "chapter": "3", "speaker": "Laura Gongas"}, "target_quote": {"quote": "do we do this before cumulus or after cumulus, our nice guideline extraction, so that we could use their pipeline basically. Once they do the handover.", "ts": 1570, "chapter": "3", "speaker": "Deon Kuhn"}}</data>
+    </edge>
+    <edge source="action:0007" target="chapter:04" id="e-0221">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">action:0007</data>
+      <data key="d25">chapter:04</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "commits to applying judgement", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0008" target="action:0010" id="e-0308">
+      <data key="d23">DEPENDS_ON</data>
+      <data key="d24">action:0008</data>
+      <data key="d25">action:0010</data>
+      <data key="d26">0.78</data>
+      <data key="d28">["4", "4"]</data>
+      <data key="d29">Ch4 action for Rowan to review the Cumulus architecture proposal is gated on Ch4 action for Laura to forward the presentation once it becomes available — Rowan explicitly notes the material gap</data>
+      <data key="d27">{"source_quote": {"quote": "I'm absolutely keen to apply my mind to those.", "ts": 1710, "chapter": "4", "speaker": "Rowan Reid"}, "target_quote": {"quote": "once we have it, I'll make sure to forward it to you", "ts": 1955, "chapter": "4", "speaker": "Laura Gongas"}}</data>
+    </edge>
+    <edge source="action:0008" target="chapter:05" id="e-0238">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">action:0008</data>
+      <data key="d25">chapter:05</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "Sally integration stays with Deon", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0009" target="chapter:05" id="e-0252">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">action:0009</data>
+      <data key="d25">chapter:05</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "Deon takes back Expert Match ingestion endpoint task", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0009" target="artifact:expert-match-ingestion-endpoint" id="e-0254">
+      <data key="d23">REFERENCES</data>
+      <data key="d24">action:0009</data>
+      <data key="d25">artifact:expert-match-ingestion-endpoint</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "Deon takes back Expert Match ingestion endpoint task", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0010" target="question:0006" id="e-0320">
+      <data key="d23">RESOLVES</data>
+      <data key="d24">action:0010</data>
+      <data key="d25">question:0006</data>
+      <data key="d26">0.8</data>
+      <data key="d28">["4", "4"]</data>
+      <data key="d29">Ch4 action for Laura to forward the Cumulus architecture presentation to Rowan once available directly addresses the Ch4 open question about whether any further Cumulus material exists beyond the pre-hackathon docs</data>
+      <data key="d27">{"source_quote": {"quote": "once we have it, I'll make sure to forward it to you", "ts": 1955, "chapter": "4", "speaker": "Laura Gongas"}, "target_quote": {"quote": "Is there any more, I know there's the video from yesterday that we're going to request access to. Beyond that, all I've got from Cumulus is I think the documentation that you shared with me, Laura... So is there anything more to share that's useful?", "ts": 1862, "chapter": "4", "speaker": "Rowan Reid"}}</data>
+    </edge>
+    <edge source="action:0010" target="chapter:05" id="e-0263">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">action:0010</data>
+      <data key="d25">chapter:05</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "Rowan to watch Cumulus recording", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0010" target="artifact:hackathon-meeting-recording" id="e-0264">
+      <data key="d23">REFERENCES</data>
+      <data key="d24">action:0010</data>
+      <data key="d25">artifact:hackathon-meeting-recording</data>
+      <data key="d26">0.75</data>
+      <data key="d27">[{"quote": "Rowan to watch Cumulus recording", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0010" target="action:0011" id="e-0276">
+      <data key="d23">DEPENDS_ON</data>
+      <data key="d24">action:0010</data>
+      <data key="d25">action:0011</data>
+      <data key="d26">0.68</data>
+      <data key="d27">[{"quote": "Rowan to watch Cumulus recording", "ts": "ch05", "source": "transcript"}, {"quote": "catch up with Brendan tomorrow", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0011" target="chapter:05" id="e-0267">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">action:0011</data>
+      <data key="d25">chapter:05</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "catch up with Brendan tomorrow", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0011" target="artifact:brendan-patent-document" id="e-0278">
+      <data key="d23">REFERENCES</data>
+      <data key="d24">action:0011</data>
+      <data key="d25">artifact:brendan-patent-document</data>
+      <data key="d26">0.62</data>
+      <data key="d27">[{"quote": "catch up with Brendan tomorrow", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0012" target="action:0002" id="e-0307">
+      <data key="d23">DEPENDS_ON</data>
+      <data key="d24">action:0012</data>
+      <data key="d25">action:0002</data>
+      <data key="d26">0.8</data>
+      <data key="d28">["5", "2"]</data>
+      <data key="d29">Ch5 action for Rowan to watch the hackathon recording cannot proceed until Ch2 action for Laura to email the recording access request is completed</data>
+      <data key="d27">{"source_quote": {"quote": "we'll wait until we get this recording as well. That will be useful. Then I can watch that.", "ts": 2220, "chapter": "5", "speaker": "Rowan Reid"}, "target_quote": {"quote": "Yeah, so maybe we should ask for that. Okay, I'll send them an email.", "ts": 492, "chapter": "2", "speaker": "Laura Gongas"}}</data>
+    </edge>
+    <edge source="action:0012" target="chapter:05" id="e-0270">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">action:0012</data>
+      <data key="d25">chapter:05</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "finish Chantel Pilla script", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0001" target="chapter:01" id="e-0051">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">question:0001</data>
+      <data key="d25">chapter:01</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "may reassign to Rowan", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0001" target="person:deon-kuhn" id="e-0053">
+      <data key="d23">ADDRESSED_TO</data>
+      <data key="d24">question:0001</data>
+      <data key="d25">person:deon-kuhn</data>
+      <data key="d26">0.8</data>
+      <data key="d27">[{"quote": "Task initially on Deon's sprint; may reassign to Rowan", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0001" target="person:rowan-reid" id="e-0054">
+      <data key="d23">ADDRESSED_TO</data>
+      <data key="d24">question:0001</data>
+      <data key="d25">person:rowan-reid</data>
+      <data key="d26">0.72</data>
+      <data key="d27">[{"quote": "may reassign to Rowan", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0002" target="chapter:02" id="e-0055">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">question:0002</data>
+      <data key="d25">chapter:02</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "Annotation tool TBD (data privacy compliant)", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0003" target="chapter:03" id="e-0058">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">question:0003</data>
+      <data key="d25">chapter:03</data>
+      <data key="d26">0.88</data>
+      <data key="d27">[{"quote": "Cumulus vague on NICE guideline depth — may only do a subset for obstetrics", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0003" target="person:john-cumulus" id="e-0060">
+      <data key="d23">ADDRESSED_TO</data>
+      <data key="d24">question:0003</data>
+      <data key="d25">person:john-cumulus</data>
+      <data key="d26">0.8</data>
+      <data key="d27">[{"quote": "Cumulus vague on NICE guideline depth — may only do a subset for obstetrics", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0004" target="chapter:03" id="e-0062">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">question:0004</data>
+      <data key="d25">chapter:03</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "Two rules representation options: Cypher queries (intermediate) vs graph (ultimate goal)", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0005" target="chapter:03" id="e-0092">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">question:0005</data>
+      <data key="d25">chapter:03</data>
+      <data key="d26">0.85</data>
+      <data key="d27">[{"quote": "NICE API key sharing: Deon open to time-limited access with key rotation; Laura prefers Medbrief ingests NICE and gives Cumulus the JSON output", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0005" target="person:rowan-reid" id="e-0202">
+      <data key="d23">ADDRESSED_TO</data>
+      <data key="d24">question:0005</data>
+      <data key="d25">person:rowan-reid</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "Laura asks Rowan to review Cumulus's data architecture proposal", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0005" target="chapter:04" id="e-0203">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">question:0005</data>
+      <data key="d25">chapter:04</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "Laura asks Rowan to review Cumulus's data architecture proposal", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0005" target="artifact:cumulus-presentation" id="e-0208">
+      <data key="d23">REFERENCES</data>
+      <data key="d24">question:0005</data>
+      <data key="d25">artifact:cumulus-presentation</data>
+      <data key="d26">0.8</data>
+      <data key="d27">[{"quote": "review Cumulus's data architecture proposal", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0001" target="decision:0006" id="e-0303">
+      <data key="d23">SUPPORTS</data>
+      <data key="d24">claim:0001</data>
+      <data key="d25">decision:0006</data>
+      <data key="d26">0.85</data>
+      <data key="d28">["1", "5"]</data>
+      <data key="d29">Ch1 claim that the Expert Match task requires too much prior knowledge directly backs the Ch5 decision to keep Rowan off it and focus him on Cumulus</data>
+      <data key="d27">{"source_quote": {"quote": "I'm just worried that it's going to take a lot of prior knowledge to execute on this potentially.", "ts": 380, "chapter": "1", "speaker": "Deon Kuhn"}, "target_quote": {"quote": "I'll take that one for the team for this for now", "ts": 2200, "chapter": "5", "speaker": "Deon Kuhn"}}</data>
+    </edge>
+    <edge source="claim:0001" target="chapter:01" id="e-0065">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">claim:0001</data>
+      <data key="d25">chapter:01</data>
+      <data key="d26">0.92</data>
+      <data key="d27">[{"quote": "update queue table exists but is empty on prod", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0002" target="decision:0005" id="e-0305">
+      <data key="d23">SUPPORTS</data>
+      <data key="d24">claim:0002</data>
+      <data key="d25">decision:0005</data>
+      <data key="d26">0.82</data>
+      <data key="d28">["2", "4"]</data>
+      <data key="d29">Ch2 claim that Cumulus has not settled on a pseudonymization approach reinforces the Ch4 decision to make ground truth collection the top priority (so evaluation can happen independently of Cumulus's choices)</data>
+      <data key="d27">{"source_quote": {"quote": "I think they don't know what they're going to do, to be honest. ... he said he, John says he comes up with suggestions and then the data scientists suggest other stuff.", "ts": 955, "chapter": "2", "speaker": "Laura Gongas"}, "target_quote": {"quote": "the starting to collect the ground truth, that's actually the most important one because it will take time for clinicians to do it, so the sooner that we have the stuff for them, the better.", "ts": 1990, "chapter": "4", "speaker": "Laura Gongas"}}</data>
+    </edge>
+    <edge source="claim:0002" target="chapter:01" id="e-0068">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">claim:0002</data>
+      <data key="d25">chapter:01</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "overcaching issue", "ts": "00:00–08:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0003" target="decision:0005" id="e-0304">
+      <data key="d23">SUPPORTS</data>
+      <data key="d24">claim:0003</data>
+      <data key="d25">decision:0005</data>
+      <data key="d26">0.9</data>
+      <data key="d28">["2", "4"]</data>
+      <data key="d29">Ch2 claim that without ground truth third-party vendors produce PoC work of unknown quality directly backs the Ch4 prioritisation of ground truth collection as the team's most important current item</data>
+      <data key="d27">{"source_quote": {"quote": "if you don't give them ground truth, they'll just do like a kind of proof of concept thing that you don't even know if it works well or not. So you end up doing everything again.", "ts": 975, "chapter": "2", "speaker": "Laura Gongas"}, "target_quote": {"quote": "the starting to collect the ground truth, that's actually the most important one because it will take time for clinicians to do it, so the sooner that we have the stuff for them, the better.", "ts": 1990, "chapter": "4", "speaker": "Laura Gongas"}}</data>
+    </edge>
+    <edge source="claim:0003" target="chapter:02" id="e-0072">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">claim:0003</data>
+      <data key="d25">chapter:02</data>
+      <data key="d26">0.92</data>
+      <data key="d27">[{"quote": "Cases: deceased patients, 2 needed, to define with Brendan", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0003" target="artifact:expert-match" id="e-0099">
+      <data key="d23">REFERENCES</data>
+      <data key="d24">claim:0003</data>
+      <data key="d25">artifact:expert-match</data>
+      <data key="d26">0.7</data>
+      <data key="d27">[{"quote": "Cases: deceased patients, 2 needed, to define with Brendan", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0003" target="decision:0006" id="e-0100">
+      <data key="d23">SUPPORTS</data>
+      <data key="d24">claim:0003</data>
+      <data key="d25">decision:0006</data>
+      <data key="d26">0.72</data>
+      <data key="d27">[{"quote": "Cases: deceased patients, 2 needed, to define with Brendan", "ts": "08:00–17:30", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0004" target="decision:0005" id="e-0315">
+      <data key="d23">SUPPORTS</data>
+      <data key="d24">claim:0004</data>
+      <data key="d25">decision:0005</data>
+      <data key="d26">0.82</data>
+      <data key="d28">["3", "3"]</data>
+      <data key="d29">Ch3 claim that NICE guideline data is effectively public (available on the NICE website) directly backs the Ch3 tentative decision to share the API key with Cumulus temporarily (reduced compliance concern)</data>
+      <data key="d27">{"source_quote": {"quote": "it's publicly available data or it's like fairly available data. Or you can look up all the nice guidelines like on their website. This is just an API form of it.", "ts": 1300, "chapter": "3", "speaker": "Deon Kuhn"}, "target_quote": {"quote": "if you give them access during the time of development and just rotate the key once they're done, I think that should be fine", "ts": 1290, "chapter": "3", "speaker": "Deon Kuhn"}}</data>
+    </edge>
+    <edge source="claim:0004" target="chapter:03" id="e-0074">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">claim:0004</data>
+      <data key="d25">chapter:03</data>
+      <data key="d26">0.92</data>
+      <data key="d27">[{"quote": "Medbrief does Medbrief's own reasoning", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0004" target="decision:0003" id="e-0077">
+      <data key="d23">SUPPORTS</data>
+      <data key="d24">claim:0004</data>
+      <data key="d25">decision:0003</data>
+      <data key="d26">0.8</data>
+      <data key="d27">[{"quote": "Medbrief does Medbrief's own reasoning. Cumulus scope = green box", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0005" target="action:0008" id="e-0306">
+      <data key="d23">SUPPORTS</data>
+      <data key="d24">claim:0005</data>
+      <data key="d25">action:0008</data>
+      <data key="d26">0.8</data>
+      <data key="d28">["3", "4"]</data>
+      <data key="d29">Ch3 claim that Cumulus will deliver code transparently motivates the Ch4 action for Rowan to review the architecture proposal (code ownership makes the architecture choice consequential for Medbrief's long-term maintainability)</data>
+      <data key="d27">{"source_quote": {"quote": "they'll give us the code and we can even use it for other projects and like the nice guidelines. ... they were actually quite deliberate in saying that because they were like happy that we had engineers", "ts": 1580, "chapter": "3", "speaker": "Laura Gongas"}, "target_quote": {"quote": "perhaps you could look into their proposal, do a bit of research and see if it makes sense to do it that way or not", "ts": 1635, "chapter": "4", "speaker": "Laura Gongas"}}</data>
+    </edge>
+    <edge source="claim:0005" target="chapter:03" id="e-0078">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">claim:0005</data>
+      <data key="d25">chapter:03</data>
+      <data key="d26">0.9</data>
+      <data key="d27">[{"quote": "Deon open to time-limited access with key rotation", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0005" target="decision:0002" id="e-0080">
+      <data key="d23">CONTRADICTS</data>
+      <data key="d24">claim:0005</data>
+      <data key="d25">decision:0002</data>
+      <data key="d26">0.72</data>
+      <data key="d27">[{"quote": "Deon open to time-limited access with key rotation", "ts": "17:30–27:00", "source": "transcript"}, {"quote": "Laura prefers Medbrief ingests NICE and gives Cumulus the JSON output", "ts": "17:30–27:00", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0006" target="action:0008" id="e-0310">
+      <data key="d23">SUPPORTS</data>
+      <data key="d24">claim:0006</data>
+      <data key="d25">action:0008</data>
+      <data key="d26">0.75</data>
+      <data key="d28">["4", "4"]</data>
+      <data key="d29">Ch4 claim that third parties recommend expensive/newest Azure services regardless of fit provides direct motivation for the Ch4 action to independently review the Cumulus stack</data>
+      <data key="d27">{"source_quote": {"quote": "they end up giving us a service that's like the newest one that Azure has in the market because they want to have more use cases with that or the one that's more costly or whatever and you end up having something that it's not scalable or you don't even know how to use it", "ts": 1645, "chapter": "4", "speaker": "Laura Gongas"}, "target_quote": {"quote": "perhaps you could look into their proposal, do a bit of research and see if it makes sense to do it that way or not", "ts": 1635, "chapter": "4", "speaker": "Laura Gongas"}}</data>
+    </edge>
+    <edge source="claim:0006" target="chapter:05" id="e-0257">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">claim:0006</data>
+      <data key="d25">chapter:05</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "too much prior context required for Rowan", "ts": "ch05", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0007" target="action:0008" id="e-0309">
+      <data key="d23">SUPPORTS</data>
+      <data key="d24">claim:0007</data>
+      <data key="d25">action:0008</data>
+      <data key="d26">0.88</data>
+      <data key="d28">["4", "4"]</data>
+      <data key="d29">Ch4 claim that the team lacks data engineering expertise and cannot critically evaluate Cumulus's stack directly motivates the Ch4 action for Rowan (the most technically adjacent person) to conduct the architecture review</data>
+      <data key="d27">{"source_quote": {"quote": "we don't have anyone in the team that has a data engineering formation. So, if they tell us we're using Databricks and Azure Data Factory and this lake, we just believe them", "ts": 1622, "chapter": "4", "speaker": "Laura Gongas"}, "target_quote": {"quote": "perhaps you could look into their proposal, do a bit of research and see if it makes sense to do it that way or not", "ts": 1635, "chapter": "4", "speaker": "Laura Gongas"}}</data>
+    </edge>
+    <edge source="claim:0007" target="chapter:04" id="e-0210">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">claim:0007</data>
+      <data key="d25">chapter:04</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "concerned about vendor upselling", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0008" target="chapter:04" id="e-0214">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">claim:0008</data>
+      <data key="d25">chapter:04</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "Deon suggests enterprise skills platform for data engineering learning", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0009" target="action:0008" id="e-0322">
+      <data key="d23">SUPPORTS</data>
+      <data key="d24">claim:0009</data>
+      <data key="d25">action:0008</data>
+      <data key="d26">0.78</data>
+      <data key="d28">["5", "4"]</data>
+      <data key="d29">Ch5 claim that having Rowan investigate the data engineering stack is what the team is currently most lacking directly backs the Ch4 action assigning that review to him</data>
+      <data key="d27">{"source_quote": {"quote": "just having that time to look into it is what your team is lacking at the moment, Laoura", "ts": 2035, "chapter": "5", "speaker": "Deon Kuhn"}, "target_quote": {"quote": "perhaps you could look into their proposal, do a bit of research and see if it makes sense to do it that way or not", "ts": 1635, "chapter": "4", "speaker": "Laura Gongas"}}</data>
+    </edge>
+    <edge source="claim:0009" target="chapter:04" id="e-0218">
+      <data key="d23">OCCURS_IN</data>
+      <data key="d24">claim:0009</data>
+      <data key="d25">chapter:04</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "Rowan acknowledges limited data engineering tool experience but commits to applying judgement", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0009" target="decision:0005" id="e-0277">
+      <data key="d23">SUPPORTS</data>
+      <data key="d24">claim:0009</data>
+      <data key="d25">decision:0005</data>
+      <data key="d26">0.7</data>
+      <data key="d27">[{"quote": "Rowan acknowledges limited data engineering tool experience but commits to applying judgement", "ts": "ch04", "source": "transcript"}, {"quote": "Cumulus proposal not yet accepted; ground truth collection is the top priority", "ts": "ch04", "source": "transcript"}]</data>
+    </edge>
+    <edge source="visual:0000" target="chapter:01" id="e-shown-0000">
+      <data key="d23">SHOWN_DURING</data>
+      <data key="d24">visual:0000</data>
+      <data key="d25">chapter:01</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "", "ts": 2.125, "source": "vision"}]</data>
+    </edge>
+    <edge source="visual:0005" target="chapter:03" id="e-shown-0005">
+      <data key="d23">SHOWN_DURING</data>
+      <data key="d24">visual:0005</data>
+      <data key="d25">chapter:03</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "", "ts": 1070.625, "source": "vision"}]</data>
+    </edge>
+    <edge source="visual:0006" target="chapter:03" id="e-shown-0006">
+      <data key="d23">SHOWN_DURING</data>
+      <data key="d24">visual:0006</data>
+      <data key="d25">chapter:03</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "", "ts": 1073.75, "source": "vision"}]</data>
+    </edge>
+    <edge source="visual:0007" target="chapter:04" id="e-shown-0007">
+      <data key="d23">SHOWN_DURING</data>
+      <data key="d24">visual:0007</data>
+      <data key="d25">chapter:04</data>
+      <data key="d26">0.95</data>
+      <data key="d27">[{"quote": "", "ts": 1810.0, "source": "vision"}]</data>
+    </edge>
+  </graph>
+</graphml>
