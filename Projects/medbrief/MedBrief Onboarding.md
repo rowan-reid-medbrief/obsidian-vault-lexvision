@@ -4,6 +4,7 @@ domain: medbrief
 created: 2026-06-09
 tags: []
 project_repo: "~/claude_code/medbrief-onboarding"
+project_key: medbrief-onboarding
 ---
 
 # MedBrief Onboarding
