@@ -2,6 +2,12 @@
 
 ## Now (Medbrief)
 
+### MedBrief onboarding - MRI-133 independent research
+- **Last touched:** 2026-06-17
+- **Status:** Code-grounded independent research on MRI-133 "granular storing of pages" for Deon to compare against his own assessment. Key finding: a stable page id already exists (`Page.id`; the sort uses it via `originalPageId`); the real gaps are references binding to `Document.id`+XFDF position rather than `Page.id`, and split/clone losing page lineage. Wrote `notes/14` (layered), a Lucid diagram, and a MedBrief-branded docx; drafted a Teams covering message to Dion.
+- **next:** Next session starts from the Rowan -> Dion -> Rowan exchange (Rowan will paste his message + Dion's reply); deepen/refine the research from Dion's response.
+- [[2026-06-17-mri-133-research]]
+
 ### MedBrief onboarding - product walkthrough meeting-graphs
 - **Last touched:** 2026-06-12
 - **Status:** Fetched Chantel's two walkthroughs from SharePoint and built two meeting-graphs (219 nodes/529 edges; 306/749) in `~/meeting-graph-output/`, covering the full feature surface and the matter-creation flow. Transcribed with MLX large-v3-turbo on the GPU.
