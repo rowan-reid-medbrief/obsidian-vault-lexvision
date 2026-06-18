@@ -14,11 +14,11 @@
 - **next:** Fold the two walkthrough graphs into the project `notes/` via `/graph-to-notes` and add `docs/SOURCES.md` up-links (idea logged in `docs/IDEAS.md`).
 - [[2026-06-12-medbrief-walkthrough-graphs-and-mlx-wiring]]
 
-### MedBrief onboarding - ADO repos, vault coupling, brand skill
-- **Last touched:** 2026-06-09
-- **Status:** Found ADO (`MedBrief AI`) hosts 12 git repos (the AI team's primary code host); corrected notes/00,07,08 + saved a memory. Coupled the project to the vault (hub note `Projects/medbrief/MedBrief Onboarding.md`, added to the Coupled list). Built the `medbrief-brand` skill (branded docx/pptx, teal #009999 / green #72CC52 tokens, logos incl. white variants) + `notes/13` brand research; QA'd via newly-installed LibreOffice.
-- **Next action:** Resolve the brand palette (corporate teal/green vs product indigo #5E53D1); request access to GDES-174 "Templates" + the Drive/Figma brand masters to harden the skill's type scale and logo clear-space. Onboarding pack still at v1 intermediate notes.
-- [[2026-06-09-medbrief-onboarding-ado-coupling-brand-skill]]
+### MedBrief onboarding - knowledge-share deck + branded pack
+- **Last touched:** 2026-06-18
+- **Status:** Built a 14-slide MedBrief-branded knowledge-share deck (how Rowan onboarded himself with Claude Code), hardened ~23->14 slides via a 4-critic /harden-plan pass (added verbatim show-don't-tell slides, a confidentiality scrub, a per-slide overflow budget). Rendered `onboarding-pack-v1.md` into a 46-page branded docx (Contents, per-section page breaks, inline-code->bold). Both in `output/`, scrubbed, committed. `medbrief-brand` now exercised for pptx and docx.
+- **next:** Deliver the knowledge-share session from `output/knowledge-share-deck.pptx` (speaker notes in the `.md`); still open: resolve the brand palette (corporate teal/green vs product indigo #5E53D1) and get GDES-174 / brand masters to harden the skill's type scale and logo clear-space.
+- [[2026-06-18-knowledge-share-deck-and-branded-onboarding-pack]]
 
 
 ### Kumulus / MedBrief engagement (lexvision-poc)
