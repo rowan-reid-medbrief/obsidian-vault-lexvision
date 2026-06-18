@@ -1,0 +1,8 @@
+---
+tags: [medbrief, mri-133, docsorter, salli, annotations, sorting, onboarding, architecture]
+repos:
+  - "medbrief-onboarding@ebc1716 (read-only; no commits this session)"
+model_check: not-needed
+---
+
+Deep code-grounded Q&A walking the MedBrief sorting/annotation architecture end to end, extending the MRI-133 picture with findings not yet in `notes/14`. Confirmed SALLi is wired into the MSR monolith as the "SortingAssistant" (the monolith POSTs `{pdf_path, gp}` via `SortingSessionPreprocessTrigger`, ingests `PreprocessDocument`/`ProcessedDocument` tagged `salli-1`/`salli-2`, and `SortSessionController` collects DocSorter accuracy feedback), gated to GP centre-type (`getAllowedPreprocessingCentreTypes`) plus named-trust wildcards (Leeds / Mid Yorkshire / Mid and South Essex / `salli uat`). Traced the export (per-stack merged PDFs, paginated + bookmarked, zipped, re-ingested into a "Sorting Session Export" collection via `SortingSessionExportPusher`) and established why annotations sit on page-less documents: they bind to that re-ingested output bundle (a collection doc with no `Page` rows), so notes/14 §11's "surprise" is structural, not anomalous (the relevant signal is scale + no-exceptions, not the page-less headline). Also: `storeData` holds the full sort arrangement as page/document/stack/category pseudo-documents; non-trust/client uploads CAN be batched ("Other - Pre-processing"); the solution shape holds (dual-anchor + lineage + bind-at-minting); and refined the Teams message to Dion (key ask: does sort ingestion reuse or copy the uploaded Document?). Read-only session, no files written; fold findings into `notes/14`.

@@ -3,10 +3,10 @@
 ## Now (Medbrief)
 
 ### MedBrief onboarding - MRI-133 independent research
-- **Last touched:** 2026-06-17
-- **Status:** Code-grounded independent research on MRI-133 "granular storing of pages" for Deon to compare against his own assessment. Key finding: a stable page id already exists (`Page.id`; the sort uses it via `originalPageId`); the real gaps are references binding to `Document.id`+XFDF position rather than `Page.id`, and split/clone losing page lineage. Wrote `notes/14` (layered), a Lucid diagram, and a MedBrief-branded docx; drafted a Teams covering message to Dion.
-- **next:** Next session starts from the Rowan -> Dion -> Rowan exchange (Rowan will paste his message + Dion's reply); deepen/refine the research from Dion's response.
-- [[2026-06-17-mri-133-research]]
+- **Last touched:** 2026-06-18
+- **Status:** Deep code-grounded Q&A walking the MedBrief sorting/annotation architecture, extending the MRI-133 picture. SALLi is wired into the MSR monolith as the "SortingAssistant" (`PreprocessDocument` `salli-1`/`salli-2`), gated to GP centre-type plus named-trust wildcards (Leeds / Mid Yorkshire / Mid and South Essex / `salli uat`). The sorted record set is a zip of per-stack PDFs with continuous pagination. Annotations bind to the re-ingested PAGE-LESS output bundle (collection docs via `SortingSessionExportPusher`), which is why notes/14 §11 sees zero paged annotated docs (structural, not a surprise). Solution shape unchanged: dual-anchor (Page.id + position) plus lineage plus bind-at-minting.
+- **next:** Two things. (1) Send or refine the Teams message to Dion; key ask is whether sort ingestion REUSES the same Document row or COPIES it (decides annotation carry-over). (2) Fold these findings into `notes/14`. Continue from the Rowan to Dion to Rowan exchange.
+- [[2026-06-18-mri-133-sorting-annotation-architecture]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-18
