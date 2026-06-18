@@ -8,12 +8,6 @@
 - **next:** Next session starts from the Rowan -> Dion -> Rowan exchange (Rowan will paste his message + Dion's reply); deepen/refine the research from Dion's response.
 - [[2026-06-17-mri-133-research]]
 
-### MedBrief onboarding - product walkthrough meeting-graphs
-- **Last touched:** 2026-06-12
-- **Status:** Fetched Chantel's two walkthroughs from SharePoint and built two meeting-graphs (219 nodes/529 edges; 306/749) in `~/meeting-graph-output/`, covering the full feature surface and the matter-creation flow. Transcribed with MLX large-v3-turbo on the GPU.
-- **next:** Fold the two walkthrough graphs into the project `notes/` via `/graph-to-notes` and add `docs/SOURCES.md` up-links (idea logged in `docs/IDEAS.md`).
-- [[2026-06-12-medbrief-walkthrough-graphs-and-mlx-wiring]]
-
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-18
 - **Status:** Built a 14-slide MedBrief-branded knowledge-share deck (how Rowan onboarded himself with Claude Code), hardened ~23->14 slides via a 4-critic /harden-plan pass (added verbatim show-don't-tell slides, a confidentiality scrub, a per-slide overflow budget). Rendered `onboarding-pack-v1.md` into a 46-page branded docx (Contents, per-section page breaks, inline-code->bold). Both in `output/`, scrubbed, committed. `medbrief-brand` now exercised for pptx and docx.
@@ -41,5 +35,7 @@
 - **Next action:** Run Phase B (CLAUDE.md reclassify-and-trim) in a FRESH session: build the before/after adherence fixture FIRST (about 8 prompts plus negative probes that bait the wrong behaviour, run on a bare session), classify rules never-delegate vs may-delegate, keep safety/voice/account rules inline, target under 200 lines. Then the A6 sandbox pilot (keys in IDEAS.md) and the C1 auto-memory decision.
 
 ## Parked
+
+- **MedBrief walkthrough + Kumulus meeting-graph filing** - done 2026-06-18: 3 meetings filed (2 MedBrief demos -> medbrief-onboarding/notes/meetings/, Kumulus regroup -> lexvision-poc dossier), 2 Kumulus meetings (28 May, 1 June) delta-checked clean (already hand-filed), lexvision-poc vault-coupled. [[2026-06-18-meeting-graph-filing-lexvision-medbrief]]
 
 ## Done
