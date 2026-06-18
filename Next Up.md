@@ -4,9 +4,9 @@
 
 ### MedBrief onboarding - MRI-133 independent research
 - **Last touched:** 2026-06-18
-- **Status:** Deep code-grounded Q&A walking the MedBrief sorting/annotation architecture, extending the MRI-133 picture. SALLi is wired into the MSR monolith as the "SortingAssistant" (`PreprocessDocument` `salli-1`/`salli-2`), gated to GP centre-type plus named-trust wildcards (Leeds / Mid Yorkshire / Mid and South Essex / `salli uat`). The sorted record set is a zip of per-stack PDFs with continuous pagination. Annotations bind to the re-ingested PAGE-LESS output bundle (collection docs via `SortingSessionExportPusher`), which is why notes/14 §11 sees zero paged annotated docs (structural, not a surprise). Solution shape unchanged: dual-anchor (Page.id + position) plus lineage plus bind-at-minting.
-- **next:** Two things. (1) Send or refine the Teams message to Dion; key ask is whether sort ingestion REUSES the same Document row or COPIES it (decides annotation carry-over). (2) Fold these findings into `notes/14`. Continue from the Rowan to Dion to Rowan exchange.
-- [[2026-06-18-mri-133-sorting-annotation-architecture]]
+- **Status:** Extended per Deon's follow-up (documents that bypass DocSorter) and DB-verified read-only against pre-staging. Core: pages attach ONLY to `BatchDocument`s, so every annotated doc is page-less; and a direct check (1 of 5,536 annotated docs across the 30,564 `SortingSessionExportPusher` collections) puts annotations on the RAW records (medical-records / unsorted / private / custom collections), NOT the re-ingested export bundle, so the drift MRI-133 describes does not bite current annotations. CORRECTS the sibling `2026-06-18-mri-133-sorting-annotation-architecture` session, which inferred annotations bind to the export bundle without the data check; its SALLi / SortingAssistant wiring + GP-centre/named-trust gating still stand. Reuse-vs-copy for the export path is answered: the pusher COPIES (mints new page-less Documents). notes/14 §11 corrected; Teams reply to Deon confirmed accurate.
+- **next:** Await Deon's reply. Open: (1) the upload-then-sort case (a record annotated then pulled into a sort gains pages, annotations would need carrying onto them); (2) product Q for Deon/Dion: is the intended workflow to annotate the sorted output? Why annotation clusters on raw records not the (annotatable) export copies is the one unexplained thread.
+- [[2026-06-18-mri-133-db-verification]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-18
