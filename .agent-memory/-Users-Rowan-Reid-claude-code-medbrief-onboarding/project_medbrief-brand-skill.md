@@ -1,6 +1,6 @@
 ---
 name: medbrief-brand-skill
-description: medbrief-brand skill builds branded docx/pptx from MedBrief brand tokens; palette decision (teal/green vs product indigo) still pending
+description: medbrief-brand skill builds branded docx/pptx from MedBrief brand tokens; palette + fonts now confirmed against the official design system (design.medbrief.co.uk)
 metadata: 
   node_type: memory
   type: project
@@ -9,22 +9,32 @@ metadata:
 
 The **`medbrief-brand`** skill (`~/.claude/skills/medbrief-brand/`) generates
 MedBrief-branded `.docx` and `.pptx` from brand tokens via python-pptx /
-python-docx (self-contained venv via `scripts/setup.sh`). Built and visually
-QA'd 2026-06-09. Research provenance: `notes/13-brand-design-system.md` in the
-medbrief-onboarding project.
+python-docx (self-contained venv via `scripts/setup.sh`). Built 2026-06-09;
+**tokens confirmed against the official public design system at
+https://design.medbrief.co.uk on 2026-06-19** (supersedes the earlier
+image-only Confluence guidance and `notes/13-brand-design-system.md`).
 
-Tokens (canonical for external assets): primary teal **#009999**, accent green
-**#72CC52** (the signature gradient), ink #1F2F3F; headings **Nunito Sans**,
-body **Calibri** (Carlito-compatible). Logo assets bundled, incl. white
-reversed variants for dark backgrounds (`scripts/make_white_logos.py`).
+Palette (canonical for external assets): a three-accent system over warm
+neutrals. Primary teal **#009999**, Secondary green **#72CC52** (the signature
+gradient), Tertiary indigo **#5E53D1**; each with a tint. Neutrals: background
+#F7F5F2, dark background #030029, headings #141413, body #403F3E. Headings
+**Degular** (Adobe Fonts, 3 desktop seats, marketing-only, falls back when not
+installed), body **Roboto** (open source, Arial email fallback). Logo assets
+bundled, incl. white reversed variants for dark backgrounds.
 
-**Open decisions / gaps (the non-obvious part):**
-- **Palette decision PENDING:** corporate teal/green vs the product React
-  theme's indigo **#5E53D1** (the MedBrief Match "match" theme). Skill uses
-  teal/green; flip one constant in `scripts/medbrief_tokens.py` to change.
-- Type scale and logo clear-space are **inferred** (Confluence specs are
-  images). To harden: get access to **GDES-174 "Templates"** (restricted) and
-  the Drive/Figma brand masters.
+**Resolved since the v1 build (the non-obvious part):**
+- **Palette decision RESOLVED:** indigo #5E53D1 is the official **Tertiary**
+  accent, not a product-only colour. Teal stays primary for external assets;
+  indigo is now the `TERTIARY` token. (Earlier note had this "pending".)
+- **Fonts corrected:** were Nunito Sans / Calibri (inferred); now Degular /
+  Roboto (confirmed).
+- **`INK` token deprecated:** the old single #1F2F3F did double duty as dark
+  fill and dark text. Now split into `DARK_BG` / `BODY_TEXT` / `HEADING_TEXT`;
+  `INK` kept as an alias to `BODY_TEXT`.
+- Type scale and logo clear-space are now **confirmed** (were inferred).
 
-Brand guidance source: Confluence space **GDES "MedBrief Design"** (microsite,
-owner Adele van der Nest); archetype "The Magician". See [[ado-primary-code-host]].
+**Remaining gaps:** exact shape corner-radius px, elevation CSS values,
+gradient stop values, logo minimum size, and official Office/Figma masters
+(the design site's `/resources` download area was not reachable from the CLI).
+
+See [[ado-primary-code-host]].

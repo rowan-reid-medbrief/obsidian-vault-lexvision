@@ -4,9 +4,9 @@
 
 ### MedBrief onboarding - MRI-133 independent research
 - **Last touched:** 2026-06-19
-- **Status:** Deep re-review (Rowan's ask) re-verified the whole MRI-133 report against the live pre-staging DB, the MSR code, the Jira ticket and Confluence: every §11 figure reproduced and the rebind-plus-lineage thesis held. Corrected `notes/14` - annotation filter consistency (27,569 live vs 35,694 all-rows), split two conflated page-number methods (`getOriginalPageNumber` vs `getOriginalAbsolutePageNumber`), resolved the viewer-mapping question (the review-viewer JS was in the clone; `documentId` comes from the URL hash, no position mapping), enriched the redaction framing (Apryse SDK present but `enableRedaction=false`; 2022 MISD-527 prior art), and added a §13 re-verification log. Regenerated Dion's branded docx + spec; committed f31328c.
-- **next:** Send the corrected `output/MRI-133-research.docx` to Dion / await Deon's reply. Open (unchanged): (1) the upload-then-sort case; (2) product Q for Deon/Dion - is the intended workflow to annotate the sorted output?
-- [[2026-06-19-mri-133-deep-reverification]]
+- **Status:** Divergent architecture ideation (`notes/15`): three independent designs (event-sourced / Git-for-matters, property-graph, stand-off / transclusion) converged on one kernel: a reference names stable content, position lives in a separate placement table, and a re-sort writes only placements (the current retrofit done right). Rowan corrected a flawed reframe of mine; a code trace confirmed page-less is the universal by-design state of every reviewable `Document` (`Page` attaches to `BatchDocument` only), so it says nothing about sorting. Corrected `notes/14` §11.
+- **next:** Take the divergent options plus the product fork (annotation on raw records vs the sorted bundle) to Dion. Still owed: send the corrected `output/MRI-133-research.docx` to Dion / await Deon. Open: the upload-then-sort case, and the re-export lifecycle (both DB-checkable).
+- [[2026-06-19-mri-133-divergent-architectures]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19
