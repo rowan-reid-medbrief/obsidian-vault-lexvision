@@ -34,3 +34,4 @@ detail:
 - Jira & Azure DevOps triage: `notes/08-jira-devops-triage.md`
 - MedBrief data model: `notes/04-medbrief-datamodel.md`
 - Up-link map: `docs/SOURCES.md`
+- MRI-133 research now lives in its own project: [[Annotations]]
