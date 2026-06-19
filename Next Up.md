@@ -3,10 +3,10 @@
 ## Now (Medbrief)
 
 ### MedBrief onboarding - MRI-133 independent research
-- **Last touched:** 2026-06-18
-- **Status:** Extended per Deon's follow-up (documents that bypass DocSorter) and DB-verified read-only against pre-staging. Core: pages attach ONLY to `BatchDocument`s, so every annotated doc is page-less; and a direct check (1 of 5,536 annotated docs across the 30,564 `SortingSessionExportPusher` collections) puts annotations on the RAW records (medical-records / unsorted / private / custom collections), NOT the re-ingested export bundle, so the drift MRI-133 describes does not bite current annotations. CORRECTS the sibling `2026-06-18-mri-133-sorting-annotation-architecture` session, which inferred annotations bind to the export bundle without the data check; its SALLi / SortingAssistant wiring + GP-centre/named-trust gating still stand. Reuse-vs-copy for the export path is answered: the pusher COPIES (mints new page-less Documents). notes/14 §11 corrected; Teams reply to Deon confirmed accurate.
-- **next:** Await Deon's reply. Open: (1) the upload-then-sort case (a record annotated then pulled into a sort gains pages, annotations would need carrying onto them); (2) product Q for Deon/Dion: is the intended workflow to annotate the sorted output? Why annotation clusters on raw records not the (annotatable) export copies is the one unexplained thread.
-- [[2026-06-18-mri-133-db-verification]]
+- **Last touched:** 2026-06-19
+- **Status:** Deep re-review (Rowan's ask) re-verified the whole MRI-133 report against the live pre-staging DB, the MSR code, the Jira ticket and Confluence: every §11 figure reproduced and the rebind-plus-lineage thesis held. Corrected `notes/14` - annotation filter consistency (27,569 live vs 35,694 all-rows), split two conflated page-number methods (`getOriginalPageNumber` vs `getOriginalAbsolutePageNumber`), resolved the viewer-mapping question (the review-viewer JS was in the clone; `documentId` comes from the URL hash, no position mapping), enriched the redaction framing (Apryse SDK present but `enableRedaction=false`; 2022 MISD-527 prior art), and added a §13 re-verification log. Regenerated Dion's branded docx + spec; committed f31328c.
+- **next:** Send the corrected `output/MRI-133-research.docx` to Dion / await Deon's reply. Open (unchanged): (1) the upload-then-sort case; (2) product Q for Deon/Dion - is the intended workflow to annotate the sorted output?
+- [[2026-06-19-mri-133-deep-reverification]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-18
