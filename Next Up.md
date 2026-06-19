@@ -9,10 +9,10 @@
 - [[2026-06-19-mri-133-deep-reverification]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
-- **Last touched:** 2026-06-18
-- **Status:** Built a 14-slide MedBrief-branded knowledge-share deck (how Rowan onboarded himself with Claude Code), hardened ~23->14 slides via a 4-critic /harden-plan pass (added verbatim show-don't-tell slides, a confidentiality scrub, a per-slide overflow budget). Rendered `onboarding-pack-v1.md` into a 46-page branded docx (Contents, per-section page breaks, inline-code->bold). Both in `output/`, scrubbed, committed. `medbrief-brand` now exercised for pptx and docx.
-- **next:** Deliver the knowledge-share session from `output/knowledge-share-deck.pptx` (speaker notes in the `.md`); still open: resolve the brand palette (corporate teal/green vs product indigo #5E53D1) and get GDES-174 / brand masters to harden the skill's type scale and logo clear-space.
-- [[2026-06-18-knowledge-share-deck-and-branded-onboarding-pack]]
+- **Last touched:** 2026-06-19
+- **Status:** medbrief-brand gained 5 PPTX block layouts (cards/steps/columns/callout/stats + TEAL_TINT), hardened via a 7-critic /harden-plan pass, committed to ~/.claude (1594a35). The deck's 7 bullet slides were rebuilt with them and PDF-verified (zero overflow, on-brand), staged uncommitted in `output/`. Brand palette (teal/green vs product indigo) + GDES-174 type scale / logo clear-space still open.
+- **next:** Rowan reviews `output/knowledge-share-deck.pptx`, tweaks wording in the spec (I rebuild), reconciles the `.md` outline to final wording, then commit (deck to a branch) + deliver. Skill commit 1594a35 is unpushed.
+- [[2026-06-19-medbrief-brand-pptx-block-layouts]]
 
 
 ### Kumulus / MedBrief engagement (lexvision-poc)
