@@ -27,6 +27,12 @@
 - **SDD assessment + pytest gate (2026-06-05):** Assessed Spec-First L1, gated at L0 by absent tests. Pytest recall gate **implemented** same session (commit `a4d6721`): 18/18 passing; project now Spec-Anchored. Run `venv/bin/pytest -v` to verify.
 - **Next action:** (1) Finish the docx polish before sending — fix the broken sentence in the dup-detection intro ("…but since it focusses on… I wrote the script also catch…"), resolve the dangling "more on this below" in the Medium-tier bullet, tidy the pre-existing bold inconsistencies, and fill the `[SharePoint link]` placeholder. (2) Run USE_DB=true deterministic pass — open the jumpbox SSH tunnel first (command + `Not Found` fix now in `docs/DB_TUNNEL.md`; pre-staging port 3310), then `DEDUP_DRY_RUN=false DEDUP_ADJUDICATE=false DEDUP_USE_DB=true venv/bin/python3 scripts/detect_duplicates.py`. (3) Deliver `data/outputs/experts_working.xlsx` + the finalised docx to Chantel. (4) Confirm with Laura whether full profile generation is Rowan's scope (gates the AI adjudication step). Also open: triage the 348 Phase-1 unknowns.
 
+### MedBrief Data Strategy
+- **Last touched:** 2026-06-19
+- **Status:** Project scaffolded (vault-coupled), kick-off meeting logged, Jira/Confluence sweep done. MSR-5832 (MSR MCP Server Epic) and MI-5 flagged as related. Dot Collective meeting 26 June.
+- **next:** Attend Dot Collective meeting (26 June, Jack Ford); evaluate partner fit; start data sources discovery across all three cycles (customer, product, people). People/ops data is a blank.
+- [[2026-06-19-medbrief-data-strategy-kickoff]]
+
 ## Now (Personal)
 
 ### Claude Code config modernisation: Phase A done, B/A6/C1 remain
