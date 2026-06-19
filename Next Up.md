@@ -10,9 +10,9 @@
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19
-- **Status:** medbrief-brand gained 5 PPTX block layouts (cards/steps/columns/callout/stats + TEAL_TINT), hardened via a 7-critic /harden-plan pass, committed to ~/.claude (1594a35). The deck's 7 bullet slides were rebuilt with them and PDF-verified (zero overflow, on-brand), staged uncommitted in `output/`. Brand palette (teal/green vs product indigo) + GDES-174 type scale / logo clear-space still open.
-- **next:** Rowan reviews `output/knowledge-share-deck.pptx`, tweaks wording in the spec (I rebuild), reconciles the `.md` outline to final wording, then commit (deck to a branch) + deliver. Skill commit 1594a35 is unpushed.
-- [[2026-06-19-medbrief-brand-pptx-block-layouts]]
+- **Status:** medbrief-brand now aligned to the official design system (design.medbrief.co.uk): fonts to Degular/Roboto, full three-accent palette confirmed (indigo #5E53D1 is the official Tertiary, resolving the long-open teal-vs-indigo question), INK split into DARK_BG/BODY_TEXT/HEADING_TEXT, doc type scale applied; tests green + demos render-verified; committed + pushed to ~/.claude. Sits on the earlier 5 PPTX block layouts. Remaining gaps: exact shape/elevation values, logo min size, official Office/Figma masters.
+- **next:** Rowan reviews `output/knowledge-share-deck.pptx`, tweaks wording in the spec (I rebuild), reconciles the `.md` outline, then commit (deck to a branch) + deliver. For true-brand rendering install Degular (else headings fall back).
+- [[2026-06-19-medbrief-brand-design-system-alignment]]
 
 
 ### Kumulus / MedBrief engagement (lexvision-poc)
