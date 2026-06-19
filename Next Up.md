@@ -2,11 +2,11 @@
 
 ## Now (Medbrief)
 
-### MedBrief onboarding - MRI-133 independent research
+### MRI-133 "Granular storing of pages" - dedicated project
 - **Last touched:** 2026-06-19
-- **Status:** Divergent architecture ideation (`notes/15`): three independent designs (event-sourced / Git-for-matters, property-graph, stand-off / transclusion) converged on one kernel: a reference names stable content, position lives in a separate placement table, and a re-sort writes only placements (the current retrofit done right). Rowan corrected a flawed reframe of mine; a code trace confirmed page-less is the universal by-design state of every reviewable `Document` (`Page` attaches to `BatchDocument` only), so it says nothing about sorting. Corrected `notes/14` §11.
-- **next:** Take the divergent options plus the product fork (annotation on raw records vs the sorted bundle) to Dion. Still owed: send the corrected `output/MRI-133-research.docx` to Dion / await Deon. Open: the upload-then-sort case, and the re-export lifecycle (both DB-checkable).
-- [[2026-06-19-mri-133-divergent-architectures]]
+- **Status:** Spun MRI-133 out of `medbrief-onboarding` into a dedicated, vault-coupled project at `~/claude_code/projects/annotations` (hub note `Projects/medbrief/Annotations.md`). Moved `notes/14` + `notes/15` to `docs/research/`, the branded docx to `output/`, extracted the stranded `notes/04` §4 + overview §6/§8 context, and left pointer stubs in onboarding. Provisioned a `poc/` + `data/` area with a secure-review-only `clone-repos.sh`, and seeded the PoC backlog. Plan hardened first via a 5-critic /harden-plan pass.
+- **next:** Start the PoC (stand-off redaction slice first; then the placement-table spike + synthetic re-sort harness, all in `docs/IDEAS.md`). Still owed: take the divergent options + product fork to Deon; regenerate the branded docx from the corrected note. Open: the upload-then-sort case and the re-export lifecycle (both DB-checkable).
+- [[2026-06-19-mri-133-dedicated-project]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19
