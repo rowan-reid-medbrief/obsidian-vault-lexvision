@@ -10,9 +10,9 @@
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19
-- **Status:** medbrief-brand now aligned to the official design system (design.medbrief.co.uk): fonts to Degular/Roboto, full three-accent palette confirmed (indigo #5E53D1 is the official Tertiary, resolving the long-open teal-vs-indigo question), INK split into DARK_BG/BODY_TEXT/HEADING_TEXT, doc type scale applied; tests green + demos render-verified; committed + pushed to ~/.claude. Sits on the earlier 5 PPTX block layouts. Remaining gaps: exact shape/elevation values, logo min size, official Office/Figma masters.
-- **next:** Rowan reviews `output/knowledge-share-deck.pptx`, tweaks wording in the spec (I rebuild), reconciles the `.md` outline, then commit (deck to a branch) + deliver. For true-brand rendering install Degular (else headings fall back).
-- [[2026-06-19-medbrief-brand-design-system-alignment]]
+- **Status:** Rebuilt the knowledge-share deck via the upgraded medbrief-brand skill, folding Rowan's hand-tuned font sizes into a 14pt PPTX body-text floor (`build_pptx`). Built a de-identified, em-dash-free public onboarding pack from `onboarding-pack-v1` (`medbrief-overview-public.{md,docx,spec.json}`): all individuals removed, external orgs (client firms, NHS Trusts, UCL) generalised, personal-onboarding framing stripped, ticket/Confluence IDs kept. Further hardened the skill: `md_to_spec` drops thematic breaks, folds wrapped list-item continuations, and parses inline markup in table cells; `build_docx` renders table-cell runs and restarts numbering per list. Tests 47/47; ~/.claude scripts committed + pushed, project deliverables committed.
+- **next:** Rowan reviews `output/medbrief-overview-public.docx` + the rebuilt `output/knowledge-share-deck.pptx`. Open: sweep em dashes from the deck `.md` (14 left); optionally add inline-code styling / full inline-in-table support to the skill. Install Degular for true-brand headings.
+- [[2026-06-19-public-onboarding-pack-and-brand-skill-fixes]]
 
 
 ### Kumulus / MedBrief engagement (lexvision-poc)
