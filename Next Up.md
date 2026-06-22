@@ -28,10 +28,13 @@
 - **Next action:** (1) Finish the docx polish before sending — fix the broken sentence in the dup-detection intro ("…but since it focusses on… I wrote the script also catch…"), resolve the dangling "more on this below" in the Medium-tier bullet, tidy the pre-existing bold inconsistencies, and fill the `[SharePoint link]` placeholder. (2) Run USE_DB=true deterministic pass — open the jumpbox SSH tunnel first (command + `Not Found` fix now in `docs/DB_TUNNEL.md`; pre-staging port 3310), then `DEDUP_DRY_RUN=false DEDUP_ADJUDICATE=false DEDUP_USE_DB=true venv/bin/python3 scripts/detect_duplicates.py`. (3) Deliver `data/outputs/experts_working.xlsx` + the finalised docx to Chantel. (4) Confirm with Laura whether full profile generation is Rowan's scope (gates the AI adjudication step). Also open: triage the 348 Phase-1 unknowns.
 
 ### MedBrief Data Strategy
-- **Last touched:** 2026-06-19
+- **Last touched:** 2026-06-22
 - **Status:** Project scaffolded (vault-coupled), kick-off meeting logged, Jira/Confluence sweep done. MSR-5832 (MSR MCP Server Epic) and MI-5 flagged as related. Dot Collective meeting 26 June.
-- **next:** Attend Dot Collective meeting (26 June, Jack Ford); evaluate partner fit; start data sources discovery across all three cycles (customer, product, people). People/ops data is a blank.
+- **Frontier Week ingestion (2026-06-22):** Rowan is attending Microsoft Cloud & AI Frontier Week and feeding the data-engineering sessions into this project. Built a caption-OCR tool (`tools/caption_ocr.py`) for the silent 30GB Day-1 keynote recording, then found the sessions are on-demand WITH audio and downloaded all three (keynote + Transform Data Silos + Turn Agentic AI) to `~/frontier-week/ondemand/`. Sourcing policy: on-demand-first (audio to whisper), caption-OCR fallback only when a recording has no audio.
+- **next (Dot Collective):** Attend Dot Collective meeting (26 June, Jack Ford); evaluate partner fit; start data sources discovery across all three cycles (customer, product, people). People/ops data is a blank.
+- **next (Frontier Week):** Process the 3 on-demand videos through /meeting-graph (rebuild the keynote from audio, then the other two), then route insights into docs/ + the vault hub. 4-5 sessions expected in total.
 - [[2026-06-19-medbrief-data-strategy-kickoff]]
+- [[2026-06-22-frontier-week-ingestion-pipeline]]
 
 ## Now (Personal)
 
