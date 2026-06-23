@@ -3,10 +3,10 @@
 ## Now (Medbrief)
 
 ### MRI-133 "Granular storing of pages" - dedicated project
-- **Last touched:** 2026-06-19
-- **Status:** Spun MRI-133 out of `medbrief-onboarding` into a dedicated, vault-coupled project at `~/claude_code/projects/annotations` (hub note `Projects/medbrief/Annotations.md`). Moved `notes/14` + `notes/15` to `docs/research/`, the branded docx to `output/`, extracted the stranded `notes/04` §4 + overview §6/§8 context, and left pointer stubs in onboarding. Provisioned a `poc/` + `data/` area with a secure-review-only `clone-repos.sh`, and seeded the PoC backlog. Plan hardened first via a 5-critic /harden-plan pass.
-- **next:** Start the PoC (stand-off redaction slice first; then the placement-table spike + synthetic re-sort harness, all in `docs/IDEAS.md`). Still owed: take the divergent options + product fork to Deon; regenerate the branded docx from the corrected note. Open: the upload-then-sort case and the re-export lifecycle (both DB-checkable).
-- [[2026-06-19-mri-133-dedicated-project]]
+- **Last touched:** 2026-06-23
+- **Status:** Planned, hardened (13-lens /harden-plan), and promoted to a tracked /programme (`mri133-annotations-poc`, spine at `~/.claude/docs/programmes/`). Widened from the initial Python+Apryse assumption via three deep-research streams (build-vs-buy, platform, SOTA matching) to a stamp-first / content-matching-fallback design, a per-document redaction-safety posture (burn only on confirmed identity, else over-mask or abstain), and conformal review-queue sizing. Decomposed into 5 build sessions (a1-a3 Milestone A, b1-b2 Milestone B) + 2 deferred (real-data, WebViewer).
+- **next:** `/programme next` launches a1 (opens with the stamp-survival go/no-go spike). Owed by Rowan: request the Apryse 40-day trial key (gates b1/b2), source de-identified real scan pairs (a1), surface the stamp-at-extraction question to Deon.
+- [[2026-06-23-mri133-poc-plan-harden-programme]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19
