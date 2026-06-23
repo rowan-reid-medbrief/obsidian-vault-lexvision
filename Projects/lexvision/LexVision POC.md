@@ -23,3 +23,4 @@ Working detail for this initiative lives in the Claude Code project at `~/claude
 - `docs/glossary.md` - patent terminology mapped to implementation concepts.
 - `docs/kumulus/` - the Kumulus (Logicalis) vendor dossier: dated meeting notes, proposal assessments, and research.
 - `docs/IDEAS.md` - project backlog.
+- **Microsoft Frontier Week tech learnings** (`docs/frontier-week-tech-learnings.md`): Fabric IQ ontologies, the Fabric graph database, and Foundry / data agents / MCP mapped to the open ADR-002 (graph DB) and ADR-003 (NLP) decisions and the Kumulus engagement.

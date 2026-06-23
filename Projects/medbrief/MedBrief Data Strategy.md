@@ -45,3 +45,4 @@ Working detail for this initiative lives in the Claude Code project at `~/claude
 - `docs/SOURCES.md` — provenance and up-link map back to this note.
 - `docs/DESIGN-NOTES.md` — project-tactical design notes (not a vault decision mirror).
 - `docs/IDEAS.md` — project backlog.
+- **Frontier Week (Microsoft) sessions, 22 June 2026.** Three sessions processed as input to the data strategy and the Microsoft CSA partner evaluation: the data-foundation-first thesis, the Fabric / OneLake / Fabric IQ / Foundry blueprint, and the governance model. Records: `notes/frontier-week-*-meeting.md`; source map: `docs/SOURCES.md`.
