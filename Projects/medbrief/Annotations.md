@@ -28,3 +28,7 @@ Working detail for this initiative lives in the Claude Code project at `~/claude
 - `docs/SOURCES.md` - provenance and up-link map back to this note.
 - `docs/DESIGN-NOTES.md` - project-tactical design notes (not a vault decision mirror).
 - `docs/IDEAS.md` - project backlog.
+
+## Decisions referencing this note
+
+- [[2026-06-19-mri133-scope-and-stamp-first]]: scoped the POC to page-less documents (standalone Python, forward redaction-survival) and adopted stamp-first identity with content-matching as the fallback.

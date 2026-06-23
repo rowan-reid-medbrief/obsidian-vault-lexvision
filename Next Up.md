@@ -3,10 +3,9 @@
 ## Now (Medbrief)
 
 ### MRI-133 "Granular storing of pages" - dedicated project
-- **Last touched:** 2026-06-23
-- **Status:** Planned, hardened (13-lens /harden-plan), and promoted to a tracked /programme (`mri133-annotations-poc`, spine at `~/.claude/docs/programmes/`). Widened from the initial Python+Apryse assumption via three deep-research streams (build-vs-buy, platform, SOTA matching) to a stamp-first / content-matching-fallback design, a per-document redaction-safety posture (burn only on confirmed identity, else over-mask or abstain), and conformal review-queue sizing. Decomposed into 5 build sessions (a1-a3 Milestone A, b1-b2 Milestone B) + 2 deferred (real-data, WebViewer).
-- **next:** `/programme next` launches a1 (opens with the stamp-survival go/no-go spike). Owed by Rowan: request the Apryse 40-day trial key (gates b1/b2), source de-identified real scan pairs (a1), surface the stamp-at-extraction question to Deon.
-- [[2026-06-23-mri133-poc-plan-harden-programme]]
+- **Status:** Milestone A SHIPPED (a1/a2/a3, 91 tests green): the matching bake-off runs and reads content-arm POOR -> "stamp-at-extraction is the only safe path", stamped arm 97-100% recall. `last touched` 2026-06-23.
+- **next:** `/programme next` will surface b1, but it is BLOCKED on the Apryse trial key (`APRYSE_LICENSE_KEY`). Owed by Rowan: request the key; source de-identified real scan pairs; get Deon to ratify the DoD bars and answer stamp-at-extraction vs sort-prep.
+- [[2026-06-23-mri133-milestone-a-foundations-matchers-bakeoff]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19
