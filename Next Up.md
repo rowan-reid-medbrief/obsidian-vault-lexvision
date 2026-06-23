@@ -3,9 +3,9 @@
 ## Now (Medbrief)
 
 ### MRI-133 "Granular storing of pages" - dedicated project
-- **Status:** Milestone A SHIPPED (a1/a2/a3, 91 tests green): the matching bake-off runs and reads content-arm POOR -> "stamp-at-extraction is the only safe path", stamped arm 97-100% recall. `last touched` 2026-06-23.
-- **next:** b1 is READY - the Apryse trial key is sourced (git-ignored `.env`, setup in `docs/dev-setup.md`); `/programme next` launches it (relocation core: geometry, XFDF rewrite, pdfnet init, outcome handlers). Still owed by Rowan/Deon (non-blocking): de-identified real scan pairs, Deon to ratify the DoD bars and answer stamp-at-extraction vs sort-prep.
-- [[2026-06-23-mri133-milestone-a-foundations-matchers-bakeoff]]
+- **Status:** b1 SHIPPED (8b3be7e, 162 passed / 3 skipped): relocation core done (geometry, XFDF rewrite, Outcome dispatch, index-base round-trip). FDFMerge smoke test pending Python SDK key from Deon (WebViewer key does not init Python SDK v11). `last touched` 2026-06-23.
+- **next:** Obtain Python SDK key from Deon (dev.apryse.com); run FDFMerge smoke test to fully close b1; then b2 via `/programme next`.
+- [[2026-06-23-mri133-b1-relocation-core]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19
