@@ -3,9 +3,9 @@
 ## Now (Medbrief)
 
 ### MRI-133 "Granular storing of pages" - dedicated project
-- **Status:** b1 SHIPPED (8b3be7e, 162 passed / 3 skipped): relocation core done (geometry, XFDF rewrite, Outcome dispatch, index-base round-trip). FDFMerge smoke test pending Python SDK key from Deon (WebViewer key does not init Python SDK v11). `last touched` 2026-06-23.
-- **next:** Obtain Python SDK key from Deon (dev.apryse.com); run FDFMerge smoke test to fully close b1; then b2 via `/programme next`.
-- [[2026-06-23-mri133-b1-relocation-core]]
+- **Status:** b2 SHIPPED (1cf4c1f) - Milestone B complete, POC demoable to Deon. Redaction safety by construction (pure-Python gate + a single file-enforced SDK burn call site); 201 tests / 0 skipped with the SDK key, `demo --all` renders before/after overlays + the burned/over-masked/abstained headline. Apryse confirmed: trial Redact destroys content, /MRI133Id survives Redact+Save, coordinates land. `last touched` 2026-06-23.
+- **next:** Take the demo (`data/demo/index.html`) + the stamp-at-extraction recommendation to Deon. Milestones C (real-data validation) and D (WebViewer) are parked, pending a sanctioned real-record set / Deon wanting live interaction. The POC's finding: content-matching alone is not reliable enough; the safe path needs stamping at extraction, not yet validated on real data.
+- [[2026-06-23-mri133-b2-redaction-safety-demo]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19
