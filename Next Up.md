@@ -4,7 +4,7 @@
 
 ### MRI-133 "Granular storing of pages" - dedicated project
 - **Status:** Milestone A SHIPPED (a1/a2/a3, 91 tests green): the matching bake-off runs and reads content-arm POOR -> "stamp-at-extraction is the only safe path", stamped arm 97-100% recall. `last touched` 2026-06-23.
-- **next:** `/programme next` will surface b1, but it is BLOCKED on the Apryse trial key (`APRYSE_LICENSE_KEY`). Owed by Rowan: request the key; source de-identified real scan pairs; get Deon to ratify the DoD bars and answer stamp-at-extraction vs sort-prep.
+- **next:** b1 is READY - the Apryse trial key is sourced (git-ignored `.env`, setup in `docs/dev-setup.md`); `/programme next` launches it (relocation core: geometry, XFDF rewrite, pdfnet init, outcome handlers). Still owed by Rowan/Deon (non-blocking): de-identified real scan pairs, Deon to ratify the DoD bars and answer stamp-at-extraction vs sort-prep.
 - [[2026-06-23-mri133-milestone-a-foundations-matchers-bakeoff]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
