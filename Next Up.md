@@ -2,6 +2,11 @@
 
 ## Now (Medbrief)
 
+### MedBrief quarterly company meetings - ingested to vault
+- **Status:** Q1 (March) and Q2 (June) 2026 company updates fully ingested via /process-meeting: meeting-graphs (183n/333e, 160n/314e) in ~/meeting-graph-output/, recaps in Resources/Summaries/medbrief/, March's two strategic decisions logged. Q2 Pass-3 chapters 07-08 hand-authored after a session-limit killed two subagents (03-04 salvaged from a valid .tmp). `last touched` 2026-06-26.
+- **next:** Optional, neither blocks anything: log Q2's three decision candidates (equity rollout/valuation, grow-without-headcount, Athena agent) via /decision-log; regenerate the hand-built 07-08 edges via subagent for consistency.
+- [[2026-06-26-quarterly-company-meetings-ingestion]]
+
 ### MRI-133 "Granular storing of pages" - dedicated project
 - **Status:** b2 SHIPPED (1cf4c1f) - Milestone B complete, POC demoable to Deon. Redaction safety by construction (pure-Python gate + a single file-enforced SDK burn call site); 201 tests / 0 skipped with the SDK key, `demo --all` renders before/after overlays + the burned/over-masked/abstained headline. Apryse confirmed: trial Redact destroys content, /MRI133Id survives Redact+Save, coordinates land. `last touched` 2026-06-23.
 - **next:** Take the demo (`data/demo/index.html`) + the stamp-at-extraction recommendation to Deon. Milestones C (real-data validation) and D (WebViewer) are parked, pending a sanctioned real-record set / Deon wanting live interaction. The POC's finding: content-matching alone is not reliable enough; the safe path needs stamping at extraction, not yet validated on real data.
