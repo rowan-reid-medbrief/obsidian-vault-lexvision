@@ -8,9 +8,9 @@
 - [[2026-06-26-quarterly-company-meetings-ingestion]]
 
 ### MRI-133 "Granular storing of pages" - dedicated project
-- **Status:** b2 SHIPPED (1cf4c1f) - Milestone B complete, POC demoable to Deon. Redaction safety by construction (pure-Python gate + a single file-enforced SDK burn call site); 201 tests / 0 skipped with the SDK key, `demo --all` renders before/after overlays + the burned/over-masked/abstained headline. Apryse confirmed: trial Redact destroys content, /MRI133Id survives Redact+Save, coordinates land. `last touched` 2026-06-23.
-- **next:** Take the demo (`data/demo/index.html`) + the stamp-at-extraction recommendation to Deon. Milestones C (real-data validation) and D (WebViewer) are parked, pending a sanctioned real-record set / Deon wanting live interaction. The POC's finding: content-matching alone is not reliable enough; the safe path needs stamping at extraction, not yet validated on real data.
-- [[2026-06-23-mri133-b2-redaction-safety-demo]]
+- **Status:** b2 shipped; this session built the **narrated MP4 demo** for Deon (`~/Desktop/mri133-demo.mp4`, 4:06, piper voice, concept diagrams with node-tracking highlights + before/after burn-vs-abstain proof) and made it reproducible from tracked assets: MRI-133 gained `mri133 demo --all --export` (fail-closed - curated pii_safe before/after pages + `.demo-artefacts.json` into a committed `demo-assets/`), and the demo-walkthrough skill gained a reusable image/compare/artefact_surfaces capability (committed + pushed, 2bb6c6d). 215 poc tests green. `last touched` 2026-06-27.
+- **next:** Show Deon the narrated MP4 + the stamp-at-extraction recommendation. Milestones C (real-data validation) and D (WebViewer) still parked, pending a sanctioned real-record set / Deon wanting live interaction.
+- [[2026-06-27-mri133-narrated-demo-and-export-contract]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19
