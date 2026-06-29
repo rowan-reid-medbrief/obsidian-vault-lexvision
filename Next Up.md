@@ -46,6 +46,7 @@
 
 ## Parked
 
+- **demo-walkthrough `cli` frame** - C1-C3 shipped 2026-06-29: a first-class terminal frame for command-line tools - the static renderer (C1), the contained live-capture orchestrator (C2: `capture_cli.py` + the shared `containment.py`, an env-allowlisted sandbox with per-command mutation proofs; mri133 the worked tool), and the SKILL.md wiring + reference + `test-cli-e2e.sh` (C3). C4 (typing animation) is the deferred fast-follow. [[2026-06-29-demo-walkthrough-cli-frame-c2-c3]]
 - **MedBrief walkthrough + Kumulus meeting-graph filing** - done 2026-06-18: 3 meetings filed (2 MedBrief demos -> medbrief-onboarding/notes/meetings/, Kumulus regroup -> lexvision-poc dossier), 2 Kumulus meetings (28 May, 1 June) delta-checked clean (already hand-filed), lexvision-poc vault-coupled. [[2026-06-18-meeting-graph-filing-lexvision-medbrief]]
 
 ## Done
