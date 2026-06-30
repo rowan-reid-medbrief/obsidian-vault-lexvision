@@ -8,9 +8,9 @@
 - [[2026-06-26-quarterly-company-meetings-ingestion]]
 
 ### MRI-133 "Granular storing of pages" - dedicated project
-- **Status:** b2 shipped; this session built the **narrated MP4 demo** for Deon (`~/Desktop/mri133-demo.mp4`, 4:06, piper voice, concept diagrams with node-tracking highlights + before/after burn-vs-abstain proof) and made it reproducible from tracked assets: MRI-133 gained `mri133 demo --all --export` (fail-closed - curated pii_safe before/after pages + `.demo-artefacts.json` into a committed `demo-assets/`), and the demo-walkthrough skill gained a reusable image/compare/artefact_surfaces capability (committed + pushed, 2bb6c6d). 215 poc tests green. `last touched` 2026-06-27.
-- **next:** Show Deon the narrated MP4 + the stamp-at-extraction recommendation. Milestones C (real-data validation) and D (WebViewer) still parked, pending a sanctioned real-record set / Deon wanting live interaction.
-- [[2026-06-27-mri133-narrated-demo-and-export-contract]]
+- **Status:** b2 shipped; demoable to Deon two ways. This session added a **hands-on walkthrough** Rowan can run live (`output/MRI-133-PoC-Walkthrough.docx`, MedBrief-branded; source `docs/poc-walkthrough.md`): a `./mri133` launcher (loads `.env` + venv, no activation), a new `mri133 resort` step that re-sorts the docs as its own beat before scoring (shares the bake-off mutation path), and `gen-corpus` surfaced. 207 poc tests green; annotations 858abaf+beb3a4d. `last touched` 2026-06-29.
+- **next:** Dry-run the hands-on walkthrough, then show Deon the walkthrough + the narrated MP4 + the stamp-at-extraction recommendation. Milestones C (real-data validation) and D (WebViewer) still parked.
+- [[2026-06-29-mri133-poc-hands-on-walkthrough]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19
