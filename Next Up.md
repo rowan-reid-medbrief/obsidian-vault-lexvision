@@ -8,9 +8,14 @@
 - [[2026-06-26-quarterly-company-meetings-ingestion]]
 
 ### MRI-133 "Granular storing of pages" - dedicated project
-- **Status:** Annotation policy parity: annotations now abstain on DUPLICATE pages (matching the redaction gate), shown as dashed-grey markers in overlay PNGs and listed in the HTML queue alongside redactions. 41 poc tests green. `last touched` 2026-07-01.
-- **next:** Clean data/ and do a full dry-run before showing Deon: `./mri133 gen-corpus && ./mri133 resort && ./mri133 run --matchers all && ./mri133 demo --all`.
-- [[2026-07-01-mri133-annotation-policy-parity]]
+- **Status:** Demo delivered to Deon (2026-07-01 catch-up): bake-off across 5 matchers reviewed live; stamped-ID clearly strongest but still not accurate enough for the redaction bar. Decided: test on real (non-synthetic) records next; redaction goes in DocSorter, not the viewer. `last touched` 2026-07-01.
+- **next:** Locate the storage account (Deon) and re-run the bake-off against real records; speak to Chantal re: sorted-set-only bundling scope.
+- [[2026-07-01-meeting-pipeline-annotations-apprise-split]]
+
+### Apprise viewer date-range rendering - new project (spun off 2026-07-01)
+- **Status:** New project scaffolded (vault-coupled, git+entire) from a research ask Deon raised in the same catch-up: render a date-range-filtered page subset in the Apprise viewer, given XOD's incompatibility with byte-range requests. No design decided yet. `last touched` 2026-07-01.
+- **next:** Research whether byte-range requests can work at all (contra Deon's scepticism) vs a server-side caching/on-the-fly PDF generation approach; test at scale against a large document (Computer Electronic Records-sized).
+- [[2026-07-01-meeting-pipeline-annotations-apprise-split]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19

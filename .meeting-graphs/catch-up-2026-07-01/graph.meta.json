@@ -1,0 +1,32 @@
+{
+  "schema_version": 2,
+  "graph_id": "catch-up-2026-07-01",
+  "source_recording": "~/Downloads/Catch Up-20260701_102928-Meeting Recording.mp4",
+  "source_checksum": "ea42ad522457882a1a8a263c693adbe9eef1ee129567bb3850287522c16fd372",
+  "source_fidelity": "video",
+  "meeting_date": null,
+  "title": "Catch Up 2026-07-01",
+  "promoted_at": "2026-07-01T17:54:40+02:00",
+  "domain": "medbrief",
+  "primary_project": "~/claude_code/projects/annotations",
+  "secondary_projects": [
+    "~/claude_code/projects/apprise-viewer-rendering"
+  ],
+  "project_key": "annotations",
+  "valid_at": "2026-07-01",
+  "valid_at_source": "explicit",
+  "valid_at_end": null,
+  "invalid_at": null,
+  "invalidated_by": null,
+  "graph_content_hash": "b71e783a5fb08777fa2cef41f862051c43240949893c860bbb20407509acbfd6",
+  "promoted_artifacts": [
+    "meeting.json",
+    "graph.graphml",
+    "graph.mermaid.md",
+    "summary.md",
+    "timeline.md",
+    "chapters/chapters.json",
+    "graph.meta.json"
+  ],
+  "include_raw": false
+}

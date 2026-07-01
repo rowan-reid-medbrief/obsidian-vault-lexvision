@@ -1,0 +1,11 @@
+
+- mri133 (PDF page-matching test-harness CLI)
+- Apprise Viewer
+- annotations project (Rowan's local repo hosting the PDF test harness)
+- SALLI
+- Pico PDF
+- bakeoff.html (matching bake-off visual report)
+- DocSorter
+- ShareBrief viewer
+- XOD format
+- Computer Electronic Records
