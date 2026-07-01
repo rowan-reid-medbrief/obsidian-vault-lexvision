@@ -8,9 +8,9 @@
 - [[2026-06-26-quarterly-company-meetings-ingestion]]
 
 ### MRI-133 "Granular storing of pages" - dedicated project
-- **Status:** b2 shipped; demoable to Deon two ways. This session added a **hands-on walkthrough** Rowan can run live (`output/MRI-133-PoC-Walkthrough.docx`, MedBrief-branded; source `docs/poc-walkthrough.md`): a `./mri133` launcher (loads `.env` + venv, no activation), a new `mri133 resort` step that re-sorts the docs as its own beat before scoring (shares the bake-off mutation path), and `gen-corpus` surfaced. 207 poc tests green; annotations 858abaf+beb3a4d. `last touched` 2026-06-29.
-- **next:** Dry-run the hands-on walkthrough, then show Deon the walkthrough + the narrated MP4 + the stamp-at-extraction recommendation. Milestones C (real-data validation) and D (WebViewer) still parked.
-- [[2026-06-29-mri133-poc-hands-on-walkthrough]]
+- **Status:** Annotation policy parity: annotations now abstain on DUPLICATE pages (matching the redaction gate), shown as dashed-grey markers in overlay PNGs and listed in the HTML queue alongside redactions. 41 poc tests green. `last touched` 2026-07-01.
+- **next:** Clean data/ and do a full dry-run before showing Deon: `./mri133 gen-corpus && ./mri133 resort && ./mri133 run --matchers all && ./mri133 demo --all`.
+- [[2026-07-01-mri133-annotation-policy-parity]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19
