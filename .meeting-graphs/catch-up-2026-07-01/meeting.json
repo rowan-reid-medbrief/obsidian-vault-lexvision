@@ -1,0 +1,5069 @@
+{
+  "meta": {
+    "schema_version": 2,
+    "node_count": 96,
+    "edge_count": 187,
+    "substantive_nodes": 49,
+    "inferred_edges": 7,
+    "diarization_quality": "ok",
+    "diarization_status": "ok",
+    "source": "video",
+    "meeting_date": null,
+    "date_source": "unknown",
+    "confidence_floor": 0.35,
+    "graph_suppressed": false,
+    "graph_suppressed_reason": null,
+    "validation": {
+      "problems": [
+        "no meeting date derivable from input 'Catch Up-20260701_102928-Meeting Recording.mp4'; promote will distrust a today-stamped slug (pass --valid-at)"
+      ],
+      "stale_lone_speaker": false,
+      "annexed_nodes": 0,
+      "annexed_edges": 0
+    }
+  },
+  "nodes": [
+    {
+      "id": "person:rowan-reid",
+      "type": "Person",
+      "label": "Rowan Reid",
+      "name": "Rowan Reid",
+      "canonical_name": "Rowan Reid",
+      "aliases": [],
+      "role": "Engineer",
+      "org": null,
+      "is_participant": true,
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "Rowan: Morning, how are you doing?",
+          "ts": 4.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "Rowan Reid",
+          "ts": 2.125,
+          "source": "vision"
+        },
+        {
+          "quote": "Rowan: okay, that's really good to me,",
+          "ts": 830.3,
+          "source": "transcript"
+        },
+        {
+          "quote": "Rowan: So, would, like, solicitors and them be able to still redact when they get, by the time the docs get to them, or no?",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01",
+        "chapter:02",
+        "chapter:03",
+        "chapter:04",
+        "chapter:05",
+        "chapter:06",
+        "chapter:07",
+        "chapter:08"
+      ],
+      "first_ts": 14.2,
+      "speaking_time_sec": 662.04,
+      "turn_count": 189
+    },
+    {
+      "id": "person:deon-kuhn",
+      "type": "Person",
+      "label": "Deon Kuhn",
+      "name": "Deon Kuhn",
+      "canonical_name": "Deon Kuhn",
+      "aliases": [],
+      "role": "CTO",
+      "org": null,
+      "is_participant": true,
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "Deon: Good morning.",
+          "ts": 0.5,
+          "source": "transcript"
+        },
+        {
+          "quote": "Rowan Reid Deon Kuhn",
+          "ts": 4.625,
+          "source": "vision"
+        },
+        {
+          "quote": "Deon: that's really useful for this sort of thing.",
+          "ts": 800.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "Deon: So, redaction, my thinking, I might have mentioned this, is also that we do redaction inside DocSorter because they're the people who, the clinicians would be the people who are best placed to do the actual redaction in the first place.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01",
+        "chapter:02",
+        "chapter:03",
+        "chapter:04",
+        "chapter:05",
+        "chapter:06",
+        "chapter:07",
+        "chapter:08",
+        "chapter:09"
+      ],
+      "first_ts": 5.08,
+      "speaking_time_sec": 598.03,
+      "turn_count": 174
+    },
+    {
+      "id": "person:lewis",
+      "type": "Person",
+      "label": "Lewis",
+      "name": "Lewis",
+      "canonical_name": "Lewis",
+      "aliases": [],
+      "role": null,
+      "org": null,
+      "is_participant": false,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "No, I tried to, as Lewis said, I sort of maybe loved the cat too much this weekend.",
+          "ts": 121.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "Just want to tell Lewis. Oh, he's here, Lewis.",
+          "ts": 415.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01",
+        "chapter:03"
+      ]
+    },
+    {
+      "id": "topic:cat-sitting-weekend",
+      "type": "Topic",
+      "label": "Weekend cat-sitting trip and cat allergy",
+      "level": "subtopic",
+      "parent_topic_id": null,
+      "salience": 0.4,
+      "keywords": [
+        "cat-sitting",
+        "house-sitting",
+        "Cardiff",
+        "cat allergy"
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "We were house-sitting in an area just outside of Cardiff. So we're actually cat-sitting.",
+          "ts": 41.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ]
+    },
+    {
+      "id": "topic:pdf-synthetic-test-harness",
+      "type": "Topic",
+      "label": "Synthetic PDF generation, resorting, and page-matching test harness",
+      "level": "theme",
+      "parent_topic_id": null,
+      "salience": 0.9,
+      "keywords": [
+        "synthetic PDFs",
+        "resorting",
+        "page-matching",
+        "mri133",
+        "Apprise"
+      ],
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "So basically, I generate PDFs, then I resort them.",
+          "ts": 177.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "generated 12 documents, 108 pages into data/corpus",
+          "ts": 309.688,
+          "source": "vision"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ]
+    },
+    {
+      "id": "topic:mri133-end-to-end-run",
+      "type": "Topic",
+      "label": "Running the MRI133 end-to-end matcher across all matchers",
+      "level": "subtopic",
+      "parent_topic_id": "topic:pdf-synthetic-test-harness",
+      "salience": 0.6,
+      "keywords": [
+        "MRI133",
+        "end-to-end",
+        "matchers"
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So, if I go MRI133, this actually runs it end-to-end and runs each matcher.",
+          "ts": 410.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:03"
+      ]
+    },
+    {
+      "id": "artifact:mri133",
+      "type": "Artifact",
+      "name": "mri133",
+      "label": "mri133 (PDF page-matching test-harness CLI)",
+      "artifact_type": "tool",
+      "uri": null,
+      "mentioned_by": [
+        "person:rowan-reid"
+      ],
+      "ts": [
+        309.688,
+        410.0
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So, if I go MRI133, this actually runs it end-to-end and runs each matcher.",
+          "ts": 410.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "./mri133 gen-corpus\ngenerated 12 documents, 108 pages into data/corpus",
+          "ts": 309.688,
+          "source": "vision"
+        },
+        {
+          "quote": "./mri133 run --matchers all",
+          "ts": 946.5,
+          "source": "vision"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02",
+        "chapter:03",
+        "chapter:04"
+      ]
+    },
+    {
+      "id": "artifact:apprise-viewer",
+      "type": "Artifact",
+      "name": "Apprise Viewer",
+      "label": "Apprise Viewer",
+      "artifact_type": "product",
+      "uri": null,
+      "mentioned_by": [
+        "person:rowan-reid",
+        "person:deon-kuhn"
+      ],
+      "ts": [
+        236.0,
+        247.0
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I then have used the Apprise Viewer to, like, move annotations around or move redactions around just to kind of see if that works.",
+          "ts": 236.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "we do, like, use the engine of Apprise to apply them to the pages.",
+          "ts": 247.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "Deon: So, redaction is currently not available inside the appraise viewer that we have.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02",
+        "chapter:07",
+        "chapter:08"
+      ]
+    },
+    {
+      "id": "artifact:annotations-project",
+      "type": "Artifact",
+      "name": "annotations project",
+      "label": "annotations project (Rowan's local repo hosting the PDF test harness)",
+      "artifact_type": "repo",
+      "uri": null,
+      "mentioned_by": [
+        "person:rowan-reid"
+      ],
+      "ts": [
+        161.5
+      ],
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "PROJECTS annotations .claude .entire data _bakeoff corpus demo resorted bakeoff.html bakeoff.json README.md docs output poc data_pipelines expert-sheet-data-processing lexvision-poc",
+          "ts": 161.5,
+          "source": "vision"
+        },
+        {
+          "quote": "Okay, you should see a terminal and a Visual Studio Code.",
+          "ts": 155.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ]
+    },
+    {
+      "id": "artifact:salli",
+      "type": "Artifact",
+      "label": "SALLI",
+      "name": "SALLI",
+      "artifact_type": "system",
+      "uri": null,
+      "mentioned_by": [
+        "person:deon-kuhn"
+      ],
+      "ts": [
+        1104.5
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Do you know what you've actually done now is you've solved another problem we have, which is duplicate detection in the sorting algorithm for Sally.",
+          "ts": 1104.5,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:05"
+      ]
+    },
+    {
+      "id": "person:chantal",
+      "type": "Person",
+      "label": "Chantal",
+      "name": "Chantal",
+      "canonical_name": "Chantal",
+      "aliases": [],
+      "role": null,
+      "org": null,
+      "is_participant": false,
+      "speaking_time_sec": null,
+      "turn_count": null,
+      "question_count": null,
+      "statement_count": null,
+      "first_ts": 1230.5,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "But then what I'll speak to Chantal about is, like, this will, like I said, this will only be a thing that we can apply for a sorted set of records.",
+          "ts": 1230.5,
+          "source": "transcript"
+        },
+        {
+          "quote": "Deon: And that's why I feel like Chantal's original ticket was trying to find something that will solve everything, but it actually can't.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:05",
+        "chapter:07"
+      ]
+    },
+    {
+      "id": "person:lara",
+      "type": "Person",
+      "label": "Lara",
+      "name": "Lara",
+      "canonical_name": "Lara",
+      "aliases": [],
+      "role": null,
+      "org": null,
+      "is_participant": false,
+      "speaking_time_sec": null,
+      "turn_count": null,
+      "question_count": null,
+      "statement_count": null,
+      "first_ts": 1104.5,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "And Lara would be very interested in all of this, because this is fascinating.",
+          "ts": 1104.5,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:05"
+      ]
+    },
+    {
+      "id": "topic:matching-algorithm-comparison",
+      "type": "Topic",
+      "label": "Matching algorithm comparison (exact hash, perceptual hash, text fingerprint, ensemble, stamped ID)",
+      "level": "theme",
+      "parent_topic_id": null,
+      "salience": 0.9,
+      "keywords": [
+        "exact hash",
+        "perceptual hash",
+        "text fingerprint",
+        "ensemble",
+        "stamped ID",
+        "precision",
+        "recall",
+        "silent error"
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "But basically, so these are my different matching algorithms.",
+          "ts": 940.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:04"
+      ]
+    },
+    {
+      "id": "topic:exact-hash-matching",
+      "type": "Topic",
+      "label": "Exact hash matching",
+      "level": "subtopic",
+      "parent_topic_id": "topic:matching-algorithm-comparison",
+      "salience": 0.7,
+      "keywords": [
+        "exact hash",
+        "char hash"
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So exact hash is just a char hash of the page.",
+          "ts": 921.4,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:04"
+      ]
+    },
+    {
+      "id": "topic:perceptual-hash-matching",
+      "type": "Topic",
+      "label": "Perceptual hash matching",
+      "level": "subtopic",
+      "parent_topic_id": "topic:matching-algorithm-comparison",
+      "salience": 0.6,
+      "keywords": [
+        "perceptual hash",
+        "P hash",
+        "visual-based hash"
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Perceptual was a P hash, so basically like a visual-based hash of the page.",
+          "ts": 926.7,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:04"
+      ]
+    },
+    {
+      "id": "topic:text-fingerprint-matching",
+      "type": "Topic",
+      "label": "Text fingerprint matching",
+      "level": "subtopic",
+      "parent_topic_id": "topic:matching-algorithm-comparison",
+      "salience": 0.6,
+      "keywords": [
+        "text comparison",
+        "text fingerprint"
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Text for the print is just like a text comparison. How close is the text on the pages?",
+          "ts": 931.6,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:04"
+      ]
+    },
+    {
+      "id": "topic:ensemble-matching",
+      "type": "Topic",
+      "label": "Ensemble matching",
+      "level": "subtopic",
+      "parent_topic_id": "topic:matching-algorithm-comparison",
+      "salience": 0.6,
+      "keywords": [
+        "ensemble",
+        "combination"
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "And then Ensemble was just like a combination of them trying to get them all to work together and fill in for their weaknesses.",
+          "ts": 936.7,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:04"
+      ]
+    },
+    {
+      "id": "topic:stamped-id-approach",
+      "type": "Topic",
+      "label": "Metadata-stamped page ID approach",
+      "level": "subtopic",
+      "parent_topic_id": "topic:matching-algorithm-comparison",
+      "salience": 0.9,
+      "keywords": [
+        "stamped ID",
+        "metadata stamp",
+        "Pico PDF"
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So basically what I did was I applied a metadata right into the PDF using Pico PDF to get stamped a unique ID into the page.",
+          "ts": 865.7,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:04"
+      ]
+    },
+    {
+      "id": "topic:duplicate-detection-reuse",
+      "type": "Topic",
+      "label": "Reuse of matching research for duplicate/blank-page detection in sorting",
+      "level": "theme",
+      "parent_topic_id": null,
+      "salience": 0.85,
+      "keywords": [
+        "duplicate detection",
+        "blank detection",
+        "sorting algorithm"
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "And we can use this for duplicate detection, like I said, even for blank detection, stuff like that, without involving an LLM.",
+          "ts": 1201.7,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:05"
+      ]
+    },
+    {
+      "id": "topic:product-bundling-strategy",
+      "type": "Topic",
+      "label": "Product/marketing bundling limited to sorted record sets",
+      "level": "theme",
+      "parent_topic_id": null,
+      "salience": 0.8,
+      "keywords": [
+        "bundling",
+        "marketing",
+        "sorted record sets",
+        "insights"
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Much of the insights also only applies to sorted sets of records. So we can bundle it as a marketing thing.",
+          "ts": 1230.5,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:05"
+      ]
+    },
+    {
+      "id": "topic:real-data-testing",
+      "type": "Topic",
+      "label": "Testing the matching approach on real (non-synthetic) data",
+      "level": "theme",
+      "parent_topic_id": null,
+      "salience": 0.85,
+      "keywords": [
+        "real data",
+        "synthetic data",
+        "storage account"
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "And we haven't even tried it in real data.",
+          "ts": 1321.8,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:06"
+      ]
+    },
+    {
+      "id": "artifact:pico-pdf",
+      "type": "Artifact",
+      "label": "Pico PDF",
+      "name": "Pico PDF",
+      "artifact_type": "tool",
+      "uri": null,
+      "mentioned_by": [
+        "person:rowan-reid"
+      ],
+      "ts": [
+        865.7
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I applied a metadata right into the PDF using Pico PDF to get stamped a unique ID into the page.",
+          "ts": 865.7,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:04"
+      ]
+    },
+    {
+      "id": "artifact:bakeoff-html",
+      "type": "Artifact",
+      "label": "bakeoff.html (matching bake-off visual report)",
+      "name": "bakeoff.html",
+      "artifact_type": "document",
+      "uri": null,
+      "mentioned_by": [
+        "person:rowan-reid"
+      ],
+      "ts": [
+        1017.4,
+        1099.75
+      ],
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "I'll bring over the pretty HTML version of it now.",
+          "ts": 1017.4,
+          "source": "transcript"
+        },
+        {
+          "quote": "MRI-133 matching bake-off / File /Users/Rowan.Reid/claude_code/projects/annotations/data/bakeoff.html",
+          "ts": 1099.75,
+          "source": "vision"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:04",
+        "chapter:05"
+      ]
+    },
+    {
+      "id": "person:adam",
+      "type": "Person",
+      "label": "Adam",
+      "name": "Adam",
+      "canonical_name": "Adam",
+      "aliases": [],
+      "role": "CEO",
+      "org": null,
+      "is_participant": false,
+      "speaking_time_sec": null,
+      "turn_count": null,
+      "question_count": null,
+      "statement_count": null,
+      "first_ts": 1662.0,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Deon: So Adam has been, Adam as CEO is very heavy on, can we stop recording?",
+          "ts": 1662.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:09"
+      ]
+    },
+    {
+      "id": "topic:redaction",
+      "type": "Topic",
+      "label": "Redaction workflow and DocSorter placement",
+      "level": "theme",
+      "parent_topic_id": null,
+      "salience": 0.9,
+      "keywords": [
+        "redaction",
+        "DocSorter",
+        "Apprise viewer",
+        "automated redaction",
+        "sorting stage"
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Deon: So, redaction, my thinking, I might have mentioned this, is also that we do redaction inside DocSorter because they're the people who, the clinicians would be the people who are best placed to do the actual redaction in the first place.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:07"
+      ]
+    },
+    {
+      "id": "topic:date-range-rendering",
+      "type": "Topic",
+      "label": "Date-range filtered PDF rendering at scale",
+      "level": "theme",
+      "parent_topic_id": null,
+      "salience": 0.9,
+      "keywords": [
+        "date range filter",
+        "XOD",
+        "byte range requests",
+        "Apprise viewer",
+        "scale testing"
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Deon: So, with the date range filter, since you're in the appraise world, in that viewer, it's not compatible with the format that we use with the XOD because that uses byte range requests, and it only renders the pages that you're viewing, basically.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:08"
+      ]
+    },
+    {
+      "id": "topic:recording-preference",
+      "type": "Topic",
+      "label": "CEO's recording preference",
+      "level": "theme",
+      "parent_topic_id": null,
+      "salience": 0.6,
+      "keywords": [
+        "recording",
+        "Adam",
+        "CEO"
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Deon: So Adam has been, Adam as CEO is very heavy on, can we stop recording?",
+          "ts": 1662.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:09"
+      ]
+    },
+    {
+      "id": "artifact:docsorter",
+      "type": "Artifact",
+      "label": "DocSorter",
+      "name": "DocSorter",
+      "artifact_type": "product",
+      "uri": null,
+      "mentioned_by": [
+        "person:deon-kuhn"
+      ],
+      "ts": [
+        1387.0
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Deon: So, redaction, my thinking, I might have mentioned this, is also that we do redaction inside DocSorter because they're the people who, the clinicians would be the people who are best placed to do the actual redaction in the first place.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:07"
+      ]
+    },
+    {
+      "id": "artifact:sharebrief-viewer",
+      "type": "Artifact",
+      "label": "ShareBrief viewer",
+      "name": "ShareBrief viewer",
+      "artifact_type": "product",
+      "uri": null,
+      "mentioned_by": [
+        "person:deon-kuhn"
+      ],
+      "ts": [
+        1387.0
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Deon: I remember you guys had a viewer for ShareBrief that redaction was quite processing heavy.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:07"
+      ]
+    },
+    {
+      "id": "artifact:xod-format",
+      "type": "Artifact",
+      "label": "XOD format",
+      "name": "XOD",
+      "artifact_type": "system",
+      "uri": null,
+      "mentioned_by": [
+        "person:deon-kuhn"
+      ],
+      "ts": [
+        1509.0
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Deon: So, with the date range filter, since you're in the appraise world, in that viewer, it's not compatible with the format that we use with the XOD because that uses byte range requests, and it only renders the pages that you're viewing, basically.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:08"
+      ]
+    },
+    {
+      "id": "artifact:computer-electronic-records",
+      "type": "Artifact",
+      "label": "Computer Electronic Records",
+      "name": "Computer Electronic Records",
+      "artifact_type": "dataset",
+      "uri": null,
+      "mentioned_by": [
+        "person:deon-kuhn"
+      ],
+      "ts": [
+        1509.0
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Deon: I don't think we'll reach that limit because the Computer Electronic Records is the only one that has that many pages.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:08"
+      ]
+    },
+    {
+      "id": "question:0001",
+      "type": "Question",
+      "text": "Is that when you discovered it [that you're allergic to cats]?",
+      "asker_id": "person:rowan-reid",
+      "addressee_id": "person:deon-kuhn",
+      "answered": true,
+      "answer_summary": "Yes, that was when Deon discovered his cat allergy.",
+      "answered_by_id": "person:deon-kuhn",
+      "answer_ts": 76.9,
+      "qtype": "clarifying",
+      "ts": 74.0,
+      "label": "Is that when you discovered it?",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Is that when you discovered it?",
+          "ts": 74.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "Yeah, that's when we discovered it.",
+          "ts": 76.9,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ]
+    },
+    {
+      "id": "question:0002",
+      "type": "Question",
+      "text": "How close is the text on the pages?",
+      "asker_id": "person:rowan-reid",
+      "addressee_id": null,
+      "answered": true,
+      "answer_summary": "Rowan explains text_fingerprint compares textual similarity between pages.",
+      "answered_by_id": "person:rowan-reid",
+      "answer_ts": 931.6,
+      "qtype": "rhetorical",
+      "ts": 931.6,
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Text for the print is just like a text comparison. How close is the text on the pages?",
+          "ts": 931.6,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:04"
+      ],
+      "label": "question:0002"
+    },
+    {
+      "id": "question:0003",
+      "type": "Question",
+      "text": "Remember what I told you?",
+      "asker_id": "person:deon-kuhn",
+      "addressee_id": "person:rowan-reid",
+      "answered": true,
+      "answer_summary": "Rowan confirms he remembers Deon predicting the approach wouldn't fully work.",
+      "answered_by_id": "person:rowan-reid",
+      "answer_ts": 1157.4,
+      "qtype": "rhetorical",
+      "ts": 1157.4,
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Remember what I told you? It was like, I have a feeling it won't work.",
+          "ts": 1157.4,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:05"
+      ],
+      "label": "question:0003"
+    },
+    {
+      "id": "question:0004",
+      "type": "Question",
+      "text": "How do you feel about all of this?",
+      "asker_id": "person:deon-kuhn",
+      "addressee_id": "person:rowan-reid",
+      "answered": true,
+      "answer_summary": "Rowan found the research interesting and exciting; he was surprised the algorithms (especially perceptual hash) didn't perform as well as he expected.",
+      "answered_by_id": "person:rowan-reid",
+      "answer_ts": 1300.1,
+      "qtype": "info_seeking",
+      "ts": 1282.0,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "How do you feed about all of this?",
+          "ts": 1282.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:05"
+      ],
+      "label": "question:0004"
+    },
+    {
+      "id": "question:0005",
+      "type": "Question",
+      "label": "Will solicitors still be able to redact once docs reach them?",
+      "text": "So, would, like, solicitors and them be able to still redact when they get, by the time the docs get to them, or no?",
+      "asker_id": "person:rowan-reid",
+      "addressee_id": "person:deon-kuhn",
+      "answered": true,
+      "answer_summary": "Redaction is not currently available in the Apprise viewer (though relatively easy to add and much lighter than the old ShareBrief implementation); it has been in the backlog, and the market is trending toward automated rather than manual solicitor-driven redaction.",
+      "answered_by_id": "person:deon-kuhn",
+      "answer_ts": 1387.0,
+      "qtype": "info_seeking",
+      "ts": 1387.0,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Rowan: So, would, like, solicitors and them be able to still redact when they get, by the time the docs get to them, or no?",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:07"
+      ]
+    },
+    {
+      "id": "question:0006",
+      "type": "Question",
+      "label": "Can we stop recording?",
+      "text": "Can we stop recording?",
+      "asker_id": "person:deon-kuhn",
+      "addressee_id": "person:rowan-reid",
+      "answered": false,
+      "answer_summary": null,
+      "answered_by_id": null,
+      "answer_ts": null,
+      "qtype": "decision_forcing",
+      "ts": 1662.0,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Deon: So Adam has been, Adam as CEO is very heavy on, can we stop recording?",
+          "ts": 1662.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:09"
+      ]
+    },
+    {
+      "id": "claim:0001",
+      "type": "Claim",
+      "statement": "Rowan and Lynn discovered they are a little bit allergic to cats while house-sitting a house with seven cats.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "fact",
+      "contested": false,
+      "ts": 66.0,
+      "label": "Rowan and Lynn discovered a cat allergy during a seven-cat house-sit",
+      "provenance": [
+        {
+          "quote": "And it was during that house-sitting that we both discovered that we are a little bit allergic to cats.",
+          "ts": 66.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ]
+    },
+    {
+      "id": "claim:0002",
+      "type": "Claim",
+      "statement": "Deon discovered his cat allergy during the cat-sitting weekend outside Cardiff.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [
+        "question:0005"
+      ],
+      "confidence": 0.9,
+      "claim_type": "fact",
+      "contested": false,
+      "confirmed_by_answer": true,
+      "ts": 76.9,
+      "label": "Deon discovered his cat allergy during the Cardiff cat-sitting trip",
+      "provenance": [
+        {
+          "quote": "Yeah, that's when we discovered it.",
+          "ts": 76.9,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ]
+    },
+    {
+      "id": "claim:0003",
+      "type": "Claim",
+      "statement": "Deon loved the cat too much over the weekend and it ended up scratching him quite a bit.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "fact",
+      "contested": false,
+      "ts": 121.0,
+      "label": "The cat scratched Deon after he didn't respect its space",
+      "provenance": [
+        {
+          "quote": "No, I tried to, as Lewis said, I sort of maybe loved the cat too much this weekend. And he ended up scratching me quite a bit.",
+          "ts": 121.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ]
+    },
+    {
+      "id": "claim:0004",
+      "type": "Claim",
+      "statement": "Rowan built a tool that generates synthetic records/PDFs, then resorts them by deleting pages, inserting new pages, rearranging pages, and splitting pages.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "confidence": 0.95,
+      "claim_type": "fact",
+      "contested": false,
+      "ts": 178.0,
+      "label": "Rowan built a synthetic PDF generator and page-resorting tool",
+      "provenance": [
+        {
+          "quote": "So basically, I generate PDFs, then I resort them. So I've got another command that does some resorting, which does a bunch of different things.",
+          "ts": 178.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "So it deletes pages, it inserts new pages, it rearranges pages, it splits pages, it splits pages and all of that.",
+          "ts": 191.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ]
+    },
+    {
+      "id": "claim:0005",
+      "type": "Claim",
+      "statement": "Rowan built a matching engine that uses different matching styles to try to figure out what happened to each page, and reports how reliable each mechanism is at finding what happened to a page.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "fact",
+      "contested": false,
+      "ts": 225.0,
+      "label": "Rowan built a multi-method page-matching engine",
+      "provenance": [
+        {
+          "quote": "And then I've got a matching engine, which uses different styles of matching to try and figure out what happened to each page.",
+          "ts": 225.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "And so the output of that is using the different mechanisms, like how reliable are they in finding what happened to a page?",
+          "ts": 227.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ]
+    },
+    {
+      "id": "claim:0006",
+      "type": "Claim",
+      "statement": "Once the matching engine correctly identifies the right page, the Apprise Viewer manages to apply moved annotations/redactions correctly.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "fact",
+      "contested": false,
+      "ts": 236.0,
+      "label": "Apprise Viewer correctly reapplies annotations once the matching page is known",
+      "provenance": [
+        {
+          "quote": "And then after that, based on that knowledge, I then have used the Apprise Viewer to, like, move annotations around or move redactions around just to kind of see if that works.",
+          "ts": 236.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "Once you know that you've got the page, the right page, it manages to apply them correctly.",
+          "ts": 238.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ]
+    },
+    {
+      "id": "claim:0007",
+      "type": "Claim",
+      "statement": "When ingesting annotations in their native format (XFDF), the product already uses the Apprise engine to apply them to pages.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "fact",
+      "contested": false,
+      "ts": 247.0,
+      "label": "Apprise engine already applies ingested XFDF annotations to pages",
+      "provenance": [
+        {
+          "quote": "As a quick note, when we ingest, obviously, the annotations, because they're in that format, the XFDF or whatever, we do, like, use the engine of Apprise to apply them to the pages. So that's correct as well.",
+          "ts": 247.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ]
+    },
+    {
+      "id": "claim:0008",
+      "type": "Claim",
+      "statement": "The content-hashing matcher can tell that two near-duplicate pages (identical except a small A/B footer difference) are not the same page, but the perceptual-hash matcher is likely to judge them as the same page and miss the small difference.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "fact",
+      "contested": false,
+      "ts": 305.0,
+      "label": "Exact-hash catches an A/B footer difference; perceptual hash likely misses it",
+      "provenance": [
+        {
+          "quote": "the matcher that matches on hashing the content will be able to determine that these are not the same page.",
+          "ts": 300.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "It's been like, oh, these still look like the same page. But then it doesn't pick up little tiny things like that.",
+          "ts": 305.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ]
+    },
+    {
+      "id": "claim:0009",
+      "type": "Claim",
+      "statement": "Running mri133 gen-corpus generated 12 documents totalling 108 pages into data/corpus.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "fact",
+      "contested": false,
+      "ts": 309.688,
+      "label": "mri133 gen-corpus generated 12 documents / 108 pages",
+      "provenance": [
+        {
+          "quote": "generated 12 documents, 108 pages into data/corpus",
+          "ts": 309.688,
+          "source": "vision"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ]
+    },
+    {
+      "id": "claim:0010",
+      "type": "Claim",
+      "statement": "Rowan is running the MRI133 tool end-to-end across all matchers on the resorted document set.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "fact",
+      "contested": false,
+      "ts": 410.0,
+      "label": "Rowan kicks off the MRI133 full end-to-end matcher run",
+      "provenance": [
+        {
+          "quote": "So, if I go MRI133, this actually runs it end-to-end and runs each matcher.",
+          "ts": 410.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "This will take a little while.",
+          "ts": 412.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:03"
+      ]
+    },
+    {
+      "id": "claim:0011",
+      "type": "Claim",
+      "statement": "Deon has to step away in person to receive a delivery because it cannot just be left for pickup and the courier needs to see his face.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "fact",
+      "contested": false,
+      "ts": 417.0,
+      "label": "Deon steps away to accept an in-person delivery",
+      "provenance": [
+        {
+          "quote": "Rowan, can I go get the delivery quick? Sorry. Because they need to see my face. It's not a one that they can pick up.",
+          "ts": 417.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:03"
+      ]
+    },
+    {
+      "id": "claim:0012",
+      "type": "Claim",
+      "label": "Stamped ID survived page reinsertion, naturally the strongest identifier",
+      "statement": "The metadata stamp survived Rowan's page-insertion/resorting method and was naturally the strongest way of identifying the original page.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "fact",
+      "contested": false,
+      "ts": 885.9,
+      "provenance": [
+        {
+          "quote": "I did that stamp, and that survived at least my method of inserting new pages and whatever. And so that obviously was naturally the strongest way of identifying the original.",
+          "ts": 885.9,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:04"
+      ]
+    },
+    {
+      "id": "claim:0013",
+      "type": "Claim",
+      "label": "Exact hash: 92.9% precision on confident pages",
+      "statement": "Exact hash matching got 92.9% of its confident (non-abstained) page-outcome predictions right.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "confidence": 0.95,
+      "claim_type": "fact",
+      "contested": false,
+      "ts": 971.8,
+      "provenance": [
+        {
+          "quote": "Of those that it was confident about, it got 92.9% right, which is good, right?",
+          "ts": 971.8,
+          "source": "transcript"
+        },
+        {
+          "quote": "exact_hash      P 92.9% R 89.7% abst-ok 81.2% silent 5.6% / queue 22.2%",
+          "ts": 946.5,
+          "source": "vision"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:04"
+      ]
+    },
+    {
+      "id": "claim:0014",
+      "type": "Claim",
+      "label": "Exact hash only works on text-bearing / clean pages",
+      "statement": "Exact hash matching only works for pages that have text, or clean-looking pages.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "opinion",
+      "contested": false,
+      "ts": 982.1,
+      "provenance": [
+        {
+          "quote": "But that only works for things that maybe have text. Or clean-looking things, yeah.",
+          "ts": 982.1,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:04"
+      ]
+    },
+    {
+      "id": "claim:0015",
+      "type": "Claim",
+      "label": "Exact hash fails badly on split pages",
+      "statement": "Exact hash is really bad at detecting a split page: because the two resulting pages don't hash the same, it thinks the original page is simply gone.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "fact",
+      "contested": false,
+      "ts": 1002.1,
+      "provenance": [
+        {
+          "quote": "So anyway, it's really bad at split. So actually, if a page has been split, it basically thinks the page is gone because there's nothing that's, those two pages don't hash.",
+          "ts": 1002.1,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:04"
+      ]
+    },
+    {
+      "id": "claim:0016",
+      "type": "Claim",
+      "label": "Stamped route is by far the best, removes matching noise",
+      "statement": "Going with the stamped-ID route is by far and above the best approach: it gets rid of all the noise involved in trying to figure out the right matching.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "fact",
+      "contested": false,
+      "ts": 1047.7,
+      "provenance": [
+        {
+          "quote": "And then, basically, the conclusion is that if we go stamped, like, the stamped route is by far and above, like, it gets rid of all the crazy noise and trying to figure out, like, how to do the right matching.",
+          "ts": 1047.7,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:04"
+      ]
+    },
+    {
+      "id": "claim:0017",
+      "type": "Claim",
+      "label": "Stamped approach only errs on true duplicates or unlinked splits",
+      "statement": "The stamped approach only gets it wrong when a page has been exactly duplicated without re-stamping, or split without any lineage recorded into the previous page; every other scenario it catches because the metadata stamping is maintained.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "fact",
+      "contested": false,
+      "ts": 1052.8,
+      "provenance": [
+        {
+          "quote": "Like, if you do stamped, it works, and the only time it gets it wrong is if you've got a exact, like, a duplicate, like, you literally have duplicated the page, and now it's there twice with the same ID, and you haven't re-stamped. Or you've split a page, and you haven't put any kind of lineage into the previous page. Every other scenario, it obviously catches, because you've maintained the metadata stamping.",
+          "ts": 1052.8,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:04"
+      ]
+    },
+    {
+      "id": "claim:0018",
+      "type": "Claim",
+      "label": "None of the matchers are accurate enough for the goal",
+      "statement": "None of the matching approaches, to Deon's eye/reasoning, are accurate enough for what they are trying to achieve; it's just not going to work.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "opinion",
+      "contested": false,
+      "ts": 1073.1,
+      "provenance": [
+        {
+          "quote": "I mean, I like the stamp, but none of these, to my eye or to my, like, sort of reasoning, are accurate enough. If you think about what we're trying to achieve here, it's just not going to work.",
+          "ts": 1073.1,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:04"
+      ]
+    },
+    {
+      "id": "claim:0019",
+      "type": "Claim",
+      "label": "Redaction estimate: ~75% of annotations placed correctly, 25% need replacement",
+      "statement": "For redactions specifically, the best achievable outcome is roughly three quarters of annotations placed back where they are confidently correct, with about 25% needing to be replaced.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "prediction",
+      "contested": false,
+      "ts": 1083.2,
+      "provenance": [
+        {
+          "quote": "Like, the best we can possibly get is, like, three quarters of your annotations are placed back to where we're confident they are, and 25% of them you're going to need to replace.",
+          "ts": 1083.2,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:04"
+      ]
+    },
+    {
+      "id": "claim:0020",
+      "type": "Claim",
+      "label": "Rowan's work also solves duplicate detection in the sorting algorithm for Sally",
+      "statement": "Rowan's matching research incidentally solves a separate existing problem: duplicate detection in the record-sorting algorithm relevant to Sally's work.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "opinion",
+      "contested": false,
+      "ts": 1104.5,
+      "provenance": [
+        {
+          "quote": "Do you know what you've actually done now is you've solved another problem we have, which is duplicate detection in the sorting algorithm for Sally.",
+          "ts": 1104.5,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:05"
+      ]
+    },
+    {
+      "id": "claim:0021",
+      "type": "Claim",
+      "label": "Lara would be very interested, this is fascinating",
+      "statement": "Lara would be very interested in this research because it is fascinating.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "opinion",
+      "contested": false,
+      "ts": 1104.5,
+      "provenance": [
+        {
+          "quote": "And Lara would be very interested in all of this, because this is fascinating.",
+          "ts": 1104.5,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:05"
+      ]
+    },
+    {
+      "id": "claim:0022",
+      "type": "Claim",
+      "label": "This is deterministic methodology, no LLM used",
+      "statement": "The matching research is all deterministic methodology; no AI/LLM was used.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "fact",
+      "contested": false,
+      "ts": 1110.2,
+      "provenance": [
+        {
+          "quote": "Without using an LLM, because you didn't obviously use any AI. This is all deterministic methodology.",
+          "ts": 1110.2,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:05"
+      ]
+    },
+    {
+      "id": "claim:0023",
+      "type": "Claim",
+      "label": "Rowan expected better results than achieved",
+      "statement": "Rowan thought the matching approaches would perform better than they actually did.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "opinion",
+      "contested": false,
+      "ts": 1300.1,
+      "provenance": [
+        {
+          "quote": "I thought that it would do better than it did.",
+          "ts": 1300.1,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:06"
+      ]
+    },
+    {
+      "id": "claim:0024",
+      "type": "Claim",
+      "label": "Deon had high hopes for hashing but it isn't accurate enough",
+      "statement": "Deon had high hopes that solid hashing algorithms would reliably detect similar pages, but it turns out they are just not accurate enough.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "opinion",
+      "contested": false,
+      "ts": 1307.3,
+      "provenance": [
+        {
+          "quote": "I actually had high hopes for this. I thought it was going to be, like, okay, cool. Like, a solid algorithm and solid hashing or, like, those things would be able to detect the similar pages. But I guess it's just not.",
+          "ts": 1307.3,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:06"
+      ]
+    },
+    {
+      "id": "claim:0025",
+      "type": "Claim",
+      "label": "The approach hasn't been tried on real data yet",
+      "statement": "The matching approach has not yet been tried on real (non-synthetic) data.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "fact",
+      "contested": false,
+      "ts": 1321.8,
+      "provenance": [
+        {
+          "quote": "And we haven't even tried it in real data.",
+          "ts": 1321.8,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:06"
+      ]
+    },
+    {
+      "id": "claim:0026",
+      "type": "Claim",
+      "label": "Rowan's synthetic dataset is purposefully challenging",
+      "statement": "Rowan's synthetic test dataset is purposefully challenging, with pages that look almost identical except for slight footer differences.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "fact",
+      "contested": false,
+      "ts": 1336.3,
+      "provenance": [
+        {
+          "quote": "But, like, my data set is purposefully challenging. You know what I mean? Like, there's pages that look exactly the same. I have, like, just got the footer that's, like, slightly different.",
+          "ts": 1336.3,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:06"
+      ]
+    },
+    {
+      "id": "claim:0027",
+      "type": "Claim",
+      "label": "Testing on real data won't go to waste",
+      "statement": "Trying the approach as an extension of the research on real data won't go to waste.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "prediction",
+      "contested": false,
+      "ts": 1372.5,
+      "provenance": [
+        {
+          "quote": "You can try it as an extension of the research because I don't think it will go to waste.",
+          "ts": 1372.5,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:06"
+      ]
+    },
+    {
+      "id": "claim:0028",
+      "type": "Claim",
+      "label": "No margin for error given the accuracy issues",
+      "statement": "Because of the accuracy issues with the matching approaches, there is no margin for error in what they are working with.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "risk",
+      "contested": false,
+      "ts": 1387.0,
+      "provenance": [
+        {
+          "quote": "But my feeling here is obviously, like I said, like, because of the accuracy issue with what we're working with, I don't, there's just no margin for error, really.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:06"
+      ]
+    },
+    {
+      "id": "claim:0029",
+      "type": "Claim",
+      "label": "Redaction currently unavailable in Apprise viewer",
+      "statement": "Redaction is currently not available inside the Apprise viewer; it is relatively easy to implement but has not been prioritised despite being in demand and sitting in the feature backlog.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "fact",
+      "contested": false,
+      "confirmed_by_answer": true,
+      "ts": 1387.0,
+      "provenance": [
+        {
+          "quote": "Deon: So, redaction is currently not available inside the appraise viewer that we have. It is relatively easy to do, to be honest.",
+          "ts": 1387.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "Deon: But we just haven't had time to implement it, even though it's been in demand. But it's been one of those things where it's like, ah, it's in the feature backlog.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:07"
+      ]
+    },
+    {
+      "id": "claim:0030",
+      "type": "Claim",
+      "label": "New viewer's redaction would be lighter than ShareBrief's",
+      "statement": "Redaction in the current viewer would be much lighter (less processing-heavy) than the old ShareBrief viewer's redaction, mostly because technology has advanced.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "opinion",
+      "contested": false,
+      "ts": 1387.0,
+      "provenance": [
+        {
+          "quote": "Deon: I remember you guys had a viewer for ShareBrief that redaction was quite processing heavy. This one is much lighter. Mostly because of, like, technology advancing, and it's not the same sort of thing anymore.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:07"
+      ]
+    },
+    {
+      "id": "claim:0031",
+      "type": "Claim",
+      "label": "Market trending toward automated redaction",
+      "statement": "The market is gearing towards automated redaction, where the system searches and redacts automatically rather than solicitors manually redacting documents.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "prediction",
+      "contested": false,
+      "ts": 1387.0,
+      "provenance": [
+        {
+          "quote": "Deon: And also, like, the market is gearing towards automated redaction. So, you want something that you don't manually go and redact. Like, it searches, like, and it redacts for you because solicitors, like, don't really want to go and, like, have to do that.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:07"
+      ]
+    },
+    {
+      "id": "claim:0032",
+      "type": "Claim",
+      "label": "XOD format incompatible with byte-range requests",
+      "statement": "The XOD format used by the Apprise viewer is not compatible with byte-range requests; it only renders the pages currently being viewed, so the whole PDF must be loaded into browser memory to manipulate visible pages.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "fact",
+      "contested": false,
+      "ts": 1509.0,
+      "provenance": [
+        {
+          "quote": "Deon: So, with the date range filter, since you're in the appraise world, in that viewer, it's not compatible with the format that we use with the XOD because that uses byte range requests, and it only renders the pages that you're viewing, basically.",
+          "ts": 1509.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "Deon: So, we rely heavily for that solution that the entire PDF has been loaded into the memory of the browser so that it can manipulate the pages that are visible.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:08"
+      ]
+    },
+    {
+      "id": "claim:0033",
+      "type": "Claim",
+      "label": "External party said linearized PDFs support byte-range requests",
+      "statement": "The external party who called about the XOD format said the XOD is the old way of doing things, and recommended linearized PDFs to also support byte-range requests.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "fact",
+      "contested": true,
+      "ts": 1509.0,
+      "provenance": [
+        {
+          "quote": "Deon: So when we were speaking to you the other day, because they did have a call with us, they said, oh, but the XOD is the old way of doing things, which I totally understand. And they recommend linearized PDFs to also do byte range requests.",
+          "ts": 1509.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "Deon: But I think that the byte range request is just not going to be compatible. You're going to have to load the whole thing up front.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:08"
+      ]
+    },
+    {
+      "id": "claim:0034",
+      "type": "Claim",
+      "label": "Byte-range requests won't be compatible; whole PDF must load upfront",
+      "statement": "The byte-range request approach is not going to be compatible for this use case; the whole PDF will need to be loaded upfront.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "opinion",
+      "contested": false,
+      "ts": 1509.0,
+      "provenance": [
+        {
+          "quote": "Deon: But I think that the byte range request is just not going to be compatible. You're going to have to load the whole thing up front.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:08"
+      ]
+    },
+    {
+      "id": "claim:0035",
+      "type": "Claim",
+      "label": "Only Computer Electronic Records likely to reach ~1000 pages",
+      "statement": "Only the Computer Electronic Records document is likely to reach page counts near a thousand; normal documents don't usually have that many pages.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "opinion",
+      "contested": false,
+      "ts": 1509.0,
+      "provenance": [
+        {
+          "quote": "Deon: I don't think we'll reach that limit because the Computer Electronic Records is the only one that has that many pages. Normal sort of like documents don't really have that many pages, but I mean, it could be.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:08"
+      ]
+    },
+    {
+      "id": "claim:0036",
+      "type": "Claim",
+      "label": "Adam (CEO) prefers not to record certain discussions",
+      "statement": "Adam, as CEO, is very much in favour of stopping the recording for certain discussions.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "confidence": 0.9,
+      "claim_type": "fact",
+      "contested": false,
+      "ts": 1662.0,
+      "provenance": [
+        {
+          "quote": "Deon: So Adam has been, Adam as CEO is very heavy on, can we stop recording?",
+          "ts": 1662.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:09"
+      ]
+    },
+    {
+      "id": "decision:0001",
+      "type": "Decision",
+      "statement": "Bundle the insight/redaction-retention benefits as a marketing proposition, limited to sorted record sets.",
+      "decided_by": [
+        "person:deon-kuhn"
+      ],
+      "rationale": "Insights and redaction-retention benefits both only apply to sorted record sets, so bundling them together strengthens the product marketing angle.",
+      "status": "tentative",
+      "confidence_level": null,
+      "ts": 1230.5,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Much of the insights also only applies to sorted sets of records. So we can bundle it as a marketing thing.",
+          "ts": 1230.5,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:05"
+      ],
+      "label": "decision:0001"
+    },
+    {
+      "id": "decision:0002",
+      "type": "Decision",
+      "statement": "Test the matching approach on real (non-synthetic) records rather than only the synthetic dataset.",
+      "decided_by": [
+        "person:rowan-reid",
+        "person:deon-kuhn"
+      ],
+      "rationale": null,
+      "status": "made",
+      "confidence_level": null,
+      "ts": 1336.3,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "We can try it. I mean, these pages are all quite simple.",
+          "ts": 1336.3,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:06"
+      ],
+      "label": "decision:0002"
+    },
+    {
+      "id": "decision:0003",
+      "type": "Decision",
+      "label": "Implement redaction inside DocSorter at the sorting stage",
+      "statement": "Redaction should be implemented inside DocSorter at the sorting stage, since clinicians are the people best placed to perform the actual redaction, rather than as a single solution covering everything.",
+      "decided_by": [
+        "person:deon-kuhn"
+      ],
+      "rationale": "Clinicians would be the people who are best placed to do the actual redaction in the first place.",
+      "status": "tentative",
+      "confidence_level": null,
+      "ts": 1387.0,
+      "alternatives_considered": [
+        "A single unified solution attempting to solve everything at once (Chantal's original ticket approach), which was found not to work and needed to be broken up into separate solutions (redaction in DocSorter, annotations attached to a page, etc.)."
+      ],
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Deon: So, redaction, my thinking, I might have mentioned this, is also that we do redaction inside DocSorter because they're the people who, the clinicians would be the people who are best placed to do the actual redaction in the first place.",
+          "ts": 1387.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "Deon: And that's why I feel like Chantal's original ticket was trying to find something that will solve everything, but it actually can't. But you do need to break it up into separate solutions. And redaction in DocSorter is, like, one part of that.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:07"
+      ]
+    },
+    {
+      "id": "action:0001",
+      "type": "ActionItem",
+      "description": "Speak to Chantal about limiting the sorted-set-only bundling/insights offering.",
+      "owner_id": "person:deon-kuhn",
+      "co_owners": [],
+      "due_date": null,
+      "depends_on": [],
+      "status": "open",
+      "priority": null,
+      "source_quote": "But then what I'll speak to Chantal about is, like, this will, like I said, this will only be a thing that we can apply for a sorted set of records.",
+      "ts": 1230.5,
+      "is_personal_commitment": false,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "But then what I'll speak to Chantal about is, like, this will, like I said, this will only be a thing that we can apply for a sorted set of records.",
+          "ts": 1230.5,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:05"
+      ],
+      "label": "action:0001"
+    },
+    {
+      "id": "action:0002",
+      "type": "ActionItem",
+      "description": "Test the matching approach on real (non-synthetic) records.",
+      "owner_id": null,
+      "co_owners": [
+        "person:rowan-reid",
+        "person:deon-kuhn"
+      ],
+      "due_date": null,
+      "depends_on": [],
+      "status": "open",
+      "priority": null,
+      "source_quote": "We can try it. I mean, these pages are all quite simple. ... And you can try it on the records.",
+      "ts": 1336.3,
+      "is_personal_commitment": false,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "We can try it.",
+          "ts": 1336.3,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:06"
+      ],
+      "label": "action:0002"
+    },
+    {
+      "id": "action:0003",
+      "type": "ActionItem",
+      "description": "Locate the storage account containing real records for testing.",
+      "owner_id": "person:deon-kuhn",
+      "co_owners": [],
+      "due_date": null,
+      "depends_on": [],
+      "status": "open",
+      "priority": null,
+      "source_quote": "I'll find the storage account quickly. And you can try it on the records.",
+      "ts": 1372.5,
+      "is_personal_commitment": false,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I'll find the storage account quickly.",
+          "ts": 1372.5,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:06"
+      ],
+      "label": "action:0003"
+    },
+    {
+      "id": "action:0004",
+      "type": "ActionItem",
+      "label": "Research date-range filtered PDF rendering at scale in the Apprise viewer",
+      "description": "Research how to render a date-range-filtered subset of pages in the Apprise viewer, given the XOD format's incompatibility with byte-range requests, and test rendering performance at scale (e.g. against a PDF with roughly a thousand pages or more, such as the Computer Electronic Records).",
+      "owner_id": "person:rowan-reid",
+      "co_owners": [],
+      "due_date": null,
+      "depends_on": [],
+      "status": "open",
+      "priority": null,
+      "source_quote": "Deon: I do have another little bit of research I want you to do if you have time. ... So if you can do a little bit of research for me on that, just to send you to again what I've found, that would be very, very useful.",
+      "ts": 1509.0,
+      "is_personal_commitment": true,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Deon: I do have another little bit of research I want you to do if you have time.",
+          "ts": 1509.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "Rowan: I mean, I can easily generate some fat PDFs and see what happens, yeah.",
+          "ts": 1509.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "Deon: So if you can do a little bit of research for me on that, just to send you to again what I've found, that would be very, very useful.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:08"
+      ]
+    },
+    {
+      "id": "chapter:01",
+      "type": "Chapter",
+      "label": "Personal catch-up: weekend and cat-sitting",
+      "confidence": 1.0,
+      "provenance": [],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "index": 1,
+      "summary": "Rowan and Deon catch up on their weekends before the technical discussion; Deon describes a cat-sitting trip near Cardiff and discovering a cat allergy.",
+      "start_ts": 0.0,
+      "end_ts": 150.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:02",
+      "type": "Chapter",
+      "label": "Screen share: synthetic PDF test harness walkthrough",
+      "confidence": 1.0,
+      "provenance": [],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "index": 2,
+      "summary": "Rowan shares his screen and walks Deon through the synthetic PDF/records generator, the resorting tool (deletes, inserts, rearranges, splits pages), and the page-matching engine that tracks what happened to each page.",
+      "start_ts": 150.0,
+      "end_ts": 410.0,
+      "topic_ids": [],
+      "frame_ids": [
+        "visual:0004",
+        "visual:0005"
+      ],
+      "representative_frame_id": "visual:0004"
+    },
+    {
+      "id": "chapter:03",
+      "type": "Chapter",
+      "label": "Running the end-to-end matcher; delivery interruption",
+      "confidence": 1.0,
+      "provenance": [],
+      "chapter_ids": [
+        "chapter:03"
+      ],
+      "index": 3,
+      "summary": "Rowan kicks off the full end-to-end MRI133 run across all matchers. Deon is interrupted by a delivery requiring his physical presence (his partner Lewis is mentioned) and steps away briefly before returning.",
+      "start_ts": 410.0,
+      "end_ts": 800.0,
+      "topic_ids": [],
+      "frame_ids": [
+        "visual:0007",
+        "visual:0008"
+      ],
+      "representative_frame_id": "visual:0007"
+    },
+    {
+      "id": "chapter:04",
+      "type": "Chapter",
+      "label": "Reviewing matcher results and the stamped-ID approach",
+      "confidence": 1.0,
+      "provenance": [],
+      "chapter_ids": [
+        "chapter:04"
+      ],
+      "index": 4,
+      "summary": "Rowan explains the matching algorithms (exact hash, perceptual hash, text comparison, ensemble) and their precision/recall/silent-error tradeoffs. The metadata-stamped page ID approach is by far the most reliable, failing only on true duplicates or unlinked splits.",
+      "start_ts": 800.0,
+      "end_ts": 1093.0,
+      "topic_ids": [],
+      "frame_ids": [
+        "visual:0009"
+      ],
+      "representative_frame_id": "visual:0009"
+    },
+    {
+      "id": "chapter:05",
+      "type": "Chapter",
+      "label": "Implications: duplicate detection reuse and product bundling",
+      "confidence": 1.0,
+      "provenance": [],
+      "chapter_ids": [
+        "chapter:05"
+      ],
+      "index": 5,
+      "summary": "Deon realises Rowan's work also solves duplicate/blank-page detection for the record-sorting algorithm (relevant to Sally's and Chantal's work), all without an LLM. He proposes bundling insight/redaction guarantees as a marketing angle limited to sorted record sets.",
+      "start_ts": 1093.0,
+      "end_ts": 1282.0,
+      "topic_ids": [],
+      "frame_ids": [
+        "visual:0010"
+      ],
+      "representative_frame_id": "visual:0010"
+    },
+    {
+      "id": "chapter:06",
+      "type": "Chapter",
+      "label": "Reflection and proposal to test on real data",
+      "confidence": 1.0,
+      "provenance": [],
+      "chapter_ids": [
+        "chapter:06"
+      ],
+      "index": 6,
+      "summary": "Both reflect on the results being less accurate than hoped despite deterministic hashing methods. They agree to try the approach against real (not synthetic) records, with Deon offering to locate the storage account.",
+      "start_ts": 1282.0,
+      "end_ts": 1387.0,
+      "topic_ids": [],
+      "frame_ids": [
+        "visual:0012"
+      ],
+      "representative_frame_id": "visual:0012"
+    },
+    {
+      "id": "chapter:07",
+      "type": "Chapter",
+      "label": "Redaction workflow and DocSorter placement",
+      "confidence": 1.0,
+      "provenance": [],
+      "chapter_ids": [
+        "chapter:07"
+      ],
+      "index": 7,
+      "summary": "Deon explains that redaction should live in DocSorter at the sorting stage, since clinicians are best placed to redact. The current Apprise viewer lacks redaction; the market is trending toward automated redaction rather than manual solicitor workflows.",
+      "start_ts": 1387.0,
+      "end_ts": 1509.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:08",
+      "type": "Chapter",
+      "label": "New research ask: date-range filtering and PDF rendering at scale",
+      "confidence": 1.0,
+      "provenance": [],
+      "chapter_ids": [
+        "chapter:08"
+      ],
+      "index": 8,
+      "summary": "Deon asks Rowan to research how to render a date-range-filtered subset of pages in the Apprise viewer, given the XOD format's incompatibility with byte-range requests, and to test performance against very large PDFs.",
+      "start_ts": 1509.0,
+      "end_ts": 1662.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:09",
+      "type": "Chapter",
+      "label": "Wrap-up: CEO's recording preference",
+      "confidence": 1.0,
+      "provenance": [],
+      "chapter_ids": [
+        "chapter:09"
+      ],
+      "index": 9,
+      "summary": "Deon raises an off-topic point about Adam (CEO) preferring not to record certain discussions, and asks to stop recording, ending the captured portion of the meeting.",
+      "start_ts": 1662.0,
+      "end_ts": 1682.304,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "visual:0004",
+      "type": "VisualContext",
+      "label": "Screen share begins: VS Code with the annotations/mri133 PDF-matching project open",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Microsoft Teams Edit View Window Help / Now: Catch Up Mi... / PROJECTS annotations .claude .entire data _bakeoff corpus demo resorted bakeoff.html bakeoff.json README.md docs output poc data_pipelines expert-sheet-data-processing lexvision-poc / matter-000-doc-00.clean.pdf 1 of 9 / Build with Agent, AI responses may be inaccurate / Rowan Reid / Deon Kuhn",
+          "ts": 161.5,
+          "source": "vision"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "frame_path": "frame-00005.png",
+      "frame_ts": 161.5,
+      "visual_type": "app",
+      "ocr_text": "Microsoft Teams Edit View Window Help / Now: Catch Up Mi... / PROJECTS annotations .claude .entire data _bakeoff corpus demo resorted bakeoff.html bakeoff.json README.md docs output poc data_pipelines expert-sheet-data-processing lexvision-poc / matter-000-doc-00.clean.pdf 1 of 9 / Build with Agent, AI responses may be inaccurate / Rowan Reid / Deon Kuhn",
+      "description": "Rowan starts screen sharing in Microsoft Teams, showing VS Code with the 'annotations' project open in Explorer (data/corpus, .entire, mri133, CLAUDE.md, docs, output, poc) and a PDF viewer displaying matter-000-doc-00.clean.pdf (page 1 of 9) from the test corpus used for the page-matching/sorting research.",
+      "phash": "1bc9d447448416a4"
+    },
+    {
+      "id": "visual:0005",
+      "type": "VisualContext",
+      "label": "Terminal demo: running mri133 gen-corpus to generate the test document set",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Rowan.Reid@MB-CPT-LT-0021 annotations % ./mri133 gen-corpus\ngenerated 12 documents, 108 pages into data/corpus\nRowan.Reid@MB-CPT-LT-0021 annotations %\nmatter-001-doc-00.clean.pdf",
+          "ts": 309.688,
+          "source": "vision"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "frame_path": "frame-00006.png",
+      "frame_ts": 309.688,
+      "visual_type": "demo",
+      "ocr_text": "Rowan.Reid@MB-CPT-LT-0021 annotations % ./mri133 gen-corpus\ngenerated 12 documents, 108 pages into data/corpus\nRowan.Reid@MB-CPT-LT-0021 annotations %\nmatter-001-doc-00.clean.pdf",
+      "description": "A terminal window overlaid on VS Code shows the command `./mri133 gen-corpus` producing the output 'generated 12 documents, 108 pages into data/corpus' \u2014 a live demo of the tool that builds the synthetic PDF corpus used for the page-matching/sorting research.",
+      "phash": "6b696869696869e0"
+    },
+    {
+      "id": "visual:0007",
+      "type": "VisualContext",
+      "label": "VS Code Explorer showing the full annotations project structure",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Code File Edit Selection View Go Run Terminal Window Help / projects / Open Chat / Show All Commands / Open Settings / Rowan Reid / Deon Kuhn",
+          "ts": 422.875,
+          "source": "vision"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:03"
+      ],
+      "frame_path": "frame-00009.png",
+      "frame_ts": 422.875,
+      "visual_type": "app",
+      "ocr_text": "Code File Edit Selection View Go Run Terminal Window Help / projects / Open Chat / Show All Commands / Open Settings / Rowan Reid / Deon Kuhn",
+      "description": "Continued screen share of VS Code with an empty editor pane but the Explorer sidebar fully visible, listing the annotations project's top-level files and folders (.claude, .entire, data, docs, output, poc, data_pipelines, expert-sheet-data-processing, lexvision-poc, mri133, README.md, CLAUDE.md, setup.sh, clone-repos.sh) \u2014 a clear view of the project's overall layout referenced during the walkthrough.",
+      "phash": "1b03060b179414e4"
+    },
+    {
+      "id": "visual:0008",
+      "type": "VisualContext",
+      "label": "Screen share: gen-corpus and resort tool output in terminal",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Rowan.Reid@MB-CPT-LT-0021 annotations % ./mri133 gen-corpus\ngenerated 12 documents, 108 pages into data/corpus\nRowan.Reid@MB-CPT-LT-0021 annotations % ./mri133 resort\nre-sorted 1 document(s) -> data/resorted/  (originals in data/corpus/)\n\n  removed_wrong_patient  9 -> 8  a wrong-patient page is deleted (must be flagged removed, not slid to a neighbour)\n  removed_benign         9 -> 8  an ordinary page is removed\n  split                  9 -> 10  one page is split into two children (annotation duplicates; redaction abstains)\n  clone                  9 -> 11  one page is placed in several locations\n  full_repagination       9 -> 9  every page index changes at once\n  inserted_indent        9 -> 10  pages inserted with indent numbering between existing pages\n  reorder                9 -> 9  pages reordered without removal (a re-sort)\n  composed_resort        9 -> 10  a realistic re-sort: remove wrong-patient, split a page, clone a page, repaginate\n\nOpen a re-sorted PDF next to its original to see the change, e.g.:\n  open data/corpus/matter-000-doc-00.clean.pdf data/resorted/matter-000-doc-00.composed_resort.pdf\nRowan.Reid@MB-CPT-LT-0021 annotations %",
+          "ts": 512.562,
+          "source": "vision"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:03"
+      ],
+      "frame_path": "frame-00011.png",
+      "frame_ts": 512.562,
+      "visual_type": "app",
+      "ocr_text": "Rowan.Reid@MB-CPT-LT-0021 annotations % ./mri133 gen-corpus\ngenerated 12 documents, 108 pages into data/corpus\nRowan.Reid@MB-CPT-LT-0021 annotations % ./mri133 resort\nre-sorted 1 document(s) -> data/resorted/  (originals in data/corpus/)\n\n  removed_wrong_patient  9 -> 8  a wrong-patient page is deleted (must be flagged removed, not slid to a neighbour)\n  removed_benign         9 -> 8  an ordinary page is removed\n  split                  9 -> 10  one page is split into two children (annotation duplicates; redaction abstains)\n  clone                  9 -> 11  one page is placed in several locations\n  full_repagination       9 -> 9  every page index changes at once\n  inserted_indent        9 -> 10  pages inserted with indent numbering between existing pages\n  reorder                9 -> 9  pages reordered without removal (a re-sort)\n  composed_resort        9 -> 10  a realistic re-sort: remove wrong-patient, split a page, clone a page, repaginate\n\nOpen a re-sorted PDF next to its original to see the change, e.g.:\n  open data/corpus/matter-000-doc-00.clean.pdf data/resorted/matter-000-doc-00.composed_resort.pdf\nRowan.Reid@MB-CPT-LT-0021 annotations %",
+      "description": "VS Code with a PDF viewer (matter-000-doc-00.composed_resort.pdf, page 9 of 10) and an overlaid terminal running ./mri133 gen-corpus and ./mri133 resort, showing a summary table of resort operations (removed_wrong_patient, removed_benign, split, clone, full_repagination, inserted_indent, reorder, composed_resort) with page-count changes and short descriptions for each.",
+      "phash": "696b6263686869e8"
+    },
+    {
+      "id": "visual:0009",
+      "type": "VisualContext",
+      "label": "Screen share: MRI-133 bake-off results (content arm vs stamped arm)",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "open data/corpus/matter-000-doc-00.clean.pdf data/resorted/matter-000-doc-00.composed_resort.pdf\nRowan.Reid@MB-CPT-LT-0021 annotations % ./mri133 run --matchers all\n=====================================================================\nMRI-133 matching bake-off -- these two arms answer DIFFERENT questions\nreference type: ANNOTATION | 12 docs x 8 \u00a79 scenarios\n=====================================================================\n\nCONTENT ARM -- the AS-IS answer for the page-less population (nothing stamped):\n  precision/recall reported separately; silent-error and review-queue as a PAIR\n  exact_hash      P 92.9% R 89.7% abst-ok 81.2% silent 5.6% / queue 22.2%\n    worst: SPLIT 100% silent, REMOVED 33% silent, DUPLICATE 7% silent\n  perceptual      P 30.8% R 6.9% abst-ok 23.7% silent 12.5% / queue 81.9%\n    worst: INSERTED_INDENT 100% silent, REMOVED 33% silent\n  text_fingerprint P 60.0% R 25.9% abst-ok 27.7% silent 13.9% / queue 65.3%\n    worst: BLANK 100% silent, SPLIT 100% silent, REMOVED 33% silent\n  ensemble        P 70.7% R 60.9% abst-ok 59.1% silent 20.4% / queue 30.6%\n    worst: INSERTED_INDENT 100% silent, SPLIT 100% silent, REMOVED 33% silent\n  DoD reading (content-arm ensemble): POOR  [bars PROPOSED (pending decision): precision>=0.95, recall>=0.7, queue<=0.3]\n\nSTAMPED ARM -- an 'if we stamp at extraction' PROJECTION (not today's population):\n  stamped_id      P 77.8% R 96.6% abst-ok N/A silent 22.2% / queue 0.0%\n    worst: DUPLICATE 100% silent, SPLIT 100% silent\n\n(run with --by-case for the full per-scenario table)\n\nSYNTHETIC-vs-REAL delta: real pairs N/A (synthetic only).\n  ** synthetic is a LOWER BOUND on difficulty; the real-pair delta is deferred Milestone C **\n=====================================================================\n\n(machine-readable result written to data/bakeoff.json)\n(visual report with every percentage's complement written to data/bakeoff.html)\nRowan.Reid@MB-CPT-LT-0021 annotations %",
+          "ts": 946.5,
+          "source": "vision"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:04"
+      ],
+      "frame_path": "chapframe-04.png",
+      "frame_ts": 946.5,
+      "visual_type": "app",
+      "ocr_text": "open data/corpus/matter-000-doc-00.clean.pdf data/resorted/matter-000-doc-00.composed_resort.pdf\nRowan.Reid@MB-CPT-LT-0021 annotations % ./mri133 run --matchers all\n=====================================================================\nMRI-133 matching bake-off -- these two arms answer DIFFERENT questions\nreference type: ANNOTATION | 12 docs x 8 \u00a79 scenarios\n=====================================================================\n\nCONTENT ARM -- the AS-IS answer for the page-less population (nothing stamped):\n  precision/recall reported separately; silent-error and review-queue as a PAIR\n  exact_hash      P 92.9% R 89.7% abst-ok 81.2% silent 5.6% / queue 22.2%\n    worst: SPLIT 100% silent, REMOVED 33% silent, DUPLICATE 7% silent\n  perceptual      P 30.8% R 6.9% abst-ok 23.7% silent 12.5% / queue 81.9%\n    worst: INSERTED_INDENT 100% silent, REMOVED 33% silent\n  text_fingerprint P 60.0% R 25.9% abst-ok 27.7% silent 13.9% / queue 65.3%\n    worst: BLANK 100% silent, SPLIT 100% silent, REMOVED 33% silent\n  ensemble        P 70.7% R 60.9% abst-ok 59.1% silent 20.4% / queue 30.6%\n    worst: INSERTED_INDENT 100% silent, SPLIT 100% silent, REMOVED 33% silent\n  DoD reading (content-arm ensemble): POOR  [bars PROPOSED (pending decision): precision>=0.95, recall>=0.7, queue<=0.3]\n\nSTAMPED ARM -- an 'if we stamp at extraction' PROJECTION (not today's population):\n  stamped_id      P 77.8% R 96.6% abst-ok N/A silent 22.2% / queue 0.0%\n    worst: DUPLICATE 100% silent, SPLIT 100% silent\n\n(run with --by-case for the full per-scenario table)\n\nSYNTHETIC-vs-REAL delta: real pairs N/A (synthetic only).\n  ** synthetic is a LOWER BOUND on difficulty; the real-pair delta is deferred Milestone C **\n=====================================================================\n\n(machine-readable result written to data/bakeoff.json)\n(visual report with every percentage's complement written to data/bakeoff.html)\nRowan.Reid@MB-CPT-LT-0021 annotations %",
+      "description": "VS Code with PDF page viewer behind a terminal window showing the output of ./mri133 run --matchers all: a comparison of matching approaches (exact_hash, perceptual, text_fingerprint, ensemble) under a content-only arm versus a stamped_id arm, with precision/recall/abstain/silent/queue percentages per matcher and per-worst-case scenario notes, plus a stated DoD reading of POOR for the content-arm ensemble.",
+      "phash": "6b69e0cbc6c868e0"
+    },
+    {
+      "id": "visual:0010",
+      "type": "VisualContext",
+      "label": "Screen share: bakeoff.html visual results (content arm, exact_hash and perceptual)",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "master split (of all pages) exactly one bucket; these add up to 100%\n72.2%   Correct 72.2% (624/864)  Silent error (confident & WRONG) 5.6% (48/864)  Over-abstain (needless queue) 18.1% (156/864)\nRecall 89.7% of actionable pages: of pages where a confident answer was wanted, how many did it get right?\n89.7%   Found (correct) 89.7% (624/696)  Missed (wrong or needlessly queued) 10.3% (72/696)\nAbstention judgement 81.2% of all pages: of the pages it hands to a human vs handles itself\n77.8%  Sent to queue 22.2% (192/864)  Right to abstain 81.2% (156/192)  Needless (over-abstain) 18.8% (36/192)\n\npages whose content did not change and simply moved: ordinary, reordered, and inserted pages, and even form letters (their fingerprints differ).\nsplitting: a cut page's halves are physically new content, so it wrongly declares the page gone. It also cannot confirm a clone, so it safely queues it.\ncontent is untouched, blind the moment content is physically altered.\n\nCONTENT ARM   n = 864 page-outcomes\nprint of what the page looks like, not its exact bytes. A small visual change (scanner noise, a slight skew) barely moves the fingerprint, how visually alike two pages are.\n\nmaster split (of all pages)\n62.5%  Correct 5.6% (48/864)  Silent error (confident & WRONG) 12.5% (108/864)  Over-abstain (needless queue) 62.5% (540/864)  correct to queue 19.4% (168/864)\nRecall 6.9% of actionable pages: of pages where a confident answer was wanted, how many did it get right?\n6.9%   Found (correct) 6.9% (48/696) ... 93.1%",
+          "ts": 1098.75,
+          "source": "vision"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:05"
+      ],
+      "frame_path": "frame-00012.png",
+      "frame_ts": 1098.75,
+      "visual_type": "app",
+      "ocr_text": "master split (of all pages) exactly one bucket; these add up to 100%\n72.2%   Correct 72.2% (624/864)  Silent error (confident & WRONG) 5.6% (48/864)  Over-abstain (needless queue) 18.1% (156/864)\nRecall 89.7% of actionable pages: of pages where a confident answer was wanted, how many did it get right?\n89.7%   Found (correct) 89.7% (624/696)  Missed (wrong or needlessly queued) 10.3% (72/696)\nAbstention judgement 81.2% of all pages: of the pages it hands to a human vs handles itself\n77.8%  Sent to queue 22.2% (192/864)  Right to abstain 81.2% (156/192)  Needless (over-abstain) 18.8% (36/192)\n\npages whose content did not change and simply moved: ordinary, reordered, and inserted pages, and even form letters (their fingerprints differ).\nsplitting: a cut page's halves are physically new content, so it wrongly declares the page gone. It also cannot confirm a clone, so it safely queues it.\ncontent is untouched, blind the moment content is physically altered.\n\nCONTENT ARM   n = 864 page-outcomes\nprint of what the page looks like, not its exact bytes. A small visual change (scanner noise, a slight skew) barely moves the fingerprint, how visually alike two pages are.\n\nmaster split (of all pages)\n62.5%  Correct 5.6% (48/864)  Silent error (confident & WRONG) 12.5% (108/864)  Over-abstain (needless queue) 62.5% (540/864)  correct to queue 19.4% (168/864)\nRecall 6.9% of actionable pages: of pages where a confident answer was wanted, how many did it get right?\n6.9%   Found (correct) 6.9% (48/696) ... 93.1%",
+      "description": "Browser-rendered HTML report (bakeoff.html) with bar charts breaking down precision, recall, and abstention judgement for the exact_hash and perceptual matchers within the content arm, plus explanatory notes on why perceptual hashing fails on split pages (content is physically altered) and succeeds on moved/reordered pages (fingerprint unchanged).",
+      "phash": "b3b9b0b3d292d9e0"
+    },
+    {
+      "id": "visual:0012",
+      "type": "VisualContext",
+      "label": "Talking heads: Rowan Reid and Deon Kuhn discussing results",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Rowan Reid   Deon Kuhn",
+          "ts": 1282.625,
+          "source": "vision"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:06"
+      ],
+      "frame_path": "frame-00014.png",
+      "frame_ts": 1282.625,
+      "visual_type": "talking_head",
+      "ocr_text": "Rowan Reid   Deon Kuhn",
+      "description": "Split-screen webcam view of Rowan Reid and Deon Kuhn talking after the screen share of the bake-off results, likely discussing the poor content-arm recall and next steps.",
+      "phash": "008c9c3233262450"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-shown-0004",
+      "type": "SHOWN_DURING",
+      "source": "visual:0004",
+      "target": "chapter:02",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "",
+          "ts": 161.5,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "id": "e-shown-0005",
+      "type": "SHOWN_DURING",
+      "source": "visual:0005",
+      "target": "chapter:02",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "",
+          "ts": 309.688,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "id": "e-shown-0007",
+      "type": "SHOWN_DURING",
+      "source": "visual:0007",
+      "target": "chapter:03",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "",
+          "ts": 422.875,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "id": "e-shown-0008",
+      "type": "SHOWN_DURING",
+      "source": "visual:0008",
+      "target": "chapter:03",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "",
+          "ts": 512.562,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "id": "e-shown-0009",
+      "type": "SHOWN_DURING",
+      "source": "visual:0009",
+      "target": "chapter:04",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "",
+          "ts": 946.5,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "id": "e-shown-0010",
+      "type": "SHOWN_DURING",
+      "source": "visual:0010",
+      "target": "chapter:05",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "",
+          "ts": 1098.75,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "id": "e-shown-0012",
+      "type": "SHOWN_DURING",
+      "source": "visual:0012",
+      "target": "chapter:06",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "",
+          "ts": 1282.625,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "type": "SPEAKS_ABOUT",
+      "source": "person:deon-kuhn",
+      "target": "topic:cat-sitting-weekend",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "We were house-sitting in an area just outside of Cardiff. So we're actually cat-sitting.",
+          "ts": "L12-13",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-speaks_about-0007"
+    },
+    {
+      "type": "SPEAKS_ABOUT",
+      "source": "person:rowan-reid",
+      "target": "topic:cat-sitting-weekend",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Lynn and I did house-sitting for a while. And one day we house-sat a house with seven cats.",
+          "ts": "L23-24",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-speaks_about-0008"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0001",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "And it was during that house-sitting that we both discovered that we are a little bit allergic to cats. And Lynn quite a lot allergic to cats.",
+          "ts": "L26-27",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asserted-0009"
+    },
+    {
+      "type": "ASKED",
+      "source": "person:rowan-reid",
+      "target": "question:0001",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Is that when you discovered it?",
+          "ts": "L28",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asked-0010"
+    },
+    {
+      "type": "ADDRESSED_TO",
+      "source": "question:0001",
+      "target": "person:deon-kuhn",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Is that when you discovered it?",
+          "ts": "L28",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-addressed_to-0011"
+    },
+    {
+      "type": "ANSWERED",
+      "source": "person:deon-kuhn",
+      "target": "question:0001",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Yeah, that's when we discovered it.",
+          "ts": "L29",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-answered-0012"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0002",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Yeah, that's when we discovered it.",
+          "ts": "L29",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asserted-0013"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0003",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "No, I tried to, as Lewis said, I sort of maybe loved the cat too much this weekend. And he ended up scratching me quite a bit.",
+          "ts": "L43-44",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asserted-0014"
+    },
+    {
+      "type": "MENTIONED_BY",
+      "source": "person:lewis",
+      "target": "person:deon-kuhn",
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "quote": "as Lewis said, I sort of maybe loved the cat too much this weekend",
+          "ts": "L43",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-mentioned_by-0015"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "claim:0001",
+      "target": "chapter:01",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "And it was during that house-sitting that we both discovered that we are a little bit allergic to cats.",
+          "ts": "L26",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0016"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "claim:0002",
+      "target": "chapter:01",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Yeah, that's when we discovered it.",
+          "ts": "L29",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0017"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "claim:0003",
+      "target": "chapter:01",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "And he ended up scratching me quite a bit.",
+          "ts": "L44",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0018"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "question:0001",
+      "target": "chapter:01",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Is that when you discovered it?",
+          "ts": "L28",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0019"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:cat-sitting-weekend",
+      "target": "claim:0001",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "we both discovered that we are a little bit allergic to cats",
+          "ts": "L26",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0020"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:cat-sitting-weekend",
+      "target": "claim:0002",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Yeah, that's when we discovered it.",
+          "ts": "L29",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0021"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:cat-sitting-weekend",
+      "target": "claim:0003",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "And he ended up scratching me quite a bit.",
+          "ts": "L44",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0022"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:cat-sitting-weekend",
+      "target": "question:0001",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Is that when you discovered it?",
+          "ts": "L28",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0023"
+    },
+    {
+      "type": "SPEAKS_ABOUT",
+      "source": "person:rowan-reid",
+      "target": "topic:pdf-synthetic-test-harness",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "So basically, I generate PDFs, then I resort them.",
+          "ts": "L68",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-speaks_about-0024"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0004",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So basically, I generate PDFs, then I resort them. So I've got another command that does some resorting, which does a bunch of different things.",
+          "ts": "L68-69",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asserted-0025"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0005",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "And then I've got a matching engine, which uses different styles of matching to try and figure out what happened to each page.",
+          "ts": "L81",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asserted-0026"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0006",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Once you know that you've got the page, the right page, it manages to apply them correctly.",
+          "ts": "L86",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asserted-0027"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0007",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "As a quick note, when we ingest, obviously, the annotations, because they're in that format, the XFDF or whatever, we do, like, use the engine of Apprise to apply them to the pages.",
+          "ts": "L88",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asserted-0028"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0008",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "when we get into the matching, the matcher that matches on hashing the content will be able to determine that these are not the same page. But then I use prehash as another matcher... It's been like, oh, these still look like the same page. But then it doesn't pick up little tiny things like that.",
+          "ts": "L109-113",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asserted-0029"
+    },
+    {
+      "type": "REFERENCES",
+      "source": "claim:0006",
+      "target": "artifact:apprise-viewer",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "I then have used the Apprise Viewer to, like, move annotations around or move redactions around just to kind of see if that works.",
+          "ts": "L84",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-references-0030"
+    },
+    {
+      "type": "REFERENCES",
+      "source": "claim:0007",
+      "target": "artifact:apprise-viewer",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "we do, like, use the engine of Apprise to apply them to the pages",
+          "ts": "L88",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-references-0031"
+    },
+    {
+      "type": "MENTIONED_BY",
+      "source": "artifact:apprise-viewer",
+      "target": "person:rowan-reid",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "I then have used the Apprise Viewer to, like, move annotations around or move redactions around",
+          "ts": "L84",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-mentioned_by-0032"
+    },
+    {
+      "type": "MENTIONED_BY",
+      "source": "artifact:apprise-viewer",
+      "target": "person:deon-kuhn",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "we do, like, use the engine of Apprise to apply them to the pages",
+          "ts": "L88",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-mentioned_by-0033"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "claim:0004",
+      "target": "chapter:02",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So basically, I generate PDFs, then I resort them.",
+          "ts": "L68",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0034"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "claim:0005",
+      "target": "chapter:02",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "And then I've got a matching engine, which uses different styles of matching to try and figure out what happened to each page.",
+          "ts": "L81",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0035"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "claim:0006",
+      "target": "chapter:02",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Once you know that you've got the page, the right page, it manages to apply them correctly.",
+          "ts": "L86",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0036"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "claim:0007",
+      "target": "chapter:02",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "we do, like, use the engine of Apprise to apply them to the pages",
+          "ts": "L88",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0037"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "claim:0008",
+      "target": "chapter:02",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "the matcher that matches on hashing the content will be able to determine that these are not the same page. But then I use prehash as another matcher... it doesn't pick up little tiny things like that.",
+          "ts": "L109-113",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0038"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:pdf-synthetic-test-harness",
+      "target": "claim:0004",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So basically, I generate PDFs, then I resort them.",
+          "ts": "L68",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0039"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:pdf-synthetic-test-harness",
+      "target": "claim:0005",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "And then I've got a matching engine, which uses different styles of matching to try and figure out what happened to each page.",
+          "ts": "L81",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0040"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:pdf-synthetic-test-harness",
+      "target": "claim:0006",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Once you know that you've got the page, the right page, it manages to apply them correctly.",
+          "ts": "L86",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0041"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:pdf-synthetic-test-harness",
+      "target": "claim:0007",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "we do, like, use the engine of Apprise to apply them to the pages",
+          "ts": "L88",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0042"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:pdf-synthetic-test-harness",
+      "target": "claim:0008",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "it doesn't pick up little tiny things like that",
+          "ts": "L113",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0043"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0009",
+      "confidence": 0.5,
+      "provenance": [
+        {
+          "quote": "So what I've created here, you'll just see all of these PDFs appeared. So I've just kind of created, let me open it up. So, for example, this is the PDF. You can see there's a clean and degraded version of every PDF.",
+          "ts": "L93-96",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asserted-0044"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "claim:0009",
+      "target": "chapter:02",
+      "confidence": 0.5,
+      "provenance": [
+        {
+          "quote": "So what I've created here, you'll just see all of these PDFs appeared.",
+          "ts": "L93",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0045"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:pdf-synthetic-test-harness",
+      "target": "claim:0009",
+      "confidence": 0.5,
+      "provenance": [
+        {
+          "quote": "So what I've created here, you'll just see all of these PDFs appeared.",
+          "ts": "L93",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0046"
+    },
+    {
+      "type": "REFERENCES",
+      "source": "chapter:02",
+      "target": "artifact:annotations-project",
+      "confidence": 0.5,
+      "provenance": [
+        {
+          "quote": "Okay, you should see a terminal and a Visual Studio Code.",
+          "ts": "L60",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-references-0047"
+    },
+    {
+      "type": "SUBTOPIC_OF",
+      "source": "topic:mri133-end-to-end-run",
+      "target": "topic:pdf-synthetic-test-harness",
+      "confidence": 0.75,
+      "provenance": [
+        {
+          "quote": "But then what I've got is a full end-to-end. So, if I go MRI133, this actually runs it end-to-end and runs each matcher.",
+          "ts": "L148-149",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-subtopic_of-0048"
+    },
+    {
+      "type": "SPEAKS_ABOUT",
+      "source": "person:rowan-reid",
+      "target": "topic:mri133-end-to-end-run",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "But then what I've got is a full end-to-end. So, if I go MRI133, this actually runs it end-to-end and runs each matcher.",
+          "ts": "L148-149",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-speaks_about-0049"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0010",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "But then what I've got is a full end-to-end. So, if I go MRI133, this actually runs it end-to-end and runs each matcher.",
+          "ts": "L148-149",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asserted-0050"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "claim:0010",
+      "target": "chapter:03",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So, if I go MRI133, this actually runs it end-to-end and runs each matcher.",
+          "ts": "L149",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0051"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:mri133-end-to-end-run",
+      "target": "claim:0010",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So, if I go MRI133, this actually runs it end-to-end and runs each matcher.",
+          "ts": "L149",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0052"
+    },
+    {
+      "type": "REFERENCES",
+      "source": "claim:0010",
+      "target": "artifact:mri133",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So, if I go MRI133, this actually runs it end-to-end and runs each matcher.",
+          "ts": "L149",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-references-0053"
+    },
+    {
+      "type": "MENTIONED_BY",
+      "source": "artifact:mri133",
+      "target": "person:rowan-reid",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So, if I go MRI133, this actually runs it end-to-end and runs each matcher.",
+          "ts": "L149",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-mentioned_by-0054"
+    },
+    {
+      "type": "REFERENCES",
+      "source": "chapter:03",
+      "target": "artifact:mri133",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "So, if I go MRI133, this actually runs it end-to-end and runs each matcher.",
+          "ts": "L149",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-references-0055"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0011",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Rowan, can I go get the delivery quick? Sorry. Because they need to see my face. It's not a one that they can pick up.",
+          "ts": "L165-168",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asserted-0056"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "claim:0011",
+      "target": "chapter:03",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Rowan, can I go get the delivery quick? Sorry.",
+          "ts": "L165-166",
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0057"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0012",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I did that stamp, and that survived at least my method of inserting new pages and whatever. And so that obviously was naturally the strongest way of identifying the original.",
+          "ts": "L215-216",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-asserted-0058"
+    },
+    {
+      "type": "REFERENCES",
+      "source": "claim:0012",
+      "target": "artifact:pico-pdf",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "I applied a metadata right into the PDF using Pico PDF to get stamped a unique ID into the page.",
+          "ts": "L211",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-references-0059"
+    },
+    {
+      "type": "SPEAKS_ABOUT",
+      "source": "person:rowan-reid",
+      "target": "topic:stamped-id-approach",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "And I also tried what I've called stamped.",
+          "ts": "L210",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-speaks_about-0060"
+    },
+    {
+      "type": "RAISED",
+      "source": "person:deon-kuhn",
+      "target": "topic:stamped-id-approach",
+      "confidence": 0.75,
+      "provenance": [
+        {
+          "quote": "I kind of like that approach. I was thinking about something a while back, like an invisible little thing that we can use.",
+          "ts": "L212-213",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-raised-0061"
+    },
+    {
+      "type": "SPEAKS_ABOUT",
+      "source": "person:rowan-reid",
+      "target": "topic:matching-algorithm-comparison",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So these are my different matching algorithms.",
+          "ts": "L219",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-speaks_about-0062"
+    },
+    {
+      "type": "SUBTOPIC_OF",
+      "source": "topic:exact-hash-matching",
+      "target": "topic:matching-algorithm-comparison",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So exact hash is just a char hash of the page.",
+          "ts": "L220",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-subtopic_of-0063"
+    },
+    {
+      "type": "SUBTOPIC_OF",
+      "source": "topic:perceptual-hash-matching",
+      "target": "topic:matching-algorithm-comparison",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Perceptual was a P hash, so basically like a visual-based hash of the page.",
+          "ts": "L221",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-subtopic_of-0064"
+    },
+    {
+      "type": "SUBTOPIC_OF",
+      "source": "topic:text-fingerprint-matching",
+      "target": "topic:matching-algorithm-comparison",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Text for the print is just like a text comparison. How close is the text on the pages?",
+          "ts": "L224-225",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-subtopic_of-0065"
+    },
+    {
+      "type": "SUBTOPIC_OF",
+      "source": "topic:ensemble-matching",
+      "target": "topic:matching-algorithm-comparison",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "And then Ensemble was just like a combination of them trying to get them all to work together and fill in for their weaknesses.",
+          "ts": "L226",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-subtopic_of-0066"
+    },
+    {
+      "type": "SUBTOPIC_OF",
+      "source": "topic:stamped-id-approach",
+      "target": "topic:matching-algorithm-comparison",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "And I also tried what I've called stamped.",
+          "ts": "L210",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-subtopic_of-0067"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0013",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Of those that it was confident about, it got 92.9% right, which is good, right?",
+          "ts": "L232",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-asserted-0068"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "claim:0013",
+      "target": "topic:exact-hash-matching",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Of those that it was confident about, it got 92.9% right",
+          "ts": "L232",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-relates_to-0069"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0014",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "But that only works for things that maybe have text. Or clean-looking things, yeah.",
+          "ts": "L234-236",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-asserted-0070"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "claim:0014",
+      "target": "topic:exact-hash-matching",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "But that only works for things that maybe have text.",
+          "ts": "L234",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-relates_to-0071"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0015",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So actually, if a page has been split, it basically thinks the page is gone because there's nothing that's, those two pages don't hash.",
+          "ts": "L238-239",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-asserted-0072"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "claim:0015",
+      "target": "topic:exact-hash-matching",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So anyway, it's really bad at split.",
+          "ts": "L238",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-relates_to-0073"
+    },
+    {
+      "type": "ASKED",
+      "source": "person:rowan-reid",
+      "target": "question:0002",
+      "confidence": 0.75,
+      "provenance": [
+        {
+          "quote": "How close is the text on the pages?",
+          "ts": "L225",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-asked-0074"
+    },
+    {
+      "type": "ADDRESSED_TO",
+      "source": "question:0002",
+      "target": "topic:text-fingerprint-matching",
+      "confidence": 0.75,
+      "provenance": [
+        {
+          "quote": "Text for the print is just like a text comparison. How close is the text on the pages?",
+          "ts": "L224-225",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-addressed_to-0075"
+    },
+    {
+      "type": "ILLUSTRATES",
+      "source": "artifact:bakeoff-html",
+      "target": "topic:matching-algorithm-comparison",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "I'll bring over the pretty HTML version of it now.",
+          "ts": "L241",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-illustrates-0076"
+    },
+    {
+      "type": "SHOWN_DURING",
+      "source": "artifact:bakeoff-html",
+      "target": "chapter:04",
+      "confidence": 0.8,
+      "provenance": [
+        {
+          "quote": "I'll just bring up the HTML.",
+          "ts": "L218",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-shown_during-0077"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0016",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "The conclusion is that if we go stamped, like, the stamped route is by far and above, like, it gets rid of all the crazy noise and trying to figure out, like, how to do the right matching.",
+          "ts": "L247",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-asserted-0078"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "claim:0016",
+      "target": "topic:stamped-id-approach",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "the stamped route is by far and above",
+          "ts": "L247",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-relates_to-0079"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0017",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "If you do stamped, it works, and the only time it gets it wrong is if you've got a exact, like, a duplicate ... Or you've split a page, and you haven't put any kind of lineage into the previous page.",
+          "ts": "L248-249",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-asserted-0080"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "claim:0017",
+      "target": "topic:stamped-id-approach",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Every other scenario, it obviously catches, because you've maintained the metadata stamping.",
+          "ts": "L250",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-relates_to-0081"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0018",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I mean, I like the stamp, but none of these, to my eye or to my, like, sort of reasoning, are accurate enough.",
+          "ts": "L252-253",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-asserted-0082"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "claim:0018",
+      "target": "topic:matching-algorithm-comparison",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "none of these ... are accurate enough. If you think about what we're trying to achieve here, it's just not going to work.",
+          "ts": "L252-253",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-relates_to-0083"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0019",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "the best we can possibly get is, like, three quarters of your annotations are placed back to where we're confident they are, and 25% of them you're going to need to replace.",
+          "ts": "L255",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-asserted-0084"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0020",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Do you know what you've actually done now is you've solved another problem we have, which is duplicate detection in the sorting algorithm for Sally.",
+          "ts": "L257",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-asserted-0085"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "claim:0020",
+      "target": "topic:duplicate-detection-reuse",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "you've solved another problem we have, which is duplicate detection in the sorting algorithm for Sally",
+          "ts": "L257",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-relates_to-0086"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0021",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "And Lara would be very interested in all of this, because this is fascinating.",
+          "ts": "L259",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-asserted-0088"
+    },
+    {
+      "type": "MENTIONED_BY",
+      "source": "person:lara",
+      "target": "person:deon-kuhn",
+      "confidence": 0.8,
+      "provenance": [
+        {
+          "quote": "And Lara would be very interested in all of this, because this is fascinating.",
+          "ts": "L259",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-mentioned_by-0089"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0022",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Without using an LLM, because you didn't obviously use any AI. This is all deterministic methodology.",
+          "ts": "L260-261",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-asserted-0090"
+    },
+    {
+      "type": "DECIDED",
+      "source": "person:deon-kuhn",
+      "target": "decision:0001",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "we, from a product point of view, tell the client that we are only able to retain redaction annotations if we sorted the records ... So we can bundle it as a marketing thing.",
+          "ts": "L263-264,283",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-decided-0091"
+    },
+    {
+      "type": "SPEAKS_ABOUT",
+      "source": "person:deon-kuhn",
+      "target": "topic:product-bundling-strategy",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "this will only be a thing that we can apply for a sorted set of records. Much of the insights also only applies to sorted sets of records. So we can bundle it as a marketing thing.",
+          "ts": "L281-283",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-speaks_about-0092"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "decision:0001",
+      "target": "topic:product-bundling-strategy",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Well, insights only works on things we sorted. And along with that, you get all these other benefits.",
+          "ts": "L285-286",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-relates_to-0093"
+    },
+    {
+      "type": "RAISED",
+      "source": "person:deon-kuhn",
+      "target": "action:0001",
+      "confidence": 0.8,
+      "provenance": [
+        {
+          "quote": "what I'll speak to Chantal about is, like, this will, like I said, this will only be a thing that we can apply for a sorted set of records.",
+          "ts": "L281",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-raised-0094"
+    },
+    {
+      "type": "ADDRESSED_TO",
+      "source": "action:0001",
+      "target": "person:chantal",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "what I'll speak to Chantal about",
+          "ts": "L281",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-addressed_to-0095"
+    },
+    {
+      "type": "ASKED",
+      "source": "person:deon-kuhn",
+      "target": "question:0003",
+      "confidence": 0.8,
+      "provenance": [
+        {
+          "quote": "Remember what I told you?",
+          "ts": "L268",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-asked-0096"
+    },
+    {
+      "type": "ANSWERED",
+      "source": "person:rowan-reid",
+      "target": "question:0003",
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "quote": "Yeah, yeah. You need something that, like, yeah, validates that. And it doesn't.",
+          "ts": "L270-272",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-answered-0097"
+    },
+    {
+      "type": "ASKED",
+      "source": "person:deon-kuhn",
+      "target": "question:0004",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "How do you feel about all of this?",
+          "ts": "L290",
+          "source": "chapter:06"
+        }
+      ],
+      "id": "e-asked-0098"
+    },
+    {
+      "type": "ANSWERED",
+      "source": "person:rowan-reid",
+      "target": "question:0004",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Yeah, it was very interesting. Very exciting.",
+          "ts": "L291-292",
+          "source": "chapter:06"
+        }
+      ],
+      "id": "e-answered-0099"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0023",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "I thought that it would do better than it did.",
+          "ts": "L296",
+          "source": "chapter:06"
+        }
+      ],
+      "id": "e-asserted-0100"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0024",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "I actually had high hopes for this. I thought it was going to be, like, okay, cool. Like, a solid algorithm and solid hashing ... would be able to detect the similar pages. But I guess it's just not.",
+          "ts": "L297-301",
+          "source": "chapter:06"
+        }
+      ],
+      "id": "e-asserted-0101"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0025",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "And we haven't even tried it in real data.",
+          "ts": "L302",
+          "source": "chapter:06"
+        }
+      ],
+      "id": "e-asserted-0102"
+    },
+    {
+      "type": "SPEAKS_ABOUT",
+      "source": "person:deon-kuhn",
+      "target": "topic:real-data-testing",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "And we haven't even tried it in real data.",
+          "ts": "L302",
+          "source": "chapter:06"
+        }
+      ],
+      "id": "e-speaks_about-0103"
+    },
+    {
+      "type": "DECIDED",
+      "source": "person:deon-kuhn",
+      "target": "decision:0002",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "You can try it as an extension of the research because I don't think it will go to waste. I'll find the storage account quickly. And you can try it on the records.",
+          "ts": "L316-318",
+          "source": "chapter:06"
+        }
+      ],
+      "id": "e-decided-0104"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "decision:0002",
+      "target": "topic:real-data-testing",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "We can try it.",
+          "ts": "L306",
+          "source": "chapter:06"
+        }
+      ],
+      "id": "e-relates_to-0105"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0026",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "my data set is purposefully challenging. ... there's pages that look exactly the same. I have, like, just got the footer that's, like, slightly different.",
+          "ts": "L308-311",
+          "source": "chapter:06"
+        }
+      ],
+      "id": "e-asserted-0106"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0027",
+      "confidence": 0.8,
+      "provenance": [
+        {
+          "quote": "You can try it as an extension of the research because I don't think it will go to waste.",
+          "ts": "L316",
+          "source": "chapter:06"
+        }
+      ],
+      "id": "e-asserted-0107"
+    },
+    {
+      "type": "RAISED",
+      "source": "person:deon-kuhn",
+      "target": "action:0002",
+      "confidence": 0.8,
+      "provenance": [
+        {
+          "quote": "I mean, we can. ... And you can try it on the records.",
+          "ts": "L305-318",
+          "source": "chapter:06"
+        }
+      ],
+      "id": "e-raised-0108"
+    },
+    {
+      "type": "OWNS",
+      "source": "person:rowan-reid",
+      "target": "action:0002",
+      "confidence": 0.75,
+      "provenance": [
+        {
+          "quote": "We can try it.",
+          "ts": "L306",
+          "source": "chapter:06"
+        }
+      ],
+      "id": "e-owns-0109"
+    },
+    {
+      "type": "RAISED",
+      "source": "person:deon-kuhn",
+      "target": "action:0003",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "I'll find the storage account quickly.",
+          "ts": "L317",
+          "source": "chapter:06"
+        }
+      ],
+      "id": "e-raised-0110"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0028",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "because of the accuracy issue with what we're working with, I don't, there's just no margin for error, really.",
+          "ts": "L320",
+          "source": "chapter:06"
+        }
+      ],
+      "id": "e-asserted-0111"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "topic:matching-algorithm-comparison",
+      "target": "chapter:04",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "So these are my different matching algorithms.",
+          "ts": "L219",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-occurs_in-0112"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "topic:exact-hash-matching",
+      "target": "chapter:04",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "So exact hash is just a char hash of the page.",
+          "ts": "L220",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-occurs_in-0113"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "topic:perceptual-hash-matching",
+      "target": "chapter:04",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Perceptual was a P hash",
+          "ts": "L221",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-occurs_in-0114"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "topic:text-fingerprint-matching",
+      "target": "chapter:04",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "Text for the print is just like a text comparison.",
+          "ts": "L224",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-occurs_in-0115"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "topic:ensemble-matching",
+      "target": "chapter:04",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "And then Ensemble was just like a combination of them",
+          "ts": "L226",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-occurs_in-0116"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "topic:stamped-id-approach",
+      "target": "chapter:04",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "And I also tried what I've called stamped.",
+          "ts": "L210",
+          "source": "chapter:04"
+        }
+      ],
+      "id": "e-occurs_in-0117"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "topic:duplicate-detection-reuse",
+      "target": "chapter:05",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "duplicate detection in the sorting algorithm for Sally",
+          "ts": "L257",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-occurs_in-0118"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "topic:product-bundling-strategy",
+      "target": "chapter:05",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "So we can bundle it as a marketing thing.",
+          "ts": "L283",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-occurs_in-0119"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "topic:real-data-testing",
+      "target": "chapter:06",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "And we haven't even tried it in real data.",
+          "ts": "L302",
+          "source": "chapter:06"
+        }
+      ],
+      "id": "e-occurs_in-0120"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "decision:0001",
+      "target": "chapter:05",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "So we can bundle it as a marketing thing.",
+          "ts": "L283",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-occurs_in-0121"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "decision:0002",
+      "target": "chapter:06",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "You can try it as an extension of the research",
+          "ts": "L316",
+          "source": "chapter:06"
+        }
+      ],
+      "id": "e-occurs_in-0122"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "action:0001",
+      "target": "chapter:05",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "what I'll speak to Chantal about",
+          "ts": "L281",
+          "source": "chapter:05"
+        }
+      ],
+      "id": "e-occurs_in-0123"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "action:0002",
+      "target": "chapter:06",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "And you can try it on the records.",
+          "ts": "L318",
+          "source": "chapter:06"
+        }
+      ],
+      "id": "e-occurs_in-0124"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "action:0003",
+      "target": "chapter:06",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "I'll find the storage account quickly.",
+          "ts": "L317",
+          "source": "chapter:06"
+        }
+      ],
+      "id": "e-occurs_in-0125"
+    },
+    {
+      "type": "DECIDED",
+      "source": "person:deon-kuhn",
+      "target": "decision:0003",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So, redaction, my thinking, I might have mentioned this, is also that we do redaction inside DocSorter because they're the people who, the clinicians would be the people who are best placed to do the actual redaction in the first place.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-decided-0126"
+    },
+    {
+      "type": "REFERENCES",
+      "source": "decision:0003",
+      "target": "artifact:docsorter",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So, when, at the sorting stage, we do that.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-references-0127"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:redaction",
+      "target": "decision:0003",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So, redaction, my thinking, I might have mentioned this, is also that we do redaction inside DocSorter because they're the people who, the clinicians would be the people who are best placed to do the actual redaction in the first place.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0128"
+    },
+    {
+      "type": "MENTIONED_BY",
+      "source": "person:chantal",
+      "target": "person:deon-kuhn",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "And that's why I feel like Chantal's original ticket was trying to find something that will solve everything, but it actually can't.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-mentioned_by-0129"
+    },
+    {
+      "type": "ASKED",
+      "source": "person:rowan-reid",
+      "target": "question:0005",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So, would, like, solicitors and them be able to still redact when they get, by the time the docs get to them, or no?",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asked-0130"
+    },
+    {
+      "type": "ADDRESSED_TO",
+      "source": "question:0005",
+      "target": "person:deon-kuhn",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "So, would, like, solicitors and them be able to still redact when they get, by the time the docs get to them, or no?",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-addressed_to-0131"
+    },
+    {
+      "type": "ANSWERED",
+      "source": "person:deon-kuhn",
+      "target": "question:0005",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So, redaction is currently not available inside the appraise viewer that we have.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-answered-0132"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0029",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So, redaction is currently not available inside the appraise viewer that we have.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asserted-0133"
+    },
+    {
+      "type": "REFERENCES",
+      "source": "claim:0029",
+      "target": "artifact:apprise-viewer",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So, redaction is currently not available inside the appraise viewer that we have.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-references-0134"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0030",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I remember you guys had a viewer for ShareBrief that redaction was quite processing heavy. This one is much lighter.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asserted-0135"
+    },
+    {
+      "type": "REFERENCES",
+      "source": "claim:0030",
+      "target": "artifact:sharebrief-viewer",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I remember you guys had a viewer for ShareBrief that redaction was quite processing heavy.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-references-0136"
+    },
+    {
+      "type": "REFERENCES",
+      "source": "claim:0030",
+      "target": "artifact:apprise-viewer",
+      "confidence": 0.8,
+      "provenance": [
+        {
+          "quote": "This one is much lighter.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-references-0137"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0031",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "And also, like, the market is gearing towards automated redaction.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asserted-0138"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:redaction",
+      "target": "claim:0029",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So, redaction is currently not available inside the appraise viewer that we have.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0139"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:redaction",
+      "target": "claim:0030",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "This one is much lighter.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0140"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:redaction",
+      "target": "claim:0031",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "And also, like, the market is gearing towards automated redaction.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0141"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:redaction",
+      "target": "question:0005",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So, would, like, solicitors and them be able to still redact when they get, by the time the docs get to them, or no?",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0142"
+    },
+    {
+      "type": "SPEAKS_ABOUT",
+      "source": "person:deon-kuhn",
+      "target": "topic:redaction",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So, redaction, my thinking, I might have mentioned this, is also that we do redaction inside DocSorter because they're the people who, the clinicians would be the people who are best placed to do the actual redaction in the first place.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-speaks_about-0143"
+    },
+    {
+      "type": "SPEAKS_ABOUT",
+      "source": "person:rowan-reid",
+      "target": "topic:redaction",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "So, would, like, solicitors and them be able to still redact when they get, by the time the docs get to them, or no?",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-speaks_about-0144"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "decision:0003",
+      "target": "chapter:07",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So, redaction, my thinking, I might have mentioned this, is also that we do redaction inside DocSorter because they're the people who, the clinicians would be the people who are best placed to do the actual redaction in the first place.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0145"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "question:0005",
+      "target": "chapter:07",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So, would, like, solicitors and them be able to still redact when they get, by the time the docs get to them, or no?",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0146"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "claim:0029",
+      "target": "chapter:07",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So, redaction is currently not available inside the appraise viewer that we have.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0147"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "claim:0030",
+      "target": "chapter:07",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "This one is much lighter.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0148"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "claim:0031",
+      "target": "chapter:07",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "And also, like, the market is gearing towards automated redaction.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0149"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0032",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So, with the date range filter, since you're in the appraise world, in that viewer, it's not compatible with the format that we use with the XOD because that uses byte range requests, and it only renders the pages that you're viewing, basically.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asserted-0150"
+    },
+    {
+      "type": "REFERENCES",
+      "source": "claim:0032",
+      "target": "artifact:xod-format",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "it's not compatible with the format that we use with the XOD because that uses byte range requests, and it only renders the pages that you're viewing, basically.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-references-0151"
+    },
+    {
+      "type": "REFERENCES",
+      "source": "claim:0032",
+      "target": "artifact:apprise-viewer",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "So, with the date range filter, since you're in the appraise world, in that viewer, it's not compatible with the format that we use with the XOD",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-references-0152"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0033",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "And they recommend linearized PDFs to also do byte range requests.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asserted-0153"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0034",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "But I think that the byte range request is just not going to be compatible. You're going to have to load the whole thing up front.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asserted-0154"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0035",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I don't think we'll reach that limit because the Computer Electronic Records is the only one that has that many pages.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asserted-0155"
+    },
+    {
+      "type": "REFERENCES",
+      "source": "claim:0035",
+      "target": "artifact:computer-electronic-records",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I don't think we'll reach that limit because the Computer Electronic Records is the only one that has that many pages.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-references-0156"
+    },
+    {
+      "type": "OWNS",
+      "source": "person:rowan-reid",
+      "target": "action:0004",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So if you can do a little bit of research for me on that, just to send you to again what I've found, that would be very, very useful.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-owns-0157"
+    },
+    {
+      "type": "REFERENCES",
+      "source": "action:0004",
+      "target": "artifact:apprise-viewer",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "I want a way that's optimal for viewing that it could render in the appraise viewer.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-references-0158"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:date-range-rendering",
+      "target": "claim:0032",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "it's not compatible with the format that we use with the XOD because that uses byte range requests, and it only renders the pages that you're viewing, basically.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0159"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:date-range-rendering",
+      "target": "claim:0033",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "And they recommend linearized PDFs to also do byte range requests.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0160"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:date-range-rendering",
+      "target": "claim:0034",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "But I think that the byte range request is just not going to be compatible. You're going to have to load the whole thing up front.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0161"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:date-range-rendering",
+      "target": "claim:0035",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I don't think we'll reach that limit because the Computer Electronic Records is the only one that has that many pages.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0162"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:date-range-rendering",
+      "target": "action:0004",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So if you can do a little bit of research for me on that, just to send you to again what I've found, that would be very, very useful.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0163"
+    },
+    {
+      "type": "SPEAKS_ABOUT",
+      "source": "person:deon-kuhn",
+      "target": "topic:date-range-rendering",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So, with the date range filter, since you're in the appraise world, in that viewer, it's not compatible with the format that we use with the XOD",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-speaks_about-0164"
+    },
+    {
+      "type": "SPEAKS_ABOUT",
+      "source": "person:rowan-reid",
+      "target": "topic:date-range-rendering",
+      "confidence": 0.75,
+      "provenance": [
+        {
+          "quote": "I mean, I can easily generate some fat PDFs and see what happens, yeah.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-speaks_about-0165"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "claim:0032",
+      "target": "chapter:08",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "it's not compatible with the format that we use with the XOD because that uses byte range requests, and it only renders the pages that you're viewing, basically.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0166"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "claim:0033",
+      "target": "chapter:08",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "And they recommend linearized PDFs to also do byte range requests.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0167"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "claim:0034",
+      "target": "chapter:08",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "But I think that the byte range request is just not going to be compatible. You're going to have to load the whole thing up front.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0168"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "claim:0035",
+      "target": "chapter:08",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "I don't think we'll reach that limit because the Computer Electronic Records is the only one that has that many pages.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0169"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "action:0004",
+      "target": "chapter:08",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So if you can do a little bit of research for me on that, just to send you to again what I've found, that would be very, very useful.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0170"
+    },
+    {
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0036",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So Adam has been, Adam as CEO is very heavy on, can we stop recording?",
+          "ts": 1662.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asserted-0171"
+    },
+    {
+      "type": "MENTIONED_BY",
+      "source": "person:adam",
+      "target": "person:deon-kuhn",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So Adam has been, Adam as CEO is very heavy on, can we stop recording?",
+          "ts": 1662.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-mentioned_by-0172"
+    },
+    {
+      "type": "ASKED",
+      "source": "person:deon-kuhn",
+      "target": "question:0006",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So Adam has been, Adam as CEO is very heavy on, can we stop recording?",
+          "ts": 1662.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-asked-0173"
+    },
+    {
+      "type": "ADDRESSED_TO",
+      "source": "question:0006",
+      "target": "person:rowan-reid",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "So Adam has been, Adam as CEO is very heavy on, can we stop recording?",
+          "ts": 1662.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-addressed_to-0174"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:recording-preference",
+      "target": "claim:0036",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So Adam has been, Adam as CEO is very heavy on, can we stop recording?",
+          "ts": 1662.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0175"
+    },
+    {
+      "type": "RELATES_TO",
+      "source": "topic:recording-preference",
+      "target": "question:0006",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So Adam has been, Adam as CEO is very heavy on, can we stop recording?",
+          "ts": 1662.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-relates_to-0176"
+    },
+    {
+      "type": "SPEAKS_ABOUT",
+      "source": "person:deon-kuhn",
+      "target": "topic:recording-preference",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So Adam has been, Adam as CEO is very heavy on, can we stop recording?",
+          "ts": 1662.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-speaks_about-0177"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "claim:0036",
+      "target": "chapter:09",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So Adam has been, Adam as CEO is very heavy on, can we stop recording?",
+          "ts": 1662.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0178"
+    },
+    {
+      "type": "OCCURS_IN",
+      "source": "question:0006",
+      "target": "chapter:09",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "So Adam has been, Adam as CEO is very heavy on, can we stop recording?",
+          "ts": 1662.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-occurs_in-0179"
+    },
+    {
+      "type": "BUILDS_ON",
+      "source": "claim:0024",
+      "target": "claim:0018",
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "quote": "I mean, I like the stamp, but none of these, to my eye or to my, like, sort of reasoning, are accurate enough. If you think about what we're trying to achieve here, it's just not going to work.",
+          "ts": 1073.1,
+          "source": "transcript"
+        },
+        {
+          "quote": "I actually had high hopes for this. I thought it was going to be, like, okay, cool. Like, a solid algorithm and solid hashing or, like, those things would be able to detect the similar pages. But I guess it's just not.",
+          "ts": 1307.3,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-builds_on-0180"
+    },
+    {
+      "type": "CONTRADICTS",
+      "source": "claim:0033",
+      "target": "claim:0034",
+      "confidence": 0.65,
+      "provenance": [
+        {
+          "quote": "So when we were speaking to you the other day, because they did have a call with us, they said, oh, but the XOD is the old way of doing things, which I totally understand. And they recommend linearized PDFs to also do byte range requests.",
+          "ts": 1509.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "But I think that the byte range request is just not going to be compatible. You're going to have to load the whole thing up front.",
+          "ts": 1509.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-contradicts-0181"
+    },
+    {
+      "type": "DEPENDS_ON",
+      "source": "action:0002",
+      "target": "action:0003",
+      "confidence": 0.8,
+      "provenance": [
+        {
+          "quote": "We can try it.",
+          "ts": 1336.3,
+          "source": "transcript"
+        },
+        {
+          "quote": "I'll find the storage account quickly. And you can try it on the records.",
+          "ts": 1372.5,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-depends_on-0182"
+    },
+    {
+      "type": "RESOLVES",
+      "source": "decision:0003",
+      "target": "question:0005",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "So, would, like, solicitors and them be able to still redact when they get, by the time the docs get to them, or no?",
+          "ts": 1387.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "So, redaction, my thinking, I might have mentioned this, is also that we do redaction inside DocSorter because they're the people who, the clinicians would be the people who are best placed to do the actual redaction in the first place.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-resolves-0183"
+    },
+    {
+      "type": "SUPPORTS",
+      "source": "claim:0020",
+      "target": "decision:0001",
+      "confidence": 0.75,
+      "provenance": [
+        {
+          "quote": "Do you know what you've actually done now is you've solved another problem we have, which is duplicate detection in the sorting algorithm for Sally.",
+          "ts": 1104.5,
+          "source": "transcript"
+        },
+        {
+          "quote": "Much of the insights also only applies to sorted sets of records. So we can bundle it as a marketing thing.",
+          "ts": 1230.5,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-supports-0184"
+    },
+    {
+      "type": "SUPPORTS",
+      "source": "claim:0028",
+      "target": "decision:0002",
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "quote": "But my feeling here is obviously, like I said, like, because of the accuracy issue with what we're working with, I don't, there's just no margin for error, really.",
+          "ts": 1387.0,
+          "source": "transcript"
+        },
+        {
+          "quote": "We can try it.",
+          "ts": 1336.3,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-supports-0185"
+    },
+    {
+      "type": "SUPPORTS",
+      "source": "claim:0019",
+      "target": "decision:0003",
+      "confidence": 0.6,
+      "provenance": [
+        {
+          "quote": "Like, the best we can possibly get is, like, three quarters of your annotations are placed back to where we're confident they are, and 25% of them you're going to need to replace.",
+          "ts": 1083.2,
+          "source": "transcript"
+        },
+        {
+          "quote": "So, redaction, my thinking, I might have mentioned this, is also that we do redaction inside DocSorter because they're the people who, the clinicians would be the people who are best placed to do the actual redaction in the first place.",
+          "ts": 1387.0,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-supports-0186"
+    },
+    {
+      "type": "REFERENCES",
+      "source": "claim:0020",
+      "target": "artifact:salli",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "Do you know what you've actually done now is you've solved another problem we have, which is duplicate detection in the sorting algorithm for Sally.",
+          "ts": 1104.5,
+          "source": "transcript"
+        }
+      ],
+      "id": "e-references-salli-0001"
+    }
+  ],
+  "_annex": {
+    "nodes": [],
+    "edges": []
+  }
+}

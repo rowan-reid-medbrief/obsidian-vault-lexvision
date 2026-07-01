@@ -1,0 +1,2657 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d61" for="edge" attr.name="provenance" attr.type="string" />
+  <key id="d60" for="edge" attr.name="confidence" attr.type="double" />
+  <key id="d59" for="edge" attr.name="target" attr.type="string" />
+  <key id="d58" for="edge" attr.name="source" attr.type="string" />
+  <key id="d57" for="edge" attr.name="type" attr.type="string" />
+  <key id="d56" for="node" attr.name="phash" attr.type="string" />
+  <key id="d55" for="node" attr.name="ocr_text" attr.type="string" />
+  <key id="d54" for="node" attr.name="visual_type" attr.type="string" />
+  <key id="d53" for="node" attr.name="frame_ts" attr.type="double" />
+  <key id="d52" for="node" attr.name="frame_path" attr.type="string" />
+  <key id="d51" for="node" attr.name="representative_frame_id" attr.type="string" />
+  <key id="d50" for="node" attr.name="frame_ids" attr.type="string" />
+  <key id="d49" for="node" attr.name="topic_ids" attr.type="string" />
+  <key id="d48" for="node" attr.name="end_ts" attr.type="double" />
+  <key id="d47" for="node" attr.name="start_ts" attr.type="double" />
+  <key id="d46" for="node" attr.name="summary" attr.type="string" />
+  <key id="d45" for="node" attr.name="index" attr.type="long" />
+  <key id="d44" for="node" attr.name="is_personal_commitment" attr.type="boolean" />
+  <key id="d43" for="node" attr.name="source_quote" attr.type="string" />
+  <key id="d42" for="node" attr.name="depends_on" attr.type="string" />
+  <key id="d41" for="node" attr.name="co_owners" attr.type="string" />
+  <key id="d40" for="node" attr.name="owner_id" attr.type="string" />
+  <key id="d39" for="node" attr.name="description" attr.type="string" />
+  <key id="d38" for="node" attr.name="alternatives_considered" attr.type="string" />
+  <key id="d37" for="node" attr.name="status" attr.type="string" />
+  <key id="d36" for="node" attr.name="rationale" attr.type="string" />
+  <key id="d35" for="node" attr.name="decided_by" attr.type="string" />
+  <key id="d34" for="node" attr.name="confirmed_by_answer" attr.type="boolean" />
+  <key id="d33" for="node" attr.name="contested" attr.type="boolean" />
+  <key id="d32" for="node" attr.name="claim_type" attr.type="string" />
+  <key id="d31" for="node" attr.name="evidence_refs" attr.type="string" />
+  <key id="d30" for="node" attr.name="speaker_id" attr.type="string" />
+  <key id="d29" for="node" attr.name="statement" attr.type="string" />
+  <key id="d28" for="node" attr.name="ts" attr.type="double" />
+  <key id="d27" for="node" attr.name="qtype" attr.type="string" />
+  <key id="d26" for="node" attr.name="answer_ts" attr.type="double" />
+  <key id="d25" for="node" attr.name="answered_by_id" attr.type="string" />
+  <key id="d24" for="node" attr.name="answer_summary" attr.type="string" />
+  <key id="d23" for="node" attr.name="answered" attr.type="boolean" />
+  <key id="d22" for="node" attr.name="addressee_id" attr.type="string" />
+  <key id="d21" for="node" attr.name="asker_id" attr.type="string" />
+  <key id="d20" for="node" attr.name="text" attr.type="string" />
+  <key id="d19" for="node" attr.name="ts" attr.type="string" />
+  <key id="d18" for="node" attr.name="mentioned_by" attr.type="string" />
+  <key id="d17" for="node" attr.name="artifact_type" attr.type="string" />
+  <key id="d16" for="node" attr.name="parent_topic_id" attr.type="string" />
+  <key id="d15" for="node" attr.name="keywords" attr.type="string" />
+  <key id="d14" for="node" attr.name="salience" attr.type="double" />
+  <key id="d13" for="node" attr.name="level" attr.type="string" />
+  <key id="d12" for="node" attr.name="turn_count" attr.type="long" />
+  <key id="d11" for="node" attr.name="speaking_time_sec" attr.type="double" />
+  <key id="d10" for="node" attr.name="first_ts" attr.type="double" />
+  <key id="d9" for="node" attr.name="chapter_ids" attr.type="string" />
+  <key id="d8" for="node" attr.name="provenance" attr.type="string" />
+  <key id="d7" for="node" attr.name="confidence" attr.type="double" />
+  <key id="d6" for="node" attr.name="is_participant" attr.type="boolean" />
+  <key id="d5" for="node" attr.name="role" attr.type="string" />
+  <key id="d4" for="node" attr.name="aliases" attr.type="string" />
+  <key id="d3" for="node" attr.name="canonical_name" attr.type="string" />
+  <key id="d2" for="node" attr.name="name" attr.type="string" />
+  <key id="d1" for="node" attr.name="label" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="person:rowan-reid">
+      <data key="d0">Person</data>
+      <data key="d1">Rowan Reid</data>
+      <data key="d2">Rowan Reid</data>
+      <data key="d3">Rowan Reid</data>
+      <data key="d4">[]</data>
+      <data key="d5">Engineer</data>
+      <data key="d6">True</data>
+      <data key="d7">0.95</data>
+      <data key="d8">[{"quote": "Rowan: Morning, how are you doing?", "ts": 4.0, "source": "transcript"}, {"quote": "Rowan Reid", "ts": 2.125, "source": "vision"}, {"quote": "Rowan: okay, that's really good to me,", "ts": 830.3, "source": "transcript"}, {"quote": "Rowan: So, would, like, solicitors and them be able to still redact when they get, by the time the docs get to them, or no?", "ts": 1387.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:01", "chapter:02", "chapter:03", "chapter:04", "chapter:05", "chapter:06", "chapter:07", "chapter:08"]</data>
+      <data key="d10">14.2</data>
+      <data key="d11">662.04</data>
+      <data key="d12">189</data>
+    </node>
+    <node id="person:deon-kuhn">
+      <data key="d0">Person</data>
+      <data key="d1">Deon Kuhn</data>
+      <data key="d2">Deon Kuhn</data>
+      <data key="d3">Deon Kuhn</data>
+      <data key="d4">[]</data>
+      <data key="d5">CTO</data>
+      <data key="d6">True</data>
+      <data key="d7">0.95</data>
+      <data key="d8">[{"quote": "Deon: Good morning.", "ts": 0.5, "source": "transcript"}, {"quote": "Rowan Reid Deon Kuhn", "ts": 4.625, "source": "vision"}, {"quote": "Deon: that's really useful for this sort of thing.", "ts": 800.0, "source": "transcript"}, {"quote": "Deon: So, redaction, my thinking, I might have mentioned this, is also that we do redaction inside DocSorter because they're the people who, the clinicians would be the people who are best placed to do the actual redaction in the first place.", "ts": 1387.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:01", "chapter:02", "chapter:03", "chapter:04", "chapter:05", "chapter:06", "chapter:07", "chapter:08", "chapter:09"]</data>
+      <data key="d10">5.08</data>
+      <data key="d11">598.03</data>
+      <data key="d12">174</data>
+    </node>
+    <node id="person:lewis">
+      <data key="d0">Person</data>
+      <data key="d1">Lewis</data>
+      <data key="d2">Lewis</data>
+      <data key="d3">Lewis</data>
+      <data key="d4">[]</data>
+      <data key="d6">False</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "No, I tried to, as Lewis said, I sort of maybe loved the cat too much this weekend.", "ts": 121.0, "source": "transcript"}, {"quote": "Just want to tell Lewis. Oh, he's here, Lewis.", "ts": 415.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:01", "chapter:03"]</data>
+    </node>
+    <node id="topic:cat-sitting-weekend">
+      <data key="d0">Topic</data>
+      <data key="d1">Weekend cat-sitting trip and cat allergy</data>
+      <data key="d13">subtopic</data>
+      <data key="d14">0.4</data>
+      <data key="d15">["cat-sitting", "house-sitting", "Cardiff", "cat allergy"]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "We were house-sitting in an area just outside of Cardiff. So we're actually cat-sitting.", "ts": 41.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:01"]</data>
+    </node>
+    <node id="topic:pdf-synthetic-test-harness">
+      <data key="d0">Topic</data>
+      <data key="d1">Synthetic PDF generation, resorting, and page-matching test harness</data>
+      <data key="d13">theme</data>
+      <data key="d14">0.9</data>
+      <data key="d15">["synthetic PDFs", "resorting", "page-matching", "mri133", "Apprise"]</data>
+      <data key="d7">0.95</data>
+      <data key="d8">[{"quote": "So basically, I generate PDFs, then I resort them.", "ts": 177.0, "source": "transcript"}, {"quote": "generated 12 documents, 108 pages into data/corpus", "ts": 309.688, "source": "vision"}]</data>
+      <data key="d9">["chapter:02"]</data>
+    </node>
+    <node id="topic:mri133-end-to-end-run">
+      <data key="d0">Topic</data>
+      <data key="d1">Running the MRI133 end-to-end matcher across all matchers</data>
+      <data key="d13">subtopic</data>
+      <data key="d16">topic:pdf-synthetic-test-harness</data>
+      <data key="d14">0.6</data>
+      <data key="d15">["MRI133", "end-to-end", "matchers"]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "So, if I go MRI133, this actually runs it end-to-end and runs each matcher.", "ts": 410.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:03"]</data>
+    </node>
+    <node id="artifact:mri133">
+      <data key="d0">Artifact</data>
+      <data key="d2">mri133</data>
+      <data key="d1">mri133 (PDF page-matching test-harness CLI)</data>
+      <data key="d17">tool</data>
+      <data key="d18">["person:rowan-reid"]</data>
+      <data key="d19">[309.688, 410.0]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "So, if I go MRI133, this actually runs it end-to-end and runs each matcher.", "ts": 410.0, "source": "transcript"}, {"quote": "./mri133 gen-corpus\ngenerated 12 documents, 108 pages into data/corpus", "ts": 309.688, "source": "vision"}, {"quote": "./mri133 run --matchers all", "ts": 946.5, "source": "vision"}]</data>
+      <data key="d9">["chapter:02", "chapter:03", "chapter:04"]</data>
+    </node>
+    <node id="artifact:apprise-viewer">
+      <data key="d0">Artifact</data>
+      <data key="d2">Apprise Viewer</data>
+      <data key="d1">Apprise Viewer</data>
+      <data key="d17">product</data>
+      <data key="d18">["person:rowan-reid", "person:deon-kuhn"]</data>
+      <data key="d19">[236.0, 247.0]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "I then have used the Apprise Viewer to, like, move annotations around or move redactions around just to kind of see if that works.", "ts": 236.0, "source": "transcript"}, {"quote": "we do, like, use the engine of Apprise to apply them to the pages.", "ts": 247.0, "source": "transcript"}, {"quote": "Deon: So, redaction is currently not available inside the appraise viewer that we have.", "ts": 1387.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:02", "chapter:07", "chapter:08"]</data>
+    </node>
+    <node id="artifact:annotations-project">
+      <data key="d0">Artifact</data>
+      <data key="d2">annotations project</data>
+      <data key="d1">annotations project (Rowan's local repo hosting the PDF test harness)</data>
+      <data key="d17">repo</data>
+      <data key="d18">["person:rowan-reid"]</data>
+      <data key="d19">[161.5]</data>
+      <data key="d7">0.85</data>
+      <data key="d8">[{"quote": "PROJECTS annotations .claude .entire data _bakeoff corpus demo resorted bakeoff.html bakeoff.json README.md docs output poc data_pipelines expert-sheet-data-processing lexvision-poc", "ts": 161.5, "source": "vision"}, {"quote": "Okay, you should see a terminal and a Visual Studio Code.", "ts": 155.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:02"]</data>
+    </node>
+    <node id="artifact:salli">
+      <data key="d0">Artifact</data>
+      <data key="d1">SALLI</data>
+      <data key="d2">SALLI</data>
+      <data key="d17">system</data>
+      <data key="d18">["person:deon-kuhn"]</data>
+      <data key="d19">[1104.5]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Do you know what you've actually done now is you've solved another problem we have, which is duplicate detection in the sorting algorithm for Sally.", "ts": 1104.5, "source": "transcript"}]</data>
+      <data key="d9">["chapter:05"]</data>
+    </node>
+    <node id="person:chantal">
+      <data key="d0">Person</data>
+      <data key="d1">Chantal</data>
+      <data key="d2">Chantal</data>
+      <data key="d3">Chantal</data>
+      <data key="d4">[]</data>
+      <data key="d6">False</data>
+      <data key="d10">1230.5</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "But then what I'll speak to Chantal about is, like, this will, like I said, this will only be a thing that we can apply for a sorted set of records.", "ts": 1230.5, "source": "transcript"}, {"quote": "Deon: And that's why I feel like Chantal's original ticket was trying to find something that will solve everything, but it actually can't.", "ts": 1387.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:05", "chapter:07"]</data>
+    </node>
+    <node id="person:lara">
+      <data key="d0">Person</data>
+      <data key="d1">Lara</data>
+      <data key="d2">Lara</data>
+      <data key="d3">Lara</data>
+      <data key="d4">[]</data>
+      <data key="d6">False</data>
+      <data key="d10">1104.5</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "And Lara would be very interested in all of this, because this is fascinating.", "ts": 1104.5, "source": "transcript"}]</data>
+      <data key="d9">["chapter:05"]</data>
+    </node>
+    <node id="topic:matching-algorithm-comparison">
+      <data key="d0">Topic</data>
+      <data key="d1">Matching algorithm comparison (exact hash, perceptual hash, text fingerprint, ensemble, stamped ID)</data>
+      <data key="d13">theme</data>
+      <data key="d14">0.9</data>
+      <data key="d15">["exact hash", "perceptual hash", "text fingerprint", "ensemble", "stamped ID", "precision", "recall", "silent error"]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "But basically, so these are my different matching algorithms.", "ts": 940.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:04"]</data>
+    </node>
+    <node id="topic:exact-hash-matching">
+      <data key="d0">Topic</data>
+      <data key="d1">Exact hash matching</data>
+      <data key="d13">subtopic</data>
+      <data key="d16">topic:matching-algorithm-comparison</data>
+      <data key="d14">0.7</data>
+      <data key="d15">["exact hash", "char hash"]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "So exact hash is just a char hash of the page.", "ts": 921.4, "source": "transcript"}]</data>
+      <data key="d9">["chapter:04"]</data>
+    </node>
+    <node id="topic:perceptual-hash-matching">
+      <data key="d0">Topic</data>
+      <data key="d1">Perceptual hash matching</data>
+      <data key="d13">subtopic</data>
+      <data key="d16">topic:matching-algorithm-comparison</data>
+      <data key="d14">0.6</data>
+      <data key="d15">["perceptual hash", "P hash", "visual-based hash"]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Perceptual was a P hash, so basically like a visual-based hash of the page.", "ts": 926.7, "source": "transcript"}]</data>
+      <data key="d9">["chapter:04"]</data>
+    </node>
+    <node id="topic:text-fingerprint-matching">
+      <data key="d0">Topic</data>
+      <data key="d1">Text fingerprint matching</data>
+      <data key="d13">subtopic</data>
+      <data key="d16">topic:matching-algorithm-comparison</data>
+      <data key="d14">0.6</data>
+      <data key="d15">["text comparison", "text fingerprint"]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Text for the print is just like a text comparison. How close is the text on the pages?", "ts": 931.6, "source": "transcript"}]</data>
+      <data key="d9">["chapter:04"]</data>
+    </node>
+    <node id="topic:ensemble-matching">
+      <data key="d0">Topic</data>
+      <data key="d1">Ensemble matching</data>
+      <data key="d13">subtopic</data>
+      <data key="d16">topic:matching-algorithm-comparison</data>
+      <data key="d14">0.6</data>
+      <data key="d15">["ensemble", "combination"]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "And then Ensemble was just like a combination of them trying to get them all to work together and fill in for their weaknesses.", "ts": 936.7, "source": "transcript"}]</data>
+      <data key="d9">["chapter:04"]</data>
+    </node>
+    <node id="topic:stamped-id-approach">
+      <data key="d0">Topic</data>
+      <data key="d1">Metadata-stamped page ID approach</data>
+      <data key="d13">subtopic</data>
+      <data key="d16">topic:matching-algorithm-comparison</data>
+      <data key="d14">0.9</data>
+      <data key="d15">["stamped ID", "metadata stamp", "Pico PDF"]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "So basically what I did was I applied a metadata right into the PDF using Pico PDF to get stamped a unique ID into the page.", "ts": 865.7, "source": "transcript"}]</data>
+      <data key="d9">["chapter:04"]</data>
+    </node>
+    <node id="topic:duplicate-detection-reuse">
+      <data key="d0">Topic</data>
+      <data key="d1">Reuse of matching research for duplicate/blank-page detection in sorting</data>
+      <data key="d13">theme</data>
+      <data key="d14">0.85</data>
+      <data key="d15">["duplicate detection", "blank detection", "sorting algorithm"]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "And we can use this for duplicate detection, like I said, even for blank detection, stuff like that, without involving an LLM.", "ts": 1201.7, "source": "transcript"}]</data>
+      <data key="d9">["chapter:05"]</data>
+    </node>
+    <node id="topic:product-bundling-strategy">
+      <data key="d0">Topic</data>
+      <data key="d1">Product/marketing bundling limited to sorted record sets</data>
+      <data key="d13">theme</data>
+      <data key="d14">0.8</data>
+      <data key="d15">["bundling", "marketing", "sorted record sets", "insights"]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Much of the insights also only applies to sorted sets of records. So we can bundle it as a marketing thing.", "ts": 1230.5, "source": "transcript"}]</data>
+      <data key="d9">["chapter:05"]</data>
+    </node>
+    <node id="topic:real-data-testing">
+      <data key="d0">Topic</data>
+      <data key="d1">Testing the matching approach on real (non-synthetic) data</data>
+      <data key="d13">theme</data>
+      <data key="d14">0.85</data>
+      <data key="d15">["real data", "synthetic data", "storage account"]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "And we haven't even tried it in real data.", "ts": 1321.8, "source": "transcript"}]</data>
+      <data key="d9">["chapter:06"]</data>
+    </node>
+    <node id="artifact:pico-pdf">
+      <data key="d0">Artifact</data>
+      <data key="d1">Pico PDF</data>
+      <data key="d2">Pico PDF</data>
+      <data key="d17">tool</data>
+      <data key="d18">["person:rowan-reid"]</data>
+      <data key="d19">[865.7]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "I applied a metadata right into the PDF using Pico PDF to get stamped a unique ID into the page.", "ts": 865.7, "source": "transcript"}]</data>
+      <data key="d9">["chapter:04"]</data>
+    </node>
+    <node id="artifact:bakeoff-html">
+      <data key="d0">Artifact</data>
+      <data key="d1">bakeoff.html (matching bake-off visual report)</data>
+      <data key="d2">bakeoff.html</data>
+      <data key="d17">document</data>
+      <data key="d18">["person:rowan-reid"]</data>
+      <data key="d19">[1017.4, 1099.75]</data>
+      <data key="d7">0.95</data>
+      <data key="d8">[{"quote": "I'll bring over the pretty HTML version of it now.", "ts": 1017.4, "source": "transcript"}, {"quote": "MRI-133 matching bake-off / File /Users/Rowan.Reid/claude_code/projects/annotations/data/bakeoff.html", "ts": 1099.75, "source": "vision"}]</data>
+      <data key="d9">["chapter:04", "chapter:05"]</data>
+    </node>
+    <node id="person:adam">
+      <data key="d0">Person</data>
+      <data key="d1">Adam</data>
+      <data key="d2">Adam</data>
+      <data key="d3">Adam</data>
+      <data key="d4">[]</data>
+      <data key="d5">CEO</data>
+      <data key="d6">False</data>
+      <data key="d10">1662.0</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Deon: So Adam has been, Adam as CEO is very heavy on, can we stop recording?", "ts": 1662.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:09"]</data>
+    </node>
+    <node id="topic:redaction">
+      <data key="d0">Topic</data>
+      <data key="d1">Redaction workflow and DocSorter placement</data>
+      <data key="d13">theme</data>
+      <data key="d14">0.9</data>
+      <data key="d15">["redaction", "DocSorter", "Apprise viewer", "automated redaction", "sorting stage"]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Deon: So, redaction, my thinking, I might have mentioned this, is also that we do redaction inside DocSorter because they're the people who, the clinicians would be the people who are best placed to do the actual redaction in the first place.", "ts": 1387.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:07"]</data>
+    </node>
+    <node id="topic:date-range-rendering">
+      <data key="d0">Topic</data>
+      <data key="d1">Date-range filtered PDF rendering at scale</data>
+      <data key="d13">theme</data>
+      <data key="d14">0.9</data>
+      <data key="d15">["date range filter", "XOD", "byte range requests", "Apprise viewer", "scale testing"]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Deon: So, with the date range filter, since you're in the appraise world, in that viewer, it's not compatible with the format that we use with the XOD because that uses byte range requests, and it only renders the pages that you're viewing, basically.", "ts": 1509.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:08"]</data>
+    </node>
+    <node id="topic:recording-preference">
+      <data key="d0">Topic</data>
+      <data key="d1">CEO's recording preference</data>
+      <data key="d13">theme</data>
+      <data key="d14">0.6</data>
+      <data key="d15">["recording", "Adam", "CEO"]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Deon: So Adam has been, Adam as CEO is very heavy on, can we stop recording?", "ts": 1662.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:09"]</data>
+    </node>
+    <node id="artifact:docsorter">
+      <data key="d0">Artifact</data>
+      <data key="d1">DocSorter</data>
+      <data key="d2">DocSorter</data>
+      <data key="d17">product</data>
+      <data key="d18">["person:deon-kuhn"]</data>
+      <data key="d19">[1387.0]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Deon: So, redaction, my thinking, I might have mentioned this, is also that we do redaction inside DocSorter because they're the people who, the clinicians would be the people who are best placed to do the actual redaction in the first place.", "ts": 1387.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:07"]</data>
+    </node>
+    <node id="artifact:sharebrief-viewer">
+      <data key="d0">Artifact</data>
+      <data key="d1">ShareBrief viewer</data>
+      <data key="d2">ShareBrief viewer</data>
+      <data key="d17">product</data>
+      <data key="d18">["person:deon-kuhn"]</data>
+      <data key="d19">[1387.0]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Deon: I remember you guys had a viewer for ShareBrief that redaction was quite processing heavy.", "ts": 1387.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:07"]</data>
+    </node>
+    <node id="artifact:xod-format">
+      <data key="d0">Artifact</data>
+      <data key="d1">XOD format</data>
+      <data key="d2">XOD</data>
+      <data key="d17">system</data>
+      <data key="d18">["person:deon-kuhn"]</data>
+      <data key="d19">[1509.0]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Deon: So, with the date range filter, since you're in the appraise world, in that viewer, it's not compatible with the format that we use with the XOD because that uses byte range requests, and it only renders the pages that you're viewing, basically.", "ts": 1509.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:08"]</data>
+    </node>
+    <node id="artifact:computer-electronic-records">
+      <data key="d0">Artifact</data>
+      <data key="d1">Computer Electronic Records</data>
+      <data key="d2">Computer Electronic Records</data>
+      <data key="d17">dataset</data>
+      <data key="d18">["person:deon-kuhn"]</data>
+      <data key="d19">[1509.0]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Deon: I don't think we'll reach that limit because the Computer Electronic Records is the only one that has that many pages.", "ts": 1509.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:08"]</data>
+    </node>
+    <node id="question:0001">
+      <data key="d0">Question</data>
+      <data key="d20">Is that when you discovered it [that you're allergic to cats]?</data>
+      <data key="d21">person:rowan-reid</data>
+      <data key="d22">person:deon-kuhn</data>
+      <data key="d23">True</data>
+      <data key="d24">Yes, that was when Deon discovered his cat allergy.</data>
+      <data key="d25">person:deon-kuhn</data>
+      <data key="d26">76.9</data>
+      <data key="d27">clarifying</data>
+      <data key="d28">74.0</data>
+      <data key="d1">Is that when you discovered it?</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Is that when you discovered it?", "ts": 74.0, "source": "transcript"}, {"quote": "Yeah, that's when we discovered it.", "ts": 76.9, "source": "transcript"}]</data>
+      <data key="d9">["chapter:01"]</data>
+    </node>
+    <node id="question:0002">
+      <data key="d0">Question</data>
+      <data key="d20">How close is the text on the pages?</data>
+      <data key="d21">person:rowan-reid</data>
+      <data key="d23">True</data>
+      <data key="d24">Rowan explains text_fingerprint compares textual similarity between pages.</data>
+      <data key="d25">person:rowan-reid</data>
+      <data key="d26">931.6</data>
+      <data key="d27">rhetorical</data>
+      <data key="d28">931.6</data>
+      <data key="d7">0.85</data>
+      <data key="d8">[{"quote": "Text for the print is just like a text comparison. How close is the text on the pages?", "ts": 931.6, "source": "transcript"}]</data>
+      <data key="d9">["chapter:04"]</data>
+      <data key="d1">question:0002</data>
+    </node>
+    <node id="question:0003">
+      <data key="d0">Question</data>
+      <data key="d20">Remember what I told you?</data>
+      <data key="d21">person:deon-kuhn</data>
+      <data key="d22">person:rowan-reid</data>
+      <data key="d23">True</data>
+      <data key="d24">Rowan confirms he remembers Deon predicting the approach wouldn't fully work.</data>
+      <data key="d25">person:rowan-reid</data>
+      <data key="d26">1157.4</data>
+      <data key="d27">rhetorical</data>
+      <data key="d28">1157.4</data>
+      <data key="d7">0.85</data>
+      <data key="d8">[{"quote": "Remember what I told you? It was like, I have a feeling it won't work.", "ts": 1157.4, "source": "transcript"}]</data>
+      <data key="d9">["chapter:05"]</data>
+      <data key="d1">question:0003</data>
+    </node>
+    <node id="question:0004">
+      <data key="d0">Question</data>
+      <data key="d20">How do you feel about all of this?</data>
+      <data key="d21">person:deon-kuhn</data>
+      <data key="d22">person:rowan-reid</data>
+      <data key="d23">True</data>
+      <data key="d24">Rowan found the research interesting and exciting; he was surprised the algorithms (especially perceptual hash) didn't perform as well as he expected.</data>
+      <data key="d25">person:rowan-reid</data>
+      <data key="d26">1300.1</data>
+      <data key="d27">info_seeking</data>
+      <data key="d28">1282.0</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "How do you feed about all of this?", "ts": 1282.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:05"]</data>
+      <data key="d1">question:0004</data>
+    </node>
+    <node id="question:0005">
+      <data key="d0">Question</data>
+      <data key="d1">Will solicitors still be able to redact once docs reach them?</data>
+      <data key="d20">So, would, like, solicitors and them be able to still redact when they get, by the time the docs get to them, or no?</data>
+      <data key="d21">person:rowan-reid</data>
+      <data key="d22">person:deon-kuhn</data>
+      <data key="d23">True</data>
+      <data key="d24">Redaction is not currently available in the Apprise viewer (though relatively easy to add and much lighter than the old ShareBrief implementation); it has been in the backlog, and the market is trending toward automated rather than manual solicitor-driven redaction.</data>
+      <data key="d25">person:deon-kuhn</data>
+      <data key="d26">1387.0</data>
+      <data key="d27">info_seeking</data>
+      <data key="d28">1387.0</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Rowan: So, would, like, solicitors and them be able to still redact when they get, by the time the docs get to them, or no?", "ts": 1387.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:07"]</data>
+    </node>
+    <node id="question:0006">
+      <data key="d0">Question</data>
+      <data key="d1">Can we stop recording?</data>
+      <data key="d20">Can we stop recording?</data>
+      <data key="d21">person:deon-kuhn</data>
+      <data key="d22">person:rowan-reid</data>
+      <data key="d23">False</data>
+      <data key="d27">decision_forcing</data>
+      <data key="d28">1662.0</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Deon: So Adam has been, Adam as CEO is very heavy on, can we stop recording?", "ts": 1662.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:09"]</data>
+    </node>
+    <node id="claim:0001">
+      <data key="d0">Claim</data>
+      <data key="d29">Rowan and Lynn discovered they are a little bit allergic to cats while house-sitting a house with seven cats.</data>
+      <data key="d30">person:rowan-reid</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d28">66.0</data>
+      <data key="d1">Rowan and Lynn discovered a cat allergy during a seven-cat house-sit</data>
+      <data key="d8">[{"quote": "And it was during that house-sitting that we both discovered that we are a little bit allergic to cats.", "ts": 66.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:01"]</data>
+    </node>
+    <node id="claim:0002">
+      <data key="d0">Claim</data>
+      <data key="d29">Deon discovered his cat allergy during the cat-sitting weekend outside Cardiff.</data>
+      <data key="d30">person:deon-kuhn</data>
+      <data key="d31">["question:0005"]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d34">True</data>
+      <data key="d28">76.9</data>
+      <data key="d1">Deon discovered his cat allergy during the Cardiff cat-sitting trip</data>
+      <data key="d8">[{"quote": "Yeah, that's when we discovered it.", "ts": 76.9, "source": "transcript"}]</data>
+      <data key="d9">["chapter:01"]</data>
+    </node>
+    <node id="claim:0003">
+      <data key="d0">Claim</data>
+      <data key="d29">Deon loved the cat too much over the weekend and it ended up scratching him quite a bit.</data>
+      <data key="d30">person:deon-kuhn</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d28">121.0</data>
+      <data key="d1">The cat scratched Deon after he didn't respect its space</data>
+      <data key="d8">[{"quote": "No, I tried to, as Lewis said, I sort of maybe loved the cat too much this weekend. And he ended up scratching me quite a bit.", "ts": 121.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:01"]</data>
+    </node>
+    <node id="claim:0004">
+      <data key="d0">Claim</data>
+      <data key="d29">Rowan built a tool that generates synthetic records/PDFs, then resorts them by deleting pages, inserting new pages, rearranging pages, and splitting pages.</data>
+      <data key="d30">person:rowan-reid</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.95</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d28">178.0</data>
+      <data key="d1">Rowan built a synthetic PDF generator and page-resorting tool</data>
+      <data key="d8">[{"quote": "So basically, I generate PDFs, then I resort them. So I've got another command that does some resorting, which does a bunch of different things.", "ts": 178.0, "source": "transcript"}, {"quote": "So it deletes pages, it inserts new pages, it rearranges pages, it splits pages, it splits pages and all of that.", "ts": 191.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:02"]</data>
+    </node>
+    <node id="claim:0005">
+      <data key="d0">Claim</data>
+      <data key="d29">Rowan built a matching engine that uses different matching styles to try to figure out what happened to each page, and reports how reliable each mechanism is at finding what happened to a page.</data>
+      <data key="d30">person:rowan-reid</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d28">225.0</data>
+      <data key="d1">Rowan built a multi-method page-matching engine</data>
+      <data key="d8">[{"quote": "And then I've got a matching engine, which uses different styles of matching to try and figure out what happened to each page.", "ts": 225.0, "source": "transcript"}, {"quote": "And so the output of that is using the different mechanisms, like how reliable are they in finding what happened to a page?", "ts": 227.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:02"]</data>
+    </node>
+    <node id="claim:0006">
+      <data key="d0">Claim</data>
+      <data key="d29">Once the matching engine correctly identifies the right page, the Apprise Viewer manages to apply moved annotations/redactions correctly.</data>
+      <data key="d30">person:rowan-reid</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d28">236.0</data>
+      <data key="d1">Apprise Viewer correctly reapplies annotations once the matching page is known</data>
+      <data key="d8">[{"quote": "And then after that, based on that knowledge, I then have used the Apprise Viewer to, like, move annotations around or move redactions around just to kind of see if that works.", "ts": 236.0, "source": "transcript"}, {"quote": "Once you know that you've got the page, the right page, it manages to apply them correctly.", "ts": 238.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:02"]</data>
+    </node>
+    <node id="claim:0007">
+      <data key="d0">Claim</data>
+      <data key="d29">When ingesting annotations in their native format (XFDF), the product already uses the Apprise engine to apply them to pages.</data>
+      <data key="d30">person:deon-kuhn</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d28">247.0</data>
+      <data key="d1">Apprise engine already applies ingested XFDF annotations to pages</data>
+      <data key="d8">[{"quote": "As a quick note, when we ingest, obviously, the annotations, because they're in that format, the XFDF or whatever, we do, like, use the engine of Apprise to apply them to the pages. So that's correct as well.", "ts": 247.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:02"]</data>
+    </node>
+    <node id="claim:0008">
+      <data key="d0">Claim</data>
+      <data key="d29">The content-hashing matcher can tell that two near-duplicate pages (identical except a small A/B footer difference) are not the same page, but the perceptual-hash matcher is likely to judge them as the same page and miss the small difference.</data>
+      <data key="d30">person:rowan-reid</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d28">305.0</data>
+      <data key="d1">Exact-hash catches an A/B footer difference; perceptual hash likely misses it</data>
+      <data key="d8">[{"quote": "the matcher that matches on hashing the content will be able to determine that these are not the same page.", "ts": 300.0, "source": "transcript"}, {"quote": "It's been like, oh, these still look like the same page. But then it doesn't pick up little tiny things like that.", "ts": 305.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:02"]</data>
+    </node>
+    <node id="claim:0009">
+      <data key="d0">Claim</data>
+      <data key="d29">Running mri133 gen-corpus generated 12 documents totalling 108 pages into data/corpus.</data>
+      <data key="d30">person:rowan-reid</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d28">309.688</data>
+      <data key="d1">mri133 gen-corpus generated 12 documents / 108 pages</data>
+      <data key="d8">[{"quote": "generated 12 documents, 108 pages into data/corpus", "ts": 309.688, "source": "vision"}]</data>
+      <data key="d9">["chapter:02"]</data>
+    </node>
+    <node id="claim:0010">
+      <data key="d0">Claim</data>
+      <data key="d29">Rowan is running the MRI133 tool end-to-end across all matchers on the resorted document set.</data>
+      <data key="d30">person:rowan-reid</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d28">410.0</data>
+      <data key="d1">Rowan kicks off the MRI133 full end-to-end matcher run</data>
+      <data key="d8">[{"quote": "So, if I go MRI133, this actually runs it end-to-end and runs each matcher.", "ts": 410.0, "source": "transcript"}, {"quote": "This will take a little while.", "ts": 412.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:03"]</data>
+    </node>
+    <node id="claim:0011">
+      <data key="d0">Claim</data>
+      <data key="d29">Deon has to step away in person to receive a delivery because it cannot just be left for pickup and the courier needs to see his face.</data>
+      <data key="d30">person:deon-kuhn</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d28">417.0</data>
+      <data key="d1">Deon steps away to accept an in-person delivery</data>
+      <data key="d8">[{"quote": "Rowan, can I go get the delivery quick? Sorry. Because they need to see my face. It's not a one that they can pick up.", "ts": 417.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:03"]</data>
+    </node>
+    <node id="claim:0012">
+      <data key="d0">Claim</data>
+      <data key="d1">Stamped ID survived page reinsertion, naturally the strongest identifier</data>
+      <data key="d29">The metadata stamp survived Rowan's page-insertion/resorting method and was naturally the strongest way of identifying the original page.</data>
+      <data key="d30">person:rowan-reid</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d28">885.9</data>
+      <data key="d8">[{"quote": "I did that stamp, and that survived at least my method of inserting new pages and whatever. And so that obviously was naturally the strongest way of identifying the original.", "ts": 885.9, "source": "transcript"}]</data>
+      <data key="d9">["chapter:04"]</data>
+    </node>
+    <node id="claim:0013">
+      <data key="d0">Claim</data>
+      <data key="d1">Exact hash: 92.9% precision on confident pages</data>
+      <data key="d29">Exact hash matching got 92.9% of its confident (non-abstained) page-outcome predictions right.</data>
+      <data key="d30">person:rowan-reid</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.95</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d28">971.8</data>
+      <data key="d8">[{"quote": "Of those that it was confident about, it got 92.9% right, which is good, right?", "ts": 971.8, "source": "transcript"}, {"quote": "exact_hash      P 92.9% R 89.7% abst-ok 81.2% silent 5.6% / queue 22.2%", "ts": 946.5, "source": "vision"}]</data>
+      <data key="d9">["chapter:04"]</data>
+    </node>
+    <node id="claim:0014">
+      <data key="d0">Claim</data>
+      <data key="d1">Exact hash only works on text-bearing / clean pages</data>
+      <data key="d29">Exact hash matching only works for pages that have text, or clean-looking pages.</data>
+      <data key="d30">person:deon-kuhn</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">opinion</data>
+      <data key="d33">False</data>
+      <data key="d28">982.1</data>
+      <data key="d8">[{"quote": "But that only works for things that maybe have text. Or clean-looking things, yeah.", "ts": 982.1, "source": "transcript"}]</data>
+      <data key="d9">["chapter:04"]</data>
+    </node>
+    <node id="claim:0015">
+      <data key="d0">Claim</data>
+      <data key="d1">Exact hash fails badly on split pages</data>
+      <data key="d29">Exact hash is really bad at detecting a split page: because the two resulting pages don't hash the same, it thinks the original page is simply gone.</data>
+      <data key="d30">person:rowan-reid</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d28">1002.1</data>
+      <data key="d8">[{"quote": "So anyway, it's really bad at split. So actually, if a page has been split, it basically thinks the page is gone because there's nothing that's, those two pages don't hash.", "ts": 1002.1, "source": "transcript"}]</data>
+      <data key="d9">["chapter:04"]</data>
+    </node>
+    <node id="claim:0016">
+      <data key="d0">Claim</data>
+      <data key="d1">Stamped route is by far the best, removes matching noise</data>
+      <data key="d29">Going with the stamped-ID route is by far and above the best approach: it gets rid of all the noise involved in trying to figure out the right matching.</data>
+      <data key="d30">person:rowan-reid</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d28">1047.7</data>
+      <data key="d8">[{"quote": "And then, basically, the conclusion is that if we go stamped, like, the stamped route is by far and above, like, it gets rid of all the crazy noise and trying to figure out, like, how to do the right matching.", "ts": 1047.7, "source": "transcript"}]</data>
+      <data key="d9">["chapter:04"]</data>
+    </node>
+    <node id="claim:0017">
+      <data key="d0">Claim</data>
+      <data key="d1">Stamped approach only errs on true duplicates or unlinked splits</data>
+      <data key="d29">The stamped approach only gets it wrong when a page has been exactly duplicated without re-stamping, or split without any lineage recorded into the previous page; every other scenario it catches because the metadata stamping is maintained.</data>
+      <data key="d30">person:rowan-reid</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d28">1052.8</data>
+      <data key="d8">[{"quote": "Like, if you do stamped, it works, and the only time it gets it wrong is if you've got a exact, like, a duplicate, like, you literally have duplicated the page, and now it's there twice with the same ID, and you haven't re-stamped. Or you've split a page, and you haven't put any kind of lineage into the previous page. Every other scenario, it obviously catches, because you've maintained the metadata stamping.", "ts": 1052.8, "source": "transcript"}]</data>
+      <data key="d9">["chapter:04"]</data>
+    </node>
+    <node id="claim:0018">
+      <data key="d0">Claim</data>
+      <data key="d1">None of the matchers are accurate enough for the goal</data>
+      <data key="d29">None of the matching approaches, to Deon's eye/reasoning, are accurate enough for what they are trying to achieve; it's just not going to work.</data>
+      <data key="d30">person:deon-kuhn</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">opinion</data>
+      <data key="d33">False</data>
+      <data key="d28">1073.1</data>
+      <data key="d8">[{"quote": "I mean, I like the stamp, but none of these, to my eye or to my, like, sort of reasoning, are accurate enough. If you think about what we're trying to achieve here, it's just not going to work.", "ts": 1073.1, "source": "transcript"}]</data>
+      <data key="d9">["chapter:04"]</data>
+    </node>
+    <node id="claim:0019">
+      <data key="d0">Claim</data>
+      <data key="d1">Redaction estimate: ~75% of annotations placed correctly, 25% need replacement</data>
+      <data key="d29">For redactions specifically, the best achievable outcome is roughly three quarters of annotations placed back where they are confidently correct, with about 25% needing to be replaced.</data>
+      <data key="d30">person:rowan-reid</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">prediction</data>
+      <data key="d33">False</data>
+      <data key="d28">1083.2</data>
+      <data key="d8">[{"quote": "Like, the best we can possibly get is, like, three quarters of your annotations are placed back to where we're confident they are, and 25% of them you're going to need to replace.", "ts": 1083.2, "source": "transcript"}]</data>
+      <data key="d9">["chapter:04"]</data>
+    </node>
+    <node id="claim:0020">
+      <data key="d0">Claim</data>
+      <data key="d1">Rowan's work also solves duplicate detection in the sorting algorithm for Sally</data>
+      <data key="d29">Rowan's matching research incidentally solves a separate existing problem: duplicate detection in the record-sorting algorithm relevant to Sally's work.</data>
+      <data key="d30">person:deon-kuhn</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">opinion</data>
+      <data key="d33">False</data>
+      <data key="d28">1104.5</data>
+      <data key="d8">[{"quote": "Do you know what you've actually done now is you've solved another problem we have, which is duplicate detection in the sorting algorithm for Sally.", "ts": 1104.5, "source": "transcript"}]</data>
+      <data key="d9">["chapter:05"]</data>
+    </node>
+    <node id="claim:0021">
+      <data key="d0">Claim</data>
+      <data key="d1">Lara would be very interested, this is fascinating</data>
+      <data key="d29">Lara would be very interested in this research because it is fascinating.</data>
+      <data key="d30">person:deon-kuhn</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">opinion</data>
+      <data key="d33">False</data>
+      <data key="d28">1104.5</data>
+      <data key="d8">[{"quote": "And Lara would be very interested in all of this, because this is fascinating.", "ts": 1104.5, "source": "transcript"}]</data>
+      <data key="d9">["chapter:05"]</data>
+    </node>
+    <node id="claim:0022">
+      <data key="d0">Claim</data>
+      <data key="d1">This is deterministic methodology, no LLM used</data>
+      <data key="d29">The matching research is all deterministic methodology; no AI/LLM was used.</data>
+      <data key="d30">person:deon-kuhn</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d28">1110.2</data>
+      <data key="d8">[{"quote": "Without using an LLM, because you didn't obviously use any AI. This is all deterministic methodology.", "ts": 1110.2, "source": "transcript"}]</data>
+      <data key="d9">["chapter:05"]</data>
+    </node>
+    <node id="claim:0023">
+      <data key="d0">Claim</data>
+      <data key="d1">Rowan expected better results than achieved</data>
+      <data key="d29">Rowan thought the matching approaches would perform better than they actually did.</data>
+      <data key="d30">person:rowan-reid</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">opinion</data>
+      <data key="d33">False</data>
+      <data key="d28">1300.1</data>
+      <data key="d8">[{"quote": "I thought that it would do better than it did.", "ts": 1300.1, "source": "transcript"}]</data>
+      <data key="d9">["chapter:06"]</data>
+    </node>
+    <node id="claim:0024">
+      <data key="d0">Claim</data>
+      <data key="d1">Deon had high hopes for hashing but it isn't accurate enough</data>
+      <data key="d29">Deon had high hopes that solid hashing algorithms would reliably detect similar pages, but it turns out they are just not accurate enough.</data>
+      <data key="d30">person:deon-kuhn</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">opinion</data>
+      <data key="d33">False</data>
+      <data key="d28">1307.3</data>
+      <data key="d8">[{"quote": "I actually had high hopes for this. I thought it was going to be, like, okay, cool. Like, a solid algorithm and solid hashing or, like, those things would be able to detect the similar pages. But I guess it's just not.", "ts": 1307.3, "source": "transcript"}]</data>
+      <data key="d9">["chapter:06"]</data>
+    </node>
+    <node id="claim:0025">
+      <data key="d0">Claim</data>
+      <data key="d1">The approach hasn't been tried on real data yet</data>
+      <data key="d29">The matching approach has not yet been tried on real (non-synthetic) data.</data>
+      <data key="d30">person:deon-kuhn</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d28">1321.8</data>
+      <data key="d8">[{"quote": "And we haven't even tried it in real data.", "ts": 1321.8, "source": "transcript"}]</data>
+      <data key="d9">["chapter:06"]</data>
+    </node>
+    <node id="claim:0026">
+      <data key="d0">Claim</data>
+      <data key="d1">Rowan's synthetic dataset is purposefully challenging</data>
+      <data key="d29">Rowan's synthetic test dataset is purposefully challenging, with pages that look almost identical except for slight footer differences.</data>
+      <data key="d30">person:rowan-reid</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d28">1336.3</data>
+      <data key="d8">[{"quote": "But, like, my data set is purposefully challenging. You know what I mean? Like, there's pages that look exactly the same. I have, like, just got the footer that's, like, slightly different.", "ts": 1336.3, "source": "transcript"}]</data>
+      <data key="d9">["chapter:06"]</data>
+    </node>
+    <node id="claim:0027">
+      <data key="d0">Claim</data>
+      <data key="d1">Testing on real data won't go to waste</data>
+      <data key="d29">Trying the approach as an extension of the research on real data won't go to waste.</data>
+      <data key="d30">person:deon-kuhn</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">prediction</data>
+      <data key="d33">False</data>
+      <data key="d28">1372.5</data>
+      <data key="d8">[{"quote": "You can try it as an extension of the research because I don't think it will go to waste.", "ts": 1372.5, "source": "transcript"}]</data>
+      <data key="d9">["chapter:06"]</data>
+    </node>
+    <node id="claim:0028">
+      <data key="d0">Claim</data>
+      <data key="d1">No margin for error given the accuracy issues</data>
+      <data key="d29">Because of the accuracy issues with the matching approaches, there is no margin for error in what they are working with.</data>
+      <data key="d30">person:deon-kuhn</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">risk</data>
+      <data key="d33">False</data>
+      <data key="d28">1387.0</data>
+      <data key="d8">[{"quote": "But my feeling here is obviously, like I said, like, because of the accuracy issue with what we're working with, I don't, there's just no margin for error, really.", "ts": 1387.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:06"]</data>
+    </node>
+    <node id="claim:0029">
+      <data key="d0">Claim</data>
+      <data key="d1">Redaction currently unavailable in Apprise viewer</data>
+      <data key="d29">Redaction is currently not available inside the Apprise viewer; it is relatively easy to implement but has not been prioritised despite being in demand and sitting in the feature backlog.</data>
+      <data key="d30">person:deon-kuhn</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d34">True</data>
+      <data key="d28">1387.0</data>
+      <data key="d8">[{"quote": "Deon: So, redaction is currently not available inside the appraise viewer that we have. It is relatively easy to do, to be honest.", "ts": 1387.0, "source": "transcript"}, {"quote": "Deon: But we just haven't had time to implement it, even though it's been in demand. But it's been one of those things where it's like, ah, it's in the feature backlog.", "ts": 1387.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:07"]</data>
+    </node>
+    <node id="claim:0030">
+      <data key="d0">Claim</data>
+      <data key="d1">New viewer's redaction would be lighter than ShareBrief's</data>
+      <data key="d29">Redaction in the current viewer would be much lighter (less processing-heavy) than the old ShareBrief viewer's redaction, mostly because technology has advanced.</data>
+      <data key="d30">person:deon-kuhn</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">opinion</data>
+      <data key="d33">False</data>
+      <data key="d28">1387.0</data>
+      <data key="d8">[{"quote": "Deon: I remember you guys had a viewer for ShareBrief that redaction was quite processing heavy. This one is much lighter. Mostly because of, like, technology advancing, and it's not the same sort of thing anymore.", "ts": 1387.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:07"]</data>
+    </node>
+    <node id="claim:0031">
+      <data key="d0">Claim</data>
+      <data key="d1">Market trending toward automated redaction</data>
+      <data key="d29">The market is gearing towards automated redaction, where the system searches and redacts automatically rather than solicitors manually redacting documents.</data>
+      <data key="d30">person:deon-kuhn</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">prediction</data>
+      <data key="d33">False</data>
+      <data key="d28">1387.0</data>
+      <data key="d8">[{"quote": "Deon: And also, like, the market is gearing towards automated redaction. So, you want something that you don't manually go and redact. Like, it searches, like, and it redacts for you because solicitors, like, don't really want to go and, like, have to do that.", "ts": 1387.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:07"]</data>
+    </node>
+    <node id="claim:0032">
+      <data key="d0">Claim</data>
+      <data key="d1">XOD format incompatible with byte-range requests</data>
+      <data key="d29">The XOD format used by the Apprise viewer is not compatible with byte-range requests; it only renders the pages currently being viewed, so the whole PDF must be loaded into browser memory to manipulate visible pages.</data>
+      <data key="d30">person:deon-kuhn</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d28">1509.0</data>
+      <data key="d8">[{"quote": "Deon: So, with the date range filter, since you're in the appraise world, in that viewer, it's not compatible with the format that we use with the XOD because that uses byte range requests, and it only renders the pages that you're viewing, basically.", "ts": 1509.0, "source": "transcript"}, {"quote": "Deon: So, we rely heavily for that solution that the entire PDF has been loaded into the memory of the browser so that it can manipulate the pages that are visible.", "ts": 1509.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:08"]</data>
+    </node>
+    <node id="claim:0033">
+      <data key="d0">Claim</data>
+      <data key="d1">External party said linearized PDFs support byte-range requests</data>
+      <data key="d29">The external party who called about the XOD format said the XOD is the old way of doing things, and recommended linearized PDFs to also support byte-range requests.</data>
+      <data key="d30">person:deon-kuhn</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">fact</data>
+      <data key="d33">True</data>
+      <data key="d28">1509.0</data>
+      <data key="d8">[{"quote": "Deon: So when we were speaking to you the other day, because they did have a call with us, they said, oh, but the XOD is the old way of doing things, which I totally understand. And they recommend linearized PDFs to also do byte range requests.", "ts": 1509.0, "source": "transcript"}, {"quote": "Deon: But I think that the byte range request is just not going to be compatible. You're going to have to load the whole thing up front.", "ts": 1509.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:08"]</data>
+    </node>
+    <node id="claim:0034">
+      <data key="d0">Claim</data>
+      <data key="d1">Byte-range requests won't be compatible; whole PDF must load upfront</data>
+      <data key="d29">The byte-range request approach is not going to be compatible for this use case; the whole PDF will need to be loaded upfront.</data>
+      <data key="d30">person:deon-kuhn</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">opinion</data>
+      <data key="d33">False</data>
+      <data key="d28">1509.0</data>
+      <data key="d8">[{"quote": "Deon: But I think that the byte range request is just not going to be compatible. You're going to have to load the whole thing up front.", "ts": 1509.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:08"]</data>
+    </node>
+    <node id="claim:0035">
+      <data key="d0">Claim</data>
+      <data key="d1">Only Computer Electronic Records likely to reach ~1000 pages</data>
+      <data key="d29">Only the Computer Electronic Records document is likely to reach page counts near a thousand; normal documents don't usually have that many pages.</data>
+      <data key="d30">person:deon-kuhn</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">opinion</data>
+      <data key="d33">False</data>
+      <data key="d28">1509.0</data>
+      <data key="d8">[{"quote": "Deon: I don't think we'll reach that limit because the Computer Electronic Records is the only one that has that many pages. Normal sort of like documents don't really have that many pages, but I mean, it could be.", "ts": 1509.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:08"]</data>
+    </node>
+    <node id="claim:0036">
+      <data key="d0">Claim</data>
+      <data key="d1">Adam (CEO) prefers not to record certain discussions</data>
+      <data key="d29">Adam, as CEO, is very much in favour of stopping the recording for certain discussions.</data>
+      <data key="d30">person:deon-kuhn</data>
+      <data key="d31">[]</data>
+      <data key="d7">0.9</data>
+      <data key="d32">fact</data>
+      <data key="d33">False</data>
+      <data key="d28">1662.0</data>
+      <data key="d8">[{"quote": "Deon: So Adam has been, Adam as CEO is very heavy on, can we stop recording?", "ts": 1662.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:09"]</data>
+    </node>
+    <node id="decision:0001">
+      <data key="d0">Decision</data>
+      <data key="d29">Bundle the insight/redaction-retention benefits as a marketing proposition, limited to sorted record sets.</data>
+      <data key="d35">["person:deon-kuhn"]</data>
+      <data key="d36">Insights and redaction-retention benefits both only apply to sorted record sets, so bundling them together strengthens the product marketing angle.</data>
+      <data key="d37">tentative</data>
+      <data key="d28">1230.5</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Much of the insights also only applies to sorted sets of records. So we can bundle it as a marketing thing.", "ts": 1230.5, "source": "transcript"}]</data>
+      <data key="d9">["chapter:05"]</data>
+      <data key="d1">decision:0001</data>
+    </node>
+    <node id="decision:0002">
+      <data key="d0">Decision</data>
+      <data key="d29">Test the matching approach on real (non-synthetic) records rather than only the synthetic dataset.</data>
+      <data key="d35">["person:rowan-reid", "person:deon-kuhn"]</data>
+      <data key="d37">made</data>
+      <data key="d28">1336.3</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "We can try it. I mean, these pages are all quite simple.", "ts": 1336.3, "source": "transcript"}]</data>
+      <data key="d9">["chapter:06"]</data>
+      <data key="d1">decision:0002</data>
+    </node>
+    <node id="decision:0003">
+      <data key="d0">Decision</data>
+      <data key="d1">Implement redaction inside DocSorter at the sorting stage</data>
+      <data key="d29">Redaction should be implemented inside DocSorter at the sorting stage, since clinicians are the people best placed to perform the actual redaction, rather than as a single solution covering everything.</data>
+      <data key="d35">["person:deon-kuhn"]</data>
+      <data key="d36">Clinicians would be the people who are best placed to do the actual redaction in the first place.</data>
+      <data key="d37">tentative</data>
+      <data key="d28">1387.0</data>
+      <data key="d38">["A single unified solution attempting to solve everything at once (Chantal's original ticket approach), which was found not to work and needed to be broken up into separate solutions (redaction in DocSorter, annotations attached to a page, etc.)."]</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Deon: So, redaction, my thinking, I might have mentioned this, is also that we do redaction inside DocSorter because they're the people who, the clinicians would be the people who are best placed to do the actual redaction in the first place.", "ts": 1387.0, "source": "transcript"}, {"quote": "Deon: And that's why I feel like Chantal's original ticket was trying to find something that will solve everything, but it actually can't. But you do need to break it up into separate solutions. And redaction in DocSorter is, like, one part of that.", "ts": 1387.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:07"]</data>
+    </node>
+    <node id="action:0001">
+      <data key="d0">ActionItem</data>
+      <data key="d39">Speak to Chantal about limiting the sorted-set-only bundling/insights offering.</data>
+      <data key="d40">person:deon-kuhn</data>
+      <data key="d41">[]</data>
+      <data key="d42">[]</data>
+      <data key="d37">open</data>
+      <data key="d43">But then what I'll speak to Chantal about is, like, this will, like I said, this will only be a thing that we can apply for a sorted set of records.</data>
+      <data key="d28">1230.5</data>
+      <data key="d44">False</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "But then what I'll speak to Chantal about is, like, this will, like I said, this will only be a thing that we can apply for a sorted set of records.", "ts": 1230.5, "source": "transcript"}]</data>
+      <data key="d9">["chapter:05"]</data>
+      <data key="d1">action:0001</data>
+    </node>
+    <node id="action:0002">
+      <data key="d0">ActionItem</data>
+      <data key="d39">Test the matching approach on real (non-synthetic) records.</data>
+      <data key="d41">["person:rowan-reid", "person:deon-kuhn"]</data>
+      <data key="d42">[]</data>
+      <data key="d37">open</data>
+      <data key="d43">We can try it. I mean, these pages are all quite simple. ... And you can try it on the records.</data>
+      <data key="d28">1336.3</data>
+      <data key="d44">False</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "We can try it.", "ts": 1336.3, "source": "transcript"}]</data>
+      <data key="d9">["chapter:06"]</data>
+      <data key="d1">action:0002</data>
+    </node>
+    <node id="action:0003">
+      <data key="d0">ActionItem</data>
+      <data key="d39">Locate the storage account containing real records for testing.</data>
+      <data key="d40">person:deon-kuhn</data>
+      <data key="d41">[]</data>
+      <data key="d42">[]</data>
+      <data key="d37">open</data>
+      <data key="d43">I'll find the storage account quickly. And you can try it on the records.</data>
+      <data key="d28">1372.5</data>
+      <data key="d44">False</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "I'll find the storage account quickly.", "ts": 1372.5, "source": "transcript"}]</data>
+      <data key="d9">["chapter:06"]</data>
+      <data key="d1">action:0003</data>
+    </node>
+    <node id="action:0004">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Research date-range filtered PDF rendering at scale in the Apprise viewer</data>
+      <data key="d39">Research how to render a date-range-filtered subset of pages in the Apprise viewer, given the XOD format's incompatibility with byte-range requests, and test rendering performance at scale (e.g. against a PDF with roughly a thousand pages or more, such as the Computer Electronic Records).</data>
+      <data key="d40">person:rowan-reid</data>
+      <data key="d41">[]</data>
+      <data key="d42">[]</data>
+      <data key="d37">open</data>
+      <data key="d43">Deon: I do have another little bit of research I want you to do if you have time. ... So if you can do a little bit of research for me on that, just to send you to again what I've found, that would be very, very useful.</data>
+      <data key="d28">1509.0</data>
+      <data key="d44">True</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Deon: I do have another little bit of research I want you to do if you have time.", "ts": 1509.0, "source": "transcript"}, {"quote": "Rowan: I mean, I can easily generate some fat PDFs and see what happens, yeah.", "ts": 1509.0, "source": "transcript"}, {"quote": "Deon: So if you can do a little bit of research for me on that, just to send you to again what I've found, that would be very, very useful.", "ts": 1509.0, "source": "transcript"}]</data>
+      <data key="d9">["chapter:08"]</data>
+    </node>
+    <node id="chapter:01">
+      <data key="d0">Chapter</data>
+      <data key="d1">Personal catch-up: weekend and cat-sitting</data>
+      <data key="d7">1.0</data>
+      <data key="d8">[]</data>
+      <data key="d9">["chapter:01"]</data>
+      <data key="d45">1</data>
+      <data key="d46">Rowan and Deon catch up on their weekends before the technical discussion; Deon describes a cat-sitting trip near Cardiff and discovering a cat allergy.</data>
+      <data key="d47">0.0</data>
+      <data key="d48">150.0</data>
+      <data key="d49">[]</data>
+      <data key="d50">[]</data>
+    </node>
+    <node id="chapter:02">
+      <data key="d0">Chapter</data>
+      <data key="d1">Screen share: synthetic PDF test harness walkthrough</data>
+      <data key="d7">1.0</data>
+      <data key="d8">[]</data>
+      <data key="d9">["chapter:02"]</data>
+      <data key="d45">2</data>
+      <data key="d46">Rowan shares his screen and walks Deon through the synthetic PDF/records generator, the resorting tool (deletes, inserts, rearranges, splits pages), and the page-matching engine that tracks what happened to each page.</data>
+      <data key="d47">150.0</data>
+      <data key="d48">410.0</data>
+      <data key="d49">[]</data>
+      <data key="d50">["visual:0004", "visual:0005"]</data>
+      <data key="d51">visual:0004</data>
+    </node>
+    <node id="chapter:03">
+      <data key="d0">Chapter</data>
+      <data key="d1">Running the end-to-end matcher; delivery interruption</data>
+      <data key="d7">1.0</data>
+      <data key="d8">[]</data>
+      <data key="d9">["chapter:03"]</data>
+      <data key="d45">3</data>
+      <data key="d46">Rowan kicks off the full end-to-end MRI133 run across all matchers. Deon is interrupted by a delivery requiring his physical presence (his partner Lewis is mentioned) and steps away briefly before returning.</data>
+      <data key="d47">410.0</data>
+      <data key="d48">800.0</data>
+      <data key="d49">[]</data>
+      <data key="d50">["visual:0007", "visual:0008"]</data>
+      <data key="d51">visual:0007</data>
+    </node>
+    <node id="chapter:04">
+      <data key="d0">Chapter</data>
+      <data key="d1">Reviewing matcher results and the stamped-ID approach</data>
+      <data key="d7">1.0</data>
+      <data key="d8">[]</data>
+      <data key="d9">["chapter:04"]</data>
+      <data key="d45">4</data>
+      <data key="d46">Rowan explains the matching algorithms (exact hash, perceptual hash, text comparison, ensemble) and their precision/recall/silent-error tradeoffs. The metadata-stamped page ID approach is by far the most reliable, failing only on true duplicates or unlinked splits.</data>
+      <data key="d47">800.0</data>
+      <data key="d48">1093.0</data>
+      <data key="d49">[]</data>
+      <data key="d50">["visual:0009"]</data>
+      <data key="d51">visual:0009</data>
+    </node>
+    <node id="chapter:05">
+      <data key="d0">Chapter</data>
+      <data key="d1">Implications: duplicate detection reuse and product bundling</data>
+      <data key="d7">1.0</data>
+      <data key="d8">[]</data>
+      <data key="d9">["chapter:05"]</data>
+      <data key="d45">5</data>
+      <data key="d46">Deon realises Rowan's work also solves duplicate/blank-page detection for the record-sorting algorithm (relevant to Sally's and Chantal's work), all without an LLM. He proposes bundling insight/redaction guarantees as a marketing angle limited to sorted record sets.</data>
+      <data key="d47">1093.0</data>
+      <data key="d48">1282.0</data>
+      <data key="d49">[]</data>
+      <data key="d50">["visual:0010"]</data>
+      <data key="d51">visual:0010</data>
+    </node>
+    <node id="chapter:06">
+      <data key="d0">Chapter</data>
+      <data key="d1">Reflection and proposal to test on real data</data>
+      <data key="d7">1.0</data>
+      <data key="d8">[]</data>
+      <data key="d9">["chapter:06"]</data>
+      <data key="d45">6</data>
+      <data key="d46">Both reflect on the results being less accurate than hoped despite deterministic hashing methods. They agree to try the approach against real (not synthetic) records, with Deon offering to locate the storage account.</data>
+      <data key="d47">1282.0</data>
+      <data key="d48">1387.0</data>
+      <data key="d49">[]</data>
+      <data key="d50">["visual:0012"]</data>
+      <data key="d51">visual:0012</data>
+    </node>
+    <node id="chapter:07">
+      <data key="d0">Chapter</data>
+      <data key="d1">Redaction workflow and DocSorter placement</data>
+      <data key="d7">1.0</data>
+      <data key="d8">[]</data>
+      <data key="d9">["chapter:07"]</data>
+      <data key="d45">7</data>
+      <data key="d46">Deon explains that redaction should live in DocSorter at the sorting stage, since clinicians are best placed to redact. The current Apprise viewer lacks redaction; the market is trending toward automated redaction rather than manual solicitor workflows.</data>
+      <data key="d47">1387.0</data>
+      <data key="d48">1509.0</data>
+      <data key="d49">[]</data>
+      <data key="d50">[]</data>
+    </node>
+    <node id="chapter:08">
+      <data key="d0">Chapter</data>
+      <data key="d1">New research ask: date-range filtering and PDF rendering at scale</data>
+      <data key="d7">1.0</data>
+      <data key="d8">[]</data>
+      <data key="d9">["chapter:08"]</data>
+      <data key="d45">8</data>
+      <data key="d46">Deon asks Rowan to research how to render a date-range-filtered subset of pages in the Apprise viewer, given the XOD format's incompatibility with byte-range requests, and to test performance against very large PDFs.</data>
+      <data key="d47">1509.0</data>
+      <data key="d48">1662.0</data>
+      <data key="d49">[]</data>
+      <data key="d50">[]</data>
+    </node>
+    <node id="chapter:09">
+      <data key="d0">Chapter</data>
+      <data key="d1">Wrap-up: CEO's recording preference</data>
+      <data key="d7">1.0</data>
+      <data key="d8">[]</data>
+      <data key="d9">["chapter:09"]</data>
+      <data key="d45">9</data>
+      <data key="d46">Deon raises an off-topic point about Adam (CEO) preferring not to record certain discussions, and asks to stop recording, ending the captured portion of the meeting.</data>
+      <data key="d47">1662.0</data>
+      <data key="d48">1682.304</data>
+      <data key="d49">[]</data>
+      <data key="d50">[]</data>
+    </node>
+    <node id="visual:0004">
+      <data key="d0">VisualContext</data>
+      <data key="d1">Screen share begins: VS Code with the annotations/mri133 PDF-matching project open</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Microsoft Teams Edit View Window Help / Now: Catch Up Mi... / PROJECTS annotations .claude .entire data _bakeoff corpus demo resorted bakeoff.html bakeoff.json README.md docs output poc data_pipelines expert-sheet-data-processing lexvision-poc / matter-000-doc-00.clean.pdf 1 of 9 / Build with Agent, AI responses may be inaccurate / Rowan Reid / Deon Kuhn", "ts": 161.5, "source": "vision"}]</data>
+      <data key="d9">["chapter:02"]</data>
+      <data key="d52">frame-00005.png</data>
+      <data key="d53">161.5</data>
+      <data key="d54">app</data>
+      <data key="d55">Microsoft Teams Edit View Window Help / Now: Catch Up Mi... / PROJECTS annotations .claude .entire data _bakeoff corpus demo resorted bakeoff.html bakeoff.json README.md docs output poc data_pipelines expert-sheet-data-processing lexvision-poc / matter-000-doc-00.clean.pdf 1 of 9 / Build with Agent, AI responses may be inaccurate / Rowan Reid / Deon Kuhn</data>
+      <data key="d39">Rowan starts screen sharing in Microsoft Teams, showing VS Code with the 'annotations' project open in Explorer (data/corpus, .entire, mri133, CLAUDE.md, docs, output, poc) and a PDF viewer displaying matter-000-doc-00.clean.pdf (page 1 of 9) from the test corpus used for the page-matching/sorting research.</data>
+      <data key="d56">1bc9d447448416a4</data>
+    </node>
+    <node id="visual:0005">
+      <data key="d0">VisualContext</data>
+      <data key="d1">Terminal demo: running mri133 gen-corpus to generate the test document set</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Rowan.Reid@MB-CPT-LT-0021 annotations % ./mri133 gen-corpus\ngenerated 12 documents, 108 pages into data/corpus\nRowan.Reid@MB-CPT-LT-0021 annotations %\nmatter-001-doc-00.clean.pdf", "ts": 309.688, "source": "vision"}]</data>
+      <data key="d9">["chapter:02"]</data>
+      <data key="d52">frame-00006.png</data>
+      <data key="d53">309.688</data>
+      <data key="d54">demo</data>
+      <data key="d55">Rowan.Reid@MB-CPT-LT-0021 annotations % ./mri133 gen-corpus
+generated 12 documents, 108 pages into data/corpus
+Rowan.Reid@MB-CPT-LT-0021 annotations %
+matter-001-doc-00.clean.pdf</data>
+      <data key="d39">A terminal window overlaid on VS Code shows the command `./mri133 gen-corpus` producing the output 'generated 12 documents, 108 pages into data/corpus' — a live demo of the tool that builds the synthetic PDF corpus used for the page-matching/sorting research.</data>
+      <data key="d56">6b696869696869e0</data>
+    </node>
+    <node id="visual:0007">
+      <data key="d0">VisualContext</data>
+      <data key="d1">VS Code Explorer showing the full annotations project structure</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Code File Edit Selection View Go Run Terminal Window Help / projects / Open Chat / Show All Commands / Open Settings / Rowan Reid / Deon Kuhn", "ts": 422.875, "source": "vision"}]</data>
+      <data key="d9">["chapter:03"]</data>
+      <data key="d52">frame-00009.png</data>
+      <data key="d53">422.875</data>
+      <data key="d54">app</data>
+      <data key="d55">Code File Edit Selection View Go Run Terminal Window Help / projects / Open Chat / Show All Commands / Open Settings / Rowan Reid / Deon Kuhn</data>
+      <data key="d39">Continued screen share of VS Code with an empty editor pane but the Explorer sidebar fully visible, listing the annotations project's top-level files and folders (.claude, .entire, data, docs, output, poc, data_pipelines, expert-sheet-data-processing, lexvision-poc, mri133, README.md, CLAUDE.md, setup.sh, clone-repos.sh) — a clear view of the project's overall layout referenced during the walkthrough.</data>
+      <data key="d56">1b03060b179414e4</data>
+    </node>
+    <node id="visual:0008">
+      <data key="d0">VisualContext</data>
+      <data key="d1">Screen share: gen-corpus and resort tool output in terminal</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Rowan.Reid@MB-CPT-LT-0021 annotations % ./mri133 gen-corpus\ngenerated 12 documents, 108 pages into data/corpus\nRowan.Reid@MB-CPT-LT-0021 annotations % ./mri133 resort\nre-sorted 1 document(s) -&gt; data/resorted/  (originals in data/corpus/)\n\n  removed_wrong_patient  9 -&gt; 8  a wrong-patient page is deleted (must be flagged removed, not slid to a neighbour)\n  removed_benign         9 -&gt; 8  an ordinary page is removed\n  split                  9 -&gt; 10  one page is split into two children (annotation duplicates; redaction abstains)\n  clone                  9 -&gt; 11  one page is placed in several locations\n  full_repagination       9 -&gt; 9  every page index changes at once\n  inserted_indent        9 -&gt; 10  pages inserted with indent numbering between existing pages\n  reorder                9 -&gt; 9  pages reordered without removal (a re-sort)\n  composed_resort        9 -&gt; 10  a realistic re-sort: remove wrong-patient, split a page, clone a page, repaginate\n\nOpen a re-sorted PDF next to its original to see the change, e.g.:\n  open data/corpus/matter-000-doc-00.clean.pdf data/resorted/matter-000-doc-00.composed_resort.pdf\nRowan.Reid@MB-CPT-LT-0021 annotations %", "ts": 512.562, "source": "vision"}]</data>
+      <data key="d9">["chapter:03"]</data>
+      <data key="d52">frame-00011.png</data>
+      <data key="d53">512.562</data>
+      <data key="d54">app</data>
+      <data key="d55">Rowan.Reid@MB-CPT-LT-0021 annotations % ./mri133 gen-corpus
+generated 12 documents, 108 pages into data/corpus
+Rowan.Reid@MB-CPT-LT-0021 annotations % ./mri133 resort
+re-sorted 1 document(s) -&gt; data/resorted/  (originals in data/corpus/)
+
+  removed_wrong_patient  9 -&gt; 8  a wrong-patient page is deleted (must be flagged removed, not slid to a neighbour)
+  removed_benign         9 -&gt; 8  an ordinary page is removed
+  split                  9 -&gt; 10  one page is split into two children (annotation duplicates; redaction abstains)
+  clone                  9 -&gt; 11  one page is placed in several locations
+  full_repagination       9 -&gt; 9  every page index changes at once
+  inserted_indent        9 -&gt; 10  pages inserted with indent numbering between existing pages
+  reorder                9 -&gt; 9  pages reordered without removal (a re-sort)
+  composed_resort        9 -&gt; 10  a realistic re-sort: remove wrong-patient, split a page, clone a page, repaginate
+
+Open a re-sorted PDF next to its original to see the change, e.g.:
+  open data/corpus/matter-000-doc-00.clean.pdf data/resorted/matter-000-doc-00.composed_resort.pdf
+Rowan.Reid@MB-CPT-LT-0021 annotations %</data>
+      <data key="d39">VS Code with a PDF viewer (matter-000-doc-00.composed_resort.pdf, page 9 of 10) and an overlaid terminal running ./mri133 gen-corpus and ./mri133 resort, showing a summary table of resort operations (removed_wrong_patient, removed_benign, split, clone, full_repagination, inserted_indent, reorder, composed_resort) with page-count changes and short descriptions for each.</data>
+      <data key="d56">696b6263686869e8</data>
+    </node>
+    <node id="visual:0009">
+      <data key="d0">VisualContext</data>
+      <data key="d1">Screen share: MRI-133 bake-off results (content arm vs stamped arm)</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "open data/corpus/matter-000-doc-00.clean.pdf data/resorted/matter-000-doc-00.composed_resort.pdf\nRowan.Reid@MB-CPT-LT-0021 annotations % ./mri133 run --matchers all\n=====================================================================\nMRI-133 matching bake-off -- these two arms answer DIFFERENT questions\nreference type: ANNOTATION | 12 docs x 8 §9 scenarios\n=====================================================================\n\nCONTENT ARM -- the AS-IS answer for the page-less population (nothing stamped):\n  precision/recall reported separately; silent-error and review-queue as a PAIR\n  exact_hash      P 92.9% R 89.7% abst-ok 81.2% silent 5.6% / queue 22.2%\n    worst: SPLIT 100% silent, REMOVED 33% silent, DUPLICATE 7% silent\n  perceptual      P 30.8% R 6.9% abst-ok 23.7% silent 12.5% / queue 81.9%\n    worst: INSERTED_INDENT 100% silent, REMOVED 33% silent\n  text_fingerprint P 60.0% R 25.9% abst-ok 27.7% silent 13.9% / queue 65.3%\n    worst: BLANK 100% silent, SPLIT 100% silent, REMOVED 33% silent\n  ensemble        P 70.7% R 60.9% abst-ok 59.1% silent 20.4% / queue 30.6%\n    worst: INSERTED_INDENT 100% silent, SPLIT 100% silent, REMOVED 33% silent\n  DoD reading (content-arm ensemble): POOR  [bars PROPOSED (pending decision): precision&gt;=0.95, recall&gt;=0.7, queue&lt;=0.3]\n\nSTAMPED ARM -- an 'if we stamp at extraction' PROJECTION (not today's population):\n  stamped_id      P 77.8% R 96.6% abst-ok N/A silent 22.2% / queue 0.0%\n    worst: DUPLICATE 100% silent, SPLIT 100% silent\n\n(run with --by-case for the full per-scenario table)\n\nSYNTHETIC-vs-REAL delta: real pairs N/A (synthetic only).\n  ** synthetic is a LOWER BOUND on difficulty; the real-pair delta is deferred Milestone C **\n=====================================================================\n\n(machine-readable result written to data/bakeoff.json)\n(visual report with every percentage's complement written to data/bakeoff.html)\nRowan.Reid@MB-CPT-LT-0021 annotations %", "ts": 946.5, "source": "vision"}]</data>
+      <data key="d9">["chapter:04"]</data>
+      <data key="d52">chapframe-04.png</data>
+      <data key="d53">946.5</data>
+      <data key="d54">app</data>
+      <data key="d55">open data/corpus/matter-000-doc-00.clean.pdf data/resorted/matter-000-doc-00.composed_resort.pdf
+Rowan.Reid@MB-CPT-LT-0021 annotations % ./mri133 run --matchers all
+=====================================================================
+MRI-133 matching bake-off -- these two arms answer DIFFERENT questions
+reference type: ANNOTATION | 12 docs x 8 §9 scenarios
+=====================================================================
+
+CONTENT ARM -- the AS-IS answer for the page-less population (nothing stamped):
+  precision/recall reported separately; silent-error and review-queue as a PAIR
+  exact_hash      P 92.9% R 89.7% abst-ok 81.2% silent 5.6% / queue 22.2%
+    worst: SPLIT 100% silent, REMOVED 33% silent, DUPLICATE 7% silent
+  perceptual      P 30.8% R 6.9% abst-ok 23.7% silent 12.5% / queue 81.9%
+    worst: INSERTED_INDENT 100% silent, REMOVED 33% silent
+  text_fingerprint P 60.0% R 25.9% abst-ok 27.7% silent 13.9% / queue 65.3%
+    worst: BLANK 100% silent, SPLIT 100% silent, REMOVED 33% silent
+  ensemble        P 70.7% R 60.9% abst-ok 59.1% silent 20.4% / queue 30.6%
+    worst: INSERTED_INDENT 100% silent, SPLIT 100% silent, REMOVED 33% silent
+  DoD reading (content-arm ensemble): POOR  [bars PROPOSED (pending decision): precision&gt;=0.95, recall&gt;=0.7, queue&lt;=0.3]
+
+STAMPED ARM -- an 'if we stamp at extraction' PROJECTION (not today's population):
+  stamped_id      P 77.8% R 96.6% abst-ok N/A silent 22.2% / queue 0.0%
+    worst: DUPLICATE 100% silent, SPLIT 100% silent
+
+(run with --by-case for the full per-scenario table)
+
+SYNTHETIC-vs-REAL delta: real pairs N/A (synthetic only).
+  ** synthetic is a LOWER BOUND on difficulty; the real-pair delta is deferred Milestone C **
+=====================================================================
+
+(machine-readable result written to data/bakeoff.json)
+(visual report with every percentage's complement written to data/bakeoff.html)
+Rowan.Reid@MB-CPT-LT-0021 annotations %</data>
+      <data key="d39">VS Code with PDF page viewer behind a terminal window showing the output of ./mri133 run --matchers all: a comparison of matching approaches (exact_hash, perceptual, text_fingerprint, ensemble) under a content-only arm versus a stamped_id arm, with precision/recall/abstain/silent/queue percentages per matcher and per-worst-case scenario notes, plus a stated DoD reading of POOR for the content-arm ensemble.</data>
+      <data key="d56">6b69e0cbc6c868e0</data>
+    </node>
+    <node id="visual:0010">
+      <data key="d0">VisualContext</data>
+      <data key="d1">Screen share: bakeoff.html visual results (content arm, exact_hash and perceptual)</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "master split (of all pages) exactly one bucket; these add up to 100%\n72.2%   Correct 72.2% (624/864)  Silent error (confident &amp; WRONG) 5.6% (48/864)  Over-abstain (needless queue) 18.1% (156/864)\nRecall 89.7% of actionable pages: of pages where a confident answer was wanted, how many did it get right?\n89.7%   Found (correct) 89.7% (624/696)  Missed (wrong or needlessly queued) 10.3% (72/696)\nAbstention judgement 81.2% of all pages: of the pages it hands to a human vs handles itself\n77.8%  Sent to queue 22.2% (192/864)  Right to abstain 81.2% (156/192)  Needless (over-abstain) 18.8% (36/192)\n\npages whose content did not change and simply moved: ordinary, reordered, and inserted pages, and even form letters (their fingerprints differ).\nsplitting: a cut page's halves are physically new content, so it wrongly declares the page gone. It also cannot confirm a clone, so it safely queues it.\ncontent is untouched, blind the moment content is physically altered.\n\nCONTENT ARM   n = 864 page-outcomes\nprint of what the page looks like, not its exact bytes. A small visual change (scanner noise, a slight skew) barely moves the fingerprint, how visually alike two pages are.\n\nmaster split (of all pages)\n62.5%  Correct 5.6% (48/864)  Silent error (confident &amp; WRONG) 12.5% (108/864)  Over-abstain (needless queue) 62.5% (540/864)  correct to queue 19.4% (168/864)\nRecall 6.9% of actionable pages: of pages where a confident answer was wanted, how many did it get right?\n6.9%   Found (correct) 6.9% (48/696) ... 93.1%", "ts": 1098.75, "source": "vision"}]</data>
+      <data key="d9">["chapter:05"]</data>
+      <data key="d52">frame-00012.png</data>
+      <data key="d53">1098.75</data>
+      <data key="d54">app</data>
+      <data key="d55">master split (of all pages) exactly one bucket; these add up to 100%
+72.2%   Correct 72.2% (624/864)  Silent error (confident &amp; WRONG) 5.6% (48/864)  Over-abstain (needless queue) 18.1% (156/864)
+Recall 89.7% of actionable pages: of pages where a confident answer was wanted, how many did it get right?
+89.7%   Found (correct) 89.7% (624/696)  Missed (wrong or needlessly queued) 10.3% (72/696)
+Abstention judgement 81.2% of all pages: of the pages it hands to a human vs handles itself
+77.8%  Sent to queue 22.2% (192/864)  Right to abstain 81.2% (156/192)  Needless (over-abstain) 18.8% (36/192)
+
+pages whose content did not change and simply moved: ordinary, reordered, and inserted pages, and even form letters (their fingerprints differ).
+splitting: a cut page's halves are physically new content, so it wrongly declares the page gone. It also cannot confirm a clone, so it safely queues it.
+content is untouched, blind the moment content is physically altered.
+
+CONTENT ARM   n = 864 page-outcomes
+print of what the page looks like, not its exact bytes. A small visual change (scanner noise, a slight skew) barely moves the fingerprint, how visually alike two pages are.
+
+master split (of all pages)
+62.5%  Correct 5.6% (48/864)  Silent error (confident &amp; WRONG) 12.5% (108/864)  Over-abstain (needless queue) 62.5% (540/864)  correct to queue 19.4% (168/864)
+Recall 6.9% of actionable pages: of pages where a confident answer was wanted, how many did it get right?
+6.9%   Found (correct) 6.9% (48/696) ... 93.1%</data>
+      <data key="d39">Browser-rendered HTML report (bakeoff.html) with bar charts breaking down precision, recall, and abstention judgement for the exact_hash and perceptual matchers within the content arm, plus explanatory notes on why perceptual hashing fails on split pages (content is physically altered) and succeeds on moved/reordered pages (fingerprint unchanged).</data>
+      <data key="d56">b3b9b0b3d292d9e0</data>
+    </node>
+    <node id="visual:0012">
+      <data key="d0">VisualContext</data>
+      <data key="d1">Talking heads: Rowan Reid and Deon Kuhn discussing results</data>
+      <data key="d7">0.9</data>
+      <data key="d8">[{"quote": "Rowan Reid   Deon Kuhn", "ts": 1282.625, "source": "vision"}]</data>
+      <data key="d9">["chapter:06"]</data>
+      <data key="d52">frame-00014.png</data>
+      <data key="d53">1282.625</data>
+      <data key="d54">talking_head</data>
+      <data key="d55">Rowan Reid   Deon Kuhn</data>
+      <data key="d39">Split-screen webcam view of Rowan Reid and Deon Kuhn talking after the screen share of the bake-off results, likely discussing the poor content-arm recall and next steps.</data>
+      <data key="d56">008c9c3233262450</data>
+    </node>
+    <edge source="person:rowan-reid" target="topic:cat-sitting-weekend" id="e-speaks_about-0008">
+      <data key="d57">SPEAKS_ABOUT</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">topic:cat-sitting-weekend</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "Lynn and I did house-sitting for a while. And one day we house-sat a house with seven cats.", "ts": "L23-24", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0001" id="e-asserted-0009">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">claim:0001</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "And it was during that house-sitting that we both discovered that we are a little bit allergic to cats. And Lynn quite a lot allergic to cats.", "ts": "L26-27", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="question:0001" id="e-asked-0010">
+      <data key="d57">ASKED</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">question:0001</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "Is that when you discovered it?", "ts": "L28", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="topic:pdf-synthetic-test-harness" id="e-speaks_about-0024">
+      <data key="d57">SPEAKS_ABOUT</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">topic:pdf-synthetic-test-harness</data>
+      <data key="d60">0.95</data>
+      <data key="d61">[{"quote": "So basically, I generate PDFs, then I resort them.", "ts": "L68", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0004" id="e-asserted-0025">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">claim:0004</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So basically, I generate PDFs, then I resort them. So I've got another command that does some resorting, which does a bunch of different things.", "ts": "L68-69", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0005" id="e-asserted-0026">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">claim:0005</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "And then I've got a matching engine, which uses different styles of matching to try and figure out what happened to each page.", "ts": "L81", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0006" id="e-asserted-0027">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">claim:0006</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "Once you know that you've got the page, the right page, it manages to apply them correctly.", "ts": "L86", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0008" id="e-asserted-0029">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">claim:0008</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "when we get into the matching, the matcher that matches on hashing the content will be able to determine that these are not the same page. But then I use prehash as another matcher... It's been like, oh, these still look like the same page. But then it doesn't pick up little tiny things like that.", "ts": "L109-113", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0009" id="e-asserted-0044">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">claim:0009</data>
+      <data key="d60">0.5</data>
+      <data key="d61">[{"quote": "So what I've created here, you'll just see all of these PDFs appeared. So I've just kind of created, let me open it up. So, for example, this is the PDF. You can see there's a clean and degraded version of every PDF.", "ts": "L93-96", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="topic:mri133-end-to-end-run" id="e-speaks_about-0049">
+      <data key="d57">SPEAKS_ABOUT</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">topic:mri133-end-to-end-run</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "But then what I've got is a full end-to-end. So, if I go MRI133, this actually runs it end-to-end and runs each matcher.", "ts": "L148-149", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0010" id="e-asserted-0050">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">claim:0010</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "But then what I've got is a full end-to-end. So, if I go MRI133, this actually runs it end-to-end and runs each matcher.", "ts": "L148-149", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0012" id="e-asserted-0058">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">claim:0012</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "I did that stamp, and that survived at least my method of inserting new pages and whatever. And so that obviously was naturally the strongest way of identifying the original.", "ts": "L215-216", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="topic:stamped-id-approach" id="e-speaks_about-0060">
+      <data key="d57">SPEAKS_ABOUT</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">topic:stamped-id-approach</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "And I also tried what I've called stamped.", "ts": "L210", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="topic:matching-algorithm-comparison" id="e-speaks_about-0062">
+      <data key="d57">SPEAKS_ABOUT</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">topic:matching-algorithm-comparison</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So these are my different matching algorithms.", "ts": "L219", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0013" id="e-asserted-0068">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">claim:0013</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "Of those that it was confident about, it got 92.9% right, which is good, right?", "ts": "L232", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0015" id="e-asserted-0072">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">claim:0015</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So actually, if a page has been split, it basically thinks the page is gone because there's nothing that's, those two pages don't hash.", "ts": "L238-239", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="question:0002" id="e-asked-0074">
+      <data key="d57">ASKED</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">question:0002</data>
+      <data key="d60">0.75</data>
+      <data key="d61">[{"quote": "How close is the text on the pages?", "ts": "L225", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0016" id="e-asserted-0078">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">claim:0016</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "The conclusion is that if we go stamped, like, the stamped route is by far and above, like, it gets rid of all the crazy noise and trying to figure out, like, how to do the right matching.", "ts": "L247", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0017" id="e-asserted-0080">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">claim:0017</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "If you do stamped, it works, and the only time it gets it wrong is if you've got a exact, like, a duplicate ... Or you've split a page, and you haven't put any kind of lineage into the previous page.", "ts": "L248-249", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0019" id="e-asserted-0084">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">claim:0019</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "the best we can possibly get is, like, three quarters of your annotations are placed back to where we're confident they are, and 25% of them you're going to need to replace.", "ts": "L255", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="question:0003" id="e-answered-0097">
+      <data key="d57">ANSWERED</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">question:0003</data>
+      <data key="d60">0.7</data>
+      <data key="d61">[{"quote": "Yeah, yeah. You need something that, like, yeah, validates that. And it doesn't.", "ts": "L270-272", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="question:0004" id="e-answered-0099">
+      <data key="d57">ANSWERED</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">question:0004</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "Yeah, it was very interesting. Very exciting.", "ts": "L291-292", "source": "chapter:06"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0023" id="e-asserted-0100">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">claim:0023</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "I thought that it would do better than it did.", "ts": "L296", "source": "chapter:06"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0026" id="e-asserted-0106">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">claim:0026</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "my data set is purposefully challenging. ... there's pages that look exactly the same. I have, like, just got the footer that's, like, slightly different.", "ts": "L308-311", "source": "chapter:06"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="action:0002" id="e-owns-0109">
+      <data key="d57">OWNS</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">action:0002</data>
+      <data key="d60">0.75</data>
+      <data key="d61">[{"quote": "We can try it.", "ts": "L306", "source": "chapter:06"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="question:0005" id="e-asked-0130">
+      <data key="d57">ASKED</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">question:0005</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So, would, like, solicitors and them be able to still redact when they get, by the time the docs get to them, or no?", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="topic:redaction" id="e-speaks_about-0144">
+      <data key="d57">SPEAKS_ABOUT</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">topic:redaction</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "So, would, like, solicitors and them be able to still redact when they get, by the time the docs get to them, or no?", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="action:0004" id="e-owns-0157">
+      <data key="d57">OWNS</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">action:0004</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So if you can do a little bit of research for me on that, just to send you to again what I've found, that would be very, very useful.", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="topic:date-range-rendering" id="e-speaks_about-0165">
+      <data key="d57">SPEAKS_ABOUT</data>
+      <data key="d58">person:rowan-reid</data>
+      <data key="d59">topic:date-range-rendering</data>
+      <data key="d60">0.75</data>
+      <data key="d61">[{"quote": "I mean, I can easily generate some fat PDFs and see what happens, yeah.", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="topic:cat-sitting-weekend" id="e-speaks_about-0007">
+      <data key="d57">SPEAKS_ABOUT</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">topic:cat-sitting-weekend</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "We were house-sitting in an area just outside of Cardiff. So we're actually cat-sitting.", "ts": "L12-13", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="question:0001" id="e-answered-0012">
+      <data key="d57">ANSWERED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">question:0001</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "Yeah, that's when we discovered it.", "ts": "L29", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0002" id="e-asserted-0013">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">claim:0002</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "Yeah, that's when we discovered it.", "ts": "L29", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0003" id="e-asserted-0014">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">claim:0003</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "No, I tried to, as Lewis said, I sort of maybe loved the cat too much this weekend. And he ended up scratching me quite a bit.", "ts": "L43-44", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0007" id="e-asserted-0028">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">claim:0007</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "As a quick note, when we ingest, obviously, the annotations, because they're in that format, the XFDF or whatever, we do, like, use the engine of Apprise to apply them to the pages.", "ts": "L88", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0011" id="e-asserted-0056">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">claim:0011</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "Rowan, can I go get the delivery quick? Sorry. Because they need to see my face. It's not a one that they can pick up.", "ts": "L165-168", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="topic:stamped-id-approach" id="e-raised-0061">
+      <data key="d57">RAISED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">topic:stamped-id-approach</data>
+      <data key="d60">0.75</data>
+      <data key="d61">[{"quote": "I kind of like that approach. I was thinking about something a while back, like an invisible little thing that we can use.", "ts": "L212-213", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0014" id="e-asserted-0070">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">claim:0014</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "But that only works for things that maybe have text. Or clean-looking things, yeah.", "ts": "L234-236", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0018" id="e-asserted-0082">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">claim:0018</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "I mean, I like the stamp, but none of these, to my eye or to my, like, sort of reasoning, are accurate enough.", "ts": "L252-253", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0020" id="e-asserted-0085">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">claim:0020</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "Do you know what you've actually done now is you've solved another problem we have, which is duplicate detection in the sorting algorithm for Sally.", "ts": "L257", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0021" id="e-asserted-0088">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">claim:0021</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "And Lara would be very interested in all of this, because this is fascinating.", "ts": "L259", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0022" id="e-asserted-0090">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">claim:0022</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "Without using an LLM, because you didn't obviously use any AI. This is all deterministic methodology.", "ts": "L260-261", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="decision:0001" id="e-decided-0091">
+      <data key="d57">DECIDED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">decision:0001</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "we, from a product point of view, tell the client that we are only able to retain redaction annotations if we sorted the records ... So we can bundle it as a marketing thing.", "ts": "L263-264,283", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="topic:product-bundling-strategy" id="e-speaks_about-0092">
+      <data key="d57">SPEAKS_ABOUT</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">topic:product-bundling-strategy</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "this will only be a thing that we can apply for a sorted set of records. Much of the insights also only applies to sorted sets of records. So we can bundle it as a marketing thing.", "ts": "L281-283", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="action:0001" id="e-raised-0094">
+      <data key="d57">RAISED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">action:0001</data>
+      <data key="d60">0.8</data>
+      <data key="d61">[{"quote": "what I'll speak to Chantal about is, like, this will, like I said, this will only be a thing that we can apply for a sorted set of records.", "ts": "L281", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="question:0003" id="e-asked-0096">
+      <data key="d57">ASKED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">question:0003</data>
+      <data key="d60">0.8</data>
+      <data key="d61">[{"quote": "Remember what I told you?", "ts": "L268", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="question:0004" id="e-asked-0098">
+      <data key="d57">ASKED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">question:0004</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "How do you feel about all of this?", "ts": "L290", "source": "chapter:06"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0024" id="e-asserted-0101">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">claim:0024</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "I actually had high hopes for this. I thought it was going to be, like, okay, cool. Like, a solid algorithm and solid hashing ... would be able to detect the similar pages. But I guess it's just not.", "ts": "L297-301", "source": "chapter:06"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0025" id="e-asserted-0102">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">claim:0025</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "And we haven't even tried it in real data.", "ts": "L302", "source": "chapter:06"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="topic:real-data-testing" id="e-speaks_about-0103">
+      <data key="d57">SPEAKS_ABOUT</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">topic:real-data-testing</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "And we haven't even tried it in real data.", "ts": "L302", "source": "chapter:06"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="decision:0002" id="e-decided-0104">
+      <data key="d57">DECIDED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">decision:0002</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "You can try it as an extension of the research because I don't think it will go to waste. I'll find the storage account quickly. And you can try it on the records.", "ts": "L316-318", "source": "chapter:06"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0027" id="e-asserted-0107">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">claim:0027</data>
+      <data key="d60">0.8</data>
+      <data key="d61">[{"quote": "You can try it as an extension of the research because I don't think it will go to waste.", "ts": "L316", "source": "chapter:06"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="action:0002" id="e-raised-0108">
+      <data key="d57">RAISED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">action:0002</data>
+      <data key="d60">0.8</data>
+      <data key="d61">[{"quote": "I mean, we can. ... And you can try it on the records.", "ts": "L305-318", "source": "chapter:06"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="action:0003" id="e-raised-0110">
+      <data key="d57">RAISED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">action:0003</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "I'll find the storage account quickly.", "ts": "L317", "source": "chapter:06"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0028" id="e-asserted-0111">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">claim:0028</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "because of the accuracy issue with what we're working with, I don't, there's just no margin for error, really.", "ts": "L320", "source": "chapter:06"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="decision:0003" id="e-decided-0126">
+      <data key="d57">DECIDED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">decision:0003</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So, redaction, my thinking, I might have mentioned this, is also that we do redaction inside DocSorter because they're the people who, the clinicians would be the people who are best placed to do the actual redaction in the first place.", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="question:0005" id="e-answered-0132">
+      <data key="d57">ANSWERED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">question:0005</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So, redaction is currently not available inside the appraise viewer that we have.", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0029" id="e-asserted-0133">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">claim:0029</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So, redaction is currently not available inside the appraise viewer that we have.", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0030" id="e-asserted-0135">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">claim:0030</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "I remember you guys had a viewer for ShareBrief that redaction was quite processing heavy. This one is much lighter.", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0031" id="e-asserted-0138">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">claim:0031</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "And also, like, the market is gearing towards automated redaction.", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="topic:redaction" id="e-speaks_about-0143">
+      <data key="d57">SPEAKS_ABOUT</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">topic:redaction</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So, redaction, my thinking, I might have mentioned this, is also that we do redaction inside DocSorter because they're the people who, the clinicians would be the people who are best placed to do the actual redaction in the first place.", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0032" id="e-asserted-0150">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">claim:0032</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So, with the date range filter, since you're in the appraise world, in that viewer, it's not compatible with the format that we use with the XOD because that uses byte range requests, and it only renders the pages that you're viewing, basically.", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0033" id="e-asserted-0153">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">claim:0033</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "And they recommend linearized PDFs to also do byte range requests.", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0034" id="e-asserted-0154">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">claim:0034</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "But I think that the byte range request is just not going to be compatible. You're going to have to load the whole thing up front.", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0035" id="e-asserted-0155">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">claim:0035</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "I don't think we'll reach that limit because the Computer Electronic Records is the only one that has that many pages.", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="topic:date-range-rendering" id="e-speaks_about-0164">
+      <data key="d57">SPEAKS_ABOUT</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">topic:date-range-rendering</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So, with the date range filter, since you're in the appraise world, in that viewer, it's not compatible with the format that we use with the XOD", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0036" id="e-asserted-0171">
+      <data key="d57">ASSERTED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">claim:0036</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So Adam has been, Adam as CEO is very heavy on, can we stop recording?", "ts": 1662.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="question:0006" id="e-asked-0173">
+      <data key="d57">ASKED</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">question:0006</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So Adam has been, Adam as CEO is very heavy on, can we stop recording?", "ts": 1662.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="topic:recording-preference" id="e-speaks_about-0177">
+      <data key="d57">SPEAKS_ABOUT</data>
+      <data key="d58">person:deon-kuhn</data>
+      <data key="d59">topic:recording-preference</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So Adam has been, Adam as CEO is very heavy on, can we stop recording?", "ts": 1662.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:lewis" target="person:deon-kuhn" id="e-mentioned_by-0015">
+      <data key="d57">MENTIONED_BY</data>
+      <data key="d58">person:lewis</data>
+      <data key="d59">person:deon-kuhn</data>
+      <data key="d60">0.7</data>
+      <data key="d61">[{"quote": "as Lewis said, I sort of maybe loved the cat too much this weekend", "ts": "L43", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:cat-sitting-weekend" target="claim:0001" id="e-relates_to-0020">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:cat-sitting-weekend</data>
+      <data key="d59">claim:0001</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "we both discovered that we are a little bit allergic to cats", "ts": "L26", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:cat-sitting-weekend" target="claim:0002" id="e-relates_to-0021">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:cat-sitting-weekend</data>
+      <data key="d59">claim:0002</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "Yeah, that's when we discovered it.", "ts": "L29", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:cat-sitting-weekend" target="claim:0003" id="e-relates_to-0022">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:cat-sitting-weekend</data>
+      <data key="d59">claim:0003</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "And he ended up scratching me quite a bit.", "ts": "L44", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:cat-sitting-weekend" target="question:0001" id="e-relates_to-0023">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:cat-sitting-weekend</data>
+      <data key="d59">question:0001</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "Is that when you discovered it?", "ts": "L28", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:pdf-synthetic-test-harness" target="claim:0004" id="e-relates_to-0039">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:pdf-synthetic-test-harness</data>
+      <data key="d59">claim:0004</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So basically, I generate PDFs, then I resort them.", "ts": "L68", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:pdf-synthetic-test-harness" target="claim:0005" id="e-relates_to-0040">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:pdf-synthetic-test-harness</data>
+      <data key="d59">claim:0005</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "And then I've got a matching engine, which uses different styles of matching to try and figure out what happened to each page.", "ts": "L81", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:pdf-synthetic-test-harness" target="claim:0006" id="e-relates_to-0041">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:pdf-synthetic-test-harness</data>
+      <data key="d59">claim:0006</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "Once you know that you've got the page, the right page, it manages to apply them correctly.", "ts": "L86", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:pdf-synthetic-test-harness" target="claim:0007" id="e-relates_to-0042">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:pdf-synthetic-test-harness</data>
+      <data key="d59">claim:0007</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "we do, like, use the engine of Apprise to apply them to the pages", "ts": "L88", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:pdf-synthetic-test-harness" target="claim:0008" id="e-relates_to-0043">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:pdf-synthetic-test-harness</data>
+      <data key="d59">claim:0008</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "it doesn't pick up little tiny things like that", "ts": "L113", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:pdf-synthetic-test-harness" target="claim:0009" id="e-relates_to-0046">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:pdf-synthetic-test-harness</data>
+      <data key="d59">claim:0009</data>
+      <data key="d60">0.5</data>
+      <data key="d61">[{"quote": "So what I've created here, you'll just see all of these PDFs appeared.", "ts": "L93", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:mri133-end-to-end-run" target="topic:pdf-synthetic-test-harness" id="e-subtopic_of-0048">
+      <data key="d57">SUBTOPIC_OF</data>
+      <data key="d58">topic:mri133-end-to-end-run</data>
+      <data key="d59">topic:pdf-synthetic-test-harness</data>
+      <data key="d60">0.75</data>
+      <data key="d61">[{"quote": "But then what I've got is a full end-to-end. So, if I go MRI133, this actually runs it end-to-end and runs each matcher.", "ts": "L148-149", "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:mri133-end-to-end-run" target="claim:0010" id="e-relates_to-0052">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:mri133-end-to-end-run</data>
+      <data key="d59">claim:0010</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So, if I go MRI133, this actually runs it end-to-end and runs each matcher.", "ts": "L149", "source": "transcript"}]</data>
+    </edge>
+    <edge source="artifact:mri133" target="person:rowan-reid" id="e-mentioned_by-0054">
+      <data key="d57">MENTIONED_BY</data>
+      <data key="d58">artifact:mri133</data>
+      <data key="d59">person:rowan-reid</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So, if I go MRI133, this actually runs it end-to-end and runs each matcher.", "ts": "L149", "source": "transcript"}]</data>
+    </edge>
+    <edge source="artifact:apprise-viewer" target="person:rowan-reid" id="e-mentioned_by-0032">
+      <data key="d57">MENTIONED_BY</data>
+      <data key="d58">artifact:apprise-viewer</data>
+      <data key="d59">person:rowan-reid</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "I then have used the Apprise Viewer to, like, move annotations around or move redactions around", "ts": "L84", "source": "transcript"}]</data>
+    </edge>
+    <edge source="artifact:apprise-viewer" target="person:deon-kuhn" id="e-mentioned_by-0033">
+      <data key="d57">MENTIONED_BY</data>
+      <data key="d58">artifact:apprise-viewer</data>
+      <data key="d59">person:deon-kuhn</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "we do, like, use the engine of Apprise to apply them to the pages", "ts": "L88", "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:chantal" target="person:deon-kuhn" id="e-mentioned_by-0129">
+      <data key="d57">MENTIONED_BY</data>
+      <data key="d58">person:chantal</data>
+      <data key="d59">person:deon-kuhn</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "And that's why I feel like Chantal's original ticket was trying to find something that will solve everything, but it actually can't.", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:lara" target="person:deon-kuhn" id="e-mentioned_by-0089">
+      <data key="d57">MENTIONED_BY</data>
+      <data key="d58">person:lara</data>
+      <data key="d59">person:deon-kuhn</data>
+      <data key="d60">0.8</data>
+      <data key="d61">[{"quote": "And Lara would be very interested in all of this, because this is fascinating.", "ts": "L259", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="topic:matching-algorithm-comparison" target="chapter:04" id="e-occurs_in-0112">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">topic:matching-algorithm-comparison</data>
+      <data key="d59">chapter:04</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "So these are my different matching algorithms.", "ts": "L219", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="topic:exact-hash-matching" target="topic:matching-algorithm-comparison" id="e-subtopic_of-0063">
+      <data key="d57">SUBTOPIC_OF</data>
+      <data key="d58">topic:exact-hash-matching</data>
+      <data key="d59">topic:matching-algorithm-comparison</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So exact hash is just a char hash of the page.", "ts": "L220", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="topic:exact-hash-matching" target="chapter:04" id="e-occurs_in-0113">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">topic:exact-hash-matching</data>
+      <data key="d59">chapter:04</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "So exact hash is just a char hash of the page.", "ts": "L220", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="topic:perceptual-hash-matching" target="topic:matching-algorithm-comparison" id="e-subtopic_of-0064">
+      <data key="d57">SUBTOPIC_OF</data>
+      <data key="d58">topic:perceptual-hash-matching</data>
+      <data key="d59">topic:matching-algorithm-comparison</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "Perceptual was a P hash, so basically like a visual-based hash of the page.", "ts": "L221", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="topic:perceptual-hash-matching" target="chapter:04" id="e-occurs_in-0114">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">topic:perceptual-hash-matching</data>
+      <data key="d59">chapter:04</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "Perceptual was a P hash", "ts": "L221", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="topic:text-fingerprint-matching" target="topic:matching-algorithm-comparison" id="e-subtopic_of-0065">
+      <data key="d57">SUBTOPIC_OF</data>
+      <data key="d58">topic:text-fingerprint-matching</data>
+      <data key="d59">topic:matching-algorithm-comparison</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "Text for the print is just like a text comparison. How close is the text on the pages?", "ts": "L224-225", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="topic:text-fingerprint-matching" target="chapter:04" id="e-occurs_in-0115">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">topic:text-fingerprint-matching</data>
+      <data key="d59">chapter:04</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "Text for the print is just like a text comparison.", "ts": "L224", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="topic:ensemble-matching" target="topic:matching-algorithm-comparison" id="e-subtopic_of-0066">
+      <data key="d57">SUBTOPIC_OF</data>
+      <data key="d58">topic:ensemble-matching</data>
+      <data key="d59">topic:matching-algorithm-comparison</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "And then Ensemble was just like a combination of them trying to get them all to work together and fill in for their weaknesses.", "ts": "L226", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="topic:ensemble-matching" target="chapter:04" id="e-occurs_in-0116">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">topic:ensemble-matching</data>
+      <data key="d59">chapter:04</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "And then Ensemble was just like a combination of them", "ts": "L226", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="topic:stamped-id-approach" target="topic:matching-algorithm-comparison" id="e-subtopic_of-0067">
+      <data key="d57">SUBTOPIC_OF</data>
+      <data key="d58">topic:stamped-id-approach</data>
+      <data key="d59">topic:matching-algorithm-comparison</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "And I also tried what I've called stamped.", "ts": "L210", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="topic:stamped-id-approach" target="chapter:04" id="e-occurs_in-0117">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">topic:stamped-id-approach</data>
+      <data key="d59">chapter:04</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "And I also tried what I've called stamped.", "ts": "L210", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="topic:duplicate-detection-reuse" target="chapter:05" id="e-occurs_in-0118">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">topic:duplicate-detection-reuse</data>
+      <data key="d59">chapter:05</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "duplicate detection in the sorting algorithm for Sally", "ts": "L257", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="topic:product-bundling-strategy" target="chapter:05" id="e-occurs_in-0119">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">topic:product-bundling-strategy</data>
+      <data key="d59">chapter:05</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "So we can bundle it as a marketing thing.", "ts": "L283", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="topic:real-data-testing" target="chapter:06" id="e-occurs_in-0120">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">topic:real-data-testing</data>
+      <data key="d59">chapter:06</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "And we haven't even tried it in real data.", "ts": "L302", "source": "chapter:06"}]</data>
+    </edge>
+    <edge source="artifact:bakeoff-html" target="topic:matching-algorithm-comparison" id="e-illustrates-0076">
+      <data key="d57">ILLUSTRATES</data>
+      <data key="d58">artifact:bakeoff-html</data>
+      <data key="d59">topic:matching-algorithm-comparison</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "I'll bring over the pretty HTML version of it now.", "ts": "L241", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="artifact:bakeoff-html" target="chapter:04" id="e-shown_during-0077">
+      <data key="d57">SHOWN_DURING</data>
+      <data key="d58">artifact:bakeoff-html</data>
+      <data key="d59">chapter:04</data>
+      <data key="d60">0.8</data>
+      <data key="d61">[{"quote": "I'll just bring up the HTML.", "ts": "L218", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="person:adam" target="person:deon-kuhn" id="e-mentioned_by-0172">
+      <data key="d57">MENTIONED_BY</data>
+      <data key="d58">person:adam</data>
+      <data key="d59">person:deon-kuhn</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So Adam has been, Adam as CEO is very heavy on, can we stop recording?", "ts": 1662.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:redaction" target="decision:0003" id="e-relates_to-0128">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:redaction</data>
+      <data key="d59">decision:0003</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So, redaction, my thinking, I might have mentioned this, is also that we do redaction inside DocSorter because they're the people who, the clinicians would be the people who are best placed to do the actual redaction in the first place.", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:redaction" target="claim:0029" id="e-relates_to-0139">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:redaction</data>
+      <data key="d59">claim:0029</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So, redaction is currently not available inside the appraise viewer that we have.", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:redaction" target="claim:0030" id="e-relates_to-0140">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:redaction</data>
+      <data key="d59">claim:0030</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "This one is much lighter.", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:redaction" target="claim:0031" id="e-relates_to-0141">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:redaction</data>
+      <data key="d59">claim:0031</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "And also, like, the market is gearing towards automated redaction.", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:redaction" target="question:0005" id="e-relates_to-0142">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:redaction</data>
+      <data key="d59">question:0005</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So, would, like, solicitors and them be able to still redact when they get, by the time the docs get to them, or no?", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:date-range-rendering" target="claim:0032" id="e-relates_to-0159">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:date-range-rendering</data>
+      <data key="d59">claim:0032</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "it's not compatible with the format that we use with the XOD because that uses byte range requests, and it only renders the pages that you're viewing, basically.", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:date-range-rendering" target="claim:0033" id="e-relates_to-0160">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:date-range-rendering</data>
+      <data key="d59">claim:0033</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "And they recommend linearized PDFs to also do byte range requests.", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:date-range-rendering" target="claim:0034" id="e-relates_to-0161">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:date-range-rendering</data>
+      <data key="d59">claim:0034</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "But I think that the byte range request is just not going to be compatible. You're going to have to load the whole thing up front.", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:date-range-rendering" target="claim:0035" id="e-relates_to-0162">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:date-range-rendering</data>
+      <data key="d59">claim:0035</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "I don't think we'll reach that limit because the Computer Electronic Records is the only one that has that many pages.", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:date-range-rendering" target="action:0004" id="e-relates_to-0163">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:date-range-rendering</data>
+      <data key="d59">action:0004</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So if you can do a little bit of research for me on that, just to send you to again what I've found, that would be very, very useful.", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:recording-preference" target="claim:0036" id="e-relates_to-0175">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:recording-preference</data>
+      <data key="d59">claim:0036</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So Adam has been, Adam as CEO is very heavy on, can we stop recording?", "ts": 1662.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:recording-preference" target="question:0006" id="e-relates_to-0176">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">topic:recording-preference</data>
+      <data key="d59">question:0006</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So Adam has been, Adam as CEO is very heavy on, can we stop recording?", "ts": 1662.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0001" target="person:deon-kuhn" id="e-addressed_to-0011">
+      <data key="d57">ADDRESSED_TO</data>
+      <data key="d58">question:0001</data>
+      <data key="d59">person:deon-kuhn</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "Is that when you discovered it?", "ts": "L28", "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0001" target="chapter:01" id="e-occurs_in-0019">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">question:0001</data>
+      <data key="d59">chapter:01</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "Is that when you discovered it?", "ts": "L28", "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0002" target="topic:text-fingerprint-matching" id="e-addressed_to-0075">
+      <data key="d57">ADDRESSED_TO</data>
+      <data key="d58">question:0002</data>
+      <data key="d59">topic:text-fingerprint-matching</data>
+      <data key="d60">0.75</data>
+      <data key="d61">[{"quote": "Text for the print is just like a text comparison. How close is the text on the pages?", "ts": "L224-225", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="question:0005" target="person:deon-kuhn" id="e-addressed_to-0131">
+      <data key="d57">ADDRESSED_TO</data>
+      <data key="d58">question:0005</data>
+      <data key="d59">person:deon-kuhn</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "So, would, like, solicitors and them be able to still redact when they get, by the time the docs get to them, or no?", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0005" target="chapter:07" id="e-occurs_in-0146">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">question:0005</data>
+      <data key="d59">chapter:07</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So, would, like, solicitors and them be able to still redact when they get, by the time the docs get to them, or no?", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0006" target="person:rowan-reid" id="e-addressed_to-0174">
+      <data key="d57">ADDRESSED_TO</data>
+      <data key="d58">question:0006</data>
+      <data key="d59">person:rowan-reid</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "So Adam has been, Adam as CEO is very heavy on, can we stop recording?", "ts": 1662.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0006" target="chapter:09" id="e-occurs_in-0179">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">question:0006</data>
+      <data key="d59">chapter:09</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So Adam has been, Adam as CEO is very heavy on, can we stop recording?", "ts": 1662.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0001" target="chapter:01" id="e-occurs_in-0016">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">claim:0001</data>
+      <data key="d59">chapter:01</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "And it was during that house-sitting that we both discovered that we are a little bit allergic to cats.", "ts": "L26", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0002" target="chapter:01" id="e-occurs_in-0017">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">claim:0002</data>
+      <data key="d59">chapter:01</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "Yeah, that's when we discovered it.", "ts": "L29", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0003" target="chapter:01" id="e-occurs_in-0018">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">claim:0003</data>
+      <data key="d59">chapter:01</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "And he ended up scratching me quite a bit.", "ts": "L44", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0004" target="chapter:02" id="e-occurs_in-0034">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">claim:0004</data>
+      <data key="d59">chapter:02</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So basically, I generate PDFs, then I resort them.", "ts": "L68", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0005" target="chapter:02" id="e-occurs_in-0035">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">claim:0005</data>
+      <data key="d59">chapter:02</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "And then I've got a matching engine, which uses different styles of matching to try and figure out what happened to each page.", "ts": "L81", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0006" target="artifact:apprise-viewer" id="e-references-0030">
+      <data key="d57">REFERENCES</data>
+      <data key="d58">claim:0006</data>
+      <data key="d59">artifact:apprise-viewer</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "I then have used the Apprise Viewer to, like, move annotations around or move redactions around just to kind of see if that works.", "ts": "L84", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0006" target="chapter:02" id="e-occurs_in-0036">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">claim:0006</data>
+      <data key="d59">chapter:02</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "Once you know that you've got the page, the right page, it manages to apply them correctly.", "ts": "L86", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0007" target="artifact:apprise-viewer" id="e-references-0031">
+      <data key="d57">REFERENCES</data>
+      <data key="d58">claim:0007</data>
+      <data key="d59">artifact:apprise-viewer</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "we do, like, use the engine of Apprise to apply them to the pages", "ts": "L88", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0007" target="chapter:02" id="e-occurs_in-0037">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">claim:0007</data>
+      <data key="d59">chapter:02</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "we do, like, use the engine of Apprise to apply them to the pages", "ts": "L88", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0008" target="chapter:02" id="e-occurs_in-0038">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">claim:0008</data>
+      <data key="d59">chapter:02</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "the matcher that matches on hashing the content will be able to determine that these are not the same page. But then I use prehash as another matcher... it doesn't pick up little tiny things like that.", "ts": "L109-113", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0009" target="chapter:02" id="e-occurs_in-0045">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">claim:0009</data>
+      <data key="d59">chapter:02</data>
+      <data key="d60">0.5</data>
+      <data key="d61">[{"quote": "So what I've created here, you'll just see all of these PDFs appeared.", "ts": "L93", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0010" target="chapter:03" id="e-occurs_in-0051">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">claim:0010</data>
+      <data key="d59">chapter:03</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So, if I go MRI133, this actually runs it end-to-end and runs each matcher.", "ts": "L149", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0010" target="artifact:mri133" id="e-references-0053">
+      <data key="d57">REFERENCES</data>
+      <data key="d58">claim:0010</data>
+      <data key="d59">artifact:mri133</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So, if I go MRI133, this actually runs it end-to-end and runs each matcher.", "ts": "L149", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0011" target="chapter:03" id="e-occurs_in-0057">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">claim:0011</data>
+      <data key="d59">chapter:03</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "Rowan, can I go get the delivery quick? Sorry.", "ts": "L165-166", "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0012" target="artifact:pico-pdf" id="e-references-0059">
+      <data key="d57">REFERENCES</data>
+      <data key="d58">claim:0012</data>
+      <data key="d59">artifact:pico-pdf</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "I applied a metadata right into the PDF using Pico PDF to get stamped a unique ID into the page.", "ts": "L211", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="claim:0013" target="topic:exact-hash-matching" id="e-relates_to-0069">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">claim:0013</data>
+      <data key="d59">topic:exact-hash-matching</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "Of those that it was confident about, it got 92.9% right", "ts": "L232", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="claim:0014" target="topic:exact-hash-matching" id="e-relates_to-0071">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">claim:0014</data>
+      <data key="d59">topic:exact-hash-matching</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "But that only works for things that maybe have text.", "ts": "L234", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="claim:0015" target="topic:exact-hash-matching" id="e-relates_to-0073">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">claim:0015</data>
+      <data key="d59">topic:exact-hash-matching</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So anyway, it's really bad at split.", "ts": "L238", "source": "chapter:04"}]</data>
+    </edge>
+    <edge source="claim:0016" target="topic:stamped-id-approach" id="e-relates_to-0079">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">claim:0016</data>
+      <data key="d59">topic:stamped-id-approach</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "the stamped route is by far and above", "ts": "L247", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="claim:0017" target="topic:stamped-id-approach" id="e-relates_to-0081">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">claim:0017</data>
+      <data key="d59">topic:stamped-id-approach</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "Every other scenario, it obviously catches, because you've maintained the metadata stamping.", "ts": "L250", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="claim:0018" target="topic:matching-algorithm-comparison" id="e-relates_to-0083">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">claim:0018</data>
+      <data key="d59">topic:matching-algorithm-comparison</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "none of these ... are accurate enough. If you think about what we're trying to achieve here, it's just not going to work.", "ts": "L252-253", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="claim:0019" target="decision:0003" id="e-supports-0186">
+      <data key="d57">SUPPORTS</data>
+      <data key="d58">claim:0019</data>
+      <data key="d59">decision:0003</data>
+      <data key="d60">0.6</data>
+      <data key="d61">[{"quote": "Like, the best we can possibly get is, like, three quarters of your annotations are placed back to where we're confident they are, and 25% of them you're going to need to replace.", "ts": 1083.2, "source": "transcript"}, {"quote": "So, redaction, my thinking, I might have mentioned this, is also that we do redaction inside DocSorter because they're the people who, the clinicians would be the people who are best placed to do the actual redaction in the first place.", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0020" target="topic:duplicate-detection-reuse" id="e-relates_to-0086">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">claim:0020</data>
+      <data key="d59">topic:duplicate-detection-reuse</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "you've solved another problem we have, which is duplicate detection in the sorting algorithm for Sally", "ts": "L257", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="claim:0020" target="decision:0001" id="e-supports-0184">
+      <data key="d57">SUPPORTS</data>
+      <data key="d58">claim:0020</data>
+      <data key="d59">decision:0001</data>
+      <data key="d60">0.75</data>
+      <data key="d61">[{"quote": "Do you know what you've actually done now is you've solved another problem we have, which is duplicate detection in the sorting algorithm for Sally.", "ts": 1104.5, "source": "transcript"}, {"quote": "Much of the insights also only applies to sorted sets of records. So we can bundle it as a marketing thing.", "ts": 1230.5, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0020" target="artifact:salli" id="e-references-salli-0001">
+      <data key="d57">REFERENCES</data>
+      <data key="d58">claim:0020</data>
+      <data key="d59">artifact:salli</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "Do you know what you've actually done now is you've solved another problem we have, which is duplicate detection in the sorting algorithm for Sally.", "ts": 1104.5, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0024" target="claim:0018" id="e-builds_on-0180">
+      <data key="d57">BUILDS_ON</data>
+      <data key="d58">claim:0024</data>
+      <data key="d59">claim:0018</data>
+      <data key="d60">0.7</data>
+      <data key="d61">[{"quote": "I mean, I like the stamp, but none of these, to my eye or to my, like, sort of reasoning, are accurate enough. If you think about what we're trying to achieve here, it's just not going to work.", "ts": 1073.1, "source": "transcript"}, {"quote": "I actually had high hopes for this. I thought it was going to be, like, okay, cool. Like, a solid algorithm and solid hashing or, like, those things would be able to detect the similar pages. But I guess it's just not.", "ts": 1307.3, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0028" target="decision:0002" id="e-supports-0185">
+      <data key="d57">SUPPORTS</data>
+      <data key="d58">claim:0028</data>
+      <data key="d59">decision:0002</data>
+      <data key="d60">0.7</data>
+      <data key="d61">[{"quote": "But my feeling here is obviously, like I said, like, because of the accuracy issue with what we're working with, I don't, there's just no margin for error, really.", "ts": 1387.0, "source": "transcript"}, {"quote": "We can try it.", "ts": 1336.3, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0029" target="artifact:apprise-viewer" id="e-references-0134">
+      <data key="d57">REFERENCES</data>
+      <data key="d58">claim:0029</data>
+      <data key="d59">artifact:apprise-viewer</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So, redaction is currently not available inside the appraise viewer that we have.", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0029" target="chapter:07" id="e-occurs_in-0147">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">claim:0029</data>
+      <data key="d59">chapter:07</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So, redaction is currently not available inside the appraise viewer that we have.", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0030" target="artifact:sharebrief-viewer" id="e-references-0136">
+      <data key="d57">REFERENCES</data>
+      <data key="d58">claim:0030</data>
+      <data key="d59">artifact:sharebrief-viewer</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "I remember you guys had a viewer for ShareBrief that redaction was quite processing heavy.", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0030" target="artifact:apprise-viewer" id="e-references-0137">
+      <data key="d57">REFERENCES</data>
+      <data key="d58">claim:0030</data>
+      <data key="d59">artifact:apprise-viewer</data>
+      <data key="d60">0.8</data>
+      <data key="d61">[{"quote": "This one is much lighter.", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0030" target="chapter:07" id="e-occurs_in-0148">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">claim:0030</data>
+      <data key="d59">chapter:07</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "This one is much lighter.", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0031" target="chapter:07" id="e-occurs_in-0149">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">claim:0031</data>
+      <data key="d59">chapter:07</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "And also, like, the market is gearing towards automated redaction.", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0032" target="artifact:xod-format" id="e-references-0151">
+      <data key="d57">REFERENCES</data>
+      <data key="d58">claim:0032</data>
+      <data key="d59">artifact:xod-format</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "it's not compatible with the format that we use with the XOD because that uses byte range requests, and it only renders the pages that you're viewing, basically.", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0032" target="artifact:apprise-viewer" id="e-references-0152">
+      <data key="d57">REFERENCES</data>
+      <data key="d58">claim:0032</data>
+      <data key="d59">artifact:apprise-viewer</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "So, with the date range filter, since you're in the appraise world, in that viewer, it's not compatible with the format that we use with the XOD", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0032" target="chapter:08" id="e-occurs_in-0166">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">claim:0032</data>
+      <data key="d59">chapter:08</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "it's not compatible with the format that we use with the XOD because that uses byte range requests, and it only renders the pages that you're viewing, basically.", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0033" target="chapter:08" id="e-occurs_in-0167">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">claim:0033</data>
+      <data key="d59">chapter:08</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "And they recommend linearized PDFs to also do byte range requests.", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0033" target="claim:0034" id="e-contradicts-0181">
+      <data key="d57">CONTRADICTS</data>
+      <data key="d58">claim:0033</data>
+      <data key="d59">claim:0034</data>
+      <data key="d60">0.65</data>
+      <data key="d61">[{"quote": "So when we were speaking to you the other day, because they did have a call with us, they said, oh, but the XOD is the old way of doing things, which I totally understand. And they recommend linearized PDFs to also do byte range requests.", "ts": 1509.0, "source": "transcript"}, {"quote": "But I think that the byte range request is just not going to be compatible. You're going to have to load the whole thing up front.", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0034" target="chapter:08" id="e-occurs_in-0168">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">claim:0034</data>
+      <data key="d59">chapter:08</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "But I think that the byte range request is just not going to be compatible. You're going to have to load the whole thing up front.", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0035" target="artifact:computer-electronic-records" id="e-references-0156">
+      <data key="d57">REFERENCES</data>
+      <data key="d58">claim:0035</data>
+      <data key="d59">artifact:computer-electronic-records</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "I don't think we'll reach that limit because the Computer Electronic Records is the only one that has that many pages.", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0035" target="chapter:08" id="e-occurs_in-0169">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">claim:0035</data>
+      <data key="d59">chapter:08</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "I don't think we'll reach that limit because the Computer Electronic Records is the only one that has that many pages.", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0036" target="chapter:09" id="e-occurs_in-0178">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">claim:0036</data>
+      <data key="d59">chapter:09</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So Adam has been, Adam as CEO is very heavy on, can we stop recording?", "ts": 1662.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0001" target="topic:product-bundling-strategy" id="e-relates_to-0093">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">decision:0001</data>
+      <data key="d59">topic:product-bundling-strategy</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "Well, insights only works on things we sorted. And along with that, you get all these other benefits.", "ts": "L285-286", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="decision:0001" target="chapter:05" id="e-occurs_in-0121">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">decision:0001</data>
+      <data key="d59">chapter:05</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "So we can bundle it as a marketing thing.", "ts": "L283", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="decision:0002" target="topic:real-data-testing" id="e-relates_to-0105">
+      <data key="d57">RELATES_TO</data>
+      <data key="d58">decision:0002</data>
+      <data key="d59">topic:real-data-testing</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "We can try it.", "ts": "L306", "source": "chapter:06"}]</data>
+    </edge>
+    <edge source="decision:0002" target="chapter:06" id="e-occurs_in-0122">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">decision:0002</data>
+      <data key="d59">chapter:06</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "You can try it as an extension of the research", "ts": "L316", "source": "chapter:06"}]</data>
+    </edge>
+    <edge source="decision:0003" target="artifact:docsorter" id="e-references-0127">
+      <data key="d57">REFERENCES</data>
+      <data key="d58">decision:0003</data>
+      <data key="d59">artifact:docsorter</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So, when, at the sorting stage, we do that.", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0003" target="chapter:07" id="e-occurs_in-0145">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">decision:0003</data>
+      <data key="d59">chapter:07</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So, redaction, my thinking, I might have mentioned this, is also that we do redaction inside DocSorter because they're the people who, the clinicians would be the people who are best placed to do the actual redaction in the first place.", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0003" target="question:0005" id="e-resolves-0183">
+      <data key="d57">RESOLVES</data>
+      <data key="d58">decision:0003</data>
+      <data key="d59">question:0005</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "So, would, like, solicitors and them be able to still redact when they get, by the time the docs get to them, or no?", "ts": 1387.0, "source": "transcript"}, {"quote": "So, redaction, my thinking, I might have mentioned this, is also that we do redaction inside DocSorter because they're the people who, the clinicians would be the people who are best placed to do the actual redaction in the first place.", "ts": 1387.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0001" target="person:chantal" id="e-addressed_to-0095">
+      <data key="d57">ADDRESSED_TO</data>
+      <data key="d58">action:0001</data>
+      <data key="d59">person:chantal</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "what I'll speak to Chantal about", "ts": "L281", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="action:0001" target="chapter:05" id="e-occurs_in-0123">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">action:0001</data>
+      <data key="d59">chapter:05</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "what I'll speak to Chantal about", "ts": "L281", "source": "chapter:05"}]</data>
+    </edge>
+    <edge source="action:0002" target="chapter:06" id="e-occurs_in-0124">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">action:0002</data>
+      <data key="d59">chapter:06</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "And you can try it on the records.", "ts": "L318", "source": "chapter:06"}]</data>
+    </edge>
+    <edge source="action:0002" target="action:0003" id="e-depends_on-0182">
+      <data key="d57">DEPENDS_ON</data>
+      <data key="d58">action:0002</data>
+      <data key="d59">action:0003</data>
+      <data key="d60">0.8</data>
+      <data key="d61">[{"quote": "We can try it.", "ts": 1336.3, "source": "transcript"}, {"quote": "I'll find the storage account quickly. And you can try it on the records.", "ts": 1372.5, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0003" target="chapter:06" id="e-occurs_in-0125">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">action:0003</data>
+      <data key="d59">chapter:06</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "I'll find the storage account quickly.", "ts": "L317", "source": "chapter:06"}]</data>
+    </edge>
+    <edge source="action:0004" target="artifact:apprise-viewer" id="e-references-0158">
+      <data key="d57">REFERENCES</data>
+      <data key="d58">action:0004</data>
+      <data key="d59">artifact:apprise-viewer</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "I want a way that's optimal for viewing that it could render in the appraise viewer.", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0004" target="chapter:08" id="e-occurs_in-0170">
+      <data key="d57">OCCURS_IN</data>
+      <data key="d58">action:0004</data>
+      <data key="d59">chapter:08</data>
+      <data key="d60">0.9</data>
+      <data key="d61">[{"quote": "So if you can do a little bit of research for me on that, just to send you to again what I've found, that would be very, very useful.", "ts": 1509.0, "source": "transcript"}]</data>
+    </edge>
+    <edge source="chapter:02" target="artifact:annotations-project" id="e-references-0047">
+      <data key="d57">REFERENCES</data>
+      <data key="d58">chapter:02</data>
+      <data key="d59">artifact:annotations-project</data>
+      <data key="d60">0.5</data>
+      <data key="d61">[{"quote": "Okay, you should see a terminal and a Visual Studio Code.", "ts": "L60", "source": "transcript"}]</data>
+    </edge>
+    <edge source="chapter:03" target="artifact:mri133" id="e-references-0055">
+      <data key="d57">REFERENCES</data>
+      <data key="d58">chapter:03</data>
+      <data key="d59">artifact:mri133</data>
+      <data key="d60">0.85</data>
+      <data key="d61">[{"quote": "So, if I go MRI133, this actually runs it end-to-end and runs each matcher.", "ts": "L149", "source": "transcript"}]</data>
+    </edge>
+    <edge source="visual:0004" target="chapter:02" id="e-shown-0004">
+      <data key="d57">SHOWN_DURING</data>
+      <data key="d58">visual:0004</data>
+      <data key="d59">chapter:02</data>
+      <data key="d60">0.95</data>
+      <data key="d61">[{"quote": "", "ts": 161.5, "source": "vision"}]</data>
+    </edge>
+    <edge source="visual:0005" target="chapter:02" id="e-shown-0005">
+      <data key="d57">SHOWN_DURING</data>
+      <data key="d58">visual:0005</data>
+      <data key="d59">chapter:02</data>
+      <data key="d60">0.95</data>
+      <data key="d61">[{"quote": "", "ts": 309.688, "source": "vision"}]</data>
+    </edge>
+    <edge source="visual:0007" target="chapter:03" id="e-shown-0007">
+      <data key="d57">SHOWN_DURING</data>
+      <data key="d58">visual:0007</data>
+      <data key="d59">chapter:03</data>
+      <data key="d60">0.95</data>
+      <data key="d61">[{"quote": "", "ts": 422.875, "source": "vision"}]</data>
+    </edge>
+    <edge source="visual:0008" target="chapter:03" id="e-shown-0008">
+      <data key="d57">SHOWN_DURING</data>
+      <data key="d58">visual:0008</data>
+      <data key="d59">chapter:03</data>
+      <data key="d60">0.95</data>
+      <data key="d61">[{"quote": "", "ts": 512.562, "source": "vision"}]</data>
+    </edge>
+    <edge source="visual:0009" target="chapter:04" id="e-shown-0009">
+      <data key="d57">SHOWN_DURING</data>
+      <data key="d58">visual:0009</data>
+      <data key="d59">chapter:04</data>
+      <data key="d60">0.95</data>
+      <data key="d61">[{"quote": "", "ts": 946.5, "source": "vision"}]</data>
+    </edge>
+    <edge source="visual:0010" target="chapter:05" id="e-shown-0010">
+      <data key="d57">SHOWN_DURING</data>
+      <data key="d58">visual:0010</data>
+      <data key="d59">chapter:05</data>
+      <data key="d60">0.95</data>
+      <data key="d61">[{"quote": "", "ts": 1098.75, "source": "vision"}]</data>
+    </edge>
+    <edge source="visual:0012" target="chapter:06" id="e-shown-0012">
+      <data key="d57">SHOWN_DURING</data>
+      <data key="d58">visual:0012</data>
+      <data key="d59">chapter:06</data>
+      <data key="d60">0.95</data>
+      <data key="d61">[{"quote": "", "ts": 1282.625, "source": "vision"}]</data>
+    </edge>
+  </graph>
+</graphml>

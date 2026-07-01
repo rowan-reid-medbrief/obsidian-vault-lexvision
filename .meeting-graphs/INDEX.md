@@ -10,3 +10,4 @@ manual edits here are overwritten on the next promotion.
 - 2026-06-07 — Kumulus & Medbrief — Vendor Proposal [lexvision/lexvision-poc] kumulus-medbrief-2026-06-07
 - 2026-06-07 — Data Engineering Discussion [lexvision/lexvision-poc] data-engineering-discussion-2026-06-07
 - 2026-06-03 — MB Product Walk-through [medbrief/medbrief-onboarding] mb-product-walkthrough-2026-06-03
+- ????-??-?? — Catch Up 2026-07-01 [medbrief/annotations] catch-up-2026-07-01

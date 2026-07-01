@@ -1,0 +1,94 @@
+{
+  "chapters": [
+    {
+      "id": "chapter:01",
+      "index": 1,
+      "title": "Personal catch-up: weekend and cat-sitting",
+      "summary": "Rowan and Deon catch up on their weekends before the technical discussion; Deon describes a cat-sitting trip near Cardiff and discovering a cat allergy.",
+      "start_ts": 0.0,
+      "end_ts": 150.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:02",
+      "index": 2,
+      "title": "Screen share: synthetic PDF test harness walkthrough",
+      "summary": "Rowan shares his screen and walks Deon through the synthetic PDF/records generator, the resorting tool (deletes, inserts, rearranges, splits pages), and the page-matching engine that tracks what happened to each page.",
+      "start_ts": 150.0,
+      "end_ts": 410.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:03",
+      "index": 3,
+      "title": "Running the end-to-end matcher; delivery interruption",
+      "summary": "Rowan kicks off the full end-to-end MRI133 run across all matchers. Deon is interrupted by a delivery requiring his physical presence (his partner Lewis is mentioned) and steps away briefly before returning.",
+      "start_ts": 410.0,
+      "end_ts": 800.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:04",
+      "index": 4,
+      "title": "Reviewing matcher results and the stamped-ID approach",
+      "summary": "Rowan explains the matching algorithms (exact hash, perceptual hash, text comparison, ensemble) and their precision/recall/silent-error tradeoffs. The metadata-stamped page ID approach is by far the most reliable, failing only on true duplicates or unlinked splits.",
+      "start_ts": 800.0,
+      "end_ts": 1093.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:05",
+      "index": 5,
+      "title": "Implications: duplicate detection reuse and product bundling",
+      "summary": "Deon realises Rowan's work also solves duplicate/blank-page detection for the record-sorting algorithm (relevant to Sally's and Chantal's work), all without an LLM. He proposes bundling insight/redaction guarantees as a marketing angle limited to sorted record sets.",
+      "start_ts": 1093.0,
+      "end_ts": 1282.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:06",
+      "index": 6,
+      "title": "Reflection and proposal to test on real data",
+      "summary": "Both reflect on the results being less accurate than hoped despite deterministic hashing methods. They agree to try the approach against real (not synthetic) records, with Deon offering to locate the storage account.",
+      "start_ts": 1282.0,
+      "end_ts": 1387.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:07",
+      "index": 7,
+      "title": "Redaction workflow and DocSorter placement",
+      "summary": "Deon explains that redaction should live in DocSorter at the sorting stage, since clinicians are best placed to redact. The current Apprise viewer lacks redaction; the market is trending toward automated redaction rather than manual solicitor workflows.",
+      "start_ts": 1387.0,
+      "end_ts": 1509.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:08",
+      "index": 8,
+      "title": "New research ask: date-range filtering and PDF rendering at scale",
+      "summary": "Deon asks Rowan to research how to render a date-range-filtered subset of pages in the Apprise viewer, given the XOD format's incompatibility with byte-range requests, and to test performance against very large PDFs.",
+      "start_ts": 1509.0,
+      "end_ts": 1662.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:09",
+      "index": 9,
+      "title": "Wrap-up: CEO's recording preference",
+      "summary": "Deon raises an off-topic point about Adam (CEO) preferring not to record certain discussions, and asks to stop recording, ending the captured portion of the meeting.",
+      "start_ts": 1662.0,
+      "end_ts": 1682.304,
+      "topic_ids": [],
+      "frame_ids": []
+    }
+  ]
+}
