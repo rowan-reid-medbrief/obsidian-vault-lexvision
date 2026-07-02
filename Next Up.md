@@ -8,9 +8,9 @@
 - [[2026-06-26-quarterly-company-meetings-ingestion]]
 
 ### MRI-133 "Granular storing of pages" - dedicated project
-- **Status:** Demo delivered to Deon (2026-07-01 catch-up): bake-off across 5 matchers reviewed live; stamped-ID clearly strongest but still not accurate enough for the redaction bar. Decided: test on real (non-synthetic) records next; redaction goes in DocSorter, not the viewer. `last touched` 2026-07-01.
-- **next:** Locate the storage account (Deon) and re-run the bake-off against real records; speak to Chantal re: sorted-set-only bundling scope.
-- [[2026-07-01-meeting-pipeline-annotations-apprise-split]]
+- **Status:** DB-confirmed a correction to the June population read: 12-25% of annotated documents (445 matters) are DocSorter-exported bundles, not raw never-sorted records; 31 matters show the sort-then-annotate-then-resort drift precondition live. Traced the export/pagination mechanism and found content-arm matching should compare pre-pagination originals, not exported bundles - resolves the repagination-vs-matching concern. Propagated across research docs, the vault decision, DESIGN-NOTES, IDEAS, and memory. `last touched` 2026-07-02.
+- **next:** Two open tracks: (1) locate the storage account (Deon) and re-run the bake-off against real scanned records; (2) spike whether a durable id survives MedBrief's actual `PagePushBack` merge path (the flatten path is already confirmed to fail it) - see `docs/IDEAS.md` 2026-07-02.
+- [[2026-07-02-mri133-annotation-population-correction-and-export-mechanism]]
 
 ### Apprise viewer date-range rendering - new project (spun off 2026-07-01)
 - **Status:** New project scaffolded (vault-coupled, git+entire) from a research ask Deon raised in the same catch-up: render a date-range-filtered page subset in the Apprise viewer, given XOD's incompatibility with byte-range requests. No design decided yet. `last touched` 2026-07-01.
