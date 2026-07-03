@@ -1,6 +1,6 @@
 ---
 name: mri133-cardinality-channels
-description: "What each matcher channel can and cannot do on the hard cardinality cases (split/clone/removed/inserted). SPLIT has zero silent errors on the real corpus (both populations) and every text-bearing ADJACENT split resolves or safely queues. Two open gaps: cross-section (non-adjacent / scatter re-sort) confident resolution (safely queued today, NOT resolved — [high] idea 2026-07-03), and gp's blank-page child. Pagination fuse still open."
+description: "What each matcher channel can and cannot do on the hard cardinality cases (split/clone/removed/inserted). The 11-doc real corpus surfaced 3 silent SPLIT errors the 3-doc corpus had HIDDEN (correcting the earlier 'zero silent both populations' claim): 2 = image-only pages (retired by in-matcher OCR, ad0f125), 1 = an exact-duplicate twin split (bench-115132, safe-queued via twin_split_abstain 2026-07-03). With both, SPLIT returns to zero silent on the real corpus. Open gaps (RESOLVING, not just safe-queuing): exact-duplicate + cross-section splits need sequence/neighbour context, not page-local evidence; gp's blank child. Pagination fuse parked."
 metadata:
   type: project
   originSessionId: this-session
@@ -10,8 +10,10 @@ The MRI-133 matchers are one-to-one assignment machines; they break on **cardina
 changes** (a page becoming several, or none, or an inserted page). Measured reach (2026-07-03,
 on the 3 real Azure docs and the synthetic corpus):
 
-- **SPLIT is now FULLY HANDLED (was: unsolved by every channel, then partially).** Zero silent
-  SPLIT errors on the real corpus, BOTH populations. The arc, all acting on the commissioned
+- **SPLIT: zero silent errors on the real corpus (CORRECTED framing).** The earlier "zero silent both
+  populations" held only on the 3-doc corpus; the 11-doc corpus surfaced 3 silent SPLITs it had hidden,
+  retired by TWO ADDED mechanisms (points 5-6 below): OCR for image-only pages, safe-queue for
+  exact-duplicate twins. The original token/geometry arc, all acting on the commissioned
   deep-research report (splits are a *containment* problem, not *resemblance* — Broder):
   1. **Token-space pipeline** in `decision.py` (containment selection → greedy weighted set-cover
      → adjacency guard) resolves a clean, adjacent, text-bearing split and safely queues the rest.
@@ -28,6 +30,18 @@ on the 3 real Azure docs and the synthetic corpus):
      text-less parent whose sparse ink REAPPEARS as a crop in the bundle is flagged AMBIGUOUS
      (review), not silent REMOVED. It does NOT resolve gp — the pure-white sibling is unplaceable by
      ANY page-local signal (text, geometry, OR vision) — it just refuses the silent drop.
+  5. **In-matcher OCR** (`io/ocr.py`, `ad0f125`): an image-only page (salli-142257, 342/342 text-less)
+     is invisible to every content signal, so a split of it read as silent REMOVED. OCR just the
+     text-less pages before matching. Retired 2 of the 3 silent SPLITs the enlarged corpus surfaced.
+  6. **Exact-duplicate twin safe-queue** (`twin_split_abstain`, `coverage_graph.py`, 2026-07-03): a
+     split page whose EXACT duplicate survives whole (bench-115132 171/85: byte-identical text AND
+     geometry, split residual 0.00000) was silently MATCHED to the duplicate. No page-local signal can
+     separate the cut copy from its twin (information-theoretic); letting the split COMPETE just
+     relocated the error (measured silent 1→1). So a confirmed reconstruction coinciding with a
+     CONTESTED full holder is safe-queued (AMBIGUOUS) — removing the silent error without relocating it,
+     gated on a confirmed reconstruction so plain duplicates aren't queued (surgical: silent 1→0, zero
+     collateral; monotone-safe — only ever emits AMBIGUOUS). RESOLVING which copy was split needs the
+     sequence layer, not page-local evidence. Drove [[mri133-content-arm-primary-goal]].
   The old similarity matchers were ~100% silent because they gated split candidates on whole-page
   *resemblance* (`sim >= tau_floor`), which a fragment can't clear. The stamp is still stripped by
   the real merge ([[mri133-stamp-not-survive-merge]]); pagination still misses split (footer marker
@@ -73,9 +87,12 @@ on the 3 real Azure docs and the synthetic corpus):
 architectural home for the split logic). Do NOT re-propose more split channels, token/geometry tuning, or
 the capacitated solver backbone. But TWO SPLIT gaps ARE sanctioned open work (do not dismiss them as
 "splits are done"): **cross-section (non-adjacent) confident resolution** (the `[high]` idea + its test
-fixture, 2026-07-03) and **gp's blank child** (cross-document/sequence evidence, out of page-local scope). The live backlog front is now the **corpus-expansion build** (stamp
-the 8 new real docs, wire `scripts/real_bakeoff.py` to source all 11, run, then decide the dormant
-REMOVED rule's enable-gate) and the still-parked pagination fuse. When reporting content-arm accuracy,
+fixture, 2026-07-03), **RESOLVING (not just safe-queuing) the exact-duplicate twin split** (point 6 —
+needs the sequence layer, same lever), and **gp's blank child** (cross-document/sequence evidence, out
+of page-local scope). The corpus-expansion build is DONE (11 real docs stamped + wired into
+`scripts/real_bakeoff.py`); the remaining fronts are the **sequence/neighbour layer** (the common
+"resolve near-identical pages" need behind cross-section + exact-duplicate + gp), the dormant REMOVED
+rule's enable-gate, and the still-parked pagination fuse. When reporting content-arm accuracy,
 use the degraded population, not clean. Full record: `docs/DESIGN-NOTES.md` 2026-07-02/07-03 +
 `plans/before-numbers/BASELINE.md`; backlog in `docs/IDEAS.md`. Related:
 [[mri133-content-arm-scoped-to-originals]], [[mri133-bakeoff-clean-only]], [[mri133-github-remote]].
