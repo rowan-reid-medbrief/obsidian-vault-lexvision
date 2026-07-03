@@ -105,3 +105,4 @@
 - 2026-05-28 [medbrief] **2026-05-28-expert-sheet-classification-script.md** (backfilled) (medbrief/2026-05-28-expert-sheet-classification-script.md)
 - 2026-06-11 [lexvision] **2026-06-11-kumulus-landing-pad.md** (backfilled) (lexvision/2026-06-11-kumulus-landing-pad.md)
 - 2026-06-16 [personal] **2026-06-16-s12-cross-machine-reconciliation.md** (backfilled) (shared/2026-06-16-s12-cross-machine-reconciliation.md)
+- 2026-07-03 [medbrief] **2026-07-03-apprise-viewer-rendering-discovery-handoff.md** (backfilled) (medbrief/2026-07-03-apprise-viewer-rendering-discovery-handoff.md)
