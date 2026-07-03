@@ -33,6 +33,12 @@ on the 3 real Azure docs and the synthetic corpus):
   5. **In-matcher OCR** (`io/ocr.py`, `ad0f125`): an image-only page (salli-142257, 342/342 text-less)
      is invisible to every content signal, so a split of it read as silent REMOVED. OCR just the
      text-less pages before matching. Retired 2 of the 3 silent SPLITs the enlarged corpus surfaced.
+     OCR is now content-address-cached (`b4172f9`, each distinct page raster OCRs once). KNOWN GAP
+     (2026-07-03): no per-page timeout, so a pathological speckled page HANGS OCR at 100% CPU with no
+     progress. 2 of the 3 real image-only docs (100200, 142257) hit it; it blocks any full-corpus
+     bake-off re-run. Logged `[high]` in `docs/IDEAS.md`; fix = subprocess-isolated OCR with a
+     wall-clock timeout that skips the page (degrade to today's behaviour). The bake-off's other wall
+     is per-page render cost in the matcher (not OCR) - the [med] render-cache idea.
   6. **Exact-duplicate twin safe-queue** (`twin_split_abstain`, `coverage_graph.py`, 2026-07-03): a
      split page whose EXACT duplicate survives whole (bench-115132 171/85: byte-identical text AND
      geometry, split residual 0.00000) was silently MATCHED to the duplicate. No page-local signal can

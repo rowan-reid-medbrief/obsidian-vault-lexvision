@@ -5,7 +5,7 @@
 - [Bake-off populations](mri133-bakeoff-clean-only.md): both clean and degraded are now matched (`--population` flag); content-arm numbers are still the clean best case (quote degraded to Deon). Degraded OCR-collapse fixture bug fixed 2026-07-03.
 - [venv path](mri133-venv-path.md): Python venv is at `poc/.venv`; Bash cwd resets each call, so use absolute paths.
 - [Reporting & explanation prefs](reporting-explanation-prefs.md): show every %'s complement; plain framing; per-matcher "how it works"; Rowan often listens as audio.
-- [Real-data container](mri133-real-data-container.md): Deon's Azure Blob container for real-case MRI133 testing; structure + access. **Corpus now 11 real docs local in `poc/data/real-samples/` (2026-07-03), all four provenances, incl. 2 real image-only docs + a 1344pp trust doc.**
+- [Real-data container](mri133-real-data-container.md): Deon's Azure Blob container for real-case MRI133 testing; structure + access. **Corpus now 11 real docs local in `poc/data/real-samples/` (2026-07-03), all four provenances, incl. 3 real image-only docs + a 1344pp trust doc.**
 - [Annotations not confined to unsorted docs](mri133-annotations-not-confined-to-unsorted.md): 12-25% of annotated docs are DocSorter exports, not "essentially never sorted" (June conclusion corrected 2026-07-02).
 - [DB access for MRI-133 research](mri133-db-access.md): pre-staging jumpbox tunnel (port 3310); credentials in this project's own `.env`; production (3308) needs sign-off.
 - [Content-arm should compare originals](mri133-content-arm-scoped-to-originals.md): match against never-repaginated `Page.pdfFile`, not exported bundles; also found the flatten-path stamp-destruction gap.
