@@ -8,9 +8,9 @@
 - [[2026-06-26-quarterly-company-meetings-ingestion]]
 
 ### MRI-133 "Granular storing of pages" - dedicated project
-- **Status:** SPLIT is now FULLY HANDLED - zero silent errors on the real corpus, both populations. Every text-bearing split resolves or safely queues (token-space containment->set-cover->adjacency, plus a geometric seam-selector that cracked the near-identical *template* case via band-tiling geometry already computed); the degraded OCR-collapse fixture bug is fixed (degraded splits now matchable); the blank-page case (gp) is flagged for review, not silently dropped, by a lightweight visual guard. 269 tests pass; 3 commits + a backlog groom on main. `last touched` 2026-07-03.
-- **next:** Implement the `[high]` bipartite coverage-graph reframe (the architectural home for the split logic). First set up a git remote and push main (4 unpushed commits - no remote configured yet). `feat/split-containment-detection` merged + deleted; pagination fuse `[parked]`.
-- [[2026-07-03-mri133-split-frontiers-degraded-and-blank]]
+- **Status:** Coverage-graph reframe DONE - output-neutral IR overlay (`coverage_graph.py`; `decide()` now a thin shim; golden-fixture-proven, 290 tests, real bake-off unchanged). Dormant REMOVED margin rule built + OFF. First private GitHub remote set up + branch `feat/coverage-graph-reframe` pushed. Real corpus expanded 3->11 docs from Azure (all four provenances). `last touched` 2026-07-03.
+- **next:** Stamp the 8 new real docs into `_stamped/*.clean.pdf` + wire `scripts/real_bakeoff.py` to source all 11, run the enlarged bake-off, then decide the dormant REMOVED rule's enable-gate.
+- [[2026-07-03-mri133-coverage-graph-reframe-and-corpus-expansion]]
 
 ### Apprise viewer date-range rendering - new project (spun off 2026-07-01)
 - **Status:** New project scaffolded (vault-coupled, git+entire) from a research ask Deon raised in the same catch-up: render a date-range-filtered page subset in the Apprise viewer, given XOD's incompatibility with byte-range requests. No design decided yet. `last touched` 2026-07-01.

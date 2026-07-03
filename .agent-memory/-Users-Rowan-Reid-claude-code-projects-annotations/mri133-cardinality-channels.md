@@ -45,11 +45,28 @@ on the 3 real Azure docs and the synthetic corpus):
   arm is still weaker on degraded overall (DUPLICATE etc.), but splits now resolve/queue there too.
   `stamped_id` is population-independent. Never quote content-arm numbers clean-only.
 
-**How to apply:** SPLIT detection is DONE — resolve-or-safe-queue, zero silent on both populations.
-Do NOT re-propose more split channels or token/geometry tuning; the only genuinely open SPLIT gap
-(gp's blank child) needs cross-document/sequence evidence, out of page-local scope. The live backlog
-front is the `[high]` bipartite coverage-graph reframe (the architectural home for all this split
-logic) and the parked pagination fuse. When reporting content-arm accuracy, use the degraded
-population, not clean. Full record: `docs/DESIGN-NOTES.md` 2026-07-02/07-03 + `plans/before-numbers/
-BASELINE.md`; backlog in `docs/IDEAS.md`. Related: [[mri133-content-arm-scoped-to-originals]],
-[[mri133-bakeoff-clean-only]].
+- **Coverage-graph reframe DONE (2026-07-03).** The four cardinality cases now live under ONE model:
+  `matchers/coverage_graph.py` is a bipartite-IR overlay (`build()` admits edges from the same
+  sim/coverage signals, `resolve()` reads outcome off node degree); `decide()` is a thin compat shim;
+  token helpers extracted to `matchers/content_tokens.py`. Output-neutral by construction, PROVEN by a
+  committed golden fixture (`tests/test_output_neutrality.py`, 2160 predictions identical before/after).
+  Hardening (`/harden-plan`) DROPPED the originally-planned capacitated min-cost-flow/ILP backbone: a
+  solver computes degree differently from the current code so it couldn't be output-neutral, and the
+  report reserves ILP for local clone/split, not the backbone. Do NOT re-propose the solver backbone.
+- **Dormant REMOVED margin rule (built 2026-07-03, OFF).** The report's p7 deletion verifier lives in
+  `coverage_graph.resolve()` behind dials `removed_coverage_floor` / `removed_margin_min` (both default
+  0.0 = no-op, so the pipeline stays neutral). It emits AMBIGUOUS, never a confident REMOVED (a
+  confident REMOVED on a present page = silent error). NOT yet validatable (real corpus was silent-0 on
+  REMOVED, ~9 pages); its enable-gate is the corpus expansion (now 11 real docs, see
+  [[mri133-real-data-container]]): stamp+wire the new docs, calibrate the two dials on the enlarged data
+  holding silent-0, then enable or drop.
+
+**How to apply:** SPLIT detection is DONE and the coverage-graph reframe is DONE (the architectural home
+for the split logic). Do NOT re-propose more split channels, token/geometry tuning, or the capacitated
+solver backbone. The only genuinely open SPLIT gap (gp's blank child) needs cross-document/sequence
+evidence, out of page-local scope. The live backlog front is now the **corpus-expansion build** (stamp
+the 8 new real docs, wire `scripts/real_bakeoff.py` to source all 11, run, then decide the dormant
+REMOVED rule's enable-gate) and the still-parked pagination fuse. When reporting content-arm accuracy,
+use the degraded population, not clean. Full record: `docs/DESIGN-NOTES.md` 2026-07-02/07-03 +
+`plans/before-numbers/BASELINE.md`; backlog in `docs/IDEAS.md`. Related:
+[[mri133-content-arm-scoped-to-originals]], [[mri133-bakeoff-clean-only]], [[mri133-github-remote]].
