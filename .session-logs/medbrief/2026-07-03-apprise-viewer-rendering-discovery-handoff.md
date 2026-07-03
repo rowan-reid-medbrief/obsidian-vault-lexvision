@@ -40,6 +40,7 @@ Traced MedBrief's Apryse/XOD viewer end to end and found the founding premise wr
 
 ### Decision (from the hardened plan)
 - Lightweight viewer path. Build page-LIST extraction now (Workstream A). Date-range is split out as a no-build findings spike (Workstream B) because of the blocker above.
+- Build straight into the MedBrief codebase on the existing MRI-134 branch (already created and checked out here); no standalone prototype.
 - Safe defaults: serve behind existing project+document security; disable download/print in the preview; hand-pick a clean single-document record for the demo; no cache.
 
 ### Current state
@@ -50,7 +51,7 @@ Traced MedBrief's Apryse/XOD viewer end to end and found the founding premise wr
 - Sibling medbrief clones (medbrief-onboarding/repos, data_pipelines) are REFERENCE ONLY. Build in THIS project's copy.
 
 ### Next steps (Workstream A, in order)
-0. Confirm with Rowan: prototype extraction as a standalone script first (fastest path to the scaling answer), or build straight into the app? Recommendation: standalone prototype first.
+0. Build straight into the MedBrief codebase (DECIDED — no standalone prototype). An MRI-134 branch is already created and checked out in this project: confirm with `git status`, work on that branch, do not create a new one.
 1. Extraction method: add extractPagesByPageNumbers(path, int[] pages, outputPath) to SplitPdfInterface + PDFTronSplitPdf, using ONE InsertPages(0, $doc, new PageSet(...), e_none) call; save linearised; do NOT force-flatten (destroys text); guard div-by-zero on a 0-page source; decide on the >100MB hard-abort. Unit-test ordering/dedupe/out-of-range. (PLAN step 2)
 2. Page-spec parser: "5,12,30-35" -> sorted unique 1-based ints; validate 1<=p<=pageCount; reject empty/non-numeric/reversed; cap total span. (step 3)
 3. Endpoint: streamPageSubsetAction in ProjectDocumentController; route infology_medbrief_project_document_stream_page_subset at /{documentId}/stream-page-subset/{filename} with {id}+{documentId} ParamConverters; gate is_granted('READ',project) && is_granted('STREAM_NATIVE',document); resolve source via PathResolverStrategy::resolvePdfDirectoryPath (ocr>optimized>native), materialise locally before PDFNet; Cache-Control: private,no-store; dedicated audit verb; never expose a blob SAS URL. (step 4)
