@@ -13,9 +13,9 @@
 - [[2026-07-03-mri133-content-arm-viability-and-split-gap]]
 
 ### Apprise viewer date-range rendering - new project (spun off 2026-07-01)
-- **Status:** New project scaffolded (vault-coupled, git+entire) from a research ask Deon raised in the same catch-up: render a date-range-filtered page subset in the Apprise viewer, given XOD's incompatibility with byte-range requests. No design decided yet. `last touched` 2026-07-01.
-- **next:** Research whether byte-range requests can work at all (contra Deon's scepticism) vs a server-side caching/on-the-fly PDF generation approach; test at scale against a large document (Computer Electronic Records-sized).
-- [[2026-07-01-meeting-pipeline-annotations-apprise-split]]
+- **Status:** Ticket confirmed: [MRI-134](https://medbrief.atlassian.net/browse/MRI-134) "Date Filter | Filter documents within pdf's by date filter" (High, In Progress, assigned to Deon). Discovery done + plan hardened: XOD already streams page-on-demand over HTTP Range, so the real ask is page-subset extraction, not a streaming fix; date-range mapping split out as a separate findings spike (`ChronologyItem` page refs are project-level Bates, not per-document). Dev environment for the `medbrief` monolith set up (Mutagen-synced local clone ↔ running DigitalOcean stack) and branch `feature/MRI-134-page-subset-extraction` created off `develop`. `last touched` 2026-07-03.
+- **next:** Execute Workstream A from `PLAN.md` in the `medbrief` repo (extraction method, page-spec parser, secured endpoint, download-disabled preview, scale test) on branch `feature/MRI-134-page-subset-extraction`. Full detail: `~/claude_code/projects/apprise-viewer-rendering/docs/PLAN.md`.
+- [[2026-07-03-medbrief-dev-environment-and-mri-134-branch]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19
