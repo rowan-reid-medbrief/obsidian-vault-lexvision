@@ -1,6 +1,6 @@
 ---
 name: mri133-cardinality-channels
-description: "What each matcher channel can and cannot do on the hard cardinality cases (split/clone/removed/inserted). SPLIT is now FULLY HANDLED on the real corpus (zero silent errors, both populations): every text-bearing split resolves or safely queues, the degraded OCR-collapse fixture bug is fixed, and the one blank-page case is flagged for review not silently dropped. Pagination fuse still open."
+description: "What each matcher channel can and cannot do on the hard cardinality cases (split/clone/removed/inserted). SPLIT has zero silent errors on the real corpus (both populations) and every text-bearing ADJACENT split resolves or safely queues. Two open gaps: cross-section (non-adjacent / scatter re-sort) confident resolution (safely queued today, NOT resolved — [high] idea 2026-07-03), and gp's blank-page child. Pagination fuse still open."
 metadata:
   type: project
   originSessionId: this-session
@@ -31,9 +31,17 @@ on the 3 real Azure docs and the synthetic corpus):
   The old similarity matchers were ~100% silent because they gated split candidates on whole-page
   *resemblance* (`sim >= tau_floor`), which a fragment can't clear. The stamp is still stripped by
   the real merge ([[mri133-stamp-not-survive-merge]]); pagination still misses split (footer marker
-  travels to one child). STILL genuinely open: **gp's confident resolution** (its blank second child
-  needs cross-document / sequence evidence — which bundle a blank page belongs to — not page-local
-  cleverness). Logged in `IDEAS.md` as the [low] cross-boundary-continuity validators.
+  travels to one child). STILL genuinely open, TWO gaps:
+  (a) **Cross-section (non-adjacent) confident resolution.** The adjacency guard (`split_require_adjacent`)
+  only auto-places a split whose children are CONTIGUOUS; a real "scatter re-sort" that files a split
+  page's halves into different clinical sections is safely QUEUED, not resolved (fails safe, not solved).
+  Our two real split cases (salli 31+32, bench 141+142) were both adjacent, so this is untested. Fix
+  direction: the geometric shape-fit channel does NOT need adjacency, so relax the adjacency requirement
+  and lean on geometric residual + coverage (and/or make the matcher clinical-section-aware). Surfaced by
+  Rowan 2026-07-03; logged as a `[high]` idea + its `[high]` cross-section test fixture.
+  (b) **gp's confident resolution** (its blank second child needs cross-document / sequence evidence —
+  which bundle a blank page belongs to — not page-local cleverness). Logged as the [low]
+  cross-boundary-continuity validators.
 - **Pagination channel** (`matchers/pagination.py`, NOT in the default REGISTRY): a high-precision
   partial-coverage channel that reads printed "Page X of Y" as an identity anchor where the marker
   is unique among originals, abstains elsewhere. On real docs: **0% silent / 100% recall on REMOVED**
@@ -61,10 +69,11 @@ on the 3 real Azure docs and the synthetic corpus):
   [[mri133-real-data-container]]): stamp+wire the new docs, calibrate the two dials on the enlarged data
   holding silent-0, then enable or drop.
 
-**How to apply:** SPLIT detection is DONE and the coverage-graph reframe is DONE (the architectural home
-for the split logic). Do NOT re-propose more split channels, token/geometry tuning, or the capacitated
-solver backbone. The only genuinely open SPLIT gap (gp's blank child) needs cross-document/sequence
-evidence, out of page-local scope. The live backlog front is now the **corpus-expansion build** (stamp
+**How to apply:** SPLIT detection is DONE for ADJACENT splits and the coverage-graph reframe is DONE (the
+architectural home for the split logic). Do NOT re-propose more split channels, token/geometry tuning, or
+the capacitated solver backbone. But TWO SPLIT gaps ARE sanctioned open work (do not dismiss them as
+"splits are done"): **cross-section (non-adjacent) confident resolution** (the `[high]` idea + its test
+fixture, 2026-07-03) and **gp's blank child** (cross-document/sequence evidence, out of page-local scope). The live backlog front is now the **corpus-expansion build** (stamp
 the 8 new real docs, wire `scripts/real_bakeoff.py` to source all 11, run, then decide the dormant
 REMOVED rule's enable-gate) and the still-parked pagination fuse. When reporting content-arm accuracy,
 use the degraded population, not clean. Full record: `docs/DESIGN-NOTES.md` 2026-07-02/07-03 +

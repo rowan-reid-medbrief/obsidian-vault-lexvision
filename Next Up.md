@@ -8,9 +8,9 @@
 - [[2026-06-26-quarterly-company-meetings-ingestion]]
 
 ### MRI-133 "Granular storing of pages" - dedicated project
-- **Status:** Coverage-graph reframe DONE - output-neutral IR overlay (`coverage_graph.py`; `decide()` now a thin shim; golden-fixture-proven, 290 tests, real bake-off unchanged). Dormant REMOVED margin rule built + OFF. First private GitHub remote set up + branch `feat/coverage-graph-reframe` pushed. Real corpus expanded 3->11 docs from Azure (all four provenances). `last touched` 2026-07-03.
+- **Status:** Coverage-graph reframe DONE - output-neutral IR overlay (`coverage_graph.py`; `decide()` now a thin shim; golden-fixture-proven, 290 tests, real bake-off unchanged). Dormant REMOVED margin rule built + OFF. First private GitHub remote set up + branch `feat/coverage-graph-reframe` pushed. Real corpus expanded 3->11 docs from Azure (all four provenances). Post-demo review 2026-07-03: content arm (no stamping) judged a credible PRIMARY path (zero silent errors on real corpus, adjacent splits solved, stamping can't cover the back-catalogue); surfaced the cross-section (non-adjacent) split gap + logged 3 ideas. `last touched` 2026-07-03.
 - **next:** Stamp the 8 new real docs into `_stamped/*.clean.pdf` + wire `scripts/real_bakeoff.py` to source all 11, run the enlarged bake-off, then decide the dormant REMOVED rule's enable-gate.
-- [[2026-07-03-mri133-coverage-graph-reframe-and-corpus-expansion]]
+- [[2026-07-03-mri133-content-arm-viability-and-split-gap]]
 
 ### Apprise viewer date-range rendering - new project (spun off 2026-07-01)
 - **Status:** New project scaffolded (vault-coupled, git+entire) from a research ask Deon raised in the same catch-up: render a date-range-filtered page subset in the Apprise viewer, given XOD's incompatibility with byte-range requests. No design decided yet. `last touched` 2026-07-01.
