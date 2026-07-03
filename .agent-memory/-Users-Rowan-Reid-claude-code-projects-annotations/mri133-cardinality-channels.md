@@ -1,49 +1,55 @@
 ---
 name: mri133-cardinality-channels
-description: "What each matcher channel can and cannot do on the hard cardinality cases (split/clone/removed/inserted); SPLIT is now PARTIALLY solved (token-space containment->set-cover->adjacency + a geometric crop-residual substrate resolve clean adjacent text splits; near-identical template and blank-page splits remain); degraded population collapses the content arm"
+description: "What each matcher channel can and cannot do on the hard cardinality cases (split/clone/removed/inserted). SPLIT is now FULLY HANDLED on the real corpus (zero silent errors, both populations): every text-bearing split resolves or safely queues, the degraded OCR-collapse fixture bug is fixed, and the one blank-page case is flagged for review not silently dropped. Pagination fuse still open."
 metadata:
   type: project
   originSessionId: this-session
 ---
 
 The MRI-133 matchers are one-to-one assignment machines; they break on **cardinality
-changes** (a page becoming several, or none, or an inserted page). Measured reach (2026-07-02,
+changes** (a page becoming several, or none, or an inserted page). Measured reach (2026-07-03,
 on the 3 real Azure docs and the synthetic corpus):
 
-- **SPLIT is now PARTIALLY solved (was: unsolved by every channel).** Acting on the commissioned
-  deep-research report — splits are a *containment* problem, not a *resemblance* one (Broder) — a
-  token-space pipeline in `decision.py` (containment selection → greedy weighted set-cover →
-  adjacency guard) took real clean SPLIT from **100% silent → 33% silent, 50% recall / 60%
-  precision**: it confidently resolves a clean, adjacent, text-bearing split (distinct content) and
-  safely queues the rest. A geometric substrate (`matchers/split_geometry.py`: RANSAC
-  translation+scale CROP fit over distinctive word boxes) filters look-alikes by transform residual
-  and supplies the real source-region bands for annotation transfer; it holds the metric and
-  generalises past the adjacency heuristic. The old similarity matchers were ~100% silent because
-  they gated split candidates on whole-page *resemblance* (`sim >= tau_floor`), which a fragment
-  can't clear; the stamp is still stripped by the real merge ([[mri133-stamp-not-survive-merge]]);
-  pagination still misses split (footer marker travels to one child). STILL UNSOLVED by page-local
-  evidence: **near-identical template pages** (all fit a crop of the parent, so neither token overlap
-  nor crop residual separates the true children — needs sequence / neighbour-consistency context) and
-  **blank/near-blank pages** (no text — needs the visual channel). Both logged in `IDEAS.md`.
-- **Pagination channel** (`matchers/pagination.py`, built this session, NOT in the default
-  REGISTRY): a high-precision partial-coverage channel that reads printed "Page X of Y" as an
-  identity anchor where the marker is unique among originals, abstains elsewhere. On real docs:
-  **0% silent / 100% recall on REMOVED** (vs perceptual's 67% silent — safety-critical) and
-  resolves **CLONE** confidently (the content arm could only queue). 0.1% silent overall. Meant
-  to FUSE with the content arm, not stand alone. Reach depends on provenance: source-doc
-  pagination lives on `Page.pdfFile` originals (viable for internal re-sorts); a monotonic 1..N
-  run is MedBrief's export burn (bundle only). Next step: fuse it into the ensemble (`IDEAS.md`).
-- **Degraded (scanned) population** is now wired into the bake-off (`run --population
-  clean|degraded|both`). Clean → degraded: the content-arm ensemble goes GOOD → POOR (silent
-  3.2% → 22.3%); `exact_hash` and `text_fingerprint` collapse similarly; **`stamped_id` is
-  unchanged** (population-independent). This is the number behind "only the stamp is robust";
-  never quote content-arm numbers clean-only.
+- **SPLIT is now FULLY HANDLED (was: unsolved by every channel, then partially).** Zero silent
+  SPLIT errors on the real corpus, BOTH populations. The arc, all acting on the commissioned
+  deep-research report (splits are a *containment* problem, not *resemblance* — Broder):
+  1. **Token-space pipeline** in `decision.py` (containment selection → greedy weighted set-cover
+     → adjacency guard) resolves a clean, adjacent, text-bearing split and safely queues the rest.
+  2. **Geometric seam-selector** (`split_geometry.tiling_chains`) cracked the near-identical
+     *template* case (bench, pages 138-142): the true children PARTITION the parent (their crop
+     bands tile top-to-bottom, abutting at the seam) while look-alikes each fit a full OVERLAPPING
+     crop. The neighbour-consistency signal was LATENT in the crop geometry we already computed and
+     were discarding — a selection-policy change, NOT the new sequence engine the handoff imagined.
+     Real clean SPLIT P66.7/R66.7/silent33 → P100/R66.7/silent0/queue33.
+  3. **Degraded OCR-collapse fixture bug fixed** (`scanning.degrade_file` inserted OCR text as one
+     blob at one point → degraded splits were degenerate). Now per-word at real positions → real
+     degraded SPLIT R0/silent66.7 → R66.7/silent33.
+  4. **Visual safety guard** (`split_visual.py`) for the blank-page case (gp): a near-blank,
+     text-less parent whose sparse ink REAPPEARS as a crop in the bundle is flagged AMBIGUOUS
+     (review), not silent REMOVED. It does NOT resolve gp — the pure-white sibling is unplaceable by
+     ANY page-local signal (text, geometry, OR vision) — it just refuses the silent drop.
+  The old similarity matchers were ~100% silent because they gated split candidates on whole-page
+  *resemblance* (`sim >= tau_floor`), which a fragment can't clear. The stamp is still stripped by
+  the real merge ([[mri133-stamp-not-survive-merge]]); pagination still misses split (footer marker
+  travels to one child). STILL genuinely open: **gp's confident resolution** (its blank second child
+  needs cross-document / sequence evidence — which bundle a blank page belongs to — not page-local
+  cleverness). Logged in `IDEAS.md` as the [low] cross-boundary-continuity validators.
+- **Pagination channel** (`matchers/pagination.py`, NOT in the default REGISTRY): a high-precision
+  partial-coverage channel that reads printed "Page X of Y" as an identity anchor where the marker
+  is unique among originals, abstains elsewhere. On real docs: **0% silent / 100% recall on REMOVED**
+  (vs perceptual's 67% silent — safety-critical) and resolves **CLONE** confidently. Meant to FUSE
+  with the content arm, not stand alone. Rowan PARKED the fuse 2026-07-03 (revisit after the
+  coverage-graph reframe); still `[parked] [high]` in `IDEAS.md`.
+- **Degraded (scanned) population** is wired into the bake-off (`run --population
+  clean|degraded|both`) AND now a valid SPLIT surface (the fixture bug above is fixed). The content
+  arm is still weaker on degraded overall (DUPLICATE etc.), but splits now resolve/queue there too.
+  `stamped_id` is population-independent. Never quote content-arm numbers clean-only.
 
-**How to apply:** the split-detection approach is now proven and built (containment → set-cover →
-adjacency, plus a geometric crop-residual substrate); don't re-propose pagination or the stamp for
-split. The two remaining SPLIT gaps are near-identical *template* pages (needs sequence/neighbour
-context) and blank pages (needs the visual channel) — NOT more token/geometry tuning. Pagination
-fusion into the content arm (for REMOVED safety + CLONE) is still open. When reporting content-arm
-accuracy, use the degraded population, not clean. Full record: `docs/DESIGN-NOTES.md` 2026-07-02
-(three SPLIT entries) + `plans/before-numbers/BASELINE.md`; backlog in `docs/IDEAS.md` 2026-07-02.
-Related: [[mri133-content-arm-scoped-to-originals]], [[mri133-bakeoff-clean-only]].
+**How to apply:** SPLIT detection is DONE — resolve-or-safe-queue, zero silent on both populations.
+Do NOT re-propose more split channels or token/geometry tuning; the only genuinely open SPLIT gap
+(gp's blank child) needs cross-document/sequence evidence, out of page-local scope. The live backlog
+front is the `[high]` bipartite coverage-graph reframe (the architectural home for all this split
+logic) and the parked pagination fuse. When reporting content-arm accuracy, use the degraded
+population, not clean. Full record: `docs/DESIGN-NOTES.md` 2026-07-02/07-03 + `plans/before-numbers/
+BASELINE.md`; backlog in `docs/IDEAS.md`. Related: [[mri133-content-arm-scoped-to-originals]],
+[[mri133-bakeoff-clean-only]].
