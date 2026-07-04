@@ -13,9 +13,9 @@
 - [[2026-07-04-mri133-render-fix-and-clean-confirmation]]
 
 ### Apprise viewer date-range rendering (MRI-134)
-- **Status:** Workstream A DONE and demo-verified in the real RecordsViewer: page-subset of the pre-rendered OCR-XOD built by OPC surgery (no re-conversion, no `Convert::ToXod`), loads in Apryse showing only the chosen pages (`?pages=1,30,60` -> 3 of 60). Branch split three ways (XOD feature / PDF-approach backup / combined backup); feature branch uncommitted for review. `last touched` 2026-07-04.
-- **next:** Workstream B, the real blocker: date-range -> page mapping via `ChronologyItem` project-level Bates page refs (its own findings spike). Then productionise (PII cache TTL, `Annots.xfdf` remap). Hub of record: `~/claude_code/projects/apprise-viewer-rendering/docs/DESIGN-NOTES.md`.
-- [[2026-07-04-mri134-xod-page-subset-demo-and-branch-split]]
+- **Status:** Workstream A demo-verified; branch split three ways, feature branch still fully uncommitted. This session also root-caused a dev-VM 500 on the plain whole-document viewer (Azure blob 403, no fallback there unlike the subset endpoint), patched a TEMPORARY local fallback (revert before commit), flagged `docs/SDD/codingStandards.md` as likely accidental branch carryover, and settled throughput figures for Deon (~65ms/page steady-state, ~4s fixed open cost, ~15.4 pages/sec). `last touched` 2026-07-04.
+- **next:** Workstream B (date-range -> page mapping via `ChronologyItem`) is still the real blocker. Before any commit: revert the temp Azure fallback, resolve `codingStandards.md`, decide whether the base route's missing blob-fallback gets a real fix. Hub of record: `~/claude_code/projects/apprise-viewer-rendering/docs/DESIGN-NOTES.md`.
+- [[2026-07-04-mri134-azure-fallback-and-perf-figures]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19
