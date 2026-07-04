@@ -36,14 +36,17 @@ on the 3 real Azure docs and the synthetic corpus):
      OCR is content-address-cached (`b4172f9`) AND (2026-07-04, `2804882`) subprocess-isolated with a
      per-page wall-clock timeout (`ocr_page_timeout_s`=120s, SIGTERM+skip) - the OCR HANG is RETIRED
      (confirmed in-situ: a curated clean bake-off hit the pathological page, timed out, skipped, completed).
-     The matcher per-page RENDER wall is also retired (2026-07-04, `0505505`): content-addressed render
-     cache (`io/render.py`, ~x8 warm, byte-identical) so identical rasters render once across the 8 resort
-     scenarios. NEW `[high]` blocker (2026-07-04): at full-corpus scale the SPLIT scenarios make many
-     DISTINCT thin-strip slivers, each paying a full 120s timeout (`_PAGE_SKIP` dedupes only IDENTICAL
-     rasters) -> the full clean confirmation is impractically slow (>1hr). Fix = pre-emptive degenerate-page
-     skip. Full-corpus zero-silent-SPLIT reconfirmation is deferred behind it; tonight's changes are
-     exonerated for split silent-errors by the stamped-arm control (2/10 silent SPLIT in BOTH the content
-     ensemble and the render/OCR-INDEPENDENT stamped arm on the curated subset).
+     The matcher per-page RENDER wall is retired (2026-07-04, `0505505` for the matcher arm; the OCR-arm
+     render was ALSO routed through the same content-addressed cache 2026-07-04 via `render_png_cached`,
+     closing a 9x cross-scenario re-render redundancy - byte-identical, 316 tests). CORRECTION (2026-07-04):
+     the parent's `[high]` "sliver -> 120s OCR timeout" blowup was DISPROVEN - real geometric slivers OCR in
+     0.4s, real scan pages 0.6-1.7s, only 2/8 scenarios split (one page each), and a 1-in-4 sample of the
+     capped range found 0 timeouts. The real full-run cost is MATCHER-ARM compute (~44 min of a 56-min capped
+     clean run), NOT OCR/slivers. FULL-CORPUS CLEAN CONFIRMATION COMPLETED (2026-07-04, `--cap-pages 200`, the
+     run the parent aborted): content-arm ensemble SPLIT 4.5% silent / 45.5% queue vs the render/OCR-INDEPENDENT
+     stamped arm's 36.4% silent -> NO OCR-induced content-split regression (the content arm handles SPLIT
+     BETTER, by queueing). Ensemble DoD MARGINAL: P99.9 / R69.0 / queue31.0 (recall + queue miss the proposed
+     bars by ~1pt; the sequence layer is the lever).
   6. **Exact-duplicate twin safe-queue** (`twin_split_abstain`, `coverage_graph.py`, 2026-07-03): a
      split page whose EXACT duplicate survives whole (bench-115132 171/85: byte-identical text AND
      geometry, split residual 0.00000) was silently MATCHED to the duplicate. No page-local signal can
