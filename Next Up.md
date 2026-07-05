@@ -13,8 +13,8 @@
 - [[2026-07-05-mri133-ceiling-harden-lever-b-cut]]
 
 ### Apprise viewer date-range rendering (MRI-134)
-- **Status:** Workstream A demo-verified; branch split three ways, feature branch still fully uncommitted. This session also root-caused a dev-VM 500 on the plain whole-document viewer (Azure blob 403, no fallback there unlike the subset endpoint), patched a TEMPORARY local fallback (revert before commit), flagged `docs/SDD/codingStandards.md` as likely accidental branch carryover, and settled throughput figures for Deon (~65ms/page steady-state, ~4s fixed open cost, ~15.4 pages/sec). `last touched` 2026-07-04.
-- **next:** Workstream B (date-range -> page mapping via `ChronologyItem`) is still the real blocker. Before any commit: revert the temp Azure fallback, resolve `codingStandards.md`, decide whether the base route's missing blob-fallback gets a real fix. Hub of record: `~/claude_code/projects/apprise-viewer-rendering/docs/DESIGN-NOTES.md`.
+- **Status:** Workstream A demo-verified AND committed: `feature/MRI-134-page-subset-extraction` is now `5be7c41b7` (local only, not pushed). The dev-VM Azure-403 whole-document-viewer bug was root-caused and the temp fallback deliberately reverted before committing; a permanent fix for that base route is logged as an idea, not yet built. Currently reviewing the parked `feature/MRI-134-pdf-split-approach` branch. `last touched` 2026-07-05.
+- **next:** Workstream B (date-range -> page mapping via `ChronologyItem`) is still the real blocker. Secondary, unblocked: build the permanent Azure blob-fallback for `streamOcrXodAction` (`docs/IDEAS.md` in the repo). Hub of record: `~/claude_code/projects/apprise-viewer-rendering/docs/DESIGN-NOTES.md`.
 - [[2026-07-04-mri134-azure-fallback-and-perf-figures]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
