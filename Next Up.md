@@ -7,10 +7,9 @@
 - **next:** Optional, neither blocks anything: log Q2's three decision candidates (equity rollout/valuation, grow-without-headcount, Athena agent) via /decision-log; regenerate the hand-built 07-08 edges via subagent for consistency.
 - [[2026-06-26-quarterly-company-meetings-ingestion]]
 
-### MRI-133 "Granular storing of pages" - dedicated project
-- **Status:** Sequence/neighbour layer INVESTIGATED then CUT. The ceiling read + a corpus-wide go/no-go showed the review queue is bimodal (docs are well-anchored or fully content-unresolvable, e.g. bench-115131 168pp = 22 distinct texts + 42 blanks = 0 anchors on every channel), so a neighbour-bracketer has an EMPTY resolvable middle. The queue fix is Lever A: MEDIAN fusion (2-of-3 channel agreement), which converts every weak-match over-abstain to a confident anchor (108->0 across 8 text docs); repetitive/blank docs stay unresolvable = stamp territory. Plan hardened via /harden-plan (13 critics; the safety gate was the key catch: 'precision >= 0.95' tolerated ~555 PII mis-transfers). On `feat/coverage-graph-reframe`, commit `aedc907`. `last touched` 2026-07-05.
-- **next:** Build Lever A (median fusion behind a `fusion_rule` dial, default-on + `_NEUTRAL_CFG` pin-mean) + its TWO safety gates: a synthetic dial-ON DUPLICATE/removed-look-alike archetype run (zero new silent) and a real-corpus zero-new-silent bake-off (also settles headline-to-GOOD + the 3 pending OCR docs). Mechanical (Sonnet). Plan: `plans/2026-07-04-sequence-layer-plan.md`.
-- [[2026-07-05-mri133-ceiling-harden-lever-b-cut]]
+- MRI-133 "Granular storing of pages" (median-rescue hybrid shipped, DoD MARGINAL, last touched 2026-07-05)
+  next: open choice - recalibrate tau_accept/tau_margin for median's distribution, or broaden the rescue's own gate, to push the queue further; or treat MARGINAL as the honest content-arm ceiling and report to Deon (content_ceiling.py already has the stamp-territory split)
+  [[2026-07-05-mri133-median-rescue-hybrid-shipped]]
 
 ### Apprise viewer date-range rendering (MRI-134)
 - **Status:** Workstream A demo-verified AND committed: `feature/MRI-134-page-subset-extraction` is now `5be7c41b7` (local only, not pushed). The dev-VM Azure-403 whole-document-viewer bug was root-caused and the temp fallback deliberately reverted before committing; a permanent fix for that base route is logged as an idea, not yet built. Currently reviewing the parked `feature/MRI-134-pdf-split-approach` branch. `last touched` 2026-07-05.

@@ -1,6 +1,6 @@
 ---
 name: mri133-cardinality-channels
-description: "What each matcher channel can and cannot do on the hard cardinality cases (split/clone/removed/inserted). The 11-doc real corpus surfaced 3 silent SPLIT errors the 3-doc corpus had HIDDEN (correcting the earlier 'zero silent both populations' claim): 2 = image-only pages (retired by in-matcher OCR, ad0f125), 1 = an exact-duplicate twin split (bench-115132, safe-queued via twin_split_abstain 2026-07-03). With both, SPLIT returns to zero silent on the real corpus. Open gaps (RESOLVING, not just safe-queuing): exact-duplicate + cross-section splits need sequence/neighbour context, not page-local evidence; gp's blank child. Pagination fuse parked."
+description: "What each matcher channel can and cannot do on the hard cardinality cases (split/clone/removed/inserted). The 11-doc real corpus surfaced 3 silent SPLIT errors the 3-doc corpus had HIDDEN (correcting the earlier 'zero silent both populations' claim): 2 = image-only pages (retired by in-matcher OCR, ad0f125), 1 = an exact-duplicate twin split (bench-115132, safe-queued via twin_split_abstain 2026-07-03). With both, SPLIT returns to zero silent on the real corpus. Open gaps (RESOLVING, not just safe-queuing): exact-duplicate + cross-section splits need sequence/neighbour context, not page-local evidence; gp's blank child. Pagination fuse parked. 2026-07-05: blanket median fusion (Lever A) FAILED its real-corpus safety gate; a mean-primary/median-rescue hybrid shipped instead (safe, DoD still MARGINAL)."
 metadata:
   type: project
   originSessionId: this-session
@@ -23,6 +23,30 @@ population). STILL TO BUILD: Lever A (a `fusion_rule` dial, default-on + `_NEUTR
 its two safety gates (a synthetic dial-ON DUPLICATE/removed-look-alike archetype run + a real-corpus
 zero-new-silent bake-off). The "open gaps" / "sequence/neighbour layer" framing in the body below is
 now historical context, not live work.
+
+**UPDATE 2026-07-05 (later session) - Lever A as a BLANKET rule FAILED; a mean-primary/
+median-rescue hybrid shipped instead.** Built `fusion_rule` (config.py) exactly as the update
+above specified. Its real-corpus safety gate (`scripts/lever_a_safety_gate.py`) FAILED: 1 new
+distinct SILENT_ERROR id (real-bench-115132#0086, composed_resort) and a hard DoD regression
+(recall 0.6727->0.5895, queue 0.3267->0.4098), concentrated almost entirely in PLAIN (-923
+CONFIDENT_CORRECT) and REPAGINATION (-299) - the OPPOSITE direction the small-scale probe
+(108->0) predicted. Mechanism: the near-tie check (`decision.py:243`) reads the RAW fused `sim`
+row, not the IDF-weighted `content_frac`, so median protects a WRONG candidate's score from a
+correctly-dissenting third channel exactly as much as the RIGHT one's - on boilerplate-heavy real
+documents (shared header/footer/patient-info) that manufactures far more false near-ties than it
+resolves. Rowan's redesign choice: a mean-primary/median-rescue hybrid
+(`config.median_rescue_enable`, upgrade-only - mean decides every page unconditionally; only a
+page mean sends to AMBIGUOUS gets a second look under median, adopted only if median's own
+independent re-classification is a clean MATCHED). Its real-corpus gate
+(`scripts/median_rescue_safety_gate.py`) PASSED clean: zero new silent errors, +48 pages resolved
+(recall 0.6727->0.6760, queue 0.3267->0.3234), the gain concentrated in the SAME PLAIN/
+REPAGINATION case types the blanket rule broke, this time safely. **DoD still MARGINAL, not
+GOOD** (recall/queue both short of the 0.70/0.30 bar) - a safe, small step, not a resolution of
+the queue. Also found: bench-115132 is a fully repetitive-TEMPLATE doc (122/172 exact-twin
+pages), NOT image-only (correction logged in [[mri133-real-data-container]]).
+`poc/scripts/content_ceiling.py` is the honest, GT-free per-doc ceiling read for Deon. Lesson for
+any future global-signal change: a small-scale/synthetic probe can validate the wrong mechanism
+entirely - only the full real-corpus scored run surfaced the near-tie-inflation effect.
 
 The MRI-133 matchers are one-to-one assignment machines; they break on **cardinality
 changes** (a page becoming several, or none, or an inserted page). Measured reach (2026-07-03,
