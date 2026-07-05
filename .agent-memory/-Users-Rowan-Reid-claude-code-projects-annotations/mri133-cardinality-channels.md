@@ -6,6 +6,24 @@ metadata:
   originSessionId: this-session
 ---
 
+**UPDATE 2026-07-05 (supersedes the "sequence layer is the lever" framing below).** The
+sequence/neighbour layer was investigated and CUT. The ceiling read + a corpus-wide go/no-go
+(`plans/2026-07-04-sequence-layer-*.md`) showed the review queue is BIMODAL: docs are either
+well-anchored (already resolve 97-100%) or fully content-unresolvable (bench-115131: 168pp, 22
+distinct texts, 42 blanks, 0 unique-placement anchors on EVERY channel), with an EMPTY resolvable
+middle - so a neighbour-bracketer has nothing to bracket (0 bracketable pages across 8 text docs).
+The actual queue fix is **Lever A: median fusion** (per-cell median of exact_hash/perceptual/
+text_fp = trust a 2-of-3 agreement), which converts every weak-match over-abstain (fused ~0.667
+under the old equal-weight MEAN, below tau_accept 0.80) to a confident anchor (measured 108->0). It
+leaves genuinely identical pages ABSTAINED (all 3 channels tie -> no false confidence). Repetitive/
+blank docs are information-theoretically content-unresolvable = the durable stamp's territory (a Deon
+finding). Plan hardened via /harden-plan (13 critics; the key catch: "precision >= 0.95" tolerates
+~555 PII mis-transfers, so the ship gate is now an ABSOLUTE zero-new-silent-error count on the FULL
+population). STILL TO BUILD: Lever A (a `fusion_rule` dial, default-on + `_NEUTRAL_CFG` pin-mean) +
+its two safety gates (a synthetic dial-ON DUPLICATE/removed-look-alike archetype run + a real-corpus
+zero-new-silent bake-off). The "open gaps" / "sequence/neighbour layer" framing in the body below is
+now historical context, not live work.
+
 The MRI-133 matchers are one-to-one assignment machines; they break on **cardinality
 changes** (a page becoming several, or none, or an inserted page). Measured reach (2026-07-03,
 on the 3 real Azure docs and the synthetic corpus):
