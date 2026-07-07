@@ -105,10 +105,23 @@ on the 3 real Azure docs and the synthetic corpus):
   (a) **Cross-section (non-adjacent) confident resolution.** The adjacency guard (`split_require_adjacent`)
   only auto-places a split whose children are CONTIGUOUS; a real "scatter re-sort" that files a split
   page's halves into different clinical sections is safely QUEUED, not resolved (fails safe, not solved).
-  Our two real split cases (salli 31+32, bench 141+142) were both adjacent, so this is untested. Fix
-  direction: the geometric shape-fit channel does NOT need adjacency, so relax the adjacency requirement
-  and lean on geometric residual + coverage (and/or make the matcher clinical-section-aware). Surfaced by
+  Our two real split cases (salli 31+32, bench 141+142) were both adjacent, so this is untested. Surfaced by
   Rowan 2026-07-03; logged as a `[high]` idea + its `[high]` cross-section test fixture.
+  **HARDENED PLAN 2026-07-07** (`plans/2026-07-05-cross-section-split-plan.md`, /harden-plan 8-critic pass):
+  the naive "just relax adjacency and lean on geometric residual + coverage" direction was REFUTED. Adjacency
+  was a cheap GLOBAL-consistency guard (contiguous children = one physical cut), and page-local geometry
+  alone is NOT strictly stronger: "distinctive" in `split_geometry._anchors` (IDF>=0.5 AND unique-on-page)
+  is not "bundle-unique", so a page assembled from separately-repeated blocks can be falsely reconstructed
+  from two unrelated template instances that tile (no full holder -> `twin_split_abstain` never fires). The
+  hardened design (Rowan chose build-with-gate over demonstrate-and-defer): an UPGRADE-ONLY scatter rescue
+  inside `_classify` (fires only when the non-scatter outcome is AMBIGUOUS/REMOVED, so it can't preempt a
+  confident MATCHED and composes with median_rescue) + a `band_order_chains` geometry sibling + a
+  DECISIVENESS GATE (per-band uniqueness, single-decisive-chain, two-axis fit) that replaces adjacency's
+  global consistency + an adversarial "assembled-from-repeated-blocks -> MUST ABSTAIN" red-first fixture.
+  Dial `split_cross_section_enable`, pinned OFF in `_NEUTRAL_CFG`. Ship gate: adversarial fixture passes AND
+  zero-new-silent on the full real corpus (both ref types, full dial stack, re-snapshot the median_rescue
+  baseline) AND non-inert. NOT YET BUILT (Phase 1 = fixtures-first). See [[the reflected learning in
+  docs/IDEAS.md 2026-07-07]].
   (b) **gp's confident resolution** (its blank second child needs cross-document / sequence evidence —
   which bundle a blank page belongs to — not page-local cleverness). Logged as the [low]
   cross-boundary-continuity validators.

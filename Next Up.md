@@ -7,9 +7,9 @@
 - **next:** Optional, neither blocks anything: log Q2's three decision candidates (equity rollout/valuation, grow-without-headcount, Athena agent) via /decision-log; regenerate the hand-built 07-08 edges via subagent for consistency.
 - [[2026-06-26-quarterly-company-meetings-ingestion]]
 
-- MRI-133 "Granular storing of pages" (median-rescue hybrid shipped, DoD MARGINAL, last touched 2026-07-05)
-  next: open choice - recalibrate tau_accept/tau_margin for median's distribution, or broaden the rescue's own gate, to push the queue further; or treat MARGINAL as the honest content-arm ceiling and report to Deon (content_ceiling.py already has the stamp-territory split)
-  [[2026-07-05-mri133-median-rescue-hybrid-shipped]]
+- MRI-133 "Granular storing of pages" (cross-section split plan HARDENED + ready to build; median-rescue hybrid shipped, DoD MARGINAL, last touched 2026-07-07)
+  next: build the cross-section (scatter) split resolver per the hardened plan (`plans/2026-07-05-cross-section-split-plan.md`) - Phase 1 is fixtures-first (`test_split_cross_section.py`: case 1 MUST-RESOLVE red-first + the adversarial MUST-ABSTAIN guards, plus the `cross_section` gate scenario), THEN the mechanism (band_order_chains + decisiveness gate) behind `split_cross_section_enable`, THEN the full-stack zero-new-silent gate. Still-open alt from last session (unblocked, either-or): recalibrate tau_accept/tau_margin for median's distribution, or report MARGINAL as the honest content-arm ceiling to Deon (`content_ceiling.py` already has the stamp-territory split).
+  [[2026-07-07-mri133-cross-section-split-plan-hardened]]
 
 ### Apprise viewer date-range rendering (MRI-134)
 - **Status:** Workstream A shipped on `feature/MRI-134-page-subset-extraction` (`5be7c41b7`, local only). The parked alternative, `feature/MRI-134-pdf-split-approach`, is now reviewed and tidied: comments rewritten as a walkthrough (`b8fd957d8`), an accidentally-carried-over `docs/SDD/codingStandards.md` removed (`b11fb925e`), and a named-files audio walkthrough rendered to `~/Downloads/mri134-pdf-split-code-walkthrough.m4a`. Both branches local-only, not pushed. `last touched` 2026-07-07.
