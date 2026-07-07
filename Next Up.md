@@ -12,9 +12,9 @@
   [[2026-07-05-mri133-median-rescue-hybrid-shipped]]
 
 ### Apprise viewer date-range rendering (MRI-134)
-- **Status:** Workstream A demo-verified AND committed: `feature/MRI-134-page-subset-extraction` is now `5be7c41b7` (local only, not pushed). The dev-VM Azure-403 whole-document-viewer bug was root-caused and the temp fallback deliberately reverted before committing; a permanent fix for that base route is logged as an idea, not yet built. Currently reviewing the parked `feature/MRI-134-pdf-split-approach` branch. `last touched` 2026-07-05.
-- **next:** Workstream B (date-range -> page mapping via `ChronologyItem`) is still the real blocker. Secondary, unblocked: build the permanent Azure blob-fallback for `streamOcrXodAction` (`docs/IDEAS.md` in the repo). Hub of record: `~/claude_code/projects/apprise-viewer-rendering/docs/DESIGN-NOTES.md`.
-- [[2026-07-04-mri134-azure-fallback-and-perf-figures]]
+- **Status:** Workstream A shipped on `feature/MRI-134-page-subset-extraction` (`5be7c41b7`, local only). The parked alternative, `feature/MRI-134-pdf-split-approach`, is now reviewed and tidied: comments rewritten as a walkthrough (`b8fd957d8`), an accidentally-carried-over `docs/SDD/codingStandards.md` removed (`b11fb925e`), and a named-files audio walkthrough rendered to `~/Downloads/mri134-pdf-split-code-walkthrough.m4a`. Both branches local-only, not pushed. `last touched` 2026-07-07.
+- **next:** Workstream B (date-range -> page mapping via `ChronologyItem`) is still the real blocker and untouched by this review. Secondary, unblocked: build the permanent Azure blob-fallback for `streamOcrXodAction` (`docs/IDEAS.md` in the repo). Hub of record: `~/claude_code/projects/apprise-viewer-rendering/docs/DESIGN-NOTES.md`.
+- [[2026-07-07-mri134-pdf-split-walkthrough-and-cleanup]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19
