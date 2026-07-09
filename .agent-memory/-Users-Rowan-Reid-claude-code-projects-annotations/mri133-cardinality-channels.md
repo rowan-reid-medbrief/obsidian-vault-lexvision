@@ -120,8 +120,12 @@ on the 3 real Azure docs and the synthetic corpus):
   global consistency + an adversarial "assembled-from-repeated-blocks -> MUST ABSTAIN" red-first fixture.
   Dial `split_cross_section_enable`, pinned OFF in `_NEUTRAL_CFG`. Ship gate: adversarial fixture passes AND
   zero-new-silent on the full real corpus (both ref types, full dial stack, re-snapshot the median_rescue
-  baseline) AND non-inert. NOT YET BUILT (Phase 1 = fixtures-first). See [[the reflected learning in
-  docs/IDEAS.md 2026-07-07]].
+  baseline) AND non-inert. SHIPPED 2026-07-09 (`063e22e`, default ON): ship gate PASSED at cap-120 - 0 new
+  silent ids on BOTH ref types, 2 real scatters resolved at scatter-upgrade precision 1.0, boilerplate-heavy
+  rest safely abstained (a safe partial win, DoD still MARGINAL). Built as an upgrade-only rescue
+  (`_classify_base`/`_classify` split) + `band_order_chains` + the 6-part decisiveness gate + 8 fixtures;
+  `scripts/rescue_safety_gate.py` collapsed the lever_a/median_rescue gate near-copies. See [[the reflected
+  learning in docs/IDEAS.md 2026-07-07]].
   (b) **gp's confident resolution** (its blank second child needs cross-document / sequence evidence —
   which bundle a blank page belongs to — not page-local cleverness). Logged as the [low]
   cross-boundary-continuity validators.
@@ -155,8 +159,8 @@ on the 3 real Azure docs and the synthetic corpus):
 **How to apply:** SPLIT detection is DONE for ADJACENT splits and the coverage-graph reframe is DONE (the
 architectural home for the split logic). Do NOT re-propose more split channels, token/geometry tuning, or
 the capacitated solver backbone. But TWO SPLIT gaps ARE sanctioned open work (do not dismiss them as
-"splits are done"): **cross-section (non-adjacent) confident resolution** (the `[high]` idea + its test
-fixture, 2026-07-03), **RESOLVING (not just safe-queuing) the exact-duplicate twin split** (point 6 —
+"splits are done"): cross-section (non-adjacent) confident resolution is now SHIPPED (2026-07-09, default
+ON, a safe partial win). Still open: **RESOLVING (not just safe-queuing) the exact-duplicate twin split** (point 6 —
 needs the sequence layer, same lever), and **gp's blank child** (cross-document/sequence evidence, out
 of page-local scope). The corpus-expansion build is DONE (11 real docs stamped + wired into
 `scripts/real_bakeoff.py`); the remaining fronts are the **sequence/neighbour layer** (the common
