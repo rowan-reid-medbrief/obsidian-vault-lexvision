@@ -7,7 +7,7 @@ metadata:
   originSessionId: 558c9501-5f64-4e14-8ad9-f1fe341a0b6b
 ---
 
-This project directory (`~/claude_code/medbrief`) is a real git clone of `medbriefteam/medbrief` (Bitbucket), git identity `rowan.reid@medbrief.co.uk`.
+This project directory (`~/claude_code/medbrief`) is a real git clone of MedBrief Secure Review, git identity `rowan.reid@medbrief.co.uk`. **Origin migrated Bitbucket→GitHub Enterprise on 2026-07-09** (the team-wide move; guide = Confluence [page 1056079874](https://medbrief.atlassian.net/wiki/spaces/MDC/pages/1056079874) section 2): `origin` is now `git@github.com:medbrief/msr-medbrief.git` (was `git@bitbucket.org:medbriefteam/medbrief.git`). GitHub SSH authenticates as `rowan-reid-medbrief`; new-branch pushes are accepted (Bitbucket had blocked them). Repo naming prefix convention: `msr-` = MedBrief Secure Review (see the guide's section 4 table).
 
 It is live-synced via **Mutagen** (session name `medbrief`) to Rowan's own DigitalOcean dev VM, where the actual docker stack runs (`app`, `php`, `db`, `db_test`, `mailcatcher` — confirmed up continuously, 6+ weeks uptime as of 2026-07-03). The sync excludes `.git`, `vendor`, `node_modules`, `var`, `tmp`, `data`, `public/build`, `public/bundles`, `public/app`, `storybook-static` (~1.3GB of build artefacts/dependencies that don't need to cross the wire). See [[medbrief-dev-vm-access]] for connection details.
 
