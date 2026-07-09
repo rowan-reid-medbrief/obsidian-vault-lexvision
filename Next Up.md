@@ -11,9 +11,9 @@
   next: build the cross-section (scatter) split resolver per the hardened plan (`plans/2026-07-05-cross-section-split-plan.md`) - Phase 1 is fixtures-first (`test_split_cross_section.py`: case 1 MUST-RESOLVE red-first + the adversarial MUST-ABSTAIN guards, plus the `cross_section` gate scenario), THEN the mechanism (band_order_chains + decisiveness gate) behind `split_cross_section_enable`, THEN the full-stack zero-new-silent gate. Still-open alt from last session (unblocked, either-or): recalibrate tau_accept/tau_margin for median's distribution, or report MARGINAL as the honest content-arm ceiling to Deon (`content_ceiling.py` already has the stamp-territory split).
   [[2026-07-07-mri133-cross-section-split-plan-hardened]]
 
-- Apprise viewer date-range rendering (MRI-134) (Workstream A shipped; parked PDF-split alternative comment-tone-fixed + committed, last touched 2026-07-09)
-  next: Workstream B (date-range -> page mapping via `ChronologyItem`) is still the real blocker, untouched this session. Secondary, unblocked: permanent Azure blob-fallback for `streamOcrXodAction` (`docs/IDEAS.md`). Hub of record: `~/claude_code/projects/apprise-viewer-rendering/docs/DESIGN-NOTES.md`.
-  [[2026-07-09-mri134-pdf-split-comment-tone-fix]]
+- Apprise viewer date-range rendering (MRI-134) (Workstream A shipped; parked PDF-split alternative demoed end-to-end incl. a 1020-page file, last touched 2026-07-09)
+  next: Workstream B (date-range -> page mapping via `ChronologyItem`) is still the real blocker, untouched. Before the branch is committable, unwind the demo scaffolding (PageSpecParser cap 500->1000, PathResolverStrategy native-PDF hack, VM `.env.local` trial-key swap, seeded native-PDF copies + doc-2/doc-3 DB rows). Secondary, unblocked: permanent Azure blob-fallback for `streamOcrXodAction` (`docs/IDEAS.md`). Hub of record: `~/claude_code/projects/apprise-viewer-rendering/docs/DESIGN-NOTES.md`.
+  [[2026-07-09-mri134-pdf-split-large-file-demo]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19
