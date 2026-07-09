@@ -2,6 +2,10 @@
 
 ## Now (Medbrief)
 
+- MedBrief workspace consolidation (Stage 1 done: stray-file leak-guard applied + verified on the checkout, apprise committed + bundled; last touched 2026-07-09)
+  next: from a fresh neutral-cwd session, read ~/claude_code/projects/apprise-viewer-rendering/docs/MIGRATION-STATE.md and run Stages 2-5 (rename apprise -> medbrief-work, move the msr-medbrief checkout into repo/, terminate+recreate the mutagen sync on the new path, relocate the checkout's memory, fix the vault project_repo pointer). Annotations excluded for good.
+  [[2026-07-09-medbrief-workspace-consolidation-stage1]]
+
 ### MedBrief quarterly company meetings - ingested to vault
 - **Status:** Q1 (March) and Q2 (June) 2026 company updates fully ingested via /process-meeting: meeting-graphs (183n/333e, 160n/314e) in ~/meeting-graph-output/, recaps in Resources/Summaries/medbrief/, March's two strategic decisions logged. Q2 Pass-3 chapters 07-08 hand-authored after a session-limit killed two subagents (03-04 salvaged from a valid .tmp). `last touched` 2026-06-26.
 - **next:** Optional, neither blocks anything: log Q2's three decision candidates (equity rollout/valuation, grow-without-headcount, Athena agent) via /decision-log; regenerate the hand-built 07-08 edges via subagent for consistency.
