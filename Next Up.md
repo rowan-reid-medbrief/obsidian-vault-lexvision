@@ -11,10 +11,9 @@
   next: build the cross-section (scatter) split resolver per the hardened plan (`plans/2026-07-05-cross-section-split-plan.md`) - Phase 1 is fixtures-first (`test_split_cross_section.py`: case 1 MUST-RESOLVE red-first + the adversarial MUST-ABSTAIN guards, plus the `cross_section` gate scenario), THEN the mechanism (band_order_chains + decisiveness gate) behind `split_cross_section_enable`, THEN the full-stack zero-new-silent gate. Still-open alt from last session (unblocked, either-or): recalibrate tau_accept/tau_margin for median's distribution, or report MARGINAL as the honest content-arm ceiling to Deon (`content_ceiling.py` already has the stamp-territory split).
   [[2026-07-07-mri133-cross-section-split-plan-hardened]]
 
-### Apprise viewer date-range rendering (MRI-134)
-- **Status:** Workstream A shipped on `feature/MRI-134-page-subset-extraction` (`5be7c41b7`, local only). The parked alternative, `feature/MRI-134-pdf-split-approach`, is now reviewed and tidied: comments rewritten as a walkthrough (`b8fd957d8`), an accidentally-carried-over `docs/SDD/codingStandards.md` removed (`b11fb925e`), and a named-files audio walkthrough rendered to `~/Downloads/mri134-pdf-split-code-walkthrough.m4a`. Both branches local-only, not pushed. `last touched` 2026-07-07.
-- **next:** Workstream B (date-range -> page mapping via `ChronologyItem`) is still the real blocker and untouched by this review. Secondary, unblocked: build the permanent Azure blob-fallback for `streamOcrXodAction` (`docs/IDEAS.md` in the repo). Hub of record: `~/claude_code/projects/apprise-viewer-rendering/docs/DESIGN-NOTES.md`.
-- [[2026-07-07-mri134-pdf-split-walkthrough-and-cleanup]]
+- Apprise viewer date-range rendering (MRI-134) (Workstream A shipped; parked PDF-split alternative comment-tone-fixed + committed, last touched 2026-07-09)
+  next: Workstream B (date-range -> page mapping via `ChronologyItem`) is still the real blocker, untouched this session. Secondary, unblocked: permanent Azure blob-fallback for `streamOcrXodAction` (`docs/IDEAS.md`). Hub of record: `~/claude_code/projects/apprise-viewer-rendering/docs/DESIGN-NOTES.md`.
+  [[2026-07-09-mri134-pdf-split-comment-tone-fix]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19
