@@ -11,9 +11,9 @@
   next: re-sync the stale `mri133-annotations-poc` programme spine (last_synced 2026-06-23; reads "M2 done, demo-ready" but the coverage-graph reframe, OCR, split-vs-twin, render caching, the fusion hybrid, and today's cross-section ship all landed since). Content-arm levers are largely exhausted (cross-section shipped as a safe partial win, 2 of 11 real scatters resolved); the honest remaining story to Deon is stamp-at-extraction for the content-unresolvable residual. Deferred, blocked on Deon: c (real-data validation) / d (WebViewer).
   [[2026-07-09-mri133-cross-section-split-shipped]]
 
-- Apprise viewer date-range rendering (MRI-134) (Workstream A shipped; parked PDF-split branch demoed to Deon end-to-end (positive, wants a zone-2 trial), now committed + pushed clean to GitHub, last touched 2026-07-09)
-  next: Workstream B (date-range -> page mapping via `ChronologyItem`) is still the real blocker, untouched. Branch `feature/MRI-134-pdf-split-approach` is on GitHub (`github.com:medbrief/msr-medbrief`) with the two code demo-hacks reverted (PageSpecParser cap back to 500, PathResolverStrategy native-PDF routing removed); the VM `.env.local` trial-key swap + seeded native-PDF DB rows (doc-2/doc-3) remain VM-local. Tests: PageSpecParser 17/17 green; the `PDFTools/Split` integration tests are blocked by a pre-existing, repo-wide EM-853 `MatchLoA` test-container compile failure (not ours; confirmed via `lint:container --env=test`). Secondary, unblocked: permanent Azure blob-fallback for `streamOcrXodAction` (idea preserved in project memory). Hub of record: `~/claude_code/projects/apprise-viewer-rendering/docs/DESIGN-NOTES.md`.
-  [[2026-07-09-mri134-github-migration-and-demo-cleanup]]
+- Apprise viewer date-range rendering (MRI-134) (docs split into `docs/mri-134/`, vault hub realigned; build still parked on Workstream B, last touched 2026-07-10)
+  next: Workstream B (date-range -> page mapping via `ChronologyItem`) is still the real blocker, untouched. Hub of record is now `~/claude_code/medbrief-work/docs/mri-134/DESIGN-NOTES.md` (moved off the workspace root). A second ticket is about to start in this workspace under its own `docs/<ticket>/` subdir.
+  [[2026-07-10-medbrief-work-docs-reorg-and-vault-alignment]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19

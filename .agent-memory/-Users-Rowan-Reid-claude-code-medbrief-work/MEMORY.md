@@ -3,7 +3,7 @@
 One line per memory. Content lives in the linked files, not here. Merged 2026-07-09 from the former apprise-viewer-rendering and medbrief-checkout slugs during the workspace consolidation.
 
 ## Workspace and repo
-- [MedBrief workspace consolidation](project_medbrief-workspace-consolidation.md) — one medbrief-work workspace nesting the checkout as repo/; complete 2026-07-09; annotations excluded; leak-guard live
+- [MedBrief workspace consolidation](project_medbrief-workspace-consolidation.md) — medbrief-work nests checkout as repo/; leak-guard live
 - [MedBrief repo GitHub migration](reference_medbrief-repo-github-migration.md) — product repo moved Bitbucket → GitHub ~late June 2026; Bitbucket left behind
 
 ## Dev environment
