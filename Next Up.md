@@ -11,9 +11,9 @@
   next: re-sync the stale `mri133-annotations-poc` programme spine (last_synced 2026-06-23; reads "M2 done, demo-ready" but the coverage-graph reframe, OCR, split-vs-twin, render caching, the fusion hybrid, and today's cross-section ship all landed since). Content-arm levers are largely exhausted (cross-section shipped as a safe partial win, 2 of 11 real scatters resolved); the honest remaining story to Deon is stamp-at-extraction for the content-unresolvable residual. Deferred, blocked on Deon: c (real-data validation) / d (WebViewer).
   [[2026-07-09-mri133-cross-section-split-shipped]]
 
-- Apprise viewer date-range rendering (MRI-134) (docs split into `docs/mri-134/`, vault hub realigned; build still parked on Workstream B, last touched 2026-07-10)
-  next: Workstream B (date-range -> page mapping via `ChronologyItem`) is still the real blocker, untouched. Hub of record is now `~/claude_code/medbrief-work/docs/mri-134/DESIGN-NOTES.md` (moved off the workspace root). A second ticket is about to start in this workspace under its own `docs/<ticket>/` subdir.
-  [[2026-07-10-medbrief-work-docs-reorg-and-vault-alignment]]
+- Apprise viewer date-range rendering (MRI-134) (scale benchmark done + demoed to Deon, check-order fix written uncommitted, last touched 2026-07-10)
+  next: **profile the MedBrief extraction path** (Blackfire or Xdebug) to find the ~19x runtime overhead the standalone-PHP control exposed. The 2026-07-10 benchmark answered Deon's "pages or file size" (both: copy scales with size, slice with pages) and his Python follow-up (no: standalone PHP beats Python; the cost is MedBrief runtime overhead, not the language/engine, and ruled out xdebug/version/GC/autoloader/etc.). Uncommitted on the branch: the check-order fix (`ProjectDocumentController.php` + `PageSpecParser.php`, 17 tests green) - wants review before commit. VM has ~26GB throwaway fixtures + harnesses in `/var/tmp/mri134` to clean. Workstream B (date-range -> page mapping via `ChronologyItem`) is still the real feature blocker. Meeting visual: https://claude.ai/code/artifact/b640ad96-d921-47ad-bb4b-c837f41618a1
+  [[2026-07-10-mri134-scale-benchmark-and-php-vs-python]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19
