@@ -11,6 +11,7 @@ One line per memory. Content lives in the linked files, not here. Merged 2026-07
 - [MedBrief dev VM access](reference_medbrief_vm-access.md) — SSH/ZeroTier details for rowan-dev.medbrief.net
 - [MRI-134 branch context](project_mri-134-branch.md) — both MRI-134 sibling branches (XOD page-subset + PDF split); full plan in this workspace
 - [MedBrief prod file access](project_medbrief-prod-file-access.md) — Azure Files (msrstandard) for docs, Blob for XOD; jumphost + portal routes; both access gates open for Rowan
+- [AI-2066 Compre translation](project_ai-2066-translation.md) — Azure sync refuses PDF (batch-only); storage-provisioning gap; paused on staging decision
 
 ## Working feedback
 - [Don't offer committing](feedback_no-offering-commits.md) — never propose/list committing; wait for an explicit request
