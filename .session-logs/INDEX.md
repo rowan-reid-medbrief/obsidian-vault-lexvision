@@ -131,3 +131,4 @@
 - 2026-06-16 [personal] **2026-06-16-s12-cross-machine-reconciliation.md** (backfilled) (shared/2026-06-16-s12-cross-machine-reconciliation.md)
 - 2026-07-03 [medbrief] **2026-07-03-apprise-viewer-rendering-discovery-handoff.md** (backfilled) (medbrief/2026-07-03-apprise-viewer-rendering-discovery-handoff.md)
 - ????-??-?? [medbrief] **2026-07-07-mri133-cross-section-split-plan-hardened.md** (backfilled) (medbrief/2026-07-07-mri133-cross-section-split-plan-hardened.md)
+- 2026-07-10 [medbrief] **2026-07-10-mri134-scale-benchmark-and-php-vs-python.md** (backfilled) (medbrief/2026-07-10-mri134-scale-benchmark-and-php-vs-python.md)
