@@ -27,10 +27,9 @@
 
 
 ### Kumulus / MedBrief engagement (lexvision-poc)
-- **Last touched:** 2026-06-12
-- **Status:** Working doc renamed `Landing Pad.docx` → `Rowan Kumulus Research.docx` and hand-edited in Rowan's voice: patent and ADR/decision reference numbers removed, M3–M12 benchmark cells narrated (links kept), GLiNER/Presidio cells clarified, M2 typo fixed. ~15 voice patterns captured to `~/.claude/profile/writing-voice.md`. The `landing-pad.spec.json` generator is now stale; do NOT rebuild (would wipe manual edits).
-- **next:** Send the corrected `Rowan Kumulus Research.docx` to Laura and Deon; confirm the 15 June 15:00 Dublin slot with João; retire/reconcile the stale Landing Pad generator (IDEAS.md); resolve the ~/.claude cross-machine divergence; chase the named residuals (Deon, NICE in writing, Agilio).
-- [[2026-06-12-kumulus-tone-profile-and-landing-pad-edits]]
+- **Status:** Gen 4 "Data and AI PoV" (received 9 Jul) reviewed + documented (review doc `12-review-2026-07-09-data-ai-pov.md`, ADR-009). Scope inverts back to the d1 split: Kumulus builds the upstream extraction pipeline (M2-M7), drops OCR + the comparison layer; MedBrief keeps the reasoning layer. Position: hold accept-in-principle-and-negotiate. `last touched` 2026-07-16.
+- **next:** Take the five open items to Kumulus/Laura/Deon: (1) settle the data-handoff de-identification state + Azure tenancy FIRST (new compliance crux: prepared case data crosses to a Brazil-based vendor); (2) IP transfer of extraction/pseudonymisation notebooks + schema; (3) incentive-failure fallback in writing; (4) numeric acceptance bars per ADR-004; (5) reconcile the pricing-slide-vs-body comparison contradiction. Confirm the Gen 4 deck supersedes the 10 June one.
+- [[2026-07-16-kumulus-gen4-data-ai-pov-review]]
 
 ### Expert Sheet — Phase 2 dedup, pending USE_DB run + Chantel delivery
 - **Last touched:** 2026-06-09
