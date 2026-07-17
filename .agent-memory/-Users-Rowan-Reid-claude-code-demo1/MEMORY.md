@@ -6,3 +6,4 @@
 - [MedBrief: "Sally" = SALLI, not a person](reference_medbrief_salli_not_sally.md) — meeting-graph mis-extracts Sally as a Person; it's an AI/sorting system
 - [Machine test-suite red suites](reference_machine_test_suite_failures.md) — 6 ~/.claude tests are expected-red here (missing doc-gen venvs + un-cloned claude-cockpit); not regressions
 - [Machine MCP-server local build state (2026-07-16)](reference_machine_mcp_server_state.md) — gdrive-semantic + gdrive-mcp-server built from scratch, pptxgenjs + mmdc installed; none registered under `claude mcp list` yet
+- [Programme spine: gh-copilot](project_programme_gh_copilot_pointer.md) — the Copilot delegation build is spine-tracked; read `~/.claude/docs/programmes/gh-copilot.md` fresh, not handoff prompts
