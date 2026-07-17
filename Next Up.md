@@ -15,9 +15,9 @@
   next: **send Deon the benchmark table and the branch** (`feature/MRI-134-pdf-split-approach`, tip `27547ede3`, both fixes pushed). The "~19x MedBrief overhead" was disproven (a page-cache confound from the whole-file copy); PHP-Apryse and Python-Apryse tie, PyMuPDF is disqualified. Then decide async subset generation vs a config-bound product page limit: the request wall is nginx's 60s fastcgi default and php-fpm has only 5 workers. The subset cache still has no eviction (~2.9GB per 10k subset). VM has ~30GB throwaway fixtures in `/var/tmp/mri134` to clean. Workstream B (date-range -> page mapping via `ChronologyItem` Bates refs) is still the real feature blocker.
   [[2026-07-10-mri134-copy-elimination-and-cap-removal]]
 
-- Translation | Compre (AI-2066) (demo shown to Deon and Laura, who found it worrying; real-PHI staging governance now resolved (verbally approved); new benchmark idea surfaced (the real sample's own embedded English as ground truth); last touched 2026-07-17)
-  next: benchmark AWS/Google/DeepL on synthetic documents (agreed next step); then extract the German pages from the real sample and compare against its embedded English via clinicalrecord-translator. Residency/DPA question to Deon is still separately open.
-  [[2026-07-17-narrate-meeting-shakedown-nice-ai2066]]
+- Translation | Compre (AI-2066) (external deep-research pass reconciled into all four core docs; PLAN.md restructured into a sequenced Phase 3-6 roadmap; last touched 2026-07-17)
+  next: handed off to a fresh session for Phase 3's Claude-executable checks (API-version reconfirmation, comprepseudo German-support test). Phase 3 item 4 (AWS/Google/DeepL sign-ups, tell Chris Fuller) is still Rowan's own action.
+  [[2026-07-17-ai2066-research-reconciliation-and-roadmap]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19
