@@ -5,6 +5,7 @@ holding the typed subset of a `/meeting-graph` run; resolution starts at its `gr
 Reverse-chronological. Auto-derived from the on-disk `graph.meta.json` files by `/promote-graph`;
 manual edits here are overwritten on the next promotion.
 
+- 2026-07-17 — Deon, Laura, Rowan: NICE guidelines and AI-2066 [medbrief/ai-2066] deon-laura-nice-translation-2026-07-17
 - 2026-06-12 — Kumulus Regroup [lexvision/lexvision-poc] kumulus-regroup-2026-06-12
 - 2026-06-08 — MedBrief Walkthrough Part 2 [medbrief/medbrief-onboarding] medbrief-walkthrough-part2-2026-06-08
 - 2026-06-07 — Kumulus & Medbrief — Vendor Proposal [lexvision/lexvision-poc] kumulus-medbrief-2026-06-07

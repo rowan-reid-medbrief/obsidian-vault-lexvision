@@ -1,0 +1,2177 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d50" for="edge" attr.name="weight" attr.type="long" />
+  <key id="d49" for="edge" attr.name="provenance" attr.type="string" />
+  <key id="d48" for="edge" attr.name="confidence" attr.type="double" />
+  <key id="d47" for="edge" attr.name="target" attr.type="string" />
+  <key id="d46" for="edge" attr.name="source" attr.type="string" />
+  <key id="d45" for="edge" attr.name="type" attr.type="string" />
+  <key id="d44" for="node" attr.name="frame_ids" attr.type="string" />
+  <key id="d43" for="node" attr.name="topic_ids" attr.type="string" />
+  <key id="d42" for="node" attr.name="end_ts" attr.type="double" />
+  <key id="d41" for="node" attr.name="start_ts" attr.type="double" />
+  <key id="d40" for="node" attr.name="summary" attr.type="string" />
+  <key id="d39" for="node" attr.name="index" attr.type="long" />
+  <key id="d38" for="node" attr.name="answer_summary" attr.type="string" />
+  <key id="d37" for="node" attr.name="contested" attr.type="boolean" />
+  <key id="d36" for="node" attr.name="claim_type" attr.type="string" />
+  <key id="d35" for="node" attr.name="evidence_refs" attr.type="string" />
+  <key id="d34" for="node" attr.name="speaker_id" attr.type="string" />
+  <key id="d33" for="node" attr.name="alternatives_considered" attr.type="string" />
+  <key id="d32" for="node" attr.name="decided_by" attr.type="string" />
+  <key id="d31" for="node" attr.name="statement" attr.type="string" />
+  <key id="d30" for="node" attr.name="is_personal_commitment" attr.type="boolean" />
+  <key id="d29" for="node" attr.name="source_quote" attr.type="string" />
+  <key id="d28" for="node" attr.name="priority" attr.type="string" />
+  <key id="d27" for="node" attr.name="status" attr.type="string" />
+  <key id="d26" for="node" attr.name="depends_on" attr.type="string" />
+  <key id="d25" for="node" attr.name="co_owners" attr.type="string" />
+  <key id="d24" for="node" attr.name="owner_id" attr.type="string" />
+  <key id="d23" for="node" attr.name="description" attr.type="string" />
+  <key id="d22" for="node" attr.name="qtype" attr.type="string" />
+  <key id="d21" for="node" attr.name="answered" attr.type="boolean" />
+  <key id="d20" for="node" attr.name="addressee_id" attr.type="string" />
+  <key id="d19" for="node" attr.name="asker_id" attr.type="string" />
+  <key id="d18" for="node" attr.name="text" attr.type="string" />
+  <key id="d17" for="node" attr.name="ts" attr.type="string" />
+  <key id="d16" for="node" attr.name="mentioned_by" attr.type="string" />
+  <key id="d15" for="node" attr.name="artifact_type" attr.type="string" />
+  <key id="d14" for="node" attr.name="parent_topic_id" attr.type="string" />
+  <key id="d13" for="node" attr.name="keywords" attr.type="string" />
+  <key id="d12" for="node" attr.name="salience" attr.type="double" />
+  <key id="d11" for="node" attr.name="level" attr.type="string" />
+  <key id="d10" for="node" attr.name="org" attr.type="string" />
+  <key id="d9" for="node" attr.name="role" attr.type="string" />
+  <key id="d8" for="node" attr.name="is_participant" attr.type="boolean" />
+  <key id="d7" for="node" attr.name="aliases" attr.type="string" />
+  <key id="d6" for="node" attr.name="canonical_name" attr.type="string" />
+  <key id="d5" for="node" attr.name="name" attr.type="string" />
+  <key id="d4" for="node" attr.name="chapter_ids" attr.type="string" />
+  <key id="d3" for="node" attr.name="provenance" attr.type="string" />
+  <key id="d2" for="node" attr.name="confidence" attr.type="double" />
+  <key id="d1" for="node" attr.name="label" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="person:rowan-reid">
+      <data key="d0">Person</data>
+      <data key="d1">Rowan Reid</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "reconstructed by Rowan Reid shortly afterwards", "ts": null, "source": "transcript"}, {"quote": "Rowan demonstrated the blob storage he had created under the MedBrief Secure Review subscription.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01", "chapter:02"]</data>
+      <data key="d5">Rowan Reid</data>
+      <data key="d6">Rowan Reid</data>
+      <data key="d7">["Rowan"]</data>
+      <data key="d8">True</data>
+    </node>
+    <node id="person:deon-kuhn">
+      <data key="d0">Person</data>
+      <data key="d1">Deon Kuhn</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Deon said guidelines should not be stored on the MedBrief server", "ts": null, "source": "transcript"}, {"quote": "Rowan asked whether uploading the real PII-bearing German record was okay. Both Deon and Laura said yes.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01", "chapter:02"]</data>
+      <data key="d5">Deon Kuhn</data>
+      <data key="d6">Deon Kuhn</data>
+      <data key="d7">["Deon"]</data>
+      <data key="d9">CTO</data>
+      <data key="d10">MedBrief</data>
+      <data key="d8">True</data>
+    </node>
+    <node id="person:laura-gongas">
+      <data key="d0">Person</data>
+      <data key="d1">Laura Gongas</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Ask (Laura to Rowan): investigate whether the NICE guidelines actually needed for the Kumulus case set are obtainable", "ts": null, "source": "transcript"}, {"quote": "Laura mentioned she had already tested clinicalrecord-translator before", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01", "chapter:02"]</data>
+      <data key="d5">Laura Gongas</data>
+      <data key="d6">Laura Gongas</data>
+      <data key="d7">["Laura"]</data>
+      <data key="d8">True</data>
+    </node>
+    <node id="topic:nice-guidelines-kumulus">
+      <data key="d0">Topic</data>
+      <data key="d1">NICE guidelines for the Lexvision POC Kumulus project</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "TOPIC 1: NICE guidelines", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d11">theme</data>
+      <data key="d12">0.95</data>
+      <data key="d13">["NICE guidelines", "Kumulus", "Lexvision POC", "guideline versions", "NICE API"]</data>
+    </node>
+    <node id="topic:nice-api-historical-versions">
+      <data key="d0">Topic</data>
+      <data key="d1">NICE API access and historical guideline versions</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "the newly-acquired NICE API access (six-month trial) appears to expose only current guideline versions, not historical ones, and the Kumulus cases may reference older versions", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d11">subtopic</data>
+      <data key="d14">topic:nice-guidelines-kumulus</data>
+      <data key="d12">0.85</data>
+      <data key="d13">["NICE API", "historical versions", "six-month trial", "guideline versions"]</data>
+    </node>
+    <node id="topic:guideline-storage-licensing">
+      <data key="d0">Topic</data>
+      <data key="d1">Guideline storage strategy and licensing constraints</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Deon said guidelines should not be stored on the MedBrief server. Needs a separate store, likely aligned with the broader data strategy", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d11">subtopic</data>
+      <data key="d14">topic:nice-guidelines-kumulus</data>
+      <data key="d12">0.75</data>
+      <data key="d13">["licensing", "terms and conditions", "data strategy", "storage", "Data Lake", "Databricks", "SQL Server"]</data>
+    </node>
+    <node id="topic:nice-link-ambiguous-citation">
+      <data key="d0">Topic</data>
+      <data key="d1">Ambiguous NICE guideline link found in a non-Kumulus case</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Laura found a clinical summary on a case (not one of the actual Kumulus cases) containing a link to a NICE guideline", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d11">subtopic</data>
+      <data key="d14">topic:nice-guidelines-kumulus</data>
+      <data key="d12">0.6</data>
+      <data key="d13">["NICE link", "clinical summary", "citation", "appendix", "unresolved"]</data>
+    </node>
+    <node id="artifact:nice-guidelines">
+      <data key="d0">Artifact</data>
+      <data key="d1">NICE guidelines</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "investigate whether the NICE guidelines actually needed for the Kumulus case set are obtainable", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d5">NICE guidelines</data>
+      <data key="d15">dataset</data>
+      <data key="d16">["person:laura-gongas", "person:rowan-reid", "person:deon-kuhn"]</data>
+      <data key="d17">[]</data>
+    </node>
+    <node id="artifact:nice-api">
+      <data key="d0">Artifact</data>
+      <data key="d1">NICE API</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "the newly-acquired NICE API access (six-month trial) appears to expose only current guideline versions", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d5">NICE API</data>
+      <data key="d15">tool</data>
+      <data key="d16">["person:laura-gongas", "person:rowan-reid"]</data>
+      <data key="d17">[]</data>
+    </node>
+    <node id="artifact:kumulus-case-set">
+      <data key="d0">Artifact</data>
+      <data key="d1">Kumulus case set</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "find the specific cases supplied to Kumulus", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d5">Kumulus case set</data>
+      <data key="d15">dataset</data>
+      <data key="d16">["person:laura-gongas", "person:rowan-reid"]</data>
+      <data key="d17">[]</data>
+    </node>
+    <node id="artifact:medbrief-system">
+      <data key="d0">Artifact</data>
+      <data key="d1">MedBrief</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Go into MedBrief, find the specific cases supplied to Kumulus", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d5">MedBrief</data>
+      <data key="d15">system</data>
+      <data key="d16">["person:rowan-reid", "person:deon-kuhn"]</data>
+      <data key="d17">[]</data>
+    </node>
+    <node id="artifact:data-lake">
+      <data key="d0">Artifact</data>
+      <data key="d1">Data Lake</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Data Lake, Databricks, or SQL Server were mentioned, unspecified which", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d5">Data Lake</data>
+      <data key="d15">system</data>
+      <data key="d16">["person:deon-kuhn"]</data>
+      <data key="d17">[]</data>
+    </node>
+    <node id="artifact:databricks">
+      <data key="d0">Artifact</data>
+      <data key="d1">Databricks</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Data Lake, Databricks, or SQL Server were mentioned, unspecified which", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d5">Databricks</data>
+      <data key="d15">system</data>
+      <data key="d16">["person:deon-kuhn"]</data>
+      <data key="d17">[]</data>
+    </node>
+    <node id="artifact:sql-server">
+      <data key="d0">Artifact</data>
+      <data key="d1">SQL Server</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Data Lake, Databricks, or SQL Server were mentioned, unspecified which", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d5">SQL Server</data>
+      <data key="d15">system</data>
+      <data key="d16">["person:deon-kuhn"]</data>
+      <data key="d17">[]</data>
+    </node>
+    <node id="topic:ai2066-translation">
+      <data key="d0">Topic</data>
+      <data key="d1">AI-2066 translation project update</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "TOPIC 2: AI-2066 translation project", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d11">theme</data>
+      <data key="d12">0.95</data>
+      <data key="d13">["AI-2066", "clinicalrecord-translator", "translation", "PHI", "blob storage", "benchmark"]</data>
+    </node>
+    <node id="topic:blob-storage-setup">
+      <data key="d0">Topic</data>
+      <data key="d1">Blob storage setup for translator testing</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Rowan demonstrated the blob storage he had created under the MedBrief Secure Review subscription.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d11">subtopic</data>
+      <data key="d14">topic:ai2066-translation</data>
+      <data key="d12">0.7</data>
+      <data key="d13">["blob storage", "MedBrief Secure Review subscription", "clinicalrecord-translator"]</data>
+    </node>
+    <node id="topic:translation-quality-testing">
+      <data key="d0">Topic</data>
+      <data key="d1">Translation quality testing and defects</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Rowan showed the results of the digital, non-scanned demo test.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d11">subtopic</data>
+      <data key="d14">topic:ai2066-translation</data>
+      <data key="d12">0.85</data>
+      <data key="d13">["demo test", "translation quality", "digital document", "defects", "PHI"]</data>
+    </node>
+    <node id="topic:benchmark-other-services">
+      <data key="d0">Topic</data>
+      <data key="d1">Benchmarking alternative translation services</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Agreed next step: benchmark other services (AWS, Google, DeepL) on synthetic documents first; only move to real PHI through them once one shows better results.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d11">subtopic</data>
+      <data key="d14">topic:ai2066-translation</data>
+      <data key="d12">0.75</data>
+      <data key="d13">["benchmark", "AWS", "Google", "DeepL", "synthetic documents", "PHI"]</data>
+    </node>
+    <node id="artifact:azure-blob-storage-ai2066">
+      <data key="d0">Artifact</data>
+      <data key="d1">Blob storage (AI-2066)</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "the blob storage he had created under the MedBrief Secure Review subscription", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d5">Blob storage (AI-2066 / clinicalrecord-translator)</data>
+      <data key="d15">system</data>
+      <data key="d16">["person:rowan-reid", "person:deon-kuhn", "person:laura-gongas"]</data>
+      <data key="d17">[]</data>
+    </node>
+    <node id="artifact:medbrief-secure-review-subscription">
+      <data key="d0">Artifact</data>
+      <data key="d1">MedBrief Secure Review subscription</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "under the MedBrief Secure Review subscription", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d5">MedBrief Secure Review subscription</data>
+      <data key="d15">system</data>
+      <data key="d16">["person:rowan-reid"]</data>
+      <data key="d17">[]</data>
+    </node>
+    <node id="artifact:clinicalrecord-translator">
+      <data key="d0">Artifact</data>
+      <data key="d1">clinicalrecord-translator</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "she had already tested clinicalrecord-translator before", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d5">clinicalrecord-translator</data>
+      <data key="d15">product</data>
+      <data key="d16">["person:laura-gongas", "person:rowan-reid"]</data>
+      <data key="d17">[]</data>
+    </node>
+    <node id="artifact:real-sample-document">
+      <data key="d0">Artifact</data>
+      <data key="d1">Real sample document (German/English)</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "the real sample document is not purely German", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d5">Real sample document (transposed German/English, PII-bearing)</data>
+      <data key="d15">document</data>
+      <data key="d16">["person:deon-kuhn", "person:laura-gongas", "person:rowan-reid"]</data>
+      <data key="d17">[]</data>
+    </node>
+    <node id="artifact:digital-nonscanned-demo-test">
+      <data key="d0">Artifact</data>
+      <data key="d1">Digital, non-scanned demo test document</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Rowan showed the results of the digital, non-scanned demo test.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d5">Digital, non-scanned demo test document</data>
+      <data key="d15">document</data>
+      <data key="d16">["person:rowan-reid"]</data>
+      <data key="d17">[]</data>
+    </node>
+    <node id="artifact:aws-translate">
+      <data key="d0">Artifact</data>
+      <data key="d1">AWS (translation service)</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "benchmark other services (AWS, Google, DeepL) on synthetic documents", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d5">AWS</data>
+      <data key="d15">product</data>
+      <data key="d16">["person:rowan-reid", "person:deon-kuhn", "person:laura-gongas"]</data>
+      <data key="d17">[]</data>
+    </node>
+    <node id="artifact:google-translate">
+      <data key="d0">Artifact</data>
+      <data key="d1">Google (translation service)</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "benchmark other services (AWS, Google, DeepL) on synthetic documents", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d5">Google</data>
+      <data key="d15">product</data>
+      <data key="d16">["person:rowan-reid", "person:deon-kuhn", "person:laura-gongas"]</data>
+      <data key="d17">[]</data>
+    </node>
+    <node id="artifact:deepl">
+      <data key="d0">Artifact</data>
+      <data key="d1">DeepL (translation service)</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "benchmark other services (AWS, Google, DeepL) on synthetic documents", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d5">DeepL</data>
+      <data key="d15">product</data>
+      <data key="d16">["person:rowan-reid", "person:deon-kuhn", "person:laura-gongas"]</data>
+      <data key="d17">[]</data>
+    </node>
+    <node id="question:0001">
+      <data key="d0">Question</data>
+      <data key="d1">Are the NICE guideline versions needed for the Kumulus case set obtainable?</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "investigate whether the NICE guidelines actually needed for the Kumulus case set are obtainable, given the newly-acquired NICE API access (six-month trial) appears to expose only current guideline versions, not historical ones, and the Kumulus cases may reference older versions", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d18">Whether the NICE guideline versions actually needed for the Kumulus case set are obtainable, given the NICE API's six-month trial appears to expose only current versions and the Kumulus cases may reference older ones</data>
+      <data key="d19">person:laura-gongas</data>
+      <data key="d20">person:rowan-reid</data>
+      <data key="d21">False</data>
+      <data key="d22">info_seeking</data>
+    </node>
+    <node id="question:0002">
+      <data key="d0">Question</data>
+      <data key="d1">Is the NICE link on the non-Kumulus case a genuine clinical citation or generic appendix content?</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Laura thought it might be the clinician actively quoting or citing the guideline, making it clinically applicable. Deon thought it might just be part of a generic appendix that happened to reference NICE content. This was unresolved.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d18">Whether the NICE guideline link found in the clinical summary reflects the clinician actively citing the guideline (clinically applicable) or is just part of a generic appendix that happened to reference NICE content</data>
+      <data key="d19">person:laura-gongas</data>
+      <data key="d20">person:deon-kuhn</data>
+      <data key="d21">False</data>
+      <data key="d22">clarifying</data>
+    </node>
+    <node id="question:0003">
+      <data key="d0">Question</data>
+      <data key="d1">Why did the NICE guideline link not load for Rowan?</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "The link itself did not load for Rowan when clicked. Suspected but unconfirmed cause: being outside the UK, or not being logged into the NICE system.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d18">Why the NICE guideline link did not load when Rowan clicked it</data>
+      <data key="d19">person:rowan-reid</data>
+      <data key="d21">False</data>
+      <data key="d22">info_seeking</data>
+    </node>
+    <node id="action:0001">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Identify NICE guideline versions referenced in Kumulus cases</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Go into MedBrief, find the specific cases supplied to Kumulus, and check their clinical summaries, chronologies, and ECAs to identify which NICE guideline version(s) are actually referenced or applicable per case.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d23">Go into MedBrief, find the specific cases supplied to Kumulus, and check their clinical summaries, chronologies, and ECAs to identify which NICE guideline version(s) are actually referenced or applicable per case.</data>
+      <data key="d24">person:rowan-reid</data>
+      <data key="d25">[]</data>
+      <data key="d26">[]</data>
+      <data key="d27">open</data>
+      <data key="d28">high</data>
+      <data key="d29">1. Go into MedBrief, find the specific cases supplied to Kumulus, and check their clinical summaries, chronologies, and ECAs to identify which NICE guideline version(s) are actually referenced or applicable per case.</data>
+      <data key="d30">True</data>
+    </node>
+    <node id="action:0002">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Check NICE API availability for the identified guideline versions</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Check whether those specific versions are available via the NICE API.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d23">Check whether those specific NICE guideline versions are available via the NICE API.</data>
+      <data key="d24">person:rowan-reid</data>
+      <data key="d25">[]</data>
+      <data key="d26">["action:0001"]</data>
+      <data key="d27">open</data>
+      <data key="d28">high</data>
+      <data key="d29">2. Check whether those specific versions are available via the NICE API.</data>
+      <data key="d30">True</data>
+    </node>
+    <node id="action:0003">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Investigate alternative extraction route and store guidelines locally as a POC</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "If not available via the API: investigate scraping or another extraction route, then store the guidelines locally as a proof of concept.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d23">If not available via the API: investigate scraping or another extraction route, then store the guidelines locally as a proof of concept.</data>
+      <data key="d24">person:rowan-reid</data>
+      <data key="d25">[]</data>
+      <data key="d26">["action:0002"]</data>
+      <data key="d27">open</data>
+      <data key="d28">medium</data>
+      <data key="d29">3. If not available via the API: investigate scraping or another extraction route, then store the guidelines locally as a proof of concept.</data>
+      <data key="d30">True</data>
+    </node>
+    <node id="action:0004">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Design longer-term strategy to keep guidelines current (secondary priority)</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Explicitly secondary: a longer-term strategy such as a cron job to keep guidelines current. Proving technical feasibility of extraction comes first.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d23">Explicitly secondary: design a longer-term strategy, such as a cron job, to keep guidelines current. Proving technical feasibility of extraction comes first.</data>
+      <data key="d24">person:rowan-reid</data>
+      <data key="d25">[]</data>
+      <data key="d26">["action:0003"]</data>
+      <data key="d27">open</data>
+      <data key="d28">low</data>
+      <data key="d29">4. Explicitly secondary: a longer-term strategy such as a cron job to keep guidelines current. Proving technical feasibility of extraction comes first.</data>
+      <data key="d30">True</data>
+    </node>
+    <node id="decision:0001">
+      <data key="d0">Decision</data>
+      <data key="d1">Guidelines must not be stored on the MedBrief server</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Deon said guidelines should not be stored on the MedBrief server. Needs a separate store, likely aligned with the broader data strategy (Data Lake, Databricks, or SQL Server were mentioned, unspecified which). Not needed for the POC itself, just for eventual production.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d31">NICE guidelines should not be stored on the MedBrief server. They need a separate store, likely aligned with the broader data strategy (Data Lake, Databricks, or SQL Server mentioned as candidates, unspecified which). Not needed for the POC itself, only for eventual production.</data>
+      <data key="d32">["person:deon-kuhn"]</data>
+      <data key="d27">tentative</data>
+      <data key="d33">["Data Lake", "Databricks", "SQL Server"]</data>
+    </node>
+    <node id="claim:0001">
+      <data key="d0">Claim</data>
+      <data key="d1">NICE guideline licensing needs consideration</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "NICE guideline terms and conditions and licensing need consideration. Not resolved on the call.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d31">NICE guideline terms and conditions and licensing need consideration before guidelines can be extracted or stored; this was not resolved on the call.</data>
+      <data key="d34">person:rowan-reid</data>
+      <data key="d35">[]</data>
+      <data key="d36">risk</data>
+      <data key="d37">False</data>
+    </node>
+    <node id="claim:0002">
+      <data key="d0">Claim</data>
+      <data key="d1">Laura: NICE link may be a genuine clinical citation</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Laura thought it might be the clinician actively quoting or citing the guideline, making it clinically applicable.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d31">The NICE guideline link found in the clinical summary might reflect the clinician actively quoting or citing the guideline, making it clinically applicable.</data>
+      <data key="d34">person:laura-gongas</data>
+      <data key="d35">[]</data>
+      <data key="d36">opinion</data>
+      <data key="d37">True</data>
+    </node>
+    <node id="claim:0003">
+      <data key="d0">Claim</data>
+      <data key="d1">Deon: NICE link may just be generic appendix content</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Deon thought it might just be part of a generic appendix that happened to reference NICE content.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d31">The NICE guideline link found in the clinical summary might just be part of a generic appendix that happened to reference NICE content, not a clinician's active citation.</data>
+      <data key="d34">person:deon-kuhn</data>
+      <data key="d35">[]</data>
+      <data key="d36">opinion</data>
+      <data key="d37">True</data>
+    </node>
+    <node id="claim:0004">
+      <data key="d0">Claim</data>
+      <data key="d1">Suspected cause for the NICE link failing to load</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Suspected but unconfirmed cause: being outside the UK, or not being logged into the NICE system.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d31">The NICE guideline link may have failed to load because Rowan was outside the UK, or because he was not logged into the NICE system; this cause is suspected but unconfirmed.</data>
+      <data key="d34">person:rowan-reid</data>
+      <data key="d35">[]</data>
+      <data key="d36">assumption</data>
+      <data key="d37">False</data>
+    </node>
+    <node id="decision:0002">
+      <data key="d0">Decision</data>
+      <data key="d1">Approved Rowan's blob storage for AI-2066 testing</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Rowan demonstrated the blob storage he had created under the MedBrief Secure Review subscription. Deon and Laura were fine with it.", "ts": null, "source": "transcript"}, {"quote": "Rowan said he had not found one and made his own. Both were fine with that.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d31">Approved the blob storage Rowan created under the MedBrief Secure Review subscription for AI-2066 translation testing, rather than any storage Laura may have had attached from her own prior testing.</data>
+      <data key="d32">["person:deon-kuhn", "person:laura-gongas"]</data>
+      <data key="d27">made</data>
+    </node>
+    <node id="decision:0003">
+      <data key="d0">Decision</data>
+      <data key="d1">Approved uploading the real PII-bearing German record</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Rowan asked whether uploading the real PII-bearing German record was okay. Both Deon and Laura said yes.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d31">Approved uploading the real PII-bearing German record for translation testing.</data>
+      <data key="d32">["person:deon-kuhn", "person:laura-gongas"]</data>
+      <data key="d27">made</data>
+    </node>
+    <node id="decision:0004">
+      <data key="d0">Decision</data>
+      <data key="d1">Agreed to benchmark clinicalrecord-translator against embedded ground truth</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Proposed benchmark idea, agreed but not yet done: extract the German pages from the real sample, run them through the translator, and compare against the English pages already embedded in the same document as ground truth.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d31">Agreed to benchmark clinicalrecord-translator by extracting the German pages from the real sample document, translating them, and comparing the output against the English pages already embedded in the same document as ground truth. Proposed, not yet executed.</data>
+      <data key="d32">["person:rowan-reid", "person:deon-kuhn", "person:laura-gongas"]</data>
+      <data key="d27">made</data>
+    </node>
+    <node id="decision:0005">
+      <data key="d0">Decision</data>
+      <data key="d1">Agreed to benchmark other translation services before moving to real PHI</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Agreed next step: benchmark other services (AWS, Google, DeepL) on synthetic documents first; only move to real PHI through them once one shows better results.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d31">Agreed next step: benchmark other translation services (AWS, Google, DeepL) on synthetic documents first; only move to real PHI through whichever service shows better results once it does.</data>
+      <data key="d32">["person:rowan-reid", "person:deon-kuhn", "person:laura-gongas"]</data>
+      <data key="d27">made</data>
+    </node>
+    <node id="action:0005">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Benchmark clinicalrecord-translator against embedded ground truth</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Proposed benchmark idea, agreed but not yet done: extract the German pages from the real sample, run them through the translator, and compare against the English pages already embedded in the same document as ground truth.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d23">Extract the German pages from the real sample document, run them through clinicalrecord-translator, and compare the output against the English pages already embedded in the same document as ground truth.</data>
+      <data key="d25">[]</data>
+      <data key="d26">[]</data>
+      <data key="d27">open</data>
+      <data key="d29">Proposed benchmark idea, agreed but not yet done: extract the German pages from the real sample, run them through the translator, and compare against the English pages already embedded in the same document as ground truth.</data>
+      <data key="d30">False</data>
+    </node>
+    <node id="action:0006">
+      <data key="d0">ActionItem</data>
+      <data key="d1">Benchmark other translation services on synthetic documents</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Agreed next step: benchmark other services (AWS, Google, DeepL) on synthetic documents first; only move to real PHI through them once one shows better results.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d23">Benchmark other translation services (AWS, Google, DeepL) on synthetic documents first; only move to real PHI through whichever service shows better results.</data>
+      <data key="d25">[]</data>
+      <data key="d26">[]</data>
+      <data key="d27">open</data>
+      <data key="d29">Agreed next step: benchmark other services (AWS, Google, DeepL) on synthetic documents first; only move to real PHI through them once one shows better results.</data>
+      <data key="d30">False</data>
+    </node>
+    <node id="question:0004">
+      <data key="d0">Question</data>
+      <data key="d1">Is it okay to upload the real PII-bearing German record?</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Rowan asked whether uploading the real PII-bearing German record was okay. Both Deon and Laura said yes.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d18">Whether uploading the real PII-bearing German record was okay</data>
+      <data key="d19">person:rowan-reid</data>
+      <data key="d21">True</data>
+      <data key="d38">Yes; both Deon and Laura approved uploading it.</data>
+      <data key="d22">decision_forcing</data>
+    </node>
+    <node id="claim:0005">
+      <data key="d0">Claim</data>
+      <data key="d1">Rowan created blob storage under the MedBrief Secure Review subscription</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Rowan demonstrated the blob storage he had created under the MedBrief Secure Review subscription.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d31">Rowan created and demonstrated a blob storage under the MedBrief Secure Review subscription.</data>
+      <data key="d34">person:rowan-reid</data>
+      <data key="d35">[]</data>
+      <data key="d36">fact</data>
+      <data key="d37">False</data>
+    </node>
+    <node id="claim:0006">
+      <data key="d0">Claim</data>
+      <data key="d1">Laura had already tested clinicalrecord-translator before</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Laura mentioned she had already tested clinicalrecord-translator before", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d31">Laura had already tested clinicalrecord-translator before this meeting.</data>
+      <data key="d34">person:laura-gongas</data>
+      <data key="d35">[]</data>
+      <data key="d36">fact</data>
+      <data key="d37">False</data>
+    </node>
+    <node id="claim:0007">
+      <data key="d0">Claim</data>
+      <data key="d1">Laura assumed a blob storage was already attached from her testing</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "assumed there was probably already a blob storage attached to it from her own testing", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d31">Laura assumed there was probably already a blob storage attached to clinicalrecord-translator from her own prior testing.</data>
+      <data key="d34">person:laura-gongas</data>
+      <data key="d35">[]</data>
+      <data key="d36">assumption</data>
+      <data key="d37">True</data>
+    </node>
+    <node id="claim:0008">
+      <data key="d0">Claim</data>
+      <data key="d1">Rowan had not found an existing blob storage and made his own</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Rowan said he had not found one and made his own.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d31">Rowan had not found an existing blob storage attached to clinicalrecord-translator, so he made his own.</data>
+      <data key="d34">person:rowan-reid</data>
+      <data key="d35">[]</data>
+      <data key="d36">fact</data>
+      <data key="d37">False</data>
+    </node>
+    <node id="claim:0009">
+      <data key="d0">Claim</data>
+      <data key="d1">Deon: the real sample document alternates German and English pages</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "the real sample document is not purely German. It is transposed German and English, alternating a few pages of German with the English translation of those same pages, repeated through the document.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d31">The real sample document is not purely German; it alternates a few pages of German with the English translation of those same pages, repeated through the document.</data>
+      <data key="d34">person:deon-kuhn</data>
+      <data key="d35">[]</data>
+      <data key="d36">fact</data>
+      <data key="d37">False</data>
+    </node>
+    <node id="claim:0010">
+      <data key="d0">Claim</data>
+      <data key="d1">Laura: the real sample document alternates German and English pages</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "the real sample document is not purely German. It is transposed German and English, alternating a few pages of German with the English translation of those same pages, repeated through the document.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d31">The real sample document is not purely German; it alternates a few pages of German with the English translation of those same pages, repeated through the document.</data>
+      <data key="d34">person:laura-gongas</data>
+      <data key="d35">[]</data>
+      <data key="d36">fact</data>
+      <data key="d37">False</data>
+    </node>
+    <node id="claim:0011">
+      <data key="d0">Claim</data>
+      <data key="d1">Red header banner did not get translated</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "the red header banner did not get translated into English", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d31">In the digital, non-scanned demo test, the red header banner did not get translated into English.</data>
+      <data key="d34">person:rowan-reid</data>
+      <data key="d35">[]</data>
+      <data key="d36">fact</data>
+      <data key="d37">False</data>
+    </node>
+    <node id="claim:0012">
+      <data key="d0">Claim</data>
+      <data key="d1">A sentence was missing under the Diagnosis section</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "a sentence was missing under the Diagnosis section", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d31">In the demo test output, a sentence was missing under the Diagnosis section.</data>
+      <data key="d34">person:rowan-reid</data>
+      <data key="d35">[]</data>
+      <data key="d36">fact</data>
+      <data key="d37">False</data>
+    </node>
+    <node id="claim:0013">
+      <data key="d0">Claim</data>
+      <data key="d1">Signature block lost all its line breaks</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "overall structure looked fine, but the signature block at the bottom lost all its line breaks", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d31">Overall structure of the demo test output looked fine, but the signature block at the bottom lost all its line breaks.</data>
+      <data key="d34">person:rowan-reid</data>
+      <data key="d35">[]</data>
+      <data key="d36">fact</data>
+      <data key="d37">False</data>
+    </node>
+    <node id="claim:0014">
+      <data key="d0">Claim</data>
+      <data key="d1">Rowan: worrying result for such a simple, synthetic document</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "everyone agreed this was worrying for such a simple, synthetic document", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d31">Found it worrying that the digital demo test showed these translation problems, given the document was simple and synthetic.</data>
+      <data key="d34">person:rowan-reid</data>
+      <data key="d35">[]</data>
+      <data key="d36">opinion</data>
+      <data key="d37">False</data>
+    </node>
+    <node id="claim:0015">
+      <data key="d0">Claim</data>
+      <data key="d1">Deon: worrying result for such a simple, synthetic document</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "everyone agreed this was worrying for such a simple, synthetic document", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d31">Found it worrying that the digital demo test showed these translation problems, given the document was simple and synthetic.</data>
+      <data key="d34">person:deon-kuhn</data>
+      <data key="d35">[]</data>
+      <data key="d36">opinion</data>
+      <data key="d37">False</data>
+    </node>
+    <node id="claim:0016">
+      <data key="d0">Claim</data>
+      <data key="d1">Laura: worrying result for such a simple, synthetic document</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "everyone agreed this was worrying for such a simple, synthetic document", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d31">Found it worrying that the digital demo test showed these translation problems, given the document was simple and synthetic.</data>
+      <data key="d34">person:laura-gongas</data>
+      <data key="d35">[]</data>
+      <data key="d36">opinion</data>
+      <data key="d37">False</data>
+    </node>
+    <node id="claim:0017">
+      <data key="d0">Claim</data>
+      <data key="d1">Laura: disappointed with other Microsoft services lately</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "Laura and Deon separately said they have been disappointed with other Microsoft services lately.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d31">Has been disappointed with other Microsoft services lately.</data>
+      <data key="d34">person:laura-gongas</data>
+      <data key="d35">[]</data>
+      <data key="d36">opinion</data>
+      <data key="d37">False</data>
+    </node>
+    <node id="claim:0018">
+      <data key="d0">Claim</data>
+      <data key="d1">Deon: disappointed with other Microsoft services lately</data>
+      <data key="d2">0.95</data>
+      <data key="d3">[{"quote": "Laura and Deon separately said they have been disappointed with other Microsoft services lately.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d31">Has been disappointed with other Microsoft services lately.</data>
+      <data key="d34">person:deon-kuhn</data>
+      <data key="d35">[]</data>
+      <data key="d36">opinion</data>
+      <data key="d37">False</data>
+    </node>
+    <node id="claim:0019">
+      <data key="d0">Claim</data>
+      <data key="d1">Laura: pseudonymisation testing not working well</data>
+      <data key="d2">0.9</data>
+      <data key="d3">[{"quote": "Laura specifically flagged pseudonymisation testing not working well.", "ts": null, "source": "transcript"}]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d31">Pseudonymisation testing has not been working well.</data>
+      <data key="d34">person:laura-gongas</data>
+      <data key="d35">[]</data>
+      <data key="d36">risk</data>
+      <data key="d37">False</data>
+    </node>
+    <node id="chapter:01">
+      <data key="d0">Chapter</data>
+      <data key="d1">NICE guidelines for the Lexvision POC Kumulus project</data>
+      <data key="d2">1.0</data>
+      <data key="d3">[]</data>
+      <data key="d4">["chapter:01"]</data>
+      <data key="d39">1</data>
+      <data key="d40">Laura asked Rowan to check which NICE guideline versions the Kumulus case set actually needs, whether they're reachable via the new (current-only) NICE API trial, and if not, to look into scraping and local storage as a proof of concept. Deon ruled out storing guidelines on the MedBrief server. An unresolved incident: Laura found a NICE guideline link in an unrelated case's clinical summary, of disputed relevance, that Rowan couldn't open.</data>
+      <data key="d41">0.0</data>
+      <data key="d42">12.0</data>
+      <data key="d43">[]</data>
+      <data key="d44">[]</data>
+    </node>
+    <node id="chapter:02">
+      <data key="d0">Chapter</data>
+      <data key="d1">AI-2066 translation project update</data>
+      <data key="d2">1.0</data>
+      <data key="d3">[]</data>
+      <data key="d4">["chapter:02"]</data>
+      <data key="d39">2</data>
+      <data key="d40">Rowan showed Deon and Laura his own blob storage and the digital-path demo translation defects (untranslated banner, dropped diagnosis sentence, lost signature line breaks). New context surfaced: the real PHI sample is a transposed German/English document, suggesting a built-in benchmark. Agreed next step: test other translation services on synthetic data before touching real PHI.</data>
+      <data key="d41">13.0</data>
+      <data key="d42">22.0</data>
+      <data key="d43">[]</data>
+      <data key="d44">[]</data>
+    </node>
+    <edge source="person:rowan-reid" target="question:0003" id="edge:0008">
+      <data key="d45">ASKED</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">question:0003</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Why the NICE guideline link did not load when Rowan clicked it", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="action:0001" id="edge:0010">
+      <data key="d45">OWNS</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">action:0001</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "1. Go into MedBrief, find the specific cases supplied to Kumulus, and check their clinical summaries, chronologies, and ECAs to identify which NICE guideline version(s) are actually referenced or applicable per case.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="action:0002" id="edge:0012">
+      <data key="d45">OWNS</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">action:0002</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "2. Check whether those specific versions are available via the NICE API.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="action:0003" id="edge:0015">
+      <data key="d45">OWNS</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">action:0003</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "3. If not available via the API: investigate scraping or another extraction route, then store the guidelines locally as a proof of concept.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="action:0004" id="edge:0018">
+      <data key="d45">OWNS</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">action:0004</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "4. Explicitly secondary: a longer-term strategy such as a cron job to keep guidelines current. Proving technical feasibility of extraction comes first.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0001" id="edge:0023">
+      <data key="d45">RAISED</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">claim:0001</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "NICE guideline terms and conditions and licensing need consideration before guidelines can be extracted or stored; this was not resolved on the call.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0004" id="edge:0029">
+      <data key="d45">ASSERTED</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">claim:0004</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "The NICE guideline link may have failed to load because Rowan was outside the UK, or because he was not logged into the NICE system; this cause is suspected but unconfirmed.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="decision:0004" id="edge:0037">
+      <data key="d45">DECIDED</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">decision:0004</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Proposed benchmark idea, agreed but not yet done: extract the German pages from the real sample, run them through the translator, and compare against the English pages already embedded in the same document as ground truth.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="decision:0005" id="edge:0041">
+      <data key="d45">DECIDED</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">decision:0005</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Agreed next step: benchmark other services (AWS, Google, DeepL) on synthetic documents first; only move to real PHI through them once one shows better results.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="question:0004" id="edge:0047">
+      <data key="d45">ASKED</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">question:0004</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Whether uploading the real PII-bearing German record was okay", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0005" id="edge:0049">
+      <data key="d45">ASSERTED</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">claim:0005</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan created and demonstrated a blob storage under the MedBrief Secure Review subscription.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0008" id="edge:0055">
+      <data key="d45">ASSERTED</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">claim:0008</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan had not found an existing blob storage attached to clinicalrecord-translator, so he made his own.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0011" id="edge:0061">
+      <data key="d45">ASSERTED</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">claim:0011</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "In the digital, non-scanned demo test, the red header banner did not get translated into English.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0012" id="edge:0063">
+      <data key="d45">ASSERTED</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">claim:0012</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "In the demo test output, a sentence was missing under the Diagnosis section.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0013" id="edge:0065">
+      <data key="d45">ASSERTED</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">claim:0013</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Overall structure of the demo test output looked fine, but the signature block at the bottom lost all its line breaks.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="claim:0014" id="edge:0067">
+      <data key="d45">ASSERTED</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">claim:0014</data>
+      <data key="d48">0.95</data>
+      <data key="d49">[{"quote": "Found it worrying that the digital demo test showed these translation problems, given the document was simple and synthetic.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="topic:nice-guidelines-kumulus" id="topical-0001">
+      <data key="d45">SPEAKS_ABOUT</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">topic:nice-guidelines-kumulus</data>
+      <data key="d50">2</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Go into MedBrief, find the specific cases supplied to Kumulus, and check their clinical summaries, chronologies, and ECAs to identify which NICE guideline version(s) are actually referenced or applicable per case.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="topic:nice-api-historical-versions" id="topical-0003">
+      <data key="d45">SPEAKS_ABOUT</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">topic:nice-api-historical-versions</data>
+      <data key="d50">2</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "2. Check whether those specific versions are available via the NICE API.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="topic:guideline-storage-licensing" id="topical-0006">
+      <data key="d45">SPEAKS_ABOUT</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">topic:guideline-storage-licensing</data>
+      <data key="d50">3</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "3. If not available via the API: investigate scraping or another extraction route, then store the guidelines locally as a proof of concept.", "ts": null, "source": "transcript"}, {"quote": "NICE guideline terms and conditions and licensing need consideration. Not resolved on the call.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="topic:nice-link-ambiguous-citation" id="topical-0009">
+      <data key="d45">SPEAKS_ABOUT</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">topic:nice-link-ambiguous-citation</data>
+      <data key="d50">2</data>
+      <data key="d48">0.45</data>
+      <data key="d49">[{"quote": "The link itself did not load for Rowan when clicked. Suspected but unconfirmed cause: being outside the UK, or not being logged into the NICE system.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="topic:ai2066-translation" id="topical-0012">
+      <data key="d45">SPEAKS_ABOUT</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">topic:ai2066-translation</data>
+      <data key="d50">1</data>
+      <data key="d48">0.45</data>
+      <data key="d49">[{"quote": "Rowan demonstrated the blob storage he had created under the MedBrief Secure Review subscription.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="topic:blob-storage-setup" id="topical-0013">
+      <data key="d45">SPEAKS_ABOUT</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">topic:blob-storage-setup</data>
+      <data key="d50">3</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan said he had not found one and made his own.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:rowan-reid" target="topic:translation-quality-testing" id="topical-0016">
+      <data key="d45">SPEAKS_ABOUT</data>
+      <data key="d46">person:rowan-reid</data>
+      <data key="d47">topic:translation-quality-testing</data>
+      <data key="d50">6</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan showed the results of the digital, non-scanned demo test. Problems shown: the red header banner did not get translated into English; a sentence was missing under the Diagnosis section; overall structure looked fine, but the signature block at the bottom lost all its line breaks.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="decision:0001" id="edge:0021">
+      <data key="d45">DECIDED</data>
+      <data key="d46">person:deon-kuhn</data>
+      <data key="d47">decision:0001</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Deon said guidelines should not be stored on the MedBrief server. Needs a separate store, likely aligned with the broader data strategy (Data Lake, Databricks, or SQL Server were mentioned, unspecified which). Not needed for the POC itself, just for eventual production.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0003" id="edge:0027">
+      <data key="d45">ASSERTED</data>
+      <data key="d46">person:deon-kuhn</data>
+      <data key="d47">claim:0003</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "The NICE guideline link found in the clinical summary might just be part of a generic appendix that happened to reference NICE content, not a clinician's active citation.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="decision:0002" id="edge:0031">
+      <data key="d45">DECIDED</data>
+      <data key="d46">person:deon-kuhn</data>
+      <data key="d47">decision:0002</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan demonstrated the blob storage he had created under the MedBrief Secure Review subscription. Deon and Laura were fine with it.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="decision:0003" id="edge:0034">
+      <data key="d45">DECIDED</data>
+      <data key="d46">person:deon-kuhn</data>
+      <data key="d47">decision:0003</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan asked whether uploading the real PII-bearing German record was okay. Both Deon and Laura said yes.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="decision:0004" id="edge:0038">
+      <data key="d45">DECIDED</data>
+      <data key="d46">person:deon-kuhn</data>
+      <data key="d47">decision:0004</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Proposed benchmark idea, agreed but not yet done: extract the German pages from the real sample, run them through the translator, and compare against the English pages already embedded in the same document as ground truth.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="decision:0005" id="edge:0042">
+      <data key="d45">DECIDED</data>
+      <data key="d46">person:deon-kuhn</data>
+      <data key="d47">decision:0005</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Agreed next step: benchmark other services (AWS, Google, DeepL) on synthetic documents first; only move to real PHI through them once one shows better results.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0009" id="edge:0057">
+      <data key="d45">ASSERTED</data>
+      <data key="d46">person:deon-kuhn</data>
+      <data key="d47">claim:0009</data>
+      <data key="d48">0.95</data>
+      <data key="d49">[{"quote": "The real sample document is not purely German; it alternates a few pages of German with the English translation of those same pages, repeated through the document.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0015" id="edge:0069">
+      <data key="d45">ASSERTED</data>
+      <data key="d46">person:deon-kuhn</data>
+      <data key="d47">claim:0015</data>
+      <data key="d48">0.95</data>
+      <data key="d49">[{"quote": "Found it worrying that the digital demo test showed these translation problems, given the document was simple and synthetic.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="claim:0018" id="edge:0075">
+      <data key="d45">ASSERTED</data>
+      <data key="d46">person:deon-kuhn</data>
+      <data key="d47">claim:0018</data>
+      <data key="d48">0.95</data>
+      <data key="d49">[{"quote": "Has been disappointed with other Microsoft services lately.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="topic:guideline-storage-licensing" id="topical-0005">
+      <data key="d45">SPEAKS_ABOUT</data>
+      <data key="d46">person:deon-kuhn</data>
+      <data key="d47">topic:guideline-storage-licensing</data>
+      <data key="d50">1</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Deon said guidelines should not be stored on the MedBrief server.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="topic:nice-link-ambiguous-citation" id="topical-0008">
+      <data key="d45">SPEAKS_ABOUT</data>
+      <data key="d46">person:deon-kuhn</data>
+      <data key="d47">topic:nice-link-ambiguous-citation</data>
+      <data key="d50">1</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Deon thought it might just be part of a generic appendix that happened to reference NICE content.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="topic:ai2066-translation" id="topical-0011">
+      <data key="d45">SPEAKS_ABOUT</data>
+      <data key="d46">person:deon-kuhn</data>
+      <data key="d47">topic:ai2066-translation</data>
+      <data key="d50">1</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Laura and Deon separately said they have been disappointed with other Microsoft services lately.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="topic:blob-storage-setup" id="topical-0015">
+      <data key="d45">SPEAKS_ABOUT</data>
+      <data key="d46">person:deon-kuhn</data>
+      <data key="d47">topic:blob-storage-setup</data>
+      <data key="d50">1</data>
+      <data key="d48">0.45</data>
+      <data key="d49">[{"quote": "Deon and Laura were fine with it.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:deon-kuhn" target="topic:translation-quality-testing" id="topical-0017">
+      <data key="d45">SPEAKS_ABOUT</data>
+      <data key="d46">person:deon-kuhn</data>
+      <data key="d47">topic:translation-quality-testing</data>
+      <data key="d50">3</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "New information from Deon and Laura: the real sample document is not purely German.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="question:0001" id="edge:0002">
+      <data key="d45">ASKED</data>
+      <data key="d46">person:laura-gongas</data>
+      <data key="d47">question:0001</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Whether the NICE guideline versions actually needed for the Kumulus case set are obtainable, given the NICE API's six-month trial appears to expose only current versions and the Kumulus cases may reference older ones", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="question:0002" id="edge:0005">
+      <data key="d45">ASKED</data>
+      <data key="d46">person:laura-gongas</data>
+      <data key="d47">question:0002</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Whether the NICE guideline link found in the clinical summary reflects the clinician actively citing the guideline (clinically applicable) or is just part of a generic appendix that happened to reference NICE content", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="claim:0002" id="edge:0025">
+      <data key="d45">ASSERTED</data>
+      <data key="d46">person:laura-gongas</data>
+      <data key="d47">claim:0002</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "The NICE guideline link found in the clinical summary might reflect the clinician actively quoting or citing the guideline, making it clinically applicable.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="decision:0002" id="edge:0032">
+      <data key="d45">DECIDED</data>
+      <data key="d46">person:laura-gongas</data>
+      <data key="d47">decision:0002</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan demonstrated the blob storage he had created under the MedBrief Secure Review subscription. Deon and Laura were fine with it.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="decision:0003" id="edge:0035">
+      <data key="d45">DECIDED</data>
+      <data key="d46">person:laura-gongas</data>
+      <data key="d47">decision:0003</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan asked whether uploading the real PII-bearing German record was okay. Both Deon and Laura said yes.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="decision:0004" id="edge:0039">
+      <data key="d45">DECIDED</data>
+      <data key="d46">person:laura-gongas</data>
+      <data key="d47">decision:0004</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Proposed benchmark idea, agreed but not yet done: extract the German pages from the real sample, run them through the translator, and compare against the English pages already embedded in the same document as ground truth.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="decision:0005" id="edge:0043">
+      <data key="d45">DECIDED</data>
+      <data key="d46">person:laura-gongas</data>
+      <data key="d47">decision:0005</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Agreed next step: benchmark other services (AWS, Google, DeepL) on synthetic documents first; only move to real PHI through them once one shows better results.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="claim:0006" id="edge:0051">
+      <data key="d45">ASSERTED</data>
+      <data key="d46">person:laura-gongas</data>
+      <data key="d47">claim:0006</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Laura had already tested clinicalrecord-translator before this meeting.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="claim:0007" id="edge:0053">
+      <data key="d45">ASSERTED</data>
+      <data key="d46">person:laura-gongas</data>
+      <data key="d47">claim:0007</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Laura assumed there was probably already a blob storage attached to clinicalrecord-translator from her own prior testing.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="claim:0010" id="edge:0059">
+      <data key="d45">ASSERTED</data>
+      <data key="d46">person:laura-gongas</data>
+      <data key="d47">claim:0010</data>
+      <data key="d48">0.95</data>
+      <data key="d49">[{"quote": "The real sample document is not purely German; it alternates a few pages of German with the English translation of those same pages, repeated through the document.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="claim:0016" id="edge:0071">
+      <data key="d45">ASSERTED</data>
+      <data key="d46">person:laura-gongas</data>
+      <data key="d47">claim:0016</data>
+      <data key="d48">0.95</data>
+      <data key="d49">[{"quote": "Found it worrying that the digital demo test showed these translation problems, given the document was simple and synthetic.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="claim:0017" id="edge:0073">
+      <data key="d45">ASSERTED</data>
+      <data key="d46">person:laura-gongas</data>
+      <data key="d47">claim:0017</data>
+      <data key="d48">0.95</data>
+      <data key="d49">[{"quote": "Has been disappointed with other Microsoft services lately.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="claim:0019" id="edge:0077">
+      <data key="d45">RAISED</data>
+      <data key="d46">person:laura-gongas</data>
+      <data key="d47">claim:0019</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Pseudonymisation testing has not been working well.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:nice-guidelines-kumulus" id="topical-0002">
+      <data key="d45">SPEAKS_ABOUT</data>
+      <data key="d46">person:laura-gongas</data>
+      <data key="d47">topic:nice-guidelines-kumulus</data>
+      <data key="d50">1</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Ask (Laura to Rowan): investigate whether the NICE guidelines actually needed for the Kumulus case set are obtainable, given the newly-acquired NICE API access (six-month trial) appears to expose only current guideline versions, not historical ones, and the Kumulus cases may reference older versions.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:nice-api-historical-versions" id="topical-0004">
+      <data key="d45">SPEAKS_ABOUT</data>
+      <data key="d46">person:laura-gongas</data>
+      <data key="d47">topic:nice-api-historical-versions</data>
+      <data key="d50">1</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "the newly-acquired NICE API access (six-month trial) appears to expose only current guideline versions, not historical ones", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:nice-link-ambiguous-citation" id="topical-0007">
+      <data key="d45">SPEAKS_ABOUT</data>
+      <data key="d46">person:laura-gongas</data>
+      <data key="d47">topic:nice-link-ambiguous-citation</data>
+      <data key="d50">1</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Laura thought it might be the clinician actively quoting or citing the guideline, making it clinically applicable.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:ai2066-translation" id="topical-0010">
+      <data key="d45">SPEAKS_ABOUT</data>
+      <data key="d46">person:laura-gongas</data>
+      <data key="d47">topic:ai2066-translation</data>
+      <data key="d50">2</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Laura specifically flagged pseudonymisation testing not working well.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:blob-storage-setup" id="topical-0014">
+      <data key="d45">SPEAKS_ABOUT</data>
+      <data key="d46">person:laura-gongas</data>
+      <data key="d47">topic:blob-storage-setup</data>
+      <data key="d50">2</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Laura mentioned she had already tested clinicalrecord-translator before and assumed there was probably already a blob storage attached to it from her own testing.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="person:laura-gongas" target="topic:translation-quality-testing" id="topical-0018">
+      <data key="d45">SPEAKS_ABOUT</data>
+      <data key="d46">person:laura-gongas</data>
+      <data key="d47">topic:translation-quality-testing</data>
+      <data key="d50">3</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "New information from Deon and Laura: the real sample document is not purely German.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:nice-guidelines-kumulus" target="question:0001" id="topical-0024">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:nice-guidelines-kumulus</data>
+      <data key="d47">question:0001</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "investigate whether the NICE guidelines actually needed for the Kumulus case set are obtainable", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:nice-guidelines-kumulus" target="action:0001" id="topical-0028">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:nice-guidelines-kumulus</data>
+      <data key="d47">action:0001</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "1. Go into MedBrief, find the specific cases supplied to Kumulus, and check their clinical summaries, chronologies, and ECAs to identify which NICE guideline version(s) are actually referenced or applicable per case.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:nice-api-historical-versions" target="topic:nice-guidelines-kumulus" id="topical-0019">
+      <data key="d45">SUBTOPIC_OF</data>
+      <data key="d46">topic:nice-api-historical-versions</data>
+      <data key="d47">topic:nice-guidelines-kumulus</data>
+      <data key="d48">0.45</data>
+      <data key="d49">[{"quote": "given the newly-acquired NICE API access (six-month trial) appears to expose only current guideline versions, not historical ones, and the Kumulus cases may reference older versions", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:nice-api-historical-versions" target="question:0001" id="topical-0025">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:nice-api-historical-versions</data>
+      <data key="d47">question:0001</data>
+      <data key="d48">0.45</data>
+      <data key="d49">[{"quote": "given the newly-acquired NICE API access (six-month trial) appears to expose only current guideline versions, not historical ones", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:nice-api-historical-versions" target="action:0002" id="topical-0029">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:nice-api-historical-versions</data>
+      <data key="d47">action:0002</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "2. Check whether those specific versions are available via the NICE API.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:guideline-storage-licensing" target="topic:nice-guidelines-kumulus" id="topical-0020">
+      <data key="d45">SUBTOPIC_OF</data>
+      <data key="d46">topic:guideline-storage-licensing</data>
+      <data key="d47">topic:nice-guidelines-kumulus</data>
+      <data key="d48">0.45</data>
+      <data key="d49">[{"quote": "Not needed for the POC itself, just for eventual production.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:guideline-storage-licensing" target="action:0003" id="topical-0030">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:guideline-storage-licensing</data>
+      <data key="d47">action:0003</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "3. If not available via the API: investigate scraping or another extraction route, then store the guidelines locally as a proof of concept.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:guideline-storage-licensing" target="action:0004" id="topical-0031">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:guideline-storage-licensing</data>
+      <data key="d47">action:0004</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "4. Explicitly secondary: a longer-term strategy such as a cron job to keep guidelines current.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:guideline-storage-licensing" target="decision:0001" id="topical-0032">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:guideline-storage-licensing</data>
+      <data key="d47">decision:0001</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Deon said guidelines should not be stored on the MedBrief server.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:guideline-storage-licensing" target="claim:0001" id="topical-0033">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:guideline-storage-licensing</data>
+      <data key="d47">claim:0001</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "NICE guideline terms and conditions and licensing need consideration. Not resolved on the call.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:nice-link-ambiguous-citation" target="question:0002" id="topical-0026">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:nice-link-ambiguous-citation</data>
+      <data key="d47">question:0002</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Laura thought it might be the clinician actively quoting or citing the guideline, making it clinically applicable. Deon thought it might just be part of a generic appendix that happened to reference NICE content.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:nice-link-ambiguous-citation" target="question:0003" id="topical-0027">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:nice-link-ambiguous-citation</data>
+      <data key="d47">question:0003</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "The link itself did not load for Rowan when clicked. Suspected but unconfirmed cause: being outside the UK, or not being logged into the NICE system.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:nice-link-ambiguous-citation" target="claim:0002" id="topical-0034">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:nice-link-ambiguous-citation</data>
+      <data key="d47">claim:0002</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Laura thought it might be the clinician actively quoting or citing the guideline, making it clinically applicable.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:nice-link-ambiguous-citation" target="claim:0003" id="topical-0035">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:nice-link-ambiguous-citation</data>
+      <data key="d47">claim:0003</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Deon thought it might just be part of a generic appendix that happened to reference NICE content.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:nice-link-ambiguous-citation" target="claim:0004" id="topical-0036">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:nice-link-ambiguous-citation</data>
+      <data key="d47">claim:0004</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Suspected but unconfirmed cause: being outside the UK, or not being logged into the NICE system.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="artifact:nice-guidelines" target="person:laura-gongas" id="topical-0111">
+      <data key="d45">MENTIONED_BY</data>
+      <data key="d46">artifact:nice-guidelines</data>
+      <data key="d47">person:laura-gongas</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Laura thought it might be the clinician actively quoting or citing the guideline, making it clinically applicable.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="artifact:nice-guidelines" target="person:deon-kuhn" id="topical-0112">
+      <data key="d45">MENTIONED_BY</data>
+      <data key="d46">artifact:nice-guidelines</data>
+      <data key="d47">person:deon-kuhn</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Deon thought it might just be part of a generic appendix that happened to reference NICE content.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:ai2066-translation" target="claim:0017" id="topical-0056">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:ai2066-translation</data>
+      <data key="d47">claim:0017</data>
+      <data key="d48">0.45</data>
+      <data key="d49">[{"quote": "Laura and Deon separately said they have been disappointed with other Microsoft services lately.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:ai2066-translation" target="claim:0018" id="topical-0057">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:ai2066-translation</data>
+      <data key="d47">claim:0018</data>
+      <data key="d48">0.45</data>
+      <data key="d49">[{"quote": "Laura and Deon separately said they have been disappointed with other Microsoft services lately.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:ai2066-translation" target="claim:0019" id="topical-0058">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:ai2066-translation</data>
+      <data key="d47">claim:0019</data>
+      <data key="d48">0.45</data>
+      <data key="d49">[{"quote": "Laura specifically flagged pseudonymisation testing not working well.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:blob-storage-setup" target="topic:ai2066-translation" id="topical-0021">
+      <data key="d45">SUBTOPIC_OF</data>
+      <data key="d46">topic:blob-storage-setup</data>
+      <data key="d47">topic:ai2066-translation</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan demonstrated the blob storage he had created under the MedBrief Secure Review subscription.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:blob-storage-setup" target="decision:0002" id="topical-0037">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:blob-storage-setup</data>
+      <data key="d47">decision:0002</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan demonstrated the blob storage he had created under the MedBrief Secure Review subscription. Deon and Laura were fine with it.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:blob-storage-setup" target="claim:0005" id="topical-0044">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:blob-storage-setup</data>
+      <data key="d47">claim:0005</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan demonstrated the blob storage he had created under the MedBrief Secure Review subscription.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:blob-storage-setup" target="claim:0006" id="topical-0045">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:blob-storage-setup</data>
+      <data key="d47">claim:0006</data>
+      <data key="d48">0.45</data>
+      <data key="d49">[{"quote": "Laura mentioned she had already tested clinicalrecord-translator before", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:blob-storage-setup" target="claim:0007" id="topical-0046">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:blob-storage-setup</data>
+      <data key="d47">claim:0007</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "assumed there was probably already a blob storage attached to it from her own testing", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:blob-storage-setup" target="claim:0008" id="topical-0047">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:blob-storage-setup</data>
+      <data key="d47">claim:0008</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan said he had not found one and made his own.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:translation-quality-testing" target="topic:ai2066-translation" id="topical-0022">
+      <data key="d45">SUBTOPIC_OF</data>
+      <data key="d46">topic:translation-quality-testing</data>
+      <data key="d47">topic:ai2066-translation</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan showed the results of the digital, non-scanned demo test.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:translation-quality-testing" target="decision:0003" id="topical-0038">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:translation-quality-testing</data>
+      <data key="d47">decision:0003</data>
+      <data key="d48">0.45</data>
+      <data key="d49">[{"quote": "Rowan asked whether uploading the real PII-bearing German record was okay. Both Deon and Laura said yes.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:translation-quality-testing" target="decision:0004" id="topical-0039">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:translation-quality-testing</data>
+      <data key="d47">decision:0004</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "extract the German pages from the real sample, run them through the translator, and compare against the English pages already embedded in the same document as ground truth", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:translation-quality-testing" target="action:0005" id="topical-0041">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:translation-quality-testing</data>
+      <data key="d47">action:0005</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "extract the German pages from the real sample, run them through the translator, and compare against the English pages already embedded in the same document as ground truth", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:translation-quality-testing" target="question:0004" id="topical-0043">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:translation-quality-testing</data>
+      <data key="d47">question:0004</data>
+      <data key="d48">0.45</data>
+      <data key="d49">[{"quote": "Rowan asked whether uploading the real PII-bearing German record was okay.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:translation-quality-testing" target="claim:0009" id="topical-0048">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:translation-quality-testing</data>
+      <data key="d47">claim:0009</data>
+      <data key="d48">0.45</data>
+      <data key="d49">[{"quote": "the real sample document is not purely German. It is transposed German and English, alternating a few pages of German with the English translation of those same pages", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:translation-quality-testing" target="claim:0010" id="topical-0049">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:translation-quality-testing</data>
+      <data key="d47">claim:0010</data>
+      <data key="d48">0.45</data>
+      <data key="d49">[{"quote": "the real sample document is not purely German. It is transposed German and English, alternating a few pages of German with the English translation of those same pages", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:translation-quality-testing" target="claim:0011" id="topical-0050">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:translation-quality-testing</data>
+      <data key="d47">claim:0011</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "the red header banner did not get translated into English", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:translation-quality-testing" target="claim:0012" id="topical-0051">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:translation-quality-testing</data>
+      <data key="d47">claim:0012</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "a sentence was missing under the Diagnosis section", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:translation-quality-testing" target="claim:0013" id="topical-0052">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:translation-quality-testing</data>
+      <data key="d47">claim:0013</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "the signature block at the bottom lost all its line breaks", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:translation-quality-testing" target="claim:0014" id="topical-0053">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:translation-quality-testing</data>
+      <data key="d47">claim:0014</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "General reaction: everyone agreed this was worrying for such a simple, synthetic document.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:translation-quality-testing" target="claim:0015" id="topical-0054">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:translation-quality-testing</data>
+      <data key="d47">claim:0015</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "General reaction: everyone agreed this was worrying for such a simple, synthetic document.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:translation-quality-testing" target="claim:0016" id="topical-0055">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:translation-quality-testing</data>
+      <data key="d47">claim:0016</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "General reaction: everyone agreed this was worrying for such a simple, synthetic document.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:benchmark-other-services" target="topic:ai2066-translation" id="topical-0023">
+      <data key="d45">SUBTOPIC_OF</data>
+      <data key="d46">topic:benchmark-other-services</data>
+      <data key="d47">topic:ai2066-translation</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Agreed next step: benchmark other services (AWS, Google, DeepL) on synthetic documents first; only move to real PHI through them once one shows better results.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:benchmark-other-services" target="decision:0005" id="topical-0040">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:benchmark-other-services</data>
+      <data key="d47">decision:0005</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Agreed next step: benchmark other services (AWS, Google, DeepL) on synthetic documents first; only move to real PHI through them once one shows better results.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="topic:benchmark-other-services" target="action:0006" id="topical-0042">
+      <data key="d45">RELATES_TO</data>
+      <data key="d46">topic:benchmark-other-services</data>
+      <data key="d47">action:0006</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "benchmark other services (AWS, Google, DeepL) on synthetic documents first", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="artifact:azure-blob-storage-ai2066" target="person:rowan-reid" id="topical-0106">
+      <data key="d45">MENTIONED_BY</data>
+      <data key="d46">artifact:azure-blob-storage-ai2066</data>
+      <data key="d47">person:rowan-reid</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan demonstrated the blob storage he had created under the MedBrief Secure Review subscription.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="artifact:medbrief-secure-review-subscription" target="person:rowan-reid" id="topical-0107">
+      <data key="d45">MENTIONED_BY</data>
+      <data key="d46">artifact:medbrief-secure-review-subscription</data>
+      <data key="d47">person:rowan-reid</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan demonstrated the blob storage he had created under the MedBrief Secure Review subscription.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="artifact:clinicalrecord-translator" target="person:laura-gongas" id="topical-0104">
+      <data key="d45">MENTIONED_BY</data>
+      <data key="d46">artifact:clinicalrecord-translator</data>
+      <data key="d47">person:laura-gongas</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Laura mentioned she had already tested clinicalrecord-translator before", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="artifact:clinicalrecord-translator" target="person:rowan-reid" id="topical-0105">
+      <data key="d45">MENTIONED_BY</data>
+      <data key="d46">artifact:clinicalrecord-translator</data>
+      <data key="d47">person:rowan-reid</data>
+      <data key="d48">0.45</data>
+      <data key="d49">[{"quote": "run them through the translator, and compare against the English pages already embedded in the same document as ground truth", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="artifact:real-sample-document" target="person:deon-kuhn" id="topical-0108">
+      <data key="d45">MENTIONED_BY</data>
+      <data key="d46">artifact:real-sample-document</data>
+      <data key="d47">person:deon-kuhn</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "New information from Deon and Laura: the real sample document is not purely German.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="artifact:real-sample-document" target="person:laura-gongas" id="topical-0109">
+      <data key="d45">MENTIONED_BY</data>
+      <data key="d46">artifact:real-sample-document</data>
+      <data key="d47">person:laura-gongas</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "New information from Deon and Laura: the real sample document is not purely German.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="artifact:digital-nonscanned-demo-test" target="person:rowan-reid" id="topical-0110">
+      <data key="d45">MENTIONED_BY</data>
+      <data key="d46">artifact:digital-nonscanned-demo-test</data>
+      <data key="d47">person:rowan-reid</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan showed the results of the digital, non-scanned demo test.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0001" target="chapter:01" id="edge:0001">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">question:0001</data>
+      <data key="d47">chapter:01</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "investigate whether the NICE guidelines actually needed for the Kumulus case set are obtainable, given the newly-acquired NICE API access (six-month trial) appears to expose only current guideline versions, not historical ones, and the Kumulus cases may reference older versions", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0001" target="person:rowan-reid" id="edge:0003">
+      <data key="d45">ADDRESSED_TO</data>
+      <data key="d46">question:0001</data>
+      <data key="d47">person:rowan-reid</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Whether the NICE guideline versions actually needed for the Kumulus case set are obtainable, given the NICE API's six-month trial appears to expose only current versions and the Kumulus cases may reference older ones", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0002" target="chapter:01" id="edge:0004">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">question:0002</data>
+      <data key="d47">chapter:01</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Laura thought it might be the clinician actively quoting or citing the guideline, making it clinically applicable. Deon thought it might just be part of a generic appendix that happened to reference NICE content. This was unresolved.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0002" target="person:deon-kuhn" id="edge:0006">
+      <data key="d45">ADDRESSED_TO</data>
+      <data key="d46">question:0002</data>
+      <data key="d47">person:deon-kuhn</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Whether the NICE guideline link found in the clinical summary reflects the clinician actively citing the guideline (clinically applicable) or is just part of a generic appendix that happened to reference NICE content", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0002" target="artifact:nice-guidelines" id="topical-0074">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">question:0002</data>
+      <data key="d47">artifact:nice-guidelines</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "containing a link to a NICE guideline", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0003" target="chapter:01" id="edge:0007">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">question:0003</data>
+      <data key="d47">chapter:01</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "The link itself did not load for Rowan when clicked. Suspected but unconfirmed cause: being outside the UK, or not being logged into the NICE system.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0003" target="artifact:nice-guidelines" id="topical-0075">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">question:0003</data>
+      <data key="d47">artifact:nice-guidelines</data>
+      <data key="d48">0.45</data>
+      <data key="d49">[{"quote": "The link itself did not load for Rowan when clicked.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0001" target="chapter:01" id="edge:0009">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">action:0001</data>
+      <data key="d47">chapter:01</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Go into MedBrief, find the specific cases supplied to Kumulus, and check their clinical summaries, chronologies, and ECAs to identify which NICE guideline version(s) are actually referenced or applicable per case.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0001" target="artifact:medbrief-system" id="topical-0059">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">action:0001</data>
+      <data key="d47">artifact:medbrief-system</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Go into MedBrief, find the specific cases supplied to Kumulus", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0001" target="artifact:kumulus-case-set" id="topical-0060">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">action:0001</data>
+      <data key="d47">artifact:kumulus-case-set</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "find the specific cases supplied to Kumulus, and check their clinical summaries, chronologies, and ECAs", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0001" target="artifact:nice-guidelines" id="topical-0061">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">action:0001</data>
+      <data key="d47">artifact:nice-guidelines</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "identify which NICE guideline version(s) are actually referenced or applicable per case", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0002" target="chapter:01" id="edge:0011">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">action:0002</data>
+      <data key="d47">chapter:01</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Check whether those specific versions are available via the NICE API.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0002" target="action:0001" id="edge:0013">
+      <data key="d45">DEPENDS_ON</data>
+      <data key="d46">action:0002</data>
+      <data key="d47">action:0001</data>
+      <data key="d48">0.7</data>
+      <data key="d49">[{"quote": "2. Check whether those specific versions are available via the NICE API.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0002" target="artifact:nice-api" id="topical-0062">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">action:0002</data>
+      <data key="d47">artifact:nice-api</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "2. Check whether those specific versions are available via the NICE API.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0002" target="artifact:nice-guidelines" id="topical-0063">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">action:0002</data>
+      <data key="d47">artifact:nice-guidelines</data>
+      <data key="d48">0.45</data>
+      <data key="d49">[{"quote": "Check whether those specific versions are available via the NICE API.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0003" target="chapter:01" id="edge:0014">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">action:0003</data>
+      <data key="d47">chapter:01</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "If not available via the API: investigate scraping or another extraction route, then store the guidelines locally as a proof of concept.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0003" target="action:0002" id="edge:0016">
+      <data key="d45">DEPENDS_ON</data>
+      <data key="d46">action:0003</data>
+      <data key="d47">action:0002</data>
+      <data key="d48">0.7</data>
+      <data key="d49">[{"quote": "3. If not available via the API: investigate scraping or another extraction route, then store the guidelines locally as a proof of concept.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0003" target="artifact:nice-guidelines" id="topical-0064">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">action:0003</data>
+      <data key="d47">artifact:nice-guidelines</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "store the guidelines locally as a proof of concept", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0004" target="chapter:01" id="edge:0017">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">action:0004</data>
+      <data key="d47">chapter:01</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Explicitly secondary: a longer-term strategy such as a cron job to keep guidelines current. Proving technical feasibility of extraction comes first.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0004" target="action:0003" id="edge:0019">
+      <data key="d45">DEPENDS_ON</data>
+      <data key="d46">action:0004</data>
+      <data key="d47">action:0003</data>
+      <data key="d48">0.7</data>
+      <data key="d49">[{"quote": "4. Explicitly secondary: a longer-term strategy such as a cron job to keep guidelines current. Proving technical feasibility of extraction comes first.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0004" target="artifact:nice-guidelines" id="topical-0065">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">action:0004</data>
+      <data key="d47">artifact:nice-guidelines</data>
+      <data key="d48">0.45</data>
+      <data key="d49">[{"quote": "a longer-term strategy such as a cron job to keep guidelines current", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0001" target="chapter:01" id="edge:0020">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">decision:0001</data>
+      <data key="d47">chapter:01</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Deon said guidelines should not be stored on the MedBrief server. Needs a separate store, likely aligned with the broader data strategy (Data Lake, Databricks, or SQL Server were mentioned, unspecified which). Not needed for the POC itself, just for eventual production.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0001" target="artifact:medbrief-system" id="topical-0066">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">decision:0001</data>
+      <data key="d47">artifact:medbrief-system</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Deon said guidelines should not be stored on the MedBrief server.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0001" target="artifact:nice-guidelines" id="topical-0067">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">decision:0001</data>
+      <data key="d47">artifact:nice-guidelines</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Deon said guidelines should not be stored on the MedBrief server.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0001" target="artifact:data-lake" id="topical-0068">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">decision:0001</data>
+      <data key="d47">artifact:data-lake</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Needs a separate store, likely aligned with the broader data strategy (Data Lake, Databricks, or SQL Server were mentioned, unspecified which).", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0001" target="artifact:databricks" id="topical-0069">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">decision:0001</data>
+      <data key="d47">artifact:databricks</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Needs a separate store, likely aligned with the broader data strategy (Data Lake, Databricks, or SQL Server were mentioned, unspecified which).", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0001" target="artifact:sql-server" id="topical-0070">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">decision:0001</data>
+      <data key="d47">artifact:sql-server</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Needs a separate store, likely aligned with the broader data strategy (Data Lake, Databricks, or SQL Server were mentioned, unspecified which).", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0001" target="chapter:01" id="edge:0022">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">claim:0001</data>
+      <data key="d47">chapter:01</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "NICE guideline terms and conditions and licensing need consideration. Not resolved on the call.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0001" target="artifact:nice-guidelines" id="topical-0071">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">claim:0001</data>
+      <data key="d47">artifact:nice-guidelines</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "NICE guideline terms and conditions and licensing need consideration.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0002" target="claim:0003" id="edge:0078">
+      <data key="d45">CONTRADICTS</data>
+      <data key="d46">claim:0002</data>
+      <data key="d47">claim:0003</data>
+      <data key="d48">0.85</data>
+      <data key="d49">[{"quote": "Laura thought it might be the clinician actively quoting or citing the guideline, making it clinically applicable.", "ts": null, "source": "transcript"}, {"quote": "Deon thought it might just be part of a generic appendix that happened to include the NICE guideline.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0002" target="chapter:01" id="edge:0024">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">claim:0002</data>
+      <data key="d47">chapter:01</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Laura thought it might be the clinician actively quoting or citing the guideline, making it clinically applicable.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0002" target="artifact:nice-guidelines" id="topical-0072">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">claim:0002</data>
+      <data key="d47">artifact:nice-guidelines</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "containing a link to a NICE guideline. Laura thought it might be the clinician actively quoting or citing the guideline", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0003" target="chapter:01" id="edge:0026">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">claim:0003</data>
+      <data key="d47">chapter:01</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Deon thought it might just be part of a generic appendix that happened to reference NICE content.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0003" target="artifact:nice-guidelines" id="topical-0073">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">claim:0003</data>
+      <data key="d47">artifact:nice-guidelines</data>
+      <data key="d48">0.45</data>
+      <data key="d49">[{"quote": "Deon thought it might just be part of a generic appendix that happened to reference NICE content.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0004" target="chapter:01" id="edge:0028">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">claim:0004</data>
+      <data key="d47">chapter:01</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Suspected but unconfirmed cause: being outside the UK, or not being logged into the NICE system.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0002" target="chapter:02" id="edge:0030">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">decision:0002</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan demonstrated the blob storage he had created under the MedBrief Secure Review subscription. Deon and Laura were fine with it.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0002" target="artifact:azure-blob-storage-ai2066" id="topical-0076">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">decision:0002</data>
+      <data key="d47">artifact:azure-blob-storage-ai2066</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan demonstrated the blob storage he had created under the MedBrief Secure Review subscription. Deon and Laura were fine with it.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0002" target="artifact:medbrief-secure-review-subscription" id="topical-0077">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">decision:0002</data>
+      <data key="d47">artifact:medbrief-secure-review-subscription</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan demonstrated the blob storage he had created under the MedBrief Secure Review subscription.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0003" target="question:0004" id="edge:0084">
+      <data key="d45">RESOLVES</data>
+      <data key="d46">decision:0003</data>
+      <data key="d47">question:0004</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan asked whether uploading the real PII-bearing German record was okay. Both Deon and Laura said yes.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0003" target="chapter:02" id="edge:0033">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">decision:0003</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan asked whether uploading the real PII-bearing German record was okay. Both Deon and Laura said yes.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0003" target="artifact:real-sample-document" id="topical-0084">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">decision:0003</data>
+      <data key="d47">artifact:real-sample-document</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan asked whether uploading the real PII-bearing German record was okay. Both Deon and Laura said yes.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0004" target="chapter:02" id="edge:0036">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">decision:0004</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Proposed benchmark idea, agreed but not yet done: extract the German pages from the real sample, run them through the translator, and compare against the English pages already embedded in the same document as ground truth.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0004" target="artifact:clinicalrecord-translator" id="topical-0088">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">decision:0004</data>
+      <data key="d47">artifact:clinicalrecord-translator</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "extract the German pages from the real sample, run them through the translator, and compare against the English pages already embedded in the same document as ground truth", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0004" target="artifact:real-sample-document" id="topical-0089">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">decision:0004</data>
+      <data key="d47">artifact:real-sample-document</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "extract the German pages from the real sample, run them through the translator, and compare against the English pages already embedded in the same document as ground truth", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0005" target="chapter:02" id="edge:0040">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">decision:0005</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Agreed next step: benchmark other services (AWS, Google, DeepL) on synthetic documents first; only move to real PHI through them once one shows better results.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0005" target="artifact:aws-translate" id="topical-0098">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">decision:0005</data>
+      <data key="d47">artifact:aws-translate</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Agreed next step: benchmark other services (AWS, Google, DeepL) on synthetic documents first; only move to real PHI through them once one shows better results.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0005" target="artifact:google-translate" id="topical-0099">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">decision:0005</data>
+      <data key="d47">artifact:google-translate</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Agreed next step: benchmark other services (AWS, Google, DeepL) on synthetic documents first; only move to real PHI through them once one shows better results.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="decision:0005" target="artifact:deepl" id="topical-0100">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">decision:0005</data>
+      <data key="d47">artifact:deepl</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Agreed next step: benchmark other services (AWS, Google, DeepL) on synthetic documents first; only move to real PHI through them once one shows better results.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0005" target="chapter:02" id="edge:0044">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">action:0005</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Proposed benchmark idea, agreed but not yet done: extract the German pages from the real sample, run them through the translator, and compare against the English pages already embedded in the same document as ground truth.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0005" target="artifact:clinicalrecord-translator" id="topical-0090">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">action:0005</data>
+      <data key="d47">artifact:clinicalrecord-translator</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "run them through the translator, and compare against the English pages already embedded in the same document as ground truth", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0005" target="artifact:real-sample-document" id="topical-0091">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">action:0005</data>
+      <data key="d47">artifact:real-sample-document</data>
+      <data key="d48">0.45</data>
+      <data key="d49">[{"quote": "extract the German pages from the real sample, run them through the translator", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0006" target="chapter:02" id="edge:0045">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">action:0006</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Agreed next step: benchmark other services (AWS, Google, DeepL) on synthetic documents first; only move to real PHI through them once one shows better results.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0006" target="artifact:aws-translate" id="topical-0101">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">action:0006</data>
+      <data key="d47">artifact:aws-translate</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "benchmark other services (AWS, Google, DeepL) on synthetic documents first", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0006" target="artifact:google-translate" id="topical-0102">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">action:0006</data>
+      <data key="d47">artifact:google-translate</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "benchmark other services (AWS, Google, DeepL) on synthetic documents first", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="action:0006" target="artifact:deepl" id="topical-0103">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">action:0006</data>
+      <data key="d47">artifact:deepl</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "benchmark other services (AWS, Google, DeepL) on synthetic documents first", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0004" target="chapter:02" id="edge:0046">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">question:0004</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan asked whether uploading the real PII-bearing German record was okay. Both Deon and Laura said yes.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="question:0004" target="artifact:real-sample-document" id="topical-0085">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">question:0004</data>
+      <data key="d47">artifact:real-sample-document</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan asked whether uploading the real PII-bearing German record was okay.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0005" target="chapter:02" id="edge:0048">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">claim:0005</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan demonstrated the blob storage he had created under the MedBrief Secure Review subscription.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0005" target="artifact:azure-blob-storage-ai2066" id="topical-0078">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">claim:0005</data>
+      <data key="d47">artifact:azure-blob-storage-ai2066</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan demonstrated the blob storage he had created under the MedBrief Secure Review subscription.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0005" target="artifact:medbrief-secure-review-subscription" id="topical-0079">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">claim:0005</data>
+      <data key="d47">artifact:medbrief-secure-review-subscription</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan demonstrated the blob storage he had created under the MedBrief Secure Review subscription.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0006" target="chapter:02" id="edge:0050">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">claim:0006</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Laura mentioned she had already tested clinicalrecord-translator before", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0006" target="artifact:clinicalrecord-translator" id="topical-0080">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">claim:0006</data>
+      <data key="d47">artifact:clinicalrecord-translator</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Laura mentioned she had already tested clinicalrecord-translator before", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0007" target="chapter:02" id="edge:0052">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">claim:0007</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "assumed there was probably already a blob storage attached to it from her own testing", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0007" target="artifact:clinicalrecord-translator" id="topical-0081">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">claim:0007</data>
+      <data key="d47">artifact:clinicalrecord-translator</data>
+      <data key="d48">0.45</data>
+      <data key="d49">[{"quote": "assumed there was probably already a blob storage attached to it from her own testing", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0007" target="artifact:azure-blob-storage-ai2066" id="topical-0082">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">claim:0007</data>
+      <data key="d47">artifact:azure-blob-storage-ai2066</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "assumed there was probably already a blob storage attached to it from her own testing", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0007" target="claim:0008" id="edge:0085">
+      <data key="d45">CONTRADICTS</data>
+      <data key="d46">claim:0007</data>
+      <data key="d47">claim:0008</data>
+      <data key="d48">0.7</data>
+      <data key="d49">[{"quote": "Laura mentioned she had already tested clinicalrecord-translator before and assumed there was probably already a blob storage attached to it from her own testing.", "ts": null, "source": "transcript"}, {"quote": "I said, look, I didn't find one, so I created my own.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0008" target="chapter:02" id="edge:0054">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">claim:0008</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan said he had not found one and made his own.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0008" target="artifact:azure-blob-storage-ai2066" id="topical-0083">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">claim:0008</data>
+      <data key="d47">artifact:azure-blob-storage-ai2066</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan said he had not found one and made his own.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0009" target="decision:0004" id="edge:0079">
+      <data key="d45">SUPPORTS</data>
+      <data key="d46">claim:0009</data>
+      <data key="d47">decision:0004</data>
+      <data key="d48">0.85</data>
+      <data key="d49">[{"quote": "the real sample document ... alternates ... German ... with the English translation ... Proposed benchmark idea ... compare against the English pages already embedded ... as ground truth.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0009" target="chapter:02" id="edge:0056">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">claim:0009</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.95</data>
+      <data key="d49">[{"quote": "the real sample document is not purely German. It is transposed German and English, alternating a few pages of German with the English translation of those same pages, repeated through the document.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0009" target="artifact:real-sample-document" id="topical-0086">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">claim:0009</data>
+      <data key="d47">artifact:real-sample-document</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "the real sample document is not purely German. It is transposed German and English", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0010" target="decision:0004" id="edge:0080">
+      <data key="d45">SUPPORTS</data>
+      <data key="d46">claim:0010</data>
+      <data key="d47">decision:0004</data>
+      <data key="d48">0.85</data>
+      <data key="d49">[{"quote": "the real sample document ... alternates ... German ... with the English translation ... Proposed benchmark idea ... compare against the English pages already embedded ... as ground truth.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0010" target="chapter:02" id="edge:0058">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">claim:0010</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.95</data>
+      <data key="d49">[{"quote": "the real sample document is not purely German. It is transposed German and English, alternating a few pages of German with the English translation of those same pages, repeated through the document.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0010" target="artifact:real-sample-document" id="topical-0087">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">claim:0010</data>
+      <data key="d47">artifact:real-sample-document</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "the real sample document is not purely German. It is transposed German and English", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0011" target="decision:0005" id="edge:0081">
+      <data key="d45">SUPPORTS</data>
+      <data key="d46">claim:0011</data>
+      <data key="d47">decision:0005</data>
+      <data key="d48">0.75</data>
+      <data key="d49">[{"quote": "the red header banner did not get translated into English ... Agreed next step: benchmark other services.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0011" target="chapter:02" id="edge:0060">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">claim:0011</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "the red header banner did not get translated into English", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0011" target="artifact:digital-nonscanned-demo-test" id="topical-0092">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">claim:0011</data>
+      <data key="d47">artifact:digital-nonscanned-demo-test</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Rowan showed the results of the digital, non-scanned demo test. Problems shown: the red header banner did not get translated into English", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0012" target="decision:0005" id="edge:0082">
+      <data key="d45">SUPPORTS</data>
+      <data key="d46">claim:0012</data>
+      <data key="d47">decision:0005</data>
+      <data key="d48">0.75</data>
+      <data key="d49">[{"quote": "a sentence was missing under the Diagnosis section ... Agreed next step: benchmark other services.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0012" target="chapter:02" id="edge:0062">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">claim:0012</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "a sentence was missing under the Diagnosis section", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0012" target="artifact:digital-nonscanned-demo-test" id="topical-0093">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">claim:0012</data>
+      <data key="d47">artifact:digital-nonscanned-demo-test</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "a sentence was missing under the Diagnosis section", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0013" target="decision:0005" id="edge:0083">
+      <data key="d45">SUPPORTS</data>
+      <data key="d46">claim:0013</data>
+      <data key="d47">decision:0005</data>
+      <data key="d48">0.75</data>
+      <data key="d49">[{"quote": "the signature block at the bottom lost all its line breaks ... Agreed next step: benchmark other services.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0013" target="chapter:02" id="edge:0064">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">claim:0013</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "overall structure looked fine, but the signature block at the bottom lost all its line breaks", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0013" target="artifact:digital-nonscanned-demo-test" id="topical-0094">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">claim:0013</data>
+      <data key="d47">artifact:digital-nonscanned-demo-test</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "the signature block at the bottom lost all its line breaks", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0014" target="chapter:02" id="edge:0066">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">claim:0014</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.95</data>
+      <data key="d49">[{"quote": "everyone agreed this was worrying for such a simple, synthetic document", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0014" target="artifact:digital-nonscanned-demo-test" id="topical-0095">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">claim:0014</data>
+      <data key="d47">artifact:digital-nonscanned-demo-test</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "General reaction: everyone agreed this was worrying for such a simple, synthetic document.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0015" target="chapter:02" id="edge:0068">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">claim:0015</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.95</data>
+      <data key="d49">[{"quote": "everyone agreed this was worrying for such a simple, synthetic document", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0015" target="artifact:digital-nonscanned-demo-test" id="topical-0096">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">claim:0015</data>
+      <data key="d47">artifact:digital-nonscanned-demo-test</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "General reaction: everyone agreed this was worrying for such a simple, synthetic document.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0016" target="chapter:02" id="edge:0070">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">claim:0016</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.95</data>
+      <data key="d49">[{"quote": "everyone agreed this was worrying for such a simple, synthetic document", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0016" target="artifact:digital-nonscanned-demo-test" id="topical-0097">
+      <data key="d45">REFERENCES</data>
+      <data key="d46">claim:0016</data>
+      <data key="d47">artifact:digital-nonscanned-demo-test</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "General reaction: everyone agreed this was worrying for such a simple, synthetic document.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0017" target="chapter:02" id="edge:0072">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">claim:0017</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.95</data>
+      <data key="d49">[{"quote": "Laura and Deon separately said they have been disappointed with other Microsoft services lately.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0018" target="chapter:02" id="edge:0074">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">claim:0018</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.95</data>
+      <data key="d49">[{"quote": "Laura and Deon separately said they have been disappointed with other Microsoft services lately.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+    <edge source="claim:0019" target="chapter:02" id="edge:0076">
+      <data key="d45">OCCURS_IN</data>
+      <data key="d46">claim:0019</data>
+      <data key="d47">chapter:02</data>
+      <data key="d48">0.9</data>
+      <data key="d49">[{"quote": "Laura specifically flagged pseudonymisation testing not working well.", "ts": null, "source": "transcript"}]</data>
+    </edge>
+  </graph>
+</graphml>

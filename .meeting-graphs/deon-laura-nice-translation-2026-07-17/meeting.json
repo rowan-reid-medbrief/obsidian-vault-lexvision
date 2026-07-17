@@ -1,0 +1,4330 @@
+{
+  "meta": {
+    "schema_version": 2,
+    "node_count": 62,
+    "edge_count": 197,
+    "substantive_nodes": 34,
+    "inferred_edges": 11,
+    "diarization_quality": "none",
+    "diarization_status": "skipped:no-diarize",
+    "source": "narration",
+    "meeting_date": "2026-07-17",
+    "date_source": "filename",
+    "confidence_floor": 0.35,
+    "graph_suppressed": false,
+    "graph_suppressed_reason": null,
+    "validation": {
+      "problems": [],
+      "stale_lone_speaker": false,
+      "annexed_nodes": 0,
+      "annexed_edges": 0
+    }
+  },
+  "nodes": [
+    {
+      "id": "person:rowan-reid",
+      "type": "Person",
+      "label": "Rowan Reid",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        },
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01",
+        "chapter:02"
+      ],
+      "name": "Rowan Reid",
+      "canonical_name": "Rowan Reid",
+      "aliases": [
+        "Rowan"
+      ],
+      "role": null,
+      "org": null,
+      "is_participant": true
+    },
+    {
+      "id": "person:deon-kuhn",
+      "type": "Person",
+      "label": "Deon Kuhn",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        },
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01",
+        "chapter:02"
+      ],
+      "name": "Deon Kuhn",
+      "canonical_name": "Deon Kuhn",
+      "aliases": [
+        "Deon"
+      ],
+      "role": "CTO",
+      "org": "MedBrief",
+      "is_participant": true
+    },
+    {
+      "id": "person:laura-gongas",
+      "type": "Person",
+      "label": "Laura Gongas",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        },
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01",
+        "chapter:02"
+      ],
+      "name": "Laura Gongas",
+      "canonical_name": "Laura Gongas",
+      "aliases": [
+        "Laura"
+      ],
+      "role": null,
+      "org": null,
+      "is_participant": true
+    },
+    {
+      "id": "topic:nice-guidelines-kumulus",
+      "type": "Topic",
+      "label": "NICE guidelines for the Lexvision POC Kumulus project",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "level": "theme",
+      "parent_topic_id": null,
+      "salience": 0.95,
+      "keywords": [
+        "NICE guidelines",
+        "Kumulus",
+        "Lexvision POC",
+        "guideline versions",
+        "NICE API"
+      ]
+    },
+    {
+      "id": "topic:nice-api-historical-versions",
+      "type": "Topic",
+      "label": "NICE API access and historical guideline versions",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "level": "subtopic",
+      "parent_topic_id": "topic:nice-guidelines-kumulus",
+      "salience": 0.85,
+      "keywords": [
+        "NICE API",
+        "historical versions",
+        "six-month trial",
+        "guideline versions"
+      ]
+    },
+    {
+      "id": "topic:guideline-storage-licensing",
+      "type": "Topic",
+      "label": "Guideline storage strategy and licensing constraints",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "level": "subtopic",
+      "parent_topic_id": "topic:nice-guidelines-kumulus",
+      "salience": 0.75,
+      "keywords": [
+        "licensing",
+        "terms and conditions",
+        "data strategy",
+        "storage",
+        "Data Lake",
+        "Databricks",
+        "SQL Server"
+      ]
+    },
+    {
+      "id": "topic:nice-link-ambiguous-citation",
+      "type": "Topic",
+      "label": "Ambiguous NICE guideline link found in a non-Kumulus case",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "level": "subtopic",
+      "parent_topic_id": "topic:nice-guidelines-kumulus",
+      "salience": 0.6,
+      "keywords": [
+        "NICE link",
+        "clinical summary",
+        "citation",
+        "appendix",
+        "unresolved"
+      ]
+    },
+    {
+      "id": "artifact:nice-guidelines",
+      "type": "Artifact",
+      "label": "NICE guidelines",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "name": "NICE guidelines",
+      "artifact_type": "dataset",
+      "uri": null,
+      "mentioned_by": [
+        "person:laura-gongas",
+        "person:rowan-reid",
+        "person:deon-kuhn"
+      ],
+      "ts": []
+    },
+    {
+      "id": "artifact:nice-api",
+      "type": "Artifact",
+      "label": "NICE API",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "name": "NICE API",
+      "artifact_type": "tool",
+      "uri": null,
+      "mentioned_by": [
+        "person:laura-gongas",
+        "person:rowan-reid"
+      ],
+      "ts": []
+    },
+    {
+      "id": "artifact:kumulus-case-set",
+      "type": "Artifact",
+      "label": "Kumulus case set",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "name": "Kumulus case set",
+      "artifact_type": "dataset",
+      "uri": null,
+      "mentioned_by": [
+        "person:laura-gongas",
+        "person:rowan-reid"
+      ],
+      "ts": []
+    },
+    {
+      "id": "artifact:medbrief-system",
+      "type": "Artifact",
+      "label": "MedBrief",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "name": "MedBrief",
+      "artifact_type": "system",
+      "uri": null,
+      "mentioned_by": [
+        "person:rowan-reid",
+        "person:deon-kuhn"
+      ],
+      "ts": []
+    },
+    {
+      "id": "artifact:data-lake",
+      "type": "Artifact",
+      "label": "Data Lake",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "name": "Data Lake",
+      "artifact_type": "system",
+      "uri": null,
+      "mentioned_by": [
+        "person:deon-kuhn"
+      ],
+      "ts": []
+    },
+    {
+      "id": "artifact:databricks",
+      "type": "Artifact",
+      "label": "Databricks",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "name": "Databricks",
+      "artifact_type": "system",
+      "uri": null,
+      "mentioned_by": [
+        "person:deon-kuhn"
+      ],
+      "ts": []
+    },
+    {
+      "id": "artifact:sql-server",
+      "type": "Artifact",
+      "label": "SQL Server",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "name": "SQL Server",
+      "artifact_type": "system",
+      "uri": null,
+      "mentioned_by": [
+        "person:deon-kuhn"
+      ],
+      "ts": []
+    },
+    {
+      "id": "topic:ai2066-translation",
+      "type": "Topic",
+      "label": "AI-2066 translation project update",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "level": "theme",
+      "parent_topic_id": null,
+      "salience": 0.95,
+      "keywords": [
+        "AI-2066",
+        "clinicalrecord-translator",
+        "translation",
+        "PHI",
+        "blob storage",
+        "benchmark"
+      ]
+    },
+    {
+      "id": "topic:blob-storage-setup",
+      "type": "Topic",
+      "label": "Blob storage setup for translator testing",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "level": "subtopic",
+      "parent_topic_id": "topic:ai2066-translation",
+      "salience": 0.7,
+      "keywords": [
+        "blob storage",
+        "MedBrief Secure Review subscription",
+        "clinicalrecord-translator"
+      ]
+    },
+    {
+      "id": "topic:translation-quality-testing",
+      "type": "Topic",
+      "label": "Translation quality testing and defects",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "level": "subtopic",
+      "parent_topic_id": "topic:ai2066-translation",
+      "salience": 0.85,
+      "keywords": [
+        "demo test",
+        "translation quality",
+        "digital document",
+        "defects",
+        "PHI"
+      ]
+    },
+    {
+      "id": "topic:benchmark-other-services",
+      "type": "Topic",
+      "label": "Benchmarking alternative translation services",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "level": "subtopic",
+      "parent_topic_id": "topic:ai2066-translation",
+      "salience": 0.75,
+      "keywords": [
+        "benchmark",
+        "AWS",
+        "Google",
+        "DeepL",
+        "synthetic documents",
+        "PHI"
+      ]
+    },
+    {
+      "id": "artifact:azure-blob-storage-ai2066",
+      "type": "Artifact",
+      "label": "Blob storage (AI-2066)",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "name": "Blob storage (AI-2066 / clinicalrecord-translator)",
+      "artifact_type": "system",
+      "uri": null,
+      "mentioned_by": [
+        "person:rowan-reid",
+        "person:deon-kuhn",
+        "person:laura-gongas"
+      ],
+      "ts": []
+    },
+    {
+      "id": "artifact:medbrief-secure-review-subscription",
+      "type": "Artifact",
+      "label": "MedBrief Secure Review subscription",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "name": "MedBrief Secure Review subscription",
+      "artifact_type": "system",
+      "uri": null,
+      "mentioned_by": [
+        "person:rowan-reid"
+      ],
+      "ts": []
+    },
+    {
+      "id": "artifact:clinicalrecord-translator",
+      "type": "Artifact",
+      "label": "clinicalrecord-translator",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "name": "clinicalrecord-translator",
+      "artifact_type": "product",
+      "uri": null,
+      "mentioned_by": [
+        "person:laura-gongas",
+        "person:rowan-reid"
+      ],
+      "ts": []
+    },
+    {
+      "id": "artifact:real-sample-document",
+      "type": "Artifact",
+      "label": "Real sample document (German/English)",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "name": "Real sample document (transposed German/English, PII-bearing)",
+      "artifact_type": "document",
+      "uri": null,
+      "mentioned_by": [
+        "person:deon-kuhn",
+        "person:laura-gongas",
+        "person:rowan-reid"
+      ],
+      "ts": []
+    },
+    {
+      "id": "artifact:digital-nonscanned-demo-test",
+      "type": "Artifact",
+      "label": "Digital, non-scanned demo test document",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "name": "Digital, non-scanned demo test document",
+      "artifact_type": "document",
+      "uri": null,
+      "mentioned_by": [
+        "person:rowan-reid"
+      ],
+      "ts": []
+    },
+    {
+      "id": "artifact:aws-translate",
+      "type": "Artifact",
+      "label": "AWS (translation service)",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "name": "AWS",
+      "artifact_type": "product",
+      "uri": null,
+      "mentioned_by": [
+        "person:rowan-reid",
+        "person:deon-kuhn",
+        "person:laura-gongas"
+      ],
+      "ts": []
+    },
+    {
+      "id": "artifact:google-translate",
+      "type": "Artifact",
+      "label": "Google (translation service)",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "name": "Google",
+      "artifact_type": "product",
+      "uri": null,
+      "mentioned_by": [
+        "person:rowan-reid",
+        "person:deon-kuhn",
+        "person:laura-gongas"
+      ],
+      "ts": []
+    },
+    {
+      "id": "artifact:deepl",
+      "type": "Artifact",
+      "label": "DeepL (translation service)",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "name": "DeepL",
+      "artifact_type": "product",
+      "uri": null,
+      "mentioned_by": [
+        "person:rowan-reid",
+        "person:deon-kuhn",
+        "person:laura-gongas"
+      ],
+      "ts": []
+    },
+    {
+      "id": "question:0001",
+      "type": "Question",
+      "label": "Are the NICE guideline versions needed for the Kumulus case set obtainable?",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "text": "Whether the NICE guideline versions actually needed for the Kumulus case set are obtainable, given the NICE API's six-month trial appears to expose only current versions and the Kumulus cases may reference older ones",
+      "asker_id": "person:laura-gongas",
+      "addressee_id": "person:rowan-reid",
+      "answered": false,
+      "answer_summary": null,
+      "answered_by_id": null,
+      "qtype": "info_seeking",
+      "ts": null
+    },
+    {
+      "id": "question:0002",
+      "type": "Question",
+      "label": "Is the NICE link on the non-Kumulus case a genuine clinical citation or generic appendix content?",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "text": "Whether the NICE guideline link found in the clinical summary reflects the clinician actively citing the guideline (clinically applicable) or is just part of a generic appendix that happened to reference NICE content",
+      "asker_id": "person:laura-gongas",
+      "addressee_id": "person:deon-kuhn",
+      "answered": false,
+      "answer_summary": null,
+      "answered_by_id": null,
+      "qtype": "clarifying",
+      "ts": null
+    },
+    {
+      "id": "question:0003",
+      "type": "Question",
+      "label": "Why did the NICE guideline link not load for Rowan?",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "text": "Why the NICE guideline link did not load when Rowan clicked it",
+      "asker_id": "person:rowan-reid",
+      "addressee_id": null,
+      "answered": false,
+      "answer_summary": null,
+      "answered_by_id": null,
+      "qtype": "info_seeking",
+      "ts": null
+    },
+    {
+      "id": "action:0001",
+      "type": "ActionItem",
+      "label": "Identify NICE guideline versions referenced in Kumulus cases",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "description": "Go into MedBrief, find the specific cases supplied to Kumulus, and check their clinical summaries, chronologies, and ECAs to identify which NICE guideline version(s) are actually referenced or applicable per case.",
+      "owner_id": "person:rowan-reid",
+      "co_owners": [],
+      "due_date": null,
+      "depends_on": [],
+      "status": "open",
+      "priority": "high",
+      "source_quote": "1. Go into MedBrief, find the specific cases supplied to Kumulus, and check their clinical summaries, chronologies, and ECAs to identify which NICE guideline version(s) are actually referenced or applicable per case.",
+      "ts": null,
+      "is_personal_commitment": true
+    },
+    {
+      "id": "action:0002",
+      "type": "ActionItem",
+      "label": "Check NICE API availability for the identified guideline versions",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "description": "Check whether those specific NICE guideline versions are available via the NICE API.",
+      "owner_id": "person:rowan-reid",
+      "co_owners": [],
+      "due_date": null,
+      "depends_on": [
+        "action:0001"
+      ],
+      "status": "open",
+      "priority": "high",
+      "source_quote": "2. Check whether those specific versions are available via the NICE API.",
+      "ts": null,
+      "is_personal_commitment": true
+    },
+    {
+      "id": "action:0003",
+      "type": "ActionItem",
+      "label": "Investigate alternative extraction route and store guidelines locally as a POC",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "description": "If not available via the API: investigate scraping or another extraction route, then store the guidelines locally as a proof of concept.",
+      "owner_id": "person:rowan-reid",
+      "co_owners": [],
+      "due_date": null,
+      "depends_on": [
+        "action:0002"
+      ],
+      "status": "open",
+      "priority": "medium",
+      "source_quote": "3. If not available via the API: investigate scraping or another extraction route, then store the guidelines locally as a proof of concept.",
+      "ts": null,
+      "is_personal_commitment": true
+    },
+    {
+      "id": "action:0004",
+      "type": "ActionItem",
+      "label": "Design longer-term strategy to keep guidelines current (secondary priority)",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "description": "Explicitly secondary: design a longer-term strategy, such as a cron job, to keep guidelines current. Proving technical feasibility of extraction comes first.",
+      "owner_id": "person:rowan-reid",
+      "co_owners": [],
+      "due_date": null,
+      "depends_on": [
+        "action:0003"
+      ],
+      "status": "open",
+      "priority": "low",
+      "source_quote": "4. Explicitly secondary: a longer-term strategy such as a cron job to keep guidelines current. Proving technical feasibility of extraction comes first.",
+      "ts": null,
+      "is_personal_commitment": true
+    },
+    {
+      "id": "decision:0001",
+      "type": "Decision",
+      "label": "Guidelines must not be stored on the MedBrief server",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "statement": "NICE guidelines should not be stored on the MedBrief server. They need a separate store, likely aligned with the broader data strategy (Data Lake, Databricks, or SQL Server mentioned as candidates, unspecified which). Not needed for the POC itself, only for eventual production.",
+      "decided_by": [
+        "person:deon-kuhn"
+      ],
+      "rationale": null,
+      "status": "tentative",
+      "confidence_level": null,
+      "ts": null,
+      "alternatives_considered": [
+        "Data Lake",
+        "Databricks",
+        "SQL Server"
+      ]
+    },
+    {
+      "id": "claim:0001",
+      "type": "Claim",
+      "label": "NICE guideline licensing needs consideration",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "statement": "NICE guideline terms and conditions and licensing need consideration before guidelines can be extracted or stored; this was not resolved on the call.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "claim_type": "risk",
+      "contested": false,
+      "ts": null
+    },
+    {
+      "id": "claim:0002",
+      "type": "Claim",
+      "label": "Laura: NICE link may be a genuine clinical citation",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "statement": "The NICE guideline link found in the clinical summary might reflect the clinician actively quoting or citing the guideline, making it clinically applicable.",
+      "speaker_id": "person:laura-gongas",
+      "evidence_refs": [],
+      "claim_type": "opinion",
+      "contested": true,
+      "ts": null
+    },
+    {
+      "id": "claim:0003",
+      "type": "Claim",
+      "label": "Deon: NICE link may just be generic appendix content",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "statement": "The NICE guideline link found in the clinical summary might just be part of a generic appendix that happened to reference NICE content, not a clinician's active citation.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "claim_type": "opinion",
+      "contested": true,
+      "ts": null
+    },
+    {
+      "id": "claim:0004",
+      "type": "Claim",
+      "label": "Suspected cause for the NICE link failing to load",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "statement": "The NICE guideline link may have failed to load because Rowan was outside the UK, or because he was not logged into the NICE system; this cause is suspected but unconfirmed.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "claim_type": "assumption",
+      "contested": false,
+      "ts": null
+    },
+    {
+      "id": "decision:0002",
+      "type": "Decision",
+      "label": "Approved Rowan's blob storage for AI-2066 testing",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        },
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "statement": "Approved the blob storage Rowan created under the MedBrief Secure Review subscription for AI-2066 translation testing, rather than any storage Laura may have had attached from her own prior testing.",
+      "decided_by": [
+        "person:deon-kuhn",
+        "person:laura-gongas"
+      ],
+      "rationale": null,
+      "status": "made",
+      "confidence_level": null,
+      "ts": null,
+      "alternatives_considered": null
+    },
+    {
+      "id": "decision:0003",
+      "type": "Decision",
+      "label": "Approved uploading the real PII-bearing German record",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "statement": "Approved uploading the real PII-bearing German record for translation testing.",
+      "decided_by": [
+        "person:deon-kuhn",
+        "person:laura-gongas"
+      ],
+      "rationale": null,
+      "status": "made",
+      "confidence_level": null,
+      "ts": null,
+      "alternatives_considered": null
+    },
+    {
+      "id": "decision:0004",
+      "type": "Decision",
+      "label": "Agreed to benchmark clinicalrecord-translator against embedded ground truth",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "statement": "Agreed to benchmark clinicalrecord-translator by extracting the German pages from the real sample document, translating them, and comparing the output against the English pages already embedded in the same document as ground truth. Proposed, not yet executed.",
+      "decided_by": [
+        "person:rowan-reid",
+        "person:deon-kuhn",
+        "person:laura-gongas"
+      ],
+      "rationale": null,
+      "status": "made",
+      "confidence_level": null,
+      "ts": null,
+      "alternatives_considered": null
+    },
+    {
+      "id": "decision:0005",
+      "type": "Decision",
+      "label": "Agreed to benchmark other translation services before moving to real PHI",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "statement": "Agreed next step: benchmark other translation services (AWS, Google, DeepL) on synthetic documents first; only move to real PHI through whichever service shows better results once it does.",
+      "decided_by": [
+        "person:rowan-reid",
+        "person:deon-kuhn",
+        "person:laura-gongas"
+      ],
+      "rationale": null,
+      "status": "made",
+      "confidence_level": null,
+      "ts": null,
+      "alternatives_considered": null
+    },
+    {
+      "id": "action:0005",
+      "type": "ActionItem",
+      "label": "Benchmark clinicalrecord-translator against embedded ground truth",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "description": "Extract the German pages from the real sample document, run them through clinicalrecord-translator, and compare the output against the English pages already embedded in the same document as ground truth.",
+      "owner_id": null,
+      "co_owners": [],
+      "due_date": null,
+      "depends_on": [],
+      "status": "open",
+      "priority": null,
+      "source_quote": "Proposed benchmark idea, agreed but not yet done: extract the German pages from the real sample, run them through the translator, and compare against the English pages already embedded in the same document as ground truth.",
+      "ts": null,
+      "is_personal_commitment": false
+    },
+    {
+      "id": "action:0006",
+      "type": "ActionItem",
+      "label": "Benchmark other translation services on synthetic documents",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "description": "Benchmark other translation services (AWS, Google, DeepL) on synthetic documents first; only move to real PHI through whichever service shows better results.",
+      "owner_id": null,
+      "co_owners": [],
+      "due_date": null,
+      "depends_on": [],
+      "status": "open",
+      "priority": null,
+      "source_quote": "Agreed next step: benchmark other services (AWS, Google, DeepL) on synthetic documents first; only move to real PHI through them once one shows better results.",
+      "ts": null,
+      "is_personal_commitment": false
+    },
+    {
+      "id": "question:0004",
+      "type": "Question",
+      "label": "Is it okay to upload the real PII-bearing German record?",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "text": "Whether uploading the real PII-bearing German record was okay",
+      "asker_id": "person:rowan-reid",
+      "addressee_id": null,
+      "answered": true,
+      "answer_summary": "Yes; both Deon and Laura approved uploading it.",
+      "answered_by_id": null,
+      "qtype": "decision_forcing",
+      "ts": null
+    },
+    {
+      "id": "claim:0005",
+      "type": "Claim",
+      "label": "Rowan created blob storage under the MedBrief Secure Review subscription",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "statement": "Rowan created and demonstrated a blob storage under the MedBrief Secure Review subscription.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "claim_type": "fact",
+      "contested": false,
+      "ts": null
+    },
+    {
+      "id": "claim:0006",
+      "type": "Claim",
+      "label": "Laura had already tested clinicalrecord-translator before",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "statement": "Laura had already tested clinicalrecord-translator before this meeting.",
+      "speaker_id": "person:laura-gongas",
+      "evidence_refs": [],
+      "claim_type": "fact",
+      "contested": false,
+      "ts": null
+    },
+    {
+      "id": "claim:0007",
+      "type": "Claim",
+      "label": "Laura assumed a blob storage was already attached from her testing",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "statement": "Laura assumed there was probably already a blob storage attached to clinicalrecord-translator from her own prior testing.",
+      "speaker_id": "person:laura-gongas",
+      "evidence_refs": [],
+      "claim_type": "assumption",
+      "contested": true,
+      "ts": null
+    },
+    {
+      "id": "claim:0008",
+      "type": "Claim",
+      "label": "Rowan had not found an existing blob storage and made his own",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "statement": "Rowan had not found an existing blob storage attached to clinicalrecord-translator, so he made his own.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "claim_type": "fact",
+      "contested": false,
+      "ts": null
+    },
+    {
+      "id": "claim:0009",
+      "type": "Claim",
+      "label": "Deon: the real sample document alternates German and English pages",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "statement": "The real sample document is not purely German; it alternates a few pages of German with the English translation of those same pages, repeated through the document.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "claim_type": "fact",
+      "contested": false,
+      "ts": null
+    },
+    {
+      "id": "claim:0010",
+      "type": "Claim",
+      "label": "Laura: the real sample document alternates German and English pages",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "statement": "The real sample document is not purely German; it alternates a few pages of German with the English translation of those same pages, repeated through the document.",
+      "speaker_id": "person:laura-gongas",
+      "evidence_refs": [],
+      "claim_type": "fact",
+      "contested": false,
+      "ts": null
+    },
+    {
+      "id": "claim:0011",
+      "type": "Claim",
+      "label": "Red header banner did not get translated",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "statement": "In the digital, non-scanned demo test, the red header banner did not get translated into English.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "claim_type": "fact",
+      "contested": false,
+      "ts": null
+    },
+    {
+      "id": "claim:0012",
+      "type": "Claim",
+      "label": "A sentence was missing under the Diagnosis section",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "statement": "In the demo test output, a sentence was missing under the Diagnosis section.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "claim_type": "fact",
+      "contested": false,
+      "ts": null
+    },
+    {
+      "id": "claim:0013",
+      "type": "Claim",
+      "label": "Signature block lost all its line breaks",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "statement": "Overall structure of the demo test output looked fine, but the signature block at the bottom lost all its line breaks.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "claim_type": "fact",
+      "contested": false,
+      "ts": null
+    },
+    {
+      "id": "claim:0014",
+      "type": "Claim",
+      "label": "Rowan: worrying result for such a simple, synthetic document",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "statement": "Found it worrying that the digital demo test showed these translation problems, given the document was simple and synthetic.",
+      "speaker_id": "person:rowan-reid",
+      "evidence_refs": [],
+      "claim_type": "opinion",
+      "contested": false,
+      "ts": null
+    },
+    {
+      "id": "claim:0015",
+      "type": "Claim",
+      "label": "Deon: worrying result for such a simple, synthetic document",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "statement": "Found it worrying that the digital demo test showed these translation problems, given the document was simple and synthetic.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "claim_type": "opinion",
+      "contested": false,
+      "ts": null
+    },
+    {
+      "id": "claim:0016",
+      "type": "Claim",
+      "label": "Laura: worrying result for such a simple, synthetic document",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "statement": "Found it worrying that the digital demo test showed these translation problems, given the document was simple and synthetic.",
+      "speaker_id": "person:laura-gongas",
+      "evidence_refs": [],
+      "claim_type": "opinion",
+      "contested": false,
+      "ts": null
+    },
+    {
+      "id": "claim:0017",
+      "type": "Claim",
+      "label": "Laura: disappointed with other Microsoft services lately",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "statement": "Has been disappointed with other Microsoft services lately.",
+      "speaker_id": "person:laura-gongas",
+      "evidence_refs": [],
+      "claim_type": "opinion",
+      "contested": false,
+      "ts": null
+    },
+    {
+      "id": "claim:0018",
+      "type": "Claim",
+      "label": "Deon: disappointed with other Microsoft services lately",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "statement": "Has been disappointed with other Microsoft services lately.",
+      "speaker_id": "person:deon-kuhn",
+      "evidence_refs": [],
+      "claim_type": "opinion",
+      "contested": false,
+      "ts": null
+    },
+    {
+      "id": "claim:0019",
+      "type": "Claim",
+      "label": "Laura: pseudonymisation testing not working well",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "statement": "Pseudonymisation testing has not been working well.",
+      "speaker_id": "person:laura-gongas",
+      "evidence_refs": [],
+      "claim_type": "risk",
+      "contested": false,
+      "ts": null
+    },
+    {
+      "id": "chapter:01",
+      "type": "Chapter",
+      "label": "NICE guidelines for the Lexvision POC Kumulus project",
+      "confidence": 1.0,
+      "provenance": [],
+      "chapter_ids": [
+        "chapter:01"
+      ],
+      "index": 1,
+      "summary": "Laura asked Rowan to check which NICE guideline versions the Kumulus case set actually needs, whether they're reachable via the new (current-only) NICE API trial, and if not, to look into scraping and local storage as a proof of concept. Deon ruled out storing guidelines on the MedBrief server. An unresolved incident: Laura found a NICE guideline link in an unrelated case's clinical summary, of disputed relevance, that Rowan couldn't open.",
+      "start_ts": 0.0,
+      "end_ts": 12.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:02",
+      "type": "Chapter",
+      "label": "AI-2066 translation project update",
+      "confidence": 1.0,
+      "provenance": [],
+      "chapter_ids": [
+        "chapter:02"
+      ],
+      "index": 2,
+      "summary": "Rowan showed Deon and Laura his own blob storage and the digital-path demo translation defects (untranslated banner, dropped diagnosis sentence, lost signature line breaks). New context surfaced: the real PHI sample is a transposed German/English document, suggesting a built-in benchmark. Agreed next step: test other translation services on synthetic data before touching real PHI.",
+      "start_ts": 13.0,
+      "end_ts": 22.0,
+      "topic_ids": [],
+      "frame_ids": []
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:0078",
+      "type": "CONTRADICTS",
+      "source": "claim:0002",
+      "target": "claim:0003",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        },
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0079",
+      "type": "SUPPORTS",
+      "source": "claim:0009",
+      "target": "decision:0004",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0080",
+      "type": "SUPPORTS",
+      "source": "claim:0010",
+      "target": "decision:0004",
+      "confidence": 0.85,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0081",
+      "type": "SUPPORTS",
+      "source": "claim:0011",
+      "target": "decision:0005",
+      "confidence": 0.75,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0082",
+      "type": "SUPPORTS",
+      "source": "claim:0012",
+      "target": "decision:0005",
+      "confidence": 0.75,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0083",
+      "type": "SUPPORTS",
+      "source": "claim:0013",
+      "target": "decision:0005",
+      "confidence": 0.75,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0084",
+      "type": "RESOLVES",
+      "source": "decision:0003",
+      "target": "question:0004",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0001",
+      "type": "OCCURS_IN",
+      "source": "question:0001",
+      "target": "chapter:01",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0002",
+      "type": "ASKED",
+      "source": "person:laura-gongas",
+      "target": "question:0001",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0003",
+      "type": "ADDRESSED_TO",
+      "source": "question:0001",
+      "target": "person:rowan-reid",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0004",
+      "type": "OCCURS_IN",
+      "source": "question:0002",
+      "target": "chapter:01",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0005",
+      "type": "ASKED",
+      "source": "person:laura-gongas",
+      "target": "question:0002",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0006",
+      "type": "ADDRESSED_TO",
+      "source": "question:0002",
+      "target": "person:deon-kuhn",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0007",
+      "type": "OCCURS_IN",
+      "source": "question:0003",
+      "target": "chapter:01",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0008",
+      "type": "ASKED",
+      "source": "person:rowan-reid",
+      "target": "question:0003",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0009",
+      "type": "OCCURS_IN",
+      "source": "action:0001",
+      "target": "chapter:01",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0010",
+      "type": "OWNS",
+      "source": "person:rowan-reid",
+      "target": "action:0001",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0011",
+      "type": "OCCURS_IN",
+      "source": "action:0002",
+      "target": "chapter:01",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0012",
+      "type": "OWNS",
+      "source": "person:rowan-reid",
+      "target": "action:0002",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0013",
+      "type": "DEPENDS_ON",
+      "source": "action:0002",
+      "target": "action:0001",
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0014",
+      "type": "OCCURS_IN",
+      "source": "action:0003",
+      "target": "chapter:01",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0015",
+      "type": "OWNS",
+      "source": "person:rowan-reid",
+      "target": "action:0003",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0016",
+      "type": "DEPENDS_ON",
+      "source": "action:0003",
+      "target": "action:0002",
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0017",
+      "type": "OCCURS_IN",
+      "source": "action:0004",
+      "target": "chapter:01",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0018",
+      "type": "OWNS",
+      "source": "person:rowan-reid",
+      "target": "action:0004",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0019",
+      "type": "DEPENDS_ON",
+      "source": "action:0004",
+      "target": "action:0003",
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0020",
+      "type": "OCCURS_IN",
+      "source": "decision:0001",
+      "target": "chapter:01",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0021",
+      "type": "DECIDED",
+      "source": "person:deon-kuhn",
+      "target": "decision:0001",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0022",
+      "type": "OCCURS_IN",
+      "source": "claim:0001",
+      "target": "chapter:01",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0023",
+      "type": "RAISED",
+      "source": "person:rowan-reid",
+      "target": "claim:0001",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0024",
+      "type": "OCCURS_IN",
+      "source": "claim:0002",
+      "target": "chapter:01",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0025",
+      "type": "ASSERTED",
+      "source": "person:laura-gongas",
+      "target": "claim:0002",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0026",
+      "type": "OCCURS_IN",
+      "source": "claim:0003",
+      "target": "chapter:01",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0027",
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0003",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0028",
+      "type": "OCCURS_IN",
+      "source": "claim:0004",
+      "target": "chapter:01",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0029",
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0004",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0030",
+      "type": "OCCURS_IN",
+      "source": "decision:0002",
+      "target": "chapter:02",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0031",
+      "type": "DECIDED",
+      "source": "person:deon-kuhn",
+      "target": "decision:0002",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0032",
+      "type": "DECIDED",
+      "source": "person:laura-gongas",
+      "target": "decision:0002",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0033",
+      "type": "OCCURS_IN",
+      "source": "decision:0003",
+      "target": "chapter:02",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0034",
+      "type": "DECIDED",
+      "source": "person:deon-kuhn",
+      "target": "decision:0003",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0035",
+      "type": "DECIDED",
+      "source": "person:laura-gongas",
+      "target": "decision:0003",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0036",
+      "type": "OCCURS_IN",
+      "source": "decision:0004",
+      "target": "chapter:02",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0037",
+      "type": "DECIDED",
+      "source": "person:rowan-reid",
+      "target": "decision:0004",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0038",
+      "type": "DECIDED",
+      "source": "person:deon-kuhn",
+      "target": "decision:0004",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0039",
+      "type": "DECIDED",
+      "source": "person:laura-gongas",
+      "target": "decision:0004",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0040",
+      "type": "OCCURS_IN",
+      "source": "decision:0005",
+      "target": "chapter:02",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0041",
+      "type": "DECIDED",
+      "source": "person:rowan-reid",
+      "target": "decision:0005",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0042",
+      "type": "DECIDED",
+      "source": "person:deon-kuhn",
+      "target": "decision:0005",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0043",
+      "type": "DECIDED",
+      "source": "person:laura-gongas",
+      "target": "decision:0005",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0044",
+      "type": "OCCURS_IN",
+      "source": "action:0005",
+      "target": "chapter:02",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0045",
+      "type": "OCCURS_IN",
+      "source": "action:0006",
+      "target": "chapter:02",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0046",
+      "type": "OCCURS_IN",
+      "source": "question:0004",
+      "target": "chapter:02",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0047",
+      "type": "ASKED",
+      "source": "person:rowan-reid",
+      "target": "question:0004",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0048",
+      "type": "OCCURS_IN",
+      "source": "claim:0005",
+      "target": "chapter:02",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0049",
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0005",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0050",
+      "type": "OCCURS_IN",
+      "source": "claim:0006",
+      "target": "chapter:02",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0051",
+      "type": "ASSERTED",
+      "source": "person:laura-gongas",
+      "target": "claim:0006",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0052",
+      "type": "OCCURS_IN",
+      "source": "claim:0007",
+      "target": "chapter:02",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0053",
+      "type": "ASSERTED",
+      "source": "person:laura-gongas",
+      "target": "claim:0007",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0054",
+      "type": "OCCURS_IN",
+      "source": "claim:0008",
+      "target": "chapter:02",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0055",
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0008",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0056",
+      "type": "OCCURS_IN",
+      "source": "claim:0009",
+      "target": "chapter:02",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0057",
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0009",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0058",
+      "type": "OCCURS_IN",
+      "source": "claim:0010",
+      "target": "chapter:02",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0059",
+      "type": "ASSERTED",
+      "source": "person:laura-gongas",
+      "target": "claim:0010",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0060",
+      "type": "OCCURS_IN",
+      "source": "claim:0011",
+      "target": "chapter:02",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0061",
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0011",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0062",
+      "type": "OCCURS_IN",
+      "source": "claim:0012",
+      "target": "chapter:02",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0063",
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0012",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0064",
+      "type": "OCCURS_IN",
+      "source": "claim:0013",
+      "target": "chapter:02",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0065",
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0013",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0066",
+      "type": "OCCURS_IN",
+      "source": "claim:0014",
+      "target": "chapter:02",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0067",
+      "type": "ASSERTED",
+      "source": "person:rowan-reid",
+      "target": "claim:0014",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0068",
+      "type": "OCCURS_IN",
+      "source": "claim:0015",
+      "target": "chapter:02",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0069",
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0015",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0070",
+      "type": "OCCURS_IN",
+      "source": "claim:0016",
+      "target": "chapter:02",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0071",
+      "type": "ASSERTED",
+      "source": "person:laura-gongas",
+      "target": "claim:0016",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0072",
+      "type": "OCCURS_IN",
+      "source": "claim:0017",
+      "target": "chapter:02",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0073",
+      "type": "ASSERTED",
+      "source": "person:laura-gongas",
+      "target": "claim:0017",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0074",
+      "type": "OCCURS_IN",
+      "source": "claim:0018",
+      "target": "chapter:02",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0075",
+      "type": "ASSERTED",
+      "source": "person:deon-kuhn",
+      "target": "claim:0018",
+      "confidence": 0.95,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0076",
+      "type": "OCCURS_IN",
+      "source": "claim:0019",
+      "target": "chapter:02",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0077",
+      "type": "RAISED",
+      "source": "person:laura-gongas",
+      "target": "claim:0019",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0001",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:rowan-reid",
+      "target": "topic:nice-guidelines-kumulus",
+      "weight": 2,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0002",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:nice-guidelines-kumulus",
+      "weight": 1,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0003",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:rowan-reid",
+      "target": "topic:nice-api-historical-versions",
+      "weight": 2,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0004",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:nice-api-historical-versions",
+      "weight": 1,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0005",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:deon-kuhn",
+      "target": "topic:guideline-storage-licensing",
+      "weight": 1,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0006",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:rowan-reid",
+      "target": "topic:guideline-storage-licensing",
+      "weight": 3,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        },
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0007",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:nice-link-ambiguous-citation",
+      "weight": 1,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0008",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:deon-kuhn",
+      "target": "topic:nice-link-ambiguous-citation",
+      "weight": 1,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0009",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:rowan-reid",
+      "target": "topic:nice-link-ambiguous-citation",
+      "weight": 2,
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0010",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:ai2066-translation",
+      "weight": 2,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0011",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:deon-kuhn",
+      "target": "topic:ai2066-translation",
+      "weight": 1,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0012",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:rowan-reid",
+      "target": "topic:ai2066-translation",
+      "weight": 1,
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0013",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:rowan-reid",
+      "target": "topic:blob-storage-setup",
+      "weight": 3,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0014",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:blob-storage-setup",
+      "weight": 2,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0015",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:deon-kuhn",
+      "target": "topic:blob-storage-setup",
+      "weight": 1,
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0016",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:rowan-reid",
+      "target": "topic:translation-quality-testing",
+      "weight": 6,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0017",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:deon-kuhn",
+      "target": "topic:translation-quality-testing",
+      "weight": 3,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0018",
+      "type": "SPEAKS_ABOUT",
+      "source": "person:laura-gongas",
+      "target": "topic:translation-quality-testing",
+      "weight": 3,
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0019",
+      "type": "SUBTOPIC_OF",
+      "source": "topic:nice-api-historical-versions",
+      "target": "topic:nice-guidelines-kumulus",
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0020",
+      "type": "SUBTOPIC_OF",
+      "source": "topic:guideline-storage-licensing",
+      "target": "topic:nice-guidelines-kumulus",
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0021",
+      "type": "SUBTOPIC_OF",
+      "source": "topic:blob-storage-setup",
+      "target": "topic:ai2066-translation",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0022",
+      "type": "SUBTOPIC_OF",
+      "source": "topic:translation-quality-testing",
+      "target": "topic:ai2066-translation",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0023",
+      "type": "SUBTOPIC_OF",
+      "source": "topic:benchmark-other-services",
+      "target": "topic:ai2066-translation",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0024",
+      "type": "RELATES_TO",
+      "source": "topic:nice-guidelines-kumulus",
+      "target": "question:0001",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0025",
+      "type": "RELATES_TO",
+      "source": "topic:nice-api-historical-versions",
+      "target": "question:0001",
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0026",
+      "type": "RELATES_TO",
+      "source": "topic:nice-link-ambiguous-citation",
+      "target": "question:0002",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0027",
+      "type": "RELATES_TO",
+      "source": "topic:nice-link-ambiguous-citation",
+      "target": "question:0003",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0028",
+      "type": "RELATES_TO",
+      "source": "topic:nice-guidelines-kumulus",
+      "target": "action:0001",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0029",
+      "type": "RELATES_TO",
+      "source": "topic:nice-api-historical-versions",
+      "target": "action:0002",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0030",
+      "type": "RELATES_TO",
+      "source": "topic:guideline-storage-licensing",
+      "target": "action:0003",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0031",
+      "type": "RELATES_TO",
+      "source": "topic:guideline-storage-licensing",
+      "target": "action:0004",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0032",
+      "type": "RELATES_TO",
+      "source": "topic:guideline-storage-licensing",
+      "target": "decision:0001",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0033",
+      "type": "RELATES_TO",
+      "source": "topic:guideline-storage-licensing",
+      "target": "claim:0001",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0034",
+      "type": "RELATES_TO",
+      "source": "topic:nice-link-ambiguous-citation",
+      "target": "claim:0002",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0035",
+      "type": "RELATES_TO",
+      "source": "topic:nice-link-ambiguous-citation",
+      "target": "claim:0003",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0036",
+      "type": "RELATES_TO",
+      "source": "topic:nice-link-ambiguous-citation",
+      "target": "claim:0004",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0037",
+      "type": "RELATES_TO",
+      "source": "topic:blob-storage-setup",
+      "target": "decision:0002",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0038",
+      "type": "RELATES_TO",
+      "source": "topic:translation-quality-testing",
+      "target": "decision:0003",
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0039",
+      "type": "RELATES_TO",
+      "source": "topic:translation-quality-testing",
+      "target": "decision:0004",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0040",
+      "type": "RELATES_TO",
+      "source": "topic:benchmark-other-services",
+      "target": "decision:0005",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0041",
+      "type": "RELATES_TO",
+      "source": "topic:translation-quality-testing",
+      "target": "action:0005",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0042",
+      "type": "RELATES_TO",
+      "source": "topic:benchmark-other-services",
+      "target": "action:0006",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0043",
+      "type": "RELATES_TO",
+      "source": "topic:translation-quality-testing",
+      "target": "question:0004",
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0044",
+      "type": "RELATES_TO",
+      "source": "topic:blob-storage-setup",
+      "target": "claim:0005",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0045",
+      "type": "RELATES_TO",
+      "source": "topic:blob-storage-setup",
+      "target": "claim:0006",
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0046",
+      "type": "RELATES_TO",
+      "source": "topic:blob-storage-setup",
+      "target": "claim:0007",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0047",
+      "type": "RELATES_TO",
+      "source": "topic:blob-storage-setup",
+      "target": "claim:0008",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0048",
+      "type": "RELATES_TO",
+      "source": "topic:translation-quality-testing",
+      "target": "claim:0009",
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0049",
+      "type": "RELATES_TO",
+      "source": "topic:translation-quality-testing",
+      "target": "claim:0010",
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0050",
+      "type": "RELATES_TO",
+      "source": "topic:translation-quality-testing",
+      "target": "claim:0011",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0051",
+      "type": "RELATES_TO",
+      "source": "topic:translation-quality-testing",
+      "target": "claim:0012",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0052",
+      "type": "RELATES_TO",
+      "source": "topic:translation-quality-testing",
+      "target": "claim:0013",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0053",
+      "type": "RELATES_TO",
+      "source": "topic:translation-quality-testing",
+      "target": "claim:0014",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0054",
+      "type": "RELATES_TO",
+      "source": "topic:translation-quality-testing",
+      "target": "claim:0015",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0055",
+      "type": "RELATES_TO",
+      "source": "topic:translation-quality-testing",
+      "target": "claim:0016",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0056",
+      "type": "RELATES_TO",
+      "source": "topic:ai2066-translation",
+      "target": "claim:0017",
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0057",
+      "type": "RELATES_TO",
+      "source": "topic:ai2066-translation",
+      "target": "claim:0018",
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0058",
+      "type": "RELATES_TO",
+      "source": "topic:ai2066-translation",
+      "target": "claim:0019",
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0059",
+      "type": "REFERENCES",
+      "source": "action:0001",
+      "target": "artifact:medbrief-system",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0060",
+      "type": "REFERENCES",
+      "source": "action:0001",
+      "target": "artifact:kumulus-case-set",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0061",
+      "type": "REFERENCES",
+      "source": "action:0001",
+      "target": "artifact:nice-guidelines",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0062",
+      "type": "REFERENCES",
+      "source": "action:0002",
+      "target": "artifact:nice-api",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0063",
+      "type": "REFERENCES",
+      "source": "action:0002",
+      "target": "artifact:nice-guidelines",
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0064",
+      "type": "REFERENCES",
+      "source": "action:0003",
+      "target": "artifact:nice-guidelines",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0065",
+      "type": "REFERENCES",
+      "source": "action:0004",
+      "target": "artifact:nice-guidelines",
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0066",
+      "type": "REFERENCES",
+      "source": "decision:0001",
+      "target": "artifact:medbrief-system",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0067",
+      "type": "REFERENCES",
+      "source": "decision:0001",
+      "target": "artifact:nice-guidelines",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0068",
+      "type": "REFERENCES",
+      "source": "decision:0001",
+      "target": "artifact:data-lake",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0069",
+      "type": "REFERENCES",
+      "source": "decision:0001",
+      "target": "artifact:databricks",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0070",
+      "type": "REFERENCES",
+      "source": "decision:0001",
+      "target": "artifact:sql-server",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0071",
+      "type": "REFERENCES",
+      "source": "claim:0001",
+      "target": "artifact:nice-guidelines",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0072",
+      "type": "REFERENCES",
+      "source": "claim:0002",
+      "target": "artifact:nice-guidelines",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0073",
+      "type": "REFERENCES",
+      "source": "claim:0003",
+      "target": "artifact:nice-guidelines",
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0074",
+      "type": "REFERENCES",
+      "source": "question:0002",
+      "target": "artifact:nice-guidelines",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0075",
+      "type": "REFERENCES",
+      "source": "question:0003",
+      "target": "artifact:nice-guidelines",
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0076",
+      "type": "REFERENCES",
+      "source": "decision:0002",
+      "target": "artifact:azure-blob-storage-ai2066",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0077",
+      "type": "REFERENCES",
+      "source": "decision:0002",
+      "target": "artifact:medbrief-secure-review-subscription",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0078",
+      "type": "REFERENCES",
+      "source": "claim:0005",
+      "target": "artifact:azure-blob-storage-ai2066",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0079",
+      "type": "REFERENCES",
+      "source": "claim:0005",
+      "target": "artifact:medbrief-secure-review-subscription",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0080",
+      "type": "REFERENCES",
+      "source": "claim:0006",
+      "target": "artifact:clinicalrecord-translator",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0081",
+      "type": "REFERENCES",
+      "source": "claim:0007",
+      "target": "artifact:clinicalrecord-translator",
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0082",
+      "type": "REFERENCES",
+      "source": "claim:0007",
+      "target": "artifact:azure-blob-storage-ai2066",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0083",
+      "type": "REFERENCES",
+      "source": "claim:0008",
+      "target": "artifact:azure-blob-storage-ai2066",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0084",
+      "type": "REFERENCES",
+      "source": "decision:0003",
+      "target": "artifact:real-sample-document",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0085",
+      "type": "REFERENCES",
+      "source": "question:0004",
+      "target": "artifact:real-sample-document",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0086",
+      "type": "REFERENCES",
+      "source": "claim:0009",
+      "target": "artifact:real-sample-document",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0087",
+      "type": "REFERENCES",
+      "source": "claim:0010",
+      "target": "artifact:real-sample-document",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0088",
+      "type": "REFERENCES",
+      "source": "decision:0004",
+      "target": "artifact:clinicalrecord-translator",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0089",
+      "type": "REFERENCES",
+      "source": "decision:0004",
+      "target": "artifact:real-sample-document",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0090",
+      "type": "REFERENCES",
+      "source": "action:0005",
+      "target": "artifact:clinicalrecord-translator",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0091",
+      "type": "REFERENCES",
+      "source": "action:0005",
+      "target": "artifact:real-sample-document",
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0092",
+      "type": "REFERENCES",
+      "source": "claim:0011",
+      "target": "artifact:digital-nonscanned-demo-test",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0093",
+      "type": "REFERENCES",
+      "source": "claim:0012",
+      "target": "artifact:digital-nonscanned-demo-test",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0094",
+      "type": "REFERENCES",
+      "source": "claim:0013",
+      "target": "artifact:digital-nonscanned-demo-test",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0095",
+      "type": "REFERENCES",
+      "source": "claim:0014",
+      "target": "artifact:digital-nonscanned-demo-test",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0096",
+      "type": "REFERENCES",
+      "source": "claim:0015",
+      "target": "artifact:digital-nonscanned-demo-test",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0097",
+      "type": "REFERENCES",
+      "source": "claim:0016",
+      "target": "artifact:digital-nonscanned-demo-test",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0098",
+      "type": "REFERENCES",
+      "source": "decision:0005",
+      "target": "artifact:aws-translate",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0099",
+      "type": "REFERENCES",
+      "source": "decision:0005",
+      "target": "artifact:google-translate",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0100",
+      "type": "REFERENCES",
+      "source": "decision:0005",
+      "target": "artifact:deepl",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0101",
+      "type": "REFERENCES",
+      "source": "action:0006",
+      "target": "artifact:aws-translate",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0102",
+      "type": "REFERENCES",
+      "source": "action:0006",
+      "target": "artifact:google-translate",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0103",
+      "type": "REFERENCES",
+      "source": "action:0006",
+      "target": "artifact:deepl",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0104",
+      "type": "MENTIONED_BY",
+      "source": "artifact:clinicalrecord-translator",
+      "target": "person:laura-gongas",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0105",
+      "type": "MENTIONED_BY",
+      "source": "artifact:clinicalrecord-translator",
+      "target": "person:rowan-reid",
+      "confidence": 0.45,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0106",
+      "type": "MENTIONED_BY",
+      "source": "artifact:azure-blob-storage-ai2066",
+      "target": "person:rowan-reid",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0107",
+      "type": "MENTIONED_BY",
+      "source": "artifact:medbrief-secure-review-subscription",
+      "target": "person:rowan-reid",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0108",
+      "type": "MENTIONED_BY",
+      "source": "artifact:real-sample-document",
+      "target": "person:deon-kuhn",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0109",
+      "type": "MENTIONED_BY",
+      "source": "artifact:real-sample-document",
+      "target": "person:laura-gongas",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0110",
+      "type": "MENTIONED_BY",
+      "source": "artifact:digital-nonscanned-demo-test",
+      "target": "person:rowan-reid",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0111",
+      "type": "MENTIONED_BY",
+      "source": "artifact:nice-guidelines",
+      "target": "person:laura-gongas",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "topical-0112",
+      "type": "MENTIONED_BY",
+      "source": "artifact:nice-guidelines",
+      "target": "person:deon-kuhn",
+      "confidence": 0.9,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    },
+    {
+      "id": "edge:0085",
+      "type": "CONTRADICTS",
+      "source": "claim:0007",
+      "target": "claim:0008",
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        },
+        {
+          "quote": "[narration: paraphrased recollection, not a verbatim quote]",
+          "ts": null,
+          "source": "transcript"
+        }
+      ]
+    }
+  ],
+  "_annex": {
+    "nodes": [],
+    "edges": []
+  }
+}

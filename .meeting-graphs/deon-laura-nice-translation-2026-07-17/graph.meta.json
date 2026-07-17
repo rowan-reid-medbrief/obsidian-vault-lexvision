@@ -1,0 +1,32 @@
+{
+  "schema_version": 2,
+  "graph_id": "deon-laura-nice-translation-2026-07-17",
+  "source_recording": null,
+  "source_checksum": null,
+  "source_fidelity": "narration",
+  "meeting_date": "2026-07-17",
+  "title": "Deon, Laura, Rowan: NICE guidelines and AI-2066",
+  "promoted_at": "2026-07-17T13:17:31+02:00",
+  "domain": "medbrief",
+  "primary_project": "~/claude_code/medbrief-work",
+  "secondary_projects": [
+    "~/claude_code/projects/lexvision-poc"
+  ],
+  "project_key": "ai-2066",
+  "valid_at": "2026-07-17",
+  "valid_at_source": "explicit",
+  "valid_at_end": null,
+  "invalid_at": null,
+  "invalidated_by": null,
+  "graph_content_hash": "5bcb9b8e78e5dbccbbf46f62a01a65da6a78b14d91e274cc7f1eac20241fa955",
+  "promoted_artifacts": [
+    "meeting.json",
+    "graph.graphml",
+    "graph.mermaid.md",
+    "summary.md",
+    "timeline.md",
+    "chapters/chapters.json",
+    "graph.meta.json"
+  ],
+  "include_raw": false
+}

@@ -15,9 +15,9 @@
   next: **send Deon the benchmark table and the branch** (`feature/MRI-134-pdf-split-approach`, tip `27547ede3`, both fixes pushed). The "~19x MedBrief overhead" was disproven (a page-cache confound from the whole-file copy); PHP-Apryse and Python-Apryse tie, PyMuPDF is disqualified. Then decide async subset generation vs a config-bound product page limit: the request wall is nginx's 60s fastcgi default and php-fpm has only 5 workers. The subset cache still has no eviction (~2.9GB per 10k subset). VM has ~30GB throwaway fixtures in `/var/tmp/mri134` to clean. Workstream B (date-range -> page mapping via `ChronologyItem` Bates refs) is still the real feature blocker.
   [[2026-07-10-mri134-copy-elimination-and-cap-removal]]
 
-- Translation | Compre (AI-2066) (non-PHI demo done: batch/blob mechanism proven; digital vs scanned inputs shown to fail differently, not just differently badly; still pending the governance answer, last touched 2026-07-17)
-  next: demo the four-container Azure showcase to Laura and Deon (stgtranslationdemo / rg-translation-demo, Secure Review); then send the drafted Teams message (docs/ai-2066/DRAFT-teams-message.md) to get the governance/DPA answer that unblocks the real run on case 44240.
-  [[2026-07-17-ai2066-non-phi-demo-and-digital-vs-scanned-findings]]
+- Translation | Compre (AI-2066) (demo shown to Deon and Laura, who found it worrying; real-PHI staging governance now resolved (verbally approved); new benchmark idea surfaced (the real sample's own embedded English as ground truth); last touched 2026-07-17)
+  next: benchmark AWS/Google/DeepL on synthetic documents (agreed next step); then extract the German pages from the real sample and compare against its embedded English via clinicalrecord-translator. Residency/DPA question to Deon is still separately open.
+  [[2026-07-17-narrate-meeting-shakedown-nice-ai2066]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19
@@ -30,6 +30,11 @@
 - **Status:** Gen 4 "Data and AI PoV" (received 9 Jul) reviewed + documented (review doc `12-review-2026-07-09-data-ai-pov.md`, ADR-009). Scope inverts back to the d1 split: Kumulus builds the upstream extraction pipeline (M2-M7), drops OCR + the comparison layer; MedBrief keeps the reasoning layer. Position: hold accept-in-principle-and-negotiate. `last touched` 2026-07-16.
 - **next:** Take the five open items to Kumulus/Laura/Deon: (1) settle the data-handoff de-identification state + Azure tenancy FIRST (new compliance crux: prepared case data crosses to a Brazil-based vendor); (2) IP transfer of extraction/pseudonymisation notebooks + schema; (3) incentive-failure fallback in writing; (4) numeric acceptance bars per ADR-004; (5) reconcile the pricing-slide-vs-body comparison contradiction. Confirm the Gen 4 deck supersedes the 10 June one.
 - [[2026-07-16-kumulus-gen4-data-ai-pov-review]]
+
+### NICE guideline access for the Kumulus case set (lexvision-poc)
+- **Status:** Laura asked Rowan to check whether the NICE guideline versions the Kumulus cases actually need are obtainable via the new NICE API trial, which seems to expose only current versions. `last touched` 2026-07-17.
+- **next:** identify which NICE guideline version(s) the actual Kumulus cases reference (via MedBrief clinical summaries/chronologies/ECAs), then check NICE API coverage; if unavailable, prototype scraping + local storage. Separately unresolved: whether a NICE-guideline link found in an unrelated case's clinical summary is a genuine clinical citation or generic appendix content.
+- [[2026-07-17-narrate-meeting-shakedown-nice-ai2066]]
 
 ### Expert Sheet — Phase 2 dedup, pending USE_DB run + Chantel delivery
 - **Last touched:** 2026-06-09

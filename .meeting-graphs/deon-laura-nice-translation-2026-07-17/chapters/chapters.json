@@ -1,0 +1,24 @@
+{
+  "chapters": [
+    {
+      "id": "chapter:01",
+      "index": 1,
+      "title": "NICE guidelines for the Lexvision POC Kumulus project",
+      "summary": "Laura asked Rowan to check which NICE guideline versions the Kumulus case set actually needs, whether they're reachable via the new (current-only) NICE API trial, and if not, to look into scraping and local storage as a proof of concept. Deon ruled out storing guidelines on the MedBrief server. An unresolved incident: Laura found a NICE guideline link in an unrelated case's clinical summary, of disputed relevance, that Rowan couldn't open.",
+      "start_ts": 0.0,
+      "end_ts": 12.0,
+      "topic_ids": [],
+      "frame_ids": []
+    },
+    {
+      "id": "chapter:02",
+      "index": 2,
+      "title": "AI-2066 translation project update",
+      "summary": "Rowan showed Deon and Laura his own blob storage and the digital-path demo translation defects (untranslated banner, dropped diagnosis sentence, lost signature line breaks). New context surfaced: the real PHI sample is a transposed German/English document, suggesting a built-in benchmark. Agreed next step: test other translation services on synthetic data before touching real PHI.",
+      "start_ts": 13.0,
+      "end_ts": 22.0,
+      "topic_ids": [],
+      "frame_ids": []
+    }
+  ]
+}
