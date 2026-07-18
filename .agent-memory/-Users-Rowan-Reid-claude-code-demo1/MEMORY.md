@@ -4,6 +4,6 @@
 - [Meeting-graph outputs: DE + Kumulus](reference_meeting_graph_outputs.md) — output dirs/counts; all 5 promoted; 2 Kumulus already hand-filed (don't re-file)
 - [R6/H + GATE-2 calibration (2026-06-13)](reference_r6h_gate2_calibration.md) — first real-data run results; live-write test still owed on Huble
 - [MedBrief: "Sally" = SALLI, not a person](reference_medbrief_salli_not_sally.md) — meeting-graph mis-extracts Sally as a Person; it's an AI/sorting system
-- [Machine test-suite red suites](reference_machine_test_suite_failures.md) — 6 ~/.claude tests are expected-red here (missing doc-gen venvs + un-cloned claude-cockpit); not regressions
-- [Machine MCP-server local build state (2026-07-16)](reference_machine_mcp_server_state.md) — local builds + npm tools installed; none registered in `claude mcp list` yet
-- [Programme spine: gh-copilot](project_programme_gh_copilot_pointer.md) — the Copilot delegation build is spine-tracked; read `~/.claude/docs/programmes/gh-copilot.md` fresh, not handoff prompts
+- [Machine test-suite red suites](reference_machine_test_suite_failures.md) — 4 expected-red here (shared cross-refs + 2 cockpit + missing mcp.json); not regressions
+- [Machine MCP-server local build state (2026-07-16)](reference_machine_mcp_server_state.md) — local builds + npm tools installed; none registered; no live mcp.json (gate red in KNOWN-RED.local, #qypmxb)
+- [Programme: gh-copilot COMPLETE](project_programme_gh_copilot_pointer.md) — merged + pushed 2026-07-18; probes 1+11 owed in a fresh session; organic-use clock to 2026-08-17
