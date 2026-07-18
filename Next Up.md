@@ -2,10 +2,10 @@
 
 ## Now (Medbrief)
 
-### gh-copilot delegation - programme COMPLETE (2026-07-18)
-- **Status:** all seven specs shipped; branch merged to main (`0627086`) and pushed; spine `status: complete`; acceptance criteria recorded in shakedown.md. `last touched` 2026-07-18.
-- **next:** in a FRESH session: probes 1 and 11 (invocation control + scoped allowed-tools pilot), then set `metadata.last_shakedown`. Organic use before 2026-08-17 or /hygiene-sweep surfaces removal.
-- [[2026-07-18-gh-copilot-s7-merge-acceptance]]
+### gh-copilot delegation - programme COMPLETE, shakedown closed (2026-07-18)
+- **Status:** probes 1+11 PASS in the fresh post-merge session; scoped `allowed-tools` adopted (SKILL.md v1.1, `last_shakedown` set); propose-and-paste offload spotter live on this machine (`a15c3cf`). `last touched` 2026-07-18.
+- **next:** use it organically: the first pasted `/gh-copilot` proposal writes the offload ledger's first line; review checkpoint at ten ledger lines or 2026-08-17 (use-it-or-lose-it).
+- [[2026-07-18-gh-copilot-post-merge-probes-and-offload-spotter]]
 
 ### MedBrief quarterly company meetings - ingested to vault
 - **Status:** Q1 (March) and Q2 (June) 2026 company updates fully ingested via /process-meeting: meeting-graphs (183n/333e, 160n/314e) in ~/meeting-graph-output/, recaps in Resources/Summaries/medbrief/, March's two strategic decisions logged. Q2 Pass-3 chapters 07-08 hand-authored after a session-limit killed two subagents (03-04 salvaged from a valid .tmp). `last touched` 2026-06-26.
