@@ -20,9 +20,9 @@
   next: **send Deon the benchmark table and the branch** (`feature/MRI-134-pdf-split-approach`, tip `27547ede3`, both fixes pushed). The "~19x MedBrief overhead" was disproven (a page-cache confound from the whole-file copy); PHP-Apryse and Python-Apryse tie, PyMuPDF is disqualified. Then decide async subset generation vs a config-bound product page limit: the request wall is nginx's 60s fastcgi default and php-fpm has only 5 workers. The subset cache still has no eviction (~2.9GB per 10k subset). VM has ~30GB throwaway fixtures in `/var/tmp/mri134` to clean. Workstream B (date-range -> page mapping via `ChronologyItem` Bates refs) is still the real feature blocker.
   [[2026-07-10-mri134-copy-elimination-and-cap-removal]]
 
-- Translation | Compre (AI-2066) (external deep-research pass reconciled into all four core docs; PLAN.md restructured into a sequenced Phase 3-6 roadmap; last touched 2026-07-17)
-  next: handed off to a fresh session for Phase 3's Claude-executable checks (API-version reconfirmation, comprepseudo German-support test). Phase 3 item 4 (AWS/Google/DeepL sign-ups, tell Chris Fuller) is still Rowan's own action.
-  [[2026-07-17-ai2066-research-reconciliation-and-roadmap]]
+- Translation | Compre (AI-2066) (Phase 3 item 1 DONE: re-confirmed against the 2026-03-01 backend AND root-caused the silent omission as a document-path date-boundary segmentation bug, engine fine and sync-text immune, which strengthens the §18 text-layer branch; last touched 2026-07-22)
+  next: Phase 3 items 2-4, open the Microsoft support query carrying the minimal segmentation repro, check comprepseudo German PII support, and set up AWS/Google/DeepL trial accounts via Chris Fuller; plus prep the Deon progress update (Azure verdict, vendor-vs-architecture point, cited third-party outlook).
+  [[2026-07-22-ai2066-azure-omission-root-cause]]
 
 ### MedBrief onboarding - knowledge-share deck + branded pack
 - **Last touched:** 2026-06-19
