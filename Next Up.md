@@ -2,10 +2,10 @@
 
 ## Now (Medbrief)
 
-### gh-copilot as a sub-agent substrate - plan hardened r2, awaiting Fable pass (2026-07-23)
-- **Status:** organic use landed (ledger at seven entries), so the use-it-or-lose-it clock is no longer the risk. New plan: use Copilot wherever sub-agents would be dispatched, `/harden-plan` as first caller. Hardened by a 12-agent fan-out, then corrected on four points by Rowan; rewritten to r2. Plan at `~/.claude/plans/copilot-as-subagent-substrate.md` (gitignored, machine-local). `last touched` 2026-07-23.
-- **next:** fresh session on Fable at max effort to interrogate the plan's FRAME (prompt is in the handoff). Then: cooldown config keys, `--add-dir` on the consult profile, deny-paths for the repo's tracked `.pem`/`.env` files, and the seeded-synthetic-plan bake-off.
-- [[2026-07-23-copilot-subagent-substrate-hardening]]
+### gh-copilot as a sub-agent substrate - r3 twice-interrogated, build handed off (2026-07-23)
+- **Status:** r2 interrogated twice (Fable max-effort frame pass + a gpt-5.6-sol consult through the wrapper, 57.1 credits/69 s); both converged on the same frame flaw, one new verified catch. Rewritten to r3: frame-audit leg adopted now, eleven-leg lens offload to be proven by the three-arm seeded bake-off. Plan at `~/.claude/plans/copilot-as-subagent-substrate.md` (gitignored, machine-local). `last touched` 2026-07-23.
+- **next:** fresh session on Sonnet/high: execute r3 sequencing steps 1-3 (cooldown config keys; read-scope grammar test + scoped `--add-dir` + secrets layer; offload-policy clause). Prompt in the handoff.
+- [[2026-07-23-copilot-substrate-r3-interrogation]]
 
 ### MedBrief quarterly company meetings - ingested to vault
 - **Status:** Q1 (March) and Q2 (June) 2026 company updates fully ingested via /process-meeting: meeting-graphs (183n/333e, 160n/314e) in ~/meeting-graph-output/, recaps in Resources/Summaries/medbrief/, March's two strategic decisions logged. Q2 Pass-3 chapters 07-08 hand-authored after a session-limit killed two subagents (03-04 salvaged from a valid .tmp). `last touched` 2026-06-26.
