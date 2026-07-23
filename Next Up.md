@@ -2,6 +2,11 @@
 
 ## Now (Medbrief)
 
+### Mass Matter Import (Higgs bulk import) - hardened, three premises fell, re-targeted local (2026-07-23)
+- **Status:** /harden-plan (14 Claude critics + 11 Copilot lens legs, 907.6 credits across the day) refuted three premises the project rested on: setManager() IS sufficient for access and listing (no access-role gap), create ONE collection not four, and importers already exist (ImportMattersController, ImportRadiologyCommand). Corrections in DESIGN-NOTES section 16; fresh LOCAL-BUILD.md written; long-form PLAN parked for redraw. `last touched` 2026-07-23.
+- **next:** fresh session builds LOCAL-BUILD.md step 1 onward (local dry run + local commit run, discs left at PENDING_PROCESSING, async out of scope). FIRST settle the one open decision: drop the role grant (recommended) or keep it; then scope the fee-earner lookup to account 296.
+- [[2026-07-23-mass-matter-import-hardening]]
+
 ### gh-copilot as a sub-agent substrate - r3 steps 1-4 built, probes returned (2026-07-23)
 - **Status:** sequencing steps 1-4 built and committed (cooldown config keys, read-scope controls, offload sub-agent clause + ledger split, operator artefacts). Both read-scope probes returned: `--add-dir` grants reads under the deny-first profile, cwd confinement holds, a scoped `read()` deny is wholesale. Shakedown probes 4-10 re-run PASS; a load-bearing s6 shell-default pin refuted. Net gate green; unit suite 132. `last touched` 2026-07-23.
 - **next:** one fresh-session check to advance the shakedown stamp (procedure in `shakedown.md`); then steps 5-8, the seeded three-arm bake-off, as separate sessions. An organic hardening run using the frame-audit leg is live in the medbrief-work session (Mass Matter Import).
