@@ -2,10 +2,10 @@
 
 ## Now (Medbrief)
 
-### gh-copilot as a sub-agent substrate - r3 twice-interrogated, build handed off (2026-07-23)
-- **Status:** r2 interrogated twice (Fable max-effort frame pass + a gpt-5.6-sol consult through the wrapper, 57.1 credits/69 s); both converged on the same frame flaw, one new verified catch. Rewritten to r3: frame-audit leg adopted now, eleven-leg lens offload to be proven by the three-arm seeded bake-off. Plan at `~/.claude/plans/copilot-as-subagent-substrate.md` (gitignored, machine-local). `last touched` 2026-07-23.
-- **next:** fresh session on Sonnet/high: execute r3 sequencing steps 1-3 (cooldown config keys; read-scope grammar test + scoped `--add-dir` + secrets layer; offload-policy clause). Prompt in the handoff.
-- [[2026-07-23-copilot-substrate-r3-interrogation]]
+### gh-copilot as a sub-agent substrate - r3 steps 1-4 built, probes returned (2026-07-23)
+- **Status:** sequencing steps 1-4 built and committed (cooldown config keys, read-scope controls, offload sub-agent clause + ledger split, operator artefacts). Both read-scope probes returned: `--add-dir` grants reads under the deny-first profile, cwd confinement holds, a scoped `read()` deny is wholesale. Shakedown probes 4-10 re-run PASS; a load-bearing s6 shell-default pin refuted. Net gate green; unit suite 132. `last touched` 2026-07-23.
+- **next:** one fresh-session check to advance the shakedown stamp (procedure in `shakedown.md`); then steps 5-8, the seeded three-arm bake-off, as separate sessions. An organic hardening run using the frame-audit leg is live in the medbrief-work session (Mass Matter Import).
+- [[2026-07-23-copilot-substrate-execute-build]]
 
 ### MedBrief quarterly company meetings - ingested to vault
 - **Status:** Q1 (March) and Q2 (June) 2026 company updates fully ingested via /process-meeting: meeting-graphs (183n/333e, 160n/314e) in ~/meeting-graph-output/, recaps in Resources/Summaries/medbrief/, March's two strategic decisions logged. Q2 Pass-3 chapters 07-08 hand-authored after a session-limit killed two subagents (03-04 salvaged from a valid .tmp). `last touched` 2026-06-26.
