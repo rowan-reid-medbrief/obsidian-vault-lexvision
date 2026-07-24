@@ -1,10 +1,11 @@
 ---
 name: ado-primary-code-host
-description: "Azure DevOps (MedBrief AI project) is the AI team's primary live code host — 12 git repos, not just work-item tracking"
+description: "Azure DevOps (MedBrief AI project) is the AI team's primary live code host: 12 git repos, not just work-item tracking. Bitbucket-to-GitHub migration underway (2026)."
 metadata: 
   node_type: memory
   type: project
   originSessionId: 87fbc235-0c79-4746-b0b9-c128047bd13c
+  modified: 2026-07-24T14:00:44.420Z
 ---
 
 Azure DevOps (`MedBrief` org → `MedBrief AI` project) is the **primary live
@@ -33,3 +34,12 @@ Bitbucket. Canonical repo list + lineage note lives at the top of
 `notes/00-repo-triage.md`. A full per-repo ADO triage (commit activity,
 READMEs, confirmed epic mapping) is still TODO. See [[mcp-servers]] for the
 azure-devops MCP config.
+
+**Update (2026-07-24):** Confluence research (governance/AI-tooling investigation)
+found MedBrief is actively migrating source control from Bitbucket to GitHub
+Enterprise (a "GIT Migration Guide" doc exists with repo-prefix conventions:
+web-, micros-, scripts-, msr-, mbwp-), driven partly by the GitHub Copilot
+rollout. Scope unconfirmed: the migration guide's prefixes look like the
+Bitbucket-hosted apps (the `medbrief` monolith and siblings), not necessarily
+the 12 ADO AI-team repos above. Verify current state before assuming either
+host is still authoritative. See `notes/18-confluence-ai-data-guidance.md`.
